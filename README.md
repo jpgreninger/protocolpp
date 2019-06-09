@@ -34,7 +34,7 @@ libprotocolpp.a - Static library of the protocolpp.h interface, wasp.h, and ciph
 
 libprotocolpp.so.3.0.0 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
 
-winprot++.lib - Static library for Windows compiled under VC++ 17
+winprot++.lib - Static library for Windows compiled under VC++ 19
 
 rdriver - Ring driver that for UDP, TCP, TLS, or SRTP. Underlying protocols include
           ICMP, IP, IPsec, MACsec, Ethernet, LTE, RLC, Wifi, WiGig, WiMax with separate
@@ -54,6 +54,16 @@ ikev2   - Support for Internet Key Exchange (IKE) version 2 for IPsec ESP with C
           now supported (RSA, PSK, ECDSA, DSA)
 
 test - Runs the CPPUNIT tests for Protocol++. Message outputs are for negative testing
+
+Supported Platforms
+
+* RedHat Enterprise 7.2 GCC5.3.1 x64, i686
+* Ubuntu 18.04 GCC5.5.0 x64, i686
+* Fedora GCC7.2 x64, i686
+* SUSE Enterprise GCC8.2 x64, i686
+* openSUSE 15.1 GCC8.2 x64, i686
+* Windows 10 VC++19 x64, i686
+* ARM (Coming Soon)
 
 USE CASES
 
