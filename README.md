@@ -121,18 +121,31 @@ USAGE: protocolpp [options]
 Options:
 
   --help, -h   Print usage and exit
+  
   --in, -i     Input file (either *.ppp or *.protopp)
+  
   --out, -o    Output file (*.protpp)
+  
   --seed, -s   Seed for reproducibility
+  
   --log, -l    Path to output simulation log
+  
   --size, -z   Size of the rings in entries
+  
   --resp, -r   Number of responders
+  
   --thread, -t Number of threads per responder
+  
   --plat, -p   Platform to run (WASPLAT or SECPLAT)
+  
   --endian, -e Endiness of the platform (BIG or LITTLE)
+  
   --ptr, -q    Size of address pointers in bytes (4 or 8 default=8)
+  
   --sgt, -g    Size of SG entries in bytes (8 or 16 default=16)
+  
   --irg, -n    Address of the input ring
+  
   --org, -z    Address of the output ring
 
 Examples:
