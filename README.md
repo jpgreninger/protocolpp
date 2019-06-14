@@ -22,24 +22,24 @@ necessary for complete functionality
 
 Issued copyrights
 
-Protocol++(Protocolpp) 1.0.0 - TXu002059872
-Protocol++(Protocolpp) 1.2.7 - TXu002066632
-Protocol++(Protocolpp) 1.4.0 - TXu002082674
-Protocol++(Protocolpp) 2.0.0 - TXu002097880
-JPGNetworks - VAu001334497
+* Protocol++(Protocolpp) 1.0.0 - TXu002059872
+* Protocol++(Protocolpp) 1.2.7 - TXu002066632
+* Protocol++(Protocolpp) 1.4.0 - TXu002082674
+* Protocol++(Protocolpp) 2.0.0 - TXu002097880
+* JPGNetworks - VAu001334497
 
 Trademarks
 
-JPGNetworks - 87708008
+* JPGNetworks - 87708008
 
-Mexico · Bilateral Feb. 27, 1896; UCC Geneva
+* Mexico · Bilateral Feb. 27, 1896; UCC Geneva
 May 12, 1957; BAC Apr. 24, 1964; Berne (Paris)
 June 11, 1967; Phonograms Dec. 21, 1973; UCC
 Paris Oct. 31, 1975; SAT Aug. 25, 1979; NAFTA
 Jan. 1, 199410; WTO Jan. 1, 1995; WCT Mar. 6,
 2002; WPPT May 20, 2002
 
-Ireland · Berne (Paris) Oct. 5, 1927; Bilateral
+* Ireland · Berne (Paris) Oct. 5, 1927; Bilateral
 Oct. 1, 1929; UCC Geneva Jan. 20, 1959; WTO
 Jan. 1, 1995; WCT Mar. 14, 2010; WPPT Mar. 14,
 2010
