@@ -39,6 +39,8 @@ Paris Oct. 31, 1975; SAT Aug. 25, 1979; NAFTA
 Jan. 1, 199410; WTO Jan. 1, 1995; WCT Mar. 6,
 2002; WPPT May 20, 2002
 
+Si ustedes se trabajan en emulacion en Guadalajara, estan en infracción de derechos de autor. Diga a los superiores que es illegal. No se suportan a los criminales
+
 * Ireland · Berne (Paris) Oct. 5, 1927; Bilateral
 Oct. 1, 1929; UCC Geneva Jan. 20, 1959; WTO
 Jan. 1, 1995; WCT Mar. 14, 2010; WPPT Mar. 14,
