@@ -179,282 +179,281 @@ For W.A.S.P usage, see the doxygen section
 
 * New in 2.5.5
 
--- Moved to Crypto++ 8.2.0
+  * Moved to Crypto++ 8.2.0
 
 * New in 2.5.4
 
--- Moved to Crypto++ 8.1.0
+  * Moved to Crypto++ 8.1.0
 
 * New in 2.5.3 (Sun Feb 10 23:37:22 2019 -0700)
 
-** Split out signature classes as separate functions
-** Used new classes in IKEv2 to streamline code
-** Updated documentation to fix math symbols and equations using LaTeX math
-** Removed obsolete ciphers, authentication, dh curves from IKEv2
-** Generated PDF from all documentation (901 pages)
-** Updated schema to include restrictions
+  * Split out signature classes as separate functions
+  * Used new classes in IKEv2 to streamline code
+  * Updated documentation to fix math symbols and equations using LaTeX math
+  * Removed obsolete ciphers, authentication, dh curves from IKEv2
+  * Generated PDF from all documentation (901 pages)
+  * Updated schema to include restrictions
 
 * New in 2.5.2 (Sun Jan 20 21:30:58 2019 -0700)
 
--- New class jdsa
--- New class jecdsa
--- New class jrsa
--- Updated copyright to 2019
+  * New class jdsa
+  * New class jecdsa
+  * New class jrsa
+  * Updated copyright to 2019
 
 * New in 2.5.1 (Sun Jan 6 12:45:27 2019 -0700)
 
--- Moved to Crypto++ v8.0.0
--- Moved to tinyxml2 v7.0.1
+  * Moved to Crypto++ v8.0.0
+  * Moved to tinyxml2 v7.0.1
 
 * New in 2.5.0 (Mon Dec 31 21:15:03 2018 -0700)
 
--- Separated IKEv2 functions into separate classes
--- New class jikeparse
--- New class jikev2dh
--- New class jikencrypt
--- New class jikeprf
+  * Separated IKEv2 functions into separate classes
+  * New class jikeparse
+  * New class jikev2dh
+  * New class jikencrypt
+  * New class jikeprf
 
 * New in 2.4.3 (Sat Dec 23 21:39:15 2018 -0700)
 
--- All encryption schemes for IKEv2 working (CBC, CTR, GCM, CCM, DES, 3DES, CHACHA)
--- All integrity schemes for IKEv2 working (MD5, SHA, SHA2-256, SHA2-384, SHA2-512, AES-CMAC, AES-GMAC, POLY1305)
--- All PRF schemes for IKEv2 working (MD5, SHA, SHA2-256, SHA2-384, SHA2-512, AES-CMAC, AES-XCBC-MAC)
--- 80% of Key exchange schemes working (MODP, ECP, missing curve25514 and curve448)
--- All encryption, integrity, Diffie-Hellman, and Signatures tested against StrongSwan IKEv2 (www.strongswan.org)
--- Added all conformance vectors for CCM, CMAC, XCBC-MAC, GCM, CHACHA20, POLY1305, SM3, SM4, ARIA to cppunit tests
--- Fixed small bug in jrand
--- Added Appendix A from employment agreement to clarify ownership
--- Crypto++ support for curve25519 and curve448 not quite ready https://stackoverflow.com/questions/50408019/crypto-ed448-unknown-oid
+  * All encryption schemes for IKEv2 working (CBC, CTR, GCM, CCM, DES, 3DES, CHACHA)
+  * All integrity schemes for IKEv2 working (MD5, SHA, SHA2-256, SHA2-384, SHA2-512, AES-CMAC, AES-GMAC, POLY1305)
+  * All PRF schemes for IKEv2 working (MD5, SHA, SHA2-256, SHA2-384, SHA2-512, AES-CMAC, AES-XCBC-MAC)
+  * 80% of Key exchange schemes working (MODP, ECP, missing curve25514 and curve448)
+  * All encryption, integrity, Diffie-Hellman, and Signatures tested against StrongSwan IKEv2 (www.strongswan.org)
+  * Added all conformance vectors for CCM, CMAC, XCBC-MAC, GCM, CHACHA20, POLY1305, SM3, SM4, ARIA to cppunit tests
+  * Fixed small bug in jrand
+  * Added Appendix A from employment agreement to clarify ownership
+  * Crypto++ support for curve25519 and curve448 not quite ready https://stackoverflow.com/questions/50408019/crypto-ed448-unknown-oid
 
 * New in 2.4.2 (Sun Dec 24 15:22:38 2018 -0700)
 
--- GIT log for all time
+  * GIT log for all time
 
 * New in 2.4.1 (Sun Dec 24 17:58:22 2018 -0700)
 
--- Working IKEv2 for AES-CBC, SHA256, MODP1024 (see log files)
+  * Working IKEv2 for AES-CBC, SHA256, MODP1024 (see log files)
 
 * New in 2.4.0 (Mon Nov 26 22:13:39 2018 -0700)
 
--- Added delete_sa() to IKEv2
--- Fixed SKEYSEED and KEYMAT generation
--- Fixed AUTH payload generation
--- Fixed preshared key authentication
--- Fixed key ring issues
--- Added key ring to drivers
--- Added ability to daemonize IKEv2
+  * Added delete_sa() to IKEv2
+  * Fixed SKEYSEED and KEYMAT generation
+  * Fixed AUTH payload generation
+  * Fixed preshared key authentication
+  * Fixed key ring issues
+  * Added key ring to drivers
+  * Added ability to daemonize IKEv2
 
 * New in 2.3.3 (Tue Oct 30 19:02:06 2018 -0700)
 
--- Moved from pthread to std::thread
--- Moved to CryptoPP 7.0.0 for SM3, SM4, Poly1305, ARIA encryption engines
--- Documentation updates
+  * Moved from pthread to std::thread
+  * Moved to CryptoPP 7.0.0 for SM3, SM4, Poly1305, ARIA encryption engines
+  * Documentation updates
 
 * New in 2.3.2 (Sun Oct 21 19:02:35 2018 -0700)
 
--- Support for all IKEv2 encryption algorithms (CHACHA20, AEAD, Camellia)
--- Support for all IKEv2 Diffie-Hellman curves (including 22855 and 485)
--- Support for multiple IPsec connections
+  * Support for all IKEv2 encryption algorithms (CHACHA20, AEAD, Camellia)
+  * Support for all IKEv2 Diffie-Hellman curves (including 22855 and 485)
+  * Support for multiple IPsec connections
 
 * New in 2.3.0 (Sun Oct 7 17:59:27 2018 -0700)
 
--- IKE configuration parser working
--- Updated DH parameters with all RFC value except group 31 and 32
--- Fixed gateway lookup of HWADDR
--- Updated to include Ethernet
--- Discard of packet not for this interface
+  * IKE configuration parser working
+  * Updated DH parameters with all RFC value except group 31 and 32
+  * Fixed gateway lookup of HWADDR
+  * Updated to include Ethernet
+  * Discard of packet not for this interface
 
 * New in 2.2.0 (Fri Sep 14 22:36:21 2018 -0700)
 
--- Split SKEYSEED and Key material generation for IPsec and IKEv2
--- Valgrind clean ring and direct drivers
--- IKEv2 initial checkin
+  * Split SKEYSEED and Key material generation for IPsec and IKEv2
+  * Valgrind clean ring and direct drivers
+  * IKEv2 initial checkin
 
 * New in 2.1.0 (Fri Aug 31 22:38:31 2018 -0700)
 
--- Added ring driver
--- Added direct driver
--- Added driver
--- Added function to interpret status word as a string for printing
--- Fixed several testbench bugs
--- Logging levels now configuration from command line with --loglvl
--- Valgrind is completely clean, fixed the remaining issue that left 168 bytes of data in use at simulation end
+  * Added ring driver
+  * Added direct driver
+  * Added driver
+  * Added function to interpret status word as a string for printing
+  * Fixed several testbench bugs
+  * Logging levels now configuration from command line with --loglvl
+  * Valgrind is completely clean, fixed the remaining issue that left 168 bytes of data in use at simulation end
 
 * New in 2.0.0 (Tue May 15 01:41:28 2018 -0700)
 
--- Fixed support for SEC/CAAM with new security associations
--- Added new classes and base clase jsecass for security associations
--- Moved to tinyxml2 v6.2.0
--- Removed memory leaks
--- Updated all files and testbenches to use new security associations
--- Fedora28 libraries
--- Re-qualified code
+  * Fixed support for SEC/CAAM with new security associations
+  * Added new classes and base clase jsecass for security associations
+  * Moved to tinyxml2 v6.2.0
+  * Removed memory leaks
+  * Updated all files and testbenches to use new security associations
+  * Fedora28 libraries
+  * Re-qualified code
 
 * New in 1.5.0 (Sat Mar 31 20:57:46 2018 -0700)
 
--- Added namespaces for ProtocolPP, InterfacePP, DriverPP, and PlatformPP
+  * Added namespaces for ProtocolPP, InterfacePP, DriverPP, and PlatformPP
 
 * New in 1.4.2 (Wed Mar 14 19:18:10 2018 -0700)
 
--- Updated driver
--- Static link of libgcc and libstdc++ in libraries
+  * Updated driver
+  * Static link of libgcc and libstdc++ in libraries
 
 * New in 1.4.1 (Mon Feb 12 00:52:10 2018 -0700)
 
--- Moved to Crypto++ 6.0
--- Stripped out dead code
--- Added in template specialization
+  * Moved to Crypto++ 6.0
+  * Stripped out dead code
+  * Added in template specialization
 
 * New in 1.4.0 (Sun Jan 28 21:12:41 2018 -0700)
 
--- Fixed several parser and randomization issues
--- Fixed overrun issue in responder
--- updated copyright for 2018 and second copyright
--- added outlen to ringin API
--- Fixed RLC control plane bug
--- Fixes for Windows compile to configuration files VC++
--- Added Phanton colorization theme
+  * Fixed several parser and randomization issues
+  * Fixed overrun issue in responder
+  * updated copyright for 2018 and second copyright
+  * added outlen to ringin API
+  * Fixed RLC control plane bug
+  * Fixes for Windows compile to configuration files VC++
+  * Added Phanton colorization theme
 
 * New in 1.3.1 (Sat Dec 23 11:10:19 2017 -0700)
 
--- Updated copyright with newly granted copyright reference number
--- Added mudsums for all files
+  * Updated copyright with newly granted copyright reference number
+  * Added mudsums for all files
 
 * New in 1.3.0 (Thu Nov 30 00:08:31 2017 -0700)
 
--- Fixed next header processing for IPv6 in IP and IPsec
--- Fixed some randomization issues that were affecting reproduction of simulations
--- Generation of random extension headers for IPv6 when respective NH is selected (IPv6_Frag, IPv6_Route, IPv6_Opts, Jumbogram)
--- Found and fixed segmentation faults related to next header generation and processing
--- Fixed issue with status not being updated when generating descriptors
--- Fixed <data> nodes
+  * Fixed next header processing for IPv6 in IP and IPsec
+  * Fixed some randomization issues that were affecting reproduction of simulations
+  * Generation of random extension headers for IPv6 when respective NH is selected (IPv6_Frag, IPv6_Route, IPv6_Opts, Jumbogram)
+  * Found and fixed segmentation faults related to next header generation and processing
+  * Fixed issue with status not being updated when generating descriptors
+  * Fixed <data> nodes
 
 * New in 1.2.7 (Fri Oct 20:38:49 2017 -0700)
 
--- Removed --native compile option, re-enabled SFMT randomizer
--- Fixed memory leaks in the library, still looking in testbench
--- Fixed parser bug when reading *.protpp files for SRTP
+  * Removed --native compile option, re-enabled SFMT randomizer
+  * Fixed memory leaks in the library, still looking in testbench
+  * Fixed parser bug when reading *.protpp files for SRTP
 
 * New in 1.2.6 (Sat Sep 16 19:56:44 2017 -0700)
 
--- Fixed PRF generation issues for AES-CCM
--- Remove shared objects
+  * Fixed PRF generation issues for AES-CCM
+  * Remove shared objects
 
 * New in 1.2.5 (Thu Sep 14 22:28:19 2017 -0700)
 
--- Added #define for SFMT_MODE to enable use of SFMT Mersenne Twister otherwise uses previous randomizer
+  * Added #define for SFMT_MODE to enable use of SFMT Mersenne Twister otherwise uses previous randomizer
 
 * New in 1.2.4 (Thu Sep 14 20:51:00 2017 -0700)
 
--- fixed makefile to build correctly with given repository structure
+  * fixed makefile to build correctly with given repository structure
 
 * New in 1.2.3 (Sat Aug 29 11:49:09 2017 -0700)
 
--- fixed formulas in doxygen
--- added back PRF usage for TLS and IPsec in W.A.S.P
+  * fixed formulas in doxygen
+  * added back PRF usage for TLS and IPsec in W.A.S.P
 
 * New in 1.2.2 (Sat Jul 29 16:15:55 2017 -0700)
 
--- Port to Windows VC++ 15
--- Updated header files
--- Linux debug for Windows port
+  * Port to Windows VC++ 15
+  * Updated header files
+  * Linux debug for Windows port
 
 * New in 1.2.1 (Tue Jul 25 19:25:10 2017 -0700)
 
--- Changed RDSEED to RDRAND in hardware random number generation
+  * Changed RDSEED to RDRAND in hardware random number generation
 
 * New in 1.2.0 (Sun Jul 23 17:37:04 2017 -0700)
 
--- Support for IKEPRFv1, IKEPRFv2, TLSPRF1.0, TLSPRF1.2 as static functions in the jipsec and jtls classes
--- Added try/catch blocks in jmodes when calling encryption engines
--- Added generation and usage of PRF material for IPsec and TLS in the W.A.S.P randomizer
+  * Support for IKEPRFv1, IKEPRFv2, TLSPRF1.0, TLSPRF1.2 as static functions in the jipsec and jtls classes
+  * Added try/catch blocks in jmodes when calling encryption engines
+  * Added generation and usage of PRF material for IPsec and TLS in the W.A.S.P randomizer
 
 * New in 1.1.1 (Sat Jul 22 03:12:49 2017 -0700)
 
--- updated jrand for SFMT usage
+  * updated jrand for SFMT usage
 
 * New in 1.1.0 (Sat Jul 22 03:12:49 2017 -0700)
 
--- SIMD based random number generation using SFMT
--- New build system to support versioning
+  * SIMD based random number generation using SFMT
+  * New build system to support versioning
 
 * New in 1.0.0 (Sat Jul 15 11:43:00 2017 -0700)
 
--- First production release of Protocolpp(Protocol++)
+  * First production release of Protocolpp(Protocol++)
 
 * New in beta-2.5 (SUn Jul  2 22:38:00 2017 -0700)
 
--- Added SEC updates
--- Doxygen Updates
+  * Added SEC updates
+  * Doxygen Updates
 
 * New in beta-2.3 (Wed Jun 28 20:55:27 2017 -0700)
 
--- Updates for the SEC platform
--- Updated examples
+  * Updates for the SEC platform
+  * Updated examples
 
 * New in beta-2.1 (Mon Jun 19 23:14:25 2017 -0700)
 
--- Doxygen updates
--- Removed submodules
+  * Doxygen updates
+  * Removed submodules
 
 * New in beta-2.0 (Wed Jun 14 11:12:30 2017 -0700)
 
--- Print packet name when there's an error
--- Fixed randomizer to randomize on each pass
--- Fixed IP/IPSec decap with extension headers
+  * Print packet name when there's an error
+  * Fixed randomizer to randomize on each pass
+  * Fixed IP/IPSec decap with extension headers
 
 * New in beta-1.0 (Sat Jun 10 12:30:08 2017 -0700)
 
--- GitHub site secured
--- First working release for Protocolpp(Protocol++) with testbench, all protocols,
-   all cipher, all algorithms present and working on GitHub
--- Previously for sale on www.protocopp.com
+  * GitHub site secured
+  * First working release for Protocolpp(Protocol++) with testbench, all protocols, all cipher, all algorithms present and working on GitHub
+  * Previously for sale on www.protocopp.com
 
 * www.protocolpp.com goes LIVE! (Sat May 6 10:47:35 2017 -0700)
 
--- Source code for sale
--- Documentation Available
--- Examples Available
--- Testbench Available
--- Able to run regressions with parser, testbench, responders
--- Documented above
+  * Source code for sale
+  * Documentation Available
+  * Examples Available
+  * Testbench Available
+  * Able to run regressions with parser, testbench, responders
+  * Documented above
 
 * Working testbench (Mon Apr 23 04:02:03 2017 -0700)
 
--- Fully working testbench
--- Screenshots taken with date and time
--- Documented above
+  * Fully working testbench
+  * Screenshots taken with date and time
+  * Documented above
 
 * Protocol++ genesis (Sun Feb 8 2015 -0700)
 
--- jrand.h first file created with the IDE (hence the date, see file above)
--- Documented above
+  * jrand.h first file created with the IDE (hence the date, see file above)
+  * Documented above
 
 * Additions
 
--- Added CPPUNIT tests as examples of usage
--- Added test executable to run CPPUNIT tests
--- QorIQ and Layerscape support has been added
--- Enabled input and output ring address pass in
--- removed responder for SEC to allow connection to device/testbench
+  * Added CPPUNIT tests as examples of usage
+  * Added test executable to run CPPUNIT tests
+  * QorIQ and Layerscape support has been added
+  * Enabled input and output ring address pass in
+  * removed responder for SEC to allow connection to device/testbench
 
 * Fixes
 
--- dynamic memory tracking in the testbench
--- Fixed TLS random IV postprocessing
--- minor code clean up
--- Fixed randomization when <protocol> is present to randomize prot and dir with each pass
--- Fixed testbench to print packet name when an error occurs
--- Doxygen updates
--- Added CYGWIN compiled libraries
--- Fixed "free" bug
+  * dynamic memory tracking in the testbench
+  * Fixed TLS random IV postprocessing
+  * minor code clean up
+  * Fixed randomization when <protocol> is present to randomize prot and dir with each pass
+  * Fixed testbench to print packet name when an error occurs
+  * Doxygen updates
+  * Added CYGWIN compiled libraries
+  * Fixed "free" bug
 
 * Outstanding Issues
 
--- Arbitration of threads in execution units
--- Realignment of packets in execution units when finished out-of-order
--- See "Upcoming Features" on www.protocolpp.com for additional information
-   -- AES-XTS mode
-   -- Reordering of output from jexec
-   -- Multiple jexec units per responder
-   -- Support for KEK protection for sensitive information (Keys, IV, Salt)
+  * Arbitration of threads in execution units
+  * Realignment of packets in execution units when finished out-of-order
+  * See "Upcoming Features" on www.protocolpp.com for additional information
+    * AES-XTS mode
+    * Reordering of output from jexec
+    * Multiple jexec units per responder
+    * Support for KEK protection for sensitive information (Keys, IV, Salt)
