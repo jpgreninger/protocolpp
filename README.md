@@ -411,16 +411,16 @@ For W.A.S.P usage, see the doxygen section
 
 * www.protocolpp.com goes LIVE! (Sat May 6 10:47:35 2017 -0700)
 
-  * Source code for sale
+  * <B>Source code for sale</B>
   * Documentation Available
   * Examples Available
   * Testbench Available
-  * Able to run regressions with parser, testbench, responders
+  * <B>Able to run regressions with parser, testbench, responders</B>
   * Documented above
 
 * Working testbench (Mon Apr 23 04:02:03 2017 -0700)
 
-  * Fully working testbench
+  * <B>Fully working testbench</B>
   * Screenshots taken with date and time
   * Documented above
 
