@@ -1,4 +1,4 @@
-# protocolpp(protocol++) 3.0.0
+# Protocolpp(Protocol++) 3.0.0
 Networking and Encryption Library, Testbench, and Drivers
 
 Only www.protocolpp.com has the rights to update, modify,
