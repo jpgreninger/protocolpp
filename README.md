@@ -191,7 +191,7 @@ For W.A.S.P usage, see the doxygen section
   * Used new classes in IKEv2 to streamline code
   * Updated documentation to fix math symbols and equations using LaTeX math
   * Removed obsolete ciphers, authentication, dh curves from IKEv2
-  * Generated PDF from all documentation (901 pages)
+  * Generated PDF from all documentation (1007 pages)
   * Updated schema to include restrictions
 
 * New in 2.5.2 (Sun Jan 20 21:30:58 2019 -0700)
