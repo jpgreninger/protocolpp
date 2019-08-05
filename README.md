@@ -426,8 +426,8 @@ For W.A.S.P usage, see the doxygen section
   * <B>Fully working testbench</B>
   * Screenshots taken with date and time
   * Documented above
-  * https://www.protocolpp.com/demonstration-videos/MyChannel/18
-  * https://www.protocolpp.com/demonstration-videos/RandomIPsec
+  * https://www.protocolpp.com/demonstration-videos/MyChannel/18?wix-vod-video-id=95316505fa0e4afc9b1d18e311105d84&wix-vod-comp-id=comp-j2ddnt1i#
+  * https://www.protocolpp.com/demonstration-videos/MyChannel/18?wix-vod-video-id=0758d7253d8f4a58b68d14a9e03d043a&wix-vod-comp-id=comp-j2ddnt1i#
 
 * Protocol++ genesis (Sun Feb 8 2015 -0700)
 
