@@ -426,7 +426,7 @@ For W.A.S.P usage, see the doxygen section
   * <B>Fully working testbench</B>
   * Screenshots taken with date and time
   * Documented above
-  * https://www.protocolpp.com/demonstration-videos/RandomAllProtocol
+  * https://www.protocolpp.com/demonstration-videos/MyChannel/18
   * https://www.protocolpp.com/demonstration-videos/RandomIPsec
 
 * Protocol++ genesis (Sun Feb 8 2015 -0700)
