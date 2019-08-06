@@ -412,6 +412,8 @@ For W.A.S.P usage, see the doxygen section
   * First working release for Protocolpp(Protocol++) with testbench, all protocols, all cipher, all algorithms present and working on GitHub
   * Previously for sale on www.protocopp.com
 
+* Intel interview (Fri May 19)
+
 * www.protocolpp.com goes LIVE! (Sat May 6 10:47:35 2017 -0700)
 
   * <B>Source code for sale</B>
