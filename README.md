@@ -1,4 +1,4 @@
-# Protocolpp(Protocol++) 3.0.0
+# Protocolpp(Protocol++) 3.0.1
 Networking and Encryption Library, Testbench, and Drivers
 
 Only www.protocolpp.com has the rights to update, modify,
@@ -44,7 +44,7 @@ protocolpp - Executable of the full set of protocols, ciphers, testbench,
 
 libprotocolpp.a - Static library of the protocolpp.h interface, wasp.h, and ciphers.h
 
-libprotocolpp.so.3.0.0 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
+libprotocolpp.so.3.0.1 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
 
 winprot++.lib - Static library for Windows compiled under VC++ 19
 
