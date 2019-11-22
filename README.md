@@ -1,4 +1,4 @@
-# Protocolpp(Protocol++) 3.0.1
+# Protocolpp(Protocol++) 4.0.0
 Networking and Encryption Library, Testbench, and Drivers
 
 Only www.protocolpp.com has the rights to update, modify,
@@ -176,6 +176,10 @@ Examples:
 For W.A.S.P usage, see the doxygen section
 
 * See www.protocolpp.com for further updates, information and licensing
+
+* New in 4.0.0
+  
+  * See www.protocolpp.com/upcoming-features
 
 * New in 2.5.5
 
