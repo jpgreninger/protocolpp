@@ -26,6 +26,7 @@ Issued copyrights
 * Protocol++(Protocolpp) 1.2.7 - TXu002066632
 * Protocol++(Protocolpp) 1.4.0 - TXu002082674
 * Protocol++(Protocolpp) 2.0.0 - TXu002097880
+* Protocol++(Protocolpp) 3.0.1 - TXu002169236
 * JPGNetworks - VAu001334497
 
 Trademarks
