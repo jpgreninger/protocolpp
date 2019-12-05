@@ -181,6 +181,10 @@ For W.A.S.P usage, see the doxygen section
 * New in 4.0.0
   
   * See www.protocolpp.com/upcoming-features
+  
+* New in 3.0.1
+  
+  * See www.protocolpp.com/upcoming-features
 
 * New in 2.5.5
 
