@@ -1,4 +1,4 @@
-# Protocolpp(Protocol++) 4.0.0
+# Protocolpp(Protocol++) 4.0.0 - RC1 available at www.protocolpp.com
 Networking and Encryption Library, Testbench, and Drivers
 
 Only www.protocolpp.com has the rights to update, modify,
