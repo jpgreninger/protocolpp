@@ -1,4 +1,4 @@
-# Protocolpp(Protocol++) 4.0.0 - release now available at www.protocolpp.com
+# Protocolpp(Protocol++) 4.0.0 - release now available at www.protocolpp.com/shop
 Networking and Encryption Library, Testbench, and Drivers
 
 Only www.protocolpp.com has the rights to update, modify,
