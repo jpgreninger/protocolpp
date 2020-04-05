@@ -1,4 +1,4 @@
-# Protocolpp(Protocol++) 4.0.0 - release now available at www.protocolpp.com/shop
+# Protocolpp(Protocol++) 4.1.0 - release now available at www.protocolpp.com/shop
 Networking and Encryption Library, Testbench, and Drivers
 
 Only www.protocolpp.com has the rights to update, modify,
@@ -27,6 +27,7 @@ Issued copyrights
 * Protocol++(Protocolpp) 1.4.0 - TXu002082674
 * Protocol++(Protocolpp) 2.0.0 - TXu002097880
 * Protocol++(Protocolpp) 3.0.1 - TXu002169236
+* Protocol++(Protocolpp) 4.0.0 - TXu002182417
 * JPGNetworks - VAu001334497
 
 Trademarks
@@ -45,7 +46,7 @@ protocolpp - Executable of the full set of protocols, ciphers, testbench,
 
 libprotocolpp.a - Static library of the protocolpp.h interface, wasp.h, and ciphers.h
 
-libprotocolpp.so.4.0.0 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
+libprotocolpp.so.4.1.0 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
 
 winprot++.lib - Static library for Windows compiled under VC++ 19
 
@@ -178,6 +179,10 @@ For W.A.S.P usage, see the doxygen section
 
 * See www.protocolpp.com for further updates, information and licensing
 
+* New in 4.1.0
+  
+  * See www.protocolpp.com/upcoming-features
+  
 * New in 4.0.0
   
   * See www.protocolpp.com/upcoming-features
