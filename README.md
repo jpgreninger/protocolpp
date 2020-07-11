@@ -1,4 +1,4 @@
-# Protocolpp(Protocol++) 4.1.0 - release now available at www.protocolpp.com/shop
+# Protocolpp(Protocol++) 5.0.0 - release now available at www.protocolpp.com/shop
 Networking and Encryption Library, Testbench, and Drivers
 
 Only www.protocolpp.com has the rights to update, modify,
@@ -46,7 +46,7 @@ protocolpp - Executable of the full set of protocols, ciphers, testbench,
 
 libprotocolpp.a - Static library of the protocolpp.h interface, wasp.h, and ciphers.h
 
-libprotocolpp.so.4.1.0 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
+libprotocolpp.so.5.0.0 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
 
 winprot++.lib - Static library for Windows compiled under VC++ 19
 
@@ -178,6 +178,10 @@ Examples:
 For W.A.S.P usage, see the doxygen section
 
 * See www.protocolpp.com for further updates, information and licensing
+
+* New in 5.0.0
+
+  * See www.protocolpp.com/upcoming-features
 
 * New in 4.1.0
   
