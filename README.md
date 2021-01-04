@@ -184,6 +184,9 @@ For W.A.S.P usage, see the doxygen section
 * See the original video April 27, 2017 1.5 months before Intel ever called
   * https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=9ae26d2c476d48bc854100acb4f8b447&wix-vod-comp-id=comp-j2ddnt1i
   
+* See the Beta 2.0.0 video May 7, 2017 before Intel interview on May 19, 2017
+  * https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=e5551d0b1134404699de66194c12608b&wix-vod-comp-id=comp-j2ddnt1i
+  
 * New in 5.1.0 - Released November 23, 2020
   * TLS1.3 support
   * XMSS Signature support
