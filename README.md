@@ -189,6 +189,7 @@ For W.A.S.P usage, see the doxygen section
   * XMSS Signature support
   * TCP support for IKEv2
   * offline key protection (already supported in conversion to CAAM/SEC)
+  * See the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=5ee30d7c8f2d457dad7c4fe33d3d97f1&wix-vod-comp-id=comp-j2ddnt1i
   * See www.protocolpp.com/upcoming-features
 
 * New in 5.0.0 - Released June 5, 2020
