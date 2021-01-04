@@ -181,14 +181,14 @@ For W.A.S.P usage, see the doxygen section
 
 * See www.protocolpp.com for further updates, information and licensing
 
-* New in 5.1.0
+* New in 5.1.0 - Released November 23, 2020
   * TLS1.3 support
   * XMSS Signature support
   * TCP support for IKEv2
   * offline key protection (already supported in conversion to CAAM/SEC)
   * See www.protocolpp.com/upcoming-features
 
-* New in 5.0.0
+* New in 5.0.0 - Released June 5, 2020
   * Multiple execution units
   * Multiple threads per execution unit
   * Out of order execution support
@@ -197,13 +197,13 @@ For W.A.S.P usage, see the doxygen section
   * See the release video
   * See www.protocolpp.com/upcoming-features
 
-* New in 4.1.0
+* New in 4.1.0 - Released March 25, 2020
   * Streamlined testbench configuration
   * Support for random anti-replay windows with generated packets for LATE, REPLAY, SHIFT, WINDOW, NORMAL (INCREMENT), ROLLOVER, ROLLUNDER on all protocols that use a replay window (IPsec, TLS, Wifi, WiMax, SRTP, MACsec, LTE)
   * See the release video
   * See www.protocolpp.com/upcoming-features
   
-* New in 4.0.0
+* New in 4.0.0 - Released January 1, 2020
   * Run encryption and authentication algorithms stand alone (added 4.0.0)
   * Support for general CRC (other than CRC32-IEEE) (added 4.0.0)
   * Support for Serpent Block Cipher (added 4.0.0)
