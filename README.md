@@ -182,23 +182,35 @@ For W.A.S.P usage, see the doxygen section
 * See www.protocolpp.com for further updates, information and licensing
 
 * New in 5.1.0
-
+  * TLS1.3 support
+  * XMSS Signature support
+  * TCP support for IKEv2
+  * offline key protection (already supported in conversion to CAAM/SEC)
   * See www.protocolpp.com/upcoming-features
 
-* New in 5.0.1
-
-  * See www.protocolpp.com/upcoming-features
-  
 * New in 5.0.0
-
+  * Multiple execution units
+  * Multiple threads per execution unit
+  * Out of order execution support
+  * support for same stream over multiple execution units with packet reordering
+  * Run PKI function stand alone in test bench (RSA, DSA, ECDSA, DH, IKEPRF, TLSPRF)
+  * See the release video
   * See www.protocolpp.com/upcoming-features
 
 * New in 4.1.0
-  
+  * Streamlined testbench configuration
+  * Support for random anti-replay windows with generated packets for LATE, REPLAY, SHIFT, WINDOW, NORMAL (INCREMENT), ROLLOVER, ROLLUNDER on all protocols that use a replay window (IPsec, TLS, Wifi, WiMax, SRTP, MACsec, LTE)
+  * See the release video
   * See www.protocolpp.com/upcoming-features
   
 * New in 4.0.0
-  
+  * Run encryption and authentication algorithms stand alone (added 4.0.0)
+  * Support for general CRC (other than CRC32-IEEE) (added 4.0.0)
+  * Support for Serpent Block Cipher (added 4.0.0)
+  * WPA3 support (added 3.0.1)
+  * Support for additional compilers and versions of compilers (added 2.0.0)
+  * Multiple connection and configuration support IKEv2 (added 4.0.0)
+  * See the release video
   * See www.protocolpp.com/upcoming-features
   
 * New in 3.0.1
