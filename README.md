@@ -204,7 +204,7 @@ For W.A.S.P usage, see the doxygen section
 * New in 4.1.0 - Released March 25, 2020
   * Streamlined testbench configuration
   * Support for random anti-replay windows with generated packets for LATE, REPLAY, SHIFT, WINDOW, NORMAL (INCREMENT), ROLLOVER, ROLLUNDER on all protocols that use a replay window (IPsec, TLS, Wifi, WiMax, SRTP, MACsec, LTE)
-  * See the release video
+  * See the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=dd222ac9360448778bd7caefa318c6f5&wix-vod-comp-id=comp-j2ddnt1i
   * See www.protocolpp.com/upcoming-features
   
 * New in 4.0.0 - Released January 1, 2020
