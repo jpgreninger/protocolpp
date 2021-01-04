@@ -198,7 +198,7 @@ For W.A.S.P usage, see the doxygen section
   * Out of order execution support
   * support for same stream over multiple execution units with packet reordering
   * Run PKI function stand alone in test bench (RSA, DSA, ECDSA, DH, IKEPRF, TLSPRF)
-  * See the release video
+  * See the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=d963b93355974214ba50db1743bb78f4&wix-vod-comp-id=comp-j2ddnt1i
   * See www.protocolpp.com/upcoming-features
 
 * New in 4.1.0 - Released March 25, 2020
