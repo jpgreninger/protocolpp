@@ -218,7 +218,7 @@ For W.A.S.P usage, see the doxygen section
   * See www.protocolpp.com/upcoming-features
   
 * New in 3.0.1
-  
+  * See the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=f8fd1170d06c47e688623ca4ff3a980e&wix-vod-comp-id=comp-j2ddnt1i
   * See www.protocolpp.com/upcoming-features
 
 * New in 2.5.5
