@@ -189,6 +189,9 @@ For W.A.S.P usage, see the doxygen section
 
 * New in 5.1.1 - Released January 10, 2021
   * Updated with Crypto++ 8.4.0
+  * Bug fixes
+  * See the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=1ca32dd33cba480284a81bfebeb342c9&wix-vod-comp-id=comp-j2ddnt1i
+  * See www.protocolpp.com/upcoming-features
   
 * New in 5.1.0 - Released November 23, 2020
   * TLS1.3 support
