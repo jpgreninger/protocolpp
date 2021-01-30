@@ -132,7 +132,7 @@ To install Protocol++, the cryptopp library must first be compiled and installed
 
 www.cryptopp.com
 
-/code
+```
 [jgreninger@localhost protocol++]$ ./protocolpp --help
 ******************************************************
 ** Welcome to JPGNetworks, LLC Copyright 2017-2021  **
@@ -158,7 +158,7 @@ Examples:
   protocolpp --cfg myconfig.testpp --log filelog
   protocolpp --seed 2435678456 --cfg myconfig.testpp --log filelog --out ./output
   protocolpp --cfg myconfig.testpp --log filelog --out ./output
-/endcode  
+```
 
 For W.A.S.P usage, see the doxygen section
 
