@@ -132,23 +132,32 @@ To install Protocol++, the cryptopp library must first be compiled and installed
 
 www.cryptopp.com
 
+[jgreninger@localhost protocol++]$ ./protocolpp --help
+******************************************************
+** Welcome to JPGNetworks, LLC Copyright 2017-2021  **
+**                                                  **
+** Thank You for purchasing Protocol++(ProtocolPP)  **
+** the encryption, authentication, and protocol     **
+** library with documentation, drivers, and         **
+** testbench                                        **
+******************************************************
+
 USAGE: protocolpp [options]
 
 Options:
-
-  --help, -h   Print usage and exit
-  
-  --cfg     testbench configuration file (*.testpp)
-  
-  --log    logfile
-  
-  --out    Output
+  --help, -h Print usage and exit
+  --cfg, -c  Configuration file (*.testpp)
+  --log, -l  Path to output simulation log
+  --seed, -s Seed for reproducibility
+  --out, -o  Output directory (default: ./debug)
 
 Examples:
-
-  protocolpp --cfg ipsec.testpp --log debug.log
-  protocolpp -i file1.protpp
-  protocolpp --cfg ipsec.testpp --log debug.log --out ipsec
+  protocolpp --cfg myconfig.testpp
+  protocolpp --seed 1234567890 --cfg myconfig.testpp --log filelog
+  protocolpp --cfg myconfig.testpp --log filelog
+  protocolpp --seed 2435678456 --cfg myconfig.testpp --log filelog --out ./output
+  protocolpp --cfg myconfig.testpp --log filelog --out ./output
+  
 
 For W.A.S.P usage, see the doxygen section
 
