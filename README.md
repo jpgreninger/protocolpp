@@ -48,7 +48,7 @@ protocolpp - Executable of the full set of protocols, ciphers, testbench,
 
 libprotocolpp.a - Static library of the protocolpp.h interface, wasp.h, and ciphers.h
 
-libprotocolpp.so.5.1.0 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
+libprotocolpp.so.5.1.1 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
 
 winprot++.lib - Static library for Windows compiled under VC++ 19
 
@@ -138,44 +138,17 @@ Options:
 
   --help, -h   Print usage and exit
   
-  --in, -i     Input file (either *.ppp or *.protopp)
+  --cfg     testbench configuration file (*.testpp)
   
-  --out, -o    Output file (*.protpp)
+  --log    logfile
   
-  --seed, -s   Seed for reproducibility
-  
-  --log, -l    Path to output simulation log
-  
-  --size, -z   Size of the rings in entries
-  
-  --resp, -r   Number of responders
-  
-  --thread, -t Number of threads per responder
-  
-  --plat, -p   Platform to run (WASPLAT or SECPLAT)
-  
-  --endian, -e Endiness of the platform (BIG or LITTLE)
-  
-  --ptr, -q    Size of address pointers in bytes (4 or 8 default=8)
-  
-  --sgt, -g    Size of SG entries in bytes (8 or 16 default=16)
-  
-  --irg, -n    Address of the input ring
-  
-  --org, -z    Address of the output ring
+  --out    Output
 
 Examples:
 
-  protocolpp --in file1.ppp
+  protocolpp --cfg ipsec.testpp --log debug.log
   protocolpp -i file1.protpp
-  protocolpp --in file1.ppp --out file2.protpp
-  protocolpp --seed 1234567890 -i file1.protpp
-  protocolpp --seed 1234567890 -i file1.ppp
-  protocolpp -i file1.ppp -l filelog -z 50
-  protocolpp --in file2.protpp --log filelog -r 2 -z 40
-  protocolpp --seed 1234567890 --in file2.protpp --log filelog --resp 2
-  protocolpp --seed 1234567890 --plat SECPLAT --in file2.protpp --log filelog
-  protocolpp --seed 1234567890 -i file1.ppp -l filelog
+  protocolpp --cfg ipsec.testpp --log debug.log --out ipsec
 
 For W.A.S.P usage, see the doxygen section
 
