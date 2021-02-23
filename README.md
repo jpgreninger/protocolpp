@@ -1,4 +1,4 @@
-# Protocolpp(Protocol++) 5.1.1 - release now available at www.protocolpp.com/shop
+# Protocolpp(Protocol++) 5.1.2 - release now available at www.protocolpp.com/shop
 Networking and Encryption Library, Testbench, and Drivers
 
 Only www.protocolpp.com has the rights to update, modify,
@@ -48,7 +48,7 @@ protocolpp - Executable of the full set of protocols, ciphers, testbench,
 
 libprotocolpp.a - Static library of the protocolpp.h interface, wasp.h, and ciphers.h
 
-libprotocolpp.so.5.1.1 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
+libprotocolpp.so.5.1.2 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
 
 winprot++.lib - Static library for Windows compiled under VC++ 19
 
@@ -170,6 +170,12 @@ For W.A.S.P usage, see the doxygen section
 * See the Beta 2.0.0 video May 7, 2017 before Intel interview on May 19, 2017
   * https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=e5551d0b1134404699de66194c12608b&wix-vod-comp-id=comp-j2ddnt1i
 
+* New in 5.1.2 - Released February 22, 2021
+  * Updates to cppunit tests
+  * Updated coverage and documentation
+  * version bump
+  * Bug fixes
+  
 * New in 5.1.1 - Released January 10, 2021
   * Updated with Crypto++ 8.4.0
   * Bug fixes
