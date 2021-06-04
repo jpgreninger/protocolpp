@@ -171,9 +171,6 @@ For W.A.S.P usage, see the doxygen section
   * https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=e5551d0b1134404699de66194c12608b&wix-vod-comp-id=comp-j2ddnt1i
 
 * New in 5.2.0 - Released July 1, 2021
-  * ------------------------
-  * ----------------------------------
-  * -----------
   * See the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=33eb621b03b54637958b0542b3b48d30&wix-vod-comp-id=comp-j2ddnt1i
   
 * New in 5.1.2 - Released February 22, 2021
