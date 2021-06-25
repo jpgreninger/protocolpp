@@ -183,8 +183,6 @@ For W.A.S.P usage, see the doxygen section
   * Updated IKEv2
   * Fixed testbench to run as many responders as wanted (3, 10, 25, and 50 tested) https://www.protocolpp.com/upcoming-features
   * See generated multi-responders here Updated coverage
-
-Updated documentation
   * Updated RSA, DSA, ECDSA to update_status for testbench
   * Separated SEC and non-SEC testbench
   * Updated documentation
