@@ -173,7 +173,7 @@ For W.A.S.P usage, see the doxygen section
 * New in 5.2.1 - Upcoming release September 24, 2021
   * See the upcoming release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=9c4d5e85f4ac44959fc5320973ffb34e&wix-vod-comp-id=comp-j2ddnt1i
 
-* New in 5.2.0 - Released July 1, 2021
+* New in 5.2.0 - Released June 23, 2021
   * Updated coverage
   * Added unit tests
   * Moved to Crypto++ 8.5.0
