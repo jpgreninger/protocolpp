@@ -187,12 +187,14 @@ For W.A.S.P usage, see the doxygen section
   * Separated SEC and non-SEC testbench
   * Updated documentation
   * See the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=33eb621b03b54637958b0542b3b48d30&wix-vod-comp-id=comp-j2ddnt1i
+  * See www.protocolpp.com/upcoming-features
   
 * New in 5.1.2 - Released February 22, 2021
   * Updates to cppunit tests
   * Updated coverage and documentation
   * version bump
   * Bug fixes
+  * See www.protocolpp/upcoming-features
   
 * New in 5.1.1 - Released January 10, 2021
   * Updated with Crypto++ 8.4.0
