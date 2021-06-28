@@ -182,12 +182,11 @@ For W.A.S.P usage, see the doxygen section
   * Updated LMS post-quantum signature scheme to run in testbench
   * Updated IKEv2
   * Fixed testbench to run as many responders as wanted (3, 10, 25, and 50 tested) https://www.protocolpp.com/upcoming-features
-  * See generated multi-responders here Updated coverage
   * Updated RSA, DSA, ECDSA to update_status for testbench
   * Separated SEC and non-SEC testbench
   * Updated documentation
   * See the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=33eb621b03b54637958b0542b3b48d30&wix-vod-comp-id=comp-j2ddnt1i
-  * See www.protocolpp.com/upcoming-features
+  * See www.protocolpp.com/upcoming-features for multi-responder files and results
   
 * New in 5.1.2 - Released February 22, 2021
   * Updates to cppunit tests
