@@ -1,4 +1,4 @@
-# Protocolpp(Protocol++) 5.2.0 - release now available at www.protocolpp.com/shop
+# Protocolpp(Protocol++) 5.2.1 - upcoming release September 24, 2021 at www.protocolpp.com/shop
 Networking and Encryption Library, Testbench, and Drivers
 
 Only www.protocolpp.com has the rights to update, modify,
