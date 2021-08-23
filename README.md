@@ -31,7 +31,8 @@ Issued copyrights
 * Protocol++(Protocolpp) 5.0.0 - TXu002219402
 * Protocol++(Protocolpp) 5.2.1 - TXu002272076
 * JPGNetworks - VAu001334497
-* Protocol++ 4.0.0 (Canada) - 1168370 (v4.0.0 and v5.0.0)
+* Protocol++(Protocolpp) 4.0.0 (Canada) - 1168370
+* Protocolpp(Protocol++) 5.0.0 (Canada) - 1174890
 
 Trademarks
 
