@@ -37,6 +37,8 @@ Issued copyrights
 Trademarks
 
 * JPGNetworks - 87708008
+* protocolpp - 90634294
+* protocol++ - 90634339
 
 protocolpp - Executable of the full set of protocols, ciphers, testbench,
              and responders to provide a command line interface for
