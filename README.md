@@ -4,8 +4,8 @@ Networking and Encryption Library, Testbench, and Drivers
 Only www.protocolpp.com has the rights to update, modify,
 license, distribute, sell, or make copies of Protocolpp(Protocol++).
 
-Evaluation licenses that last 60-days are available from the website free
-of charge
+Evaluation licenses that last 30-days are available from the website free
+of charge at https://www.protocolpp.com/about-1
 
 Full licenses last a year and include support and updates. Latest documentation found only in licensed products
 
