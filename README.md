@@ -175,7 +175,36 @@ For W.A.S.P usage, see the doxygen section
   * https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=e5551d0b1134404699de66194c12608b&wix-vod-comp-id=comp-j2ddnt1i
 
 * New in 5.2.1 - Upcoming release September 24, 2021
-  * See the upcoming release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=9c4d5e85f4ac44959fc5320973ffb34e&wix-vod-comp-id=comp-j2ddnt1i
+  * Bumped version
+  * Added new utilities
+  * Separated TLSv13 from legacy
+  * Updated LMS and XMSS to run in testbench
+  * Testbench now runs at WARN level rather than INFO
+  * Added unit tests for ECDSA, DSA, EdDSA
+  * Fixed BER decoding issues for PKI keys
+  * Key validation added for signature methods
+  * Fixed some initialization lists that had missing variables
+  * Fixed W.A.S.P for cases where <security> or <protocol> are not found
+  * Many fixes from CLang-Tidy code analysis
+  * Added feature to crypto scrub IVs, Keys, and Salt in real time
+  * Added jumbogram unit tests for IPsec
+  * Added scrub feature for sensitive data
+  * Removed PLAT from WASPPLAT and SECPLAT
+  * Removed all shared pointers from jmodes
+  * Fixed stream and protocol with no children to randomly generate replay packets
+  * Moved to TinyXML2 v9.0.0
+  * Added X25519 support for Diffie-Hellman
+  * Added Ed25519 Signature Scheme
+  * Added ZUC256 support
+  * Coverage work (coverage is > 90%)
+  * Debugged for CLang compiler
+  * Fixed TLSv13 nonce to remove SALT and use a 12-byte IV XORd with padded SEQNUM
+  * Fixed ECDSA key save and load to use point and private element
+  * Expanded testbench to run up to 100,0000 independent flows at once (1,000, 10,000, and 100,000 tested)
+  * Expanded testbench to have continuous mode (run continuously, filling rings with new packets)
+  * Separated SEC and W.A.S.P testbenches
+  * Updated documentation
+  * see the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=4e17c39bb99e4bcb948f11d541163885&wix-vod-comp-id=comp-j2ddnt1i
 
 * New in 5.2.0 - Released June 23, 2021
   * Updated coverage
