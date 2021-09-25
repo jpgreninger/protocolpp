@@ -33,6 +33,7 @@ Issued copyrights
 * JPGNetworks - VAu001334497
 * Protocol++(Protocolpp) 4.0.0 (Canada) - 1168370
 * Protocolpp(Protocol++) 5.0.0 (Canada) - 1174890
+* Protocolpp(Protocol++) 5.2.1 (Canada) - 1185641
 
 Trademarks
 
