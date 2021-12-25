@@ -1,4 +1,6 @@
-# Protocolpp(Protocol++) 5.2.1 Released! - www.protocolpp.com/shop
+# Protocol++®(Protocolpp®) 5.2.2 Coming January 1, 2022
+
+# Protocolpp®(Protocol++®) 5.2.1 Released! - www.protocolpp.com/shop
 Networking and Encryption Library, Testbench, and Drivers
 
 Only www.protocolpp.com has the rights to update, modify,
@@ -9,10 +11,10 @@ of charge at https://www.protocolpp.com/about-1
 
 Full licenses last a year and include support and updates. Latest documentation found only in licensed products
 
-Protocol++ has several different interfaces and can be configured
+Protocol++® has several different interfaces and can be configured
 in different ways. Preview the Makefile to see the target. Descriptions
 of the different targets are found below. Contrary to some people's opinion,
-ProtocolPP(Protocol++) is not a "WORK IN PROGRESS". The core library has
+ProtocolPP®(Protocol++®) is not a "WORK IN PROGRESS". The core library has
 remained unchanged for several years. Changes have only been added when
 updating to new versions of tinyxml2 parser or the Crypto++ library. NEW
 items have been added (drivers, IKEv2, Security Associations) that sit
@@ -22,26 +24,26 @@ necessary for complete functionality
 
 Issued copyrights
 
-* Protocol++(Protocolpp) 1.0.0 - TXu002059872
-* Protocol++(Protocolpp) 1.2.7 - TXu002066632
-* Protocol++(Protocolpp) 1.4.0 - TXu002082674
-* Protocol++(Protocolpp) 2.0.0 - TXu002097880
-* Protocol++(Protocolpp) 3.0.1 - TXu002169236
-* Protocol++(Protocolpp) 4.0.0 - TXu002182417
-* Protocol++(Protocolpp) 5.0.0 - TXu002219402
-* Protocol++(Protocolpp) 5.2.1 - TXu002272076
+* Protocol++®(Protocolpp®) 1.0.0 - TXu002059872
+* Protocol++®(Protocolpp®) 1.2.7 - TXu002066632
+* Protocol++®(Protocolpp®) 1.4.0 - TXu002082674
+* Protocol++®(Protocolpp®) 2.0.0 - TXu002097880
+* Protocol++®(Protocolpp®) 3.0.1 - TXu002169236
+* Protocol++®(Protocolpp®) 4.0.0 - TXu002182417
+* Protocol++®(Protocolpp®) 5.0.0 - TXu002219402
+* Protocol++®(Protocolpp®) 5.2.1 - TXu002272076
 * JPGNetworks - VAu001334497
-* Protocol++(Protocolpp) 4.0.0 (Canada) - 1168370
-* Protocolpp(Protocol++) 5.0.0 (Canada) - 1174890
-* Protocolpp(Protocol++) 5.2.1 (Canada) - 1185641
+* Protocol++®(Protocolpp®) 4.0.0 (Canada) - 1168370
+* Protocolpp®(Protocol++®) 5.0.0 (Canada) - 1174890
+* Protocolpp®(Protocol++®) 5.2.1 (Canada) - 1185641
 
 Trademarks
 
 * JPGNetworks - 87708008
-* protocolpp - 90634294
-* protocol++ - 90634339
+* protocolpp® - 90634294
+* protocol++® - 90634339
 
-protocolpp - Executable of the full set of protocols, ciphers, testbench,
+protocolpp® - Executable of the full set of protocols, ciphers, testbench,
              and responders to provide a command line interface for
              connecting and testing a device under test (DUT). A user
              can opt to use the jresponder (default) or use QorIQ and
@@ -74,7 +76,7 @@ ikev2   - Support for Internet Key Exchange (IKE) version 2 for IPsec ESP with C
           supported including 448 and 25519. Suppoort for all authentication methods
           now supported (RSA, PSK, ECDSA, DSA)
 
-test - Runs the CPPUNIT tests for Protocol++. Message outputs are for negative testing
+test - Runs the CPPUNIT tests for Protocol++®. Message outputs are for negative testing
 
 Supported Platforms
 
@@ -88,17 +90,17 @@ Supported Platforms
 
 USE CASES
 
-Protocol++(ProtocolPP) can be used for several different use cases in development,
+Protocol++®(ProtocolPP®) can be used for several different use cases in development,
 software, hardware development, stacks, and testbenches.
 
-  * TESTBENCHES - Protocolpp comes with a testbench to allow the interface to be connected
+  * TESTBENCHES - Protocolpp® comes with a testbench to allow the interface to be connected
     to a Device Under Test (DUT) through software rings for test of protocols, encryption,
     and authentication algroithms, replay windows, randomization, Diffie-Hellman
-    routines, and other items. In addition, Protocol++ can be used to generate XML output
+    routines, and other items. In addition, Protocol++® can be used to generate XML output
     for all of the above items that can be read back in to drive Verilog or software
     drivers for development of hardware accelerators and software
 
-  * STACKS - The drivers in ProtocolPP show examples of how to write software stacks that
+  * STACKS - The drivers in ProtocolPP® show examples of how to write software stacks that
     support all levels of the OSI model to allow full manipulation of all features and
     methodologies of the protocol stack. Want to try out a new retry routine for TCP? 
     Change the code in level 4 of your software stack to try it out. Want to try a new
@@ -108,18 +110,18 @@ software, hardware development, stacks, and testbenches.
     require direct access to level 3 (IP/IPsec) such as Real Time Protocol (RTP) or its
     secure version (SRTP)? Disable TCP/UDP and TLS to drive IP/IPsec directly
 
-  * HARDWARE DEVELOPMENT - Protocol++ can be used for testing hardware accelerators that
+  * HARDWARE DEVELOPMENT - Protocol++® can be used for testing hardware accelerators that
     support encryption and authentication algorithms. Developing an AES-GCM engine for
     your hard drive controller? Instantiate AES-GCM using the "ciphers" interface of 
-    ProtocolPP in your SystemC testbench to driver your Verilog or VHDL through your UVM
+    ProtocolPP® in your SystemC testbench to driver your Verilog or VHDL through your UVM
     driver. Received your silicon back from manufacting and need to verify there are no
     defects? Read back in the XML files generated during pre-silicon testing that achieves
-    100% coverage, and execute them through ProtocolPP's driver (or your own driver) and
+    100% coverage, and execute them through ProtocolPP's® driver (or your own driver) and
     compare to the expected value. Have some conformance vectors from the specification?
-    Enter the conformance data into the XML format specified by Protocol++'s XML schema,
+    Enter the conformance data into the XML format specified by Protocol++'s® XML schema,
     read the data into the testbench or driver, and test the silicon and or RTL
 
-  * SOFTWARE - The elements of ProtocolPP can be incorporated into larger software projects
+  * SOFTWARE - The elements of ProtocolPP® can be incorporated into larger software projects
     to encrypt data, authenticate, generate CRC32 values, create Signatures, verify
     signatures, create PRF material, generate random data over ranges as bytes, words, or
     double words, enable SMFT mode and generate millions of random bytes from hardware
@@ -133,7 +135,7 @@ Please see the documentation found above and www.protocolpp.com for all options
 
 INSTALLATION
 
-To install Protocol++, the cryptopp library must first be compiled and installed
+To install Protocol++®, the cryptopp library must first be compiled and installed
 
 www.cryptopp.com
 
