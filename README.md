@@ -364,8 +364,6 @@ For W.A.S.P usage, see the doxygen section
   * Split SKEYSEED and Key material generation for IPsec and IKEv2
   * IKEv2 initial checkin
   * Valgrind clean ring and direct drivers
-  * https://docs.wixstatic.com/ugd/9bb785_d197a030c2f3416b8b834825f29d8858.pdf
-  * https://docs.wixstatic.com/ugd/9bb785_5faf3e543d4b466b91bd858b23807524.pdf
 
 * New in 2.1.0 (Fri Aug 31 22:38:31 2018 -0700)
 
@@ -376,7 +374,6 @@ For W.A.S.P usage, see the doxygen section
   * Fixed several testbench bugs
   * Logging levels now configuration from command line with --loglvl
   * Valgrind is completely clean, fixed the remaining issue that left 168 bytes of data in use at simulation end
-  * https://docs.wixstatic.com/ugd/9bb785_3a1738aaab814c1390473476f38390aa.pdf
 
 * New in 2.0.0 (Tue May 15 01:41:28 2018 -0700)
 
@@ -523,8 +520,7 @@ For W.A.S.P usage, see the doxygen section
   * <B>Fully working testbench</B>
   * Screenshots taken with date and time
   * Documented above
-  * https://www.protocolpp.com/demonstration-videos/MyChannel/18?wix-vod-video-id=95316505fa0e4afc9b1d18e311105d84&wix-vod-comp-id=comp-j2ddnt1i#
-  * https://www.protocolpp.com/demonstration-videos/MyChannel/18?wix-vod-video-id=0758d7253d8f4a58b68d14a9e03d043a&wix-vod-comp-id=comp-j2ddnt1i#
+  * https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=9ae26d2c476d48bc854100acb4f8b447&wix-vod-comp-id=comp-j2ddnt1i
 
 * Protocol++ genesis (Sun Feb 8 2015 -0700)
 
