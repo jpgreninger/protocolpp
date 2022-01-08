@@ -205,7 +205,7 @@ For W.A.S.P usage, see the doxygen section
   * Expanded testbench to have continuous mode (run continuously, filling rings with new packets)
   * Separated SEC and W.A.S.P testbenches
   * Updated documentation
-  * see the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=4e17c39bb99e4bcb948f11d541163885&wix-vod-comp-id=comp-j2ddnt1i
+  * see the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=74c77d3dd5d6401db4d363bec657d255&wix-vod-comp-id=comp-j2ddnt1i
 
 * New in 5.2.0 - Released June 23, 2021
   * Updated coverage
@@ -219,7 +219,7 @@ For W.A.S.P usage, see the doxygen section
   * Updated RSA, DSA, ECDSA to update_status for testbench
   * Separated SEC and non-SEC testbench
   * Updated documentation
-  * See the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=33eb621b03b54637958b0542b3b48d30&wix-vod-comp-id=comp-j2ddnt1i
+  * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=33eb621b03b54637958b0542b3b48d30&wix-vod-comp-id=comp-j2ddnt1i
   * See www.protocolpp.com/upcoming-features for multi-responder files and results
   
 * New in 5.1.2 - Released February 22, 2021
@@ -227,13 +227,13 @@ For W.A.S.P usage, see the doxygen section
   * Updated coverage and documentation
   * version bump
   * Bug fixes
-  * See www.protocolpp/upcoming-features
+  * See https://www.protocolpp.com/protocolpp-upcoming-features
   
 * New in 5.1.1 - Released January 10, 2021
   * Updated with Crypto++ 8.4.0
   * Bug fixes
   * See the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=1ca32dd33cba480284a81bfebeb342c9&wix-vod-comp-id=comp-j2ddnt1i
-  * See www.protocolpp.com/upcoming-features
+  * See https://www.protocolpp.com/protocolpp-upcoming-features
   
 * New in 5.1.0 - Released November 23, 2020
   * TLS1.3 support
@@ -241,7 +241,7 @@ For W.A.S.P usage, see the doxygen section
   * TCP support for IKEv2
   * offline key protection (already supported in conversion to CAAM/SEC)
   * See the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=5ee30d7c8f2d457dad7c4fe33d3d97f1&wix-vod-comp-id=comp-j2ddnt1i
-  * See www.protocolpp.com/upcoming-features
+  * See https://www.protocolpp.com/protocolpp-upcoming-features
 
 * New in 5.0.0 - Released June 5, 2020
   * Multiple execution units
@@ -250,13 +250,13 @@ For W.A.S.P usage, see the doxygen section
   * support for same stream over multiple execution units with packet reordering
   * Run PKI function stand alone in test bench (RSA, DSA, ECDSA, DH, IKEPRF, TLSPRF)
   * See the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=d963b93355974214ba50db1743bb78f4&wix-vod-comp-id=comp-j2ddnt1i
-  * See www.protocolpp.com/upcoming-features
+  * See https://www.protocolpp.com/protocolpp-upcoming-features
 
 * New in 4.1.0 - Released March 25, 2020
   * Streamlined testbench configuration
   * Support for random anti-replay windows with generated packets for LATE, REPLAY, SHIFT, WINDOW, NORMAL (INCREMENT), ROLLOVER, ROLLUNDER on all protocols that use a replay window (IPsec, TLS, Wifi, WiMax, SRTP, MACsec, LTE)
   * See the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=dd222ac9360448778bd7caefa318c6f5&wix-vod-comp-id=comp-j2ddnt1i
-  * See www.protocolpp.com/upcoming-features
+  * See https://www.protocolpp.com/protocolpp-upcoming-features
   
 * New in 4.0.0 - Released January 1, 2020
   * Run encryption and authentication algorithms stand alone (added 4.0.0)
@@ -266,11 +266,11 @@ For W.A.S.P usage, see the doxygen section
   * Support for additional compilers and versions of compilers (added 2.0.0)
   * Multiple connection and configuration support IKEv2 (added 4.0.0)
   * See the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=6253bf7b705947a8a8db56320229e766&wix-vod-comp-id=comp-j2ddnt1i
-  * See www.protocolpp.com/upcoming-features
+  * See https://www.protocolpp.com/protocolpp-upcoming-features
   
 * New in 3.0.1
   * See the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=f8fd1170d06c47e688623ca4ff3a980e&wix-vod-comp-id=comp-j2ddnt1i
-  * See www.protocolpp.com/upcoming-features
+  * See https://www.protocolpp.com/protocolpp-upcoming-features
 
 * New in 2.5.5
 
