@@ -205,6 +205,8 @@ For W.A.S.P usage, see the doxygen section
   * Support for ZUC-256, ZUC-256-MAC stand alone, jmodes, jconfident, jintegrity, and W.A.S.P/Testbench
   * Support for connection of Device-Under-Test (DUT) to W.A.S.P testbench through software rings
   * Updated documentation and source code with ® symbol for trademarks on 'protocolpp' and 'protocol++'
+  * As always, valgrind leak free testbench and libraries
+  * Many more static code analysis updates from CLang-Tidy and CPPcheck in header and CPP files
   * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=139948e590064090a8594348915f441a&wix-vod-comp-id=comp-j2ddnt1i
   
 * New in 5.2.1 - Released September 24, 2021
