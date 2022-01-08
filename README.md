@@ -1,6 +1,4 @@
-# Protocol++®(Protocolpp®) 5.2.2 Coming January 1, 2022
-
-# Protocolpp®(Protocol++®) 5.2.1 Released! - www.protocolpp.com/shop
+# Protocolpp®(Protocol++®) 5.2.2 Released January 1, 2022! - www.protocolpp.com/shop
 Networking and Encryption Library, Testbench, and Drivers
 
 Only www.protocolpp.com has the rights to update, modify,
