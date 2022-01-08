@@ -204,6 +204,11 @@ For W.A.S.P usage, see the doxygen section
   * Support for SNOW-V, SNOW-V-AEAD (GCM), SNOW-V-GHASH stand alone, jmodes, jconfident, jintegrity, and W.A.S.P/Testbench
   * Support for ZUC-256, ZUC-256-MAC stand alone, jmodes, jconfident, jintegrity, and W.A.S.P/Testbench
   * Support for connection of Device-Under-Test (DUT) to W.A.S.P testbench through software rings
+    * Pass location and size of rings to testbench in configuration file
+    * Testbench generates packets
+    * Testbench loads packets and flows to rings
+    * Testbench processes packets in output ring from DUT
+    * If no DUT connected, testbench will continually issues "waiting for ring" warning to screen because input ring is full
   * Updated documentation and source code with ® symbol for trademarks on 'protocolpp' and 'protocol++'
   * As always, valgrind leak free testbench and libraries
   * Many more static code analysis updates from CLang-Tidy and CPPcheck in header and CPP files
