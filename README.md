@@ -176,6 +176,34 @@ For W.A.S.P usage, see the doxygen section
   * https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=e5551d0b1134404699de66194c12608b&wix-vod-comp-id=comp-j2ddnt1i
 
 * New in 5.2.2 - Release January 1, 2022
+  * Bumped version
+  * Exposed support for non-keyed hashes (SHA2/SHA3/SHAKE) stand alone, jmodes, jintegrity, and W.A.S.P/Testbench
+    * MD5
+    * SHA1
+    * SHA2_224
+    * SHA2_256
+    * SHA2_384
+    * SHA2_512
+    * SHAKE128
+    * SHAKE256
+    * SHA3_224
+    * SHA3_256
+    * SHA3_384
+    * SHA3_512
+  * Renamed previous keyed-hashes to included HMAC
+    * MD5 -> HMAC_MD5
+    * SHA1 -> HMAC_SHA1
+    * SHA_224 -> HMAC_SHA2_224
+    * SHA_256 -> HMAC_SHA2_256
+    * SHA_384 -> HMAC_SHA2_384
+    * SHA_512 -> HMAC_SHA2_256
+    * SHA3_224 -> HMAC_SHA3_224
+    * SHA3_256 -> HMAC_SHA3_256
+    * SHA3_384 -> HMAC_SHA3_284
+    * SHA3_512 -> HMAC_SHA3_512
+  * Support for SNOW-V, SNOW-V-AEAD (GCM), SNOW-V-GHASH stand alone, jmodes, jconfident, jintegrity, and W.A.S.P/Testbench
+  * Support for ZUC-256, ZUC-256-MAC stand alone, jmodes, jconfident, jintegrity, and W.A.S.P/Testbench
+  * Support for connection of Device-Under-Test (DUT) to W.A.S.P testbench through software rings
   * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=139948e590064090a8594348915f441a&wix-vod-comp-id=comp-j2ddnt1i
   
 * New in 5.2.1 - Released September 24, 2021
