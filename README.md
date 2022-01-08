@@ -208,7 +208,7 @@ For W.A.S.P usage, see the doxygen section
     * Testbench generates packets
     * Testbench loads packets and flows to rings
     * Testbench processes packets in output ring from DUT
-    * If no DUT connected, testbench will continually issues "waiting for ring" warning to screen because input ring is full
+    * If no DUT connected, testbench will continually issue "waiting for ring" warning to screen because input ring is full
   * Updated documentation and source code with ® symbol for trademarks on 'protocolpp' and 'protocol++'
   * As always, valgrind leak free testbench and libraries
   * Many more static code analysis updates from CLang-Tidy and CPPcheck in header and CPP files
