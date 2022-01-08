@@ -175,6 +175,9 @@ For W.A.S.P usage, see the doxygen section
 * See the Beta 2.0.0 video May 7, 2017 before Intel interview on May 19, 2017
   * https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=e5551d0b1134404699de66194c12608b&wix-vod-comp-id=comp-j2ddnt1i
 
+* New in 5.2.2 - Release January 1, 2022
+  * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=139948e590064090a8594348915f441a&wix-vod-comp-id=comp-j2ddnt1i
+  
 * New in 5.2.1 - Released September 24, 2021
   * Bumped version
   * Added new utilities
