@@ -240,7 +240,7 @@ For W.A.S.P usage, see the doxygen section
   * XMSS Signature support
   * TCP support for IKEv2
   * offline key protection (already supported in conversion to CAAM/SEC)
-  * See the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=5ee30d7c8f2d457dad7c4fe33d3d97f1&wix-vod-comp-id=comp-j2ddnt1i
+  * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=1ca32dd33cba480284a81bfebeb342c9&wix-vod-comp-id=comp-j2ddnt1i
   * See https://www.protocolpp.com/protocolpp-upcoming-features
 
 * New in 5.0.0 - Released June 5, 2020
@@ -249,13 +249,13 @@ For W.A.S.P usage, see the doxygen section
   * Out of order execution support
   * support for same stream over multiple execution units with packet reordering
   * Run PKI function stand alone in test bench (RSA, DSA, ECDSA, DH, IKEPRF, TLSPRF)
-  * See the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=d963b93355974214ba50db1743bb78f4&wix-vod-comp-id=comp-j2ddnt1i
+  * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=d963b93355974214ba50db1743bb78f4&wix-vod-comp-id=comp-j2ddnt1i
   * See https://www.protocolpp.com/protocolpp-upcoming-features
 
 * New in 4.1.0 - Released March 25, 2020
   * Streamlined testbench configuration
   * Support for random anti-replay windows with generated packets for LATE, REPLAY, SHIFT, WINDOW, NORMAL (INCREMENT), ROLLOVER, ROLLUNDER on all protocols that use a replay window (IPsec, TLS, Wifi, WiMax, SRTP, MACsec, LTE)
-  * See the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=dd222ac9360448778bd7caefa318c6f5&wix-vod-comp-id=comp-j2ddnt1i
+  * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=dd222ac9360448778bd7caefa318c6f5&wix-vod-comp-id=comp-j2ddnt1i
   * See https://www.protocolpp.com/protocolpp-upcoming-features
   
 * New in 4.0.0 - Released January 1, 2020
@@ -265,11 +265,11 @@ For W.A.S.P usage, see the doxygen section
   * WPA3 support (added 3.0.1)
   * Support for additional compilers and versions of compilers (added 2.0.0)
   * Multiple connection and configuration support IKEv2 (added 4.0.0)
-  * See the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=6253bf7b705947a8a8db56320229e766&wix-vod-comp-id=comp-j2ddnt1i
+  * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=6253bf7b705947a8a8db56320229e766&wix-vod-comp-id=comp-j2ddnt1i
   * See https://www.protocolpp.com/protocolpp-upcoming-features
   
 * New in 3.0.1
-  * See the release video https://www.protocolpp.com/demonstration-videos?wix-vod-video-id=f8fd1170d06c47e688623ca4ff3a980e&wix-vod-comp-id=comp-j2ddnt1i
+  * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=f8fd1170d06c47e688623ca4ff3a980e&wix-vod-comp-id=comp-j2ddnt1i
   * See https://www.protocolpp.com/protocolpp-upcoming-features
 
 * New in 2.5.5
