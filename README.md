@@ -201,8 +201,8 @@ For W.A.S.P usage, see the doxygen section
     * SHA3_256 -> HMAC_SHA3_256
     * SHA3_384 -> HMAC_SHA3_284
     * SHA3_512 -> HMAC_SHA3_512
-  * Support for SNOW-V, SNOW-V-AEAD (GCM), SNOW-V-GHASH stand alone, jmodes, jconfident, jintegrity, and W.A.S.P/Testbench
-  * Support for ZUC-256, ZUC-256-MAC stand alone, jmodes, jconfident, jintegrity, and W.A.S.P/Testbench
+  * Support for SNOW-V, SNOW-V-AEAD (GCM), SNOW-V-GHASH (new class jsnowv) stand alone, jmodes, ciphers, jconfident, jintegrity, and W.A.S.P/Testbench
+  * Support for ZUC-256, ZUC-256-MAC (use 32-byte key and 25-bytes IV constructor) stand alone, jmodes, ciphers, jconfident, jintegrity, and W.A.S.P/Testbench
   * Support for connection of Device-Under-Test (DUT) to W.A.S.P testbench through software rings
     * Pass location and size of rings to testbench in configuration file
     * Testbench generates packets
