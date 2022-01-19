@@ -246,4 +246,4 @@ For W.A.S.P usage, see the doxygen section
   * Updated documentation
   * see the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=74c77d3dd5d6401db4d363bec657d255&wix-vod-comp-id=comp-j2ddnt1i
 
-* See the README for the full release path from the beginning
+* See the README in the released version for the full release path from the beginning
