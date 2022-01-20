@@ -7,6 +7,10 @@ license, distribute, sell, or make copies of Protocolpp®(Protocol++®).
 Evaluation licenses that last 30-days are available from the website free
 of charge at https://www.protocolpp.com/protocolpp-trial-versions
 
+Documentation can be downloaded or found at
+
+https://jpgreninger.github.io/protocolpp/html/index.html
+
 Full licenses last a year and include support and updates. Latest documentation found only in licensed products
 
 Protocol++® has several different interfaces and can be configured
