@@ -1,0 +1,476 @@
+\form#0:${2}^{32}-1$
+\form#1:${2}^{64}$
+\form#2:$1-(\frac{n}{{2}^{102}})$
+\form#3:${2}^{256}$
+\form#4:$2^256$
+\form#5:$ \oplus $
+\form#6:$ E_K2(E_K1(plaintext)) $
+\form#7:$ y = E_K2(E_K1(x))$
+\form#8:$ {2}^{n}$
+\form#9:$ {2}^{2n}$
+\form#10:$ ciphertext = E_K3 (D_K2(E_K1(plaintext)))$
+\form#11:$ plaintext = D_K1(E_K2(D_K3(ciphertext)))$
+\form#12:$ {2}^{2 × 56} steps$
+\form#13:$ b_0, b_1,...,b_15,$
+\form#14:$ a_i,j $
+\form#15:$ S(a_i,j) $
+\form#16:$ S(a_i,j) ≠ a_i,j $
+\form#17:$ S(a_i,j) \oplus a_i,j ≠ 0xFF_16 $
+\form#18:$ c(x)$
+\form#19:$ {x}^{7} $
+\form#20:$ {x}^{8}+{x}^{4}+{x}^{3}+x+1 $
+\form#21:$ 1B_16 $
+\form#22:$ FF_16 $
+\form#23:$ GF({2}^{8}) $
+\form#24:$ 01_16 \cdot {z}^{4} + 01_16 $
+\form#25:$ c(z) = 03_16 \cdot {z}^{3} + 01_16 \cdot {z}^{2} + 01_16 \cdot z + 02_16 $
+\form#26:$ GF(2)[x] $
+\form#27:${Z_2}^{e}$
+\form#28:${Z_2}^{32}$
+\form#29:$ Zi$
+\form#30:${Z_2}^{8}$
+\form#31:$ ZiJie$
+\form#32:$ \ll$
+\form#33:$ MK = (MK_1,MK_2,MK_3,MK_4) or MK_i(i = 0, 1, 2, 3)$
+\form#34:$ (rk_0, rk_1,...,rk_{31})$
+\form#35:$ rk_i, i=0,...,31)$
+\form#36:$ FK = (FK_0, FK_1, FK_2, FK_3)$
+\form#37:$ CK = (CK_0,CK_1,...,CK_{31})$
+\form#38:$ FK_i, (i = 0,...,3), CK_i, (i = 0,...,31)$
+\form#39:$(X_0,X_1,X_2,X_3) \in {({Z_2}^{32})}^{4}$
+\form#40:$rk \in {Z_2}^{32}$
+\form#41:$ F(X_0,X_1,X_2,X_3,rk) = X_0 \oplus T(X_1 \oplus X_2 \oplus X_3 \oplus rk)$
+\form#42:$T : {Z_2}^{32} \mapsto {Z_2}^{32}$
+\form#43:$tau$
+\form#44:$T(.) = L(\tau(.))$
+\form#45:$\tau$
+\form#46:$A = (a_0, a_1, a_2, a_3) \in {({Z_2}^{8})}^{4}$
+\form#47:$B = (b_0, b_1, b_2, b_3) \in {({Z_2}^{8})}^{4}$
+\form#48:$(b_0, b_1, b_2, b_3) = \tau(A) = (Sbox(a_0), Sbox(a_1), Sbox(a_2), Sbox(a_3))$
+\form#49:$B \in {Z_2}^{32}$
+\form#50:$C \in {Z_2}^{32}$
+\form#51:$C = L(B) = B \oplus (B <<< 2) \oplus (B <<< 10) \oplus (B <<< 18) \oplus (B <<< 24)$
+\form#52:$ S Box$
+\form#53:$ Sbox('ef')='84'$
+\form#54:$ R$
+\form#55:$R(A_0,A_1,A_2,A_3) = (A_3,A_2,A_1,A_0),A_i \in {Z_2}^{32}, i = 0,1,2,3$
+\form#56:$(Y_0,Y_1,Y_2,Y_3) \in $
+\form#57:${({Z_2}^{32})}^{4}$
+\form#58:$rk_i \in {Z_2}^{32}, i = 0,1,2,...,31$
+\form#59:$ X_{i+4} = F(X_i,X_{i+1},X_{i+2},X_{i+3}, rk_i) = Xi \oplus T(X_{i+1} \oplus X_{i+2} \oplus X_{i+3} \oplus rk_i)$
+\form#60:$ i = 0,1,...,31$
+\form#61:$(Y_0, Y_1, Y_2, Y_3) = R(X_{32},X_{33},X_{34},X_{35}) = (X_{35},X_{34},X_{33},X_{32})$
+\form#62:$(rk_0, rk_1,...,rk_{31})$
+\form#63:$(rk_{31}, rk_{30},...,rk_0)$
+\form#64:$rk_i$
+\form#65:$MK = (MK_0,MK_1,MK_2,MK_3), MK_i \in {Z_2}^{32}, i = 0,1,2,3;$
+\form#66:$K_i \in {Z_2}^{32}, i = 0,1,...,31;$
+\form#67:$rk_i \in {Z_2}^{32}, i = 0,1,...,31$
+\form#68:$(K_0,K_1,K_2,K_3) = (MK_0 \oplus FK_0; MK_1 \oplus FK_1; MK_2 \oplus FK_2; MK_3 \oplus FK_3)$
+\form#69:$rk_i = K_{i+4} = K_i \oplus T\prime(K_{i+1} \oplus K_{i+2} \oplus K_{i+3} \oplus CK_i)$
+\form#70:$(B) = B \oplus (B <<< 13) \oplus (B <<< 23)$
+\form#71:$ FK$
+\form#72:$FK_0 = (a3b1bac6), FK_1 = (56aa3350), FK_2 = (677d9197), FK_3 = (b27022dc)$
+\form#73:$ CK$
+\form#74:$ck_{i,j}$
+\form#75:$CK_{i,j}(i = 0,1,...,31; j = 0,1,2,3)$
+\form#76:$CK_i = (ck_{i,0}, ck_{i,1}; ck_{i,2}; ck_{i,3}) \in {({Z_2}^{8})}^{4}, then ck_{i,j} = (4i + j) \times (mod 256)$
+\form#77:$CK_i$
+\form#78:$ CK_i$
+\form#79:$ (s_0, s_1,\cdots,s_{15})$
+\form#80:$ s_i (0 \leq i \leq 15)$
+\form#81:$ \{1,2,3,\cdots,{2}^{31} – 1\}$
+\form#82:$ v={2}^{15}s_{15}+{2}^{17}s_{13}+{2}_{21}s_{10}+{2}^{20}s_4+(1+{2}^{8})s_0$
+\form#83:$ ({2}^{31}-1)$
+\form#84:$ s_{16}=(v+u)$
+\form#85:$ If s_{16}=0$
+\form#86:$s_{16}={2}^{31}-1$
+\form#87:$ (s_1,s_2,\cdots,s_{15},s_{16})\rightarrow(s_0,s_1,\cdots,s_{14},s_{15})$
+\form#88:$ s_{16}={2}^{15}s_15+{2}^{17}s_13+{2}^{21}s_10+{2}^{20}s_4+(1+{2}^{8})s_0$
+\form#89:$ s_{16}={2}^{31}-1$
+\form#90:$ {2}^{i}$
+\form#91:$ GF({2}^{31}-1)$
+\form#92:$ {2}^{31}-1$
+\form#93:$ v=(s_{15} <<<_{31} 15)+(s_{13} <<<_{31} 17)+(s_{10} <<<_{31} 21)+(s_4 <<<_{31} 20)+(s_0 <<<_{31} 8)+s_0$
+\form#94:$ a,b$
+\form#95:$ v=a+b$
+\form#96:$ s_0, s_2, s_5, s_7, s_9, s_{11}, s_{14}, s_{15}$
+\form#97:$ X_0, X_1, X_2, X_3$
+\form#98:$ X_0=s_{15H} \parallel s_{14L}$
+\form#99:$ X_1=s_{11L} \parallel s_{9H}$
+\form#100:$ X_2=s_{7L} \parallel s_{5H}$
+\form#101:$ X_3=s_{2L} \parallel s_{0H}$
+\form#102:$ s_i$
+\form#103:$ s_{iH}$
+\form#104:$ s_i, for 0 \leq i \leq 15$
+\form#105:$ R_1$
+\form#106:$ R_2$
+\form#107:$ X_0, X_1$
+\form#108:$ X_2$
+\form#109:$ X_0, X_1, X_2$
+\form#110:$ W=(X_0 \oplus R_1) \oplus R_2$
+\form#111:$ W_1=R_1 \oplus X_1$
+\form#112:$ W_2=R_2 \oplus X_2$
+\form#113:$ R_1=S(L_1(W_{1L} \parallel W_{2H}))$
+\form#114:$ R_2=S(L_2(W_{2L} \parallel W_{1H}))$
+\form#115:$ L_1$
+\form#116:$ L_2$
+\form#117:$ S_0,S_1,S_2,S_3$
+\form#118:$ S_0=S_2$
+\form#119:$ S_1=S_3$
+\form#120:$ S_0$
+\form#121:$ S_1$
+\form#122:$ x=h \parallel l$
+\form#123:$ L_1(X)=X \oplus (X <<<_{32} 2) \oplus (X <<<_{32} 10) \oplus (X <<<_{32} 18) \oplus (X <<<_{32} 24)$
+\form#124:$ L_2(X)=X \oplus (X <<<_{32} 8) \oplus (X <<<_{32} 14) \oplus (X <<<_{32} 22) \oplus (X <<<_{32} 30)$
+\form#125:$ k=k_0 \parallel k_1 \parallel k_2 \parallel \cdots \parallel k_{15}$
+\form#126:$ iv=iv_0 \parallel iv_1 \parallel iv_2 \parallel \cdots \parallel iv_{15}$
+\form#127:$ k_i$
+\form#128:$ iv_i, 0\leq i\leq 15$
+\form#129:$ s_0, s_1,\cdots, s_{15}$
+\form#130:$ D=d_0 \parallel d_1 \parallel \cdots \parallel d_{15}$
+\form#131:$ d00 = 100010011010111_2 $
+\form#132:$ d01 = 010011010111100_2 $
+\form#133:$ d02 = 110001001101011_2 $
+\form#134:$ d03 = 001001101011110_2 $
+\form#135:$ d04 = 101011110001001_2 $
+\form#136:$ d05 = 011010111100010_2 $
+\form#137:$ d06 = 111000100110101_2 $
+\form#138:$ d07 = 000100110101111_2 $
+\form#139:$ d08 = 100110101111000_2 $
+\form#140:$ d09 = 010111100010011_2 $
+\form#141:$ d10 = 110101111000100_2 $
+\form#142:$ d11 = 001101011110001_2 $
+\form#143:$ d12 = 101111000100110_2 $
+\form#144:$ d13 = 011110001001101_2 $
+\form#145:$ d14 = 111100010011010_2 $
+\form#146:$ d15 = 100011110101100_2 $
+\form#147:$ For 0 \leq i \leq 15, let s_i=k_i \parallel d_i \parallel iv_i$
+\form#148:$ X_0, X_1, X_2) \oplus X3$
+\form#149:$ MULx(V, c) = (V <<_8 1) \oplus c, else MULx(V, c) = V <<_8 1$
+\form#150:$ MULxPOW(V, i, c) = V$
+\form#151:$ MULxPOW(V, i, c) = MULx(MULxPOW(V, i-1, c), c)$
+\form#152:$ s_0, s_1, s_2,\cdots, s_{15}$
+\form#153:$ w = w_0 || w_1 || w_2 || w_3$
+\form#154:$ w_0$
+\form#155:$ w3$
+\form#156:$ S_1(w)= r_0 || r_1 || r_2 || r_3$
+\form#157:$ r_0$
+\form#158:$ r_3$
+\form#159:$ S_R$
+\form#160:$ r_0, r_1, r_2, r_3$
+\form#161:$ r_0= MULx(S_R(w_0), 0x1B) \oplus S_R(w_1) \oplus S_R(w_2) \oplus MULx(S_R(w_3), 0x1B) \oplus S_R(w_3)$
+\form#162:$ r_1= MULx(S_R(w_0), 0x1B) \oplus S_R(w_0) \oplus MULx(S_R(w_1), 0x1B) \oplus S_R(w_2) \oplus S_R(w_3)$
+\form#163:$ r_2= S_R(w_0) \oplus MULx(S_R(w_1), 0x1B) \oplus S_R(w_1) \oplus MULx(S_R(w_2), 0x1B) \oplus S_R(w_3)$
+\form#164:$ r_3= S_R(w_0) \oplus S_R(w_1) \oplus MULx(S_R(w_2), 0x1B) \oplus S_R(w_2) \oplus MULx(S_R(w_3), 0x1B)$
+\form#165:$ S_2$
+\form#166:$ w_3$
+\form#167:$ S_2(w)= r_0 || r_1 || r_2 || r_3$
+\form#168:$ r0$
+\form#169:$ r3$
+\form#170:$ S_Q$
+\form#171:$ r_0= MULx(S_Q(w_0), 0x69) \oplus S_Q(w_1) \oplus S_Q(w_2) \oplus MULx(S_Q(w_3), 0x69) \oplus SQ(w3)$
+\form#172:$ r_1= MULx(S_Q(w_0), 0x69) \oplus S_Q(w_0) \oplus MULx(S_Q(w_1), 0x69) \oplus S_Q(w_2) \oplus S_Q(w_3)$
+\form#173:$ r_2= S_Q(w_0) \oplus MULx(S_Q(w_1), 0x69) \oplus S_Q(w_1) \oplus MULx(S_Q(w_2), 0x69) \oplus S_Q(w_3)$
+\form#174:$ r_3= S_Q(w_0) \oplus S_Q(w_1) \oplus MULx(S_Q(w_2), 0x69) \oplus S_Q(w_2) \oplus MULx(S_Q(w_3), 0x69)$
+\form#175:$ MUL_α$
+\form#176:$ DIV_α$
+\form#177:$ MUL_α(c) = (MULxPOW(c, 23, 0xA9) || MULxPOW(c, 245, 0xA9) || MULxPOW(c, 48, 0xA9) || MULxPOW(c, 239, 0xA9))$
+\form#178:$ DIV_α(c) = (MULxPOW(c, 16, 0xA9) || MULxPOW(c, 39, 0xA9) || MULxPOW(c, 6, 0xA9) || MULxPOW(c, 64, 0xA9))$
+\form#179:$ s_0 = s_{0,0} || s_{0,1} || s_{0,2} || s_{0,3}$
+\form#180:$ s_{0,0}$
+\form#181:$ s_{0,3}$
+\form#182:$ s_0$
+\form#183:$ s_{11} = s_{11,0} || s_{11,1} || s_{11,2} || s_{11,3}$
+\form#184:$ s_{11,0}$
+\form#185:$ s_{11,3}$
+\form#186:$ s_{11}$
+\form#187:$ v = (s_{0,1} || s_{0,2} || s_{0,3} || 0x00) \oplus MUL_α(s_{0,0}) \oplus s_2 \oplus (0x00 || s_{11,0} || s_{11,1} || s_{11,2}) \oplus DIV_α(s_{11,3}) \oplus F$
+\form#188:$ s_0=s_1, s_1=s_2, s_2=s_3, s_3=s_4, s_4=s_5, s_5=s_6, s_6=s_7, s_7=s_8$
+\form#189:$ s_8=s_9, s_9=s_{10}, s_{10}=s_{11}, s_{11}=s_{12}, s_{12}=s_{13}, s_{13}=s_{14}, s_{14}=s_{15}, s_{15} = v$
+\form#190:$ s_11 = s_{11,0} || s_{11,1} || s_{11,2} || s_{11,3}$
+\form#191:$ s_11$
+\form#192:$ (s_{0,1} || s_{0,2} || s_{0,3} || 0x00) \oplus MUL_α(s_{0,0}) \oplus s_2 \oplus (0x00 || s_{11,0} || s_{11,1} || s_{11,2}) \oplus DIV_α(s_{11,3})$
+\form#193:$ s_8=s_9, s_9=s_{10}, s_{10}=s_{11}, s_{11}=s_{12}, s_{12}=s_{13}, s_{13}=s_{14}, s_{14}=s_{15}, s_{15}=v$
+\form#194:$ s_{15}$
+\form#195:$ s_5$
+\form#196:$ F = (s_{15} \oplus R1) \oplus R2$
+\form#197:$ r = R2 \oplus (R3 \oplus s_5)$
+\form#198:$ R3 = S_2(R2)$
+\form#199:$ R2 = S_1(R1)$
+\form#200:$ R1 = r$
+\form#201:$ k_0, k_1, k_2, k_3$
+\form#202:$ IV_0, IV_1, IV_2, IV_3$
+\form#203:$ s_{15}=k_3 \oplus IV_0$
+\form#204:$ s_{14}=k_2$
+\form#205:$ s_{13}=k_1$
+\form#206:$ s_{12}=k_0 \oplus IV_1$
+\form#207:$ s_{11}=k_3 \oplus 1$
+\form#208:$ s_{10}=k_2 \oplus 1 \oplus IV_2 s_9 = k_1 \oplus 1 \oplus IV_3 s_8 = k_0 \oplus 1$
+\form#209:$ s_7=k_3$
+\form#210:$ s_6=k_2$
+\form#211:$ s_5=k_1$
+\form#212:$ s_4=k_0$
+\form#213:$ s_3=k_3 \oplus 1$
+\form#214:$ s_2=k_2 \oplus 1$
+\form#215:$ s_1=k_1 \oplus 1$
+\form#216:$ s_0=k_0 \oplus 1$
+\form#217:$ R1 = R2 = R3 = 0$
+\form#218:$ z_t = F \oplus s_0$
+\form#219:$ x_0, x_1, y_0, y_1$
+\form#220:$ S_R(x_0 {2}^{4}+x_1) = y_0 {2}^{4} + y_1$
+\form#221:$ {x_0}^{th}$
+\form#222:$ {x_1}^{th}$
+\form#223:$ y_0 || y_1$
+\form#224:$ S_R(42) = S_R(0x2A) = 0xE5 = 229$
+\form#225:$ S_Q(x_0 {2}^{4}+x_1) = y_0 {2}^{4} + y_1$
+\form#226:$ S_Q(42) = S_Q(0x2A) = 0xAC = 172$
+\form#227:$ N$
+\form#228:$ q$
+\form#229:$ L$
+\form#230:$ p$
+\form#231:$ p - 1$
+\form#232:$ g = {h}^{(p - 1)/q} mod p$
+\form#233:$ h (1 < h < p - 1)$
+\form#234:$ h$
+\form#235:$ g$
+\form#236:$ h = 2$
+\form#237:$ (p, q, g)$
+\form#238:$ x$
+\form#239:$ 0 < x < q$
+\form#240:$ y = {g}^{x} mod p$
+\form#241:$ {h}^{ \frac{p - 1}{q}} mod p$
+\form#242:$ {g}^{x} mod p$
+\form#243:$ k$
+\form#244:$ 1 < k < q$
+\form#245:$ r = ({g}^{k} mod p) mod q$
+\form#246:$ r = 0$
+\form#247:$ s = {k}^{-1} (H(m) + xr) mod q$
+\form#248:$ s = 0$
+\form#249:$ (r, s)$
+\form#250:$ {k}^{-1} mod q$
+\form#251:$ {k}^{q - 2} mod q$
+\form#252:$ 0 < r < q$
+\form#253:$ 0 < s < q$
+\form#254:$ w = {s}^{-1} mod q$
+\form#255:$ u_1 = H(m) \cdot w mod q$
+\form#256:$ u_2 = r \cdot w mod q$
+\form#257:$ v = ({g}^{u_1} {y}^{u_2} mod p ) mod q$
+\form#258:$ v = r$
+\form#259:$ {2}^{b-1} > p $
+\form#260:$ 2*b $
+\form#261:$ {2}^{c} $
+\form#262:$ GF(p) x GF(p) $
+\form#263:$ a * {x}^{2} + {y}^{2} = 1 + d * {x}^{2} * {y}^{2} $
+\form#264:$ {2}^{c} * L $
+\form#265:$ {2}^{80} $
+\form#266:$ 4t$
+\form#267:$ t$
+\form#268:$(x_0,y_0)$
+\form#269:$ {y}^{2} = {x}^{3} + 7$
+\form#270:$ G$
+\form#271:$ n \times G = O$
+\form#272:$ \frac{Z}{nZ}$
+\form#273:$ d_A$
+\form#274:$ [ 1 , n - 1 ]$
+\form#275:$ Q_A = d_A \times G$
+\form#276:$ \times$
+\form#277:$ e = HASH(m)$
+\form#278:$ HASH$
+\form#279:$ z$
+\form#280:$ L_n$
+\form#281:$ e$
+\form#282:$ n$
+\form#283:$ [1 , n - 1]$
+\form#284:$ (x_1, y_1) = k \times G$
+\form#285:$ r = x_1 mod n$
+\form#286:$ s = {k}^{-1} ( z + rd_A ) mod n $
+\form#287:$ s$
+\form#288:$ HASH(m)$
+\form#289:$ (r,s)$
+\form#290:$ (r, {s}^{'})$
+\form#291:$ m$
+\form#292:$ {m}^{'}$
+\form#293:$ {z}^{'}$
+\form#294:$ s - {s}^{'} = {k}^{-1}(z - {z}^{'})$
+\form#295:$ k = \frac{z - {z}^{'}}{s - {s}^{'}}$
+\form#296:$ s = {k}^{-1}(z + rd_A)$
+\form#297:$ d_A = \frac{sk - z}{r}$
+\form#298:$ Q_A$
+\form#299:$ O$
+\form#300:$ n \times Q_A = O$
+\form#301:$ r$
+\form#302:$ [1, n - 1]$
+\form#303:$ e = HASH (m)$
+\form#304:$ w = {s}^{-1} mod n$
+\form#305:$ u_1 = zw mod n and u_2 = rw mod n$
+\form#306:$ (x_1, y_1) = u_1 \times G + u_2 \times Q_A$
+\form#307:$ (x_1, y_1) = O$
+\form#308:$ r \equiv x_1 ( mod n )$
+\form#309:$ u_1 \times G + u_2 \times Q_A$
+\form#310:$ {2}^{64} $
+\form#311:$ F(B, C, D) = (B \wedge C) \vee (\neg B \wedge D) $
+\form#312:$ G(B, C, D) = (B \wedge D) \vee (C \wedge \neg D) $
+\form#313:$ H(B, C, D) = B \oplus C \oplus D $
+\form#314:$ I(B, C, D) = C \oplus (B \vee \neg D) $
+\form#315:$ \oplus, \wedge, \vee, \neg $
+\form#316:$ HMAC(K,m) = H(({K}^{'}\oplus opad) \parallel H(({K}^{'}\oplus ipad) \parallel m)) $
+\form#317:$ {K}^{'} = H(K) - if K is larger than block size$
+\form#318:$ {K}^{'} = K - otherwise$
+\form#319:$ \parallel$
+\form#320:$ \oplus$
+\form#321:$ \ll $
+\form#322:$ \parallel $
+\form#323:$ \parallel 10...0_2) $
+\form#324:$ c_i = E_k(c_i−1 \oplus m_i) $
+\form#325:$ c_n = E_k(c_n−1 \oplus m_n) $
+\form#326:$ Output t = msb_l(c_n) $
+\form#327:$ crc(x \oplus y \oplus z) = crc(x) \oplus crc(y) \oplus crc(z) $
+\form#328:$ {M}^{'}$
+\form#329:$ {M}^{'} = B_0, B_1 ... B_{n-1} where n=\frac{l+k+65}{512}$
+\form#330:\begin{eqnarray*} FOR&i=&0..n-1 \\ V(i+1) &=& CF(V(i),B(i)) \\ ENDFOR \end{eqnarray*}
+\form#331:$ W_0, W_1, ... , W_15$
+\form#332:\begin{eqnarray*} FOR&j=&16..67 \\ W_j &=& P_1(W_{j-16} \oplus W_{j-9} \oplus (W_{j-3} <<< 15)) \oplus (W_{j-13} <<< 7) \oplus W_{j-6} \\ ENDFOR \\ \end{eqnarray*}
+\form#333:\begin{eqnarray*} FOR&j=&0..63 \\ {W}^{'}_j &=& W_j \oplus W_(j+4) \\ ENDFOR \\ \end{eqnarray*}
+\form#334:$ V_(i+1) = CF(V(i),B(i)) where 0 A!U i A!U n $
+\form#335:\begin{eqnarray*} ABCDEFGH &=& V(i) \\ FOR & j= &0..63 \\ SS1 &=& (((RK[0] <<< 12) + RK[4] + (T_j <<< j)) <<< 7) \\ SS2 &=& SS1 \oplus (RK[0] <<< 12) \\ TT1 &=& FF_j(RK[0], RK[1], RK[2]) + RK[3] + SS2 + {W}^{'}_j \\ TT1 &=& GG_j(RK[4], RK[5], RK[6]) + RK[7] + SS1 + W_j \\ RK[3] &=& RK[2] \\ RK[2] &=& (RK[1] <<< 9) \\ RK[1] &=& RK[0] \\ RK[0] &=& TT1 \\ RK[7] &=& RK[6] \\ RK[6] &=& (RK[5] <<< 19) \\ RK[5] &=& RK[4] \\ RK[4] &=& P0(TT2) \\ ENDFOR \\ \end{eqnarray*}
+\form#336:$ V(i+1) = ABCDEFGH \oplus V(i)$
+\form#337:$ ABCDEFGH = V(n)$
+\form#338:$ y=ABCDEFGH$
+\form#339:$ {2}^{32}-1 blocks = 4,294,967,295 blocks = 68,719,476,720 octets $
+\form#340:${2}^{32}$
+\form#341:$ PDCP SN Length$
+\form#342:$ D/C field$
+\form#343:$ PDU type$
+\form#344:$ Bitmap$
+\form#345:$ SDU Type$
+\form#346:${2}^{16}-1$
+\form#347:${2}^{30}-1$
+\form#348:${2}^{30}–1$
+\form#349:${C}_{i}={E}_{K}(P_{i}\oplus C_{i-1}),C_{0}=IV$
+\form#350:$P_{i}=D_{K}(C_{i})\oplus C_{i-1},C_{0}=IV$
+\form#351:$GF({2}^{128})$
+\form#352:${x}^{128}+{x}^{7}+{x}^{2}+x+1$
+\form#353:$GHASH(H,A,C)=X_{m+n+1}$
+\form#354:$X_{i}$
+\form#355:$C_{i} \parallel$
+\form#356:$ X_{i−1} $
+\form#357:${CIPH}_{K}$
+\form#358:${R}_{128} = {0}^{120}10000111$
+\form#359:${R}_{64} = {0}^{59}11011$
+\form#360:${R}_{b}$
+\form#361:${u}^{b}+{c}_{b-1}{u}^{b-1}+...+{c}_{2}{u}^{2}+{c}_{1}u+{c}_{0}$
+\form#362:${c}_{b-1}, {c}_{b-2}, ..., {c}_{2}, {c}_{1}, {c}_{0}$
+\form#363:${c}_{b-1}{c}_{b-2}...{c}_{2}{c}_{1}{c}_{0}$
+\form#364:$L = {CIPH}_{K}({0}^{b})$
+\form#365:$If {MSB}_{1}(L) = 0, then K1 = L << 1$
+\form#366:$Else K1 = (L << 1) \oplus {R}_{b}; see Sec. 5.3 for the definition of {R}_{b}$
+\form#367:$If {MSB}_{1}(K1) = 0, then K2 = K1 << 1;$
+\form#368:$Else K2 = (K1 << 1) \oplus {R}_{b}$
+\form#369:${CIPH}_{K}({0}^{b})$
+\form#370:${M}_{1}, {M}_{2}, ... , {M}_{n-1}, {M}_{n}$
+\form#371:$M = {M}_{1} || {M}_{2} || ... || {M}_{n-1} || {M}_{n}*, where {M}_{1}, {M}_{2},...,{M}_{n-1}$
+\form#372:$Mn = K1 \oplus Mn*$
+\form#373:$Mn = K2 \oplus (Mn*||10j)$
+\form#374:${C}_{0} = {0}^{b}$
+\form#375:${C}_{i} = {CIPH}_{K}({C}_{i-1}\oplus{M}_{i})$
+\form#376:$T = {MSB}_{Tlen}({C}_{n})$
+\form#377:$ N < {2}^{h} $
+\form#378:$ 2*N $
+\form#379:$ 2*N + 1 $
+\form#380:$ {2}^{i} + j $
+\form#381:$ d$
+\form#382:$ 0 \leq m < n$
+\form#383:$ {({m}^{e})}^{d} \equiv m (mod n)$
+\form#384:$ {({m}^{d})}^{e} \equiv m ( mod n )$
+\form#385:$ n = pq$
+\form#386:$ \lambda(n) = lcm(\lambda(p), \lambda(q)) = lcm(p−1, q−1)$
+\form#387:$ \lambda$
+\form#388:$ 1 < e < \lambda(n)$
+\form#389:$ gcd(e, \lambda(n)) = 1$
+\form#390:$ \lambda(n)$
+\form#391:$ d \equiv {e}^{−1} (mod \lambda(n))$
+\form#392:$ e mod \lambda(n)$
+\form#393:$ d \cdot e \equiv 1 (mod \lambda(n))$
+\form#394:$ e = {2}^{16} + 1 = 65,537$
+\form#395:$ p, q$
+\form#396:$ \phi(n) = (p − 1)(q − 1)$
+\form#397:$ \phi(n)$
+\form#398:$ (n, e)$
+\form#399:$ M$
+\form#400:$ 0 ≤ m < n$
+\form#401:$ c$
+\form#402:$ c \equiv {m}^{e} (mod n)$
+\form#403:$ {c}^{d} \equiv {({m}^{e})}^{d} \equiv m (mod n)$
+\form#404:$ d (mod n)$
+\form#405:$ e (mod n)$
+\form#406:$ {a}_{15}...{a}_{0} $
+\form#407:$ {b}_{15}...{b}_{0} $
+\form#408:$ {g}^{A}(x) = {x}^{16}+{x}^{15}+{x}^{12}+{x}^{11}+{x}^{8}+{x}^{3}+{x}^{2}+x+1 $
+\form#409:$ {g}^{B}(x) = {x}^{16}+{x}^{15}+{x}^{14}+{x}^{11}+{x}^{8}+{x}^{6}+{x}^{5}+x+1 $
+\form#410:$ {GHASH}_{H} $
+\form#411:$ {z}^{(0)} $
+\form#412:$ {z}^{(1)} $
+\form#413:$ {J}_{0} $
+\form#414:$ {z}^{(2)}...,{z}^{(n-1)} $
+\form#415:$ ({b}_{7},{b}_{6},...,{b}_{0}) = (0x6D6F,0x6854,0x676E,0x694A,0x2064,0x6B45,0x7865,0x6C41) $
+\form#416:\[ i = {2}^{16} \oplus ROC + SEQ \]
+\form#417:${2}^{24}$
+\form#418:${2}^{16}$
+\form#419:\[ i = {2}^{16} \oplus v + SEQ \]
+\form#420:${2}^{48}$
+\form#421:${2}^{16} \oplus ROC + s_l$
+\form#422:$v=(ROC-1) \bmod{{2}^{32}}$
+\form#423:$v=(ROC+1) \bmod{{2}^{32}}$
+\form#424:${2}^{15}$
+\form#425:${2}^{36}-32$
+\form#426:$ {2}^{31}$
+\form#427:$ {2}^{48}$
+\form#428:${2}^{14}$
+\form#429:$ HMACSHAX(PSK, SSID, Interations) $
+\form#430:$ i \leftarrow 0 $
+\form#431:$ output \leftarrow HMACSHAX(PSK, SSID||0x00000001) $
+\form#432:$ input \leftarrow output $
+\form#433:$ i \leftarrow 1 $
+\form#434:$ Iterations $
+\form#435:$ output \leftarrow HMACSHAX(PSK, input) $
+\form#436:$ HMACSHA1(K, A, B, X) \leftarrow HMACSHA1(K, A || Y || B || X) $
+\form#437:$ PRF(K, A, B, Len) $
+\form#438:$ (Len+159)/160 $
+\form#439:$ R \leftarrow R || H_SHA_1(K, A, B, i) $
+\form#440:$ Output \leftarrow KDFLength (K, label, Context) $
+\form#441:$ result \leftarrow $
+\form#442:$ iterations \leftarrow \frac {Length}{Hashlen} $
+\form#443:$ result \leftarrow result \parallel HMACSHA256(K, i \parallel label \parallel Context \parallel Length) $
+\form#444:\[ G(x) = {x}^{32} + {x}^{26} + {x}^{23} + {x}^{22} + {x}^{16} + {x}^{12} + {x}^{11} + {x}^{10} + x^8 + x^7 + x^5 + x^4 + x^2 + x + 1 \]
+\form#445:$x^k × ({x}^{31} + {x}^{30} + {x}^{29} +...+ x^2 + x + 1)$
+\form#446:${x}^{32}$
+\form#447:\[ G(x) = {x}^{31} + {x}^{30} + {x}^{26} + {x}^{25} + {x}^{24} + {x}^{18} + {x}^{15} + {x}^{14} + {x}^{12} + {x}^{11} + {x}^{10} + x^8 + x^6 + x^5 + x^4 + x^3 + x + 1 \]
+\form#448:$ IPsec\; cipher\; and\; authentication\; modes $
+\form#449:$ prf+ (K,S) = T1\;|\;T2\;|\;T3\;|\;T4\;|\;...$
+\form#450:$ T1 = prf (K,\;S\;|\;0x01)$
+\form#451:$ T2 = prf (K,\;T1\;|\;S\;|\;0x01)$
+\form#452:$ T3 = prf (K,\;T2\;|\;S\;|\;0x01)$
+\form#453:$ T4 = prf (K,\;T3\;|\;S\;|\;0x01)$
+\form#454:$ SKEYSEED$
+\form#455:$ SK_d$
+\form#456:$SK_ai \; and \; SK_ar$
+\form#457:$ SK_ei \; and \; SK_er$
+\form#458:$ SK_pi \; and \; SK_pr$
+\form#459:$ SKEYSEED = prf(Ni\;|\;Nr,\;g^ir)$
+\form#460:$ {SK_d\;|\;SK_ai\;|\;SK_ar\;|\;SK_ei\;|\;SK_er\;|\;SK_pi\;|\;SK_pr\;} = prf+ (SKEYSEED,\;Ni\;|\;Nr\;|\;SPIi\;|\;SPIr)$
+\form#461:$ SK_d,\;SK_ai,\;SK_ar,\;SK_ei,\;SK_er,\;SK_pi,\;and\;SK_pr$
+\form#462:$ KEYMAT = prf+(SK_d,\;Ni\;|\;Nr) $
+\form#463:$ KEYMAT = prf+(SK_d,\;g^ir\;(new) |\;Ni\;|\;Nr) $
+\form#464:$ len = len1 + len2 $
+\form#465:$ len1 = std::ceil(8n/std::log2(w)) $
+\form#466:$ len2 = std::floor(std::log2(len1 * (w-1))/std::log2(2)) + 1 $
+\form#467:$ out_len = 8 * len_X / std::log2(w) $
+\form#468:$ csum = len1 * (w - 1) * {2}^{8} $
+\form#469:$ Node(j, std::floor(i/{2}^{j}) XOR 1) $
+\form#470:$ {2}^{w} - 1 $
+\form#471:$ 4 + (n * (p + 1)) $
+\form#472:$ (p * ({2}^{w} - 1)) + 1 $
+\form#473:$ H(I | Q | u16str(D_PBLC) | y[0] | ... | y[p-1]) $
+\form#474:$ N lt {2}^{h} $
+\form#475:$ {2}^{h}, ({2}^{h} + 1), ({2}^{h} + 2), ..., ({2}^{h})+({2}^{h})-1 $
