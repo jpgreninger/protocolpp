@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++ (ProtocolPP)
-   &#160;<span id="projectnumber">5.2.2</span>
+   &#160;<span id="projectnumber">5.2.3</span>
    </div>
   </td>
  </tr>
@@ -79,6 +79,16 @@ $(function() {
  <a href="classoption_1_1Option.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="optionparser_8h_source.html">optionparser.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for option::Option:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Option__coll__graph.png" border="0" usemap="#option_1_1Option_coll__map" alt="Collaboration graph"/></div>
+<map name="option_1_1Option_coll__map" id="option_1_1Option_coll__map">
+<area shape="rect" id="node2" href="structoption_1_1Descriptor.html" title="Describes an option, its help text (usage) and how it should be parsed. " alt="" coords="5,5,144,156"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -291,6 +301,29 @@ Public Attributes</h2></td></tr>
 <p>Makes <code>new_last</code> the new <a class="el" href="classoption_1_1Option.html#afe2aff68191e55b59c53fac3dbbcd7c3" title="Returns a pointer to the last element of the linked list. ">last()</a> by chaining it into the list after <a class="el" href="classoption_1_1Option.html#afe2aff68191e55b59c53fac3dbbcd7c3" title="Returns a pointer to the last element of the linked list. ">last()</a>. </p>
 <p>It doesn't matter which element you call <a class="el" href="classoption_1_1Option.html#a59030822a1ec4e667e6c288d7e5ec961" title="Makes new_last the new last() by chaining it into the list after last(). ">append()</a> on. The new element will always be appended to <a class="el" href="classoption_1_1Option.html#afe2aff68191e55b59c53fac3dbbcd7c3" title="Returns a pointer to the last element of the linked list. ">last()</a>.</p>
 <dl class="section attention"><dt>Attention</dt><dd><code>new_last</code> must not yet be part of a list, or that list will become corrupted, because this method does not unchain <code>new_last</code> from an existing list. </dd></dl>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Option_a59030822a1ec4e667e6c288d7e5ec961_cgraph.png" border="0" usemap="#classoption_1_1Option_a59030822a1ec4e667e6c288d7e5ec961_cgraph" alt=""/></div>
+<map name="classoption_1_1Option_a59030822a1ec4e667e6c288d7e5ec961_cgraph" id="classoption_1_1Option_a59030822a1ec4e667e6c288d7e5ec961_cgraph">
+<area shape="rect" id="node2" href="classoption_1_1Option.html#afe2aff68191e55b59c53fac3dbbcd7c3" title="Returns a pointer to the last element of the linked list. " alt="" coords="224,56,371,83"/>
+<area shape="rect" id="node3" href="classoption_1_1Option.html#abb4e13cd7c90999c8a6b1f871cece283" title="Returns a pointer to the first element of the linked list. " alt="" coords="437,5,583,32"/>
+<area shape="rect" id="node5" href="classoption_1_1Option.html#a1226e45dc2de30f269b2aff1784bbee7" title="Returns a pointer to the previous element of the linked list with wrap&#45;around from first() to last()..." alt="" coords="419,56,601,83"/>
+<area shape="rect" id="node4" href="classoption_1_1Option.html#af51f53a553ef46110e36008a58466a2e" title="Returns true iff this is the first element of the linked list. " alt="" coords="649,5,809,32"/>
+</map>
+</div>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Option_a59030822a1ec4e667e6c288d7e5ec961_icgraph.png" border="0" usemap="#classoption_1_1Option_a59030822a1ec4e667e6c288d7e5ec961_icgraph" alt=""/></div>
+<map name="classoption_1_1Option_a59030822a1ec4e667e6c288d7e5ec961_icgraph" id="classoption_1_1Option_a59030822a1ec4e667e6c288d7e5ec961_icgraph">
+<area shape="rect" id="node2" href="classoption_1_1Parser_1_1StoreOptionAction.html#a8931919fba5516377c202920db2b2f84" title="Called by Parser::workhorse() for each Option that has been successfully parsed (including unknown op..." alt="" coords="224,5,420,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -321,6 +354,18 @@ Public Attributes</h2></td></tr>
 <p>This corresponds to the number of elements in the linked list this <a class="el" href="classoption_1_1Option.html" title="A parsed option from the command line together with its argument if it has one. ">Option</a> is part of. It doesn't matter on which element you call <a class="el" href="classoption_1_1Option.html#a8a632dcd89af60fe0806deb756c08f14" title="Returns the number of times this Option (or others with the same Descriptor::index) occurs in the arg...">count()</a>. The return value is always the same.</p>
 <p>Use this to implement cumulative options, such as -v, -vv, -vvv for different verbosity levels.</p>
 <p>Returns 0 when called for an unused/invalid option. </p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Option_a8a632dcd89af60fe0806deb756c08f14_cgraph.png" border="0" usemap="#classoption_1_1Option_a8a632dcd89af60fe0806deb756c08f14_cgraph" alt=""/></div>
+<map name="classoption_1_1Option_a8a632dcd89af60fe0806deb756c08f14_cgraph" id="classoption_1_1Option_a8a632dcd89af60fe0806deb756c08f14_cgraph">
+<area shape="rect" id="node2" href="classoption_1_1Option.html#abb4e13cd7c90999c8a6b1f871cece283" title="Returns a pointer to the first element of the linked list. " alt="" coords="219,5,365,32"/>
+<area shape="rect" id="node4" href="classoption_1_1Option.html#a36fa8fde6fce89462ded79ab56180ff7" title="Returns true iff this is the last element of the linked list. " alt="" coords="212,56,372,83"/>
+<area shape="rect" id="node3" href="classoption_1_1Option.html#af51f53a553ef46110e36008a58466a2e" title="Returns true iff this is the first element of the linked list. " alt="" coords="420,5,580,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -350,6 +395,29 @@ Public Attributes</h2></td></tr>
 <p>Returns a pointer to the first element of the linked list. </p>
 <p>Use this when you want the first occurrence of an option on the command line to take precedence. Note that this is not the way most programs handle options. You should probably be using <a class="el" href="classoption_1_1Option.html#afe2aff68191e55b59c53fac3dbbcd7c3" title="Returns a pointer to the last element of the linked list. ">last()</a> instead.</p>
 <dl class="section note"><dt>Note</dt><dd>This method may be called on an unused/invalid option and will return a pointer to the option itself. </dd></dl>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Option_abb4e13cd7c90999c8a6b1f871cece283_cgraph.png" border="0" usemap="#classoption_1_1Option_abb4e13cd7c90999c8a6b1f871cece283_cgraph" alt=""/></div>
+<map name="classoption_1_1Option_abb4e13cd7c90999c8a6b1f871cece283_cgraph" id="classoption_1_1Option_abb4e13cd7c90999c8a6b1f871cece283_cgraph">
+<area shape="rect" id="node2" href="classoption_1_1Option.html#af51f53a553ef46110e36008a58466a2e" title="Returns true iff this is the first element of the linked list. " alt="" coords="200,5,360,32"/>
+</map>
+</div>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Option_abb4e13cd7c90999c8a6b1f871cece283_icgraph.png" border="0" usemap="#classoption_1_1Option_abb4e13cd7c90999c8a6b1f871cece283_icgraph" alt=""/></div>
+<map name="classoption_1_1Option_abb4e13cd7c90999c8a6b1f871cece283_icgraph" id="classoption_1_1Option_abb4e13cd7c90999c8a6b1f871cece283_icgraph">
+<area shape="rect" id="node2" href="classoption_1_1Option.html#a8a632dcd89af60fe0806deb756c08f14" title="Returns the number of times this Option (or others with the same Descriptor::index) occurs in the arg..." alt="" coords="200,5,359,32"/>
+<area shape="rect" id="node3" href="classoption_1_1Option.html#afe2aff68191e55b59c53fac3dbbcd7c3" title="Returns a pointer to the last element of the linked list. " alt="" coords="206,56,353,83"/>
+<area shape="rect" id="node4" href="classoption_1_1Option.html#a59030822a1ec4e667e6c288d7e5ec961" title="Makes new_last the new last() by chaining it into the list after last(). " alt="" coords="407,81,577,108"/>
+<area shape="rect" id="node5" href="classoption_1_1Parser_1_1StoreOptionAction.html#a8931919fba5516377c202920db2b2f84" title="Called by Parser::workhorse() for each Option that has been successfully parsed (including unknown op..." alt="" coords="625,74,821,115"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -406,6 +474,21 @@ Public Attributes</h2></td></tr>
 <p>Returns true iff this is the first element of the linked list. </p>
 <p>The first element in the linked list is the first option on the command line that has the respective <a class="el" href="structoption_1_1Descriptor.html#a1fee8ac44f529c99ac2b1149b4c391b1" title="Index of this option&#39;s linked list in the array filled in by the parser. ">Descriptor::index</a> value.</p>
 <p>Returns true for an unused/invalid option. </p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Option_af51f53a553ef46110e36008a58466a2e_icgraph.png" border="0" usemap="#classoption_1_1Option_af51f53a553ef46110e36008a58466a2e_icgraph" alt=""/></div>
+<map name="classoption_1_1Option_af51f53a553ef46110e36008a58466a2e_icgraph" id="classoption_1_1Option_af51f53a553ef46110e36008a58466a2e_icgraph">
+<area shape="rect" id="node2" href="classoption_1_1Option.html#abb4e13cd7c90999c8a6b1f871cece283" title="Returns a pointer to the first element of the linked list. " alt="" coords="215,56,362,83"/>
+<area shape="rect" id="node7" href="classoption_1_1Option.html#a4d12001a91b0b35cf47437d0c60d2b52" title="Returns a pointer to the previous element of the linked list or NULL if called on first()..." alt="" coords="213,107,364,133"/>
+<area shape="rect" id="node3" href="classoption_1_1Option.html#a8a632dcd89af60fe0806deb756c08f14" title="Returns the number of times this Option (or others with the same Descriptor::index) occurs in the arg..." alt="" coords="412,5,571,32"/>
+<area shape="rect" id="node4" href="classoption_1_1Option.html#afe2aff68191e55b59c53fac3dbbcd7c3" title="Returns a pointer to the last element of the linked list. " alt="" coords="418,56,565,83"/>
+<area shape="rect" id="node5" href="classoption_1_1Option.html#a59030822a1ec4e667e6c288d7e5ec961" title="Makes new_last the new last() by chaining it into the list after last(). " alt="" coords="619,81,789,108"/>
+<area shape="rect" id="node6" href="classoption_1_1Parser_1_1StoreOptionAction.html#a8931919fba5516377c202920db2b2f84" title="Called by Parser::workhorse() for each Option that has been successfully parsed (including unknown op..." alt="" coords="837,74,1033,115"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -435,6 +518,17 @@ Public Attributes</h2></td></tr>
 <p>Returns true iff this is the last element of the linked list. </p>
 <p>The last element in the linked list is the last option on the command line that has the respective <a class="el" href="structoption_1_1Descriptor.html#a1fee8ac44f529c99ac2b1149b4c391b1" title="Index of this option&#39;s linked list in the array filled in by the parser. ">Descriptor::index</a> value.</p>
 <p>Returns true for an unused/invalid option. </p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Option_a36fa8fde6fce89462ded79ab56180ff7_icgraph.png" border="0" usemap="#classoption_1_1Option_a36fa8fde6fce89462ded79ab56180ff7_icgraph" alt=""/></div>
+<map name="classoption_1_1Option_a36fa8fde6fce89462ded79ab56180ff7_icgraph" id="classoption_1_1Option_a36fa8fde6fce89462ded79ab56180ff7_icgraph">
+<area shape="rect" id="node2" href="classoption_1_1Option.html#a8a632dcd89af60fe0806deb756c08f14" title="Returns the number of times this Option (or others with the same Descriptor::index) occurs in the arg..." alt="" coords="213,5,372,32"/>
+<area shape="rect" id="node3" href="classoption_1_1Option.html#a59ae9aed505f4d410633bb36478a32be" title="Returns a pointer to the next element of the linked list or NULL if called on last(). " alt="" coords="217,56,368,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -465,6 +559,29 @@ Public Attributes</h2></td></tr>
 <p>Use this when you want the last occurrence of an option on the command line to take precedence. This is the most common way of handling conflicting options.</p>
 <dl class="section note"><dt>Note</dt><dd>This method may be called on an unused/invalid option and will return a pointer to the option itself.</dd></dl>
 <dl class="section user"><dt>Tip:</dt><dd>If you have options with opposite meanings (e.g. <code>&ndash;enable-foo</code> and <code>&ndash;disable-foo</code>), you can assign them the same <a class="el" href="structoption_1_1Descriptor.html#a1fee8ac44f529c99ac2b1149b4c391b1" title="Index of this option&#39;s linked list in the array filled in by the parser. ">Descriptor::index</a> to get them into the same list. Distinguish them by <a class="el" href="structoption_1_1Descriptor.html#a1b220dabd8aad075fa441a80f9b9343c" title="Used to distinguish between options with the same Protocol++® (ProtocolPP®) Protocol, Encryption, and Authentication Library with Testbench and Drivers. See Protocol++® (ProtocolPP®) Protocol, Encryption, and Authentication Library with Testbench and Drivers for details. ">Descriptor::type</a> and all you have to do is check <code> <a class="el" href="classoption_1_1Option.html#afe2aff68191e55b59c53fac3dbbcd7c3" title="Returns a pointer to the last element of the linked list. ">last()</a>-&gt;<a class="el" href="classoption_1_1Option.html#a5268a69e1a91137186ab772574296da0" title="Returns Descriptor::type of this Option&#39;s Descriptor, or 0 if this Option is invalid (unused)...">type()</a> </code> to get the state listed last on the command line. </dd></dl>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Option_afe2aff68191e55b59c53fac3dbbcd7c3_cgraph.png" border="0" usemap="#classoption_1_1Option_afe2aff68191e55b59c53fac3dbbcd7c3_cgraph" alt=""/></div>
+<map name="classoption_1_1Option_afe2aff68191e55b59c53fac3dbbcd7c3_cgraph" id="classoption_1_1Option_afe2aff68191e55b59c53fac3dbbcd7c3_cgraph">
+<area shape="rect" id="node2" href="classoption_1_1Option.html#abb4e13cd7c90999c8a6b1f871cece283" title="Returns a pointer to the first element of the linked list. " alt="" coords="218,5,365,32"/>
+<area shape="rect" id="node4" href="classoption_1_1Option.html#a1226e45dc2de30f269b2aff1784bbee7" title="Returns a pointer to the previous element of the linked list with wrap&#45;around from first() to last()..." alt="" coords="200,56,383,83"/>
+<area shape="rect" id="node3" href="classoption_1_1Option.html#af51f53a553ef46110e36008a58466a2e" title="Returns true iff this is the first element of the linked list. " alt="" coords="431,5,591,32"/>
+</map>
+</div>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Option_afe2aff68191e55b59c53fac3dbbcd7c3_icgraph.png" border="0" usemap="#classoption_1_1Option_afe2aff68191e55b59c53fac3dbbcd7c3_icgraph" alt=""/></div>
+<map name="classoption_1_1Option_afe2aff68191e55b59c53fac3dbbcd7c3_icgraph" id="classoption_1_1Option_afe2aff68191e55b59c53fac3dbbcd7c3_icgraph">
+<area shape="rect" id="node2" href="classoption_1_1Option.html#a59030822a1ec4e667e6c288d7e5ec961" title="Makes new_last the new last() by chaining it into the list after last(). " alt="" coords="200,13,371,39"/>
+<area shape="rect" id="node3" href="classoption_1_1Parser_1_1StoreOptionAction.html#a8931919fba5516377c202920db2b2f84" title="Called by Parser::workhorse() for each Option that has been successfully parsed (including unknown op..." alt="" coords="419,5,615,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -493,6 +610,16 @@ Public Attributes</h2></td></tr>
 
 <p>Returns a pointer to the next element of the linked list or NULL if called on <a class="el" href="classoption_1_1Option.html#afe2aff68191e55b59c53fac3dbbcd7c3" title="Returns a pointer to the last element of the linked list. ">last()</a>. </p>
 <p>If called on <a class="el" href="classoption_1_1Option.html#afe2aff68191e55b59c53fac3dbbcd7c3" title="Returns a pointer to the last element of the linked list. ">last()</a> this method returns NULL. Otherwise it will return the option with the same <a class="el" href="structoption_1_1Descriptor.html#a1fee8ac44f529c99ac2b1149b4c391b1" title="Index of this option&#39;s linked list in the array filled in by the parser. ">Descriptor::index</a> that follows this option on the command line. </p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Option_a59ae9aed505f4d410633bb36478a32be_cgraph.png" border="0" usemap="#classoption_1_1Option_a59ae9aed505f4d410633bb36478a32be_cgraph" alt=""/></div>
+<map name="classoption_1_1Option_a59ae9aed505f4d410633bb36478a32be_cgraph" id="classoption_1_1Option_a59ae9aed505f4d410633bb36478a32be_cgraph">
+<area shape="rect" id="node2" href="classoption_1_1Option.html#a36fa8fde6fce89462ded79ab56180ff7" title="Returns true iff this is the last element of the linked list. " alt="" coords="204,5,364,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -632,6 +759,16 @@ Public Attributes</h2></td></tr>
 
 <p>Returns a pointer to the previous element of the linked list or NULL if called on <a class="el" href="classoption_1_1Option.html#abb4e13cd7c90999c8a6b1f871cece283" title="Returns a pointer to the first element of the linked list. ">first()</a>. </p>
 <p>If called on <a class="el" href="classoption_1_1Option.html#abb4e13cd7c90999c8a6b1f871cece283" title="Returns a pointer to the first element of the linked list. ">first()</a> this method returns NULL. Otherwise it will return the option with the same <a class="el" href="structoption_1_1Descriptor.html#a1fee8ac44f529c99ac2b1149b4c391b1" title="Index of this option&#39;s linked list in the array filled in by the parser. ">Descriptor::index</a> that precedes this option on the command line. </p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Option_a4d12001a91b0b35cf47437d0c60d2b52_cgraph.png" border="0" usemap="#classoption_1_1Option_a4d12001a91b0b35cf47437d0c60d2b52_cgraph" alt=""/></div>
+<map name="classoption_1_1Option_a4d12001a91b0b35cf47437d0c60d2b52_cgraph" id="classoption_1_1Option_a4d12001a91b0b35cf47437d0c60d2b52_cgraph">
+<area shape="rect" id="node2" href="classoption_1_1Option.html#af51f53a553ef46110e36008a58466a2e" title="Returns true iff this is the first element of the linked list. " alt="" coords="204,5,364,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -660,6 +797,18 @@ Public Attributes</h2></td></tr>
 
 <p>Returns a pointer to the previous element of the linked list with wrap-around from <a class="el" href="classoption_1_1Option.html#abb4e13cd7c90999c8a6b1f871cece283" title="Returns a pointer to the first element of the linked list. ">first()</a> to <a class="el" href="classoption_1_1Option.html#afe2aff68191e55b59c53fac3dbbcd7c3" title="Returns a pointer to the last element of the linked list. ">last()</a>. </p>
 <p>If called on <a class="el" href="classoption_1_1Option.html#abb4e13cd7c90999c8a6b1f871cece283" title="Returns a pointer to the first element of the linked list. ">first()</a> this method returns <a class="el" href="classoption_1_1Option.html#afe2aff68191e55b59c53fac3dbbcd7c3" title="Returns a pointer to the last element of the linked list. ">last()</a>. Otherwise it will return the option with the same <a class="el" href="structoption_1_1Descriptor.html#a1fee8ac44f529c99ac2b1149b4c391b1" title="Index of this option&#39;s linked list in the array filled in by the parser. ">Descriptor::index</a> that precedes this option on the command line. </p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Option_a1226e45dc2de30f269b2aff1784bbee7_icgraph.png" border="0" usemap="#classoption_1_1Option_a1226e45dc2de30f269b2aff1784bbee7_icgraph" alt=""/></div>
+<map name="classoption_1_1Option_a1226e45dc2de30f269b2aff1784bbee7_icgraph" id="classoption_1_1Option_a1226e45dc2de30f269b2aff1784bbee7_icgraph">
+<area shape="rect" id="node2" href="classoption_1_1Option.html#afe2aff68191e55b59c53fac3dbbcd7c3" title="Returns a pointer to the last element of the linked list. " alt="" coords="236,13,383,39"/>
+<area shape="rect" id="node3" href="classoption_1_1Option.html#a59030822a1ec4e667e6c288d7e5ec961" title="Makes new_last the new last() by chaining it into the list after last(). " alt="" coords="431,13,601,39"/>
+<area shape="rect" id="node4" href="classoption_1_1Parser_1_1StoreOptionAction.html#a8931919fba5516377c202920db2b2f84" title="Called by Parser::workhorse() for each Option that has been successfully parsed (including unknown op..." alt="" coords="649,5,845,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -770,7 +919,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 21 2022 01:11:06 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

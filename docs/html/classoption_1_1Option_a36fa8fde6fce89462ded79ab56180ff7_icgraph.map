@@ -1,0 +1,4 @@
+<map id="option::Option::isLast" name="option::Option::isLast">
+<area shape="rect" id="node2" href="$classoption_1_1Option.html#a8a632dcd89af60fe0806deb756c08f14" title="Returns the number of times this Option (or others with the same Descriptor::index) occurs in the arg..." alt="" coords="213,5,372,32"/>
+<area shape="rect" id="node3" href="$classoption_1_1Option.html#a59ae9aed505f4d410633bb36478a32be" title="Returns a pointer to the next element of the linked list or NULL if called on last(). " alt="" coords="217,56,368,83"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="option::Option::last" name="option::Option::last">
+<area shape="rect" id="node2" href="$classoption_1_1Option.html#a59030822a1ec4e667e6c288d7e5ec961" title="Makes new_last the new last() by chaining it into the list after last(). " alt="" coords="200,13,371,39"/>
+<area shape="rect" id="node3" href="$classoption_1_1Parser_1_1StoreOptionAction.html#a8931919fba5516377c202920db2b2f84" title="Called by Parser::workhorse() for each Option that has been successfully parsed (including unknown op..." alt="" coords="419,5,615,47"/>
+</map>

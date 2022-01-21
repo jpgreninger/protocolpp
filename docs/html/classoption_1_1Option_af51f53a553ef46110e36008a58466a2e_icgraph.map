@@ -1,0 +1,8 @@
+<map id="option::Option::isFirst" name="option::Option::isFirst">
+<area shape="rect" id="node2" href="$classoption_1_1Option.html#abb4e13cd7c90999c8a6b1f871cece283" title="Returns a pointer to the first element of the linked list. " alt="" coords="215,56,362,83"/>
+<area shape="rect" id="node7" href="$classoption_1_1Option.html#a4d12001a91b0b35cf47437d0c60d2b52" title="Returns a pointer to the previous element of the linked list or NULL if called on first()..." alt="" coords="213,107,364,133"/>
+<area shape="rect" id="node3" href="$classoption_1_1Option.html#a8a632dcd89af60fe0806deb756c08f14" title="Returns the number of times this Option (or others with the same Descriptor::index) occurs in the arg..." alt="" coords="412,5,571,32"/>
+<area shape="rect" id="node4" href="$classoption_1_1Option.html#afe2aff68191e55b59c53fac3dbbcd7c3" title="Returns a pointer to the last element of the linked list. " alt="" coords="418,56,565,83"/>
+<area shape="rect" id="node5" href="$classoption_1_1Option.html#a59030822a1ec4e667e6c288d7e5ec961" title="Makes new_last the new last() by chaining it into the list after last(). " alt="" coords="619,81,789,108"/>
+<area shape="rect" id="node6" href="$classoption_1_1Parser_1_1StoreOptionAction.html#a8931919fba5516377c202920db2b2f84" title="Called by Parser::workhorse() for each Option that has been successfully parsed (including unknown op..." alt="" coords="837,74,1033,115"/>
+</map>

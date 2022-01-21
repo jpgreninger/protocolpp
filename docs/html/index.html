@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++ (ProtocolPP)
-   &#160;<span id="projectnumber">5.2.2</span>
+   &#160;<span id="projectnumber">5.2.3</span>
    </div>
   </td>
  </tr>
@@ -209,7 +209,7 @@ Protocol++&reg; Ring Driver Illustration</div></div>
 <dd>
 <a class="el" href="classjdirectdrive.html">jdirectdrive</a></dd></dl>
 <h1><a class="anchor" id="UDPROT"></a>
-UDP</h1>
+User Datagram Protocol (UDP)</h1>
 <p>(See <a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol">https://en.wikipedia.org/wiki/User_Datagram_Protocol</a>)</p>
 <p>The User Datagram Protocol (UDP) is one of the core members of the Internet protocol suite. The protocol was designed by David P. Reed in 1980 and formally defined in RFC 768.</p>
 <p>UDP uses a simple connectionless transmission model with a minimum of protocol mechanism. It has no handshaking dialogues, and thus exposes the user's program to any unreliability of the underlying network protocol. There is no guarantee of delivery, ordering, or duplicate protection. UDP provides checksums for data integrity, and port numbers for addressing different functions at the source and destination of the datagram.</p>
@@ -244,7 +244,7 @@ UDP</h1>
 <dd>
 <a class="el" href="classjprotocolpp.html">jprotocolpp</a></dd></dl>
 <h1><a class="anchor" id="TCPROT"></a>
-TCP</h1>
+Transport Control Protocol (TCP)</h1>
 <p>(See <a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol">https://en.wikipedia.org/wiki/Transmission_Control_Protocol</a>)</p>
 <p>The Transmission Control Protocol (TCP) is a core protocol of the Internet protocol suite. It originated in the initial network implementation in which it complemented the Internet Protocol (IP). Therefore, the entire suite is commonly referred to as TCP/IP. TCP provides reliable, ordered, and error-checked delivery of a stream of octets between applications running on hosts communicating over an IP network. Major Internet applications such as the World Wide Web, email, remote administration and file transfer rely on TCP. Applications that do not require reliable data stream service may use the User Datagram Protocol (UDP), which provides a connectionless datagram service that emphasizes reduced latency over reliability.</p>
 <p><b>Historical origin</b></p>
@@ -269,7 +269,7 @@ TCP</h1>
 <dd>
 <a class="el" href="classjprotocolpp.html">jprotocolpp</a></dd></dl>
 <h1><a class="anchor" id="ICMPROT"></a>
-ICMP</h1>
+Internet Control Message Protocol (ICMP)</h1>
 <p>See <a href="https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol">https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol</a></p>
 <p>See <a href="https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol_version_6">https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol_version_6</a></p>
 <p>The Internet Control Message Protocol (ICMP) is one of the main protocols of the internet protocol suite. It is used by network devices, like routers, to send error messages indicating, for example, that a requested service is not available or that a host or router could not be reached. ICMP can also be used to relay query messages.[1] It is assigned protocol number 1.[2] ICMP[3] differs from transport protocols such as TCP and UDP in that it is not typically used to exchange data between systems, nor is it regularly employed by end-user network applications (with the exception of some diagnostic tools like ping and traceroute)</p>
@@ -285,7 +285,7 @@ ICMP</h1>
 <dd>
 <a class="el" href="classjprotocolpp.html">jprotocolpp</a></dd></dl>
 <h1><a class="anchor" id="IPROT"></a>
-IP</h1>
+Internet Protocol (IP)</h1>
 <p>(See <a href="https://en.wikipedia.org/wiki/Internet_Protocol">https://en.wikipedia.org/wiki/Internet_Protocol</a>)</p>
 <p>The Internet Protocol (IP) is the principal communications protocol in the Internet protocol suite for relaying datagrams across network boundaries. Its routing function enables internetworking, and essentially establishes the Internet.</p>
 <p>IP has the task of delivering packets from the source host to the destination host solely based on the IP addresses in the packet headers. For this purpose, IP defines packet structures that encapsulate the data to be delivered. It also defines addressing methods that are used to label the datagram with source and destination information.</p>
@@ -341,7 +341,7 @@ UDP Encapsulation</div></div>
 <dd>
 <a class="el" href="classjprotocolpp.html">jprotocolpp</a></dd></dl>
 <h1><a class="anchor" id="TLSPROT"></a>
-TLS</h1>
+Transport Layer Security (TLS)</h1>
 <p>See <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security">https://en.wikipedia.org/wiki/Transport_Layer_Security</a></p>
 <p>Transport Layer Security (TLS) and its predecessor, Secure Sockets Layer (SSL), both of which are frequently referred to as 'SSL', are cryptographic protocols that provide communications security over a computer network. Several versions of the protocols are in widespread use in applications such as web browsing, email, Internet faxing, instant messaging, and voice-over-IP (VoIP). Major web sites use TLS to secure all communications between their servers and web browsers</p>
 <p>The primary goal of the Transport Layer Security protocol is to provide privacy and data integrity between two communicating computer applications. When secured by TLS, connections between a client (e.g., a web browser) and a server (e.g., wikipedia.org) have one or more of the following properties:</p>
@@ -434,7 +434,7 @@ TLS</h1>
 <dd>
 <a class="el" href="classjprotocolpp.html">jprotocolpp</a></dd></dl>
 <h1><a class="anchor" id="IKE"></a>
-IKEv2</h1>
+Internet Key Exchange Version 2 (IKEv2)</h1>
 <p>See RFC7296 Internet Key Exchange Protocol Version 2</p>
 <p>IKE performs mutual authentication between two parties and establishes an IKE Security Association (SA) that includes shared secret information that can be used to efficiently establish SAs for Encapsulating Security Payload (ESP) [ESP] or Authentication Header (AH) and a set of cryptographic algorithms to be used by the SAs to protect the traffic that they carry. An initiator proposes one or more suites by listing supported algorithms that can be combined into suites in a mix-and-match fashion. IKE can also negotiate use of IP Compression (IPComp) [IP-COMP] in connection with an ESP or AH SA. The SAs for ESP or AH that get set up through that IKE SA we call "Child SAs"</p>
 <p>All IKE communications consist of pairs of messages: a request and a response. The pair is called an "exchange", and is sometimes called a "request/response pair". The first two exchanges of messages establishing an IKE SA are called the IKE_SA_INIT exchange and the IKE_AUTH exchange; subsequent IKE exchanges are called either CREATE_CHILD_SA exchanges or INFORMATIONAL exchanges. In the common case, there is a single IKE_SA_INIT exchange and a single IKE_AUTH exchange (a total of four messages) to establish the IKE SA and the first Child SA. In exceptional cases, there may be more than one of each of these exchanges. In all cases, all IKE_SA_INIT exchanges MUST complete before any other exchange type, then all IKE_AUTH exchanges MUST complete, and following that, any number of CREATE_CHILD_SA and INFORMATIONAL exchanges may occur in any order. In some scenarios, only a single Child SA is needed between the IPsec endpoints, and therefore there would be no additional exchanges. Subsequent exchanges MAY be used to establish additional Child SAs between the same authenticated pair of endpoints and to perform housekeeping functions</p>
@@ -480,7 +480,7 @@ Diffie-Hellman Key Agreement</h1>
 <p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jikev2dh.html">ProtocolPP::jikev2dh</a></dd></dl>
 <p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classjikev2dh.html">jikev2dh</a></dd></dl>
 <h1><a class="anchor" id="IPsecPROT"></a>
-IPsec</h1>
+Internet Protocol Security (IPsec)</h1>
 <p>See <a href="https://en.wikipedia.org/wiki/IPsec">https://en.wikipedia.org/wiki/IPsec</a></p>
 <p>Internet Protocol Security (IPsec) is a protocol suite for secure Internet Protocol (IP) communications that works by authenticating and encrypting each IP packet of a communication session. IPsec includes protocols for establishing mutual authentication between agents at the beginning of the session and negotiation of cryptographic keys to be used during the session. IPsec can be used in protecting data flows between a pair of hosts (host-to-host), between a pair of security gateways (network-to-network), or between a security gateway and a host (network-to-host). Internet Protocol security (IPsec) uses cryptographic security services to protect communications over Internet Protocol (IP) networks. IPsec supports network-level peer authentication, data origin authentication, data integrity, data confidentiality (encryption), and replay protection.</p>
 <p>IPsec is an end-to-end security scheme operating in the Internet Layer of the Internet Protocol Suite, while some other Internet security systems in widespread use, such as Transport Layer Security (TLS) and Secure Shell (SSH), operate in the upper layers at the Transport Layer (TLS) and the Application layer (SSH). Hence, only IPsec protects all application traffic over an IP network. Applications can be automatically secured by IPsec at the IP layer.</p>
@@ -526,7 +526,7 @@ IPsec</h1>
 <dd>
 <a class="el" href="classjprotocolpp.html">jprotocolpp</a></dd></dl>
 <h1><a class="anchor" id="MACSECPROT"></a>
-Macsec</h1>
+MAC Security (MACsec)</h1>
 <p>See <a href="https://en.wikipedia.org/wiki/IEEE_802.1AE">https://en.wikipedia.org/wiki/IEEE_802.1AE</a></p>
 <p>802.1AE is the IEEE MAC Security standard (also known as MACsec) which defines connectionless data confidentiality and integrity for media access independent protocols. It is standardized by the IEEE 802.1 working group</p>
 <p><b>Details</b></p>
@@ -566,7 +566,7 @@ Macsec</h1>
 <dd>
 <a class="el" href="classjprotocolpp.html">jprotocolpp</a></dd></dl>
 <h1><a class="anchor" id="SRTPROT"></a>
-SRTP</h1>
+Secure Real-Time Transport Protocol (SRTP)</h1>
 <p>See <a href="https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol">https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol</a></p>
 <p>The Secure Real-time Transport Protocol (or SRTP) defines a profile of RTP (Real-time Transport Protocol), intended to provide encryption, message authentication and integrity, and replay protection to the RTP data in both unicast and multicast applications. It was developed by a small team of IP protocol and cryptographic experts from Cisco and Ericsson including David Oran, David McGrew, Mark Baugher, Mats Naslund, Elisabetta Carrara, Karl Norman, and Rolf Blom. It was first published by the IETF in March 2004 as RFC 3711.</p>
 <p>Since RTP is closely related to RTCP (Real Time Control Protocol) which can be used to control the RTP session, SRTP also has a sister protocol, called Secure RTCP (or SRTCP); SRTCP provides the same security-related features to RTCP, as the ones provided by SRTP to RTP.</p>
@@ -642,7 +642,7 @@ Wifi/WiGig</h1>
 <dd>
 <a class="el" href="classjprotocolpp.html">jprotocolpp</a></dd></dl>
 <h1><a class="anchor" id="WiMaxProt"></a>
-WiMax</h1>
+Worldwide Interoperability for Microwave Access (WiMax)</h1>
 <p>See <a href="https://en.wikipedia.org/wiki/WiMAX">https://en.wikipedia.org/wiki/WiMAX</a></p>
 <div class="image">
 <img src="WiMAX_Forum_logo.png" alt="WiMAX_Forum_logo.png"/>
@@ -769,7 +769,7 @@ Elliptic Curve Digital Signature Algorithm (ECDSA)</h1>
 <dd>
 <a class="el" href="classjprotocolpp.html">jprotocolpp</a></dd></dl>
 <h1><a class="anchor" id="ECDSAEdF"></a>
-Edwards Curve Digital Signature Algorithm Security Association (EdDSA) with curve25519</h1>
+Edwards Curve Digital Signature Algorithm (EdDSA)</h1>
 <p>See RFC8032 for more information</p>
 <p>The Edwards-curve Digital Signature Algorithm (EdDSA) is a variant of Schnorr’s signature system with (possibly twisted) Edwards curves. EdDSA needs to be instantiated with certain parameters, and this document describes some recommended variants</p>
 <p>To facilitate adoption of EdDSA in the Internet community, this document describes the signature scheme in an implementation-oriented way and provides sample code and test vectors</p>
@@ -1112,7 +1112,7 @@ jrsasa </dd>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 21 2022 01:11:44 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -1,0 +1,4 @@
+<map id="tinyxml2::XMLNode" name="tinyxml2::XMLNode">
+<area shape="rect" id="node2" href="$classtinyxml2_1_1XMLDocument.html" title="{tinyxml2::XMLDocument\n||+ XMLDocument()\l+ ~XMLDocument()\l+ ToDocument()\l+ ToDocument()\l+ Parse()\l+ LoadFile()\l+ LoadFile()\l+ SaveFile()\l+ SaveFile()\l+ ProcessEntities()\land 26 more...\l+ ErrorIDToName()\l}" alt="" coords="5,637,188,876"/>
+<area shape="rect" id="node3" href="$classtinyxml2_1_1StrPair.html" title="{tinyxml2::StrPair\n||+ StrPair()\l+ ~StrPair()\l+ Set()\l+ GetStr()\l+ Empty()\l+ SetInternedStr()\l+ SetStr()\l+ ParseText()\l+ ParseName()\l+ TransferTo()\l+ Reset()\l}" alt="" coords="27,5,167,229"/>
+</map>

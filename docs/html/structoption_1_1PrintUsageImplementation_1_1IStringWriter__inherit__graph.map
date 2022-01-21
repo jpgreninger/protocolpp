@@ -1,0 +1,7 @@
+<map id="option::PrintUsageImplementation::IStringWriter" name="option::PrintUsageImplementation::IStringWriter">
+<area shape="rect" id="node2" href="$structoption_1_1PrintUsageImplementation_1_1FunctionWriter.html" title="{option::PrintUsageImplementation\l::FunctionWriter\&lt; Function \&gt;\n|+ write\l|+ operator()()\l+ FunctionWriter()\l}" alt="" coords="5,153,252,259"/>
+<area shape="rect" id="node3" href="$structoption_1_1PrintUsageImplementation_1_1OStreamWriter.html" title="{option::PrintUsageImplementation\l::OStreamWriter\&lt; OStream \&gt;\n|+ ostream\l|+ operator()()\l+ OStreamWriter()\l}" alt="" coords="276,153,523,259"/>
+<area shape="rect" id="node4" href="$structoption_1_1PrintUsageImplementation_1_1StreamWriter.html" title="{option::PrintUsageImplementation\l::StreamWriter\&lt; Function, Stream \&gt;\n|+ fwrite\l+ stream\l|+ operator()()\l+ StreamWriter()\l}" alt="" coords="547,145,801,267"/>
+<area shape="rect" id="node5" href="$structoption_1_1PrintUsageImplementation_1_1SyscallWriter.html" title="{option::PrintUsageImplementation\l::SyscallWriter\&lt; Syscall \&gt;\n|+ write\l+ fd\l|+ operator()()\l+ SyscallWriter()\l}" alt="" coords="825,145,1072,267"/>
+<area shape="rect" id="node6" href="$structoption_1_1PrintUsageImplementation_1_1TemporaryWriter.html" title="{option::PrintUsageImplementation\l::TemporaryWriter\&lt; Temporary \&gt;\n|+ userstream\l|+ operator()()\l+ TemporaryWriter()\l}" alt="" coords="1096,153,1343,259"/>
+</map>

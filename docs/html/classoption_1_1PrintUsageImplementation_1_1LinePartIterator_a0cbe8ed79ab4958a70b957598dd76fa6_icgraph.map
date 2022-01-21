@@ -1,0 +1,5 @@
+<map id="option::PrintUsageImplementation::LinePartIterator::restartTable" name="option::PrintUsageImplementation::LinePartIterator::restartTable">
+<area shape="rect" id="node2" href="$classoption_1_1PrintUsageImplementation_1_1LinePartIterator.html#afe43ca12d399ed3c871e4dc5bf63356e" title="Moves iteration to the next table (if any). Has to be called once on a new LinePartIterator to move t..." alt="" coords="300,5,547,47"/>
+<area shape="rect" id="node3" href="$structoption_1_1PrintUsageImplementation.html#ab38c4198c5cccea2ccd992c8e014df70" title="option::PrintUsageImplementation\l::printUsage" alt="" coords="595,35,841,76"/>
+<area shape="rect" id="node4" href="$namespaceoption.html#afc8bb7e040a98a0b33ff1ce9da1be0d1" title="Outputs a nicely formatted usage string with support for multi&#45;column formatting and line&#45;wrapping..." alt="" coords="889,42,1032,69"/>
+</map>

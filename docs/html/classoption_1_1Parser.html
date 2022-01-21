@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++ (ProtocolPP)
-   &#160;<span id="projectnumber">5.2.2</span>
+   &#160;<span id="projectnumber">5.2.3</span>
    </div>
   </td>
  </tr>
@@ -80,6 +80,15 @@ $(function() {
  <a href="classoption_1_1Parser.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="optionparser_8h_source.html">optionparser.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for option::Parser:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Parser__coll__graph.png" border="0" usemap="#option_1_1Parser_coll__map" alt="Collaboration graph"/></div>
+<map name="option_1_1Parser_coll__map" id="option_1_1Parser_coll__map">
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -265,6 +274,16 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 <dl class="section attention"><dt>Attention</dt><dd>Remember that <code>options</code> and <code>buffer</code> store <a class="el" href="classoption_1_1Option.html" title="A parsed option from the command line together with its argument if it has one. ">Option</a> <em>objects</em>, not pointers. Therefore it is not possible for the same object to be in both arrays. For those options that are found in both <code>buffer</code>[] and <code>options</code>[] the respective objects are independent copies. And only the objects in <code>options</code>[] are properly linked via <a class="el" href="classoption_1_1Option.html#a59ae9aed505f4d410633bb36478a32be" title="Returns a pointer to the next element of the linked list or NULL if called on last(). ">Option::next()</a> and <a class="el" href="classoption_1_1Option.html#a4d12001a91b0b35cf47437d0c60d2b52" title="Returns a pointer to the previous element of the linked list or NULL if called on first()...">Option::prev()</a>. You can iterate over <code>buffer</code>[] to process all options in the order they appear in the argument vector, but if you want access to the other Options with the same <a class="el" href="structoption_1_1Descriptor.html#a1fee8ac44f529c99ac2b1149b4c391b1" title="Index of this option&#39;s linked list in the array filled in by the parser. ">Descriptor::index</a>, then you <em>must</em> access the linked list via <code>options</code>[]. You can get the linked list in options from a buffer object via something like <code>options</code>[buffer[i].index()]. </dd></dl>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Parser_aa747e9792c9c08ede32b6c323438db71_cgraph.png" border="0" usemap="#classoption_1_1Parser_aa747e9792c9c08ede32b6c323438db71_cgraph" alt=""/></div>
+<map name="classoption_1_1Parser_aa747e9792c9c08ede32b6c323438db71_cgraph" id="classoption_1_1Parser_aa747e9792c9c08ede32b6c323438db71_cgraph">
+<area shape="rect" id="node2" href="classoption_1_1Parser.html#a6e0b5778d1cfbd6cd51240e74d01e138" title="Parses the given argument vector. " alt="" coords="212,5,367,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -345,6 +364,16 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p><a class="el" href="classoption_1_1Parser.html" title="Checks argument vectors for validity and parses them into data structures that are easier to work wit...">Parser</a>(...) with non-const argv. </p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Parser_a78b4c7d73fff17204dd908b1b167dec9_cgraph.png" border="0" usemap="#classoption_1_1Parser_a78b4c7d73fff17204dd908b1b167dec9_cgraph" alt=""/></div>
+<map name="classoption_1_1Parser_a78b4c7d73fff17204dd908b1b167dec9_cgraph" id="classoption_1_1Parser_a78b4c7d73fff17204dd908b1b167dec9_cgraph">
+<area shape="rect" id="node2" href="classoption_1_1Parser.html#a6e0b5778d1cfbd6cd51240e74d01e138" title="Parses the given argument vector. " alt="" coords="212,5,367,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -419,6 +448,16 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>POSIX <a class="el" href="classoption_1_1Parser.html" title="Checks argument vectors for validity and parses them into data structures that are easier to work wit...">Parser</a>(...) (gnu==false). </p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Parser_ae4100da4b662937ead22484e6cfc7cec_cgraph.png" border="0" usemap="#classoption_1_1Parser_ae4100da4b662937ead22484e6cfc7cec_cgraph" alt=""/></div>
+<map name="classoption_1_1Parser_ae4100da4b662937ead22484e6cfc7cec_cgraph" id="classoption_1_1Parser_ae4100da4b662937ead22484e6cfc7cec_cgraph">
+<area shape="rect" id="node2" href="classoption_1_1Parser.html#a6e0b5778d1cfbd6cd51240e74d01e138" title="Parses the given argument vector. " alt="" coords="212,5,367,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -493,6 +532,16 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>POSIX <a class="el" href="classoption_1_1Parser.html" title="Checks argument vectors for validity and parses them into data structures that are easier to work wit...">Parser</a>(...) (gnu==false) with non-const argv. </p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Parser_a23ee244634a38d05f6c4cb1e3692a8a9_cgraph.png" border="0" usemap="#classoption_1_1Parser_a23ee244634a38d05f6c4cb1e3692a8a9_cgraph" alt=""/></div>
+<map name="classoption_1_1Parser_a23ee244634a38d05f6c4cb1e3692a8a9_cgraph" id="classoption_1_1Parser_a23ee244634a38d05f6c4cb1e3692a8a9_cgraph">
+<area shape="rect" id="node2" href="classoption_1_1Parser.html#a6e0b5778d1cfbd6cd51240e74d01e138" title="Parses the given argument vector. " alt="" coords="212,5,367,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -550,6 +599,16 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns <b><code><a class="el" href="classoption_1_1Parser.html#a2c11b050f4248d71758dda52c5f9154d" title="Returns a pointer to an array of non-option arguments (only valid if nonOptionsCount() &gt;0 )...">nonOptions()</a>[i]</code></b> (<em>without</em> checking if i is in range!). </p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Parser_aeeafbf2892a5aca90b89803b2b1cb031_cgraph.png" border="0" usemap="#classoption_1_1Parser_aeeafbf2892a5aca90b89803b2b1cb031_cgraph" alt=""/></div>
+<map name="classoption_1_1Parser_aeeafbf2892a5aca90b89803b2b1cb031_cgraph" id="classoption_1_1Parser_aeeafbf2892a5aca90b89803b2b1cb031_cgraph">
+<area shape="rect" id="node2" href="classoption_1_1Parser.html#a2c11b050f4248d71758dda52c5f9154d" title="Returns a pointer to an array of non&#45;option arguments (only valid if nonOptionsCount() &gt;0 )..." alt="" coords="240,5,433,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -582,6 +641,16 @@ Friends</h2></td></tr>
 <li>As explained at <a class="el" href="classoption_1_1Parser.html#aa64a6a7c196993a1b20d48e8ddd12a34" title="Returns the number of non-option arguments that remained at the end of the most recent parse() that a...">nonOptionsCount()</a> this pointer is only changed by <a class="el" href="classoption_1_1Parser.html#a6e0b5778d1cfbd6cd51240e74d01e138" title="Parses the given argument vector. ">parse()</a> calls that actually encounter non-option arguments. A <a class="el" href="classoption_1_1Parser.html#a6e0b5778d1cfbd6cd51240e74d01e138" title="Parses the given argument vector. ">parse()</a> call that encounters only options, will not change <a class="el" href="classoption_1_1Parser.html#a2c11b050f4248d71758dda52c5f9154d" title="Returns a pointer to an array of non-option arguments (only valid if nonOptionsCount() &gt;0 )...">nonOptions()</a>. </li>
 </ul>
 </dd></dl>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Parser_a2c11b050f4248d71758dda52c5f9154d_icgraph.png" border="0" usemap="#classoption_1_1Parser_a2c11b050f4248d71758dda52c5f9154d_icgraph" alt=""/></div>
+<map name="classoption_1_1Parser_a2c11b050f4248d71758dda52c5f9154d_icgraph" id="classoption_1_1Parser_a2c11b050f4248d71758dda52c5f9154d_icgraph">
+<area shape="rect" id="node2" href="classoption_1_1Parser.html#aeeafbf2892a5aca90b89803b2b1cb031" title="Returns nonOptions()[i] (without checking if i is in range!). " alt="" coords="247,5,433,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -741,6 +810,17 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 <dl class="section attention"><dt>Attention</dt><dd>Remember that <code>options</code> and <code>buffer</code> store <a class="el" href="classoption_1_1Option.html" title="A parsed option from the command line together with its argument if it has one. ">Option</a> <em>objects</em>, not pointers. Therefore it is not possible for the same object to be in both arrays. For those options that are found in both <code>buffer</code>[] and <code>options</code>[] the respective objects are independent copies. And only the objects in <code>options</code>[] are properly linked via <a class="el" href="classoption_1_1Option.html#a59ae9aed505f4d410633bb36478a32be" title="Returns a pointer to the next element of the linked list or NULL if called on last(). ">Option::next()</a> and <a class="el" href="classoption_1_1Option.html#a4d12001a91b0b35cf47437d0c60d2b52" title="Returns a pointer to the previous element of the linked list or NULL if called on first()...">Option::prev()</a>. You can iterate over <code>buffer</code>[] to process all options in the order they appear in the argument vector, but if you want access to the other Options with the same <a class="el" href="structoption_1_1Descriptor.html#a1fee8ac44f529c99ac2b1149b4c391b1" title="Index of this option&#39;s linked list in the array filled in by the parser. ">Descriptor::index</a>, then you <em>must</em> access the linked list via <code>options</code>[]. You can get the linked list in options from a buffer object via something like <code>options</code>[buffer[i].index()]. </dd></dl>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Parser_a6e0b5778d1cfbd6cd51240e74d01e138_icgraph.png" border="0" usemap="#classoption_1_1Parser_a6e0b5778d1cfbd6cd51240e74d01e138_icgraph" alt=""/></div>
+<map name="classoption_1_1Parser_a6e0b5778d1cfbd6cd51240e74d01e138_icgraph" id="classoption_1_1Parser_a6e0b5778d1cfbd6cd51240e74d01e138_icgraph">
+<area shape="rect" id="node2" href="classoption_1_1Parser.html#aa747e9792c9c08ede32b6c323438db71" title="Creates a new Parser and immediately parses the given argument vector. " alt="" coords="208,5,367,32"/>
+<area shape="rect" id="node3" href="classoption_1_1Parser.html#ab26280e3b2ebc2f2fc4ed8b3b1e2a39c" title="parse() with non&#45;const argv. " alt="" coords="210,56,365,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -821,6 +901,16 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p><a class="el" href="classoption_1_1Parser.html#a6e0b5778d1cfbd6cd51240e74d01e138" title="Parses the given argument vector. ">parse()</a> with non-const argv. </p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Parser_ab26280e3b2ebc2f2fc4ed8b3b1e2a39c_cgraph.png" border="0" usemap="#classoption_1_1Parser_ab26280e3b2ebc2f2fc4ed8b3b1e2a39c_cgraph" alt=""/></div>
+<map name="classoption_1_1Parser_ab26280e3b2ebc2f2fc4ed8b3b1e2a39c_cgraph" id="classoption_1_1Parser_ab26280e3b2ebc2f2fc4ed8b3b1e2a39c_cgraph">
+<area shape="rect" id="node2" href="classoption_1_1Parser.html#a6e0b5778d1cfbd6cd51240e74d01e138" title="Parses the given argument vector. " alt="" coords="208,5,363,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -895,6 +985,16 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>POSIX <a class="el" href="classoption_1_1Parser.html#a6e0b5778d1cfbd6cd51240e74d01e138" title="Parses the given argument vector. ">parse()</a> (gnu==false). </p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Parser_a41885a7308249c8532714e15b36106bd_cgraph.png" border="0" usemap="#classoption_1_1Parser_a41885a7308249c8532714e15b36106bd_cgraph" alt=""/></div>
+<map name="classoption_1_1Parser_a41885a7308249c8532714e15b36106bd_cgraph" id="classoption_1_1Parser_a41885a7308249c8532714e15b36106bd_cgraph">
+<area shape="rect" id="node2" href="classoption_1_1Parser.html#a6e0b5778d1cfbd6cd51240e74d01e138" title="Parses the given argument vector. " alt="" coords="208,5,363,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -969,6 +1069,16 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>POSIX <a class="el" href="classoption_1_1Parser.html#a6e0b5778d1cfbd6cd51240e74d01e138" title="Parses the given argument vector. ">parse()</a> (gnu==false) with non-const argv. </p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classoption_1_1Parser_ad40585faa23a97a186cf9a45b8c2b42b_cgraph.png" border="0" usemap="#classoption_1_1Parser_ad40585faa23a97a186cf9a45b8c2b42b_cgraph" alt=""/></div>
+<map name="classoption_1_1Parser_ad40585faa23a97a186cf9a45b8c2b42b_cgraph" id="classoption_1_1Parser_ad40585faa23a97a186cf9a45b8c2b42b_cgraph">
+<area shape="rect" id="node2" href="classoption_1_1Parser.html#a6e0b5778d1cfbd6cd51240e74d01e138" title="Parses the given argument vector. " alt="" coords="208,5,363,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1001,7 +1111,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 21 2022 01:11:06 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
