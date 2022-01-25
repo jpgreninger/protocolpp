@@ -1,14 +1,13 @@
 <map id="include/jecdsaedsa.h" name="include/jecdsaedsa.h">
-<area shape="rect" id="node2" href="$jsecass_8h.html" title="jsecass.h" alt="" coords="1537,80,1620,107"/>
-<area shape="rect" id="node26" href="$jenum_8h.html" title="jenum.h" alt="" coords="375,528,449,555"/>
-<area shape="rect" id="node27" href="$jarray_8h.html" title="jarray.h" alt="" coords="1623,453,1694,480"/>
-<area shape="rect" id="node42" href="$tinyxml2_8h.html" title="tinyxml2.h" alt="" coords="910,379,1002,405"/>
-<area shape="rect" id="node45" href="$jlogger_8h.html" title="jlogger.h" alt="" coords="2027,304,2106,331"/>
-<area shape="rect" id="node3" href="$jprotocol_8h.html" title="jprotocol.h" alt="" coords="1205,155,1296,181"/>
-<area shape="rect" id="node23" href="$EnumString_8h.html" title="EnumString.h" alt="" coords="349,603,459,629"/>
-<area shape="rect" id="node33" href="$jrand_8h.html" title="jrand.h" alt="" coords="1277,379,1344,405"/>
-<area shape="rect" id="node37" href="$jreplay_8h.html" title="jreplay.h" alt="" coords="1409,304,1487,331"/>
-<area shape="rect" id="node38" href="$ciphers_8h.html" title="ciphers.h" alt="" coords="635,229,717,256"/>
-<area shape="rect" id="node36" href="$SFMT_8h.html" title="SFMT.h" alt="" coords="1340,453,1407,480"/>
-<area shape="rect" id="node39" href="$jmodes_8h.html" title="jmodes.h" alt="" coords="635,304,717,331"/>
+<area shape="rect" id="node2" href="$jsecass_8h.html" title="jsecass.h" alt="" coords="1491,80,1573,107"/>
+<area shape="rect" id="node26" href="$jenum_8h.html" title="jenum.h" alt="" coords="2000,453,2075,480"/>
+<area shape="rect" id="node27" href="$jarray_8h.html" title="jarray.h" alt="" coords="787,379,858,405"/>
+<area shape="rect" id="node40" href="$tinyxml2_8h.html" title="tinyxml2.h" alt="" coords="1691,304,1783,331"/>
+<area shape="rect" id="node43" href="$jlogger_8h.html" title="jlogger.h" alt="" coords="138,155,217,181"/>
+<area shape="rect" id="node3" href="$jprotocol_8h.html" title="jprotocol.h" alt="" coords="1136,155,1227,181"/>
+<area shape="rect" id="node23" href="$EnumString_8h.html" title="EnumString.h" alt="" coords="2008,528,2117,555"/>
+<area shape="rect" id="node34" href="$jrand_8h.html" title="jrand.h" alt="" coords="1164,304,1231,331"/>
+<area shape="rect" id="node38" href="$jreplay_8h.html" title="jreplay.h" alt="" coords="769,229,847,256"/>
+<area shape="rect" id="node39" href="$ciphers_8h.html" title="ciphers.h" alt="" coords="1537,229,1618,256"/>
+<area shape="rect" id="node37" href="$SFMT_8h.html" title="SFMT.h" alt="" coords="1235,379,1301,405"/>
 </map>

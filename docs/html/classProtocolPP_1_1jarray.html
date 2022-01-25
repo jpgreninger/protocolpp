@@ -92,6 +92,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac01a0173fdf45643d9720fe15fecd80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af556a8cbba987a364e8e9602f2525c52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jarray.html#af556a8cbba987a364e8e9602f2525c52">jarray</a> (unsigned int size)</td></tr>
 <tr class="separator:af556a8cbba987a364e8e9602f2525c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a489caa8df37b9f5ab5c20c618d1eefd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jarray.html#a489caa8df37b9f5ab5c20c618d1eefd7">jarray</a> (std::initializer_list&lt; T &gt; init)</td></tr>
+<tr class="separator:a489caa8df37b9f5ab5c20c618d1eefd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a615c498147a46bf214a46cf2a0a2ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jarray.html#a0a615c498147a46bf214a46cf2a0a2ed">jarray</a> (unsigned int size, T value, <a class="el" href="namespaceProtocolPP.html#a4c490fb0ae4e404f895c8b65147453ae">endian_t</a> format=<a class="el" href="namespaceProtocolPP.html#a4c490fb0ae4e404f895c8b65147453aea811508292b78195e7278e873ca299f93">BIG</a>)</td></tr>
 <tr class="separator:a0a615c498147a46bf214a46cf2a0a2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a289b08d8072af9ebfbfd9bd2d246849b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jarray.html#a289b08d8072af9ebfbfd9bd2d246849b">jarray</a> (const <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; T &gt; &amp;rhs, <a class="el" href="namespaceProtocolPP.html#a4c490fb0ae4e404f895c8b65147453ae">endian_t</a> format=<a class="el" href="namespaceProtocolPP.html#a4c490fb0ae4e404f895c8b65147453aea811508292b78195e7278e873ca299f93">BIG</a>)</td></tr>
@@ -124,6 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a38479aad489350291c9a14208a3dc64c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeeacec7af76dcdf7d482786478678fe1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jarray.html#aeeacec7af76dcdf7d482786478678fe1">append</a> (<a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; T &gt; rhs)</td></tr>
 <tr class="separator:aeeacec7af76dcdf7d482786478678fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab34f86c8624b0e1132acf964bc558c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jarray.html#aab34f86c8624b0e1132acf964bc558c0">append</a> (std::initializer_list&lt; T &gt; rhs)</td></tr>
+<tr class="separator:aab34f86c8624b0e1132acf964bc558c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a668b145cd447dbe574b546ba8d534dcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jarray.html#a668b145cd447dbe574b546ba8d534dcc">insert</a> (unsigned int index, <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; T &gt; &amp;rhs)</td></tr>
 <tr class="separator:a668b145cd447dbe574b546ba8d534dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4bf084c034bda7fc3a05d3415461170"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jarray.html#ac4bf084c034bda7fc3a05d3415461170">update</a> (unsigned int index, <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; T &gt; &amp;rhs)</td></tr>
@@ -173,7 +177,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac01a0173fdf45643d9720fe15fecd80c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac01a0173fdf45643d9720fe15fecd80c">&#9670;&nbsp;</a></span>jarray() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac01a0173fdf45643d9720fe15fecd80c">&#9670;&nbsp;</a></span>jarray() <span class="overload">[1/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,7 +198,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="af556a8cbba987a364e8e9602f2525c52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af556a8cbba987a364e8e9602f2525c52">&#9670;&nbsp;</a></span>jarray() <span class="overload">[2/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af556a8cbba987a364e8e9602f2525c52">&#9670;&nbsp;</a></span>jarray() <span class="overload">[2/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,8 +231,43 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a489caa8df37b9f5ab5c20c618d1eefd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a489caa8df37b9f5ab5c20c618d1eefd7">&#9670;&nbsp;</a></span>jarray() <span class="overload">[3/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">jarray::jarray </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>init</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor for jarray initialized to size with value </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">init</td><td>- initializer list in curly braces myarr&lt;uint8_t&gt; {0x10, 0x1E}; </td></tr>
+    <tr><td class="paramname">format</td><td>- endianness of the constructed array (BIG, LITTLE) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a0a615c498147a46bf214a46cf2a0a2ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a615c498147a46bf214a46cf2a0a2ed">&#9670;&nbsp;</a></span>jarray() <span class="overload">[3/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a615c498147a46bf214a46cf2a0a2ed">&#9670;&nbsp;</a></span>jarray() <span class="overload">[4/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -272,7 +311,7 @@ template&lt;typename T&gt; </div>
 </div>
 </div>
 <a id="a289b08d8072af9ebfbfd9bd2d246849b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a289b08d8072af9ebfbfd9bd2d246849b">&#9670;&nbsp;</a></span>jarray() <span class="overload">[4/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a289b08d8072af9ebfbfd9bd2d246849b">&#9670;&nbsp;</a></span>jarray() <span class="overload">[5/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -309,7 +348,7 @@ template&lt;typename T&gt; </div>
 </div>
 </div>
 <a id="ad1d6d5176caec3e42f5315d4b10fc4b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1d6d5176caec3e42f5315d4b10fc4b5">&#9670;&nbsp;</a></span>jarray() <span class="overload">[5/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1d6d5176caec3e42f5315d4b10fc4b5">&#9670;&nbsp;</a></span>jarray() <span class="overload">[6/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -361,7 +400,7 @@ template&lt;typename T&gt; </div>
 </div>
 </div>
 <a id="a71120dbb4ad8fcceac07b276816a9d83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71120dbb4ad8fcceac07b276816a9d83">&#9670;&nbsp;</a></span>jarray() <span class="overload">[6/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a71120dbb4ad8fcceac07b276816a9d83">&#9670;&nbsp;</a></span>jarray() <span class="overload">[7/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -406,7 +445,7 @@ template&lt;typename T&gt; </div>
 </div>
 </div>
 <a id="a33f94c886fa5361fb92aa397e3779a0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33f94c886fa5361fb92aa397e3779a0b">&#9670;&nbsp;</a></span>jarray() <span class="overload">[7/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a33f94c886fa5361fb92aa397e3779a0b">&#9670;&nbsp;</a></span>jarray() <span class="overload">[8/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -450,7 +489,7 @@ template&lt;typename T&gt; </div>
 </div>
 </div>
 <a id="a2cb68cbe7b4e09d9e6d8ccd4cbda7d78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cb68cbe7b4e09d9e6d8ccd4cbda7d78">&#9670;&nbsp;</a></span>jarray() <span class="overload">[8/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cb68cbe7b4e09d9e6d8ccd4cbda7d78">&#9670;&nbsp;</a></span>jarray() <span class="overload">[9/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -527,7 +566,7 @@ template&lt;typename T&gt; </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aeeacec7af76dcdf7d482786478678fe1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeeacec7af76dcdf7d482786478678fe1">&#9670;&nbsp;</a></span>append()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeacec7af76dcdf7d482786478678fe1">&#9670;&nbsp;</a></span>append() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -559,6 +598,32 @@ template&lt;typename T&gt; </div>
 <area shape="rect" id="node2" href="classProtocolPP_1_1jreplay.html#a7cdafc9e45ba94795d0420b0a7283ce9" title="ProtocolPP::jreplay\l::jreplay" alt="" coords="191,5,335,47"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="aab34f86c8624b0e1132acf964bc558c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab34f86c8624b0e1132acf964bc558c0">&#9670;&nbsp;</a></span>append() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void jarray::append </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Method to add the array rhs to the current array </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rhs</td><td>- initializer list to add to this array </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -887,8 +952,9 @@ template&lt;typename T&gt; </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classProtocolPP_1_1jarray_a668b145cd447dbe574b546ba8d534dcc_icgraph.png" border="0" usemap="#classProtocolPP_1_1jarray_a668b145cd447dbe574b546ba8d534dcc_icgraph" alt=""/></div>
 <map name="classProtocolPP_1_1jarray_a668b145cd447dbe574b546ba8d534dcc_icgraph" id="classProtocolPP_1_1jarray_a668b145cd447dbe574b546ba8d534dcc_icgraph">
-<area shape="rect" id="node2" href="classProtocolPP_1_1jarray.html#a0999aab54f9662b305f9959557bf7ea6" title="ProtocolPP::jarray\l\&lt; uint8_t \&gt;::to_string" alt="" coords="191,5,353,47"/>
-<area shape="rect" id="node3" href="classProtocolPP_1_1jreplay.html#a7d04bf88c3e184b6bde16c79d3f89771" title="ProtocolPP::jreplay\l::print" alt="" coords="200,71,344,112"/>
+<area shape="rect" id="node2" href="classProtocolPP_1_1jarray.html#aab34f86c8624b0e1132acf964bc558c0" title="ProtocolPP::jarray\l\&lt; uint8_t \&gt;::append" alt="" coords="195,5,349,47"/>
+<area shape="rect" id="node3" href="classProtocolPP_1_1jarray.html#a0999aab54f9662b305f9959557bf7ea6" title="ProtocolPP::jarray\l\&lt; uint8_t \&gt;::to_string" alt="" coords="191,71,353,112"/>
+<area shape="rect" id="node4" href="classProtocolPP_1_1jreplay.html#a7d04bf88c3e184b6bde16c79d3f89771" title="ProtocolPP::jreplay\l::print" alt="" coords="200,136,344,177"/>
 </map>
 </div>
 
@@ -1493,7 +1559,7 @@ template&lt;typename T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 21 2022 01:11:06 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 24 2022 16:51:10 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

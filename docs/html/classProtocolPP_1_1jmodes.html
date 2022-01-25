@@ -678,7 +678,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Examples: </p><div class="fragment"><div class="line">ghash.ProcessData(<span class="keyword">nullptr</span>,</div><div class="line">                  <span class="keyword">nullptr</span>,</div><div class="line">                  0,</div><div class="line">                  authdata.get_ptr(),</div><div class="line">                  authdata.get_size(),</div><div class="line">                  ricv.get_ptr(),</div><div class="line">                  ricv.get_size())</div><div class="line"></div><div class="line">ghash.result(icv.get_ptr(),</div><div class="line">             icv.get_size());</div></div><!-- fragment --> 
+<p>Examples: </p><div class="fragment"><div class="line"><span class="comment">// Process AES-GCM</span></div><div class="line">aesgcm.ProcessData(input.<a class="code" href="classProtocolPP_1_1jarray.html#a17ba287e85a719c059e7090fd1ba806b">get_ptr</a>(),</div><div class="line">                   output.get_ptr(),</div><div class="line">                   input.<a class="code" href="classProtocolPP_1_1jarray.html#ad68d9f12c1aa3b783fbcfdfff11b44e1">get_size</a>(),</div><div class="line">                   authdata.get_ptr(),</div><div class="line">                   authdata.get_size(),</div><div class="line">                   ricv.get_ptr(),</div><div class="line">                   ricv.get_size())</div><div class="line"></div><div class="line">aesgcm.result(icv.get_ptr(),</div><div class="line">              icv.get_size());</div><div class="line"></div><div class="line"><span class="comment">// Process AES-GMAC</span></div><div class="line">ghash.ProcessData(<span class="keyword">nullptr</span>,</div><div class="line">                  <span class="keyword">nullptr</span>,</div><div class="line">                  0,</div><div class="line">                  authdata.get_ptr(),</div><div class="line">                  authdata.get_size(),</div><div class="line">                  ricv.get_ptr(),</div><div class="line">                  ricv.get_size())</div><div class="line"></div><div class="line">ghash.result(icv.get_ptr(),</div><div class="line">             icv.get_size());</div><div class="line"></div><div class="line"><span class="comment">// Process SNOWV stream cipher</span></div><div class="line">snowvstream.ProcessData(input.<a class="code" href="classProtocolPP_1_1jarray.html#a17ba287e85a719c059e7090fd1ba806b">get_ptr</a>(),</div><div class="line">                        output.get_ptr(),</div><div class="line">                        input.<a class="code" href="classProtocolPP_1_1jarray.html#ad68d9f12c1aa3b783fbcfdfff11b44e1">get_size</a>());</div></div><!-- fragment --> 
 </div>
 </div>
 <a id="ab457cde865fc2f1652e5af1eb6f3a43f"></a>
@@ -710,11 +710,11 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input</td><td>- input data to process </td></tr>
-    <tr><td class="paramname">length</td><td>- length of the data in bytes </td></tr>
+    <tr><td class="paramname">length</td><td>- length of the data in bytes</td></tr>
   </table>
   </dd>
 </dl>
-
+<p>Examples: </p><div class="fragment"><div class="line"><span class="comment">// Process SHA3</span></div><div class="line">sha3.ProcessData(input.<a class="code" href="classProtocolPP_1_1jarray.html#a17ba287e85a719c059e7090fd1ba806b">get_ptr</a>(),</div><div class="line">                 input.<a class="code" href="classProtocolPP_1_1jarray.html#ad68d9f12c1aa3b783fbcfdfff11b44e1">get_size</a>());</div><div class="line"></div><div class="line"><span class="comment">// Process POLY1305</span></div><div class="line">poly1305.ProcessData(input.<a class="code" href="classProtocolPP_1_1jarray.html#a17ba287e85a719c059e7090fd1ba806b">get_ptr</a>(),</div><div class="line">                     input.<a class="code" href="classProtocolPP_1_1jarray.html#ad68d9f12c1aa3b783fbcfdfff11b44e1">get_size</a>());</div></div><!-- fragment --> 
 </div>
 </div>
 <a id="aa5efab0d2ed218b73247331fd46ccc6a"></a>
@@ -742,7 +742,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Retrieves the result (ICV)</p>
+<p>Retrieves the result (ICV). For hash only functions performs the final calculation before returning the data to the user</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">result</td><td>- data to retrieve </td></tr>
@@ -759,7 +759,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 21 2022 01:11:06 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 24 2022 16:51:10 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
