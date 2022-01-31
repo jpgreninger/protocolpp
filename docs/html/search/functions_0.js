@@ -7,7 +7,7 @@ var searchData=
   ['aead_5fchacha_5fpoly1305',['aead_chacha_poly1305',['../classProtocolPP_1_1aead__chacha__poly1305.html#a3744485cf7bc6b1cd929fb8ce1274a6e',1,'ProtocolPP::aead_chacha_poly1305']]],
   ['alloc',['Alloc',['../classtinyxml2_1_1MemPool.html#a4f977b5fed752c0bbfe5295f469d6449',1,'tinyxml2::MemPool::Alloc()'],['../classtinyxml2_1_1MemPoolT.html#a810fd2b0caf56b8b688e55f2768f96c7',1,'tinyxml2::MemPoolT::Alloc()']]],
   ['antireplay',['antireplay',['../classProtocolPP_1_1jreplay.html#a8ad62028f132d849e2d9d4ff30a0c0e2',1,'ProtocolPP::jreplay']]],
-  ['append',['append',['../classProtocolPP_1_1jarray.html#aeeacec7af76dcdf7d482786478678fe1',1,'ProtocolPP::jarray::append()'],['../classoption_1_1Option.html#a59030822a1ec4e667e6c288d7e5ec961',1,'option::Option::append()']]],
+  ['append',['append',['../classProtocolPP_1_1jarray.html#aeeacec7af76dcdf7d482786478678fe1',1,'ProtocolPP::jarray::append(jarray&lt; T &gt; rhs)'],['../classProtocolPP_1_1jarray.html#aab34f86c8624b0e1132acf964bc558c0',1,'ProtocolPP::jarray::append(std::initializer_list&lt; T &gt; rhs)'],['../classoption_1_1Option.html#a59030822a1ec4e667e6c288d7e5ec961',1,'option::Option::append()']]],
   ['arrayattribute',['ArrayAttribute',['../classtinyxml2_1_1XMLElement.html#acb79052dfb2acb9a5e32e5538eebe597',1,'tinyxml2::XMLElement']]],
   ['arrayvalue',['ArrayValue',['../classtinyxml2_1_1XMLAttribute.html#a9849664c0e18b9a3548df224dcf1c8f9',1,'tinyxml2::XMLAttribute']]],
   ['attribute',['Attribute',['../classtinyxml2_1_1XMLElement.html#a70e49ed60b11212ae35f7e354cfe1de9',1,'tinyxml2::XMLElement']]],

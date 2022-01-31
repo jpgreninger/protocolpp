@@ -59,7 +59,7 @@ var searchData=
   ['alloc',['Alloc',['../classtinyxml2_1_1MemPool.html#a4f977b5fed752c0bbfe5295f469d6449',1,'tinyxml2::MemPool::Alloc()'],['../classtinyxml2_1_1MemPoolT.html#a810fd2b0caf56b8b688e55f2768f96c7',1,'tinyxml2::MemPoolT::Alloc()']]],
   ['althost',['ALTHOST',['../namespaceProtocolPP.html#a22278102b2df1065e7ed79cdbc72c1aaa25b94457148aefcce0028cdad1b861ac',1,'ProtocolPP']]],
   ['antireplay',['antireplay',['../classProtocolPP_1_1jreplay.html#a8ad62028f132d849e2d9d4ff30a0c0e2',1,'ProtocolPP::jreplay']]],
-  ['append',['append',['../classProtocolPP_1_1jarray.html#aeeacec7af76dcdf7d482786478678fe1',1,'ProtocolPP::jarray::append()'],['../classoption_1_1Option.html#a59030822a1ec4e667e6c288d7e5ec961',1,'option::Option::append()']]],
+  ['append',['append',['../classProtocolPP_1_1jarray.html#aeeacec7af76dcdf7d482786478678fe1',1,'ProtocolPP::jarray::append(jarray&lt; T &gt; rhs)'],['../classProtocolPP_1_1jarray.html#aab34f86c8624b0e1132acf964bc558c0',1,'ProtocolPP::jarray::append(std::initializer_list&lt; T &gt; rhs)'],['../classoption_1_1Option.html#a59030822a1ec4e667e6c288d7e5ec961',1,'option::Option::append()']]],
   ['application',['APPLICATION',['../namespaceProtocolPP.html#a47fba8c8ccf58726ca64a0121622e879ab2e9fb50d667c4b920f83422250e64d6',1,'ProtocolPP']]],
   ['arc4',['ARC4',['../classProtocolPP_1_1jmodes.html#a8208b547ec1c2b22799cdf663bac42a1af566e2e856bc18c2d3ca675d8376ec91',1,'ProtocolPP::jmodes::ARC4()'],['../namespaceProtocolPP.html#aba84d6eeb00e8af8d8758731492dd76ba0350182db983a633b56609c57e830675',1,'ProtocolPP::ARC4()']]],
   ['arg',['Arg',['../structoption_1_1Arg.html',1,'option::Arg'],['../classoption_1_1Option.html#a402be734987458364b0f473acae36238',1,'option::Option::arg()']]],

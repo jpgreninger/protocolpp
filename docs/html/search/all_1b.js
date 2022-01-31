@@ -37,7 +37,7 @@ var searchData=
   ['_7ejipsec',['~jipsec',['../classProtocolPP_1_1jipsec.html#ade92b66a2d49acce15d3a5dd1460552a',1,'ProtocolPP::jipsec']]],
   ['_7ejipsecsa',['~jipsecsa',['../classProtocolPP_1_1jipsecsa.html#a04e976555aa728cf865ed59d9531775f',1,'ProtocolPP::jipsecsa']]],
   ['_7ejlmsa',['~jlmsa',['../classProtocolPP_1_1jlmsa.html#aadded9a2a0bb27e46705569109c54201',1,'ProtocolPP::jlmsa']]],
-  ['_7ejlogger',['~jlogger',['../classInterfacePP_1_1jlogger.html#af18ad99ee96d8a2f78c19f8d7dd9b346',1,'InterfacePP::jlogger']]],
+  ['_7ejlogger',['~jlogger',['../classInterfacePP_1_1jlogger.html#a29a5bdef8a5eae88e0d228804132a90f',1,'InterfacePP::jlogger']]],
   ['_7ejlte',['~jlte',['../classProtocolPP_1_1jlte.html#a50842836553ad844dba4d41d3749c407',1,'ProtocolPP::jlte']]],
   ['_7ejltesa',['~jltesa',['../classProtocolPP_1_1jltesa.html#ac9da48fd41daf2dec3695c0b97fbff25',1,'ProtocolPP::jltesa']]],
   ['_7ejmacsecsa',['~jmacsecsa',['../classProtocolPP_1_1jmacsecsa.html#a7310e6e74f18a8b00bfb06b58dd110c3',1,'ProtocolPP::jmacsecsa']]],
