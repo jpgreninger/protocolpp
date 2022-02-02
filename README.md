@@ -180,7 +180,7 @@ For W.A.S.P usage, see the doxygen section
   * https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=e5551d0b1134404699de66194c12608b&wix-vod-comp-id=comp-j2ddnt1i
 
 * Protocol++® (Protocolpp®) - 5.2.4 released January 29, 2022
-  * Many changes for -pedantic-errors -Wall compile
+  * Many changes for -pedantic-errors -Wall -Wextra compile
   * Bumped version
 
 * Protocol++® (Protocolpp®) - 5.2.3 released January 24, 2022
