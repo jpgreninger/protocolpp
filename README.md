@@ -1,4 +1,4 @@
-# Protocolpp®(Protocol++®) 5.2.2 Released January 1, 2022! - www.protocolpp.com/shop
+# Protocolpp®(Protocol++®) 5.2.4 Released January 29, 2022! - www.protocolpp.com/shop
 Networking and Encryption Library, Testbench, and Drivers
 
 Only www.protocolpp.com has the rights to update, modify,
@@ -57,7 +57,7 @@ protocolpp® - Executable of the full set of protocols, ciphers, testbench,
 
 libprotocolpp.a - Static library of the protocolpp.h interface, wasp.h, and ciphers.h
 
-libprotocolpp.so.5.2.0 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
+libprotocolpp.so.5.2.4 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
 
 winprot++.lib - Static library for Windows compiled under VC++ 19
 
@@ -178,6 +178,16 @@ For W.A.S.P usage, see the doxygen section
   
 * See the Beta 2.0.0 video May 7, 2017 before Intel interview on May 19, 2017
   * https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=e5551d0b1134404699de66194c12608b&wix-vod-comp-id=comp-j2ddnt1i
+
+* Protocol++® (Protocolpp®) - 5.2.4 released January 29, 2022
+  * Many changes for -Wpedantic -Wall compile
+  * Bumped version
+
+* Protocol++® (Protocolpp®) - 5.2.3 released January 24, 2022
+  * Added initilizer list constructor and append() to jarray
+  * Many additional CLangTidy updates
+  * changed all seeds to UINT64_T from unsigned long
+  * Bumped version
 
 * New in 5.2.2 - Release January 1, 2022
   * Bumped version
