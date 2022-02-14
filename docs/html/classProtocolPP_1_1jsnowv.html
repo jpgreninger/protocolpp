@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++ (ProtocolPP)
-   &#160;<span id="projectnumber">5.2.4</span>
+   &#160;<span id="projectnumber">5.3.0</span>
    </div>
   </td>
  </tr>
@@ -104,8 +104,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab8ccdd9ab8a2aeb787b301af0b6de502"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jsnowv.html#ab8ccdd9ab8a2aeb787b301af0b6de502">~jsnowv</a> ()</td></tr>
 <tr class="memdesc:ab8ccdd9ab8a2aeb787b301af0b6de502"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard deconstructor.  <a href="#ab8ccdd9ab8a2aeb787b301af0b6de502">More...</a><br /></td></tr>
 <tr class="separator:ab8ccdd9ab8a2aeb787b301af0b6de502"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08eda75bf9e6e957d35fe3d505671f7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jsnowv.html#a08eda75bf9e6e957d35fe3d505671f7a">ProcessData</a> (const uint8_t *input, uint8_t *aad, int aadlen, uint8_t *output, int length)</td></tr>
-<tr class="separator:a08eda75bf9e6e957d35fe3d505671f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a508df4f456f84c0f093ba635be60c678"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jsnowv.html#a508df4f456f84c0f093ba635be60c678">ProcessData</a> (const uint8_t *input, uint8_t *output, int length, uint8_t *aad=nullptr, int aadlen=0)</td></tr>
+<tr class="separator:a508df4f456f84c0f093ba635be60c678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe60a6f536280cfc0b9f171361c1fa67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jsnowv.html#abe60a6f536280cfc0b9f171361c1fa67">context</a> (uint16_t *ctx)</td></tr>
 <tr class="separator:abe60a6f536280cfc0b9f171361c1fa67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af63d55ba60484405db2624a3ad8fd757"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jsnowv.html#af63d55ba60484405db2624a3ad8fd757">result</a> (uint8_t *icv, unsigned int icvlen)</td></tr>
@@ -270,8 +270,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a08eda75bf9e6e957d35fe3d505671f7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08eda75bf9e6e957d35fe3d505671f7a">&#9670;&nbsp;</a></span>ProcessData()</h2>
+<a id="a508df4f456f84c0f093ba635be60c678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a508df4f456f84c0f093ba635be60c678">&#9670;&nbsp;</a></span>ProcessData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -286,25 +286,25 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>aad</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>aadlen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>output</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>aad</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>aadlen</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -317,10 +317,10 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input</td><td>- either the ciphertext or plaintext to be calculated </td></tr>
-    <tr><td class="paramname">aad</td><td>- authentication only data (should be nullptr for SNOWV mode) </td></tr>
-    <tr><td class="paramname">aadlen</td><td>- length of the authentication only data (should be zero for SNOWV mode) </td></tr>
     <tr><td class="paramname">output</td><td>- result of encryption process </td></tr>
     <tr><td class="paramname">length</td><td>- bit length </td></tr>
+    <tr><td class="paramname">aad</td><td>- authentication only data (should be nullptr for SNOWV mode) </td></tr>
+    <tr><td class="paramname">aadlen</td><td>- length of the authentication only data (should be zero for SNOWV mode) </td></tr>
   </table>
   </dd>
 </dl>
@@ -388,7 +388,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 30 2022 20:02:26 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 13 2022 20:10:20 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

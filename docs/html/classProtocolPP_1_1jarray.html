@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++ (ProtocolPP)
-   &#160;<span id="projectnumber">5.2.4</span>
+   &#160;<span id="projectnumber">5.3.0</span>
    </div>
   </td>
  </tr>
@@ -102,8 +102,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad1d6d5176caec3e42f5315d4b10fc4b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71120dbb4ad8fcceac07b276816a9d83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jarray.html#a71120dbb4ad8fcceac07b276816a9d83">jarray</a> (const std::vector&lt; T &gt; &amp;rhs, <a class="el" href="namespaceProtocolPP.html#a4c490fb0ae4e404f895c8b65147453ae">endian_t</a> format=<a class="el" href="namespaceProtocolPP.html#a4c490fb0ae4e404f895c8b65147453aea811508292b78195e7278e873ca299f93">BIG</a>)</td></tr>
 <tr class="separator:a71120dbb4ad8fcceac07b276816a9d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33f94c886fa5361fb92aa397e3779a0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jarray.html#a33f94c886fa5361fb92aa397e3779a0b">jarray</a> (const uint8_t *rhs, unsigned int size, <a class="el" href="namespaceProtocolPP.html#a4c490fb0ae4e404f895c8b65147453ae">endian_t</a> format=<a class="el" href="namespaceProtocolPP.html#a4c490fb0ae4e404f895c8b65147453aea811508292b78195e7278e873ca299f93">BIG</a>)</td></tr>
-<tr class="separator:a33f94c886fa5361fb92aa397e3779a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08a0d89f80473e9b15fcf5cff7764808"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jarray.html#a08a0d89f80473e9b15fcf5cff7764808">jarray</a> (const T *rhs, unsigned int size, <a class="el" href="namespaceProtocolPP.html#a4c490fb0ae4e404f895c8b65147453ae">endian_t</a> format=<a class="el" href="namespaceProtocolPP.html#a4c490fb0ae4e404f895c8b65147453aea811508292b78195e7278e873ca299f93">BIG</a>)</td></tr>
+<tr class="separator:a08a0d89f80473e9b15fcf5cff7764808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cb68cbe7b4e09d9e6d8ccd4cbda7d78"><td class="memTemplParams" colspan="2">template&lt;typename TT &gt; </td></tr>
 <tr class="memitem:a2cb68cbe7b4e09d9e6d8ccd4cbda7d78"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jarray.html#a2cb68cbe7b4e09d9e6d8ccd4cbda7d78">jarray</a> (<a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; TT &gt; &amp;rhs, <a class="el" href="namespaceProtocolPP.html#a4c490fb0ae4e404f895c8b65147453ae">endian_t</a> format=<a class="el" href="namespaceProtocolPP.html#a4c490fb0ae4e404f895c8b65147453aea811508292b78195e7278e873ca299f93">BIG</a>)</td></tr>
 <tr class="separator:a2cb68cbe7b4e09d9e6d8ccd4cbda7d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -238,9 +238,6 @@ template&lt;typename T &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">jarray::jarray </td>
@@ -250,11 +247,6 @@ template&lt;typename T&gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Constructor for jarray initialized to size with value </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -444,8 +436,8 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a id="a33f94c886fa5361fb92aa397e3779a0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33f94c886fa5361fb92aa397e3779a0b">&#9670;&nbsp;</a></span>jarray() <span class="overload">[8/9]</span></h2>
+<a id="a08a0d89f80473e9b15fcf5cff7764808"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08a0d89f80473e9b15fcf5cff7764808">&#9670;&nbsp;</a></span>jarray() <span class="overload">[8/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -455,7 +447,7 @@ template&lt;typename T&gt; </div>
         <tr>
           <td class="memname">jarray::jarray </td>
           <td>(</td>
-          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramtype">const T *&#160;</td>
           <td class="paramname"><em>rhs</em>, </td>
         </tr>
         <tr>
@@ -1559,7 +1551,7 @@ template&lt;typename T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 30 2022 20:02:26 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 13 2022 20:10:20 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

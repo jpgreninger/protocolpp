@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++ (ProtocolPP)
-   &#160;<span id="projectnumber">5.2.4</span>
+   &#160;<span id="projectnumber">5.3.0</span>
    </div>
   </td>
  </tr>
@@ -126,9 +126,9 @@ Ciphers Interface</h1>
 <tr>
 <th></th><th>4</th><th>8</th><th>10</th><th>12</th><th>16</th><th>20</th><th>24</th><th>32</th><th>48</th><th>64 </th></tr>
 <tr>
-<td>MD5</td><td>-</td><td>X</td><td>-</td><td>X</td><td>X</td><td>-</td><td>-</td><td>-</td><td>-</td><td>- </td></tr>
+<td>MD5</td><td>-</td><td>X</td><td>X</td><td>X</td><td>X</td><td>-</td><td>-</td><td>-</td><td>-</td><td>- </td></tr>
 <tr>
-<td>SHA1</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>-</td><td>-</td><td>-</td><td>- </td></tr>
+<td>SHA1</td><td>-</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>-</td><td>-</td><td>-</td><td>- </td></tr>
 <tr>
 <td>SHA224</td><td>-</td><td>X</td><td>-</td><td>X</td><td>X</td><td>X</td><td>X</td><td>-</td><td>-</td><td>- </td></tr>
 <tr>
@@ -150,9 +150,9 @@ Ciphers Interface</h1>
 <tr>
 <td>SHAKE256</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X </td></tr>
 <tr>
-<td>HMAC-MD5</td><td>-</td><td>X</td><td>-</td><td>X</td><td>X</td><td>-</td><td>-</td><td>-</td><td>-</td><td>- </td></tr>
+<td>HMAC-MD5</td><td>-</td><td>X</td><td>X</td><td>X</td><td>X</td><td>-</td><td>-</td><td>-</td><td>-</td><td>- </td></tr>
 <tr>
-<td>HMAC-SHA1</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>-</td><td>-</td><td>-</td><td>- </td></tr>
+<td>HMAC-SHA1</td><td>-</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>-</td><td>-</td><td>-</td><td>- </td></tr>
 <tr>
 <td>HMAC-SHA2-224</td><td>-</td><td>X</td><td>-</td><td>X</td><td>X</td><td>X</td><td>X</td><td>-</td><td>-</td><td>- </td></tr>
 <tr>
@@ -176,11 +176,11 @@ Ciphers Interface</h1>
 <tr>
 <td>SNOW3G</td><td>X</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>- </td></tr>
 <tr>
-<td>SNOWV</td><td>X</td><td>X</td><td>X</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>- </td></tr>
+<td>SNOWV</td><td>X</td><td>X</td><td>-</td><td>-</td><td>X</td><td>-</td><td>-</td><td>-</td><td>-</td><td>- </td></tr>
 <tr>
 <td>ZUC</td><td>X</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>- </td></tr>
 <tr>
-<td>ZUC256</td><td>X</td><td>X</td><td>X</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>- </td></tr>
+<td>ZUC256</td><td>X</td><td>X</td><td>-</td><td>-</td><td>X</td><td>-</td><td>-</td><td>-</td><td>-</td><td>- </td></tr>
 </table>
 <p><br />
  In addition, CRC support is provided for CRC32-IEEE </p><div class="fragment"><div class="line"><a class="code" href="classjarray.html">jarray&lt;uint8_t&gt;</a> fcs(4);</div><div class="line">std::shared_ptr&lt;jmodes&gt; engine = ciphers::get_crc32();</div><div class="line">engine-&gt;ProcessData(output-&gt;get_ptr(), output-&gt;get_size());</div><div class="line">engine-&gt;result(fcs.get_ptr(), fcs.get_size());</div></div><!-- fragment --><p> <br />
@@ -1136,7 +1136,7 @@ jrsasa </dd>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 30 2022 20:03:00 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 13 2022 20:10:53 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
