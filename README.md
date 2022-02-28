@@ -1,4 +1,4 @@
-# Protocolpp®(Protocol++®) 5.3.0 Released February 13, 2022! - www.protocolpp.com/shop
+# Protocolpp®(Protocol++®) 5.3.0 Released February 27, 2022! - www.protocolpp.com/shop
 Networking and Encryption Library, Testbench, and Drivers
 
 Only www.protocolpp.com has the rights to update, modify,
@@ -179,7 +179,10 @@ For W.A.S.P usage, see the doxygen section
 * See the Beta 2.0.0 video May 7, 2017 before Intel interview on May 19, 2017
   * https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=e5551d0b1134404699de66194c12608b&wix-vod-comp-id=comp-j2ddnt1i
 
-* Protocol++® (Protocolpp®) - 5.3.0 released February 13, 2022
+* Protocol++® (Protocolpp®) - 5.3.0 released February 27, 2022
+  * Added support for ZUC256 with 16-byte IV (as well as 25-byte IV) in LTE, standalone, confident, integrity
+  * Updated SNOWV interface
+  * Bumped version
 
 * Protocol++® (Protocolpp®) - 5.2.4 released January 29, 2022
   * Many changes for -pedantic-errors -Wall -Wextra compile
