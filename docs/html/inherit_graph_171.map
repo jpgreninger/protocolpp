@@ -1,9 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title="STL class. " alt="" coords="231,71,346,98"/>
-<area shape="rect" id="node2" href="$classInterfacePP_1_1jring.html" title="InterfacePP::jring\l\&lt; TR \&gt;" alt="" coords="429,5,562,47"/>
-<area shape="rect" id="node3" href="$classProtocolPP_1_1jikeparse.html" title="ProtocolPP::jikeparse" alt="" coords="416,71,575,98"/>
-<area shape="rect" id="node4" href="$classProtocolPP_1_1jtestcfg.html" title="ProtocolPP::jtestcfg" alt="" coords="421,122,569,149"/>
-<area shape="rect" id="node5" href="$classProtocolPP_1_1wasp.html" title="ProtocolPP::wasp" alt="" coords="429,173,562,199"/>
-<area shape="rect" id="node6" href="$classtinyxml2_1_1XMLVisitor.html" title="tinyxml2::XMLVisitor" alt="" coords="5,122,161,149"/>
-<area shape="rect" id="node7" href="$classtinyxml2_1_1XMLPrinter.html" title="tinyxml2::XMLPrinter" alt="" coords="209,122,368,149"/>
+<area shape="rect" id="node1" title="STL class. " alt="" coords="216,71,320,98"/>
+<area shape="rect" id="node2" href="$classInterfacePP_1_1jring.html" title="InterfacePP::jring\l\&lt; TR \&gt;" alt="" coords="401,5,523,47"/>
+<area shape="rect" id="node3" href="$classProtocolPP_1_1jikeparse.html" title="ProtocolPP::jikeparse" alt="" coords="388,71,536,98"/>
+<area shape="rect" id="node4" href="$classProtocolPP_1_1jtestcfg.html" title="ProtocolPP::jtestcfg" alt="" coords="393,122,531,149"/>
+<area shape="rect" id="node5" href="$classProtocolPP_1_1wasp.html" title="ProtocolPP::wasp" alt="" coords="399,173,525,199"/>
+<area shape="rect" id="node6" href="$classtinyxml2_1_1XMLVisitor.html" title="tinyxml2::XMLVisitor" alt="" coords="5,122,148,149"/>
+<area shape="rect" id="node7" href="$classtinyxml2_1_1XMLPrinter.html" title="tinyxml2::XMLPrinter" alt="" coords="196,122,340,149"/>
 </map>

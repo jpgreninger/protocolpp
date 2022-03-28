@@ -1,6 +1,6 @@
 <map id="tinyxml2::XMLPrinter" name="tinyxml2::XMLPrinter">
-<area shape="rect" id="node3" href="$classProtocolPP_1_1jikeparse.html" title="{ProtocolPP::jikeparse\n||+ jikeparse()\l+ jikeparse()\l+ jikeparse()\l+ ~jikeparse()\l+ get()\l}" alt="" coords="5,667,164,803"/>
-<area shape="rect" id="node4" href="$classProtocolPP_1_1jtestcfg.html" title="{ProtocolPP::jtestcfg\n||+ jtestcfg()\l+ jtestcfg()\l+ jtestcfg()\l+ ~jtestcfg()\l+ set_field()\l+ get_field()\l+ get()\l+ set()\l+ to_xml()\l}" alt="" coords="188,637,336,832"/>
-<area shape="rect" id="node5" href="$classProtocolPP_1_1wasp.html" title="{ProtocolPP::wasp\n||+ wasp()\l+ wasp()\l+ wasp()\l+ ~wasp()\l+ get()\l}" alt="" coords="361,667,494,803"/>
-<area shape="rect" id="node2" href="$classtinyxml2_1_1XMLVisitor.html" title="{tinyxml2::XMLVisitor\n||+ ~XMLVisitor()\l+ VisitEnter()\l+ VisitExit()\l+ VisitEnter()\l+ VisitExit()\l+ Visit()\l+ Visit()\l+ Visit()\l+ Visit()\l}" alt="" coords="184,5,340,200"/>
+<area shape="rect" id="node3" href="$classProtocolPP_1_1jikeparse.html" title="{ProtocolPP::jikeparse\n||+ jikeparse()\l+ jikeparse()\l+ jikeparse()\l+ ~jikeparse()\l+ get()\l}" alt="" coords="5,667,153,803"/>
+<area shape="rect" id="node4" href="$classProtocolPP_1_1jtestcfg.html" title="{ProtocolPP::jtestcfg\n||+ jtestcfg()\l+ jtestcfg()\l+ jtestcfg()\l+ ~jtestcfg()\l+ set_field()\l+ get_field()\l+ get()\l+ set()\l+ to_xml()\l}" alt="" coords="178,637,317,832"/>
+<area shape="rect" id="node5" href="$classProtocolPP_1_1wasp.html" title="{ProtocolPP::wasp\n||+ wasp()\l+ wasp()\l+ wasp()\l+ ~wasp()\l+ get()\l}" alt="" coords="341,667,468,803"/>
+<area shape="rect" id="node2" href="$classtinyxml2_1_1XMLVisitor.html" title="{tinyxml2::XMLVisitor\n||+ ~XMLVisitor()\l+ VisitEnter()\l+ VisitExit()\l+ VisitEnter()\l+ VisitExit()\l+ Visit()\l+ Visit()\l+ Visit()\l+ Visit()\l}" alt="" coords="176,5,319,200"/>
 </map>

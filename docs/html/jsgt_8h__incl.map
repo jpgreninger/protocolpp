@@ -1,13 +1,13 @@
 <map id="platforms/SEC/include/jsgt.h" name="platforms/SEC/include/jsgt.h">
-<area shape="rect" id="node3" href="$jprotocol_8h.html" title="jprotocol.h" alt="" coords="1110,95,1201,121"/>
-<area shape="rect" id="node23" href="$EnumString_8h.html" title="EnumString.h" alt="" coords="2057,543,2166,569"/>
-<area shape="rect" id="node26" href="$jenum_8h.html" title="jenum.h" alt="" coords="1701,468,1776,495"/>
-<area shape="rect" id="node27" href="$jarray_8h.html" title="jarray.h" alt="" coords="751,393,822,420"/>
-<area shape="rect" id="node34" href="$jrand_8h.html" title="jrand.h" alt="" coords="796,319,862,345"/>
-<area shape="rect" id="node42" href="$jreplay_8h.html" title="jreplay.h" alt="" coords="736,244,813,271"/>
-<area shape="rect" id="node43" href="$ciphers_8h.html" title="ciphers.h" alt="" coords="1431,169,1512,196"/>
-<area shape="rect" id="node48" href="$tinyxml2_8h.html" title="tinyxml2.h" alt="" coords="460,319,552,345"/>
-<area shape="rect" id="node37" href="$SFMT_8h.html" title="SFMT.h" alt="" coords="1140,393,1206,420"/>
-<area shape="rect" id="node41" href="$SFMT-params_8h.html" title="SFMT&#45;params.h" alt="" coords="1299,468,1420,495"/>
-<area shape="rect" id="node44" href="$jmodes_8h.html" title="jmodes.h" alt="" coords="1520,244,1602,271"/>
+<area shape="rect" id="node3" href="$jprotocol_8h.html" title="jprotocol.h" alt="" coords="1047,95,1130,121"/>
+<area shape="rect" id="node23" href="$EnumString_8h.html" title="EnumString.h" alt="" coords="1802,543,1903,569"/>
+<area shape="rect" id="node26" href="$jenum_8h.html" title="jenum.h" alt="" coords="1601,468,1669,495"/>
+<area shape="rect" id="node27" href="$jarray_8h.html" title="jarray.h" alt="" coords="697,393,763,420"/>
+<area shape="rect" id="node34" href="$jrand_8h.html" title="jrand.h" alt="" coords="737,319,798,345"/>
+<area shape="rect" id="node42" href="$jreplay_8h.html" title="jreplay.h" alt="" coords="680,244,751,271"/>
+<area shape="rect" id="node43" href="$ciphers_8h.html" title="ciphers.h" alt="" coords="1362,169,1437,196"/>
+<area shape="rect" id="node48" href="$tinyxml2_8h.html" title="tinyxml2.h" alt="" coords="417,319,499,345"/>
+<area shape="rect" id="node37" href="$SFMT_8h.html" title="SFMT.h" alt="" coords="1075,393,1145,420"/>
+<area shape="rect" id="node41" href="$SFMT-params_8h.html" title="SFMT&#45;params.h" alt="" coords="1217,468,1333,495"/>
+<area shape="rect" id="node44" href="$jmodes_8h.html" title="jmodes.h" alt="" coords="1446,244,1521,271"/>
 </map>

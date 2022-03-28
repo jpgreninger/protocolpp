@@ -1,4 +1,4 @@
 <map id="option::Stats::add" name="option::Stats::add">
-<area shape="rect" id="node2" href="$structoption_1_1Stats.html#a71373ec2b28842f45593e4405f7bc8ec" title="Creates a new Stats object and immediately updates it for the given usage and argument vector..." alt="" coords="189,5,335,32"/>
-<area shape="rect" id="node3" href="$structoption_1_1Stats.html#a2aa7bc64a85dcd9c59576f6a11c2b747" title="add() with non&#45;const argv. " alt="" coords="194,56,330,83"/>
+<area shape="rect" id="node2" href="$structoption_1_1Stats.html#a71373ec2b28842f45593e4405f7bc8ec" title="Creates a new Stats object and immediately updates it for the given usage and argument vector..." alt="" coords="179,5,313,32"/>
+<area shape="rect" id="node3" href="$structoption_1_1Stats.html#a2aa7bc64a85dcd9c59576f6a11c2b747" title="add() with non&#45;const argv. " alt="" coords="183,56,309,83"/>
 </map>

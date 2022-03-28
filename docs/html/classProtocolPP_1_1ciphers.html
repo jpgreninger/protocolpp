@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++ (ProtocolPP)
-   &#160;<span id="projectnumber">5.3.0</span>
+   &#160;<span id="projectnumber">5.3.1</span>
    </div>
   </td>
  </tr>
@@ -91,12 +91,14 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a86bf3c3a0e717b62757c5c94112081a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30ead90c034358a3ca9db8be388fd226"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jmodes.html">jmodes</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1ciphers.html#a30ead90c034358a3ca9db8be388fd226">get_auth</a> (<a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014f">auth_t</a> auth, uint8_t *authkey=nullptr, unsigned int authkeylen=0, <a class="el" href="classProtocolPP_1_1jmodes.html#ab2cdd1d15cbef658be2040fc8a470d36">jmodes::dir_t</a> dir=<a class="el" href="classProtocolPP_1_1jmodes.html#ab2cdd1d15cbef658be2040fc8a470d36aab3b9dff689746442da8a681e3d73b22">jmodes::ENC</a>, uint32_t count=0, uint32_t fresh=0)</td></tr>
 <tr class="separator:a30ead90c034358a3ca9db8be388fd226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcce2cf8bdc504b7308e5e7ded87a18b"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jmodes.html">jmodes</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1ciphers.html#afcce2cf8bdc504b7308e5e7ded87a18b">get_auth</a> (<a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014f">auth_t</a> auth, <a class="el" href="classProtocolPP_1_1jmodes.html#ab2cdd1d15cbef658be2040fc8a470d36">jmodes::dir_t</a> dir, uint8_t *authkey, unsigned int authkeylen, uint8_t *iv, unsigned int ivlen, unsigned int icvlen)</td></tr>
+<tr class="separator:afcce2cf8bdc504b7308e5e7ded87a18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a0cf14638e9cc1239459811b2acbf52"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jmodes.html">jmodes</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1ciphers.html#a5a0cf14638e9cc1239459811b2acbf52">get_crc</a> (<a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014f">auth_t</a> crc=auth_t::CRC32_IEEE, uint32_t poly=0, unsigned int polylen=0, bool zeroinit=false, bool swapin=true, bool swapout=true, bool xorout=true)</td></tr>
 <tr class="separator:a5a0cf14638e9cc1239459811b2acbf52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a30ead90c034358a3ca9db8be388fd226"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30ead90c034358a3ca9db8be388fd226">&#9670;&nbsp;</a></span>get_auth()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a30ead90c034358a3ca9db8be388fd226">&#9670;&nbsp;</a></span>get_auth() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,6 +163,85 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramname">dir</td><td>- direction of processing for SNOW3G and ZUC (UPLINK or DOWNLINK) </td></tr>
     <tr><td class="paramname">count</td><td>- Count value for SNOW3G and ZUC </td></tr>
     <tr><td class="paramname">fresh</td><td>- Fresh value for SNOW3G and ZUC </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afcce2cf8bdc504b7308e5e7ded87a18b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcce2cf8bdc504b7308e5e7ded87a18b">&#9670;&nbsp;</a></span>get_auth() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::shared_ptr&lt;<a class="el" href="classProtocolPP_1_1jmodes.html">jmodes</a>&gt; ProtocolPP::ciphers::get_auth </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014f">auth_t</a>&#160;</td>
+          <td class="paramname"><em>auth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classProtocolPP_1_1jmodes.html#ab2cdd1d15cbef658be2040fc8a470d36">jmodes::dir_t</a>&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>authkey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>authkeylen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>iv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>ivlen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>icvlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Factory method to create an instance of authenticator for ZUC-256</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">auth</td><td>- ZUCA-256 </td></tr>
+    <tr><td class="paramname">dir</td><td>- direction of processing for SNOW3G and ZUC (UPLINK or DOWNLINK) </td></tr>
+    <tr><td class="paramname">authkey</td><td>- Key for the authentication engine </td></tr>
+    <tr><td class="paramname">authkeylen</td><td>- Length of the key for the authentication engine </td></tr>
+    <tr><td class="paramname">iv</td><td>- IV for the authentication engine </td></tr>
+    <tr><td class="paramname">ivlen</td><td>- Length of the IV for the authentication engine </td></tr>
+    <tr><td class="paramname">icvlen</td><td>- Length of the ICV for the authentication engine (4, 8, 16) </td></tr>
   </table>
   </dd>
 </dl>
@@ -351,7 +432,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 13 2022 20:10:20 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 26 2022 17:49:47 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -1,5 +1,5 @@
 <map id="option::Option::count" name="option::Option::count">
-<area shape="rect" id="node2" href="$classoption_1_1Option.html#abb4e13cd7c90999c8a6b1f871cece283" title="Returns a pointer to the first element of the linked list. " alt="" coords="219,5,365,32"/>
-<area shape="rect" id="node4" href="$classoption_1_1Option.html#a36fa8fde6fce89462ded79ab56180ff7" title="Returns true iff this is the last element of the linked list. " alt="" coords="212,56,372,83"/>
-<area shape="rect" id="node3" href="$classoption_1_1Option.html#af51f53a553ef46110e36008a58466a2e" title="Returns true iff this is the first element of the linked list. " alt="" coords="420,5,580,32"/>
+<area shape="rect" id="node2" href="$classoption_1_1Option.html#abb4e13cd7c90999c8a6b1f871cece283" title="Returns a pointer to the first element of the linked list. " alt="" coords="203,5,336,32"/>
+<area shape="rect" id="node4" href="$classoption_1_1Option.html#a36fa8fde6fce89462ded79ab56180ff7" title="Returns true iff this is the last element of the linked list. " alt="" coords="196,56,343,83"/>
+<area shape="rect" id="node3" href="$classoption_1_1Option.html#af51f53a553ef46110e36008a58466a2e" title="Returns true iff this is the first element of the linked list. " alt="" coords="391,5,537,32"/>
 </map>

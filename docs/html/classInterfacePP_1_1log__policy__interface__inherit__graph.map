@@ -1,4 +1,4 @@
 <map id="InterfacePP::log_policy_interface" name="InterfacePP::log_policy_interface">
-<area shape="rect" id="node2" href="$classInterfacePP_1_1file__log__policy.html" title="{InterfacePP::file_log\l_policy\n||+ file_log_policy()\l+ open_ostream()\l+ close_ostream()\l+ write()\l+ ~file_log_policy()\l}" alt="" coords="5,175,156,325"/>
-<area shape="rect" id="node3" href="$classInterfacePP_1_1file__stdout__log__policy.html" title="{InterfacePP::file_stdout\l_log_policy\n||+ file_stdout_log_policy()\l+ open_ostream()\l+ close_ostream()\l+ write()\l+ ~file_stdout_log_policy()\l}" alt="" coords="180,175,379,325"/>
+<area shape="rect" id="node2" href="$classInterfacePP_1_1file__log__policy.html" title="{InterfacePP::file_log\l_policy\n||+ file_log_policy()\l+ open_ostream()\l+ close_ostream()\l+ write()\l+ ~file_log_policy()\l}" alt="" coords="5,175,145,325"/>
+<area shape="rect" id="node3" href="$classInterfacePP_1_1file__stdout__log__policy.html" title="{InterfacePP::file_stdout\l_log_policy\n||+ file_stdout_log_policy()\l+ open_ostream()\l+ close_ostream()\l+ write()\l+ ~file_stdout_log_policy()\l}" alt="" coords="169,175,344,325"/>
 </map>

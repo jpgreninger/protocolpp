@@ -1,5 +1,5 @@
 <map id="option::PrintUsageImplementation::isWideChar" name="option::PrintUsageImplementation::isWideChar">
-<area shape="rect" id="node2" href="$classoption_1_1PrintUsageImplementation_1_1LineWrapper.html#add20eca40865ad892d6c28b412ac14d5" title="Process, wrap and output the next piece of data. " alt="" coords="300,5,547,47"/>
-<area shape="rect" id="node3" href="$structoption_1_1PrintUsageImplementation.html#ab38c4198c5cccea2ccd992c8e014df70" title="option::PrintUsageImplementation\l::printUsage" alt="" coords="595,5,841,47"/>
-<area shape="rect" id="node4" href="$namespaceoption.html#afc8bb7e040a98a0b33ff1ce9da1be0d1" title="Outputs a nicely formatted usage string with support for multi&#45;column formatting and line&#45;wrapping..." alt="" coords="889,13,1032,39"/>
+<area shape="rect" id="node2" href="$classoption_1_1PrintUsageImplementation_1_1LineWrapper.html#add20eca40865ad892d6c28b412ac14d5" title="Process, wrap and output the next piece of data. " alt="" coords="272,5,491,47"/>
+<area shape="rect" id="node3" href="$structoption_1_1PrintUsageImplementation.html#ab38c4198c5cccea2ccd992c8e014df70" title="option::PrintUsageImplementation\l::printUsage" alt="" coords="539,5,757,47"/>
+<area shape="rect" id="node4" href="$namespaceoption.html#afc8bb7e040a98a0b33ff1ce9da1be0d1" title="Outputs a nicely formatted usage string with support for multi&#45;column formatting and line&#45;wrapping..." alt="" coords="805,13,932,39"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="ProtocolPP::sfmt::sfmt_genrand_uint32" name="ProtocolPP::sfmt::sfmt_genrand_uint32">
-<area shape="rect" id="node2" href="$classProtocolPP_1_1sfmt.html#a5e012d7aca9bc62dca27b845b4471ae9" title="ProtocolPP::sfmt::sfmt\l_genrand_real1" alt="" coords="220,5,387,47"/>
-<area shape="rect" id="node3" href="$classProtocolPP_1_1sfmt.html#aaba193855173c34e8c1f433446b56496" title="ProtocolPP::sfmt::sfmt\l_genrand_real2" alt="" coords="220,71,387,112"/>
-<area shape="rect" id="node4" href="$classProtocolPP_1_1sfmt.html#a1b9c3373cca87924ab83d6ad07bd64f7" title="ProtocolPP::sfmt::sfmt\l_genrand_real3" alt="" coords="220,136,387,177"/>
-<area shape="rect" id="node5" href="$classProtocolPP_1_1sfmt.html#ab4a3e9a9d6da50ffab08e05e8c0e2fdd" title="ProtocolPP::sfmt::sfmt\l_genrand_res53_mix" alt="" coords="220,201,387,243"/>
+<area shape="rect" id="node2" href="$classProtocolPP_1_1sfmt.html#a5e012d7aca9bc62dca27b845b4471ae9" title="ProtocolPP::sfmt::sfmt\l_genrand_real1" alt="" coords="209,5,365,47"/>
+<area shape="rect" id="node3" href="$classProtocolPP_1_1sfmt.html#aaba193855173c34e8c1f433446b56496" title="ProtocolPP::sfmt::sfmt\l_genrand_real2" alt="" coords="209,71,365,112"/>
+<area shape="rect" id="node4" href="$classProtocolPP_1_1sfmt.html#a1b9c3373cca87924ab83d6ad07bd64f7" title="ProtocolPP::sfmt::sfmt\l_genrand_real3" alt="" coords="209,136,365,177"/>
+<area shape="rect" id="node5" href="$classProtocolPP_1_1sfmt.html#ab4a3e9a9d6da50ffab08e05e8c0e2fdd" title="ProtocolPP::sfmt::sfmt\l_genrand_res53_mix" alt="" coords="209,201,365,243"/>
 </map>

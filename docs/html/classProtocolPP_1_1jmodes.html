@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++ (ProtocolPP)
-   &#160;<span id="projectnumber">5.3.0</span>
+   &#160;<span id="projectnumber">5.3.1</span>
    </div>
   </td>
  </tr>
@@ -140,6 +140,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae98569dfa6ca64d2d64e16dc73367105"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdca12a19973cbc8fa65a55a7dc331b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmodes.html#acdca12a19973cbc8fa65a55a7dc331b2">jmodes</a> (<a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014f">auth_t</a> auth, <a class="el" href="jmodes_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> *authkey=nullptr, unsigned int authkeyLen=0, <a class="el" href="classProtocolPP_1_1jmodes.html#ab2cdd1d15cbef658be2040fc8a470d36">dir_t</a> dir=<a class="el" href="classProtocolPP_1_1jmodes.html#ab2cdd1d15cbef658be2040fc8a470d36a3c92b0c627af3b25fc1458336cac13e3">DEC</a>, uint32_t count=0, uint32_t fresh=0)</td></tr>
 <tr class="separator:acdca12a19973cbc8fa65a55a7dc331b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58f30a91c9c951aeade6a620b694371c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmodes.html#a58f30a91c9c951aeade6a620b694371c">jmodes</a> (<a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014f">auth_t</a> auth, <a class="el" href="classProtocolPP_1_1jmodes.html#ab2cdd1d15cbef658be2040fc8a470d36">dir_t</a> dir, <a class="el" href="jmodes_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> *authkey, unsigned int authkeyLen, <a class="el" href="jmodes_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> *iv, unsigned int ivLen, unsigned int icvLen)</td></tr>
+<tr class="separator:a58f30a91c9c951aeade6a620b694371c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbbb23b7da655069cffe9867d8741378"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmodes.html#acbbb23b7da655069cffe9867d8741378">jmodes</a> (<a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014f">auth_t</a> auth=auth_t::CRC32_IEEE, uint32_t poly=0, unsigned int polysize=0, bool zeroinit=false, bool swapin=true, bool swapout=true, bool compout=true)</td></tr>
 <tr class="separator:acbbb23b7da655069cffe9867d8741378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a343d35bf0c29d7d13860b2f8976c9d5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmodes.html#a343d35bf0c29d7d13860b2f8976c9d5c">~jmodes</a> ()</td></tr>
@@ -312,7 +314,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae98569dfa6ca64d2d64e16dc73367105"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae98569dfa6ca64d2d64e16dc73367105">&#9670;&nbsp;</a></span>jmodes() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae98569dfa6ca64d2d64e16dc73367105">&#9670;&nbsp;</a></span>jmodes() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -404,7 +406,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="acdca12a19973cbc8fa65a55a7dc331b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdca12a19973cbc8fa65a55a7dc331b2">&#9670;&nbsp;</a></span>jmodes() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acdca12a19973cbc8fa65a55a7dc331b2">&#9670;&nbsp;</a></span>jmodes() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -475,8 +477,79 @@ Public Member Functions</h2></td></tr>
 <p>Examples: </p><div class="fragment"><div class="line"><a class="code" href="classjmodes.html">jmodes</a> sha3(<a class="code" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa1b8d9c3ed93095675a51415cc8ef8ab4">auth_t::SHA3_256</a>);</div><div class="line"></div><div class="line"><a class="code" href="classjmodes.html">jmodes</a> shake(<a class="code" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014faee6740a9ee18e37cb43883158ed74847">auth_t::SHAKE128</a>);</div><div class="line"></div><div class="line"><a class="code" href="classjmodes.html">jmodes</a> hash(<a class="code" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fabd4f6a7883c9f1baff79771990e9495f">auth_t::SHA384</a>);</div><div class="line"></div><div class="line"><a class="code" href="classjmodes.html">jmodes</a> hmac(<a class="code" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014faed93709b88baca457f03d3f499c831df">auth_t::HMAC_SHA3_224</a>,</div><div class="line">            authkey.get_ptr(),</div><div class="line">            authkey.get_size());</div><div class="line"></div><div class="line"><a class="code" href="classjmodes.html">jmodes</a> hmac(<a class="code" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa3542225ed7d7a9e2919e21be5899f972">auth_t::POLY1305</a>,</div><div class="line">            authkey.get_ptr(),</div><div class="line">            authkey.get_size());</div><div class="line"></div><div class="line"><a class="code" href="classjmodes.html">jmodes</a> hash(<a class="code" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa5e06d9cf695387431f04f8d097bec28c">auth_t::SM3</a>);</div></div><!-- fragment --> 
 </div>
 </div>
+<a id="a58f30a91c9c951aeade6a620b694371c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58f30a91c9c951aeade6a620b694371c">&#9670;&nbsp;</a></span>jmodes() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ProtocolPP::jmodes::jmodes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014f">auth_t</a>&#160;</td>
+          <td class="paramname"><em>auth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classProtocolPP_1_1jmodes.html#ab2cdd1d15cbef658be2040fc8a470d36">dir_t</a>&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="jmodes_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> *&#160;</td>
+          <td class="paramname"><em>authkey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>authkeyLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="jmodes_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> *&#160;</td>
+          <td class="paramname"><em>iv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>ivLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>icvLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor for ZUC-256 authentication modes</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">auth</td><td>- Authentication (see <a class="el" href="jenum_8h.html">jenum.h</a> for modes) </td></tr>
+    <tr><td class="paramname">dir</td><td>- direction of processing for SNOW3G and ZUC </td></tr>
+    <tr><td class="paramname">authkey</td><td>- key for processing </td></tr>
+    <tr><td class="paramname">authkeyLen</td><td>- Length of the key in bytes </td></tr>
+    <tr><td class="paramname">iv</td><td>- IV for processing </td></tr>
+    <tr><td class="paramname">ivLen</td><td>- Length of the IV in bytes </td></tr>
+    <tr><td class="paramname">icvLen</td><td>- Length of the ICV in bytes</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Examples: </p><div class="fragment"><div class="line"><a class="code" href="classjmodes.html">jmodes</a> hmac(<a class="code" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa3b142e9c2d27d6fdf3b5efbee8ec55ea">auth_t::ZUCA</a>,</div><div class="line">            <a class="code" href="namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2a36d2c2b37f5519dd0b3de4f12552cb71">dir_t::UPLINK</a></div><div class="line">            authkey.get_ptr(),</div><div class="line">            authkey.get_size()</div><div class="line">            iv.get_ptr(),</div><div class="line">            iv.get_size(),</div><div class="line">            8);</div></div><!-- fragment --> 
+</div>
+</div>
 <a id="acbbb23b7da655069cffe9867d8741378"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbbb23b7da655069cffe9867d8741378">&#9670;&nbsp;</a></span>jmodes() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acbbb23b7da655069cffe9867d8741378">&#9670;&nbsp;</a></span>jmodes() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -759,7 +832,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 13 2022 20:10:20 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 26 2022 17:49:47 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

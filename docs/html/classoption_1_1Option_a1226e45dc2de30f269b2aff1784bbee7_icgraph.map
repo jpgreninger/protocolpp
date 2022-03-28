@@ -1,5 +1,5 @@
 <map id="option::Option::prevwrap" name="option::Option::prevwrap">
-<area shape="rect" id="node2" href="$classoption_1_1Option.html#afe2aff68191e55b59c53fac3dbbcd7c3" title="Returns a pointer to the last element of the linked list. " alt="" coords="236,13,383,39"/>
-<area shape="rect" id="node3" href="$classoption_1_1Option.html#a59030822a1ec4e667e6c288d7e5ec961" title="Makes new_last the new last() by chaining it into the list after last(). " alt="" coords="431,13,601,39"/>
-<area shape="rect" id="node4" href="$classoption_1_1Parser_1_1StoreOptionAction.html#a8931919fba5516377c202920db2b2f84" title="Called by Parser::workhorse() for each Option that has been successfully parsed (including unknown op..." alt="" coords="649,5,845,47"/>
+<area shape="rect" id="node2" href="$classoption_1_1Option.html#afe2aff68191e55b59c53fac3dbbcd7c3" title="Returns a pointer to the last element of the linked list. " alt="" coords="216,13,348,39"/>
+<area shape="rect" id="node3" href="$classoption_1_1Option.html#a59030822a1ec4e667e6c288d7e5ec961" title="Makes new_last the new last() by chaining it into the list after last(). " alt="" coords="396,13,549,39"/>
+<area shape="rect" id="node4" href="$classoption_1_1Parser_1_1StoreOptionAction.html#a8931919fba5516377c202920db2b2f84" title="Called by Parser::workhorse() for each Option that has been successfully parsed (including unknown op..." alt="" coords="597,5,777,47"/>
 </map>

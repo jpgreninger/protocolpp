@@ -1,4 +1,4 @@
 <map id="tinyxml2::XMLPrinter" name="tinyxml2::XMLPrinter">
-<area shape="rect" id="node2" href="$classtinyxml2_1_1XMLVisitor.html" title="{tinyxml2::XMLVisitor\n||+ ~XMLVisitor()\l+ VisitEnter()\l+ VisitExit()\l+ VisitEnter()\l+ VisitExit()\l+ Visit()\l+ Visit()\l+ Visit()\l+ Visit()\l}" alt="" coords="5,27,161,222"/>
-<area shape="rect" id="node3" href="$classtinyxml2_1_1DynArray.html" title="{tinyxml2::DynArray\l\&lt; const char *, 10 \&gt;\n||+ DynArray()\l+ ~DynArray()\l+ Clear()\l+ Push()\l+ PushArr()\l+ Pop()\l+ PopArr()\l+ Empty()\l+ operator[]()\l+ operator[]()\land 6 more...\l}" alt="" coords="186,5,341,244"/>
+<area shape="rect" id="node2" href="$classtinyxml2_1_1XMLVisitor.html" title="{tinyxml2::XMLVisitor\n||+ ~XMLVisitor()\l+ VisitEnter()\l+ VisitExit()\l+ VisitEnter()\l+ VisitExit()\l+ Visit()\l+ Visit()\l+ Visit()\l+ Visit()\l}" alt="" coords="5,27,148,222"/>
+<area shape="rect" id="node3" href="$classtinyxml2_1_1DynArray.html" title="{tinyxml2::DynArray\l\&lt; const char *, 10 \&gt;\n||+ DynArray()\l+ ~DynArray()\l+ Clear()\l+ Push()\l+ PushArr()\l+ Pop()\l+ PopArr()\l+ Empty()\l+ operator[]()\l+ operator[]()\land 6 more...\l}" alt="" coords="173,5,311,244"/>
 </map>

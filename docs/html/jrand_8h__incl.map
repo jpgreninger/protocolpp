@@ -1,8 +1,8 @@
 <map id="include/jrand.h" name="include/jrand.h">
-<area shape="rect" id="node3" href="$jarray_8h.html" title="jarray.h" alt="" coords="643,80,713,107"/>
-<area shape="rect" id="node25" href="$SFMT_8h.html" title="SFMT.h" alt="" coords="1521,80,1587,107"/>
-<area shape="rect" id="node14" href="$jenum_8h.html" title="jenum.h" alt="" coords="441,155,515,181"/>
-<area shape="rect" id="node15" href="$EnumString_8h.html" title="EnumString.h" alt="" coords="441,229,550,256"/>
-<area shape="rect" id="node30" href="$SFMT-params_8h.html" title="SFMT&#45;params.h" alt="" coords="1281,155,1403,181"/>
-<area shape="rect" id="node31" href="$SFMT-params19937_8h.html" title="SFMT&#45;params19937.h" alt="" coords="1261,229,1423,256"/>
+<area shape="rect" id="node3" href="$jarray_8h.html" title="jarray.h" alt="" coords="605,80,671,107"/>
+<area shape="rect" id="node25" href="$SFMT_8h.html" title="SFMT.h" alt="" coords="1423,80,1493,107"/>
+<area shape="rect" id="node14" href="$jenum_8h.html" title="jenum.h" alt="" coords="419,155,487,181"/>
+<area shape="rect" id="node15" href="$EnumString_8h.html" title="EnumString.h" alt="" coords="418,229,519,256"/>
+<area shape="rect" id="node30" href="$SFMT-params_8h.html" title="SFMT&#45;params.h" alt="" coords="1199,155,1315,181"/>
+<area shape="rect" id="node31" href="$SFMT-params19937_8h.html" title="SFMT&#45;params19937.h" alt="" coords="1181,229,1332,256"/>
 </map>

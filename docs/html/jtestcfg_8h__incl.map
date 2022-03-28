@@ -1,11 +1,11 @@
 <map id="include/jtestcfg.h" name="include/jtestcfg.h">
-<area shape="rect" id="node8" href="$jrand_8h.html" title="jrand.h" alt="" coords="986,80,1053,107"/>
-<area shape="rect" id="node38" href="$jlogger_8h.html" title="jlogger.h" alt="" coords="579,80,657,107"/>
-<area shape="rect" id="node42" href="$tinyxml2_8h.html" title="tinyxml2.h" alt="" coords="1117,80,1209,107"/>
-<area shape="rect" id="node10" href="$jarray_8h.html" title="jarray.h" alt="" coords="1057,155,1128,181"/>
-<area shape="rect" id="node31" href="$SFMT_8h.html" title="SFMT.h" alt="" coords="457,155,523,181"/>
-<area shape="rect" id="node21" href="$jenum_8h.html" title="jenum.h" alt="" coords="1057,229,1131,256"/>
-<area shape="rect" id="node22" href="$EnumString_8h.html" title="EnumString.h" alt="" coords="1166,304,1275,331"/>
-<area shape="rect" id="node36" href="$SFMT-params_8h.html" title="SFMT&#45;params.h" alt="" coords="311,229,432,256"/>
-<area shape="rect" id="node37" href="$SFMT-params19937_8h.html" title="SFMT&#45;params19937.h" alt="" coords="291,304,452,331"/>
+<area shape="rect" id="node8" href="$jrand_8h.html" title="jrand.h" alt="" coords="930,80,991,107"/>
+<area shape="rect" id="node38" href="$jlogger_8h.html" title="jlogger.h" alt="" coords="547,80,617,107"/>
+<area shape="rect" id="node42" href="$tinyxml2_8h.html" title="tinyxml2.h" alt="" coords="1054,80,1137,107"/>
+<area shape="rect" id="node10" href="$jarray_8h.html" title="jarray.h" alt="" coords="997,155,1063,181"/>
+<area shape="rect" id="node31" href="$SFMT_8h.html" title="SFMT.h" alt="" coords="429,155,498,181"/>
+<area shape="rect" id="node21" href="$jenum_8h.html" title="jenum.h" alt="" coords="993,229,1061,256"/>
+<area shape="rect" id="node22" href="$EnumString_8h.html" title="EnumString.h" alt="" coords="1093,304,1194,331"/>
+<area shape="rect" id="node36" href="$SFMT-params_8h.html" title="SFMT&#45;params.h" alt="" coords="292,229,408,256"/>
+<area shape="rect" id="node37" href="$SFMT-params19937_8h.html" title="SFMT&#45;params19937.h" alt="" coords="275,304,425,331"/>
 </map>

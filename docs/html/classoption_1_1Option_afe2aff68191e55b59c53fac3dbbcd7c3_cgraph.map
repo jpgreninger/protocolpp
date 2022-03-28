@@ -1,5 +1,5 @@
 <map id="option::Option::last" name="option::Option::last">
-<area shape="rect" id="node2" href="$classoption_1_1Option.html#abb4e13cd7c90999c8a6b1f871cece283" title="Returns a pointer to the first element of the linked list. " alt="" coords="218,5,365,32"/>
-<area shape="rect" id="node4" href="$classoption_1_1Option.html#a1226e45dc2de30f269b2aff1784bbee7" title="Returns a pointer to the previous element of the linked list with wrap&#45;around from first() to last()..." alt="" coords="200,56,383,83"/>
-<area shape="rect" id="node3" href="$classoption_1_1Option.html#af51f53a553ef46110e36008a58466a2e" title="Returns true iff this is the first element of the linked list. " alt="" coords="431,5,591,32"/>
+<area shape="rect" id="node2" href="$classoption_1_1Option.html#abb4e13cd7c90999c8a6b1f871cece283" title="Returns a pointer to the first element of the linked list. " alt="" coords="200,5,333,32"/>
+<area shape="rect" id="node4" href="$classoption_1_1Option.html#a1226e45dc2de30f269b2aff1784bbee7" title="Returns a pointer to the previous element of the linked list with wrap&#45;around from first() to last()..." alt="" coords="185,56,348,83"/>
+<area shape="rect" id="node3" href="$classoption_1_1Option.html#af51f53a553ef46110e36008a58466a2e" title="Returns true iff this is the first element of the linked list. " alt="" coords="396,5,543,32"/>
 </map>
