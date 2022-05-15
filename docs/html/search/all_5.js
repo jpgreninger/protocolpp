@@ -111,6 +111,7 @@ var searchData=
   ['err_5flisten',['ERR_LISTEN',['../namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23a5a19196da3ceff0469551c4b6c7d22fb',1,'ProtocolPP']]],
   ['err_5fmulticast_5fext_5fhdr',['ERR_MULTICAST_EXT_HDR',['../namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23aab01c12dc50c9f9f7fcc2a100081390f',1,'ProtocolPP']]],
   ['err_5fnone',['ERR_NONE',['../namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23aa55ba44e2ad875dc3ce8a487ba4d9247',1,'ProtocolPP']]],
+  ['err_5fpdu_5flen',['ERR_PDU_LEN',['../namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23aab39247f67a875d21850bf4dd4b91d4c',1,'ProtocolPP']]],
   ['err_5fprogram',['ERR_PROGRAM',['../namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23a88890f1ff8452d4d40c1e3ac31c46125',1,'ProtocolPP']]],
   ['err_5fread_5fbadfile',['ERR_READ_BADFILE',['../namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23aee3c3662a219ad17a67606b0b04524d2',1,'ProtocolPP']]],
   ['err_5fread_5fendofile',['ERR_READ_ENDOFILE',['../namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23a24f64c10c9e6e64ce5e6313c91c35c92',1,'ProtocolPP']]],
