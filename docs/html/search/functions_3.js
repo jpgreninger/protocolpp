@@ -13,6 +13,7 @@ var searchData=
   ['deletechild',['DeleteChild',['../classtinyxml2_1_1XMLNode.html#a363b6edbd6ebd55f8387d2b89f2b0921',1,'tinyxml2::XMLNode']]],
   ['deletechildren',['DeleteChildren',['../classtinyxml2_1_1XMLNode.html#a0360085cc54df5bff85d5c5da13afdce',1,'tinyxml2::XMLNode']]],
   ['deletenode',['DeleteNode',['../classtinyxml2_1_1XMLDocument.html#ac1d6e2c7fcc1a660624ac4f68e96380d',1,'tinyxml2::XMLDocument']]],
+  ['deque',['deque',['../classProtocolPP_1_1jbuffman.html#af93134f4b3473c2de8ad4c72b76390bd',1,'ProtocolPP::jbuffman::deque(int buffers, std::shared_ptr&lt; std::list&lt; std::array&lt; T, Q &gt;&gt;&gt; &amp;linklist)'],['../classProtocolPP_1_1jbuffman.html#a24a624df438c99d0bb3e89b74756b1db',1,'ProtocolPP::jbuffman::deque(int buffers)']]],
   ['dequeue',['dequeue',['../classInterfacePP_1_1jresponder.html#a43d36da9c72f793ba982302b07f46685',1,'InterfacePP::jresponder::dequeue()'],['../classInterfacePP_1_1jsecresponder.html#aec117e273e68128b5e56a4d14d6acebc',1,'InterfacePP::jsecresponder::dequeue()']]],
   ['do_5frecursion',['do_recursion',['../namespaceProtocolPP.html#acae68b352bbd227c95e57cc1a224b5ef',1,'ProtocolPP']]],
   ['doubleattribute',['DoubleAttribute',['../classtinyxml2_1_1XMLElement.html#a10a90c505aea716bf073eea1c97f33b5',1,'tinyxml2::XMLElement']]],

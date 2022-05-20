@@ -71,6 +71,7 @@ var searchData=
   ['endian',['ENDIAN',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a2b4dca4e6635dd4895a69957292ae393',1,'ProtocolPP']]],
   ['endian_5ft',['endian_t',['../namespaceProtocolPP.html#a4c490fb0ae4e404f895c8b65147453ae',1,'ProtocolPP']]],
   ['endianess',['endianess',['../structPlatformPP_1_1jsec_1_1sgt__t.html#a1e9707fb31cf0e58729058ebf975be6a',1,'PlatformPP::jsec::sgt_t']]],
+  ['enque',['enque',['../classProtocolPP_1_1jbuffman.html#afd1bdf2a527a89f45a343da365b83510',1,'ProtocolPP::jbuffman::enque(std::shared_ptr&lt; std::list&lt; std::array&lt; T, Q &gt;&gt;&gt; &amp;buffers)'],['../classProtocolPP_1_1jbuffman.html#ae349daded81681661b6f4efcb68dc116',1,'ProtocolPP::jbuffman::enque(std::list&lt; std::array&lt; T, Q &gt;&gt; &amp;buffers)']]],
   ['enqueue',['enqueue',['../classInterfacePP_1_1jresponder.html#a7b0ab94a5ec88c0ee69c36ebc73ee469',1,'InterfacePP::jresponder::enqueue()'],['../classInterfacePP_1_1jsecresponder.html#adcf93319a3b61c0dbc7de55573305799',1,'InterfacePP::jsecresponder::enqueue()']]],
   ['enreceive',['ENRECEIVE',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a38584a20b9d3a1546940152337e13ed6',1,'ProtocolPP']]],
   ['entransmit',['ENTRANSMIT',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ab870b7d2c44eb23046c1af10c3cc5c9e',1,'ProtocolPP']]],

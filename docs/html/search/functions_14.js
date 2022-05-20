@@ -18,5 +18,6 @@ var searchData=
   ['update',['update',['../classProtocolPP_1_1jarray.html#ac4bf084c034bda7fc3a05d3415461170',1,'ProtocolPP::jarray']]],
   ['update_5freplay',['update_replay',['../classProtocolPP_1_1jprotocol.html#a339100dd943ead663f1a0720017f258b',1,'ProtocolPP::jprotocol::update_replay(protocol_t prot, T &amp;seqnum, TE &amp;extseq, bool usext, unsigned int size)'],['../classProtocolPP_1_1jprotocol.html#a61f85e3c1eed3bc6b4ef5ff0bc0d0937',1,'ProtocolPP::jprotocol::update_replay(protocol_t prot, T &amp;seqnum, TE &amp;extseq, bool usext, unsigned int size, jarray&lt; uint8_t &gt; &amp;window)']]],
   ['update_5fstatus',['update_status',['../classProtocolPP_1_1jprotocol.html#ac68e3d5308f87f45d8cf9b79f0d48551',1,'ProtocolPP::jprotocol']]],
-  ['upmax',['upmax',['../structoption_1_1PrintUsageImplementation.html#a0680dd84366df82398e30e4ccbd27ac0',1,'option::PrintUsageImplementation']]]
+  ['upmax',['upmax',['../structoption_1_1PrintUsageImplementation.html#a0680dd84366df82398e30e4ccbd27ac0',1,'option::PrintUsageImplementation']]],
+  ['used',['used',['../classProtocolPP_1_1jbuffacc.html#af6a0a7437cf12dcac66ae18a77af4a49',1,'ProtocolPP::jbuffacc']]]
 ];

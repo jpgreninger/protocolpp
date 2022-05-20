@@ -35,6 +35,7 @@ var searchData=
   ['urgent',['URGENT',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a62f522223765c27d16cef815689ec345',1,'ProtocolPP']]],
   ['use_5fesn',['use_esn',['../structProtocolPP_1_1jikeparse_1_1jikecfg.html#aed6aba68ffa0143dddd7a226bbe6a5ac',1,'ProtocolPP::jikeparse::jikecfg']]],
   ['use_5funame',['use_uname',['../structProtocolPP_1_1jikeparse_1_1jikecfg.html#a1098c8f63fe3a45385d757e739460fb7',1,'ProtocolPP::jikeparse::jikecfg']]],
+  ['used',['used',['../classProtocolPP_1_1jbuffacc.html#af6a0a7437cf12dcac66ae18a77af4a49',1,'ProtocolPP::jbuffacc']]],
   ['user_5fcanceled',['USER_CANCELED',['../namespaceProtocolPP.html#a9496ca7bf265d90a8637e15eea79639ba0819d26cbbe28e1d41c514c1457a4e2c',1,'ProtocolPP']]],
   ['userstream',['userstream',['../structoption_1_1PrintUsageImplementation_1_1TemporaryWriter.html#a91d54cfcea7bb4072072506d46cc2cc8',1,'option::PrintUsageImplementation::TemporaryWriter']]],
   ['usext',['USEXT',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a75ab91d8558f566f13c3f325b797da2f',1,'ProtocolPP']]],

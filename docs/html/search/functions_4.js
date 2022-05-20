@@ -5,6 +5,7 @@ var searchData=
   ['encrypt',['encrypt',['../classProtocolPP_1_1jrsa.html#a59007a57012f19531ea600330f2e51c0',1,'ProtocolPP::jrsa::encrypt()'],['../classProtocolPP_1_1jikencrypt.html#a3489a7173901014f364ef01d3bdc20d0',1,'ProtocolPP::jikencrypt::encrypt()']]],
   ['encryptdat',['encryptdat',['../classProtocolPP_1_1jprotocol.html#a2bafa6dd652a2d956a34c41153d11b95',1,'ProtocolPP::jprotocol']]],
   ['endcapture',['EndCapture',['../classStdCapture.html#af969700a4f7f73dbf7c0db3059b7cf00',1,'StdCapture']]],
+  ['enque',['enque',['../classProtocolPP_1_1jbuffman.html#afd1bdf2a527a89f45a343da365b83510',1,'ProtocolPP::jbuffman::enque(std::shared_ptr&lt; std::list&lt; std::array&lt; T, Q &gt;&gt;&gt; &amp;buffers)'],['../classProtocolPP_1_1jbuffman.html#ae349daded81681661b6f4efcb68dc116',1,'ProtocolPP::jbuffman::enque(std::list&lt; std::array&lt; T, Q &gt;&gt; &amp;buffers)']]],
   ['enqueue',['enqueue',['../classInterfacePP_1_1jresponder.html#a7b0ab94a5ec88c0ee69c36ebc73ee469',1,'InterfacePP::jresponder::enqueue()'],['../classInterfacePP_1_1jsecresponder.html#adcf93319a3b61c0dbc7de55573305799',1,'InterfacePP::jsecresponder::enqueue()']]],
   ['enumstringbase',['EnumStringBase',['../classProtocolPP_1_1EnumStringBase.html#a00d3842decba22e11616ed7f17d45f06',1,'ProtocolPP::EnumStringBase']]],
   ['erase',['erase',['../classProtocolPP_1_1jarray.html#a4314c17c52183010390fe16b30fe5ea6',1,'ProtocolPP::jarray']]],

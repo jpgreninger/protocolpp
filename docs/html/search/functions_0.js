@@ -12,5 +12,5 @@ var searchData=
   ['arrayvalue',['ArrayValue',['../classtinyxml2_1_1XMLAttribute.html#a9849664c0e18b9a3548df224dcf1c8f9',1,'tinyxml2::XMLAttribute']]],
   ['attribute',['Attribute',['../classtinyxml2_1_1XMLElement.html#a70e49ed60b11212ae35f7e354cfe1de9',1,'tinyxml2::XMLElement']]],
   ['audit',['audit',['../classProtocolPP_1_1jipsec.html#a453078dfa4c8711ba9f7c3ee803d000f',1,'ProtocolPP::jipsec']]],
-  ['avail',['avail',['../classDriverPP_1_1jdirectdrive.html#accea17fe8aef52977a7bf6d8fce54f21',1,'DriverPP::jdirectdrive']]]
+  ['avail',['avail',['../classProtocolPP_1_1jbuffacc.html#a047ac51029a5fad9324ac3f993d58df1',1,'ProtocolPP::jbuffacc::avail()'],['../classProtocolPP_1_1jbuffman.html#a013a70dc9091795d97486897e472bb10',1,'ProtocolPP::jbuffman::avail()'],['../classDriverPP_1_1jdirectdrive.html#accea17fe8aef52977a7bf6d8fce54f21',1,'DriverPP::jdirectdrive::avail()']]]
 ];

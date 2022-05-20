@@ -1,6 +1,8 @@
 var searchData=
 [
   ['jarray_2eh',['jarray.h',['../jarray_8h.html',1,'']]],
+  ['jbuffacc_2eh',['jbuffacc.h',['../jbuffacc_8h.html',1,'']]],
+  ['jbuffman_2eh',['jbuffman.h',['../jbuffman_8h.html',1,'']]],
   ['jconfident_2eh',['jconfident.h',['../jconfident_8h.html',1,'']]],
   ['jconfidentsa_2eh',['jconfidentsa.h',['../jconfidentsa_8h.html',1,'']]],
   ['jcrc_2eh',['jcrc.h',['../jcrc_8h.html',1,'']]],
