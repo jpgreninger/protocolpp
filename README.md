@@ -173,12 +173,6 @@ For W.A.S.P usage, see the doxygen section
 
 * See www.protocolpp.com for further updates, information and licensing
 
-* See the original video April 27, 2017 1.5 months before Intel ever called
-  * https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=9ae26d2c476d48bc854100acb4f8b447&wix-vod-comp-id=comp-j2ddnt1i
-  
-* See the Beta 2.0.0 video May 7, 2017 before Intel interview on May 19, 2017
-  * https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=e5551d0b1134404699de66194c12608b&wix-vod-comp-id=comp-j2ddnt1i
-
 * Protocol++® (Protocolpp®) - 5.3.0 released February 27, 2022
   * Added support for ZUC256 with 16-byte IV (as well as 25-byte IV) in LTE, standalone, confident, integrity
   * Updated SNOWV interface
@@ -264,5 +258,11 @@ For W.A.S.P usage, see the doxygen section
   * Separated SEC and W.A.S.P testbenches
   * Updated documentation
   * see the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=74c77d3dd5d6401db4d363bec657d255&wix-vod-comp-id=comp-j2ddnt1i
+
+* See the original video April 27, 2017 1.5 months before Intel ever called
+  * https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=9ae26d2c476d48bc854100acb4f8b447&wix-vod-comp-id=comp-j2ddnt1i
+  
+* See the Beta 2.0.0 video May 7, 2017 before Intel interview on May 19, 2017
+  * https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=e5551d0b1134404699de66194c12608b&wix-vod-comp-id=comp-j2ddnt1i
 
 * See the README in the released version for the full release path from the beginning
