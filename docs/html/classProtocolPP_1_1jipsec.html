@@ -109,14 +109,14 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a9414b2d3b4543913251735e8540ec342"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342">audit_t</a> { <br />
-&#160;&#160;<a class="el" href="classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342a806ee29b1f6c093007b923e94211d0c8">INVALIDSA</a>, 
-<a class="el" href="classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342a74df00f9e75944ecd6e591fdeab6d87e">FRAGMENT</a>, 
-<a class="el" href="classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342abf54f0b52a0f25b3ea5c85cf5c67a4f2">ROLLOVER</a>, 
-<a class="el" href="classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342a560477f12a8f9f7fa93cda62919c1107">REPLAY</a>, 
+&#160;&#160;<a class="el" href="classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342a03ae7222bdf7df3c68ce3b0fe12845e7">AUDIT_INVALIDSA</a>, 
+<a class="el" href="classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342a452370838b4fff3ebd34848939d98851">AUDIT_FRAGMENT</a>, 
+<a class="el" href="classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342af548bed4e51cdfd18f165fc00d5acdab">AUDIT_ROLLOVER</a>, 
+<a class="el" href="classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342a42f43df7b3c08a2a0e03cf87b1fbbe36">AUDIT_REPLAY</a>, 
 <br />
-&#160;&#160;<a class="el" href="classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342aa023f0f64eff73b1db30a619e91a330e">ICV</a>, 
-<a class="el" href="classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342af690c3f84ef641a0f90e3c91a1cbb232">FORMAT</a>, 
-<a class="el" href="classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342aec948fa73c7001e51b3090c34bd8b585">DUMMY</a>
+&#160;&#160;<a class="el" href="classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342a1ddec40b303375b8f61cd4c53b2daf8e">AUDIT_ICV</a>, 
+<a class="el" href="classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342a120a6c5f5b12a9e759dc2bb3b61f9728">AUDIT_FORMAT</a>, 
+<a class="el" href="classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342a57bf3b99e287195838505276982cf73f">AUDIT_DUMMY</a>
 <br />
  }</td></tr>
 <tr class="separator:a9414b2d3b4543913251735e8540ec342"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,30 +249,30 @@ Additional Inherited Members</h2></td></tr>
 <p>Audit types for IPsec</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">INVALIDSA</td><td>- Invalid Security Association </td></tr>
-    <tr><td class="paramname">FRAGMENT</td><td>- Fragment received when not allowed </td></tr>
-    <tr><td class="paramname">ROLLOVER</td><td>- Sequence number rolled over </td></tr>
-    <tr><td class="paramname">REPLAY</td><td>- Anti-Replay error </td></tr>
-    <tr><td class="paramname">ICV</td><td>- Received ICV was incorrect </td></tr>
-    <tr><td class="paramname">FORMAT</td><td>- IPv6 JUMBOGRAM formatting errors </td></tr>
-    <tr><td class="paramname">DUMMY</td><td>- Dummy packet received </td></tr>
+    <tr><td class="paramname">AUDIT_INVALIDSA</td><td>- Invalid Security Association </td></tr>
+    <tr><td class="paramname">AUDIT_FRAGMENT</td><td>- Fragment received when not allowed </td></tr>
+    <tr><td class="paramname">AUDIT_ROLLOVER</td><td>- Sequence number rolled over </td></tr>
+    <tr><td class="paramname">AUDIT_REPLAY</td><td>- Anti-Replay error </td></tr>
+    <tr><td class="paramname">AUDIT_ICV</td><td>- Received ICV was incorrect </td></tr>
+    <tr><td class="paramname">AUDIT_FORMAT</td><td>- IPv6 JUMBOGRAM formatting errors </td></tr>
+    <tr><td class="paramname">AUDIT_DUMMY</td><td>- Dummy packet received </td></tr>
   </table>
   </dd>
 </dl>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9414b2d3b4543913251735e8540ec342a806ee29b1f6c093007b923e94211d0c8"></a>INVALIDSA&#160;</td><td class="fielddoc"><p>Audit for invalid security association. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9414b2d3b4543913251735e8540ec342a03ae7222bdf7df3c68ce3b0fe12845e7"></a>AUDIT_INVALIDSA&#160;</td><td class="fielddoc"><p>Audit for invalid security association. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a9414b2d3b4543913251735e8540ec342a74df00f9e75944ecd6e591fdeab6d87e"></a>FRAGMENT&#160;</td><td class="fielddoc"><p>Audit for received fragment when no fragments allowed. </p>
+<tr><td class="fieldname"><a id="a9414b2d3b4543913251735e8540ec342a452370838b4fff3ebd34848939d98851"></a>AUDIT_FRAGMENT&#160;</td><td class="fielddoc"><p>Audit for received fragment when no fragments allowed. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a9414b2d3b4543913251735e8540ec342abf54f0b52a0f25b3ea5c85cf5c67a4f2"></a>ROLLOVER&#160;</td><td class="fielddoc"><p>Audit for sequence number overflow. </p>
+<tr><td class="fieldname"><a id="a9414b2d3b4543913251735e8540ec342af548bed4e51cdfd18f165fc00d5acdab"></a>AUDIT_ROLLOVER&#160;</td><td class="fielddoc"><p>Audit for sequence number overflow. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a9414b2d3b4543913251735e8540ec342a560477f12a8f9f7fa93cda62919c1107"></a>REPLAY&#160;</td><td class="fielddoc"><p>Audit for anti-replay error. </p>
+<tr><td class="fieldname"><a id="a9414b2d3b4543913251735e8540ec342a42f43df7b3c08a2a0e03cf87b1fbbe36"></a>AUDIT_REPLAY&#160;</td><td class="fielddoc"><p>Audit for anti-replay error. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a9414b2d3b4543913251735e8540ec342aa023f0f64eff73b1db30a619e91a330e"></a>ICV&#160;</td><td class="fielddoc"><p>Audit for incorrect received ICV. </p>
+<tr><td class="fieldname"><a id="a9414b2d3b4543913251735e8540ec342a1ddec40b303375b8f61cd4c53b2daf8e"></a>AUDIT_ICV&#160;</td><td class="fielddoc"><p>Audit for incorrect received ICV. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a9414b2d3b4543913251735e8540ec342af690c3f84ef641a0f90e3c91a1cbb232"></a>FORMAT&#160;</td><td class="fielddoc"><p>Audit for IPv6 JUMBOGRAM formatting errors. </p>
+<tr><td class="fieldname"><a id="a9414b2d3b4543913251735e8540ec342a120a6c5f5b12a9e759dc2bb3b61f9728"></a>AUDIT_FORMAT&#160;</td><td class="fielddoc"><p>Audit for IPv6 JUMBOGRAM formatting errors. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a9414b2d3b4543913251735e8540ec342aec948fa73c7001e51b3090c34bd8b585"></a>DUMMY&#160;</td><td class="fielddoc"><p>Audit for received DUMMY packets. </p>
+<tr><td class="fieldname"><a id="a9414b2d3b4543913251735e8540ec342a57bf3b99e287195838505276982cf73f"></a>AUDIT_DUMMY&#160;</td><td class="fielddoc"><p>Audit for received DUMMY packets. </p>
 </td></tr>
 </table>
 
@@ -785,7 +785,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 19 2022 22:31:30 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 4 2022 10:59:31 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

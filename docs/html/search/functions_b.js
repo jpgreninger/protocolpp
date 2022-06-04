@@ -10,5 +10,6 @@ var searchData=
   ['linkendchild',['LinkEndChild',['../classtinyxml2_1_1XMLNode.html#a663e3a5a378169fd477378f4d17a7649',1,'tinyxml2::XMLNode']]],
   ['loadfile',['LoadFile',['../classtinyxml2_1_1XMLDocument.html#a2ebd4647a8af5fc6831b294ac26a150a',1,'tinyxml2::XMLDocument::LoadFile(const char *filename)'],['../classtinyxml2_1_1XMLDocument.html#a5f1d330fad44c52f3d265338dd2a6dc2',1,'tinyxml2::XMLDocument::LoadFile(FILE *)']]],
   ['log_5fpolicy_5finterface',['log_policy_interface',['../classInterfacePP_1_1log__policy__interface.html#a11119728c6b0cd8875b9ac3a7d830ace',1,'InterfacePP::log_policy_interface']]],
+  ['logger',['logger',['../classProtocolPP_1_1jlog.html#a35f90027963aebf3185280cf51bd0e84',1,'ProtocolPP::jlog']]],
   ['lshift128',['lshift128',['../namespaceProtocolPP.html#ad8122c74e043c8f5c160d9a0336723d6',1,'ProtocolPP']]]
 ];

@@ -7,7 +7,7 @@ var searchData=
   ['_7efile_5flog_5fpolicy',['~file_log_policy',['../classInterfacePP_1_1file__log__policy.html#a44b914f7799597d76041ee635a363534',1,'InterfacePP::file_log_policy']]],
   ['_7efile_5fstdout_5flog_5fpolicy',['~file_stdout_log_policy',['../classInterfacePP_1_1file__stdout__log__policy.html#a7421313a15e9327651177aa4b1ac2d1b',1,'InterfacePP::file_stdout_log_policy']]],
   ['_7ejarray',['~jarray',['../classProtocolPP_1_1jarray.html#a4e7e9db13fab8707a23bb3280c99e369',1,'ProtocolPP::jarray']]],
-  ['_7ejbuffacc',['~jbuffacc',['../classProtocolPP_1_1jbuffacc.html#a544bff7b038a9fcb394acdf5c062189b',1,'ProtocolPP::jbuffacc']]],
+  ['_7ejbuffacc',['~jbuffacc',['../classProtocolPP_1_1jbuffacc.html#a4fda4740f8d91e68999c9c09eb26f932',1,'ProtocolPP::jbuffacc']]],
   ['_7ejbuffman',['~jbuffman',['../classProtocolPP_1_1jbuffman.html#aee61d9c6e169e68ef3e77f14f593f923',1,'ProtocolPP::jbuffman']]],
   ['_7ejconfident',['~jconfident',['../classProtocolPP_1_1jconfident.html#a32dc90b96c914335d41e01377dbaf36b',1,'ProtocolPP::jconfident']]],
   ['_7ejconfidentsa',['~jconfidentsa',['../classProtocolPP_1_1jconfidentsa.html#a53ee6bff579037e4723852312e227513',1,'ProtocolPP::jconfidentsa']]],

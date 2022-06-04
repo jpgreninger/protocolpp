@@ -1,6 +1,7 @@
 var searchData=
 [
   ['faddr',['faddr',['../structProtocolPP_1_1jtestcfg_1_1tstcfg.html#aeccd9253c0dd0949603d82aefdc97251',1,'ProtocolPP::jtestcfg::tstcfg']]],
+  ['fail',['FAIL',['../jlog_8h.html#ac8d1eaf65528f86b445cf6e45b2d72c9',1,'jlog.h']]],
   ['fatal',['fatal',['../classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445ae0f23db4e891663249063cc9bd7ab92a',1,'InterfacePP::jlogger::fatal()'],['../namespaceProtocolPP.html#a996c56100325cdb5c43f71b65cdc5189a90c662f35e7f37a9348cadc853597219',1,'ProtocolPP::FATAL()']]],
   ['fatalclr',['fatalclr',['../structProtocolPP_1_1jikeparse_1_1jikecfg.html#aa9361683b2773c6e535e89471a945875',1,'ProtocolPP::jikeparse::jikecfg::fatalclr()'],['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36afc11471e4a681b00f343a418a3ed16da',1,'ProtocolPP::FATALCLR()']]],
   ['fc',['FC',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8ada151a62ba8bae5097c31401b2aef740',1,'ProtocolPP']]],
@@ -35,11 +36,10 @@ var searchData=
   ['flush_5fbefore',['flush_before',['../structProtocolPP_1_1jikeparse_1_1jikecfg.html#a8fb805c9a8479af29dc63b627ab5ef90',1,'ProtocolPP::jikeparse::jikecfg']]],
   ['fms',['FMS',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a5898cd3c612570a4af97338ab842d6fb',1,'ProtocolPP']]],
   ['fname',['fname',['../structProtocolPP_1_1jtestcfg_1_1tstcfg.html#a86adfe78f51418b29030b52f7c5c1cc9',1,'ProtocolPP::jtestcfg::tstcfg']]],
-  ['format',['format',['../structProtocolPP_1_1jikeparse_1_1jikecfg.html#a311f0e6570cca267cbc2a829eae8552b',1,'ProtocolPP::jikeparse::jikecfg::format()'],['../classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342af690c3f84ef641a0f90e3c91a1cbb232',1,'ProtocolPP::jipsec::FORMAT()']]],
+  ['format',['format',['../structProtocolPP_1_1jikeparse_1_1jikecfg.html#a311f0e6570cca267cbc2a829eae8552b',1,'ProtocolPP::jikeparse::jikecfg']]],
   ['format_5fexthdr',['format_exthdr',['../classProtocolPP_1_1jip.html#a3da5cb34c1b9aaf728fc55f30e999571',1,'ProtocolPP::jip']]],
   ['fragexpire',['FRAGEXPIRE',['../namespaceProtocolPP.html#a053cb4b6f939495763f9be4b0d23c769a8493a6aa9ed6e6cc846bd55543f2001e',1,'ProtocolPP']]],
   ['fragid',['FRAGID',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36aacb979570201156e3747df2e017a9f45',1,'ProtocolPP']]],
-  ['fragment',['FRAGMENT',['../classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342a74df00f9e75944ecd6e591fdeab6d87e',1,'ProtocolPP::jipsec']]],
   ['fragoffset',['FRAGOFFSET',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a42a9107eba14f7172792a01623b5b46f',1,'ProtocolPP']]],
   ['fragrqd',['FRAGRQD',['../namespaceProtocolPP.html#a053cb4b6f939495763f9be4b0d23c769accf5ec2a099343c627a16f6a2586596b',1,'ProtocolPP']]],
   ['fragtime',['FRAGTIME',['../namespaceProtocolPP.html#a053cb4b6f939495763f9be4b0d23c769a931b06e76b2a614a5040d590e3a00d1c',1,'ProtocolPP']]],

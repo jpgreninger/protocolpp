@@ -7,7 +7,7 @@ var searchData=
   ['ddx',['DDX',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8a205bcb057edcff20101763b82e6f8dea',1,'ProtocolPP']]],
   ['debug',['debug',['../classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445a199da5cd387c031744bc682f31849b77',1,'InterfacePP::jlogger']]],
   ['debugclr',['DEBUGCLR',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ae3a1206d64dc8e3720cbb6f15812938e',1,'ProtocolPP']]],
-  ['dec',['DEC',['../classProtocolPP_1_1aead__chacha__poly1305.html#a2fa41f162ce5d91b4c3a8a459d49a6bcaa7c47feaf18881d2086a17d8a31bc184',1,'ProtocolPP::aead_chacha_poly1305::DEC()'],['../classProtocolPP_1_1jmodes.html#ab2cdd1d15cbef658be2040fc8a470d36a3c92b0c627af3b25fc1458336cac13e3',1,'ProtocolPP::jmodes::DEC()'],['../classProtocolPP_1_1jsnowv.html#a14e2fdeadd6e82293e9016f4a66ead3ba1f142b04658e2b8dbaed501088947920',1,'ProtocolPP::jsnowv::DEC()'],['../namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2aace67786224fffd00dca7b5a26f13912',1,'ProtocolPP::DEC()']]],
+  ['dec',['DEC',['../classProtocolPP_1_1aead__chacha__poly1305.html#a2fa41f162ce5d91b4c3a8a459d49a6bcaa7c47feaf18881d2086a17d8a31bc184',1,'ProtocolPP::aead_chacha_poly1305::DEC()'],['../classProtocolPP_1_1jmodes.html#ab2cdd1d15cbef658be2040fc8a470d36a3c92b0c627af3b25fc1458336cac13e3',1,'ProtocolPP::jmodes::DEC()'],['../namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2aace67786224fffd00dca7b5a26f13912',1,'ProtocolPP::DEC()']]],
   ['decap',['DECAP',['../namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2ac4d01213c0c258f5d8160bb56021fb30',1,'ProtocolPP']]],
   ['decode_5ferror',['DECODE_ERROR',['../namespaceProtocolPP.html#a9496ca7bf265d90a8637e15eea79639bab4e53ae01e446be9aa649574835896e6',1,'ProtocolPP']]],
   ['decompress_5ffail',['DECOMPRESS_FAIL',['../namespaceProtocolPP.html#a9496ca7bf265d90a8637e15eea79639ba72464708cdea466a18dfa1beb6d2f832',1,'ProtocolPP']]],
@@ -63,13 +63,12 @@ var searchData=
   ['direction',['DIRECTION',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a2257812a84a2cb06b01f5d72a0d755b0',1,'ProtocolPP']]],
   ['dmgcts',['DMGCTS',['../namespaceProtocolPP.html#ae194a2c104fc4e9ad7e9ffa484710f80af280cf394f8055210b4aa91a0b2f033b',1,'ProtocolPP']]],
   ['dmgdts',['DMGDTS',['../namespaceProtocolPP.html#ae194a2c104fc4e9ad7e9ffa484710f80a4459c2bd02877c165c4d107dc388cd99',1,'ProtocolPP']]],
-  ['downlink',['DOWNLINK',['../classProtocolPP_1_1jmodes.html#ab2cdd1d15cbef658be2040fc8a470d36aa82ceabb0bb3d317d9a25e80d69ff9f7',1,'ProtocolPP::jmodes::DOWNLINK()'],['../classProtocolPP_1_1jsnow3g.html#a25c386a8728657a7bbdf208909f58bb0a03e21359c8f6cb6e23231bce900647ea',1,'ProtocolPP::jsnow3g::DOWNLINK()'],['../classProtocolPP_1_1jzuc.html#a7cfa6d11bf182736bb3762dcd35d75a1ac41d9b830a8f061c036ed2e2ff77bf15',1,'ProtocolPP::jzuc::DOWNLINK()'],['../namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2ac9a915533cf9ac1937ffdab0e81671c8',1,'ProtocolPP::DOWNLINK()']]],
+  ['downlink',['DOWNLINK',['../classProtocolPP_1_1jmodes.html#ab2cdd1d15cbef658be2040fc8a470d36aa82ceabb0bb3d317d9a25e80d69ff9f7',1,'ProtocolPP::jmodes::DOWNLINK()'],['../namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2ac9a915533cf9ac1937ffdab0e81671c8',1,'ProtocolPP::DOWNLINK()']]],
   ['driver',['DRIVER',['../namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca6db9644e7baee077ef263ece4d5f02a5',1,'ProtocolPP']]],
   ['dsa',['DSA',['../namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca58637556047b94ec694f080e1660c468',1,'ProtocolPP']]],
   ['dsecn',['DSECN',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a096b8b5ee584a744b91b068f5e6e21dd',1,'ProtocolPP']]],
   ['dsr',['DSR',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8ad2d05648a773e440b8ee80447f3471a7',1,'ProtocolPP']]],
   ['dsthstunknwn',['DSTHSTUNKNWN',['../namespaceProtocolPP.html#a053cb4b6f939495763f9be4b0d23c769aae4c6bfa2a8f691b945243611a6ff1f9',1,'ProtocolPP']]],
   ['dstunknwn',['DSTUNKNWN',['../namespaceProtocolPP.html#a053cb4b6f939495763f9be4b0d23c769a068376e6bc46cbed86793470da833944',1,'ProtocolPP']]],
-  ['dtls',['DTLS',['../namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186af921e1ae4c59d704473f10b1773fc320',1,'ProtocolPP']]],
-  ['dummy',['DUMMY',['../classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342aec948fa73c7001e51b3090c34bd8b585',1,'ProtocolPP::jipsec']]]
+  ['dtls',['DTLS',['../namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186af921e1ae4c59d704473f10b1773fc320',1,'ProtocolPP']]]
 ];

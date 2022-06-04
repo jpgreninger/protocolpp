@@ -239,6 +239,62 @@ Reserved VID values SA</div></div>
 <img src="VLAN_802.1ad_DoubleTag75.png" alt="VLAN_802.1ad_DoubleTag75.png"/>
 <div class="caption">
 VLAN Double Tag Formatting SA</div></div>
+<p><b>Secure frame generation</b></p>
+<p>For each transmit request at the Controlled Port, the Secure Frame Generation process</p>
+<p>a. Assigns the frame to an SA (10.5.1)</p>
+<p>b. Assigns the nextPN variable for that SA to be used as the value of the PN in the SecTAG (10.5.2)</p>
+<p>c. Encodes the octets of the SecTAG (10.5.3)</p>
+<p>d. Provides the protection function (14.1, 10.5.4) of the Current Cipher Suite with</p>
+<ol type="1">
+<li>The SA Key (SAK)</li>
+<li>The SCI for the SC used by the SecY to transmit</li>
+<li>The PN</li>
+<li>The SecTAG</li>
+<li>The sequence of octets that compose the User Data</li>
+</ol>
+<p>e. Receives the following parameters from the Cipher Suite protection operation</p>
+<ol type="1">
+<li>The sequence of octets that compose the Secure Data</li>
+<li>The ICV</li>
+</ol>
+<p>f. Issues a request to the Transmit Multiplexer with the destination and source MAC addresses, and priority of the frame as received from the Controlled Port, and an MPDU comprising the octets of the SecTAG, Secure Data, and the ICV concatenated in that order (10.5.5)</p>
+<p>If the management control protectFrames is False, the preceding steps are omitted, an identical transmit request is made to the Transmit Multiplexer, and the OutPktsUntagged counter incremented.</p>
+<p>NOTE—This model of operation supports the externally observable behavior that can result when the Cipher Suite implementation calculates the Secure Data and ICV parameters for a number of frames in parallel, and the responses to protection and validation requests are delayed. Transmitted frames are not misordered</p>
+<p><b>Transmit SA assignment</b></p>
+<p>Each SA is identified by its Association Number (AN). Each frame is assigned to the SA identified by the current value of the encodingSA variable. This is updated following an LMI request from the KaY to start transmitting using the SA and can be read but not written by network management. Frames will be protected using the encodingSA immediately after the last frame assigned to the previous SA has been protected</p>
+<p>If the SA identified by the encodingSA is not available for use, and the management control protectFrames is set, MAC_Operational transitions to False for the Controlled Port, and frames are neither accepted or delivered using the port</p>
+<p><b>Secure frame verification</b></p>
+<p>For each receive indication from the Receive Demultiplexer, the Secure Frame Verification process</p>
+<p>a. Examines the user data for a SecTAG</p>
+<p>b. Validates frames with a SecTAG as specified in 9.12</p>
+<p>c. Extracts and decodes the SecTAG as specified in 9.3 through 9.9</p>
+<p>d. Extracts the User Data and ICV as specified in 9.10 and 9.11</p>
+<p>e. Assigns the frame to an SA (10.6.1)</p>
+<p>f. Performs a preliminary replay check against the last validated PN for the SA (10.6.2)</p>
+<p>g. Provides the validation function (14.1, 10.6.3) of the Current Cipher Suite with</p>
+<ol type="1">
+<li>The SA Key (SAK)</li>
+<li>The SCI for the SC used by the SecY to transmit</li>
+<li>The PN</li>
+<li>The SecTAG</li>
+<li>The sequence of octets that compose the Secure Data</li>
+<li>The ICV</li>
+</ol>
+<p>h. Receives the following parameters from the Cipher Suite validation operation</p>
+<ol type="1">
+<li>A Valid indication, if the integrity check was valid and the User Data could be recovered</li>
+<li>The sequence of octets that compose the User Data</li>
+</ol>
+<p>i. Updates the replay check (see IEEE Std 802.1AE-2006 Section 10.6.4)</p>
+<p>j. Issues an indication to the Controlled Port with the DA, SA, and priority of the frame as received from the Receive Demultiplexer, and the User Data provided by the validation operation (10.6.5)</p>
+<p><b>Receive SA assignment</b></p>
+<p>An SCI is associated with the received frame, and used to locate the receive SC. If an SCI is not explicitly encoded in the SecTAG, the default value established by the KaY for a single peer is used. If the SC is not found, it may be recorded to assist network management resolution of the problem, and:</p>
+<p>a. If validateFrames is Strict or the C bit in the SecTAG is set, the InPktsNoSCI counter is incremented and the frame is discarded; otherwise</p>
+<p>b. The InPktsUnknownSCI counter is incremented and the frame (with the SecTAG and ICV removed) is delivered to the Controlled Port</p>
+<p>If the receive SC has been identified, the frame’s AN is used to locate the receive SA received frame and processing continues with the preliminary replay check. If the SA is not in use:</p>
+<p>c. If validateFrames is Strict or the C bit is set, the frame is discarded and the InPktsNotUsingSA counter incremented; otherwise</p>
+<p>d. The InPktsUnusedSA counter is incremented and the frame delivered to the Controlled Port</p>
+<p>NOTE—The short phrase “the frame is discarded” is commonly used to express the more formal notion of not processing a service primitive (an indication or request) further and recovering the resources that embody the parameters of that service primitive. No further processing is applied. However, if a duplicate of the primitive has been submitted to another process, by the Receive Demultiplexer in this case, processing of that duplicate is unaffected</p>
 <p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jmacsec.html">ProtocolPP::jmacsec</a> </dd>
 <dd>
 <a class="el" href="classProtocolPP_1_1jmacsecsa.html">ProtocolPP::jmacsecsa</a> </dd>
@@ -296,7 +352,7 @@ ProtocolPP::jenum</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 19 2022 22:31:29 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 4 2022 10:59:30 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

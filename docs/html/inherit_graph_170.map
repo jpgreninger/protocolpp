@@ -1,3 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classtinyxml2_1_1XMLAttribute.html" title="tinyxml2::XMLAttribute" alt="" coords="5,5,160,32"/>
+<area shape="rect" id="node1" href="$classtinyxml2_1_1MemPool.html" title="tinyxml2::MemPool" alt="" coords="5,143,140,170"/>
+<area shape="rect" id="node2" href="$classtinyxml2_1_1MemPoolT.html" title="tinyxml2::MemPoolT\l\&lt; sizeof(tinyxml2::XMLAttribute) \&gt;" alt="" coords="191,5,414,47"/>
+<area shape="rect" id="node3" href="$classtinyxml2_1_1MemPoolT.html" title="tinyxml2::MemPoolT\l\&lt; sizeof(tinyxml2::XMLComment) \&gt;" alt="" coords="188,71,417,112"/>
+<area shape="rect" id="node4" href="$classtinyxml2_1_1MemPoolT.html" title="tinyxml2::MemPoolT\l\&lt; sizeof(tinyxml2::XMLElement) \&gt;" alt="" coords="192,136,413,177"/>
+<area shape="rect" id="node5" href="$classtinyxml2_1_1MemPoolT.html" title="tinyxml2::MemPoolT\l\&lt; sizeof(tinyxml2::XMLText) \&gt;" alt="" coords="203,201,402,243"/>
+<area shape="rect" id="node6" href="$classtinyxml2_1_1MemPoolT.html" title="tinyxml2::MemPoolT\l\&lt; ITEM_SIZE \&gt;" alt="" coords="231,267,374,308"/>
 </map>

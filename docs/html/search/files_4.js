@@ -38,6 +38,7 @@ var searchData=
   ['jlmots_2eh',['jlmots.h',['../jlmots_8h.html',1,'']]],
   ['jlms_2eh',['jlms.h',['../jlms_8h.html',1,'']]],
   ['jlmsa_2eh',['jlmsa.h',['../jlmsa_8h.html',1,'']]],
+  ['jlog_2eh',['jlog.h',['../jlog_8h.html',1,'']]],
   ['jlogger_2eh',['jlogger.h',['../jlogger_8h.html',1,'']]],
   ['jlte_2eh',['jlte.h',['../jlte_8h.html',1,'']]],
   ['jltesa_2eh',['jltesa.h',['../jltesa_8h.html',1,'']]],

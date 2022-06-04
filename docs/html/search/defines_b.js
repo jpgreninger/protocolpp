@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['xor2x64',['XOR2x64',['../jsnowv_8h.html#a3241234d1fd285aee1a3fe9906b24ee4',1,'jsnowv.h']]],
-  ['xor3x64',['XOR3x64',['../jsnowv_8h.html#a1ba6fc14ad57053dd76267727be6e00d',1,'jsnowv.h']]]
+  ['rot',['ROT',['../jzuc_8h.html#a52ada004164db2f64d2547616cb854aa',1,'jzuc.h']]],
+  ['rotate_5fbytes',['rotate_bytes',['../SFMT-neon_8h.html#a019988f2ffb34f9b9c4ae71087a50bf1',1,'SFMT-neon.h']]]
 ];

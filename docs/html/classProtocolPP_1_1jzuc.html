@@ -88,8 +88,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a7cfa6d11bf182736bb3762dcd35d75a1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jzuc.html#a7cfa6d11bf182736bb3762dcd35d75a1">dir_t</a> { <a class="el" href="classProtocolPP_1_1jzuc.html#a7cfa6d11bf182736bb3762dcd35d75a1a01aab1aa34152ef23cd7c5324c681ae0">UPLINK</a> =0x00, 
-<a class="el" href="classProtocolPP_1_1jzuc.html#a7cfa6d11bf182736bb3762dcd35d75a1ac41d9b830a8f061c036ed2e2ff77bf15">DOWNLINK</a> =0x01
+<tr class="memitem:a7cfa6d11bf182736bb3762dcd35d75a1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jzuc.html#a7cfa6d11bf182736bb3762dcd35d75a1">dir_t</a> { <a class="el" href="classProtocolPP_1_1jzuc.html#a7cfa6d11bf182736bb3762dcd35d75a1a6d21c258d636255497f7da831cc8429a">ZUC_UPLINK</a> =0x00, 
+<a class="el" href="classProtocolPP_1_1jzuc.html#a7cfa6d11bf182736bb3762dcd35d75a1ac8f50421be8fcc699ac6a454016b02fc">ZUC_DOWNLINK</a> =0x01
  }</td></tr>
 <tr class="separator:a7cfa6d11bf182736bb3762dcd35d75a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -129,14 +129,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Direction of processing for ZUC </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">UPLINK</td><td>- User to tower </td></tr>
-    <tr><td class="paramname">DOWNLINK</td><td>- Tower to user </td></tr>
+    <tr><td class="paramname">ZUC_UPLINK</td><td>- User to tower </td></tr>
+    <tr><td class="paramname">ZUC_DOWNLINK</td><td>- Tower to user </td></tr>
   </table>
   </dd>
 </dl>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7cfa6d11bf182736bb3762dcd35d75a1a01aab1aa34152ef23cd7c5324c681ae0"></a>UPLINK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7cfa6d11bf182736bb3762dcd35d75a1ac41d9b830a8f061c036ed2e2ff77bf15"></a>DOWNLINK&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7cfa6d11bf182736bb3762dcd35d75a1a6d21c258d636255497f7da831cc8429a"></a>ZUC_UPLINK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7cfa6d11bf182736bb3762dcd35d75a1ac8f50421be8fcc699ac6a454016b02fc"></a>ZUC_DOWNLINK&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -299,7 +299,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Constructor for ZUC authentication with 4-byte ICV </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dir</td><td>- direction of processing (DOWNLINK, UPLINK) </td></tr>
+    <tr><td class="paramname">dir</td><td>- direction of processing (ZUC_DOWNLINK, ZUC_UPLINK) </td></tr>
     <tr><td class="paramname">key</td><td>- authentication key </td></tr>
     <tr><td class="paramname">keylen</td><td>- length of the authentication key (16 bytes) </td></tr>
     <tr><td class="paramname">count</td><td>- 32-bit COUNT value </td></tr>
@@ -361,7 +361,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Constructor for ZUC-256 authentication </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dir</td><td>- direction of processing (DOWNLINK, UPLINK) </td></tr>
+    <tr><td class="paramname">dir</td><td>- direction of processing (ZUC_DOWNLINK, ZUC_UPLINK) </td></tr>
     <tr><td class="paramname">key</td><td>- authentication key </td></tr>
     <tr><td class="paramname">keylen</td><td>- length of the authentication key (32 bytes) </td></tr>
     <tr><td class="paramname">iv</td><td>- initialization vector </td></tr>
@@ -518,7 +518,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 19 2022 22:31:30 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 4 2022 10:59:31 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

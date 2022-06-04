@@ -82,14 +82,41 @@ $(function() {
 <p>Accepts a jbuffman object to access with the</p>
 <p>requested number of buffers of the templated size</p>
 <div class="fragment"><div class="line"><span class="comment">// create a accessor for 384 byte buffers</span></div><div class="line">jjbuffacc acc1&lt;384&gt;(mem1);</div><div class="line"></div><div class="line"><span class="comment">// create a memory of 16384 buffers each 384 bytes long</span></div><div class="line"><a class="code" href="classjbuffacc.html">jbuffacc</a> mem2&lt;384&gt;(16384);</div><div class="line"></div><div class="line"><span class="comment">// request 20 buffers from mem1 (see jbuffman)</span></div><div class="line">std::list&lt;std::array&lt;uint8_t, 256&gt;&gt; buf1 = mem1.deque(20);</div><div class="line"></div><div class="line"><span class="comment">// return the buffers to the memory</span></div><div class="line">mem1.enque(buf1);</div><div class="line"></div><div class="line"><span class="comment">// request 200 buffers from mem2 wrapped in a shared_ptr</span></div><div class="line">std::shared_ptr&lt;std::list&lt;std::array&lt;uint8_t, 384&gt;&gt;&gt; buf2 = std::make_shared&lt;std::list&lt;std::array&lt;uint8_t, 384&gt;&gt;&gt;();</div><div class="line">mem2.deque(200, buf2);</div><div class="line"></div><div class="line"><span class="comment">// return the 200 buffers to mem2 from the shared_ptr</span></div><div class="line">mem2.enque(buf2);</div><div class="line"></div><div class="line"><span class="comment">// return number of available buffers in mem1</span></div><div class="line"><span class="keywordtype">int</span> numbufs = mem1.avail();</div></div><!-- fragment --><p>Using the buffers is simply using the functions for std::list and std::array. Iterate through the buffers in the list, write to or reading the data from the std:: array at each node. For example, to use the buf1 above to write data it would be</p>
-<div class="fragment"><div class="line"><span class="keywordflow">for</span>(<span class="keyword">auto</span> itr=buf1.begin(); itr!=buf1.end(); itr++) {</div><div class="line">    std::memcpy(itr-&gt;data(), new_data.ptr(), new_data.size());</div><div class="line">}</div></div><!-- fragment --><p>The "itr-&gt;data() returns a pointer to the first element in the std::array, perfect for used with std::memcpy </p>
+<div class="fragment"><div class="line"><span class="keywordflow">for</span>(<span class="keyword">auto</span> itr=buf1.begin(); itr!=buf1.end(); itr++) {</div><div class="line">    std::memcpy(itr-&gt;data(), new_data.ptr(), new_data.size());</div><div class="line">}</div></div><!-- fragment --><p>The "itr-&gt;data() returns a pointer to the first element in the std::array, perfect for used with std::memcpy</p>
+<p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jbuffacc.html">ProtocolPP::jbuffacc</a></dd></dl>
+<p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classjbuffacc.html">jbuffacc</a></dd></dl>
+<center>Protocol++&reg; (<a class="el" href="namespaceProtocolPP.html">ProtocolPP</a>&reg;) written by : John Peter Greninger &bull; &copy; John Peter Greninger 2015-2022 &bull; All Rights Reserved</center> <center><sub>All copyrights and trademarks are the property of their respective owners</sub></center><p>The source code contained or described herein and all documents related to the source code (herein called "Material") are owned by John Peter Greninger and Sheila Rocha Greninger. Title to the Material remains with John Peter Greninger and Sheila Rocha Greninger. The Material contains trade secrets and proprietary and confidential information of John Peter Greninger and Sheila Rocha Greninger. The Material is protected by worldwide copyright and trade secret laws and treaty provisions. No part of the Material may be used, copied, reproduced, modified, published, uploaded, posted, transmitted, distributed, or disclosed in any way without prior express written consent of John Peter Greninger and Sheila Rocha Greninger (both are required)</p>
+<p>No license under any patent, copyright, trade secret, or other intellectual property right is granted to or conferred upon you by disclosure or delivery of the Materials, either expressly, by implication, inducement, estoppel, or otherwise. Any license under such intellectual property rights must be express and approved by John Peter Greninger and Sheila Rocha Greninger in writing</p>
+<p>Licensing information can be found at <b>www.protocolpp.com/license</b> with use of the binary forms permitted provided that the following conditions are met:</p>
+<ul>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution</li>
+<li>Any and all modifications must be returned to John Peter Greninger at GitHub.com <a href="https://github.com/jpgreninger/protocolpp">https://github.com/jpgreninger/protocolpp</a> for evaluation. Inclusion of modifications in the source code shall be determined solely by John Peter Greninger. Failure to provide modifications shall render this license NULL and VOID and revoke any rights to use of Protocol++&reg;</li>
+<li>Commercial use (incidental or not) requires a fee-based license obtainable at <b>www.protocolpp.com/shop</b></li>
+<li>Academic or research use requires prior written and notarized permission from John Peter and Sheila Rocha Greninger</li>
+</ul>
+<p>Use of the source code requires purchase of the source code. Source code can be purchased at <b>www.protocolpp.com/shop</b></p>
+<ul>
+<li><b>US Copyrights at <a href="https://www.copyright.gov/">https://www.copyright.gov/</a></b><ul>
+<li><b>TXu002059872 (Version 1.0.0)</b></li>
+<li><b>TXu002066632 (Version 1.2.7)</b></li>
+<li><b>TXu002082674 (Version 1.4.0)</b></li>
+<li><b>TXu002097880 (Version 2.0.0)</b></li>
+<li><b>TXu002169236 (Version 3.0.1)</b></li>
+<li><b>TXu002182417 (Version 4.0.0)</b></li>
+<li><b>TXu002219402 (Version 5.0.0)</b></li>
+<li><b>TXu002272076 (Version 5.2.1)</b></li>
+</ul>
+</li>
+</ul>
+<p>The name of its contributor may not be used to endorse or promote products derived from this software without specific prior written permission and licensing</p>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER AND CONTRIBUTOR "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/<a class="el" href="jbuffacc_8h_source.html">jbuffacc.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 19 2022 22:31:29 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 4 2022 10:59:30 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
