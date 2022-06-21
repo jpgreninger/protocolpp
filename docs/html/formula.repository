@@ -446,31 +446,3 @@
 \form#445:$x^k × ({x}^{31} + {x}^{30} + {x}^{29} +...+ x^2 + x + 1)$
 \form#446:${x}^{32}$
 \form#447:\[ G(x) = {x}^{31} + {x}^{30} + {x}^{26} + {x}^{25} + {x}^{24} + {x}^{18} + {x}^{15} + {x}^{14} + {x}^{12} + {x}^{11} + {x}^{10} + x^8 + x^6 + x^5 + x^4 + x^3 + x + 1 \]
-\form#448:$ IPsec\; cipher\; and\; authentication\; modes $
-\form#449:$ prf+ (K,S) = T1\;|\;T2\;|\;T3\;|\;T4\;|\;...$
-\form#450:$ T1 = prf (K,\;S\;|\;0x01)$
-\form#451:$ T2 = prf (K,\;T1\;|\;S\;|\;0x01)$
-\form#452:$ T3 = prf (K,\;T2\;|\;S\;|\;0x01)$
-\form#453:$ T4 = prf (K,\;T3\;|\;S\;|\;0x01)$
-\form#454:$ SKEYSEED$
-\form#455:$ SK_d$
-\form#456:$SK_ai \; and \; SK_ar$
-\form#457:$ SK_ei \; and \; SK_er$
-\form#458:$ SK_pi \; and \; SK_pr$
-\form#459:$ SKEYSEED = prf(Ni\;|\;Nr,\;g^ir)$
-\form#460:$ {SK_d\;|\;SK_ai\;|\;SK_ar\;|\;SK_ei\;|\;SK_er\;|\;SK_pi\;|\;SK_pr\;} = prf+ (SKEYSEED,\;Ni\;|\;Nr\;|\;SPIi\;|\;SPIr)$
-\form#461:$ SK_d,\;SK_ai,\;SK_ar,\;SK_ei,\;SK_er,\;SK_pi,\;and\;SK_pr$
-\form#462:$ KEYMAT = prf+(SK_d,\;Ni\;|\;Nr) $
-\form#463:$ KEYMAT = prf+(SK_d,\;g^ir\;(new) |\;Ni\;|\;Nr) $
-\form#464:$ len = len1 + len2 $
-\form#465:$ len1 = std::ceil(8n/std::log2(w)) $
-\form#466:$ len2 = std::floor(std::log2(len1 * (w-1))/std::log2(2)) + 1 $
-\form#467:$ out_len = 8 * len_X / std::log2(w) $
-\form#468:$ csum = len1 * (w - 1) * {2}^{8} $
-\form#469:$ Node(j, std::floor(i/{2}^{j}) XOR 1) $
-\form#470:$ {2}^{w} - 1 $
-\form#471:$ 4 + (n * (p + 1)) $
-\form#472:$ (p * ({2}^{w} - 1)) + 1 $
-\form#473:$ H(I | Q | u16str(D_PBLC) | y[0] | ... | y[p-1]) $
-\form#474:$ N lt {2}^{h} $
-\form#475:$ {2}^{h}, ({2}^{h} + 1), ({2}^{h} + 2), ..., ({2}^{h})+({2}^{h})-1 $

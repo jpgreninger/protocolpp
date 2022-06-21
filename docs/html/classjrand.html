@@ -5,10 +5,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Protocol++ (ProtocolPP): jrand Class Reference</title>
+<title>Protocol++(Protocolpp): jrand Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,7 +29,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Protocol++ (ProtocolPP)
+   <div id="projectname">Protocol++(Protocolpp)
    &#160;<span id="projectnumber">5.3.1</span>
    </div>
   </td>
@@ -46,6 +54,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classjrand.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,23 +85,13 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">jrand Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &quot;<a class="el" href="jrand_8h_source.html">include/jrand.h</a>&quot;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for jrand:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classjrand__coll__graph.png" border="0" usemap="#jrand_coll__map" alt="Collaboration graph"/></div>
-<map name="jrand_coll__map" id="jrand_coll__map">
-</map>
-</div>
+<p><code>#include &quot;include/jrand.h&quot;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h1><a class="anchor" id="JRANDC"></a>
 Randomization Class for Protocol++® (ProtocolPP®)</h1>
@@ -84,7 +99,7 @@ Randomization Class for Protocol++® (ProtocolPP®)</h1>
 <p>The core of the randomizer is the Merseene-Twister. The randomizer object can be created with one of three constructors. The default constructor creates a randomizer that is seeded with the default seed of 1234567890 </p><div class="fragment"><div class="line"><span class="comment">// Standard constructor for the jrand</span></div><div class="line"><a class="code" href="classjrand.html">jrand</a>();</div></div><!-- fragment --><p> To improve the entropy of the randomizer, it can also be created using a long integer or by using an array of long integers </p><div class="fragment"><div class="line"><span class="comment">// Constructor for jrand that accepts an unsigned int for the seed</span></div><div class="line"><a class="code" href="classjrand.html">jrand</a>(uint64_t myseed);</div></div><!-- fragment --><p> Additional entropy may be added by using the seed() methods to reseed the object </p><div class="fragment"><div class="line"><span class="comment">// Constructor for jrand that accepts an unsigned int for the seed</span></div><div class="line"><a class="code" href="classjrand.html">jrand</a>(<span class="keyword">const</span> uint64_t *newseed, <span class="keywordtype">int</span> size);</div></div><!-- fragment --><p> The getname() and getstring() functions allow the user to obtain a randomly generated name or to choose a string from a list of colon separated values Names are generated from a-zA-Z0-9, no special characters are used </p><div class="fragment"><div class="line"><span class="comment">// generates random name of 12 characters</span></div><div class="line">std::string newname = getname(12);</div><div class="line"></div><div class="line"><span class="comment">// selects on from the list of strings</span></div><div class="line">std::string newstr = getstring(<span class="stringliteral">&quot;missy:david:mary:tomtom&quot;</span>);</div></div><!-- fragment --><p> The functions that return an array of values can be called in two different ways, either by asking for an amount of random data or by asking for a range of data. For example to ask for 200 bytes of the random data, the user would try </p><div class="fragment"><div class="line"><a class="code" href="classjarray.html">jarray&lt;uint8_t&gt;</a> newdata = myrand.getbyte(200);</div></div><!-- fragment --><p> To obtain a random amount of data from 500 to 1000 bytes, the user would call </p><div class="fragment"><div class="line"><a class="code" href="classjarray.html">jarray&lt;uint8_t&gt;</a> newdata = myrand.getbyte(<span class="stringliteral">&quot;500..1000&quot;</span>);</div></div><!-- fragment --><p> This second call would first randomly select the length of bytes between 500 and 1000, they it would generate and return the bytes for that length as an array</p>
 <p>The randomization class also allows the user to ask for a single object of the the type requested. To obtain a uint64_t the call would be </p><div class="fragment"><div class="line">uint64_t newdata = myrand.get_u64();</div></div><!-- fragment --><p> To generate cryptographically secure keys and data, jrand provides access to the hardware random number generator on the device being use. The can be accomplished by use the function </p><div class="fragment"><div class="line"><span class="comment">// return 16 bytes from the hardware random generator</span></div><div class="line"><a class="code" href="classjarray.html">jarray&lt;uint8_t&gt;</a> crypto = myrand.get_crypto(16);</div></div><!-- fragment --><p> Finally, a tokenizer is provided with a static interface to allow the user to parse strings and obtain the delimited result. In jrand this is mainly used to parse ranges but can be used for any string. Use is </p><div class="fragment"><div class="line">std::vector&lt;std::string&gt; split = jrand::tokenizer(<span class="stringliteral">&quot;Olympia:Boise:Medford&quot;</span>, <span class="stringliteral">&quot;:&quot;</span>);</div></div><!-- fragment --><p> This randomizer also supports a special mode that allows a large number of SIMD generated data to be obtained from the process. It requires that this class be compiled with the define SFMT_MODE</p>
 <p>SFMT_MODE periodically generates a large pool of random data from the processor that can be used by the random object. If the next request depletes the current store of random data, the random object will ask the process to refill it's "well". The randomization object will get a "bucket" from the "well" to fill it's array. Data in these large amounts are generated with SIMD commands</p>
-<p>See the header file <a class="el" href="SFMT_8h.html">SFMT.h</a> for additional information</p>
+<p>See the header file SFMT.h for additional information</p>
 <p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray</a></dd></dl>
 <p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classjarray.html">jarray</a></dd></dl>
 <center>Protocol++&reg; (<a class="el" href="namespaceProtocolPP.html">ProtocolPP</a>&reg;) written by : John Peter Greninger &bull; &copy; John Peter Greninger 2015-2022 &bull; All Rights Reserved</center> <center><sub>All copyrights and trademarks are the property of their respective owners</sub></center><p>The source code contained or described herein and all documents related to the source code (herein called "Material") are owned by John Peter Greninger and Sheila Rocha Greninger. Title to the Material remains with John Peter Greninger and Sheila Rocha Greninger. The Material contains trade secrets and proprietary and confidential information of John Peter Greninger and Sheila Rocha Greninger. The Material is protected by worldwide copyright and trade secret laws and treaty provisions. No part of the Material may be used, copied, reproduced, modified, published, uploaded, posted, transmitted, distributed, or disclosed in any way without prior express written consent of John Peter Greninger and Sheila Rocha Greninger (both are required)</p>
@@ -113,14 +128,18 @@ Randomization Class for Protocol++® (ProtocolPP®)</h1>
 <p>The name of its contributor may not be used to endorse or promote products derived from this software without specific prior written permission and licensing</p>
 <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER AND CONTRIBUTOR "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="jrand_8h_source.html">jrand.h</a></li>
+<li>include/jrand.h</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 4 2022 10:59:30 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.14
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classjrand.html">jrand</a></li>
+    <li class="footer">Generated on Mon Jun 20 2022 22:12:02 for Protocol++(Protocolpp) by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
 </body>
 </html>

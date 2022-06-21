@@ -105,7 +105,6 @@ var searchData=
   ['errclr',['ERRCLR',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a9c60d6d98bacc462511a74f41fef4a88',1,'ProtocolPP']]],
   ['errhdrfield',['ERRHDRFIELD',['../namespaceProtocolPP.html#a053cb4b6f939495763f9be4b0d23c769a0e04bcff759a2fe9d142781a416d6360',1,'ProtocolPP']]],
   ['errnone',['ERRNONE',['../namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca71f40f7de3bc27ddcdb5070fa0d54157',1,'ProtocolPP']]],
-  ['error',['error',['../classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445a471775bb7b25486b7c6e208fa2876247',1,'InterfacePP::jlogger']]],
   ['errors',['ERRORS',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a9e943cb20c8112c7620d565aeca87ec4',1,'ProtocolPP']]],
   ['esf',['ESF',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ad4bdf0f4dffa141bc067cbdb1eca796b',1,'ProtocolPP']]],
   ['esn_5fno',['ESN_NO',['../namespaceProtocolPP.html#ac2745a77397be54e146e6ea44e3f6c7ead5d45611622025ec531b5ba60c4c8a7a',1,'ProtocolPP']]],

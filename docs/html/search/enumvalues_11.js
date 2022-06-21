@@ -9,7 +9,6 @@ var searchData=
   ['rdirmsg',['RDIRMSG',['../namespaceProtocolPP.html#a22278102b2df1065e7ed79cdbc72c1aaae36a48ec1a1cb43709999934af34d989',1,'ProtocolPP']]],
   ['rdp',['RDP',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8aa2256572923d4ff10ee71cd2a30296b4',1,'ProtocolPP']]],
   ['record_5foverflow',['RECORD_OVERFLOW',['../namespaceProtocolPP.html#a9496ca7bf265d90a8637e15eea79639ba750f355a019dbb6c992117df4a33d233',1,'ProtocolPP']]],
-  ['red',['RED',['../classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6a6fc2b82152b8614f6d4fca1fa63d2589',1,'InterfacePP::jlogger']]],
   ['redirhost',['REDIRHOST',['../namespaceProtocolPP.html#a053cb4b6f939495763f9be4b0d23c769a94b16c4c1be3ccb900db2adf760c998e',1,'ProtocolPP']]],
   ['redirnetwk',['REDIRNETWK',['../namespaceProtocolPP.html#a053cb4b6f939495763f9be4b0d23c769a79d1eb2042459aca2cb8180df57d236f',1,'ProtocolPP']]],
   ['redirtosh',['REDIRTOSH',['../namespaceProtocolPP.html#a053cb4b6f939495763f9be4b0d23c769a3e949200b5faad5004b24e9d2fe0040b',1,'ProtocolPP']]],

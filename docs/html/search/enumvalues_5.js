@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['fatal',['fatal',['../classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445ae0f23db4e891663249063cc9bd7ab92a',1,'InterfacePP::jlogger::fatal()'],['../namespaceProtocolPP.html#a996c56100325cdb5c43f71b65cdc5189a90c662f35e7f37a9348cadc853597219',1,'ProtocolPP::FATAL()']]],
+  ['fatal',['FATAL',['../namespaceProtocolPP.html#a996c56100325cdb5c43f71b65cdc5189a90c662f35e7f37a9348cadc853597219',1,'ProtocolPP']]],
   ['fatalclr',['FATALCLR',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36afc11471e4a681b00f343a418a3ed16da',1,'ProtocolPP']]],
   ['fc',['FC',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8ada151a62ba8bae5097c31401b2aef740',1,'ProtocolPP']]],
   ['fcs',['FCS',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ad6127f6278ee78af35c9f9121db73082',1,'ProtocolPP']]],

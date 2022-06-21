@@ -5,7 +5,6 @@ var searchData=
   ['dcn_5fmeas',['DCN_MEAS',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8a9ca2155ab970bc7462f9945e3b9ae5e1',1,'ProtocolPP']]],
   ['ddp',['DDP',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8ab3e48fdb06f778232ae06ab3fe97be76',1,'ProtocolPP']]],
   ['ddx',['DDX',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8a205bcb057edcff20101763b82e6f8dea',1,'ProtocolPP']]],
-  ['debug',['debug',['../classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445a199da5cd387c031744bc682f31849b77',1,'InterfacePP::jlogger']]],
   ['debugclr',['DEBUGCLR',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ae3a1206d64dc8e3720cbb6f15812938e',1,'ProtocolPP']]],
   ['dec',['DEC',['../classProtocolPP_1_1aead__chacha__poly1305.html#a2fa41f162ce5d91b4c3a8a459d49a6bcaa7c47feaf18881d2086a17d8a31bc184',1,'ProtocolPP::aead_chacha_poly1305::DEC()'],['../classProtocolPP_1_1jmodes.html#ab2cdd1d15cbef658be2040fc8a470d36a3c92b0c627af3b25fc1458336cac13e3',1,'ProtocolPP::jmodes::DEC()'],['../namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2aace67786224fffd00dca7b5a26f13912',1,'ProtocolPP::DEC()']]],
   ['decap',['DECAP',['../namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2ac4d01213c0c258f5d8160bb56021fb30',1,'ProtocolPP']]],

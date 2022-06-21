@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classjzuc.html" title="jzuc" alt="" coords="5,5,52,32"/>
+<area shape="rect" id="node2" href="$classProtocolPP_1_1jtestcfg.html" title="ProtocolPP::jtestcfg" alt="" coords="388,5,527,32"/>
+<area shape="rect" id="node3" href="$classProtocolPP_1_1wasp.html" title="ProtocolPP::wasp" alt="" coords="394,56,521,83"/>
+<area shape="rect" id="node4" href="$classtinyxml2_1_1XMLVisitor.html" title="tinyxml2::XMLVisitor" alt="" coords="5,56,148,83"/>
+<area shape="rect" id="node5" href="$classtinyxml2_1_1XMLPrinter.html" title="tinyxml2::XMLPrinter" alt="" coords="196,56,340,83"/>
 </map>

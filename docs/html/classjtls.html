@@ -5,10 +5,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Protocol++ (ProtocolPP): jtls Class Reference</title>
+<title>Protocol++(Protocolpp): jtls Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,7 +29,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Protocol++ (ProtocolPP)
+   <div id="projectname">Protocol++(Protocolpp)
    &#160;<span id="projectnumber">5.3.1</span>
    </div>
   </td>
@@ -46,6 +54,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classjtls.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,23 +85,13 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">jtls Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &quot;<a class="el" href="jtls_8h_source.html">include/jtls.h</a>&quot;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for jtls:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classjtls__coll__graph.png" border="0" usemap="#jtls_coll__map" alt="Collaboration graph"/></div>
-<map name="jtls_coll__map" id="jtls_coll__map">
-</map>
-</div>
+<p><code>#include &quot;include/jtls.h&quot;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h1><a class="anchor" id="TLS_Class"></a>
 Transport Layer Security (TLS)</h1>
@@ -565,7 +580,7 @@ Encrypt-then-MAC for Transport Layer Security (TLS) and Datagram Transport Layer
 </ul>
 <p>with the MAC covering the entire packet up to the start of the MAC value. In TLS notation, the MAC calculation for TLS 1.0 without the explicit Initialization Vector (IV) is:</p>
 <div class="fragment"><div class="line">* MAC(MAC_write_key, seq_num +</div><div class="line">      TLSCipherText.type +</div><div class="line">      TLSCipherText.version +</div><div class="line">      TLSCipherText.length +</div><div class="line">      <a class="code" href="namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2a42a0761b804ea6cf40c64db4c084e5f7">ENC</a>(content + padding + padding_length));</div></div><!-- fragment --><p>and for TLS 1.1 and greater with an explicit IV is:</p>
-<div class="fragment"><div class="line">* MAC(MAC_write_key, seq_num +</div><div class="line">      TLSCipherText.type +</div><div class="line">      TLSCipherText.version +</div><div class="line">      TLSCipherText.length +</div><div class="line">      <a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36aea41ac6e2e650d48da10a7354e89e41a">IV</a> +</div><div class="line">      <a class="code" href="namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2a42a0761b804ea6cf40c64db4c084e5f7">ENC</a>(content + padding + padding_length));</div></div><!-- fragment --><p>(For DTLS, the sequence number is replaced by the combined epoch and sequence number as per DTLS) The final MAC value is then appended to the encrypted data and padding. This calculation is identical to the existing one, with the exception that the MAC calculation is run over the payload ciphertext (the TLSCipherText PDU) rather than the plaintext (the TLSCompressed PDU)</p>
+<div class="fragment"><div class="line">* MAC(MAC_write_key, seq_num +</div><div class="line">      TLSCipherText.type +</div><div class="line">      TLSCipherText.version +</div><div class="line">      TLSCipherText.length +</div><div class="line">      IV +</div><div class="line">      <a class="code" href="namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2a42a0761b804ea6cf40c64db4c084e5f7">ENC</a>(content + padding + padding_length));</div></div><!-- fragment --><p>(For DTLS, the sequence number is replaced by the combined epoch and sequence number as per DTLS) The final MAC value is then appended to the encrypted data and padding. This calculation is identical to the existing one, with the exception that the MAC calculation is run over the payload ciphertext (the TLSCipherText PDU) rather than the plaintext (the TLSCompressed PDU)</p>
 <p>The overall TLS packet [2] is then:</p>
 <div class="fragment"><div class="line">* <span class="keyword">struct </span>{</div><div class="line">         ContentType type;</div><div class="line">         ProtocolVersion version;</div><div class="line">         uint16 length;</div><div class="line">         GenericBlockCipher fragment;</div><div class="line">         opaque MAC;</div><div class="line">         } TLSCiphertext;</div></div><!-- fragment --><p>The equivalent DTLS packet is then:</p>
 <div class="fragment"><div class="line">* <span class="keyword">struct </span>{</div><div class="line">         ContentType type;</div><div class="line">         ProtocolVersion version;</div><div class="line">         uint16 epoch;</div><div class="line">         uint48 sequence_number;</div><div class="line">         uint16 length;</div><div class="line">         GenericBlockCipher fragment;</div><div class="line">         opaque MAC;</div><div class="line">         } TLSCiphertext;</div></div><!-- fragment --><p>This is identical to the existing TLS/DTLS layout, with the only difference being that the MAC value is moved outside the encrypted data</p>
@@ -635,14 +650,18 @@ Encrypt-then-MAC for Transport Layer Security (TLS) and Datagram Transport Layer
 <p>The name of its contributor may not be used to endorse or promote products derived from this software without specific prior written permission and licensing</p>
 <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER AND CONTRIBUTOR "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="jtls_8h_source.html">jtls.h</a></li>
+<li>include/jtls.h</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 4 2022 10:59:30 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.14
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classjtls.html">jtls</a></li>
+    <li class="footer">Generated on Mon Jun 20 2022 22:12:02 for Protocol++(Protocolpp) by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
 </body>
 </html>

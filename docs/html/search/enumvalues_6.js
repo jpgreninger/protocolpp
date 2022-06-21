@@ -13,7 +13,6 @@ var searchData=
   ['grant',['GRANT',['../namespaceProtocolPP.html#ae194a2c104fc4e9ad7e9ffa484710f80a34ab32cf83d964503d6a51e4e3c3f7dc',1,'ProtocolPP']]],
   ['grantack',['GRANTACK',['../namespaceProtocolPP.html#ae194a2c104fc4e9ad7e9ffa484710f80a0bdb9f0b877d1229efaaf8b2a20ef31b',1,'ProtocolPP']]],
   ['gre',['GRE',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8afc548ca83425a2bf21a4181406fe1b76',1,'ProtocolPP']]],
-  ['green',['GREEN',['../classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6a9a86e5e418c02d7cda8ebb0b237673eb',1,'InterfacePP::jlogger']]],
   ['gx',['GX',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a3cfec66b558a6f9d8514a88c37a03d5c',1,'ProtocolPP']]],
   ['gy',['GY',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a543a2924347a342ca10109672882613a',1,'ProtocolPP']]]
 ];

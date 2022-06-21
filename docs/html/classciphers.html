@@ -5,10 +5,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Protocol++ (ProtocolPP): ciphers Class Reference</title>
+<title>Protocol++(Protocolpp): ciphers Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,7 +29,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Protocol++ (ProtocolPP)
+   <div id="projectname">Protocol++(Protocolpp)
    &#160;<span id="projectnumber">5.3.1</span>
    </div>
   </td>
@@ -46,6 +54,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classciphers.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,30 +85,20 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">ciphers Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="ciphers_8h_source.html">ciphers.h</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for ciphers:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classciphers__coll__graph.png" border="0" usemap="#ciphers_coll__map" alt="Collaboration graph"/></div>
-<map name="ciphers_coll__map" id="ciphers_coll__map">
-</map>
-</div>
+<p><code>#include &lt;ciphers.h&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is a wrapper for the Crypto++ library to simplify it's interface and hide some of the more esoteric aspects of the interface and returns a static shared_ptr to access the encryption/authentication/crc engine.</p>
 <p>The implementation of the modes of operation are found in the class <a class="el" href="classjmodes.html">jmodes</a> as well as any implementation for authentication or CRC32</p>
 <p>The ciphers class contains three factory methods for ciphers, authentication algorithms, and CRC32 as follows</p>
 <p>The underlying ECB mode engines are from the CryptoPP library with mode logic for all approved modes (GCM, CCM, GHASH, CMAC, CBC, XCBC-MAC, AEAD) coded by myself</p>
 <p>Beginning with CryptoPP 5.6.0, CryptoPP uses SIMD and AVX commands for several hardware supported algorithms such as AES, CRC, SHA2, CHACHA20, etc if detected on the CPU being used</p>
-<div class="fragment"><div class="line"><span class="keyword">static</span> std::shared_ptr&lt;jmodes&gt; get_cipher(<a class="code" href="namespaceProtocolPP.html#aba84d6eeb00e8af8d8758731492dd76b">jmodes::cipher_t</a> cipher,</div><div class="line">                                          jmodes::dir_t direction,</div><div class="line">                                          jmodes::mode_t mode,</div><div class="line">                                          uint8_t* key,</div><div class="line">                                          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> keylen,</div><div class="line">                                          uint8_t* iv=NULL,</div><div class="line">                                          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ivlen=0,</div><div class="line">                                          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> icvlen=16,</div><div class="line">                                          uint32_t count=0,</div><div class="line">                                          uint8_t bearer=0);</div><div class="line"></div><div class="line"><span class="keyword">static</span> std::shared_ptr&lt;jmodes&gt; get_auth(<a class="code" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014f">auth_t</a> auth,</div><div class="line">                                        uint8_t* authkey=NULL,</div><div class="line">                                        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> authkeylen=0,</div><div class="line">                                        jmodes::dir_t dir=<a class="code" href="namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2a42a0761b804ea6cf40c64db4c084e5f7">jmodes::ENC</a>,</div><div class="line">                                        uint32_t count=0,</div><div class="line">                                        uint32_t fresh=0);</div><div class="line"></div><div class="line"><span class="keyword">static</span> std::shared_ptr&lt;jmodes&gt; get_auth(<a class="code" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014f">auth_t</a> auth,</div><div class="line">                                        jmodes::dir_t,</div><div class="line">                                        uint8_t* authkey,</div><div class="line">                                        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> authkeylen,</div><div class="line">                                        uint8_t* iv,</div><div class="line">                                        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ivlen,</div><div class="line">                                        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> icvlen);</div><div class="line"></div><div class="line"><span class="keyword">static</span> std::shared_ptr&lt;jmodes&gt; get_crc();</div></div><!-- fragment --><p>Usage examples for get_cipher() are found below</p>
+<div class="fragment"><div class="line"><span class="keyword">static</span> std::shared_ptr&lt;jmodes&gt; get_cipher(jmodes::cipher_t cipher,</div><div class="line">                                          jmodes::dir_t direction,</div><div class="line">                                          jmodes::mode_t mode,</div><div class="line">                                          uint8_t* key,</div><div class="line">                                          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> keylen,</div><div class="line">                                          uint8_t* iv=NULL,</div><div class="line">                                          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ivlen=0,</div><div class="line">                                          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> icvlen=16,</div><div class="line">                                          uint32_t count=0,</div><div class="line">                                          uint8_t bearer=0);</div><div class="line"></div><div class="line"><span class="keyword">static</span> std::shared_ptr&lt;jmodes&gt; get_auth(auth_t auth,</div><div class="line">                                        uint8_t* authkey=NULL,</div><div class="line">                                        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> authkeylen=0,</div><div class="line">                                        jmodes::dir_t dir=jmodes::ENC,</div><div class="line">                                        uint32_t count=0,</div><div class="line">                                        uint32_t fresh=0);</div><div class="line"></div><div class="line"><span class="keyword">static</span> std::shared_ptr&lt;jmodes&gt; get_auth(auth_t auth,</div><div class="line">                                        jmodes::dir_t,</div><div class="line">                                        uint8_t* authkey,</div><div class="line">                                        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> authkeylen,</div><div class="line">                                        uint8_t* iv,</div><div class="line">                                        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ivlen,</div><div class="line">                                        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> icvlen);</div><div class="line"></div><div class="line"><span class="keyword">static</span> std::shared_ptr&lt;jmodes&gt; get_crc();</div></div><!-- fragment --><p>Usage examples for get_cipher() are found below</p>
 <div class="fragment"><div class="line"></div><div class="line"><span class="comment">// Key (K)       :</span></div><div class="line"><a class="code" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray&lt;uint8_t&gt;</a> key(<span class="stringliteral">&quot;00000000000000000000000000000000&quot;</span>);</div><div class="line"></div><div class="line"><span class="comment">//Message (M)    : &lt;empty string&gt;</span></div><div class="line"><a class="code" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray&lt;uint8_t&gt;</a> aad(0);</div><div class="line"><a class="code" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray&lt;uint8_t&gt;</a> message(0);</div><div class="line"><a class="code" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray&lt;uint8_t&gt;</a> iv(<span class="stringliteral">&quot;000000000000000000000000&quot;</span>);</div><div class="line"><a class="code" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray&lt;uint8_t&gt;</a> expect(0);</div><div class="line"><a class="code" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray&lt;uint8_t&gt;</a> output(message.get_size());</div><div class="line"><a class="code" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray&lt;uint8_t&gt;</a> ricv(<span class="stringliteral">&quot;58e2fccefa7e3061367f1d57a4e7455a&quot;</span>);</div><div class="line"><a class="code" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray&lt;uint8_t&gt;</a> icv(16);</div><div class="line"></div><div class="line">std::shared_ptr&lt;ProtocolPP::jmodes&gt; engine;</div><div class="line"></div><div class="line">engine = <a class="code" href="classProtocolPP_1_1ciphers.html#a86bf3c3a0e717b62757c5c94112081a5">ProtocolPP::ciphers::get_cipher</a>(<a class="code" href="classProtocolPP_1_1jmodes.html#a8208b547ec1c2b22799cdf663bac42a1ace1adf1b3cbe669ccab346b159c0c207">ProtocolPP::jmodes::AES</a>,</div><div class="line">                                         <a class="code" href="classProtocolPP_1_1jmodes.html#ab2cdd1d15cbef658be2040fc8a470d36aab3b9dff689746442da8a681e3d73b22">ProtocolPP::jmodes::ENC</a>,</div><div class="line">                                         <a class="code" href="classProtocolPP_1_1jmodes.html#ab59eefcf49771a42cb6ef35e9b65d514aa6c212cd5d97e5a3d4dd453693c5a8f8">ProtocolPP::jmodes::GCM</a>,</div><div class="line">                                         key.get_ptr(),</div><div class="line">                                         key.get_size(),</div><div class="line">                                         iv.get_ptr(),</div><div class="line">                                         iv.get_size(),</div><div class="line">                                         icv.get_size());</div><div class="line"></div><div class="line">engine-&gt;ProcessData(message.get_ptr(),</div><div class="line">                    output.get_ptr(),</div><div class="line">                    message.get_size(),</div><div class="line">                    aad.get_ptr(),</div><div class="line">                    aad.get_size());</div><div class="line"></div><div class="line">engine-&gt;result(icv.get_ptr(),</div><div class="line">               icv.get_size());</div><div class="line"></div><div class="line"><span class="keywordflow">if</span> (output != expect) {</div><div class="line">    std::cerr &lt;&lt; <span class="stringliteral">&quot;In testgcm() conformance #1 data mismatch&quot;</span> &lt;&lt; std::endl;</div><div class="line">    std::cerr &lt;&lt; output.debug(expect);</div><div class="line">}</div><div class="line"><span class="keywordflow">else</span> <span class="keywordflow">if</span> (ricv != icv) {</div><div class="line">    std::cerr &lt;&lt; <span class="stringliteral">&quot;In testgcm() conformance #1 icv mismatch&quot;</span> &lt;&lt; std::endl;</div><div class="line">    std::cerr &lt;&lt; ricv.debug(icv);</div><div class="line">}</div></div><!-- fragment --><p>Usage examples for get_auth()</p>
 <div class="fragment"><div class="line"><span class="comment">// create random data and array for ICV and context</span></div><div class="line"><a class="code" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray&lt;uint8_t&gt;</a> tmpkey = myrand-&gt;getbyte(32);</div><div class="line"><a class="code" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray&lt;uint8_t&gt;</a> icv(16);</div><div class="line"><a class="code" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray&lt;uint8_t&gt;</a> input = myrand-&gt;getbyte(125);</div><div class="line"><a class="code" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray&lt;uint8_t&gt;</a> roundkeys(144);</div><div class="line"></div><div class="line"><span class="comment">// create the engine</span></div><div class="line"><a class="code" href="classProtocolPP_1_1jpoly1305.html">ProtocolPP::jpoly1305</a> tmp(tmpkey.<a class="code" href="classProtocolPP_1_1jarray.html#a17ba287e85a719c059e7090fd1ba806b">get_ptr</a>(), tmpkey.<a class="code" href="classProtocolPP_1_1jarray.html#ad68d9f12c1aa3b783fbcfdfff11b44e1">get_size</a>());</div><div class="line"></div><div class="line"><span class="comment">// save the context of the poly1305 engine for later processing</span></div><div class="line">tmp.<a class="code" href="classProtocolPP_1_1jpoly1305.html#aae88a1461bf7af31f0a574a2ed5fbe8b">context</a>(roundkeys.get_ptr(), roundkeys.get_size());</div><div class="line"></div><div class="line"><span class="comment">// create engine with the context</span></div><div class="line"><a class="code" href="classProtocolPP_1_1jpoly1305.html">ProtocolPP::jpoly1305</a> tmp2(roundkeys.get_ptr());</div><div class="line"></div><div class="line"><span class="comment">// Process data</span></div><div class="line">tmp2.<a class="code" href="classProtocolPP_1_1jpoly1305.html#ac061026cfb18d242bc641a0468324e67">ProcessData</a>(input.<a class="code" href="classProtocolPP_1_1jarray.html#a17ba287e85a719c059e7090fd1ba806b">get_ptr</a>(), input.<a class="code" href="classProtocolPP_1_1jarray.html#ad68d9f12c1aa3b783fbcfdfff11b44e1">get_size</a>());</div><div class="line"></div><div class="line"><span class="comment">// retrieve the ICV</span></div><div class="line">tmp2.result(icv.get_ptr(), icv.get_size());</div></div><!-- fragment --><p>Usage example for get_crc()</p>
 <div class="fragment"><div class="line"><a class="code" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray&lt;uint8_t&gt;</a> idat = myrand-&gt;getbyte(300);</div><div class="line"><a class="code" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray&lt;uint8_t&gt;</a> result(1,0);</div><div class="line"></div><div class="line">engine = <a class="code" href="classProtocolPP_1_1ciphers.html#a5a0cf14638e9cc1239459811b2acbf52">ProtocolPP::ciphers::get_crc</a>(<a class="code" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014faa7cad35a282f4853e511528d789f9b3d">ProtocolPP::CRC8</a>);</div><div class="line">engine-&gt;ProcessData(idat.<a class="code" href="classProtocolPP_1_1jarray.html#a17ba287e85a719c059e7090fd1ba806b">get_ptr</a>(), idat.<a class="code" href="classProtocolPP_1_1jarray.html#ad68d9f12c1aa3b783fbcfdfff11b44e1">get_size</a>());</div><div class="line">engine-&gt;result(result.get_ptr(), result.get_size());</div><div class="line"></div><div class="line">poly = 0x92;</div><div class="line">engine = <a class="code" href="classProtocolPP_1_1ciphers.html#a5a0cf14638e9cc1239459811b2acbf52">ProtocolPP::ciphers::get_crc</a>(<a class="code" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa356a98a21426787bb7b39c7b2daf99ed">ProtocolPP::CRC_POLY</a>,</div><div class="line">                                      poly,</div><div class="line">                                      8,</div><div class="line">                                      <span class="keyword">false</span>,</div><div class="line">                                      <span class="keyword">true</span>,</div><div class="line">                                      <span class="keyword">false</span>,</div><div class="line">                                      <span class="keyword">true</span>);</div><div class="line"></div><div class="line">engine-&gt;ProcessData(idat.<a class="code" href="classProtocolPP_1_1jarray.html#a17ba287e85a719c059e7090fd1ba806b">get_ptr</a>(), idat.<a class="code" href="classProtocolPP_1_1jarray.html#ad68d9f12c1aa3b783fbcfdfff11b44e1">get_size</a>());</div><div class="line">engine-&gt;result(result.get_ptr(), result.get_size());</div></div><!-- fragment --><p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jmodes.html">ProtocolPP::jmodes</a> </dd>
@@ -134,14 +149,18 @@ $(function() {
 <p>The name of its contributor may not be used to endorse or promote products derived from this software without specific prior written permission and licensing</p>
 <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER AND CONTRIBUTOR "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="ciphers_8h_source.html">ciphers.h</a></li>
+<li>include/ciphers.h</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 4 2022 10:59:30 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.14
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classciphers.html">ciphers</a></li>
+    <li class="footer">Generated on Mon Jun 20 2022 22:12:02 for Protocol++(Protocolpp) by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -1,6 +1,5 @@
 <map id="tinyxml2::XMLVisitor" name="tinyxml2::XMLVisitor">
-<area shape="rect" id="node2" href="$classtinyxml2_1_1XMLPrinter.html" title="{tinyxml2::XMLPrinter\n|# _elementJustOpened\l# _stack\l|+ XMLPrinter()\l+ XMLPrinter()\l+ ~XMLPrinter()\l+ PushHeader()\l+ OpenElement()\l+ PushAttribute()\l+ PushAttribute()\l+ PushAttribute()\l+ PushAttribute()\l+ PushAttribute()\land 31 more...\l# CompactMode()\l# PrintSpace()\l# Print()\l# Write()\l# Putc()\l# Write()\l# SealElementIfJustOpened()\l}" alt="" coords="151,248,344,589"/>
-<area shape="rect" id="node3" href="$classProtocolPP_1_1jikeparse.html" title="{ProtocolPP::jikeparse\n||+ jikeparse()\l+ jikeparse()\l+ jikeparse()\l+ ~jikeparse()\l+ get()\l}" alt="" coords="5,667,153,803"/>
-<area shape="rect" id="node4" href="$classProtocolPP_1_1jtestcfg.html" title="{ProtocolPP::jtestcfg\n||+ jtestcfg()\l+ jtestcfg()\l+ jtestcfg()\l+ ~jtestcfg()\l+ set_field()\l+ get_field()\l+ get()\l+ set()\l+ to_xml()\l}" alt="" coords="178,637,317,832"/>
-<area shape="rect" id="node5" href="$classProtocolPP_1_1wasp.html" title="{ProtocolPP::wasp\n||+ wasp()\l+ wasp()\l+ wasp()\l+ ~wasp()\l+ get()\l}" alt="" coords="341,667,468,803"/>
+<area shape="rect" id="node2" href="$classtinyxml2_1_1XMLPrinter.html" title="tinyxml2::XMLPrinter" alt="" coords="81,80,225,107"/>
+<area shape="rect" id="node3" href="$classProtocolPP_1_1jtestcfg.html" title="ProtocolPP::jtestcfg" alt="" coords="5,155,144,181"/>
+<area shape="rect" id="node4" href="$classProtocolPP_1_1wasp.html" title="ProtocolPP::wasp" alt="" coords="169,155,295,181"/>
 </map>

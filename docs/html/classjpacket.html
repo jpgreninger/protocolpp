@@ -5,10 +5,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Protocol++ (ProtocolPP): jpacket Class Reference</title>
+<title>Protocol++(Protocolpp): jpacket Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,7 +29,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Protocol++ (ProtocolPP)
+   <div id="projectname">Protocol++(Protocolpp)
    &#160;<span id="projectnumber">5.3.1</span>
    </div>
   </td>
@@ -46,6 +54,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classjpacket.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,28 +85,18 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">jpacket Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &quot;<a class="el" href="jpacket_8h_source.html">include/jpacket.h</a>&quot;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for jpacket:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classjpacket__coll__graph.png" border="0" usemap="#jpacket_coll__map" alt="Collaboration graph"/></div>
-<map name="jpacket_coll__map" id="jpacket_coll__map">
-</map>
-</div>
+<p><code>#include &quot;include/jpacket.h&quot;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h1><a class="anchor" id="PKT"></a>
 Packet class for Protocol++® (ProtocolPP®)</h1>
 <p>This class is the packet object for Protocol++&reg;. Each packet has certain elements that are required to allow simulations to work correctly. Each packet needs to know what stream it's associated with, where it's input data, output memory location, and expected data are, what packet preceeds this one (if it's the first packet in the stream, prev=begin). It also will contain the status of the packet after it has run. Length of the output buffer is also included so that the DUT or responder will not overwrite the buffer</p>
-<p>A packet can be created with each of the constructors. If expected data and output is unknown at time of construction, the first constructor can be used as </p><div class="fragment"><div class="line"><a class="code" href="classjpacket.html">jpacket</a> pkt1(std::string(<span class="stringliteral">&quot;stream1&quot;</span>),</div><div class="line">             std::string(<span class="stringliteral">&quot;pkt1&quot;</span>),</div><div class="line">             std::string(<span class="stringliteral">&quot;pkt0&quot;</span>),</div><div class="line">             inputdata,</div><div class="line">             0);</div></div><!-- fragment --><p> Output, length, and expected can be added later when known with the accessor functions </p><div class="fragment"><div class="line">set_field&lt;uint64_t&gt;(<a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a801092d21c917f727ebef710541d51be">field_t::OUTADDR</a>, pkt1outaddr);</div><div class="line"></div><div class="line">set_field&lt;unsigned int&gt;(<a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a9959b220c8d3755cb81cc923713dcafa">field_t::OUTLEN</a>, pkt1outlen);</div></div><!-- fragment --><p> Expected values are passed as an array wrapped in a shared pointer using </p><div class="fragment"><div class="line">set_expected(pkt1exp);</div></div><!-- fragment --><p> After a packet has finished, it's status can be updated with </p><div class="fragment"><div class="line">set_field&lt;uint32_t&gt;(<a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a2d10dd9e66b1038d0738f2fd2b763df7">field_t::STATUS</a>, pkt1status);</div></div><!-- fragment --><p>If everything but the output address is available at the time of construction, the second constructor can be used as follows: </p><div class="fragment"><div class="line"><a class="code" href="classjpacket.html">jpacket</a>(std::string(<span class="stringliteral">&quot;stream2&quot;</span>),</div><div class="line">        std::string(<span class="stringliteral">&quot;pkt2&quot;</span>),</div><div class="line">        std::string(<span class="stringliteral">&quot;pkt1&quot;</span>),</div><div class="line">        inputdata2,</div><div class="line">        expectdata2,</div><div class="line">        1500,</div><div class="line">        0);</div></div><!-- fragment --><p>If all items are are available at the time of construction, the third constuctor can be used as follows: </p><div class="fragment"><div class="line"><a class="code" href="classjpacket.html">jpacket</a>(std::string(<span class="stringliteral">&quot;stream3&quot;</span>),</div><div class="line">        std::string(<span class="stringliteral">&quot;pkt3&quot;</span>),</div><div class="line">        std::string(<span class="stringliteral">&quot;pkt2&quot;</span>),</div><div class="line">        inputdata3,</div><div class="line">        expectdata3,</div><div class="line">        0x00001FAB00112233,</div><div class="line">        390,</div><div class="line">        0);</div></div><!-- fragment --><p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray</a> </dd>
+<p>A packet can be created with each of the constructors. If expected data and output is unknown at time of construction, the first constructor can be used as </p><div class="fragment"><div class="line"><a class="code" href="classjpacket.html">jpacket</a> pkt1(std::string(<span class="stringliteral">&quot;stream1&quot;</span>),</div><div class="line">             std::string(<span class="stringliteral">&quot;pkt1&quot;</span>),</div><div class="line">             std::string(<span class="stringliteral">&quot;pkt0&quot;</span>),</div><div class="line">             inputdata,</div><div class="line">             0);</div></div><!-- fragment --><p> Output, length, and expected can be added later when known with the accessor functions </p><div class="fragment"><div class="line">set_field&lt;uint64_t&gt;(field_t::OUTADDR, pkt1outaddr);</div><div class="line"></div><div class="line">set_field&lt;unsigned int&gt;(field_t::OUTLEN, pkt1outlen);</div></div><!-- fragment --><p> Expected values are passed as an array wrapped in a shared pointer using </p><div class="fragment"><div class="line">set_expected(pkt1exp);</div></div><!-- fragment --><p> After a packet has finished, it's status can be updated with </p><div class="fragment"><div class="line">set_field&lt;uint32_t&gt;(field_t::STATUS, pkt1status);</div></div><!-- fragment --><p>If everything but the output address is available at the time of construction, the second constructor can be used as follows: </p><div class="fragment"><div class="line"><a class="code" href="classjpacket.html">jpacket</a>(std::string(<span class="stringliteral">&quot;stream2&quot;</span>),</div><div class="line">        std::string(<span class="stringliteral">&quot;pkt2&quot;</span>),</div><div class="line">        std::string(<span class="stringliteral">&quot;pkt1&quot;</span>),</div><div class="line">        inputdata2,</div><div class="line">        expectdata2,</div><div class="line">        1500,</div><div class="line">        0);</div></div><!-- fragment --><p>If all items are are available at the time of construction, the third constuctor can be used as follows: </p><div class="fragment"><div class="line"><a class="code" href="classjpacket.html">jpacket</a>(std::string(<span class="stringliteral">&quot;stream3&quot;</span>),</div><div class="line">        std::string(<span class="stringliteral">&quot;pkt3&quot;</span>),</div><div class="line">        std::string(<span class="stringliteral">&quot;pkt2&quot;</span>),</div><div class="line">        inputdata3,</div><div class="line">        expectdata3,</div><div class="line">        0x00001FAB00112233,</div><div class="line">        390,</div><div class="line">        0);</div></div><!-- fragment --><p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray</a> </dd>
 <dd>
 <a class="el" href="classProtocolPP_1_1jpacket.html">ProtocolPP::jpacket</a> </dd>
 <dd>
@@ -121,14 +136,18 @@ Packet class for Protocol++® (ProtocolPP®)</h1>
 <p>The name of its contributor may not be used to endorse or promote products derived from this software without specific prior written permission and licensing</p>
 <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER AND CONTRIBUTOR "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="jpacket_8h_source.html">jpacket.h</a></li>
+<li>include/jpacket.h</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 4 2022 10:59:30 for Protocol++ (ProtocolPP) by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.14
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classjpacket.html">jpacket</a></li>
+    <li class="footer">Generated on Mon Jun 20 2022 22:12:02 for Protocol++(Protocolpp) by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -1,8 +1,8 @@
 <map id="tinyxml2::XMLNode" name="tinyxml2::XMLNode">
-<area shape="rect" id="node2" href="$classtinyxml2_1_1XMLComment.html" title="{tinyxml2::XMLComment\n||+ ToComment()\l+ ToComment()\l+ Accept()\l+ ShallowClone()\l+ ShallowEqual()\l# XMLComment()\l# ~XMLComment()\l# ParseDeep()\l}" alt="" coords="5,468,168,648"/>
-<area shape="rect" id="node3" href="$classtinyxml2_1_1XMLDeclaration.html" title="{tinyxml2::XMLDeclaration\n||+ ToDeclaration()\l+ ToDeclaration()\l+ Accept()\l+ ShallowClone()\l+ ShallowEqual()\l# XMLDeclaration()\l# ~XMLDeclaration()\l# ParseDeep()\l}" alt="" coords="192,468,363,648"/>
-<area shape="rect" id="node4" href="$classtinyxml2_1_1XMLDocument.html" title="{tinyxml2::XMLDocument\n||+ XMLDocument()\l+ ~XMLDocument()\l+ ToDocument()\l+ ToDocument()\l+ Parse()\l+ LoadFile()\l+ LoadFile()\l+ SaveFile()\l+ SaveFile()\l+ ProcessEntities()\land 26 more...\l+ ErrorIDToName()\l}" alt="" coords="387,439,552,677"/>
-<area shape="rect" id="node5" href="$classtinyxml2_1_1XMLElement.html" title="{tinyxml2::XMLElement\n||+ Name()\l+ SetName()\l+ ToElement()\l+ ToElement()\l+ Accept()\l+ Attribute()\l+ IntAttribute()\l+ ArrayAttribute()\l+ ByteAttribute()\l+ ShortAttribute()\land 80 more...\l# ParseDeep()\l}" alt="" coords="576,439,731,677"/>
-<area shape="rect" id="node6" href="$classtinyxml2_1_1XMLText.html" title="{tinyxml2::XMLText\n||+ Accept()\l+ ToText()\l+ ToText()\l+ SetCData()\l+ CData()\l+ ShallowClone()\l+ ShallowEqual()\l# XMLText()\l# ~XMLText()\l# ParseDeep()\l}" alt="" coords="755,453,885,663"/>
-<area shape="rect" id="node7" href="$classtinyxml2_1_1XMLUnknown.html" title="{tinyxml2::XMLUnknown\n||+ ToUnknown()\l+ ToUnknown()\l+ Accept()\l+ ShallowClone()\l+ ShallowEqual()\l# XMLUnknown()\l# ~XMLUnknown()\l# ParseDeep()\l}" alt="" coords="910,468,1069,648"/>
+<area shape="rect" id="node2" href="$classtinyxml2_1_1XMLComment.html" title="tinyxml2::XMLComment" alt="" coords="193,5,356,32"/>
+<area shape="rect" id="node3" href="$classtinyxml2_1_1XMLDeclaration.html" title="tinyxml2::XMLDeclaration" alt="" coords="189,56,360,83"/>
+<area shape="rect" id="node4" href="$classtinyxml2_1_1XMLDocument.html" title="tinyxml2::XMLDocument" alt="" coords="192,107,357,133"/>
+<area shape="rect" id="node5" href="$classtinyxml2_1_1XMLElement.html" title="tinyxml2::XMLElement" alt="" coords="197,157,352,184"/>
+<area shape="rect" id="node6" href="$classtinyxml2_1_1XMLText.html" title="tinyxml2::XMLText" alt="" coords="209,208,340,235"/>
+<area shape="rect" id="node7" href="$classtinyxml2_1_1XMLUnknown.html" title="tinyxml2::XMLUnknown" alt="" coords="195,259,354,285"/>
 </map>
