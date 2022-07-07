@@ -177,6 +177,7 @@ For W.A.S.P usage, see the doxygen section
   * All updates documented in the paid version RELEASE file
   * All releases now encrypted, if yours isn't, it's a fake
   * Bumped version
+  * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=1ad7e49827904441969410ae2d6cfaea&wix-vod-comp-id=comp-j2ddnt1i
   
 * Protocol++® (Protocolpp®) - 5.3.0 released February 27, 2022
   * Added support for ZUC256 with 16-byte IV (as well as 25-byte IV) in LTE, standalone, confident, integrity
