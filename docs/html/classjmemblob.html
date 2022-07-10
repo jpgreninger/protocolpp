@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('classjmemblob.html','');});
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h1><a class="anchor" id="MEMBLOB"></a>
 Offline key protection with Memory Blobs (BLOB)</h1>
-<p>Class to create shared descriptors for the SEC/CAAM architecture found in the Freescale/NXP/Qualcomm QorIQ and Layerscape network processors See the Security Reference Manual for the QorIQ processor desired for shared descriptor layout of each protocol in the ENCAP and DECAP directions</p>
+<p>Class to encapsulate memory blobs for offline key storage</p>
 <p>The methods and constructor for memory BLOBs are as follows </p><div class="fragment"><div class="line"><span class="comment">// Constructor for JMEMBLOB</span></div><div class="line"><a class="code" href="classjmemblob.html">jmemblob</a>(uint8_t* bkek,</div><div class="line">         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bkek_size,</div><div class="line">         uint8_t* blobkey,</div><div class="line">         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> blobkey_size);</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> encap_packet(std::shared_ptr&lt;<a class="code" href="classjarray.html">jarray&lt;uint8_t&gt;</a>&gt;&amp; input,</div><div class="line">                  std::shared_ptr&lt;<a class="code" href="classjarray.html">jarray&lt;uint8_t&gt;</a>&gt;&amp; output);</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> decap_packet(std::shared_ptr&lt;<a class="code" href="classjarray.html">jarray&lt;uint8_t&gt;</a>&gt;&amp; input,</div><div class="line">                  std::shared_ptr&lt;<a class="code" href="classjarray.html">jarray&lt;uint8_t&gt;</a>&gt;&amp; output);</div></div><!-- fragment --><p>See NIST Publication 800-57 Part 1 Recommendation for Key Management Section 8.3 and Appendix B</p>
 <p>The memory BLOB supports the Post-Operational Phase of Key Management found in the publication</p>
 <p><b>Post-Operational Phase</b></p>
@@ -163,7 +163,7 @@ ProtocolPP::jenum</dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjmemblob.html">jmemblob</a></li>
-    <li class="footer">Generated on Mon Jun 20 2022 22:12:02 for Protocol++(Protocolpp) by
+    <li class="footer">Generated on Sun Jul 10 2022 07:04:33 for Protocol++(Protocolpp) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

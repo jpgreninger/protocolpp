@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['generate_5fallow_5fpolicies',['generate_allow_policies',['../structProtocolPP_1_1jikeparse_1_1jikecfg.html#aa04440590ad301d23f69c034d40ce08f',1,'ProtocolPP::jikeparse::jikecfg']]]
+  ['m_5fdir',['m_dir',['../classProtocolPP_1_1jprotocol.html#a96450ee22b99e635e608d3b14c559ef8',1,'ProtocolPP::jprotocol']]],
+  ['m_5fendian',['m_endian',['../classProtocolPP_1_1jprotocol.html#a98c2d0e85b0d735b9cd2962b06f71422',1,'ProtocolPP::jprotocol']]],
+  ['m_5ffilename',['m_filename',['../classProtocolPP_1_1jprotocol.html#a2b58f247ed9831c22a49602447ee98da',1,'ProtocolPP::jprotocol']]],
+  ['m_5frand',['m_rand',['../classProtocolPP_1_1jprotocol.html#a5eda4bc384edf640ae7b7f224de22953',1,'ProtocolPP::jprotocol']]],
+  ['m_5fstatus',['m_status',['../classProtocolPP_1_1jprotocol.html#ae6fd32f6fcadc355dd751027d4ba6a50',1,'ProtocolPP::jprotocol']]]
 ];

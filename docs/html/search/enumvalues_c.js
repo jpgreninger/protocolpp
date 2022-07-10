@@ -1,6 +1,7 @@
 var searchData=
 [
   ['macsec',['MACSEC',['../namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca68073144c6a0db9521be17ef42090d62',1,'ProtocolPP']]],
+  ['magenta',['MAGENTA',['../classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6ad367646f4e8766cc5d045c276005a685',1,'InterfacePP::jlogger']]],
   ['major_5fversion',['MAJOR_VERSION',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ac2e09f2482239c0ada017792ba8c7787',1,'ProtocolPP']]],
   ['manet',['MANET',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8ad79fbbc9ce0d0db732d7a20d75848d23',1,'ProtocolPP']]],
   ['marker',['MARKER',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ae7ebdc1a5c454bebb8314e7604ac6f31',1,'ProtocolPP']]],

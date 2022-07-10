@@ -16,6 +16,7 @@ var searchData=
   ['hdrlen',['HDRLEN',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36af138c131e8cfd459e247d8f095bb8cb2',1,'ProtocolPP']]],
   ['heartbeat',['HEARTBEAT',['../namespaceProtocolPP.html#a47fba8c8ccf58726ca64a0121622e879a86386435dc59dacbe038690a007f078d',1,'ProtocolPP']]],
   ['hello_5frequest',['HELLO_REQUEST',['../namespaceProtocolPP.html#a6e6c436c2d2786d5d2b7f265c35b5035abf491a48fce2fb4bdc677f8751ab25e0',1,'ProtocolPP']]],
+  ['help',['help',['../structoption_1_1Descriptor.html#a9045b19311533e1b8a08645d57149c79',1,'option::Descriptor']]],
   ['hfni',['HFNI',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a4546220c936b367f54cfa6ffa1707259',1,'ProtocolPP']]],
   ['hip',['HIP',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8ad0727a23feafce189aea9e162a4da689',1,'ProtocolPP']]],
   ['hkdf_5fexpand',['hkdf_expand',['../classProtocolPP_1_1jtls.html#a0f66b3cbd2d0d575541c19d7b6f31f50',1,'ProtocolPP::jtls::hkdf_expand()'],['../classProtocolPP_1_1jtls13.html#af0d6a5cd4521eca67c8af89a35c790d6',1,'ProtocolPP::jtls13::hkdf_expand()']]],

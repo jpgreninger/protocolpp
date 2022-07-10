@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['byte',['Byte',['../jmodes_8h.html#ae3a497195d617519e5353ea7b417940f',1,'jmodes.h']]]
+  ['w128_5ft',['w128_t',['../namespaceProtocolPP.html#a6a7fa6d634d3483e638fbe04e6043520',1,'ProtocolPP']]]
 ];

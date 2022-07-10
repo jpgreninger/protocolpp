@@ -1,5 +1,6 @@
 <map id="tinyxml2::XMLVisitor" name="tinyxml2::XMLVisitor">
-<area shape="rect" id="node2" href="$classtinyxml2_1_1XMLPrinter.html" title="tinyxml2::XMLPrinter" alt="" coords="81,80,225,107"/>
-<area shape="rect" id="node3" href="$classProtocolPP_1_1jtestcfg.html" title="ProtocolPP::jtestcfg" alt="" coords="5,155,144,181"/>
-<area shape="rect" id="node4" href="$classProtocolPP_1_1wasp.html" title="ProtocolPP::wasp" alt="" coords="169,155,295,181"/>
+<area shape="rect" id="node2" href="$classtinyxml2_1_1XMLPrinter.html" title="tinyxml2::XMLPrinter" alt="" coords="175,80,319,107"/>
+<area shape="rect" id="node3" href="$classProtocolPP_1_1jikeparse.html" title="ProtocolPP::jikeparse" alt="" coords="5,155,153,181"/>
+<area shape="rect" id="node4" href="$classProtocolPP_1_1jtestcfg.html" title="ProtocolPP::jtestcfg" alt="" coords="178,155,317,181"/>
+<area shape="rect" id="node5" href="$classProtocolPP_1_1wasp.html" title="ProtocolPP::wasp" alt="" coords="341,155,468,181"/>
 </map>

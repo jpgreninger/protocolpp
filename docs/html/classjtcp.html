@@ -169,7 +169,7 @@ Transport Control Protocol (TCP) Header Format</div></div>
 <p>Note that the list of options may be shorter than the data offset field might imply. The content of the header beyond the End-of-Option option must be header padding (i.e., zero)</p>
 <p>A TCP must implement all options.</p>
 <p>Currently defined options include (kind indicated in octal):</p>
-<div class="fragment"><div class="line">Kind     Length    Meaning</div><div class="line">----     ------    ------</div><div class="line"> 0         -       End of option list</div><div class="line"> 1         -       No-Operation</div><div class="line"> 2         4       Maximum Segment Size.</div></div><!-- fragment --><p><b>Specific Option Definitions</b></p>
+<div class="fragment"><div class="line">Kind     Length    Meaning</div><div class="line">----     ------    ------</div><div class="line"> 0         -       End of <a class="code" href="namespaceoption.html">option</a> list</div><div class="line"> 1         -       No-Operation</div><div class="line"> 2         4       Maximum Segment Size.</div></div><!-- fragment --><p><b>Specific Option Definitions</b></p>
 <div class="fragment"><div class="line">End of Option List</div><div class="line"></div><div class="line">+--------+</div><div class="line">|00000000|</div><div class="line">+--------+</div><div class="line">  Kind=0</div></div><!-- fragment --><p>This option code indicates the end of the option list. This might not coincide with the end of the TCP header according to the Data Offset field. This is used at the end of all options not the end of each option, and need only be used if the end of the options would not otherwise coincide with the end of the TCP header</p>
 <div class="fragment"><div class="line">No-Operation</div><div class="line"></div><div class="line">+--------+</div><div class="line">|00000001|</div><div class="line">+--------+</div><div class="line">  Kind=1</div></div><!-- fragment --><p>This option code may be used between options, for example, to align the beginning of a subsequent option on a word boundary. There is no guarantee that senders will use this option, so receivers must be prepared to process options even if they do not begin on a word boundary</p>
 <div class="fragment"><div class="line">Maximum Segment Size</div><div class="line"></div><div class="line">+--------+--------+---------+--------+</div><div class="line">|00000010|00000100|   max seg size   |</div><div class="line">+--------+--------+---------+--------+</div><div class="line"> Kind=2   Length=4</div></div><!-- fragment --><ul>
@@ -322,7 +322,7 @@ Transmission Control Protocol (TCP) Psuedo Header for IPv6 Checksum Calculation<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjtcp.html">jtcp</a></li>
-    <li class="footer">Generated on Mon Jun 20 2022 22:12:02 for Protocol++(Protocolpp) by
+    <li class="footer">Generated on Sun Jul 10 2022 07:04:33 for Protocol++(Protocolpp) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

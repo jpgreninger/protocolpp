@@ -9,7 +9,7 @@ var classProtocolPP_1_1jsnowv =
       [ "SNOWV_GCM", "classProtocolPP_1_1jsnowv.html#acb36293abee974e117be976387f3aa91a5b36cbd71cce166929baf082d637d8b5", null ]
     ] ],
     [ "jsnowv", "classProtocolPP_1_1jsnowv.html#aeefc54c33885eede835eb549db84009c", null ],
-    [ "~jsnowv", "classProtocolPP_1_1jsnowv.html#ab8ccdd9ab8a2aeb787b301af0b6de502", null ],
+    [ "~jsnowv", "classProtocolPP_1_1jsnowv.html#afa6326ce0724935251648d940ccea8d2", null ],
     [ "context", "classProtocolPP_1_1jsnowv.html#abe60a6f536280cfc0b9f171361c1fa67", null ],
     [ "ProcessData", "classProtocolPP_1_1jsnowv.html#a508df4f456f84c0f093ba635be60c678", null ],
     [ "result", "classProtocolPP_1_1jsnowv.html#af63d55ba60484405db2624a3ad8fd757", null ],

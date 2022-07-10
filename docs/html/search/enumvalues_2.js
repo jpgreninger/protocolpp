@@ -108,5 +108,6 @@ var searchData=
   ['ctlext',['CTLEXT',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36abf55f0c7e4843e6b00695f3e64b02af2',1,'ProtocolPP']]],
   ['ctr',['CTR',['../classProtocolPP_1_1jmodes.html#ab59eefcf49771a42cb6ef35e9b65d514acd2f0f69ebe2a086ae17c1f6b4a2ee05',1,'ProtocolPP::jmodes']]],
   ['curve',['CURVE',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a6daadec1e213e1e74cc7b1d523553a08',1,'ProtocolPP']]],
-  ['cutoff',['CUTOFF',['../namespaceProtocolPP.html#a053cb4b6f939495763f9be4b0d23c769a7811096eb70e3716c663bafd1b3244c4',1,'ProtocolPP']]]
+  ['cutoff',['CUTOFF',['../namespaceProtocolPP.html#a053cb4b6f939495763f9be4b0d23c769a7811096eb70e3716c663bafd1b3244c4',1,'ProtocolPP']]],
+  ['cyan',['CYAN',['../classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6acfba1b62f85e17aefc5c3640c688dd5d',1,'InterfacePP::jlogger']]]
 ];

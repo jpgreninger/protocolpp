@@ -246,16 +246,16 @@ DriverPP Interface</h1>
 <img src="RingDriver50.png" alt="RingDriver50.png"/>
 <div class="caption">
 Protocol++&reg; Ring Driver Illustration</div></div>
-<div class="fragment"><div class="line"><span class="comment">// create logger object</span></div><div class="line">std::shared_ptr&lt;InterfacePP::logger&gt; mylogger = std::make_shared&lt;InterfacePP::jlogger&gt;(<span class="stringliteral">&quot;./driverlog.log&quot;</span>);</div><div class="line"></div><div class="line"><span class="comment">// generate random seed from hardware device</span></div><div class="line">std::random_device rd;</div><div class="line">uint64_t myseed = rd();</div><div class="line">myseed = ((myseed &lt;&lt; 32) | rd());</div><div class="line"></div><div class="line"><span class="comment">// allocate memory for rings if they don&#39;t already exist</span></div><div class="line">uint8_t* iptr = ((iring != 0) ? (uint8_t*)iring : ((uint8_t*) <span class="keyword">new</span> uint8_t[(rsize*<span class="keyword">sizeof</span>(InterfacePP::ringin))]));</div><div class="line">uint8_t* optr = ((oring != 0) ? (uint8_t*)oring : ((uint8_t*) <span class="keyword">new</span> uint8_t[(rsize*<span class="keyword">sizeof</span>(InterfacePP::ringout))]));</div><div class="line"></div><div class="line"><span class="comment">// create software rings</span></div><div class="line"><span class="keywordtype">char</span> siaddr[16];</div><div class="line"><span class="keywordtype">char</span> soaddr[16];</div><div class="line">sprintf(siaddr, <span class="stringliteral">&quot;%p&quot;</span>, iptr);</div><div class="line">sprintf(soaddr, <span class="stringliteral">&quot;%p&quot;</span>, optr);</div><div class="line">uint64_t iaddr = std::strtoul(siaddr, NULL, 16);</div><div class="line">uint64_t oaddr = std::strtoul(soaddr, NULL, 16);</div><div class="line"></div><div class="line"><span class="comment">// track dynamic memory for deletion</span></div><div class="line">std::shared_ptr&lt;InterfacePP::jmmu&gt; mmu = std::make_shared&lt;InterfacePP::jmmu&gt;();</div><div class="line">mmu-&gt;set_mem(<span class="stringliteral">&quot;testbench&quot;</span>, iptr);</div><div class="line">mmu-&gt;set_mem(<span class="stringliteral">&quot;testbench&quot;</span>, optr);</div><div class="line"></div><div class="line"><span class="comment">// attach driver to shared pointer</span></div><div class="line">std::shared_ptr&lt;InterfacePP::jring&lt;InterfacePP::secin&gt;&gt;  iring = std::make_shared&lt;InterfacePP::jring&lt;InterfacePP::secin&gt;&gt;(iaddr, rsize);</div><div class="line">std::shared_ptr&lt;InterfacePP::jring&lt;InterfacePP::secout&gt;&gt; oring = std::make_shared&lt;InterfacePP::jring&lt;InterfacePP::secout&gt;&gt;(oaddr, rsize);</div><div class="line"></div><div class="line"><span class="comment">// create the ringdriver</span></div><div class="line">std::shared_ptr&lt;DriverPP::jringdrive&lt;ProtocolPP::SRTP&gt;&gt; rdriver = std::make_shared&lt;DriverPP::jringdrive&lt;ProtocolPP::SRTP&gt;(myport,</div><div class="line">                                                                                                                          ProtocolPP::iana_t::ESPV4,</div><div class="line">                                                                                                                          ProtocolPP::protocol_t::MACSEC,</div><div class="line">                                                                                                                          std::string(<span class="stringliteral">&quot;www.protocolpp.com&quot;</span>),</div><div class="line">                                                                                                                          myseed,</div><div class="line">                                                                                                                          ProtocolPP::endian_t::LITTLE,</div><div class="line">                                                                                                                          mymmu,</div><div class="line">                                                                                                                          mylogger,</div><div class="line">                                                                                                                          iring,</div><div class="line">                                                                                                                          oring);</div><div class="line"><span class="comment">// start up the driver if it correctly connected</span></div><div class="line"><span class="keywordflow">if</span> (rdriver-&gt;connected()) {</div><div class="line">    rdriver-&gt;receive();</div><div class="line">    rdriver-&gt;send();</div><div class="line">}</div><div class="line"><span class="keywordflow">else</span> {</div><div class="line">    <span class="comment">// teardown the driver if it didn&#39;t connect</span></div><div class="line">    rdriver-&gt;teardown();</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// send and receive run on separate threads</span></div><div class="line">tparam-&gt;type = std::string(<span class="stringliteral">&quot;SRTP&quot;</span>);</div><div class="line">tparam-&gt;driver = driver;</div><div class="line"></div><div class="line"><span class="comment">// threaded testbench, producer on different threads</span></div><div class="line">m_thread.push_back(std::thread(runsnd, tparam));</div><div class="line">m_thread.push_back(std::thread(runrcv, tparam));</div><div class="line"></div><div class="line"><span class="comment">// check for finish</span></div><div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;2; i++) {</div><div class="line">    m_thread[i].join();</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordflow">return</span> 0;</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> *runsnd(<span class="keywordtype">void</span> *sender) {</div><div class="line">    </div><div class="line">    tdata_t* sendit = <span class="keyword">static_cast&lt;</span>tdata_t*<span class="keyword">&gt;</span>(sender);</div><div class="line">    std::string type = sendit-&gt;type;</div><div class="line"></div><div class="line">    DriverPP::jringdrive&lt;ProtocolPP::judp&gt;* snd = <span class="keyword">static_cast&lt;</span>DriverPP::jringdrive&lt;ProtocolPP::judp&gt;*<span class="keyword">&gt;</span>(sendit-&gt;driver);</div><div class="line">    snd-&gt;send();</div><div class="line"></div><div class="line">    <span class="keywordflow">return</span> NULL;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> *runrcv(<span class="keywordtype">void</span> *receiver) {</div><div class="line"></div><div class="line">    tdata_t* rcvit = <span class="keyword">static_cast&lt;</span>tdata_t*<span class="keyword">&gt;</span>(receiver);</div><div class="line">    std::string type = rcvit-&gt;type;</div><div class="line"></div><div class="line">    DriverPP::jringdrive&lt;ProtocolPP::judp&gt;* rcv = <span class="keyword">static_cast&lt;</span>DriverPP::jringdrive&lt;ProtocolPP::judp&gt;*<span class="keyword">&gt;</span>(rcvit-&gt;driver);</div><div class="line">    rcv-&gt;receive();</div><div class="line"></div><div class="line">    <span class="keywordflow">return</span> NULL;</div><div class="line">}</div></div><!-- fragment --><p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd>DriverPP::jdrive </dd>
+<div class="fragment"><div class="line"><span class="comment">// create logger object</span></div><div class="line">std::shared_ptr&lt;InterfacePP::logger&gt; mylogger = std::make_shared&lt;InterfacePP::jlogger&gt;(<span class="stringliteral">&quot;./driverlog.log&quot;</span>);</div><div class="line"></div><div class="line"><span class="comment">// generate random seed from hardware device</span></div><div class="line">std::random_device rd;</div><div class="line">uint64_t myseed = rd();</div><div class="line">myseed = ((myseed &lt;&lt; 32) | rd());</div><div class="line"></div><div class="line"><span class="comment">// allocate memory for rings if they don&#39;t already exist</span></div><div class="line">uint8_t* iptr = ((iring != 0) ? (uint8_t*)iring : ((uint8_t*) <span class="keyword">new</span> uint8_t[(rsize*<span class="keyword">sizeof</span>(<a class="code" href="classInterfacePP_1_1ringin.html">InterfacePP::ringin</a>))]));</div><div class="line">uint8_t* optr = ((oring != 0) ? (uint8_t*)oring : ((uint8_t*) <span class="keyword">new</span> uint8_t[(rsize*<span class="keyword">sizeof</span>(<a class="code" href="classInterfacePP_1_1ringout.html">InterfacePP::ringout</a>))]));</div><div class="line"></div><div class="line"><span class="comment">// create software rings</span></div><div class="line"><span class="keywordtype">char</span> siaddr[16];</div><div class="line"><span class="keywordtype">char</span> soaddr[16];</div><div class="line">sprintf(siaddr, <span class="stringliteral">&quot;%p&quot;</span>, iptr);</div><div class="line">sprintf(soaddr, <span class="stringliteral">&quot;%p&quot;</span>, optr);</div><div class="line">uint64_t iaddr = std::strtoul(siaddr, NULL, 16);</div><div class="line">uint64_t oaddr = std::strtoul(soaddr, NULL, 16);</div><div class="line"></div><div class="line"><span class="comment">// track dynamic memory for deletion</span></div><div class="line">std::shared_ptr&lt;InterfacePP::jmmu&gt; mmu = std::make_shared&lt;InterfacePP::jmmu&gt;();</div><div class="line">mmu-&gt;set_mem(<span class="stringliteral">&quot;testbench&quot;</span>, iptr);</div><div class="line">mmu-&gt;set_mem(<span class="stringliteral">&quot;testbench&quot;</span>, optr);</div><div class="line"></div><div class="line"><span class="comment">// attach driver to shared pointer</span></div><div class="line">std::shared_ptr&lt;InterfacePP::jring&lt;InterfacePP::secin&gt;&gt;  iring = std::make_shared&lt;InterfacePP::jring&lt;InterfacePP::secin&gt;&gt;(iaddr, rsize);</div><div class="line">std::shared_ptr&lt;InterfacePP::jring&lt;InterfacePP::secout&gt;&gt; oring = std::make_shared&lt;InterfacePP::jring&lt;InterfacePP::secout&gt;&gt;(oaddr, rsize);</div><div class="line"></div><div class="line"><span class="comment">// create the ringdriver</span></div><div class="line">std::shared_ptr&lt;DriverPP::jringdrive&lt;ProtocolPP::SRTP&gt;&gt; rdriver = std::make_shared&lt;DriverPP::jringdrive&lt;ProtocolPP::SRTP&gt;(myport,</div><div class="line">                                                                                                                          ProtocolPP::iana_t::ESPV4,</div><div class="line">                                                                                                                          ProtocolPP::protocol_t::MACSEC,</div><div class="line">                                                                                                                          std::string(<span class="stringliteral">&quot;www.protocolpp.com&quot;</span>),</div><div class="line">                                                                                                                          myseed,</div><div class="line">                                                                                                                          ProtocolPP::endian_t::LITTLE,</div><div class="line">                                                                                                                          mymmu,</div><div class="line">                                                                                                                          mylogger,</div><div class="line">                                                                                                                          iring,</div><div class="line">                                                                                                                          oring);</div><div class="line"><span class="comment">// start up the driver if it correctly connected</span></div><div class="line"><span class="keywordflow">if</span> (rdriver-&gt;connected()) {</div><div class="line">    rdriver-&gt;receive();</div><div class="line">    rdriver-&gt;send();</div><div class="line">}</div><div class="line"><span class="keywordflow">else</span> {</div><div class="line">    <span class="comment">// teardown the driver if it didn&#39;t connect</span></div><div class="line">    rdriver-&gt;teardown();</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// send and receive run on separate threads</span></div><div class="line">tparam-&gt;type = std::string(<span class="stringliteral">&quot;SRTP&quot;</span>);</div><div class="line">tparam-&gt;driver = driver;</div><div class="line"></div><div class="line"><span class="comment">// threaded testbench, producer on different threads</span></div><div class="line">m_thread.push_back(std::thread(runsnd, tparam));</div><div class="line">m_thread.push_back(std::thread(runrcv, tparam));</div><div class="line"></div><div class="line"><span class="comment">// check for finish</span></div><div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;2; i++) {</div><div class="line">    m_thread[i].join();</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordflow">return</span> 0;</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> *runsnd(<span class="keywordtype">void</span> *sender) {</div><div class="line">    </div><div class="line">    tdata_t* sendit = <span class="keyword">static_cast&lt;</span>tdata_t*<span class="keyword">&gt;</span>(sender);</div><div class="line">    std::string type = sendit-&gt;type;</div><div class="line"></div><div class="line">    <a class="code" href="classDriverPP_1_1jringdrive.html">DriverPP::jringdrive&lt;ProtocolPP::judp&gt;</a>* snd = <span class="keyword">static_cast&lt;</span><a class="code" href="classDriverPP_1_1jringdrive.html">DriverPP::jringdrive&lt;ProtocolPP::judp&gt;</a>*<span class="keyword">&gt;</span>(sendit-&gt;driver);</div><div class="line">    snd-&gt;<a class="code" href="classDriverPP_1_1jringdrive.html#a4a5a8a2ef0430e52a6838888e2cd249c">send</a>();</div><div class="line"></div><div class="line">    <span class="keywordflow">return</span> NULL;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> *runrcv(<span class="keywordtype">void</span> *receiver) {</div><div class="line"></div><div class="line">    tdata_t* rcvit = <span class="keyword">static_cast&lt;</span>tdata_t*<span class="keyword">&gt;</span>(receiver);</div><div class="line">    std::string type = rcvit-&gt;type;</div><div class="line"></div><div class="line">    <a class="code" href="classDriverPP_1_1jringdrive.html">DriverPP::jringdrive&lt;ProtocolPP::judp&gt;</a>* rcv = <span class="keyword">static_cast&lt;</span><a class="code" href="classDriverPP_1_1jringdrive.html">DriverPP::jringdrive&lt;ProtocolPP::judp&gt;</a>*<span class="keyword">&gt;</span>(rcvit-&gt;driver);</div><div class="line">    rcv-&gt;<a class="code" href="classDriverPP_1_1jringdrive.html#a74aa7b89fa80019e761300c78fb6aaa1">receive</a>();</div><div class="line"></div><div class="line">    <span class="keywordflow">return</span> NULL;</div><div class="line">}</div></div><!-- fragment --><p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classDriverPP_1_1jdrive.html">DriverPP::jdrive</a> </dd>
 <dd>
-DriverPP::jringdrive </dd>
+<a class="el" href="classDriverPP_1_1jringdrive.html">DriverPP::jringdrive</a> </dd>
 <dd>
-DriverPP::jdirectdrive</dd></dl>
-<p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd>jdrive </dd>
+<a class="el" href="classDriverPP_1_1jdirectdrive.html">DriverPP::jdirectdrive</a></dd></dl>
+<p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classjdrive.html">jdrive</a> </dd>
 <dd>
-jringdrive </dd>
+<a class="el" href="classjringdrive.html">jringdrive</a> </dd>
 <dd>
-jdirectdrive</dd></dl>
+<a class="el" href="classjdirectdrive.html">jdirectdrive</a></dd></dl>
 <h1><a class="anchor" id="UDPROT"></a>
 User Datagram Protocol (UDP)</h1>
 <p>(See <a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol">https://en.wikipedia.org/wiki/User_Datagram_Protocol</a>)</p>
@@ -487,30 +487,30 @@ Internet Key Exchange Version 2 (IKEv2)</h1>
 <p>IKE performs mutual authentication between two parties and establishes an IKE Security Association (SA) that includes shared secret information that can be used to efficiently establish SAs for Encapsulating Security Payload (ESP) [ESP] or Authentication Header (AH) and a set of cryptographic algorithms to be used by the SAs to protect the traffic that they carry. An initiator proposes one or more suites by listing supported algorithms that can be combined into suites in a mix-and-match fashion. IKE can also negotiate use of IP Compression (IPComp) [IP-COMP] in connection with an ESP or AH SA. The SAs for ESP or AH that get set up through that IKE SA we call "Child SAs"</p>
 <p>All IKE communications consist of pairs of messages: a request and a response. The pair is called an "exchange", and is sometimes called a "request/response pair". The first two exchanges of messages establishing an IKE SA are called the IKE_SA_INIT exchange and the IKE_AUTH exchange; subsequent IKE exchanges are called either CREATE_CHILD_SA exchanges or INFORMATIONAL exchanges. In the common case, there is a single IKE_SA_INIT exchange and a single IKE_AUTH exchange (a total of four messages) to establish the IKE SA and the first Child SA. In exceptional cases, there may be more than one of each of these exchanges. In all cases, all IKE_SA_INIT exchanges MUST complete before any other exchange type, then all IKE_AUTH exchanges MUST complete, and following that, any number of CREATE_CHILD_SA and INFORMATIONAL exchanges may occur in any order. In some scenarios, only a single Child SA is needed between the IPsec endpoints, and therefore there would be no additional exchanges. Subsequent exchanges MAY be used to establish additional Child SAs between the same authenticated pair of endpoints and to perform housekeeping functions</p>
 <p>For the Protocol++&reg; interface to IKEv2 see</p>
-<p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd>ProtocolPP::jikev2sa </dd>
+<p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jikev2sa.html">ProtocolPP::jikev2sa</a> </dd>
 <dd>
-ProtocolPP::jikev2 </dd>
+<a class="el" href="classProtocolPP_1_1jikev2.html">ProtocolPP::jikev2</a> </dd>
 <dd>
-ProtocolPP::jikencrypt </dd>
+<a class="el" href="classProtocolPP_1_1jikencrypt.html">ProtocolPP::jikencrypt</a> </dd>
 <dd>
-ProtocolPP::jikeprf </dd>
+<a class="el" href="classProtocolPP_1_1jikeprf.html">ProtocolPP::jikeprf</a> </dd>
 <dd>
-ProtocolPP::jikev2dh </dd>
+<a class="el" href="classProtocolPP_1_1jikev2dh.html">ProtocolPP::jikev2dh</a> </dd>
 <dd>
-ProtocolPP::jikeparse </dd>
+<a class="el" href="classProtocolPP_1_1jikeparse.html">ProtocolPP::jikeparse</a> </dd>
 <dd>
 <a class="el" href="classProtocolPP_1_1jprotocolpp.html">ProtocolPP::jprotocolpp</a></dd></dl>
-<p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd>jikev2sa </dd>
+<p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classjikev2sa.html">jikev2sa</a> </dd>
 <dd>
-jikev2 </dd>
+<a class="el" href="classjikev2.html">jikev2</a> </dd>
 <dd>
-jikencrypt </dd>
+<a class="el" href="classjikencrypt.html">jikencrypt</a> </dd>
 <dd>
-jikeprf </dd>
+<a class="el" href="classjikeprf.html">jikeprf</a> </dd>
 <dd>
-jikev2dh </dd>
+<a class="el" href="classjikev2dh.html">jikev2dh</a> </dd>
 <dd>
-jikeparse </dd>
+<a class="el" href="classjikeparse.html">jikeparse</a> </dd>
 <dd>
 <a class="el" href="classjprotocolpp.html">jprotocolpp</a></dd></dl>
 <h1><a class="anchor" id="DHKeyAgree"></a>
@@ -525,8 +525,8 @@ Diffie-Hellman Key Agreement</h1>
 <p>Diffie-Hellman is a key agreement algorithm which allows two parties to establish a secure communications channel The original Diffie-Hellman is an anonymous protocol meaning it is not authenticated, so it is vulnerable to man-in-the-middle attacks. Extensions to the original Diffie-Hellman includes authentication which hardens the exchange protocol against many man-in-the-middle attacks. The authenticated version of Diffie-Hellman is usually referred to as Unified Diffie-Hellman</p>
 <p>A number of standard bodies have Diffie-Hellman implementations, including RFC 2631, Diffie-Hellman Key Agreement Method, ANSI X9.42, Agreement Of Symmetric Keys Using Diffie-Hellman and MQV Algorithms, and IEEE P1363, Standard Specifications for Public Key Cryptography, Annex D. Each implementation is slightly different and might not interoperate. When data is in motion, key exchange and transport is usually the starting point. Unfortunately, exchange and transport are often an after thought in a project, especially if a resident cryptography enthusiast or cryptographer is not available. The result can sometimes be a weak system, where an adversary can recover a session key during channel setup due to a weak or flawed exchange and transpor</p>
 <p>For the Protocol++&reg; interface to Diffie-Hellman see</p>
-<p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd>ProtocolPP::jikev2dh</dd></dl>
-<p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd>jikev2dh</dd></dl>
+<p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jikev2dh.html">ProtocolPP::jikev2dh</a></dd></dl>
+<p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classjikev2dh.html">jikev2dh</a></dd></dl>
 <h1><a class="anchor" id="IPsecPROT"></a>
 Internet Protocol Security (IPsec)</h1>
 <p>See <a href="https://en.wikipedia.org/wiki/IPsec">https://en.wikipedia.org/wiki/IPsec</a></p>
@@ -884,18 +884,18 @@ eXtended Merkle Signature System (XMSS)</h1>
 <p>See RFC8391 XMSS: eXtended Merkle Signature Scheme (XMSS) from the IETF</p>
 <p>The eXtended Merkle Signature Scheme (XMSS) is a hash-based digital signature system that is based on existing descriptions in scientific literature. The specification specifices Winternitz One-Time Signature Plus (WOTS+), a one-time signature scheme; XMSS, a single-tree scheme; and XMSS^MT, a multi-tree variant of XMSS. Both XMSS and XMSS^MT use WOTS+ as a main bulding block. XMSS provides cryptographic digital signatures without relying on the conjectured hardness of mathematical problems. Instead, it relies on the properties of the cryptographic hash functions. XMSS provides strong security guarantees and is even secure when the collision resistance of the underlying hash is broken. It is suitable for compact implementations, relatively simple to implement, and naturally resists side-channel attacks. Unlike most other signature schemes, hash-based signatures can so far withstand know quantum computer attacks</p>
 <p>For the Protocol++&reg; interface to XMSS see</p>
-<p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd>ProtocolPP::jxmss </dd>
+<p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jxmss.html">ProtocolPP::jxmss</a> </dd>
 <dd>
-ProtocolPP::jxmssa </dd>
+<a class="el" href="classProtocolPP_1_1jxmssa.html">ProtocolPP::jxmssa</a> </dd>
 <dd>
 <a class="el" href="classProtocolPP_1_1jsecass.html">ProtocolPP::jsecass</a> </dd>
 <dd>
 <a class="el" href="classProtocolPP_1_1jprotocolpp.html">ProtocolPP::jprotocolpp</a></dd></dl>
-<p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd>jwots </dd>
+<p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classjwots.html">jwots</a> </dd>
 <dd>
-jxmss </dd>
+<a class="el" href="classjxmss.html">jxmss</a> </dd>
 <dd>
-jxmssa </dd>
+<a class="el" href="classjxmssa.html">jxmssa</a> </dd>
 <dd>
 <a class="el" href="classjsecass.html">jsecass</a> </dd>
 <dd>
@@ -906,20 +906,20 @@ Leighton-Micali Hash-Based Signatures (LMS)</h1>
 <p>The Leighton-Micali Signature (LMS) method can sign a potentially large but fixed number of messages. An LMS system uses two cryptographic components: a one-time signature method and a hash function. Each LMS public/private key pair is associated with a perfect binary tree, each node of which contains an m-byte value, where m is the output length of the hash function. Each leaf of the tree contains the value of the public key of an LM-OTS public/private key pair. The value contained by the root of the tree is the LMS public key. Each interior node is computed by applying the hash function to the concatenation of the values of its children nodes</p>
 <p>Each node of the tree is associated with a node number, an unsigned integer that is denoted as node_num in the algorithms below, which is computed as follows. The root node has node number 1; for each node with node number <img class="formulaInl" alt="$ N &lt; {2}^{h} $" src="form_377.png"/> (where h is the height of the tree), its left child has node number <img class="formulaInl" alt="$ 2*N $" src="form_378.png"/>, while its right child has node number <img class="formulaInl" alt="$ 2*N + 1 $" src="form_379.png"/>. The result of this is that each node within the tree will have a unique node number, and the leaves will have node numbers 2^h, (2^h)+1, (2^h)+2, ..., (2^h)+(2^h)-1 In general, the j-th node at level i has node number <img class="formulaInl" alt="$ {2}^{i} + j $" src="form_380.png"/>. The node number can conveniently be computed when it is needed in the LMS algorithms, as described in those algorithms</p>
 <p>For the Protocol++&reg; interface to LMS see</p>
-<p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd>ProtocolPP::jlmots </dd>
+<p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jlmots.html">ProtocolPP::jlmots</a> </dd>
 <dd>
-ProtocolPP::jlms </dd>
+<a class="el" href="classProtocolPP_1_1jlms.html">ProtocolPP::jlms</a> </dd>
 <dd>
-ProtocolPP::jlmsa </dd>
+<a class="el" href="classProtocolPP_1_1jlmsa.html">ProtocolPP::jlmsa</a> </dd>
 <dd>
 <a class="el" href="classProtocolPP_1_1jsecass.html">ProtocolPP::jsecass</a> </dd>
 <dd>
 <a class="el" href="classProtocolPP_1_1jprotocolpp.html">ProtocolPP::jprotocolpp</a></dd></dl>
-<p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd>jlmots </dd>
+<p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classjlmots.html">jlmots</a> </dd>
 <dd>
-jlmsa </dd>
+<a class="el" href="classjlmsa.html">jlmsa</a> </dd>
 <dd>
-jlms </dd>
+<a class="el" href="classjlms.html">jlms</a> </dd>
 <dd>
 <a class="el" href="classjsecass.html">jsecass</a> </dd>
 <dd>
@@ -1016,17 +1016,17 @@ W.A.S.P</h1>
 <dd>
 <a class="el" href="classProtocolPP_1_1jmemblob.html">ProtocolPP::jmemblob</a> </dd>
 <dd>
-ProtocolPP::jxmssa </dd>
+<a class="el" href="classProtocolPP_1_1jxmssa.html">ProtocolPP::jxmssa</a> </dd>
 <dd>
-ProtocolPP::jwots </dd>
+<a class="el" href="classProtocolPP_1_1jwots.html">ProtocolPP::jwots</a> </dd>
 <dd>
-ProtocolPP::jxmss </dd>
+<a class="el" href="classProtocolPP_1_1jxmss.html">ProtocolPP::jxmss</a> </dd>
 <dd>
-ProtocolPP::jlmsa </dd>
+<a class="el" href="classProtocolPP_1_1jlmsa.html">ProtocolPP::jlmsa</a> </dd>
 <dd>
-ProtocolPP::jlmots </dd>
+<a class="el" href="classProtocolPP_1_1jlmots.html">ProtocolPP::jlmots</a> </dd>
 <dd>
-ProtocolPP::jlms </dd>
+<a class="el" href="classProtocolPP_1_1jlms.html">ProtocolPP::jlms</a> </dd>
 <dd>
 <a class="el" href="classProtocolPP_1_1jsnow3g.html">ProtocolPP::jsnow3g</a> </dd>
 <dd>
@@ -1115,17 +1115,17 @@ jrsasa </dd>
 <dd>
 <a class="el" href="classjmemblob.html">jmemblob</a> </dd>
 <dd>
-jxmssa </dd>
+<a class="el" href="classjxmssa.html">jxmssa</a> </dd>
 <dd>
-jwots </dd>
+<a class="el" href="classjwots.html">jwots</a> </dd>
 <dd>
-jxmss </dd>
+<a class="el" href="classjxmss.html">jxmss</a> </dd>
 <dd>
-jlmsa </dd>
+<a class="el" href="classjlmsa.html">jlmsa</a> </dd>
 <dd>
-jlmots </dd>
+<a class="el" href="classjlmots.html">jlmots</a> </dd>
 <dd>
-jlms </dd>
+<a class="el" href="classjlms.html">jlms</a> </dd>
 <dd>
 <a class="el" href="classjsnow3g.html">jsnow3g</a> </dd>
 <dd>
@@ -1162,7 +1162,7 @@ jlms </dd>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 20 2022 22:12:30 for Protocol++(Protocolpp) by
+    <li class="footer">Generated on Sun Jul 10 2022 07:05:02 for Protocol++(Protocolpp) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
