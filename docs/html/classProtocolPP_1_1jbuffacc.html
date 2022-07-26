@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++(Protocolpp)
-   &#160;<span id="projectnumber">5.3.1</span>
+   &#160;<span id="projectnumber">5.3.2</span>
    </div>
   </td>
  </tr>
@@ -114,22 +114,18 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:a1a8b08f8d81bc618b5f50f86fc804920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf104b71a7870b2be1458d8b63330768"><td class="memItemLeft" align="right" valign="top">std::list&lt; std::array&lt; Q, T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jbuffacc.html#aaf104b71a7870b2be1458d8b63330768">get</a> ()</td></tr>
 <tr class="separator:aaf104b71a7870b2be1458d8b63330768"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6a0a7437cf12dcac66ae18a77af4a49"><td class="memItemLeft" align="right" valign="top"><a id="af6a0a7437cf12dcac66ae18a77af4a49"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jbuffacc.html#af6a0a7437cf12dcac66ae18a77af4a49">used</a> ()</td></tr>
-<tr class="memdesc:af6a0a7437cf12dcac66ae18a77af4a49"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of bytes in the buffers already written <br /></td></tr>
-<tr class="separator:af6a0a7437cf12dcac66ae18a77af4a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a047ac51029a5fad9324ac3f993d58df1"><td class="memItemLeft" align="right" valign="top"><a id="a047ac51029a5fad9324ac3f993d58df1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jbuffacc.html#a047ac51029a5fad9324ac3f993d58df1">avail</a> ()</td></tr>
-<tr class="memdesc:a047ac51029a5fad9324ac3f993d58df1"><td class="mdescLeft">&#160;</td><td class="mdescRight">return current number of avaible bytes in the buffer <br /></td></tr>
-<tr class="separator:a047ac51029a5fad9324ac3f993d58df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16596cc066582337ae3eeebed2ae5e53"><td class="memItemLeft" align="right" valign="top"><a id="a16596cc066582337ae3eeebed2ae5e53"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jbuffacc.html#a16596cc066582337ae3eeebed2ae5e53">size</a> ()</td></tr>
 <tr class="memdesc:a16596cc066582337ae3eeebed2ae5e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">return total number of bytes <br /></td></tr>
 <tr class="separator:a16596cc066582337ae3eeebed2ae5e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19671474e96570026b962100dd03c46d"><td class="memItemLeft" align="right" valign="top"><a id="a19671474e96570026b962100dd03c46d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jbuffacc.html#a19671474e96570026b962100dd03c46d">reset</a> ()</td></tr>
-<tr class="memdesc:a19671474e96570026b962100dd03c46d"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset the indices as if buffer had not been used <br /></td></tr>
-<tr class="separator:a19671474e96570026b962100dd03c46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af031689998a944bc520060949ddd8daf"><td class="memItemLeft" align="right" valign="top"><a id="af031689998a944bc520060949ddd8daf"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jbuffacc.html#af031689998a944bc520060949ddd8daf">buflen</a> ()</td></tr>
+<tr class="memdesc:af031689998a944bc520060949ddd8daf"><td class="mdescLeft">&#160;</td><td class="mdescRight">return length of individual buffers <br /></td></tr>
+<tr class="separator:af031689998a944bc520060949ddd8daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c5be0ba9429d0f1b7b814187dc3bbdc"><td class="memItemLeft" align="right" valign="top"><a id="a9c5be0ba9429d0f1b7b814187dc3bbdc"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jbuffacc.html#a9c5be0ba9429d0f1b7b814187dc3bbdc">numbufs</a> ()</td></tr>
+<tr class="memdesc:a9c5be0ba9429d0f1b7b814187dc3bbdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of buffers being managed <br /></td></tr>
+<tr class="separator:a9c5be0ba9429d0f1b7b814187dc3bbdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab7f721dba45b3ec31bb7afe399ff3128"></a>
@@ -292,9 +288,9 @@ template&lt;typename Q , std::size_t T&gt; </div>
 </div><div class="memdoc">
 <p>read data from the buffers from index for length </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">idx</td><td>- index to start reading at </td></tr>
-    <tr><td class="paramname">len</td><td>- length of the data to read </td></tr>
-    <tr><td class="paramname">out</td><td>- byte pointer to hold the data from the buffers </td></tr>
+    <tr><td class="paramname">idx</td><td>- index to start reading at in number of elements </td></tr>
+    <tr><td class="paramname">len</td><td>- length of the data to read in number of elements </td></tr>
+    <tr><td class="paramname">out</td><td>- pointer to hold the data from the buffers </td></tr>
   </table>
   </dd>
 </dl>
@@ -336,8 +332,8 @@ template&lt;typename Q , std::size_t T&gt; </div>
 </div><div class="memdoc">
 <p>write data to the buffers at index with length </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">idx</td><td>- index to start writing at </td></tr>
-    <tr><td class="paramname">len</td><td>- length of the data to write </td></tr>
+    <tr><td class="paramname">idx</td><td>- index to start writing at in number of elements </td></tr>
+    <tr><td class="paramname">len</td><td>- length of the data to write in number of elements </td></tr>
     <tr><td class="paramname">data</td><td>- byte data to write into the buffers </td></tr>
   </table>
   </dd>
@@ -354,7 +350,7 @@ template&lt;typename Q , std::size_t T&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceProtocolPP.html">ProtocolPP</a></li><li class="navelem"><a class="el" href="classProtocolPP_1_1jbuffacc.html">jbuffacc</a></li>
-    <li class="footer">Generated on Fri Jul 15 2022 21:57:57 for Protocol++(Protocolpp) by
+    <li class="footer">Generated on Mon Jul 25 2022 21:13:22 for Protocol++(Protocolpp) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

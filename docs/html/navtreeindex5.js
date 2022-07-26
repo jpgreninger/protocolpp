@@ -1,6 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"classProtocolPP_1_1jwifi.html#ae5f5d431089fa5a64565419cf32f5bbc":[2,0,4,70,12],
 "classProtocolPP_1_1jwifi.html#ae5fa90c5402a1f444ee1f8e94ba9f188":[2,0,4,70,9],
 "classProtocolPP_1_1jwifi.html#aeb521557bc86b0276ccaf5cb617f5b18":[2,0,4,70,7],
 "classProtocolPP_1_1jwifi.html#af76baecf9dc95253a1a79d1397065618":[2,0,4,70,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX5 =
 "classoption_1_1Option.html#abb4e13cd7c90999c8a6b1f871cece283":[2,0,2,2,5],
 "classoption_1_1Option.html#ac5b9235d79208035d97e41fe17ba04d6":[2,0,2,2,13],
 "classoption_1_1Option.html#adb4b44f3778df8f28a04c48bd1b4a72b":[2,0,2,2,14],
-"classoption_1_1Option.html#ae8d8c058af3c781cb1d444998df48fef":[2,0,2,2,11]
+"classoption_1_1Option.html#ae8d8c058af3c781cb1d444998df48fef":[2,0,2,2,11],
+"classoption_1_1Option.html#af51f53a553ef46110e36008a58466a2e":[2,0,2,2,7]
 };

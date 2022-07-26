@@ -7,7 +7,7 @@ var searchData=
   ['release',['release',['../classInterfacePP_1_1jproducer.html#adb4dca39d9289e598fe4df94d5a41327',1,'InterfacePP::jproducer::release()'],['../classInterfacePP_1_1jsecproducer.html#ab8dce078e45424d36d0cf05ee314f232',1,'InterfacePP::jsecproducer::release()']]],
   ['reload',['reload',['../classProtocolPP_1_1jikev2.html#a6af877f66c2a58b364f280cac4ba1e2c',1,'ProtocolPP::jikev2']]],
   ['required',['Required',['../structoption_1_1Arg.html#ac3340078b0f9641f7a35c2cd81b46393',1,'option::Arg']]],
-  ['reset',['reset',['../classProtocolPP_1_1jbuffacc.html#a19671474e96570026b962100dd03c46d',1,'ProtocolPP::jbuffacc::reset()'],['../classInterfacePP_1_1jring.html#a31646dd405af65f3a4bd46dc8f9bea08',1,'InterfacePP::jring::reset()']]],
+  ['reset',['reset',['../classInterfacePP_1_1jring.html#a31646dd405af65f3a4bd46dc8f9bea08',1,'InterfacePP::jring']]],
   ['resize',['resize',['../classProtocolPP_1_1jarray.html#a38479aad489350291c9a14208a3dc64c',1,'ProtocolPP::jarray']]],
   ['restartrow',['restartRow',['../classoption_1_1PrintUsageImplementation_1_1LinePartIterator.html#a96c448939f33a811174ea7b5addb312e',1,'option::PrintUsageImplementation::LinePartIterator']]],
   ['restarttable',['restartTable',['../classoption_1_1PrintUsageImplementation_1_1LinePartIterator.html#a0cbe8ed79ab4958a70b957598dd76fa6',1,'option::PrintUsageImplementation::LinePartIterator']]],

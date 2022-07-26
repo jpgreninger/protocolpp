@@ -39,6 +39,7 @@ var searchData=
   ['brightwhite',['BRIGHTWHITE',['../classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6a34ce012d0f9c9cc80dfbd88a24d38a19',1,'InterfacePP::jlogger']]],
   ['brightyellow',['BRIGHTYELLOW',['../classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6ad641159d4ece579e2181f93523b2dc24',1,'InterfacePP::jlogger']]],
   ['buffer_5fmax',['buffer_max',['../structoption_1_1Stats.html#a2c9a7b4174f91ba8bcadaa9ad6f0db06',1,'option::Stats']]],
+  ['buflen',['buflen',['../classProtocolPP_1_1jbuffacc.html#af031689998a944bc520060949ddd8daf',1,'ProtocolPP::jbuffacc']]],
   ['byndsrcaddr',['BYNDSRCADDR',['../namespaceProtocolPP.html#a053cb4b6f939495763f9be4b0d23c769a5017546e9ceb978f7c5219042005dbb7',1,'ProtocolPP']]],
   ['bypassdf',['BYPASSDF',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a03c10d4cf719aa7958818cca88484456',1,'ProtocolPP']]],
   ['bypassdscp',['BYPASSDSCP',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a10ca58400e0315466c53ff3ea79d5e60',1,'ProtocolPP']]],

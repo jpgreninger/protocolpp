@@ -17,5 +17,6 @@ var searchData=
   ['none',['None',['../structoption_1_1Arg.html#a7fc01987899c91c6b6a1be5711a46e22',1,'option::Arg']]],
   ['nonoption',['nonOption',['../classoption_1_1Parser.html#aeeafbf2892a5aca90b89803b2b1cb031',1,'option::Parser']]],
   ['nonoptions',['nonOptions',['../classoption_1_1Parser.html#a2c11b050f4248d71758dda52c5f9154d',1,'option::Parser']]],
-  ['nonoptionscount',['nonOptionsCount',['../classoption_1_1Parser.html#aa64a6a7c196993a1b20d48e8ddd12a34',1,'option::Parser']]]
+  ['nonoptionscount',['nonOptionsCount',['../classoption_1_1Parser.html#aa64a6a7c196993a1b20d48e8ddd12a34',1,'option::Parser']]],
+  ['numbufs',['numbufs',['../classProtocolPP_1_1jbuffacc.html#a9c5be0ba9429d0f1b7b814187dc3bbdc',1,'ProtocolPP::jbuffacc']]]
 ];
