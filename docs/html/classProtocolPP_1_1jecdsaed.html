@@ -138,6 +138,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:ac602b99d7769e3da643dc15a2040c10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a656b0d88ca66d982d0b52c6fd6bbf2a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jecdsaed.html#a656b0d88ca66d982d0b52c6fd6bbf2a1">to_xml</a> (<a class="el" href="classtinyxml2_1_1XMLPrinter.html">tinyxml2::XMLPrinter</a> &amp;myxml, <a class="el" href="namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2">direction_t</a> direction)</td></tr>
 <tr class="separator:a656b0d88ca66d982d0b52c6fd6bbf2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accbf880856efa9d0386788feebe54a9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jecdsaed.html#accbf880856efa9d0386788feebe54a9e">to_json</a> (std::ofstream &amp;myjson, <a class="el" href="namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2">direction_t</a> direction, std::string &amp;indent)</td></tr>
+<tr class="separator:accbf880856efa9d0386788feebe54a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7546f777ea474855d44352c91964184a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jecdsaed.html#a7546f777ea474855d44352c91964184a">set_hdr</a> (<a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; uint8_t &gt; &amp;hdr)</td></tr>
 <tr class="separator:a7546f777ea474855d44352c91964184a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa14e03ff1c4eb2bbc88a39bc491df405"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jecdsaed.html#aa14e03ff1c4eb2bbc88a39bc491df405">set_field</a> (<a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36">field_t</a> field, uint64_t value)</td></tr>
@@ -720,6 +722,58 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="accbf880856efa9d0386788feebe54a9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accbf880856efa9d0386788feebe54a9e">&#9670;&nbsp;</a></span>to_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ProtocolPP::jecdsaed::to_json </td>
+          <td>(</td>
+          <td class="paramtype">std::ofstream &amp;&#160;</td>
+          <td class="paramname"><em>myjson</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2">direction_t</a>&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>indent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Prints the protocol object in JSON </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">myjson</td><td>- JSON object to print to </td></tr>
+    <tr><td class="paramname">direction</td><td>- randomzation </td></tr>
+    <tr><td class="paramname">indent</td><td>- indentation for JSON output </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classProtocolPP_1_1jprotocol.html#a53dc47a68a9627e01f6e6525d079434f">ProtocolPP::jprotocol</a>.</p>
+
+</div>
+</div>
 <a id="a656b0d88ca66d982d0b52c6fd6bbf2a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a656b0d88ca66d982d0b52c6fd6bbf2a1">&#9670;&nbsp;</a></span>to_xml()</h2>
 
@@ -799,7 +853,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceProtocolPP.html">ProtocolPP</a></li><li class="navelem"><a class="el" href="classProtocolPP_1_1jecdsaed.html">jecdsaed</a></li>
-    <li class="footer">Generated on Mon Jul 25 2022 21:13:22 for Protocol++(Protocolpp) by
+    <li class="footer">Generated on Sun Aug 7 2022 16:51:30 for Protocol++(Protocolpp) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

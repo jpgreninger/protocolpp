@@ -9,5 +9,6 @@ var classProtocolPP_1_1jwimax =
     [ "get_security", "classProtocolPP_1_1jwimax.html#a7cc2fde4e33f035eeceecacdb1c0fede", null ],
     [ "set_field", "classProtocolPP_1_1jwimax.html#a9d23f0bed714ec92f2d753923c050e00", null ],
     [ "set_hdr", "classProtocolPP_1_1jwimax.html#aa441c4a5e69eede78a90f711c88f5b12", null ],
+    [ "to_json", "classProtocolPP_1_1jwimax.html#a184de6be38a8bf0b00faf216a4a4a59e", null ],
     [ "to_xml", "classProtocolPP_1_1jwimax.html#ae402897e573569bf29491895db1074a8", null ]
 ];

@@ -19,5 +19,6 @@ var classProtocolPP_1_1jecdsaf2msa =
     [ "set_pubkey256", "classProtocolPP_1_1jecdsaf2msa.html#ac7e362466b56e3a9fa42622b92efbfdd", null ],
     [ "set_pubkey384", "classProtocolPP_1_1jecdsaf2msa.html#a795fe71a416fb9c2856d2800659206a7", null ],
     [ "set_pubkey512", "classProtocolPP_1_1jecdsaf2msa.html#a507377d7f6a56af43ffa2cd0a580c07d", null ],
+    [ "to_json", "classProtocolPP_1_1jecdsaf2msa.html#af99c80545eac31d6644fb067d8ecc5c6", null ],
     [ "to_xml", "classProtocolPP_1_1jecdsaf2msa.html#ac4cd5f5769d7aae1b75607f51cf054fa", null ]
 ];

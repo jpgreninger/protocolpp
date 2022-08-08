@@ -18,6 +18,7 @@ var classProtocolPP_1_1jrsa =
     [ "set_field", "classProtocolPP_1_1jrsa.html#a3af28f45f11714cf61f33432923fd3eb", null ],
     [ "set_hdr", "classProtocolPP_1_1jrsa.html#a113eaf37390d6318f4ed960e131c5394", null ],
     [ "sign", "classProtocolPP_1_1jrsa.html#a2269ed3c0d0f83220b5d245de383e7bd", null ],
+    [ "to_json", "classProtocolPP_1_1jrsa.html#ac8291afe5e7869cc6ace2449ab940b27", null ],
     [ "to_xml", "classProtocolPP_1_1jrsa.html#aec9956cdecaef299a05b4d2d069652d6", null ],
     [ "verify", "classProtocolPP_1_1jrsa.html#ac6897234a1994d1bb512617ad69b1824", null ]
 ];

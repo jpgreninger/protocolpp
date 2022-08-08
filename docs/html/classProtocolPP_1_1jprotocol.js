@@ -29,6 +29,7 @@ var classProtocolPP_1_1jprotocol =
     [ "to_array", "classProtocolPP_1_1jprotocol.html#a361d56fadeca42cab0ee006586bd072a", null ],
     [ "to_array", "classProtocolPP_1_1jprotocol.html#a038850d123d24498d19e1f9c33f9aed6", null ],
     [ "to_array", "classProtocolPP_1_1jprotocol.html#ab806a2476e3b0b2bef1086ef7b06aa55", null ],
+    [ "to_json", "classProtocolPP_1_1jprotocol.html#a53dc47a68a9627e01f6e6525d079434f", null ],
     [ "to_u16", "classProtocolPP_1_1jprotocol.html#a30e9cfd62e084eec12070fad8eb3f691", null ],
     [ "to_u32", "classProtocolPP_1_1jprotocol.html#a9970402d0261a4ad967269415fe16370", null ],
     [ "to_u64", "classProtocolPP_1_1jprotocol.html#a5407c6590d042898346826c5c90a27f1", null ],

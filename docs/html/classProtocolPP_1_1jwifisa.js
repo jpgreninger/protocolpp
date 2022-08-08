@@ -7,5 +7,6 @@ var classProtocolPP_1_1jwifisa =
     [ "~jwifisa", "classProtocolPP_1_1jwifisa.html#acff3b389bba962af6968fcf31c36245d", null ],
     [ "get_field", "classProtocolPP_1_1jwifisa.html#a3ae5662df4e29e459ca1c801a5e6bb99", null ],
     [ "set_field", "classProtocolPP_1_1jwifisa.html#a043903f1e8f956736c5f88a43c80f8d7", null ],
+    [ "to_json", "classProtocolPP_1_1jwifisa.html#a69a7c48c85097ba52928adcbf2a3fe0e", null ],
     [ "to_xml", "classProtocolPP_1_1jwifisa.html#ac78bc23c237f1c413d0ee6c2cd03adb8", null ]
 ];

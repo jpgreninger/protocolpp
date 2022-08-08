@@ -11,5 +11,6 @@ var classProtocolPP_1_1jconfident =
     [ "set_field", "classProtocolPP_1_1jconfident.html#afb2a70db9681c3c59dd3bb305e9a0dc2", null ],
     [ "set_field", "classProtocolPP_1_1jconfident.html#ae08e1c6e20a58b50902cdce763a001bd", null ],
     [ "set_hdr", "classProtocolPP_1_1jconfident.html#aa8d33eef02a6cf6be61636f01964b673", null ],
+    [ "to_json", "classProtocolPP_1_1jconfident.html#a95ba59a9df4c5e54be47c431d4619267", null ],
     [ "to_xml", "classProtocolPP_1_1jconfident.html#a038f69d7d6029b109c88417e726b181f", null ]
 ];

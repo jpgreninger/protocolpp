@@ -9,5 +9,6 @@ var classProtocolPP_1_1jdsasa =
     [ "~jdsasa", "classProtocolPP_1_1jdsasa.html#aa7dde99627f92e0b5b4fc9ca76c76a87", null ],
     [ "get_field", "classProtocolPP_1_1jdsasa.html#a57e628063430014edde121a100a9e2ac", null ],
     [ "set_field", "classProtocolPP_1_1jdsasa.html#a74d1497a1c6ebe869814afc4bda75f56", null ],
+    [ "to_json", "classProtocolPP_1_1jdsasa.html#ad27ef21bd742f7def14dc37872f52dd3", null ],
     [ "to_xml", "classProtocolPP_1_1jdsasa.html#a717e0cc0b2eecda03e5aeced2eb0f004", null ]
 ];

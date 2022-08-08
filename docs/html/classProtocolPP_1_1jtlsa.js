@@ -7,5 +7,6 @@ var classProtocolPP_1_1jtlsa =
     [ "~jtlsa", "classProtocolPP_1_1jtlsa.html#a7fc76c3a2cca91771846e2c97e289f25", null ],
     [ "get_field", "classProtocolPP_1_1jtlsa.html#a6f2dc57c5c1eea4ffa25668440ff5931", null ],
     [ "set_field", "classProtocolPP_1_1jtlsa.html#ae26bcdd6e3857dad7f80298001134d22", null ],
+    [ "to_json", "classProtocolPP_1_1jtlsa.html#a37d9d5d2cbf3157334bfc660fecbc6c6", null ],
     [ "to_xml", "classProtocolPP_1_1jtlsa.html#aa02ad6fef2a377fa688137e79b872d62", null ]
 ];

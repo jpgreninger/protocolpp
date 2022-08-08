@@ -10,5 +10,6 @@ var classProtocolPP_1_1jtestcfg =
     [ "get_field", "classProtocolPP_1_1jtestcfg.html#a3fb88a0ae910d1cf2e09c8b3fca77348", null ],
     [ "set", "classProtocolPP_1_1jtestcfg.html#a54e29ca8bdab5e527f40825b517ae8d6", null ],
     [ "set_field", "classProtocolPP_1_1jtestcfg.html#a0774b302f67b9a1de4655afad142130e", null ],
+    [ "to_json", "classProtocolPP_1_1jtestcfg.html#adbfa7962a01643d02642ebfbc89d77e1", null ],
     [ "to_xml", "classProtocolPP_1_1jtestcfg.html#a80fbe135aaf099dc5aa988a64f633034", null ]
 ];

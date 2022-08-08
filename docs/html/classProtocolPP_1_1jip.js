@@ -16,5 +16,6 @@ var classProtocolPP_1_1jip =
     [ "set_exthdr", "classProtocolPP_1_1jip.html#a7adae17bd214c1bdadceac9d6ffc38f8", null ],
     [ "set_field", "classProtocolPP_1_1jip.html#a183bd8a74cfb0cae241c7ef5aed5518d", null ],
     [ "set_hdr", "classProtocolPP_1_1jip.html#acc36db939bfe16e9f466373dd0424752", null ],
+    [ "to_json", "classProtocolPP_1_1jip.html#adf116a9cc5bd498be1082262123693f5", null ],
     [ "to_xml", "classProtocolPP_1_1jip.html#a6530811e7c07a9d8c8ca44b593dc97c5", null ]
 ];

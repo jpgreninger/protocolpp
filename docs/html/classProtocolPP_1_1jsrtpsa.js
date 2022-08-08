@@ -7,5 +7,6 @@ var classProtocolPP_1_1jsrtpsa =
     [ "~jsrtpsa", "classProtocolPP_1_1jsrtpsa.html#a4eaeca59f0fd9f818fac52c545f42f3d", null ],
     [ "get_field", "classProtocolPP_1_1jsrtpsa.html#aea0170aece7c0663df24324994231d27", null ],
     [ "set_field", "classProtocolPP_1_1jsrtpsa.html#a7f3373977b6242bd6f3b3b631418990b", null ],
+    [ "to_json", "classProtocolPP_1_1jsrtpsa.html#a979d7a65d697770ebc46906b3e2900df", null ],
     [ "to_xml", "classProtocolPP_1_1jsrtpsa.html#af8a73ad7e30b17a8fa201128767f1395", null ]
 ];

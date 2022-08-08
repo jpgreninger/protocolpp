@@ -21,5 +21,6 @@ var classProtocolPP_1_1jipsec =
     [ "get_security", "classProtocolPP_1_1jipsec.html#acd50b21dabd682d7610af78d6386a118", null ],
     [ "set_field", "classProtocolPP_1_1jipsec.html#a2e2a447c9dab8073ce66891ec44e4398", null ],
     [ "set_hdr", "classProtocolPP_1_1jipsec.html#ae282d4907b35a491a433af4e58fd482e", null ],
+    [ "to_json", "classProtocolPP_1_1jipsec.html#a1c6689a21af6bad3f6ec26f951bbe257", null ],
     [ "to_xml", "classProtocolPP_1_1jipsec.html#aa3c903d041c705132851c8ea49750e06", null ]
 ];

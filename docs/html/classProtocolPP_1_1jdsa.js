@@ -17,6 +17,7 @@ var classProtocolPP_1_1jdsa =
     [ "set_field", "classProtocolPP_1_1jdsa.html#a60ef58c99675214d2191f4c079115acb", null ],
     [ "set_hdr", "classProtocolPP_1_1jdsa.html#ac48e54596b08a8a12dc786ac4f036c2b", null ],
     [ "sign", "classProtocolPP_1_1jdsa.html#a34876786f20be52a3bb3ba5156e01c03", null ],
+    [ "to_json", "classProtocolPP_1_1jdsa.html#a7f27f8b96322294706b7653690826552", null ],
     [ "to_xml", "classProtocolPP_1_1jdsa.html#add6d032ec4ca13ceb984e6fb3df491af", null ],
     [ "verify", "classProtocolPP_1_1jdsa.html#a4d827bb3424950abe9352659831878da", null ]
 ];

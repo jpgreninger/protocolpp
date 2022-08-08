@@ -11,5 +11,6 @@ var classProtocolPP_1_1jintegrity =
     [ "set_field", "classProtocolPP_1_1jintegrity.html#aaa43433b3199b61353b4f4c9689f1f95", null ],
     [ "set_field", "classProtocolPP_1_1jintegrity.html#aa7e5666c1763e4843063a7cf5315965d", null ],
     [ "set_hdr", "classProtocolPP_1_1jintegrity.html#ad3b73cece89d909fda2b8222167f96b8", null ],
+    [ "to_json", "classProtocolPP_1_1jintegrity.html#a6871dc5d115abd9ccb2865f639a676ad", null ],
     [ "to_xml", "classProtocolPP_1_1jintegrity.html#a9607c4186fe3977dc84f1ea74214370d", null ]
 ];

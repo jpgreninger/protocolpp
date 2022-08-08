@@ -33,5 +33,6 @@ var classProtocolPP_1_1jtcp =
     [ "get_security", "classProtocolPP_1_1jtcp.html#af16398ac5730ea512006afccefe24139", null ],
     [ "set_field", "classProtocolPP_1_1jtcp.html#a892f999223384b06538527b5cb6d2653", null ],
     [ "set_hdr", "classProtocolPP_1_1jtcp.html#ade7bcdb0b8342429610cc2193a09ef93", null ],
+    [ "to_json", "classProtocolPP_1_1jtcp.html#a0c40a682adde28b508dd964e82f2da6b", null ],
     [ "to_xml", "classProtocolPP_1_1jtcp.html#ad009a4bd1a1b7d1f9f1b4c4cbe85f0bc", null ]
 ];

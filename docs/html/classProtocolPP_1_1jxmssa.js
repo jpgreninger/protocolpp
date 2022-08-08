@@ -8,5 +8,6 @@ var classProtocolPP_1_1jxmssa =
     [ "~jxmssa", "classProtocolPP_1_1jxmssa.html#abde6d10a557cb50d3f5de6fad986c3cb", null ],
     [ "get_field", "classProtocolPP_1_1jxmssa.html#a6b89dbab05694b71b5fbffcce4a5a17c", null ],
     [ "set_field", "classProtocolPP_1_1jxmssa.html#a5382fd6f1c63be973c04d7388e052c68", null ],
+    [ "to_json", "classProtocolPP_1_1jxmssa.html#a5dbecf4691bb5315a332d8bf21915615", null ],
     [ "to_xml", "classProtocolPP_1_1jxmssa.html#a8273bad5923f199228b182115e019ea9", null ]
 ];

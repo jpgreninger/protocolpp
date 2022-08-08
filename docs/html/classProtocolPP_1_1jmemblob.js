@@ -11,5 +11,6 @@ var classProtocolPP_1_1jmemblob =
     [ "get_security", "classProtocolPP_1_1jmemblob.html#af731af305976e29b41d400a70eea9a99", null ],
     [ "set_field", "classProtocolPP_1_1jmemblob.html#aaa8871dd6c3cfb415c2c928c68171652", null ],
     [ "set_hdr", "classProtocolPP_1_1jmemblob.html#ac940f289abb53ef6bbf1e133e86c6894", null ],
+    [ "to_json", "classProtocolPP_1_1jmemblob.html#a86de30a50e96691a3d1f86734331a886", null ],
     [ "to_xml", "classProtocolPP_1_1jmemblob.html#a2e23af801a4e97adcec11f73d8a6c0d1", null ]
 ];

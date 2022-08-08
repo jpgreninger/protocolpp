@@ -13,5 +13,6 @@ var classProtocolPP_1_1jtls13 =
     [ "hkdf_extract", "classProtocolPP_1_1jtls13.html#af9e0c9bb6a40cdc9885be7c6482d7c4a", null ],
     [ "set_field", "classProtocolPP_1_1jtls13.html#a118a9b26da725d3593a48ffec44161d1", null ],
     [ "set_hdr", "classProtocolPP_1_1jtls13.html#a7f08fcc218f7a28fbbf6edc1fd342942", null ],
+    [ "to_json", "classProtocolPP_1_1jtls13.html#a6a5acc3d0ec75f0e11ead96cea2e1209", null ],
     [ "to_xml", "classProtocolPP_1_1jtls13.html#a7a237b320a53982c516882d0070979ab", null ]
 ];

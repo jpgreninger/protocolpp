@@ -8,5 +8,6 @@ var classProtocolPP_1_1jrsasa =
     [ "~jrsasa", "classProtocolPP_1_1jrsasa.html#ad83f98ab8838d8261ac65db1ddfa2a5d", null ],
     [ "get_field", "classProtocolPP_1_1jrsasa.html#a4f2167d38051f2bae6d121ad3878ae51", null ],
     [ "set_field", "classProtocolPP_1_1jrsasa.html#a1c9f8389551c74cc75599021fbb58517", null ],
+    [ "to_json", "classProtocolPP_1_1jrsasa.html#a2774a07b842659294ba36fd00e123a13", null ],
     [ "to_xml", "classProtocolPP_1_1jrsasa.html#a0d4ec0d543399af1aecc42bdf400fee7", null ]
 ];

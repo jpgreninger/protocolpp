@@ -11,5 +11,6 @@ var classProtocolPP_1_1jicmp =
     [ "get_security", "classProtocolPP_1_1jicmp.html#aec79cbda11f17bf83463ff3609844fb1", null ],
     [ "set_field", "classProtocolPP_1_1jicmp.html#ae30c8b4a603079e6d1bdf6440ca97e49", null ],
     [ "set_hdr", "classProtocolPP_1_1jicmp.html#a82f01ccba969e314878e91feea226fd6", null ],
+    [ "to_json", "classProtocolPP_1_1jicmp.html#a81fb4e842f0f4e17b6ca3facc3e4375a", null ],
     [ "to_xml", "classProtocolPP_1_1jicmp.html#ae72087749bdfbcaa78f78740846eaf73", null ]
 ];

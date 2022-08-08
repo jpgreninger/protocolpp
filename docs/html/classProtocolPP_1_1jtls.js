@@ -14,5 +14,6 @@ var classProtocolPP_1_1jtls =
     [ "hkdf_extract", "classProtocolPP_1_1jtls.html#a40c57c562288d26493ab5e2e8a7abc6b", null ],
     [ "set_field", "classProtocolPP_1_1jtls.html#a03bb13c9b96ba734fa96181338d0d57c", null ],
     [ "set_hdr", "classProtocolPP_1_1jtls.html#a4b26b89f8861bbf70aeeb921c360f02a", null ],
+    [ "to_json", "classProtocolPP_1_1jtls.html#a754ad43f4387da80e34fcbfb0b00c6fd", null ],
     [ "to_xml", "classProtocolPP_1_1jtls.html#abe2edaa227ae4b68c24edd05d6f1729c", null ]
 ];

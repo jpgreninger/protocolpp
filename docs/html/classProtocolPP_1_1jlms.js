@@ -13,6 +13,7 @@ var classProtocolPP_1_1jlms =
     [ "set_field", "classProtocolPP_1_1jlms.html#a94a9428a28baa6df0fc7028cddf4a78d", null ],
     [ "set_hdr", "classProtocolPP_1_1jlms.html#a8e58fd8e2a4c95f43324fb1ff1206010", null ],
     [ "sign", "classProtocolPP_1_1jlms.html#af8ae609471cf17c0dc0d44a4205e84e0", null ],
+    [ "to_json", "classProtocolPP_1_1jlms.html#a47ea0d14f30f009b2bc9073190226e27", null ],
     [ "to_xml", "classProtocolPP_1_1jlms.html#ade894e2edffc14eeac3684d0dbda3f4f", null ],
     [ "verify", "classProtocolPP_1_1jlms.html#a151f417a1c6dd07c6fca56df56881071", null ]
 ];

@@ -13,5 +13,6 @@ var classProtocolPP_1_1judp =
     [ "get_security", "classProtocolPP_1_1judp.html#aee00df1e25d5db9e177785e4ee6080f5", null ],
     [ "set_field", "classProtocolPP_1_1judp.html#a1266aea0090237c171dd840d87ee9228", null ],
     [ "set_hdr", "classProtocolPP_1_1judp.html#af5e8715fff0f2dab5a7734cf84fd9079", null ],
+    [ "to_json", "classProtocolPP_1_1judp.html#a26511edb09060c8a7413edd9b2c2021b", null ],
     [ "to_xml", "classProtocolPP_1_1judp.html#a9e69d8377ebc210dbf0a4918f6b6e84a", null ]
 ];

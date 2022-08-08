@@ -15,6 +15,7 @@ var classProtocolPP_1_1jxmss =
     [ "set_hdr", "classProtocolPP_1_1jxmss.html#aac93447b3c28441dba39e5787c92589f", null ],
     [ "sign", "classProtocolPP_1_1jxmss.html#a4c7d680a547e2533b44b814b519d9fc2", null ],
     [ "sign_nist", "classProtocolPP_1_1jxmss.html#a2a935d3618fb86826eb3f3edca4a525e", null ],
+    [ "to_json", "classProtocolPP_1_1jxmss.html#a88a6d4e7595458f975870b795e826147", null ],
     [ "to_xml", "classProtocolPP_1_1jxmss.html#a299cdb922014912c167e0db1ab56af58", null ],
     [ "verify", "classProtocolPP_1_1jxmss.html#ad1e57854db2b1cc8da2bc820e56fc788", null ]
 ];

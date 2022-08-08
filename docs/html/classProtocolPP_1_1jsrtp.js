@@ -13,5 +13,6 @@ var classProtocolPP_1_1jsrtp =
     [ "set_field", "classProtocolPP_1_1jsrtp.html#a199c8d0848de6d35c2f4f767ddc606ae", null ],
     [ "set_field", "classProtocolPP_1_1jsrtp.html#a36d6ab3152684983c3335476ac0015ae", null ],
     [ "set_hdr", "classProtocolPP_1_1jsrtp.html#aae7e10bba55959092918261a0f3841c5", null ],
+    [ "to_json", "classProtocolPP_1_1jsrtp.html#a411fe8d2f12ebc94cd4a5f5513ed919f", null ],
     [ "to_xml", "classProtocolPP_1_1jsrtp.html#a7006a0c42eae273f63b9ae948d906c7e", null ]
 ];

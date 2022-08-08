@@ -13,5 +13,6 @@ var classProtocolPP_1_1jwifi =
     [ "prf", "classProtocolPP_1_1jwifi.html#a872875da42c1e0578ecf6c4e8d4ee66b", null ],
     [ "set_field", "classProtocolPP_1_1jwifi.html#a5a0f6ffcc01ec71f81844c8c588b08a6", null ],
     [ "set_hdr", "classProtocolPP_1_1jwifi.html#ae5f5d431089fa5a64565419cf32f5bbc", null ],
+    [ "to_json", "classProtocolPP_1_1jwifi.html#ae7ea3cc08a799729673d19c835f123be", null ],
     [ "to_xml", "classProtocolPP_1_1jwifi.html#acdd01db93df7fb913e464a4f8898255e", null ]
 ];
