@@ -173,7 +173,7 @@ For W.A.S.P usage, see the doxygen section
 
 * See www.protocolpp.com for further updates, information and licensing
 
-* Protocol++® (Protocolpp®) - 5.3.1 released June 28, 2022
+* Protocol++® (Protocolpp®) - 5.3.2 released August 8, 2022
   * All updates documented in the paid version RELEASE file
   * All releases now encrypted, if yours isn't, it's a fake
   * Bumped version
