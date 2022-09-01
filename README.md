@@ -176,6 +176,11 @@ For W.A.S.P usage, see the doxygen section
 * Protocol++® (Protocolpp®) - 5.3.2 released August 8, 2022
   * All updates documented in the paid version RELEASE file
   * All releases now encrypted, if yours isn't, it's a fake
+  * JSON support
+    * XML -> JSON
+    * XML -> XML
+    * JSON -> XML
+    * JSON -> JSON
   * Bumped version
   * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=dfe709cd0329410d8bebb7ae75aab9ac&wix-vod-comp-id=comp-j2ddnt1i
   
