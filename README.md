@@ -137,10 +137,6 @@ Please see the documentation found above and www.protocolpp.com for all options
 
 INSTALLATION
 
-To install Protocol++®, the cryptopp library must first be compiled and installed
-
-www.cryptopp.com
-
 ```
 [jgreninger@localhost protocol++]$ ./protocolpp --help
 ******************************************************
