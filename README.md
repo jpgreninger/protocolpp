@@ -180,6 +180,7 @@ For W.A.S.P usage, see the doxygen section
     * Added SM support to TLS v1.3 (RFC8998)
   * Many edits to make the code more efficient
   * Documentation Updates
+  * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=b476cddf732040089759683c20c4b926&wix-vod-comp-id=comp-j2ddnt1i
   
 * Protocol++® (Protocolpp®) - 5.3.2 released August 8, 2022
   * All updates documented in the paid version RELEASE file
