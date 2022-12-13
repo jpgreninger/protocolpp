@@ -1,7 +1,4 @@
-# Protocolpp®(Protocol++®) 5.3.2 Released August 8, 2022! - www.protocolpp.com/shop
-Networking and Encryption Library, Testbench, and Drivers
-
-# Protocolpp®(Protocol++®) 5.4.0 Upcoming January 1, 2023!
+# Protocolpp®(Protocol++®) 5.4.0 Released December 15, 2022!
 https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=3efb679155eb441bb8218132708ffc6e&wix-vod-comp-id=comp-j2ddnt1i
 
 Only www.protocolpp.com has the rights to update, modify,
@@ -172,6 +169,18 @@ For W.A.S.P usage, see the doxygen section
 
 * See www.protocolpp.com for further updates, information and licensing
 
+* Protocol++® (Protocolpp®) - 5.4.0 released December 15, 2022
+  * All updates documented in the paid version RELEASE file
+  * All releases now encrypted, if yours isn't, it's a fake
+  * Added the following protocols
+    * Extended GRE
+    * NVGRE
+    * VXLAN
+    * DTLS v1.3 (RFC 9147) with SM support (RFC8998)
+    * Added SM support to TLS v1.3 (RFC8998)
+  * Many edits to make the code more efficient
+  * Documentation Updates
+  
 * Protocol++® (Protocolpp®) - 5.3.2 released August 8, 2022
   * All updates documented in the paid version RELEASE file
   * All releases now encrypted, if yours isn't, it's a fake
@@ -182,7 +191,6 @@ For W.A.S.P usage, see the doxygen section
     * JSON -> JSON
   * Bumped version
   * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=dfe709cd0329410d8bebb7ae75aab9ac&wix-vod-comp-id=comp-j2ddnt1i
-  
   
 * Protocol++® (Protocolpp®) - 5.3.1 released June 28, 2022
   * All updates documented in the paid version RELEASE file
