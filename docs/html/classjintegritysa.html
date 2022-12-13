@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++(Protocolpp)
-   &#160;<span id="projectnumber">5.3.2</span>
+   &#160;<span id="projectnumber">5.4.0</span>
    </div>
   </td>
  </tr>
@@ -114,13 +114,13 @@ MD5 Message-Digest Algorithm</h1>
 <p>Historically, MD5 has been used to store a one-way hash of a password, often with key stretching. NIST does not include MD5 in their list of recommended hashes for password storage</p>
 <p>MD5 is also used in the field of electronic discovery, in order to provide a unique identifier for each document that is exchanged during the legal discovery process. This method can be used to replace the Bates stamp numbering system that has been used for decades during the exchange of paper documents. As above, this usage should be discouraged due to the ease of collision attacks</p>
 <p><b>Algorithm</b></p>
-<p>MD5 processes a variable-length message into a fixed-length output of 128 bits. The input message is broken up into chunks of 512-bit blocks (sixteen 32-bit words); the message is padded so that its length is divisible by 512. The padding works as follows: first a single bit, 1, is appended to the end of the message. This is followed by as many zeros as are required to bring the length of the message up to 64 bits fewer than a multiple of 512. The remaining bits are filled up with 64 bits representing the length of the original message, modulo <img class="formulaInl" alt="$ {2}^{64} $" src="form_310.png"/></p>
+<p>MD5 processes a variable-length message into a fixed-length output of 128 bits. The input message is broken up into chunks of 512-bit blocks (sixteen 32-bit words); the message is padded so that its length is divisible by 512. The padding works as follows: first a single bit, 1, is appended to the end of the message. This is followed by as many zeros as are required to bring the length of the message up to 64 bits fewer than a multiple of 512. The remaining bits are filled up with 64 bits representing the length of the original message, modulo <img class="formulaInl" alt="$ {2}^{64} $" src="form_313.png"/></p>
 <p>The main MD5 algorithm operates on a 128-bit state, divided into four 32-bit words, denoted <em>A, B, C,</em> and <em>D</em>. These are initialized to certain fixed constants. The main algorithm then uses each 512-bit message block in turn to modify the state. The processing of a message block consists of four similar stages, termed rounds; each round is composed of 16 similar operations based on a non-linear function <em>F</em>, modular addition, and left rotation. The figure below illustrates one operation within a round. There are four possible functions, a different one is used in each round:</p>
-<p><img class="formulaInl" alt="$ F(B, C, D) = (B \wedge C) \vee (\neg B \wedge D) $" src="form_311.png"/></p>
-<p><img class="formulaInl" alt="$ G(B, C, D) = (B \wedge D) \vee (C \wedge \neg D) $" src="form_312.png"/></p>
-<p><img class="formulaInl" alt="$ H(B, C, D) = B \oplus C \oplus D $" src="form_313.png"/></p>
-<p><img class="formulaInl" alt="$ I(B, C, D) = C \oplus (B \vee \neg D) $" src="form_314.png"/></p>
-<p><img class="formulaInl" alt="$ \oplus, \wedge, \vee, \neg $" src="form_315.png"/> denote the XOR, AND, OR and NOT operations respectively</p>
+<p><img class="formulaInl" alt="$ F(B, C, D) = (B \wedge C) \vee (\neg B \wedge D) $" src="form_314.png"/></p>
+<p><img class="formulaInl" alt="$ G(B, C, D) = (B \wedge D) \vee (C \wedge \neg D) $" src="form_315.png"/></p>
+<p><img class="formulaInl" alt="$ H(B, C, D) = B \oplus C \oplus D $" src="form_316.png"/></p>
+<p><img class="formulaInl" alt="$ I(B, C, D) = C \oplus (B \vee \neg D) $" src="form_317.png"/></p>
+<p><img class="formulaInl" alt="$ \oplus, \wedge, \vee, \neg $" src="form_318.png"/> denote the XOR, AND, OR and NOT operations respectively</p>
 <div class="image">
 <img src="MD5Algorithm25.png" alt="MD5Algorithm25.png"/>
 </div>
@@ -135,17 +135,17 @@ HMAC-SHA</h1>
 <p>HMAC does not encrypt the message. Instead, the message (encrypted or not) must be sent alongside the HMAC hash. Parties with the secret key will hash the message again themselves, and if it is authentic, the received and computed hashes will match</p>
 <p>The definition and analysis of the HMAC construction was first published in 1996 in a paper by Mihir Bellare, Ran Canetti, and Hugo Krawczyk,[1] and they also wrote RFC 2104 in 1997. The 1996 paper also defined a variant called NMAC. FIPS PUB 198 generalizes and standardizes the use of HMACs. HMAC is used within the IPsec and TLS protocols and for JSON Web Token</p>
 <p>This definition is taken from RFC 2104:</p>
-<p><img class="formulaInl" alt="$ HMAC(K,m) = H(({K}^{'}\oplus opad) \parallel H(({K}^{'}\oplus ipad) \parallel m)) $" src="form_316.png"/></p>
-<p><img class="formulaInl" alt="$ {K}^{'} = H(K) - if K is larger than block size$" src="form_317.png"/></p>
-<p><img class="formulaInl" alt="$ {K}^{'} = K - otherwise$" src="form_318.png"/></p>
+<p><img class="formulaInl" alt="$ HMAC(K,m) = H(({K}^{'}\oplus opad) \parallel H(({K}^{'}\oplus ipad) \parallel m)) $" src="form_319.png"/></p>
+<p><img class="formulaInl" alt="$ {K}^{'} = H(K) - if K is larger than block size$" src="form_320.png"/></p>
+<p><img class="formulaInl" alt="$ {K}^{'} = K - otherwise$" src="form_321.png"/></p>
 <p>where</p>
 <ul>
 <li><em>H</em> is a cryptographic hash function</li>
 <li><em>m</em> is the message to be authenticated</li>
 <li><em>K</em> is a secret key</li>
 <li><em>K'</em> is a block-sized key derived from the secret key, K; either by padding to the right with 0s up to the block size, or by hashing down to less than the block size first and then padding to the right with zeros</li>
-<li><img class="formulaInl" alt="$ \parallel$" src="form_319.png"/> denotes concatenation</li>
-<li><img class="formulaInl" alt="$ \oplus$" src="form_320.png"/> denotes bitwise exclusive or (XOR)</li>
+<li><img class="formulaInl" alt="$ \parallel$" src="form_322.png"/> denotes concatenation</li>
+<li><img class="formulaInl" alt="$ \oplus$" src="form_323.png"/> denotes bitwise exclusive or (XOR)</li>
 <li><em>opad</em> is the block-sized outer padding, consisting of repeated bytes valued 0x5c</li>
 <li><em>ipad</em> is the block-sized inner padding, consisting of repeated bytes valued 0x36</li>
 </ul>
@@ -161,22 +161,22 @@ AES-CMAC and AES-XCBC-MAC</h1>
 <div class="image">
 <img src="CMACcalc50.png" alt="CMACcalc50.png"/>
 </div>
- <p>To generate an l-bit CMAC tag (t) of a message (m) using a b-bit block cipher (E) and a secret key (k), one first generates two b-bit sub-keys (k1 and k2) using the following algorithm (this is equivalent to multiplication by x and x2 in a finite field GF(2b)). Let <img class="formulaInl" alt="$ \ll $" src="form_321.png"/> denote the standard left-shift operator and <img class="formulaInl" alt="$ \oplus $" src="form_5.png"/> denote bit-wise exclusive or:</p>
+ <p>To generate an l-bit CMAC tag (t) of a message (m) using a b-bit block cipher (E) and a secret key (k), one first generates two b-bit sub-keys (k1 and k2) using the following algorithm (this is equivalent to multiplication by x and x2 in a finite field GF(2b)). Let <img class="formulaInl" alt="$ \ll $" src="form_324.png"/> denote the standard left-shift operator and <img class="formulaInl" alt="$ \oplus $" src="form_5.png"/> denote bit-wise exclusive or:</p>
 <ol type="1">
 <li>Calculate a temporary value k0 = Ek(0)</li>
-<li>If msb(k0) = 0, then k1 = k0 <img class="formulaInl" alt="$ \ll $" src="form_321.png"/> 1, else k1 = (k0 <img class="formulaInl" alt="$ \ll $" src="form_321.png"/> 1) <img class="formulaInl" alt="$ \oplus $" src="form_5.png"/> C; where C is a certain constant that depends only on b. (Specifically, C is the non-leading coefficients of the lexicographically first irreducible degree-b binary polynomial with the minimal number of ones: 0x1B for 64-bit, 0x87 for 128-bit, and 0x425 for 256-bit blocks)</li>
-<li>If msb(k1) = 0, then k2 = k1 <img class="formulaInl" alt="$ \ll $" src="form_321.png"/> 1, else k2 = (k1 <img class="formulaInl" alt="$ \ll $" src="form_321.png"/> 1) <img class="formulaInl" alt="$ \oplus $" src="form_5.png"/> C</li>
+<li>If msb(k0) = 0, then k1 = k0 <img class="formulaInl" alt="$ \ll $" src="form_324.png"/> 1, else k1 = (k0 <img class="formulaInl" alt="$ \ll $" src="form_324.png"/> 1) <img class="formulaInl" alt="$ \oplus $" src="form_5.png"/> C; where C is a certain constant that depends only on b. (Specifically, C is the non-leading coefficients of the lexicographically first irreducible degree-b binary polynomial with the minimal number of ones: 0x1B for 64-bit, 0x87 for 128-bit, and 0x425 for 256-bit blocks)</li>
+<li>If msb(k1) = 0, then k2 = k1 <img class="formulaInl" alt="$ \ll $" src="form_324.png"/> 1, else k2 = (k1 <img class="formulaInl" alt="$ \ll $" src="form_324.png"/> 1) <img class="formulaInl" alt="$ \oplus $" src="form_5.png"/> C</li>
 <li>Return keys (k1, k2) for the MAC generation process</li>
 </ol>
 <p>As a small example, suppose b = 4, C = 00112, and k0 = Ek(0) = 01012. Then k1 = 10102 and k2 = 0100 ⊕ 0011 = 01112.</p>
 <p>The CMAC tag generation process is as follows:</p>
 <ol type="1">
-<li>Divide message into b-bit blocks m = m1 <img class="formulaInl" alt="$ \parallel $" src="form_322.png"/> ... <img class="formulaInl" alt="$ \parallel $" src="form_322.png"/> mn−1 <img class="formulaInl" alt="$ \parallel $" src="form_322.png"/> mn, where m1, ..., mn−1 are complete blocks. (The empty message is treated as one incomplete block)</li>
-<li>If mn is a complete block then mn' = k1 <img class="formulaInl" alt="$ \oplus $" src="form_5.png"/> mn else mn' = k2 <img class="formulaInl" alt="$ \oplus $" src="form_5.png"/> (mn <img class="formulaInl" alt="$ \parallel 10...0_2) $" src="form_323.png"/></li>
+<li>Divide message into b-bit blocks m = m1 <img class="formulaInl" alt="$ \parallel $" src="form_325.png"/> ... <img class="formulaInl" alt="$ \parallel $" src="form_325.png"/> mn−1 <img class="formulaInl" alt="$ \parallel $" src="form_325.png"/> mn, where m1, ..., mn−1 are complete blocks. (The empty message is treated as one incomplete block)</li>
+<li>If mn is a complete block then mn' = k1 <img class="formulaInl" alt="$ \oplus $" src="form_5.png"/> mn else mn' = k2 <img class="formulaInl" alt="$ \oplus $" src="form_5.png"/> (mn <img class="formulaInl" alt="$ \parallel 10...0_2) $" src="form_326.png"/></li>
 <li>Let c0 = 00...02</li>
-<li>For i = 1,..., n−1, calculate <img class="formulaInl" alt="$ c_i = E_k(c_i−1 \oplus m_i) $" src="form_324.png"/></li>
-<li><img class="formulaInl" alt="$ c_n = E_k(c_n−1 \oplus m_n) $" src="form_325.png"/></li>
-<li><img class="formulaInl" alt="$ Output t = msb_l(c_n) $" src="form_326.png"/></li>
+<li>For i = 1,..., n−1, calculate <img class="formulaInl" alt="$ c_i = E_k(c_i−1 \oplus m_i) $" src="form_327.png"/></li>
+<li><img class="formulaInl" alt="$ c_n = E_k(c_n−1 \oplus m_n) $" src="form_328.png"/></li>
+<li><img class="formulaInl" alt="$ Output t = msb_l(c_n) $" src="form_329.png"/></li>
 </ol>
 <p>The verification process is as follows:</p>
 <ol type="1">
@@ -253,7 +253,7 @@ Cycle Redundency Check (CRC)</h1>
 <p>Firstly, as there is no authentication, an attacker can edit a message and recompute the CRC without the substitution being detected. When stored alongside the data, CRCs and cryptographic hash functions by themselves do not protect against intentional modification of data. Any application that requires protection against such attacks must use cryptographic authentication mechanisms, such as message authentication codes or digital signatures (which are commonly based on cryptographic hash functions)</p>
 <p>Secondly, unlike cryptographic hash functions, CRC is an easily reversible function, which makes it unsuitable for use in digital signatures</p>
 <p>Thirdly, CRC is a linear function with a property that</p>
-<p><img class="formulaInl" alt="$ crc(x \oplus y \oplus z) = crc(x) \oplus crc(y) \oplus crc(z) $" src="form_327.png"/></p>
+<p><img class="formulaInl" alt="$ crc(x \oplus y \oplus z) = crc(x) \oplus crc(y) \oplus crc(z) $" src="form_330.png"/></p>
 <p>as a result, even if the CRC is encrypted with a stream cipher that uses XOR as its combining operation (or mode of block cipher which effectively turns it into a stream cipher, such as OFB or CFB), both the message and the associated CRC can be manipulated without knowledge of the encryption key; this was one of the well-known design flaws of the Wired Equivalent Privacy (WEP) protocol</p>
 <h1><a class="anchor" id="SM3hashSA"></a>
 SM3 Hash Algorithm</h1>
@@ -281,22 +281,22 @@ Definitions and Terms</h2>
 <h2><a class="anchor" id="ITERSA"></a>
 Iteration Procedure</h2>
 <p>The procedure is:</p>
-<p>Divide the message <img class="formulaInl" alt="$ {M}^{'}$" src="form_328.png"/> after padding into 512 bit blocks:</p>
-<p><img class="formulaInl" alt="$ {M}^{'} = B_0, B_1 ... B_{n-1} where n=\frac{l+k+65}{512}$" src="form_329.png"/></p>
-<p>Apply iteration operation to <img class="formulaInl" alt="$ {M}^{'}$" src="form_328.png"/> as follows:</p>
+<p>Divide the message <img class="formulaInl" alt="$ {M}^{'}$" src="form_331.png"/> after padding into 512 bit blocks:</p>
+<p><img class="formulaInl" alt="$ {M}^{'} = B_0, B_1 ... B_{n-1} where n=\frac{l+k+65}{512}$" src="form_332.png"/></p>
+<p>Apply iteration operation to <img class="formulaInl" alt="$ {M}^{'}$" src="form_331.png"/> as follows:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\begin{eqnarray*} FOR&amp;i=&amp;0..n-1 \\ V(i+1) &amp;=&amp; CF(V(i),B(i)) \\ ENDFOR \end{eqnarray*}" src="form_330.png"/>
+<img class="formulaDsp" alt="\begin{eqnarray*} FOR&amp;i=&amp;0..n-1 \\ V(i+1) &amp;=&amp; CF(V(i),B(i)) \\ ENDFOR \end{eqnarray*}" src="form_333.png"/>
 </p>
 <p>where CF is the compression function, V(0) is a 256 bit of IV[not], B(i) is a message block after padding, and the result after iterative compression is V(n)</p>
 <h2><a class="anchor" id="MSGEXTSA"></a>
 Message Extension</h2>
 <p>Divide the message block B(i) into 32-bit words, then apply the words into the compression function:</p>
-<p>a) divide message block B(i) into 16 words <img class="formulaInl" alt="$ W_0, W_1, ... , W_15$" src="form_331.png"/></p>
+<p>a) divide message block B(i) into 16 words <img class="formulaInl" alt="$ W_0, W_1, ... , W_15$" src="form_334.png"/></p>
 <p>b) </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\begin{eqnarray*} FOR&amp;j=&amp;16..67 \\ W_j &amp;=&amp; P_1(W_{j-16} \oplus W_{j-9} \oplus (W_{j-3} &lt;&lt;&lt; 15)) \oplus (W_{j-13} &lt;&lt;&lt; 7) \oplus W_{j-6} \\ ENDFOR \\ \end{eqnarray*}" src="form_332.png"/>
+<img class="formulaDsp" alt="\begin{eqnarray*} FOR&amp;j=&amp;16..67 \\ W_j &amp;=&amp; P_1(W_{j-16} \oplus W_{j-9} \oplus (W_{j-3} &lt;&lt;&lt; 15)) \oplus (W_{j-13} &lt;&lt;&lt; 7) \oplus W_{j-6} \\ ENDFOR \\ \end{eqnarray*}" src="form_335.png"/>
 </p>
 <p>c) </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\begin{eqnarray*} FOR&amp;j=&amp;0..63 \\ {W}^{'}_j &amp;=&amp; W_j \oplus W_(j+4) \\ ENDFOR \\ \end{eqnarray*}" src="form_333.png"/>
+<img class="formulaDsp" alt="\begin{eqnarray*} FOR&amp;j=&amp;0..63 \\ {W}^{'}_j &amp;=&amp; W_j \oplus W_(j+4) \\ ENDFOR \\ \end{eqnarray*}" src="form_336.png"/>
 </p>
 <h2><a class="anchor" id="COMPFUNCSA"></a>
 Compression function</h2>
@@ -305,17 +305,17 @@ Compression function</h2>
 <li>Let SS1, SS2, TT1 and TT2 be intermediate variables</li>
 </ul>
 <p>The compression function is as follows:</p>
-<p><img class="formulaInl" alt="$ V_(i+1) = CF(V(i),B(i)) where 0 A!U i A!U n $" src="form_334.png"/></p>
+<p><img class="formulaInl" alt="$ V_(i+1) = CF(V(i),B(i)) where 0 A!U i A!U n $" src="form_337.png"/></p>
 <p>The computation precedure is as follows:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\begin{eqnarray*} ABCDEFGH &amp;=&amp; V(i) \\ FOR &amp; j= &amp;0..63 \\ SS1 &amp;=&amp; (((RK[0] &lt;&lt;&lt; 12) + RK[4] + (T_j &lt;&lt;&lt; j)) &lt;&lt;&lt; 7) \\ SS2 &amp;=&amp; SS1 \oplus (RK[0] &lt;&lt;&lt; 12) \\ TT1 &amp;=&amp; FF_j(RK[0], RK[1], RK[2]) + RK[3] + SS2 + {W}^{'}_j \\ TT1 &amp;=&amp; GG_j(RK[4], RK[5], RK[6]) + RK[7] + SS1 + W_j \\ RK[3] &amp;=&amp; RK[2] \\ RK[2] &amp;=&amp; (RK[1] &lt;&lt;&lt; 9) \\ RK[1] &amp;=&amp; RK[0] \\ RK[0] &amp;=&amp; TT1 \\ RK[7] &amp;=&amp; RK[6] \\ RK[6] &amp;=&amp; (RK[5] &lt;&lt;&lt; 19) \\ RK[5] &amp;=&amp; RK[4] \\ RK[4] &amp;=&amp; P0(TT2) \\ ENDFOR \\ \end{eqnarray*}" src="form_335.png"/>
+<img class="formulaDsp" alt="\begin{eqnarray*} ABCDEFGH &amp;=&amp; V(i) \\ FOR &amp; j= &amp;0..63 \\ SS1 &amp;=&amp; (((RK[0] &lt;&lt;&lt; 12) + RK[4] + (T_j &lt;&lt;&lt; j)) &lt;&lt;&lt; 7) \\ SS2 &amp;=&amp; SS1 \oplus (RK[0] &lt;&lt;&lt; 12) \\ TT1 &amp;=&amp; FF_j(RK[0], RK[1], RK[2]) + RK[3] + SS2 + {W}^{'}_j \\ TT1 &amp;=&amp; GG_j(RK[4], RK[5], RK[6]) + RK[7] + SS1 + W_j \\ RK[3] &amp;=&amp; RK[2] \\ RK[2] &amp;=&amp; (RK[1] &lt;&lt;&lt; 9) \\ RK[1] &amp;=&amp; RK[0] \\ RK[0] &amp;=&amp; TT1 \\ RK[7] &amp;=&amp; RK[6] \\ RK[6] &amp;=&amp; (RK[5] &lt;&lt;&lt; 19) \\ RK[5] &amp;=&amp; RK[4] \\ RK[4] &amp;=&amp; P0(TT2) \\ ENDFOR \\ \end{eqnarray*}" src="form_338.png"/>
 </p>
-<p><img class="formulaInl" alt="$ V(i+1) = ABCDEFGH \oplus V(i)$" src="form_336.png"/></p>
+<p><img class="formulaInl" alt="$ V(i+1) = ABCDEFGH \oplus V(i)$" src="form_339.png"/></p>
 <p>where a word is stored in memory as big-endian format</p>
 <h2><a class="anchor" id="SM3HASHVALSA"></a>
 Hash Value</h2>
-<p><img class="formulaInl" alt="$ ABCDEFGH = V(n)$" src="form_337.png"/></p>
-<p>The 256 bits of the hash value is <img class="formulaInl" alt="$ y=ABCDEFGH$" src="form_338.png"/></p>
+<p><img class="formulaInl" alt="$ ABCDEFGH = V(n)$" src="form_340.png"/></p>
+<p>The 256 bits of the hash value is <img class="formulaInl" alt="$ y=ABCDEFGH$" src="form_341.png"/></p>
 <p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jintegritysa.html">ProtocolPP::jintegritysa</a> </dd>
 <dd>
 <a class="el" href="classProtocolPP_1_1jsnow3g.html">ProtocolPP::jsnow3g</a> </dd>
@@ -362,7 +362,7 @@ Hash Value</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjintegritysa.html">jintegritysa</a></li>
-    <li class="footer">Generated on Sun Aug 7 2022 16:51:29 for Protocol++(Protocolpp) by
+    <li class="footer">Generated on Mon Dec 12 2022 21:29:57 for Protocol++(Protocolpp) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

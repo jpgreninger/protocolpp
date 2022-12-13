@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++(Protocolpp)
-   &#160;<span id="projectnumber">5.3.2</span>
+   &#160;<span id="projectnumber">5.4.0</span>
    </div>
   </td>
  </tr>
@@ -280,7 +280,13 @@ User Datagram Protocol (UDP)</h1>
 <p>Numerous key Internet applications use UDP, including: the Domain Name System (DNS), where queries must be fast and only consist of a single request followed by a single reply packet, the Simple Network Management Protocol (SNMP), the Routing Information Protocol (RIP) and the Dynamic Host Configuration Protocol (DHCP).</p>
 <p>Voice and video traffic is generally transmitted using UDP. Real-time video and audio streaming protocols are designed to handle occasional lost packets, so only slight degradation in quality occurs, rather than large delays if lost packets were retransmitted. Because both TCP and UDP run over the same network, many businesses are finding that a recent increase in UDP traffic from these real-time applications is hindering the performance of applications using TCP, such as point of sale, accounting, and database systems. When TCP detects packet loss, it will throttle back its data rate usage. Since both real-time and business applications are important to businesses, developing quality of service solutions is seen as crucial by some</p>
 <p>Some VPN systems such as OpenVPN may use UDP while implementing reliable connections and error checking at the application level.</p>
-<p>For the Protocol++&reg; interface to UDP see</p>
+<h1><a class="anchor" id="VXLANPROT"></a>
+Virtual eXtensible Local Area Network (VXLAN)</h1>
+<p>See RFC7348 for full details</p>
+<p>Current Layer 2 networks use the IEEE 802.1D Spanning Tree Protocol (STP) to avoid loops in the network due to duplicate paths. STP blocks the use of links to avoid the replication and looping of frames. Some data center operators see this as a problem with Layer 2 networks in general, since with STP they are effectively paying for more ports and links than they can really use. In addition, resiliency due to multipathing is not available with the STP model</p>
+<p>Newer initiatives, such as TRILL [RFC6325] and SPB [802.1aq], have been proposed to help with multipathing and surmount some of the problems with STP. STP limitations may also be avoided by configuring servers within a rack to be on the same Layer 3 network, with switching happening at Layer 3 both within the rack and between racks. However, this is incompatible with a Layer 2 model for inter-VM communication</p>
+<p>A key characteristic of Layer 2 data center networks is their use of Virtual LANs (VLANs) to provide broadcast isolation. A 12-bit VLAN ID is used in the Ethernet data frames to divide the larger Layer 2 network into multiple broadcast domains. This has served well for many data centers that require fewer than 4094 VLANs. With the growing adoption of virtualization, this upper limit is seeing pressure. Moreover, due to STP, several data centers limit the number of VLANs that could be used. In addition, requirements for multi-tenant environments accelerate the need for larger VLAN limits</p>
+<p>For the Protocol++&reg; interface to UDP and VXLAN see</p>
 <p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1judpsa.html">ProtocolPP::judpsa</a> </dd>
 <dd>
 <a class="el" href="classProtocolPP_1_1judp.html">ProtocolPP::judp</a> </dd>
@@ -314,6 +320,25 @@ Transport Control Protocol (TCP)</h1>
 <p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classjtcpsa.html">jtcpsa</a> </dd>
 <dd>
 <a class="el" href="classjtcp.html">jtcp</a> </dd>
+<dd>
+<a class="el" href="classjprotocolpp.html">jprotocolpp</a></dd></dl>
+<h1><a class="anchor" id="JGREPROT"></a>
+General Encapsulation Protocol (GRE)</h1>
+<p>See RFC2890, RFC2784, and RFC9187 for full details</p>
+<p>Generic Routing Encapsulation (GRE) specifies a protocol for encapsulation of an arbitrary protocol over another arbitrary network layer protocol. This document describes extensions by which three fields, Checksum, Key, and Sequence Number, can be optionally carried in the GRE Header</p>
+<h1><a class="anchor" id="JNVGREPROT"></a>
+Network Virtualization Using Generic Routing Encapsulation (NVGRE)</h1>
+<p>See RFC7637 for full details</p>
+<p>Conventional data center network designs cater to largely static workloads and cause fragmentation of network and server capacity. There are several issues that limit dynamic allocation and consolidation of capacity. Layer 2 networks use the Rapid Spanning Tree Protocol (RSTP), which is designed to eliminate loops by blocking redundant paths. These eliminated paths translate to wasted capacity and a highly oversubscribed network. There are alternative approaches such as the Transparent Interconnection of Lots of Links (TRILL) that address this problem</p>
+<p>The network utilization inefficiencies are exacerbated by network fragmentation due to the use of VLANs for broadcast isolation. VLANs are used for traffic management and also as the mechanism for providing security and performance isolation among services belonging to different tenants. The Layer 2 network is carved into smaller-sized subnets (typically, one subnet per VLAN), with VLAN tags configured on all the Layer 2 switches connected to server racks that host a given tenant’s services. The current VLAN limits theoretically allow for 4,000 such subnets to be created. The size of the broadcast domain is typically restricted due to the overhead of broadcast traffic. The 4,000-subnet limit on VLANs is no longer sufficient in a shared infrastructure servicing multiple tenants</p>
+<p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jgresa.html">ProtocolPP::jgresa</a> </dd>
+<dd>
+<a class="el" href="classProtocolPP_1_1jgre.html">ProtocolPP::jgre</a> </dd>
+<dd>
+<a class="el" href="classProtocolPP_1_1jprotocolpp.html">ProtocolPP::jprotocolpp</a></dd></dl>
+<p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classjgresa.html">jgresa</a> </dd>
+<dd>
+<a class="el" href="classjgre.html">jgre</a> </dd>
 <dd>
 <a class="el" href="classjprotocolpp.html">jprotocolpp</a></dd></dl>
 <h1><a class="anchor" id="ICMPROT"></a>
@@ -475,10 +500,36 @@ Transport Layer Security (TLS)</h1>
 <dd>
 <a class="el" href="classProtocolPP_1_1jtls.html">ProtocolPP::jtls</a> </dd>
 <dd>
+<a class="el" href="classProtocolPP_1_1jtlsa13.html">ProtocolPP::jtlsa13</a> </dd>
+<dd>
+<a class="el" href="classProtocolPP_1_1jtls13.html">ProtocolPP::jtls13</a> </dd>
+<dd>
 <a class="el" href="classProtocolPP_1_1jprotocolpp.html">ProtocolPP::jprotocolpp</a></dd></dl>
 <p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classjtlsa.html">jtlsa</a> </dd>
 <dd>
 <a class="el" href="classjtls.html">jtls</a> </dd>
+<dd>
+<a class="el" href="classjtlsa13.html">jtlsa13</a> </dd>
+<dd>
+<a class="el" href="classjtls13.html">jtls13</a> </dd>
+<dd>
+<a class="el" href="classjprotocolpp.html">jprotocolpp</a></dd></dl>
+<h1><a class="anchor" id="DTLS13"></a>
+Datagram Transport Layer Security (DTLS) Version 1.3</h1>
+<p>See RFC9147 The Datagram Transport Layer Security (DTLS) Protocol Version 1.3</p>
+<p>The DTLS 1.3 protocol is based on the Transport Layer Security (TLS) 1.3 protocol and provides equivalent security guarantees with the exception of order protection / non-replayability. Datagram semantics of the underlying transport are preserved by the DTLS protocol</p>
+<p>The primary goal of the TLS protocol is to establish an authenticated, confidentiality- and integrity-protected channel between two communicating peers. The TLS protocol is composed of two layers: the TLS record protocol and the TLS handshake protocol. However, TLS must run over a reliable transport channel &ndash; typically TCP</p>
+<p>There are applications that use UDP [RFC0768] as a transport and the Datagram Transport Layer Security (DTLS) protocol has been developed to offer communication security protection for those applications. DTLS is deliberately designed to be as similar to TLS as possible, both to minimize new security invention and to maximize the amount of code and infrastructure reuse</p>
+<p>This specification describes the most current version of the DTLS protocol as a delta from TLS 1.3. It obsoletes DTLS 1.2</p>
+<p>For the Protocol++&reg; interface to DTLSv1.3 see</p>
+<p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jdtlsa13.html">ProtocolPP::jdtlsa13</a> </dd>
+<dd>
+<a class="el" href="classProtocolPP_1_1jdtls13.html">ProtocolPP::jdtls13</a> </dd>
+<dd>
+<a class="el" href="classProtocolPP_1_1jprotocolpp.html">ProtocolPP::jprotocolpp</a></dd></dl>
+<p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classjdtlsa13.html">jdtlsa13</a> </dd>
+<dd>
+<a class="el" href="classjdtls13.html">jdtls13</a> </dd>
 <dd>
 <a class="el" href="classjprotocolpp.html">jprotocolpp</a></dd></dl>
 <h1><a class="anchor" id="IKE"></a>
@@ -515,13 +566,13 @@ Internet Key Exchange Version 2 (IKEv2)</h1>
 <a class="el" href="classjprotocolpp.html">jprotocolpp</a></dd></dl>
 <h1><a class="anchor" id="DHKeyAgree"></a>
 Diffie-Hellman Key Agreement</h1>
-<p>See RFC 2631 Diffie-Hellman Key Agreement Method</p>
-<p>See RFC 3526 More MODP Diffie-Hellman Groups for Internet Key Exchange (IKE)</p>
-<p>See RFC 5114 Additional Diffie-Hellman Groups for IETF Standards</p>
-<p>See RFC 5903 Elliptic Curve Groups modA prime (ECP Groups) for IKE and IKEv2</p>
-<p>See RFC 6954 Using the Elliptic Curve Cryptography (ECC) Brainpool Curves for the Internet Key Exchange Protocol Version 2 (IKEv2)</p>
-<p>See RFC 6989 Additional Diffie-Hellman Test for Internet Key Exchange (IKE)</p>
-<p>See RFC 8031 Curve25519 and Curve448 for the IKEv2 Key Agreement</p>
+<p>See RFC2631 Diffie-Hellman Key Agreement Method</p>
+<p>See RFC3526 More MODP Diffie-Hellman Groups for Internet Key Exchange (IKE)</p>
+<p>See RFC5114 Additional Diffie-Hellman Groups for IETF Standards</p>
+<p>See RFC5903 Elliptic Curve Groups modA prime (ECP Groups) for IKE and IKEv2</p>
+<p>See RFC6954 Using the Elliptic Curve Cryptography (ECC) Brainpool Curves for the Internet Key Exchange Protocol Version 2 (IKEv2)</p>
+<p>See RFC6989 Additional Diffie-Hellman Test for Internet Key Exchange (IKE)</p>
+<p>See RFC8031 Curve25519 and Curve448 for the IKEv2 Key Agreement</p>
 <p>Diffie-Hellman is a key agreement algorithm which allows two parties to establish a secure communications channel The original Diffie-Hellman is an anonymous protocol meaning it is not authenticated, so it is vulnerable to man-in-the-middle attacks. Extensions to the original Diffie-Hellman includes authentication which hardens the exchange protocol against many man-in-the-middle attacks. The authenticated version of Diffie-Hellman is usually referred to as Unified Diffie-Hellman</p>
 <p>A number of standard bodies have Diffie-Hellman implementations, including RFC 2631, Diffie-Hellman Key Agreement Method, ANSI X9.42, Agreement Of Symmetric Keys Using Diffie-Hellman and MQV Algorithms, and IEEE P1363, Standard Specifications for Public Key Cryptography, Annex D. Each implementation is slightly different and might not interoperate. When data is in motion, key exchange and transport is usually the starting point. Unfortunately, exchange and transport are often an after thought in a project, especially if a resident cryptography enthusiast or cryptographer is not available. The result can sometimes be a weak system, where an adversary can recover a session key during channel setup due to a weak or flawed exchange and transpor</p>
 <p>For the Protocol++&reg; interface to Diffie-Hellman see</p>
@@ -791,7 +842,7 @@ Digital Signature Algorithm (DSA)</h1>
 <h1><a class="anchor" id="PPECDSA"></a>
 Elliptic Curve Digital Signature Algorithm (ECDSA)</h1>
 <p>In cryptography, the Elliptic Curve Digital Signature Algorithm (ECDSA) offers a variant of the Digital Signature Algorithm (DSA) which uses elliptic curve cryptography</p>
-<p>As with elliptic-curve cryptography in general, the bit size of the public key believed to be needed for ECDSA is about twice the size of the security level, in bits. For example, at a security level of 80 bits (meaning an attacker requires a maximum of about <img class="formulaInl" alt="$ {2}^{80} $" src="form_265.png"/> operations to find the private key) the size of an ECDSA public key would be 160 bits, whereas the size of a DSA public key is at least 1024 bits. On the other hand, the signature size is the same for both DSA and ECDSA: approximately <img class="formulaInl" alt="$ 4t$" src="form_266.png"/> bits, where <img class="formulaInl" alt="$ t$" src="form_267.png"/> is the security level measured in bits, that is, about 320 bits for a security level of 80 bits</p>
+<p>As with elliptic-curve cryptography in general, the bit size of the public key believed to be needed for ECDSA is about twice the size of the security level, in bits. For example, at a security level of 80 bits (meaning an attacker requires a maximum of about <img class="formulaInl" alt="$ {2}^{80} $" src="form_268.png"/> operations to find the private key) the size of an ECDSA public key would be 160 bits, whereas the size of a DSA public key is at least 1024 bits. On the other hand, the signature size is the same for both DSA and ECDSA: approximately <img class="formulaInl" alt="$ 4t$" src="form_269.png"/> bits, where <img class="formulaInl" alt="$ t$" src="form_270.png"/> is the security level measured in bits, that is, about 320 bits for a security level of 80 bits</p>
 <p>There exist two sorts of concerns with ECDSA:</p>
 <ul>
 <li>Political concerns: the trustworthiness of NIST-produced curves being questioned after revelations that the NSA willingly inserts backdoors into software, hardware components and published standards were made; well-known cryptographers have expressed doubts about how the NIST curves were designed, and voluntary tainting has already been proved in the past</li>
@@ -904,7 +955,7 @@ eXtended Merkle Signature System (XMSS)</h1>
 Leighton-Micali Hash-Based Signatures (LMS)</h1>
 <p>See RFC8554 Leighton-Micali Hash-Based Signatures (LMS) from the IETF</p>
 <p>The Leighton-Micali Signature (LMS) method can sign a potentially large but fixed number of messages. An LMS system uses two cryptographic components: a one-time signature method and a hash function. Each LMS public/private key pair is associated with a perfect binary tree, each node of which contains an m-byte value, where m is the output length of the hash function. Each leaf of the tree contains the value of the public key of an LM-OTS public/private key pair. The value contained by the root of the tree is the LMS public key. Each interior node is computed by applying the hash function to the concatenation of the values of its children nodes</p>
-<p>Each node of the tree is associated with a node number, an unsigned integer that is denoted as node_num in the algorithms below, which is computed as follows. The root node has node number 1; for each node with node number <img class="formulaInl" alt="$ N &lt; {2}^{h} $" src="form_377.png"/> (where h is the height of the tree), its left child has node number <img class="formulaInl" alt="$ 2*N $" src="form_378.png"/>, while its right child has node number <img class="formulaInl" alt="$ 2*N + 1 $" src="form_379.png"/>. The result of this is that each node within the tree will have a unique node number, and the leaves will have node numbers 2^h, (2^h)+1, (2^h)+2, ..., (2^h)+(2^h)-1 In general, the j-th node at level i has node number <img class="formulaInl" alt="$ {2}^{i} + j $" src="form_380.png"/>. The node number can conveniently be computed when it is needed in the LMS algorithms, as described in those algorithms</p>
+<p>Each node of the tree is associated with a node number, an unsigned integer that is denoted as node_num in the algorithms below, which is computed as follows. The root node has node number 1; for each node with node number <img class="formulaInl" alt="$ N &lt; {2}^{h} $" src="form_380.png"/> (where h is the height of the tree), its left child has node number <img class="formulaInl" alt="$ 2*N $" src="form_381.png"/>, while its right child has node number <img class="formulaInl" alt="$ 2*N + 1 $" src="form_382.png"/>. The result of this is that each node within the tree will have a unique node number, and the leaves will have node numbers 2^h, (2^h)+1, (2^h)+2, ..., (2^h)+(2^h)-1 In general, the j-th node at level i has node number <img class="formulaInl" alt="$ {2}^{i} + j $" src="form_383.png"/>. The node number can conveniently be computed when it is needed in the LMS algorithms, as described in those algorithms</p>
 <p>For the Protocol++&reg; interface to LMS see</p>
 <p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jlmots.html">ProtocolPP::jlmots</a> </dd>
 <dd>
@@ -1162,7 +1213,7 @@ jrsasa </dd>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Aug 7 2022 16:52:01 for Protocol++(Protocolpp) by
+    <li class="footer">Generated on Mon Dec 12 2022 21:30:28 for Protocol++(Protocolpp) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

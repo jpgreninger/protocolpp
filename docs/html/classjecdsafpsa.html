@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++(Protocolpp)
-   &#160;<span id="projectnumber">5.3.2</span>
+   &#160;<span id="projectnumber">5.4.0</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ Elliptic Curve Digital Signature Algorithm Security Association (ECDSASA)</h1>
 <p>see <a href="https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm">https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm</a></p>
 <p>In cryptography, the Elliptic Curve Digital Signature Algorithm (ECDSA) offers a variant of the Digital Signature Algorithm (DSA) which uses elliptic curve cryptography</p>
 <p><b>Key and signature-size comparison to DSA</b></p>
-<p>As with elliptic-curve cryptography in general, the bit size of the public key believed to be needed for ECDSA is about twice the size of the security level, in bits. For example, at a security level of 80 bits (meaning an attacker requires a maximum of about <img class="formulaInl" alt="$ {2}^{80} $" src="form_265.png"/> operations to find the private key) the size of an ECDSA public key would be 160 bits, whereas the size of a DSA public key is at least 1024 bits. On the other hand, the signature size is the same for both DSA and ECDSA: approximately <img class="formulaInl" alt="$ 4t$" src="form_266.png"/> bits, where <img class="formulaInl" alt="$ t$" src="form_267.png"/> is the security level measured in bits, that is, about 320 bits for a security level of 80 bits</p>
+<p>As with elliptic-curve cryptography in general, the bit size of the public key believed to be needed for ECDSA is about twice the size of the security level, in bits. For example, at a security level of 80 bits (meaning an attacker requires a maximum of about <img class="formulaInl" alt="$ {2}^{80} $" src="form_268.png"/> operations to find the private key) the size of an ECDSA public key would be 160 bits, whereas the size of a DSA public key is at least 1024 bits. On the other hand, the signature size is the same for both DSA and ECDSA: approximately <img class="formulaInl" alt="$ 4t$" src="form_269.png"/> bits, where <img class="formulaInl" alt="$ t$" src="form_270.png"/> is the security level measured in bits, that is, about 320 bits for a security level of 80 bits</p>
 <p><b>Signature generation algorithm</b></p>
 <p>Suppose Alice wants to send a signed message to Bob. Initially, they must agree on the curve parameters ( <b>CURVE , G , n</b> ). In addition to the field and equation of the curve, we need <b>G</b>, a base point of prime order on the curve; <b>n</b> is the multiplicative order of the point <b>G</b></p>
 <a class="anchor" id="multi_rowECFPDSASA"></a>
@@ -109,47 +109,47 @@ Elliptic Curve Digital Signature Algorithm Security Association (ECDSASA)</h1>
 <tr>
 <td>CURVE</td><td>the elliptic curve field and equation used </td></tr>
 <tr>
-<td>G</td><td>elliptic curve base point, such as a pt <img class="formulaInl" alt="$(x_0,y_0)$" src="form_268.png"/> on <img class="formulaInl" alt="$ {y}^{2} = {x}^{3} + 7$" src="form_269.png"/>, a generator of the elliptic curve with large prime order n </td></tr>
+<td>G</td><td>elliptic curve base point, such as a pt <img class="formulaInl" alt="$(x_0,y_0)$" src="form_271.png"/> on <img class="formulaInl" alt="$ {y}^{2} = {x}^{3} + 7$" src="form_272.png"/>, a generator of the elliptic curve with large prime order n </td></tr>
 <tr>
-<td>n</td><td>integer order of <img class="formulaInl" alt="$ G$" src="form_270.png"/>, means that <img class="formulaInl" alt="$ n \times G = O$" src="form_271.png"/>, where O is the identity element </td></tr>
+<td>n</td><td>integer order of <img class="formulaInl" alt="$ G$" src="form_273.png"/>, means that <img class="formulaInl" alt="$ n \times G = O$" src="form_274.png"/>, where O is the identity element </td></tr>
 </table>
-<p>The order n of the base point G <b>must be prime</b>. Indeed, we assume that every nonzero element of the ring <img class="formulaInl" alt="$ \frac{Z}{nZ}$" src="form_272.png"/> are invertible, so that <img class="formulaInl" alt="$ \frac{Z}{nZ}$" src="form_272.png"/> must be a field. It implies that n must be prime (cf. Bézout's identity)</p>
-<p>Alice creates a key pair, consisting of a private key integer <img class="formulaInl" alt="$ d_A$" src="form_273.png"/>, randomly selected in the interval <img class="formulaInl" alt="$ [ 1 , n - 1 ]$" src="form_274.png"/>; and a public key curve point <img class="formulaInl" alt="$ Q_A = d_A \times G$" src="form_275.png"/></p>
-<p>We use <img class="formulaInl" alt="$ \times$" src="form_276.png"/> to denote elliptic curve point multiplication by a scalar</p>
+<p>The order n of the base point G <b>must be prime</b>. Indeed, we assume that every nonzero element of the ring <img class="formulaInl" alt="$ \frac{Z}{nZ}$" src="form_275.png"/> are invertible, so that <img class="formulaInl" alt="$ \frac{Z}{nZ}$" src="form_275.png"/> must be a field. It implies that n must be prime (cf. Bézout's identity)</p>
+<p>Alice creates a key pair, consisting of a private key integer <img class="formulaInl" alt="$ d_A$" src="form_276.png"/>, randomly selected in the interval <img class="formulaInl" alt="$ [ 1 , n - 1 ]$" src="form_277.png"/>; and a public key curve point <img class="formulaInl" alt="$ Q_A = d_A \times G$" src="form_278.png"/></p>
+<p>We use <img class="formulaInl" alt="$ \times$" src="form_279.png"/> to denote elliptic curve point multiplication by a scalar</p>
 <p>For Alice to sign a message m, she follows these steps:</p>
 <ul>
-<li>Calculate <img class="formulaInl" alt="$ e = HASH(m)$" src="form_277.png"/>, where <img class="formulaInl" alt="$ HASH$" src="form_278.png"/> is a cryptographic hash function, such as <b>SHA-2</b></li>
-<li>Let <img class="formulaInl" alt="$ z$" src="form_279.png"/> be the <img class="formulaInl" alt="$ L_n$" src="form_280.png"/> leftmost bits of <img class="formulaInl" alt="$ e$" src="form_281.png"/>, where <img class="formulaInl" alt="$ L_n$" src="form_280.png"/> is the bit length of the group order <img class="formulaInl" alt="$ n$" src="form_282.png"/></li>
-<li>Select a cryptographically secure random integer k from <img class="formulaInl" alt="$ [1 , n - 1]$" src="form_283.png"/></li>
-<li>Calculate the curve point <img class="formulaInl" alt="$ (x_1, y_1) = k \times G$" src="form_284.png"/></li>
-<li>Calculate <img class="formulaInl" alt="$ r = x_1 mod n$" src="form_285.png"/>. If <img class="formulaInl" alt="$ r = 0$" src="form_246.png"/>, go back to step 3</li>
-<li>Calculate <img class="formulaInl" alt="$ s = {k}^{-1} ( z + rd_A ) mod n $" src="form_286.png"/></li>
+<li>Calculate <img class="formulaInl" alt="$ e = HASH(m)$" src="form_280.png"/>, where <img class="formulaInl" alt="$ HASH$" src="form_281.png"/> is a cryptographic hash function, such as <b>SHA-2</b></li>
+<li>Let <img class="formulaInl" alt="$ z$" src="form_282.png"/> be the <img class="formulaInl" alt="$ L_n$" src="form_283.png"/> leftmost bits of <img class="formulaInl" alt="$ e$" src="form_284.png"/>, where <img class="formulaInl" alt="$ L_n$" src="form_283.png"/> is the bit length of the group order <img class="formulaInl" alt="$ n$" src="form_285.png"/></li>
+<li>Select a cryptographically secure random integer k from <img class="formulaInl" alt="$ [1 , n - 1]$" src="form_286.png"/></li>
+<li>Calculate the curve point <img class="formulaInl" alt="$ (x_1, y_1) = k \times G$" src="form_287.png"/></li>
+<li>Calculate <img class="formulaInl" alt="$ r = x_1 mod n$" src="form_288.png"/>. If <img class="formulaInl" alt="$ r = 0$" src="form_246.png"/>, go back to step 3</li>
+<li>Calculate <img class="formulaInl" alt="$ s = {k}^{-1} ( z + rd_A ) mod n $" src="form_289.png"/></li>
 <li>If <img class="formulaInl" alt="$ s = 0$" src="form_248.png"/>, go back to step 3</li>
 <li>The signature is the pair <img class="formulaInl" alt="$ (r, s)$" src="form_249.png"/></li>
 </ul>
-<p>When computing <img class="formulaInl" alt="$ s$" src="form_287.png"/>, the string <img class="formulaInl" alt="$ z$" src="form_279.png"/> resulting from <img class="formulaInl" alt="$ HASH(m)$" src="form_288.png"/> shall be converted to an integer. Note that <img class="formulaInl" alt="$ z$" src="form_279.png"/> can be greater than <img class="formulaInl" alt="$ n$" src="form_282.png"/> but not longer</p>
-<p>As the standard notes, it is not only required for k to be secret, but it is also crucial to select different k for different signatures, otherwise the equation in step 6 can be solved for <img class="formulaInl" alt="$ d_A$" src="form_273.png"/>, the private key: Given two signatures <img class="formulaInl" alt="$ (r,s)$" src="form_289.png"/> and <img class="formulaInl" alt="$ (r, {s}^{'})$" src="form_290.png"/>, employing the same unknown <img class="formulaInl" alt="$ k$" src="form_243.png"/> for different known messages <img class="formulaInl" alt="$ m$" src="form_291.png"/> and <img class="formulaInl" alt="$ {m}^{'}$" src="form_292.png"/>, an attacker can calculate <img class="formulaInl" alt="$ z$" src="form_279.png"/> and <img class="formulaInl" alt="$ {z}^{'}$" src="form_293.png"/>, and since <img class="formulaInl" alt="$ s - {s}^{'} = {k}^{-1}(z - {z}^{'})$" src="form_294.png"/> (all operations in this paragraph are done modulo n ) the attacker can find <img class="formulaInl" alt="$ k = \frac{z - {z}^{'}}{s - {s}^{'}}$" src="form_295.png"/>. Since <img class="formulaInl" alt="$ s = {k}^{-1}(z + rd_A)$" src="form_296.png"/>, the attacker can now calculate the private key <img class="formulaInl" alt="$ d_A = \frac{sk - z}{r}$" src="form_297.png"/>.</p>
+<p>When computing <img class="formulaInl" alt="$ s$" src="form_290.png"/>, the string <img class="formulaInl" alt="$ z$" src="form_282.png"/> resulting from <img class="formulaInl" alt="$ HASH(m)$" src="form_291.png"/> shall be converted to an integer. Note that <img class="formulaInl" alt="$ z$" src="form_282.png"/> can be greater than <img class="formulaInl" alt="$ n$" src="form_285.png"/> but not longer</p>
+<p>As the standard notes, it is not only required for k to be secret, but it is also crucial to select different k for different signatures, otherwise the equation in step 6 can be solved for <img class="formulaInl" alt="$ d_A$" src="form_276.png"/>, the private key: Given two signatures <img class="formulaInl" alt="$ (r,s)$" src="form_292.png"/> and <img class="formulaInl" alt="$ (r, {s}^{'})$" src="form_293.png"/>, employing the same unknown <img class="formulaInl" alt="$ k$" src="form_243.png"/> for different known messages <img class="formulaInl" alt="$ m$" src="form_294.png"/> and <img class="formulaInl" alt="$ {m}^{'}$" src="form_295.png"/>, an attacker can calculate <img class="formulaInl" alt="$ z$" src="form_282.png"/> and <img class="formulaInl" alt="$ {z}^{'}$" src="form_296.png"/>, and since <img class="formulaInl" alt="$ s - {s}^{'} = {k}^{-1}(z - {z}^{'})$" src="form_297.png"/> (all operations in this paragraph are done modulo n ) the attacker can find <img class="formulaInl" alt="$ k = \frac{z - {z}^{'}}{s - {s}^{'}}$" src="form_298.png"/>. Since <img class="formulaInl" alt="$ s = {k}^{-1}(z + rd_A)$" src="form_299.png"/>, the attacker can now calculate the private key <img class="formulaInl" alt="$ d_A = \frac{sk - z}{r}$" src="form_300.png"/>.</p>
 <p>Another way ECDSA signature may leak private keys is when k is generated by a faulty random number generator. To ensure that k is unique for each message one may bypass random number generation completely and generate deterministic signatures by deriving k from both the message and the private key</p>
 <p><b>Signature verification algorithm</b></p>
-<p>For Bob to authenticate Alice's signature, he must have a copy of her public-key curve point <img class="formulaInl" alt="$ Q_A$" src="form_298.png"/></p>
-<p>Bob can verify <img class="formulaInl" alt="$ Q_A$" src="form_298.png"/> is a valid curve point as follows:</p>
+<p>For Bob to authenticate Alice's signature, he must have a copy of her public-key curve point <img class="formulaInl" alt="$ Q_A$" src="form_301.png"/></p>
+<p>Bob can verify <img class="formulaInl" alt="$ Q_A$" src="form_301.png"/> is a valid curve point as follows:</p>
 <ul>
-<li>Check that <img class="formulaInl" alt="$ Q_A$" src="form_298.png"/> is not equal to the identity element <img class="formulaInl" alt="$ O$" src="form_299.png"/>, and its coordinates are otherwise valid</li>
-<li>Check that <img class="formulaInl" alt="$ Q_A$" src="form_298.png"/> lies on the curve</li>
-<li>Check that <img class="formulaInl" alt="$ n \times Q_A = O$" src="form_300.png"/></li>
+<li>Check that <img class="formulaInl" alt="$ Q_A$" src="form_301.png"/> is not equal to the identity element <img class="formulaInl" alt="$ O$" src="form_302.png"/>, and its coordinates are otherwise valid</li>
+<li>Check that <img class="formulaInl" alt="$ Q_A$" src="form_301.png"/> lies on the curve</li>
+<li>Check that <img class="formulaInl" alt="$ n \times Q_A = O$" src="form_303.png"/></li>
 </ul>
 <p>After that, Bob follows these steps:</p>
 <ul>
-<li>Verify that <img class="formulaInl" alt="$ r$" src="form_301.png"/> and <img class="formulaInl" alt="$ s$" src="form_287.png"/> are integers in <img class="formulaInl" alt="$ [1, n - 1]$" src="form_302.png"/>. If not, the signature is invalid.</li>
-<li>Calculate <img class="formulaInl" alt="$ e = HASH (m)$" src="form_303.png"/>, where <img class="formulaInl" alt="$ HASH$" src="form_278.png"/> is the same function used in the signature generation</li>
-<li>Let <img class="formulaInl" alt="$ z$" src="form_279.png"/> be the <img class="formulaInl" alt="$ L_n$" src="form_280.png"/> leftmost bits of <img class="formulaInl" alt="$ e$" src="form_281.png"/></li>
-<li>Calculate <img class="formulaInl" alt="$ w = {s}^{-1} mod n$" src="form_304.png"/></li>
-<li>Calculate <img class="formulaInl" alt="$ u_1 = zw mod n and u_2 = rw mod n$" src="form_305.png"/></li>
-<li>Calculate the curve point <img class="formulaInl" alt="$ (x_1, y_1) = u_1 \times G + u_2 \times Q_A$" src="form_306.png"/></li>
-<li>If <img class="formulaInl" alt="$ (x_1, y_1) = O$" src="form_307.png"/> then the signature is invalid</li>
-<li>The signature is valid if <img class="formulaInl" alt="$ r \equiv x_1 ( mod n )$" src="form_308.png"/>, invalid otherwise</li>
+<li>Verify that <img class="formulaInl" alt="$ r$" src="form_304.png"/> and <img class="formulaInl" alt="$ s$" src="form_290.png"/> are integers in <img class="formulaInl" alt="$ [1, n - 1]$" src="form_305.png"/>. If not, the signature is invalid.</li>
+<li>Calculate <img class="formulaInl" alt="$ e = HASH (m)$" src="form_306.png"/>, where <img class="formulaInl" alt="$ HASH$" src="form_281.png"/> is the same function used in the signature generation</li>
+<li>Let <img class="formulaInl" alt="$ z$" src="form_282.png"/> be the <img class="formulaInl" alt="$ L_n$" src="form_283.png"/> leftmost bits of <img class="formulaInl" alt="$ e$" src="form_284.png"/></li>
+<li>Calculate <img class="formulaInl" alt="$ w = {s}^{-1} mod n$" src="form_307.png"/></li>
+<li>Calculate <img class="formulaInl" alt="$ u_1 = zw mod n and u_2 = rw mod n$" src="form_308.png"/></li>
+<li>Calculate the curve point <img class="formulaInl" alt="$ (x_1, y_1) = u_1 \times G + u_2 \times Q_A$" src="form_309.png"/></li>
+<li>If <img class="formulaInl" alt="$ (x_1, y_1) = O$" src="form_310.png"/> then the signature is invalid</li>
+<li>The signature is valid if <img class="formulaInl" alt="$ r \equiv x_1 ( mod n )$" src="form_311.png"/>, invalid otherwise</li>
 </ul>
-<p>Note that using Shamir's trick, a sum of two scalar multiplications <img class="formulaInl" alt="$ u_1 \times G + u_2 \times Q_A$" src="form_309.png"/> can be calculated faster than two scalar multiplications done independently</p>
+<p>Note that using Shamir's trick, a sum of two scalar multiplications <img class="formulaInl" alt="$ u_1 \times G + u_2 \times Q_A$" src="form_312.png"/> can be calculated faster than two scalar multiplications done independently</p>
 <p><b>Concerns</b></p>
 <p>There exist two sorts of concerns with ECDSA:</p>
 <ul>
@@ -214,7 +214,7 @@ ProtocolPP::jenum</dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjecdsafpsa.html">jecdsafpsa</a></li>
-    <li class="footer">Generated on Sun Aug 7 2022 16:51:29 for Protocol++(Protocolpp) by
+    <li class="footer">Generated on Mon Dec 12 2022 21:29:57 for Protocol++(Protocolpp) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

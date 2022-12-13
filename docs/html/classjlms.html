@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++(Protocolpp)
-   &#160;<span id="projectnumber">5.3.2</span>
+   &#160;<span id="projectnumber">5.4.0</span>
    </div>
   </td>
  </tr>
@@ -95,9 +95,9 @@ $(document).ready(function(){initNavTree('classjlms.html','');});
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><b>Leighton-Micali Signatures</b></p>
 <p>The Leighton-Micali Signature (LMS) method can sign a potentially large but fixed number of messages An LMS system uses two cryptographic components: a one-time signature method and a hash function. Each LMS public/private key pair is associated with a perfect binary tree, each node of which contains an m-byte value, where m is the output length of the hash function. Each leaf of the tree contains the value of the public key of an LM-OTS public/private key pair. The value contained by the root of the tree is the LMS key pair. The value contained by the root fo teh tree is the LMS key pair. Each interior node is computed by applying the hash function to the concatenation of the values of its children nodes</p>
-<p>Each node of the tree is associated with a node number, an unsigned integer that is denoted as node_num in the algorithms below, which is computed as follows. The root node has node number 1; for each node with node number <img class="formulaInl" alt="$ N lt {2}^{h} $" src="form_474.png"/> (where h is the height of the tree), its left child has node number <img class="formulaInl" alt="$ 2*N $" src="form_378.png"/>, while its right child has node number</p>
-<p><img class="formulaInl" alt="$ {2}^{h}, ({2}^{h} + 1), ({2}^{h} + 2), ..., ({2}^{h})+({2}^{h})-1 $" src="form_475.png"/></p>
-<p>In general, the j-th node at level i hash node <img class="formulaInl" alt="$ {2}^{i} + j $" src="form_380.png"/>. The node number can conveniently be computed when it is needed in the LMS algorithms, as described in those algorithms</p>
+<p>Each node of the tree is associated with a node number, an unsigned integer that is denoted as node_num in the algorithms below, which is computed as follows. The root node has node number 1; for each node with node number <img class="formulaInl" alt="$ N lt {2}^{h} $" src="form_477.png"/> (where h is the height of the tree), its left child has node number <img class="formulaInl" alt="$ 2*N $" src="form_381.png"/>, while its right child has node number</p>
+<p><img class="formulaInl" alt="$ {2}^{h}, ({2}^{h} + 1), ({2}^{h} + 2), ..., ({2}^{h})+({2}^{h})-1 $" src="form_478.png"/></p>
+<p>In general, the j-th node at level i hash node <img class="formulaInl" alt="$ {2}^{i} + j $" src="form_383.png"/>. The node number can conveniently be computed when it is needed in the LMS algorithms, as described in those algorithms</p>
 <p><b>LMS Parameters</b></p>
 <p>An LMS system has the following parameters:</p>
 <ul>
@@ -177,7 +177,7 @@ LMS Tree</div></div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjlms.html">jlms</a></li>
-    <li class="footer">Generated on Sun Aug 7 2022 16:51:29 for Protocol++(Protocolpp) by
+    <li class="footer">Generated on Mon Dec 12 2022 21:29:57 for Protocol++(Protocolpp) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

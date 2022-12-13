@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++(Protocolpp)
-   &#160;<span id="projectnumber">5.3.2</span>
+   &#160;<span id="projectnumber">5.4.0</span>
    </div>
   </td>
  </tr>
@@ -232,7 +232,7 @@ Using Advanced Encryption Standard (AES) Counter Mode With IPsec Encapsulating S
 <li><p class="startli">Block Counter</p>
 <p class="startli">The block counter field is the least significant 32 bits of the counter block. The block counter begins with the value of one, and it is incremented to generate subsequent portions of the key stream. The block counter is a 32-bit big-endian integer value. Using the encryption process described in section 2.1, this construction permits each packet to consist of up to:</p>
 </li>
-<li><img class="formulaInl" alt="$ {2}^{32}-1 blocks = 4,294,967,295 blocks = 68,719,476,720 octets $" src="form_339.png"/></li>
+<li><img class="formulaInl" alt="$ {2}^{32}-1 blocks = 4,294,967,295 blocks = 68,719,476,720 octets $" src="form_342.png"/></li>
 </ul>
 <p>This construction can produce enough key stream for each packet sufficient to handle any IPv6 jumbogram</p>
 <p><b>Keying Material and Nonces</b></p>
@@ -347,7 +347,7 @@ Using Advanced Encryption Standard (AES) CCM Mode with IPsec Encapsulating Secur
 </li>
 </ul>
 <p>This construction permits each packet to consist of up to:</p>
-<p><img class="formulaInl" alt="${2}^{32}$" src="form_340.png"/> blocks = 4,294,967,296 blocks = 68,719,476,736 octets</p>
+<p><img class="formulaInl" alt="${2}^{32}$" src="form_343.png"/> blocks = 4,294,967,296 blocks = 68,719,476,736 octets</p>
 <p>This construction provides more key stream for each packet than is needed to handle any IPv6 Jumbogram [JUMBO].</p>
 <p><b>AAD Construction</b></p>
 <p>The data integrity and data origin authentication for the Security Parameters Index (SPI) and (Extended) Sequence Number fields is provided without encrypting them. Two formats are defined: one for 32-bit sequence numbers and one for 64-bit extended sequence numbers. The format with 32-bit sequence numbers is shown in Figure 3, and the format with 64-bit extended sequence numbers is shown in Figure 4.</p>
@@ -536,7 +536,7 @@ IPsec Cipher and Authentication Synopsis</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjipsec.html">jipsec</a></li>
-    <li class="footer">Generated on Sun Aug 7 2022 16:51:29 for Protocol++(Protocolpp) by
+    <li class="footer">Generated on Mon Dec 12 2022 21:29:57 for Protocol++(Protocolpp) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

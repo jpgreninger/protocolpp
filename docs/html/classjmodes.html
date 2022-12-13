@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++(Protocolpp)
-   &#160;<span id="projectnumber">5.3.2</span>
+   &#160;<span id="projectnumber">5.4.0</span>
    </div>
   </td>
  </tr>
@@ -130,9 +130,9 @@ Cipher Block Chaining (CBC)</h2>
 <div class="caption">
 Cipher Block Chaining (CBC) Encryption Mode</div></div>
 <p>If the first block has index 1, the mathematical formula for CBC encryption is</p>
-<p><img class="formulaInl" alt="${C}_{i}={E}_{K}(P_{i}\oplus C_{i-1}),C_{0}=IV$" src="form_349.png"/></p>
+<p><img class="formulaInl" alt="${C}_{i}={E}_{K}(P_{i}\oplus C_{i-1}),C_{0}=IV$" src="form_352.png"/></p>
 <p>while the mathematical formula for CBC decryption is</p>
-<p><img class="formulaInl" alt="$P_{i}=D_{K}(C_{i})\oplus C_{i-1},C_{0}=IV$" src="form_350.png"/></p>
+<p><img class="formulaInl" alt="$P_{i}=D_{K}(C_{i})\oplus C_{i-1},C_{0}=IV$" src="form_353.png"/></p>
 <p>CBC has been the most commonly used mode of operation. Its main drawbacks are that encryption is sequential (i.e., it cannot be parallelized), and that the message must be padded to a multiple of the cipher block size. One way to handle this last issue is through the method known as ciphertext stealing. Note that a one-bit change in a plaintext or IV affects all following ciphertext blocks</p>
 <p>Decrypting with the incorrect IV causes the first block of plaintext to be corrupt but subsequent plaintext blocks will be correct. This is because each block is XORed with the ciphertext of the previous block, not the plaintext, so one does not need to decrypt the previous block before using it as the IV for the decryption of the current one. This means that a plaintext block can be recovered from two adjacent blocks of ciphertext. As a consequence, decryption can be parallelized. Note that a one-bit change to the ciphertext causes complete corruption of the corresponding block of plaintext, and inverts the corresponding bit in the following block of plaintext, but the rest of the blocks remain intact. This peculiarity is exploited in different padding oracle attacks, such as POODLE</p>
 <p>Explicit Initialization Vectors takes advantage of this property by prepending a single random block to the plaintext. Encryption is done as normal, except the IV does not need to be communicated to the decryption routine. Whatever IV decryption uses, only the random block is "corrupted". It can be safely discarded and the rest of the decryption is the original plaintext</p>
@@ -159,16 +159,16 @@ Galois Counter Mode (GCM)</h2>
 <div class="caption">
 Galios Field Counter Mode (GCM) Encryption Mode</div></div>
 <p><b>Mathematical basis</b></p>
-<p>GCM combines the well-known counter mode of encryption with the new Galois mode of authentication. The key feature is that the Galois field multiplication used for authentication can be easily computed in parallel. This option permits higher throughput than the authentication algorithms, like CBC, that use chaining modes. The <img class="formulaInl" alt="$GF({2}^{128})$" src="form_351.png"/> field used is defined by the polynomial</p>
-<p><img class="formulaInl" alt="${x}^{128}+{x}^{7}+{x}^{2}+x+1$" src="form_352.png"/></p>
+<p>GCM combines the well-known counter mode of encryption with the new Galois mode of authentication. The key feature is that the Galois field multiplication used for authentication can be easily computed in parallel. This option permits higher throughput than the authentication algorithms, like CBC, that use chaining modes. The <img class="formulaInl" alt="$GF({2}^{128})$" src="form_354.png"/> field used is defined by the polynomial</p>
+<p><img class="formulaInl" alt="${x}^{128}+{x}^{7}+{x}^{2}+x+1$" src="form_355.png"/></p>
 <p>The authentication tag is constructed by feeding blocks of data into the GHASH function and encrypting the result. This GHASH function is defined by</p>
-<p><img class="formulaInl" alt="$GHASH(H,A,C)=X_{m+n+1}$" src="form_353.png"/></p>
-<p>where H is the Hash Key, a string of 128 zero bits encrypted using the block cipher, A is data which is only authenticated (not encrypted), C is the ciphertext, m is the number of 128 bit blocks in A, n is the number of 128 bit blocks in C (the final blocks of A and C need not be exactly 128 bits), and the variable <img class="formulaInl" alt="$X_{i}$" src="form_354.png"/> for i = 0, ..., m + n + 1 is defined as</p>
+<p><img class="formulaInl" alt="$GHASH(H,A,C)=X_{m+n+1}$" src="form_356.png"/></p>
+<p>where H is the Hash Key, a string of 128 zero bits encrypted using the block cipher, A is data which is only authenticated (not encrypted), C is the ciphertext, m is the number of 128 bit blocks in A, n is the number of 128 bit blocks in C (the final blocks of A and C need not be exactly 128 bits), and the variable <img class="formulaInl" alt="$X_{i}$" src="form_357.png"/> for i = 0, ..., m + n + 1 is defined as</p>
 <div class="image">
 <img src="GCM_MATH.png" alt="GCM_MATH.png"/>
 <div class="caption">
 GCM Mathematical Computation</div></div>
-<p>where v is the bit length of the final block of A, u is the bit length of the final block of <img class="formulaInl" alt="$C_{i} \parallel$" src="form_355.png"/> denotes concatenation of bit strings, and len(A) and len(C) are the 64-bit representations of the bit lengths of A and C, respectively. Note that this is an iterative algorithm: each <img class="formulaInl" alt="$X_{i}$" src="form_354.png"/> depends on <img class="formulaInl" alt="$ X_{i−1} $" src="form_356.png"/> and only the final <img class="formulaInl" alt="$X_{i}$" src="form_354.png"/> is retained as output</p>
+<p>where v is the bit length of the final block of A, u is the bit length of the final block of <img class="formulaInl" alt="$C_{i} \parallel$" src="form_358.png"/> denotes concatenation of bit strings, and len(A) and len(C) are the 64-bit representations of the bit lengths of A and C, respectively. Note that this is an iterative algorithm: each <img class="formulaInl" alt="$X_{i}$" src="form_357.png"/> depends on <img class="formulaInl" alt="$ X_{i−1} $" src="form_359.png"/> and only the final <img class="formulaInl" alt="$X_{i}$" src="form_357.png"/> is retained as output</p>
 <p>GCM mode was designed by John Viega and David A. McGrew as an improvement to Carter–Wegman Counter CWC mode</p>
 <p>In November 2007, NIST announced the release of NIST Special Publication 800-38D Recommendation for Block Cipher modes of Operation: Galois/Counter Mode (GCM) and GMAC making GCM and GMAC official standards</p>
 <p><b>Use</b></p>
@@ -251,12 +251,12 @@ The CMAC Mode for Authentication</h2>
 <p>See NIST800-38b</p>
 <p><b>Block Cipher</b></p>
 <p>The CMAC algorithm depends on the choice of an underlying symmetric key block cipher. The CMAC algorithm is thus a mode of operation (a mode, for short) of the block cipher. The CMAC key is the block cipher key (the key, for short For any given key, the underlying block cipher of the mode consists of two functions that are inverses of each other. The choice of the block cipher includes the designation of one of the two functions of the block cipher as the forward function/transformation, and the other as the inverse function, as in the specifications of the AES algorithm and TDEA in Ref. [3] and Ref. [10], respectively. The CMAC mode does not employ the inverse function</p>
-<p>The forward cipher function is a permutation on bit strings of a fixed length; the strings are called blocks. The bit length of a block is denoted b, and the length of a block is called the block size. For the AES algorithm, b = 128; for TDEA, b = 64. The key is denoted K, and the resulting forward cipher function of the block cipher is denoted <img class="formulaInl" alt="${CIPH}_{K}$" src="form_357.png"/></p>
+<p>The forward cipher function is a permutation on bit strings of a fixed length; the strings are called blocks. The bit length of a block is denoted b, and the length of a block is called the block size. For the AES algorithm, b = 128; for TDEA, b = 64. The key is denoted K, and the resulting forward cipher function of the block cipher is denoted <img class="formulaInl" alt="${CIPH}_{K}$" src="form_360.png"/></p>
 <p>The underlying block cipher shall be approved, and the key shall be generated uniformly at random, or close to uniformly at random, i.e., so that each possible key is (nearly) equally likely to be generated. The key shall be secret and shall be used exclusively for the CMAC mode of the chosen block cipher. The message span of the key is discussed in Appendix B. To fulfill the requirements on the key, the key should be established among the parties to the information within an approved key management structure; the details of the establishment and management of keys are outside the scope of this Recommendation</p>
 <p><b>Subkeys</b></p>
 <p>The block cipher key is used to derive two additional secret values, called the subkeys, denoted K1 and K2. The length of each subkey is the block size. The subkeys are fixed for any invocation of CMAC with the given key. Consequently, the subkeys may be precomputed and stored with the key for repeated use; alternatively, the subkeys may be computed anew for each invocation</p>
-<p>Any intermediate value in the computation of the subkey, in particular, CIPHK(0b), shall also be secret. This requirement precludes the system in which CMAC is implemented from using this intermediate value publicly for some other purpose, for example, as an unpredictable value or as an integrity check value on the key. One of the elements of the subkey generation process is a bit string, denoted Rb, that is completely determined by the number of bits in a block. In particular, for the two block sizes of the currently approved block ciphers, <img class="formulaInl" alt="${R}_{128} = {0}^{120}10000111$" src="form_358.png"/>, and <img class="formulaInl" alt="${R}_{64} = {0}^{59}11011$" src="form_359.png"/></p>
-<p>In general, <img class="formulaInl" alt="${R}_{b}$" src="form_360.png"/> is a representation of a certain irreducible binary polynomial of degree b, namely, the lexicographically first among all such polynomials with the minimum possible number of nonzero terms. If this polynomial is expressed as <img class="formulaInl" alt="${u}^{b}+{c}_{b-1}{u}^{b-1}+...+{c}_{2}{u}^{2}+{c}_{1}u+{c}_{0}$" src="form_361.png"/>, where the coefficients <img class="formulaInl" alt="${c}_{b-1}, {c}_{b-2}, ..., {c}_{2}, {c}_{1}, {c}_{0}$" src="form_362.png"/> are either 0 or 1, then <img class="formulaInl" alt="${R}_{b}$" src="form_360.png"/> is the bit string <img class="formulaInl" alt="${c}_{b-1}{c}_{b-2}...{c}_{2}{c}_{1}{c}_{0}$" src="form_363.png"/></p>
+<p>Any intermediate value in the computation of the subkey, in particular, CIPHK(0b), shall also be secret. This requirement precludes the system in which CMAC is implemented from using this intermediate value publicly for some other purpose, for example, as an unpredictable value or as an integrity check value on the key. One of the elements of the subkey generation process is a bit string, denoted Rb, that is completely determined by the number of bits in a block. In particular, for the two block sizes of the currently approved block ciphers, <img class="formulaInl" alt="${R}_{128} = {0}^{120}10000111$" src="form_361.png"/>, and <img class="formulaInl" alt="${R}_{64} = {0}^{59}11011$" src="form_362.png"/></p>
+<p>In general, <img class="formulaInl" alt="${R}_{b}$" src="form_363.png"/> is a representation of a certain irreducible binary polynomial of degree b, namely, the lexicographically first among all such polynomials with the minimum possible number of nonzero terms. If this polynomial is expressed as <img class="formulaInl" alt="${u}^{b}+{c}_{b-1}{u}^{b-1}+...+{c}_{2}{u}^{2}+{c}_{1}u+{c}_{0}$" src="form_364.png"/>, where the coefficients <img class="formulaInl" alt="${c}_{b-1}, {c}_{b-2}, ..., {c}_{2}, {c}_{1}, {c}_{0}$" src="form_365.png"/> are either 0 or 1, then <img class="formulaInl" alt="${R}_{b}$" src="form_363.png"/> is the bit string <img class="formulaInl" alt="${c}_{b-1}{c}_{b-2}...{c}_{2}{c}_{1}{c}_{0}$" src="form_366.png"/></p>
 <p><b>MAC Generation and Verification</b></p>
 <p>As for any MAC algorithm, an authorized party applies the MAC generation process to the data to be authenticated to produce a MAC for the data. Subsequently, any authorized party can apply the verification process to the received data and the received MAC. Successful verification provides assurance of data authenticity, as discussed in Appendix A, and, hence, of integrity</p>
 <p><b>Input and Output Data</b></p>
@@ -280,12 +280,12 @@ The CMAC Mode for Authentication</h2>
 </ul>
 <p>Steps:</p>
 <ol type="1">
-<li>Let <img class="formulaInl" alt="$L = {CIPH}_{K}({0}^{b})$" src="form_364.png"/></li>
-<li><img class="formulaInl" alt="$If {MSB}_{1}(L) = 0, then K1 = L &lt;&lt; 1$" src="form_365.png"/>; <img class="formulaInl" alt="$Else K1 = (L &lt;&lt; 1) \oplus {R}_{b}; see Sec. 5.3 for the definition of {R}_{b}$" src="form_366.png"/></li>
-<li><img class="formulaInl" alt="$If {MSB}_{1}(K1) = 0, then K2 = K1 &lt;&lt; 1;$" src="form_367.png"/> <img class="formulaInl" alt="$Else K2 = (K1 &lt;&lt; 1) \oplus {R}_{b}$" src="form_368.png"/></li>
+<li>Let <img class="formulaInl" alt="$L = {CIPH}_{K}({0}^{b})$" src="form_367.png"/></li>
+<li><img class="formulaInl" alt="$If {MSB}_{1}(L) = 0, then K1 = L &lt;&lt; 1$" src="form_368.png"/>; <img class="formulaInl" alt="$Else K1 = (L &lt;&lt; 1) \oplus {R}_{b}; see Sec. 5.3 for the definition of {R}_{b}$" src="form_369.png"/></li>
+<li><img class="formulaInl" alt="$If {MSB}_{1}(K1) = 0, then K2 = K1 &lt;&lt; 1;$" src="form_370.png"/> <img class="formulaInl" alt="$Else K2 = (K1 &lt;&lt; 1) \oplus {R}_{b}$" src="form_371.png"/></li>
 <li>Return K1, K2</li>
 </ol>
-<p>In Step 1, the block cipher is applied to the block that consists entirely of ‘0’ bits. In Step 2, the first subkey is derived from the resulting string by a left shift of one bit, and, conditionally, by XORing a constant that depends on the block size. In Step 3, the second subkey is derived in the same manner from the first subkey.1 As discussed in Sec. 5.3, any intermediate value in the computation of the subkey, in particular, <img class="formulaInl" alt="${CIPH}_{K}({0}^{b})$" src="form_369.png"/>, shall be secret</p>
+<p>In Step 1, the block cipher is applied to the block that consists entirely of ‘0’ bits. In Step 2, the first subkey is derived from the resulting string by a left shift of one bit, and, conditionally, by XORing a constant that depends on the block size. In Step 3, the second subkey is derived in the same manner from the first subkey.1 As discussed in Sec. 5.3, any intermediate value in the computation of the subkey, in particular, <img class="formulaInl" alt="${CIPH}_{K}({0}^{b})$" src="form_372.png"/>, shall be secret</p>
 <p><b>MAC Generation</b></p>
 <p>The following is a specification of the MAC generation process of CMAC: Prerequisites:</p>
 <ul>
@@ -306,11 +306,11 @@ The CMAC Mode for Authentication</h2>
 <ol type="1">
 <li>Apply the subkey generation process in Sec. 6.1 to K to produce K1 and K2</li>
 <li>If Mlen = 0, let n = 1; else, let n = [Mlen/blk_size]</li>
-<li>Let <img class="formulaInl" alt="${M}_{1}, {M}_{2}, ... , {M}_{n-1}, {M}_{n}$" src="form_370.png"/> denote the unique sequence of bit strings such that <img class="formulaInl" alt="$M = {M}_{1} || {M}_{2} || ... || {M}_{n-1} || {M}_{n}*, where {M}_{1}, {M}_{2},...,{M}_{n-1}$" src="form_371.png"/> are complete blocks</li>
-<li>If Mn* is a complete block, let <img class="formulaInl" alt="$Mn = K1 \oplus Mn*$" src="form_372.png"/>; else, let <img class="formulaInl" alt="$Mn = K2 \oplus (Mn*||10j)$" src="form_373.png"/>, where j = nb-Mlen-1</li>
-<li>Let <img class="formulaInl" alt="${C}_{0} = {0}^{b}$" src="form_374.png"/></li>
-<li>For i = 1 to n, let <img class="formulaInl" alt="${C}_{i} = {CIPH}_{K}({C}_{i-1}\oplus{M}_{i})$" src="form_375.png"/></li>
-<li>Let <img class="formulaInl" alt="$T = {MSB}_{Tlen}({C}_{n})$" src="form_376.png"/></li>
+<li>Let <img class="formulaInl" alt="${M}_{1}, {M}_{2}, ... , {M}_{n-1}, {M}_{n}$" src="form_373.png"/> denote the unique sequence of bit strings such that <img class="formulaInl" alt="$M = {M}_{1} || {M}_{2} || ... || {M}_{n-1} || {M}_{n}*, where {M}_{1}, {M}_{2},...,{M}_{n-1}$" src="form_374.png"/> are complete blocks</li>
+<li>If Mn* is a complete block, let <img class="formulaInl" alt="$Mn = K1 \oplus Mn*$" src="form_375.png"/>; else, let <img class="formulaInl" alt="$Mn = K2 \oplus (Mn*||10j)$" src="form_376.png"/>, where j = nb-Mlen-1</li>
+<li>Let <img class="formulaInl" alt="${C}_{0} = {0}^{b}$" src="form_377.png"/></li>
+<li>For i = 1 to n, let <img class="formulaInl" alt="${C}_{i} = {CIPH}_{K}({C}_{i-1}\oplus{M}_{i})$" src="form_378.png"/></li>
+<li>Let <img class="formulaInl" alt="$T = {MSB}_{Tlen}({C}_{n})$" src="form_379.png"/></li>
 <li>Return T</li>
 </ol>
 <p>In Step 1, the subkeys are generated from the key. In Steps 2–4, the input message is formatted into a sequence of complete blocks in which the final block has been masked by a subkey. There are two cases:</p>
@@ -405,7 +405,7 @@ Counter Mode MAC Generation</div></div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjmodes.html">jmodes</a></li>
-    <li class="footer">Generated on Sun Aug 7 2022 16:51:30 for Protocol++(Protocolpp) by
+    <li class="footer">Generated on Mon Dec 12 2022 21:29:57 for Protocol++(Protocolpp) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++(Protocolpp)
-   &#160;<span id="projectnumber">5.3.2</span>
+   &#160;<span id="projectnumber">5.4.0</span>
    </div>
   </td>
  </tr>
@@ -111,8 +111,8 @@ $(document).ready(function(){initNavTree('classjlmots.html','');});
 <li>ls - the number of left-shift bits used in the checksum function Cksm</li>
 <li>H - a second-preimage-resistant cryptographic hash function that accepts byte strings of any length and returns an n-byte string</li>
 </ul>
-<p>The parameter w determines the length of the Winternitz chains computed as a part of the OTS signature (which involve <img class="formulaInl" alt="$ {2}^{w} - 1 $" src="form_470.png"/> invocations of the hash function); it has little effect on security. Increasing w will shorten the signature, but at a cost of a larger computation to generate and verify a signature. Table 1 illustrates various combinations of n, w, p, and ls, along with the resulting signature length</p>
-<p>In general, the LM-OTS signature is <img class="formulaInl" alt="$ 4 + (n * (p + 1)) $" src="form_471.png"/> bytes long, and public key generation will take <img class="formulaInl" alt="$ (p * ({2}^{w} - 1)) + 1 $" src="form_472.png"/> hash computations (a signature generation and verification will take approximately half that on average)</p>
+<p>The parameter w determines the length of the Winternitz chains computed as a part of the OTS signature (which involve <img class="formulaInl" alt="$ {2}^{w} - 1 $" src="form_473.png"/> invocations of the hash function); it has little effect on security. Increasing w will shorten the signature, but at a cost of a larger computation to generate and verify a signature. Table 1 illustrates various combinations of n, w, p, and ls, along with the resulting signature length</p>
+<p>In general, the LM-OTS signature is <img class="formulaInl" alt="$ 4 + (n * (p + 1)) $" src="form_474.png"/> bytes long, and public key generation will take <img class="formulaInl" alt="$ (p * ({2}^{w} - 1)) + 1 $" src="form_475.png"/> hash computations (a signature generation and verification will take approximately half that on average)</p>
 <a class="anchor" id="LMOTSP"></a>
 <table class="doxtable">
 <caption>LMS-OTS Parameters</caption>
@@ -130,8 +130,8 @@ $(document).ready(function(){initNavTree('classjlmots.html','');});
 <p><b>LMS-OTS Private Key</b></p>
 <p>The format of the LM-OTS private key is defined as </p><div class="fragment"><div class="line">--------------------------------------------------</div><div class="line">| <a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a4ab4c9028975c23e2a867d60c653a485">TYPE</a> <a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a37cf6dfaa1dca99f3314be554cacef6d">CODE</a> | I | Q | x[0] | x[1] | ... | x[p-1] |</div><div class="line">--------------------------------------------------</div></div><!-- fragment --><p>An implementation MAY use a psuedorandom method to compute x[i]. The details of the psuedorandom method do not affect interoperability, but the cryptographic strength MUST match that of the LM-OTS algorithm</p>
 <p><b>LMS-OTS Public Key</b></p>
-<p>The LM-OTS public key is generated from the private key by iteratively applying the function H to each individual element of x, for <img class="formulaInl" alt="$ {2}^{w} - 1 $" src="form_470.png"/> iterations, then hashing all of the resulting values. The format of the LM-OTS public key is defined as </p><div class="fragment"><div class="line">--------------------------------------------------</div><div class="line">| <a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a4ab4c9028975c23e2a867d60c653a485">TYPE</a> <a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a37cf6dfaa1dca99f3314be554cacef6d">CODE</a> | I | Q |           K                |</div><div class="line">--------------------------------------------------</div></div><!-- fragment --><p>where K</p>
-<p><img class="formulaInl" alt="$ H(I | Q | u16str(D_PBLC) | y[0] | ... | y[p-1]) $" src="form_473.png"/></p>
+<p>The LM-OTS public key is generated from the private key by iteratively applying the function H to each individual element of x, for <img class="formulaInl" alt="$ {2}^{w} - 1 $" src="form_473.png"/> iterations, then hashing all of the resulting values. The format of the LM-OTS public key is defined as </p><div class="fragment"><div class="line">--------------------------------------------------</div><div class="line">| <a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a4ab4c9028975c23e2a867d60c653a485">TYPE</a> <a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a37cf6dfaa1dca99f3314be554cacef6d">CODE</a> | I | Q |           K                |</div><div class="line">--------------------------------------------------</div></div><!-- fragment --><p>where K</p>
+<p><img class="formulaInl" alt="$ H(I | Q | u16str(D_PBLC) | y[0] | ... | y[p-1]) $" src="form_476.png"/></p>
 <p>where D_PBLC is the fixed two-byte value 0x8080, which is used to distinguish the last hash from every other hash in this system</p>
 <p><b>LMS-OTS Checksum</b></p>
 <p>A checksum is used to ensure that any forgery attempt that manipulates the elements of an existing signature will be detected. This checksum is needed because an attacker can freely advance any of the Winternitz chains. That is, if this checksum were not present, then an attacker who could find a hash that has every digit larger than the valid hash could replace it (and adjust the Winternitz chains)</p>
@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('classjlmots.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjlmots.html">jlmots</a></li>
-    <li class="footer">Generated on Sun Aug 7 2022 16:51:29 for Protocol++(Protocolpp) by
+    <li class="footer">Generated on Mon Dec 12 2022 21:29:57 for Protocol++(Protocolpp) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++(Protocolpp)
-   &#160;<span id="projectnumber">5.3.2</span>
+   &#160;<span id="projectnumber">5.4.0</span>
    </div>
   </td>
  </tr>
@@ -114,8 +114,8 @@ Collaboration diagram for ProtocolPP::judpsa:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6b323d528ab9841877cf3f19ef556bb3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1judpsa.html#a6b323d528ab9841877cf3f19ef556bb3">judpsa</a> ()</td></tr>
 <tr class="separator:a6b323d528ab9841877cf3f19ef556bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adca366a00d11ecf74b97f0a9b02c5429"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1judpsa.html#adca366a00d11ecf74b97f0a9b02c5429">judpsa</a> (<a class="el" href="namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2">direction_t</a> dir, uint16_t src, uint16_t dst, unsigned int mtu)</td></tr>
-<tr class="separator:adca366a00d11ecf74b97f0a9b02c5429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f9154e70bc0eb4432800cd076c5f6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1judpsa.html#a32f9154e70bc0eb4432800cd076c5f6f">judpsa</a> (<a class="el" href="namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2">direction_t</a> dir, <a class="el" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5c">protocol_t</a> ver, uint16_t src, uint16_t dst, uint32_t vni, uint32_t mtu)</td></tr>
+<tr class="separator:a32f9154e70bc0eb4432800cd076c5f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff230f73d1e1c0293906c24728269c8e"><td class="memItemLeft" align="right" valign="top"><a id="aff230f73d1e1c0293906c24728269c8e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1judpsa.html#aff230f73d1e1c0293906c24728269c8e">judpsa</a> (<a class="el" href="classProtocolPP_1_1judpsa.html">judpsa</a> &amp;rhs)</td></tr>
 <tr class="memdesc:aff230f73d1e1c0293906c24728269c8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard copy constructor. <br /></td></tr>
@@ -170,17 +170,21 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr>
 <td>dir</td><td>direction_t::ENCAP </td></tr>
 <tr>
+<td>dir</td><td>protocol_t::NOPROTO </td></tr>
+<tr>
 <td>src</td><td>0xFEED </td></tr>
 <tr>
 <td>dst</td><td>0xBEEF </td></tr>
+<tr>
+<td>vni</td><td>0 </td></tr>
 <tr>
 <td>mtu</td><td>0 </td></tr>
 </table>
 
 </div>
 </div>
-<a id="adca366a00d11ecf74b97f0a9b02c5429"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adca366a00d11ecf74b97f0a9b02c5429">&#9670;&nbsp;</a></span>judpsa() <span class="overload">[2/2]</span></h2>
+<a id="a32f9154e70bc0eb4432800cd076c5f6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32f9154e70bc0eb4432800cd076c5f6f">&#9670;&nbsp;</a></span>judpsa() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,6 +194,12 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2">direction_t</a>&#160;</td>
           <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5c">protocol_t</a>&#160;</td>
+          <td class="paramname"><em>ver</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -206,7 +216,13 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>vni</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>mtu</em>&#160;</td>
         </tr>
         <tr>
@@ -220,8 +236,10 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dir</td><td>- Direction of UDP data flow (ENCAP or DECAP) </td></tr>
+    <tr><td class="paramname">ver</td><td>- Version of UDP to use (NOPROT, VXLAN) </td></tr>
     <tr><td class="paramname">src</td><td>- Source port for data </td></tr>
     <tr><td class="paramname">dst</td><td>- Destination port for data </td></tr>
+    <tr><td class="paramname">vni</td><td>- VXLAN Network Identifier </td></tr>
     <tr><td class="paramname">mtu</td><td>- Maximum transmission size </td></tr>
   </table>
   </dd>
@@ -440,7 +458,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceProtocolPP.html">ProtocolPP</a></li><li class="navelem"><a class="el" href="classProtocolPP_1_1judpsa.html">judpsa</a></li>
-    <li class="footer">Generated on Sun Aug 7 2022 16:51:30 for Protocol++(Protocolpp) by
+    <li class="footer">Generated on Mon Dec 12 2022 21:29:58 for Protocol++(Protocolpp) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

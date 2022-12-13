@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++(Protocolpp)
-   &#160;<span id="projectnumber">5.3.2</span>
+   &#160;<span id="projectnumber">5.4.0</span>
    </div>
   </td>
  </tr>
@@ -107,7 +107,7 @@ PDCP SN</h2>
 <p>Length: 5, 7, 12, 15, 16, or 18 bits as indicated in the following table except for NB-IoT which uses 7 bit PDCP SN for DRB.</p>
 <a class="anchor" id="pdcpsn"></a>
 <table class="doxtable">
-<caption><img class="formulaInl" alt="$ PDCP SN Length$" src="form_341.png"/></caption>
+<caption><img class="formulaInl" alt="$ PDCP SN Length$" src="form_344.png"/></caption>
 <tr>
 <th>Length</th><th>Description </th></tr>
 <tr>
@@ -156,7 +156,7 @@ D/C</h2>
 <p>Length: 1 bit</p>
 <a class="anchor" id="dcfield"></a>
 <table class="doxtable">
-<caption><img class="formulaInl" alt="$ D/C field$" src="form_342.png"/></caption>
+<caption><img class="formulaInl" alt="$ D/C field$" src="form_345.png"/></caption>
 <tr>
 <th>Bit</th><th>Description </th></tr>
 <tr>
@@ -169,7 +169,7 @@ PDU type</h2>
 <p>Length: 3 bits</p>
 <a class="anchor" id="pdutype"></a>
 <table class="doxtable">
-<caption><img class="formulaInl" alt="$ PDU type$" src="form_343.png"/></caption>
+<caption><img class="formulaInl" alt="$ PDU type$" src="form_346.png"/></caption>
 <tr>
 <th>Bit</th><th>Description </th></tr>
 <tr>
@@ -192,7 +192,7 @@ Bitmap</h2>
 <p>The MSB of the first octet of the type "Bitmap" indicates whether or not the PDCP SDU with the SN (FMS + 1) modulo (Maximum_PDCP_SN + 1) has been received and, optionally decompressed correctly. The LSB of the first octet of the type "Bitmap" indicates whether or not the PDCP SDU with the SN (FMS + 8) modulo (Maximum_PDCP_SN + 1) has been received and, optionally decompressed correctly</p>
 <a class="anchor" id="bitmap"></a>
 <table class="doxtable">
-<caption><img class="formulaInl" alt="$ Bitmap$" src="form_344.png"/></caption>
+<caption><img class="formulaInl" alt="$ Bitmap$" src="form_347.png"/></caption>
 <tr>
 <th>Bit</th><th>Description </th></tr>
 <tr>
@@ -219,7 +219,7 @@ SDU Type</h2>
 <p>PDCP SDU type, i.e. Layer-3 Protocol Data Unit type as specified in [14]. PDCP entity may handle the SDU differently per SDU Type, e.g. header compression is applicable to IP SDU but not ARP SDU and Non-IP SDU</p>
 <a class="anchor" id="sdutype"></a>
 <table class="doxtable">
-<caption><img class="formulaInl" alt="$ SDU Type$" src="form_345.png"/></caption>
+<caption><img class="formulaInl" alt="$ SDU Type$" src="form_348.png"/></caption>
 <tr>
 <th>Bit</th><th>Description </th></tr>
 <tr>
@@ -378,7 +378,7 @@ LTE User Plane Packet formats [5]</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjlte.html">jlte</a></li>
-    <li class="footer">Generated on Sun Aug 7 2022 16:51:29 for Protocol++(Protocolpp) by
+    <li class="footer">Generated on Mon Dec 12 2022 21:29:57 for Protocol++(Protocolpp) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

@@ -4,6 +4,7 @@ var searchData=
   ['warn_5finput_5fqueue_5ffull',['WARN_INPUT_QUEUE_FULL',['../namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23aff99e28197a8bb33b7cd178a80de9ef3',1,'ProtocolPP']]],
   ['warn_5fipv6_5froute',['WARN_IPV6_ROUTE',['../namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23a78b00c869375afc8e790da2135630394',1,'ProtocolPP']]],
   ['warn_5fno_5fvlan',['WARN_NO_VLAN',['../namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23a626bc1c031361fec7112798026e0f3de',1,'ProtocolPP']]],
+  ['warn_5fno_5fvni',['WARN_NO_VNI',['../namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23a68171563eb12ec6e798da46281a17ec3',1,'ProtocolPP']]],
   ['warn_5foutput_5fqueue_5fempty',['WARN_OUTPUT_QUEUE_EMPTY',['../namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23a4af08172b154b9480c90f0860f17be0e',1,'ProtocolPP']]],
   ['warn_5fzero_5fdata',['WARN_ZERO_DATA',['../namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23a411c22528842ce2ddb89a96715f8474d',1,'ProtocolPP']]],
   ['warnclr',['WARNCLR',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36af1bd3778669b41bad9575dd7debb1699',1,'ProtocolPP']]],

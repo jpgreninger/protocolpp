@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++(Protocolpp)
-   &#160;<span id="projectnumber">5.3.2</span>
+   &#160;<span id="projectnumber">5.4.0</span>
    </div>
   </td>
  </tr>
@@ -154,7 +154,7 @@ Secure Real-Time Protocol (SRTP) Packet Structure</div></div>
 </li>
 </ul>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ i = {2}^{16} \oplus ROC + SEQ \]" src="form_416.png"/>
+<img class="formulaDsp" alt="\[ i = {2}^{16} \oplus ROC + SEQ \]" src="form_419.png"/>
 </p>
 <ul>
 <li>for the receiver only, a 16-bit sequence number s_l, which can be thought of as the highest received RTP sequence number (see Section 3.3.1 for its handling), which SHOULD be authenticated since message authentication is RECOMMENDED,</li>
@@ -170,7 +170,7 @@ Secure Real-Time Protocol (SRTP) Packet Structure</div></div>
 <p>In addition, for each master key, an SRTP stream MAY use the following associated values:</p>
 <ul>
 <li>a master salt, to be used in the key derivation of session keys. This value, when used, MUST be random, but MAY be public. Use of master salt is strongly RECOMMENDED, see Section 9.2. A "NULL" salt is treated as 00...0.</li>
-<li>an integer in the set {1,2,4,..., <img class="formulaInl" alt="${2}^{24}$" src="form_417.png"/> }, the "key_derivation_rate", where an unspecified value is treated as zero. The constraint to be a power of 2 simplifies the session-key derivation implementation, see Section 4.3.</li>
+<li>an integer in the set {1,2,4,..., <img class="formulaInl" alt="${2}^{24}$" src="form_420.png"/> }, the "key_derivation_rate", where an unspecified value is treated as zero. The constraint to be a power of 2 simplifies the session-key derivation implementation, see Section 4.3.</li>
 <li>an MKI value,</li>
 <li>&lt;From, To&gt; values, specifying the lifetime for a master key, expressed in terms of the two 48-bit index values inside whose range (including the range end-points) the master key is valid. For the use of &lt;From, To&gt;, see Section 8.1.1. &lt;From, To&gt; is an alternative to the MKI and assumes that a master key is in one to-one correspondence with the SRTP session key on which the &lt;From, To&gt; range is defined.</li>
 </ul>
@@ -211,22 +211,22 @@ SRTP Packet Processing</h2>
 </ol>
 <p><b>Packet Index Determination, and ROC, s_l Update</b></p>
 <p>SRTP implementations use an "implicit" packet index for sequencing, i.e., not all of the index is explicitly carried in the SRTP packet. For the pre-defined transforms, the index i is used in replay protection (Section 3.3.2), encryption (Section 4.1), message authentication (Section 4.2), and for the key derivation (Section 4.3).</p>
-<p>When the session starts, the sender side MUST set the rollover counter, ROC, to zero. Each time the RTP sequence number, SEQ, wraps modulo <img class="formulaInl" alt="${2}^{16}$" src="form_418.png"/>, the sender side MUST increment ROC by one, modulo <img class="formulaInl" alt="${2}^{32}$" src="form_340.png"/> (see security aspects below). The sender’s packet index is then defined as</p>
+<p>When the session starts, the sender side MUST set the rollover counter, ROC, to zero. Each time the RTP sequence number, SEQ, wraps modulo <img class="formulaInl" alt="${2}^{16}$" src="form_421.png"/>, the sender side MUST increment ROC by one, modulo <img class="formulaInl" alt="${2}^{32}$" src="form_343.png"/> (see security aspects below). The sender’s packet index is then defined as</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ i = {2}^{16} \oplus ROC + SEQ \]" src="form_416.png"/>
+<img class="formulaDsp" alt="\[ i = {2}^{16} \oplus ROC + SEQ \]" src="form_419.png"/>
 </p>
-<p>Receiver-side implementations use the RTP sequence number to determine the correct index of a packet, which is the location of the packet in the sequence of all SRTP packets. A robust approach for the proper use of a rollover counter requires its handling and use to be well defined. In particular, out-of-order RTP packets with sequence numbers close to <img class="formulaInl" alt="${2}^{16}$" src="form_418.png"/> or zero must be properly handled.</p>
+<p>Receiver-side implementations use the RTP sequence number to determine the correct index of a packet, which is the location of the packet in the sequence of all SRTP packets. A robust approach for the proper use of a rollover counter requires its handling and use to be well defined. In particular, out-of-order RTP packets with sequence numbers close to <img class="formulaInl" alt="${2}^{16}$" src="form_421.png"/> or zero must be properly handled.</p>
 <p>The index estimate is based on the receiver’s locally maintained ROC and s_l values. At the setup of the session, the ROC MUST be set to zero. Receivers joining an on-going session MUST be given the current ROC value using out-of-band signaling such as key-management signaling. Furthermore, the receiver SHALL initialize s_l to the RTP sequence number (SEQ) of the first observed SRTP packet (unless the initial value is provided by out of band signaling such as key management).</p>
 <p>On consecutive SRTP packets, the receiver SHOULD estimate the index as</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ i = {2}^{16} \oplus v + SEQ \]" src="form_419.png"/>
+<img class="formulaDsp" alt="\[ i = {2}^{16} \oplus v + SEQ \]" src="form_422.png"/>
 </p>
-<p>where v is chosen from the set { ROC-1, ROC, ROC+1 } (modulo <img class="formulaInl" alt="${2}^{32}$" src="form_340.png"/>) such that i is closest (in modulo <img class="formulaInl" alt="${2}^{48}$" src="form_420.png"/> sense) to the value <img class="formulaInl" alt="${2}^{16} \oplus ROC + s_l$" src="form_421.png"/> (see Appendix A for pseudocode).</p>
-<p>After the packet has been processed and authenticated (when enabled for SRTP packets for the session), the receiver MUST use v to conditionally update its s_l and ROC variables as follows. If <img class="formulaInl" alt="$v=(ROC-1) \bmod{{2}^{32}}$" src="form_422.png"/>, then there is no update to s_l or ROC. If v=ROC, then s_l is set to SEQ if and only if SEQ is larger than the current s_l; there is no change to ROC. If <img class="formulaInl" alt="$v=(ROC+1) \bmod{{2}^{32}}$" src="form_423.png"/>, then s_l is set to SEQ and ROC is set to v.</p>
+<p>where v is chosen from the set { ROC-1, ROC, ROC+1 } (modulo <img class="formulaInl" alt="${2}^{32}$" src="form_343.png"/>) such that i is closest (in modulo <img class="formulaInl" alt="${2}^{48}$" src="form_423.png"/> sense) to the value <img class="formulaInl" alt="${2}^{16} \oplus ROC + s_l$" src="form_424.png"/> (see Appendix A for pseudocode).</p>
+<p>After the packet has been processed and authenticated (when enabled for SRTP packets for the session), the receiver MUST use v to conditionally update its s_l and ROC variables as follows. If <img class="formulaInl" alt="$v=(ROC-1) \bmod{{2}^{32}}$" src="form_425.png"/>, then there is no update to s_l or ROC. If v=ROC, then s_l is set to SEQ if and only if SEQ is larger than the current s_l; there is no change to ROC. If <img class="formulaInl" alt="$v=(ROC+1) \bmod{{2}^{32}}$" src="form_426.png"/>, then s_l is set to SEQ and ROC is set to v.</p>
 <p>After a re-keying occurs (changing to a new master key), the rollover counter always maintains its sequence of values, i.e., it MUST NOT be reset to zero.</p>
-<p>As the rollover counter is 32 bits long and the sequence number is 16 bits long, the maximum number of packets belonging to a given SRTP stream that can be secured with the same key is <img class="formulaInl" alt="${2}^{48}$" src="form_420.png"/> using the predefined transforms. After that number of SRTP packets have been sent with a given (master or session) key, the sender MUST NOT send any more packets with that key. (There exists a similar limit for SRTCP, which in practice may be more restrictive, see Section 9.2.) This limitation enforces a security benefit by providing an upper bound on the amount of traffic that can pass before cryptographic keys are changed. Re-keying (see Section 8.1) MUST be triggered, before this amount of traffic, and MAY be triggered earlier, e.g., for increased security and access control to media. Recurring key derivation by means of a non-zero key_derivation_rate (see Section 4.3), also gives stronger security but does not change the above absolute maximum value.</p>
-<p>On the receiver side, there is a caveat to updating s_l and ROC: if message authentication is not present, neither the initialization of s_l, nor the ROC update can be made completely robust. The receiver’s "implicit index" approach works for the pre-defined transforms as long as the reorder and loss of the packets are not too great and bit-errors do not occur in unfortunate ways. In particular, <img class="formulaInl" alt="${2}^{15}$" src="form_424.png"/> packets would need to be lost, or a packet would need to be <img class="formulaInl" alt="${2}^{15}$" src="form_424.png"/> packets out of sequence before synchronization is lost. Such drastic loss or reorder is likely to disrupt the RTP application itself.</p>
-<p>The algorithm for the index estimate and ROC update is a matter of implementation, and should take into consideration the environment (e.g., packet loss rate) and the cases when synchronization is likely to be lost, e.g., when the initial sequence number (randomly chosen by RTP) is not known in advance (not sent in the key management protocol) but may be near to wrap modulo <img class="formulaInl" alt="${2}^{16}$" src="form_418.png"/>.</p>
+<p>As the rollover counter is 32 bits long and the sequence number is 16 bits long, the maximum number of packets belonging to a given SRTP stream that can be secured with the same key is <img class="formulaInl" alt="${2}^{48}$" src="form_423.png"/> using the predefined transforms. After that number of SRTP packets have been sent with a given (master or session) key, the sender MUST NOT send any more packets with that key. (There exists a similar limit for SRTCP, which in practice may be more restrictive, see Section 9.2.) This limitation enforces a security benefit by providing an upper bound on the amount of traffic that can pass before cryptographic keys are changed. Re-keying (see Section 8.1) MUST be triggered, before this amount of traffic, and MAY be triggered earlier, e.g., for increased security and access control to media. Recurring key derivation by means of a non-zero key_derivation_rate (see Section 4.3), also gives stronger security but does not change the above absolute maximum value.</p>
+<p>On the receiver side, there is a caveat to updating s_l and ROC: if message authentication is not present, neither the initialization of s_l, nor the ROC update can be made completely robust. The receiver’s "implicit index" approach works for the pre-defined transforms as long as the reorder and loss of the packets are not too great and bit-errors do not occur in unfortunate ways. In particular, <img class="formulaInl" alt="${2}^{15}$" src="form_427.png"/> packets would need to be lost, or a packet would need to be <img class="formulaInl" alt="${2}^{15}$" src="form_427.png"/> packets out of sequence before synchronization is lost. Such drastic loss or reorder is likely to disrupt the RTP application itself.</p>
+<p>The algorithm for the index estimate and ROC update is a matter of implementation, and should take into consideration the environment (e.g., packet loss rate) and the cases when synchronization is likely to be lost, e.g., when the initial sequence number (randomly chosen by RTP) is not known in advance (not sent in the key management protocol) but may be near to wrap modulo <img class="formulaInl" alt="${2}^{16}$" src="form_421.png"/>.</p>
 <p>A more elaborate and more robust scheme than the one given above is the handling of RTP’s own "rollover counter", see Appendix A.1 of [RFC3550].</p>
 <p><b>Replay Protection</b></p>
 <p>Secure replay protection is only possible when integrity protection is present. It is RECOMMENDED to use replay protection, both for RTP and RTCP, as integrity protection alone cannot assure security against replay attacks.</p>
@@ -275,7 +275,7 @@ Generic AEAD Processing</h2>
 <h2><a class="anchor" id="CTR"></a>
 Counter Mode Encryption</h2>
 <p>Each outbound packet uses a 12-octet IV and an encryption key to form two outputs, a 16-octet first_key_block which is used in forming the authentication tag and a key stream of octets, formed in blocks of 16-octets each. The first 16-octet block of key is saved for use in forming the authentication tag, and the remainder of the key stream is XORed to the plaintext to form cipher. This key stream is formed one block at a time by inputting the concatenation of a 12-octet IV (see sections 8.1 and 9.1) with a 4-octet block to AES. The pseudo-code below illustrates this process:</p>
-<div class="fragment"><div class="line">def GCM_keystream( Plaintext_len, IV, Encryption_key ):</div><div class="line">    assert Plaintext_len  &lt;= (2**36) - 32 ## measured in octets</div><div class="line">    key_stream = <span class="stringliteral">&quot;&quot;</span></div><div class="line">    block_counter = 1</div><div class="line">    first_key_block = AES_ENC( data=<a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36aea41ac6e2e650d48da10a7354e89e41a">IV</a>||block_counter,</div><div class="line">                               key=Encryption_key        )</div><div class="line">    while len(key_stream) &lt; Plaintext_len:</div><div class="line">          block_counter = block_counter + 1</div><div class="line">          key_block = AES_ENC( data=<a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36aea41ac6e2e650d48da10a7354e89e41a">IV</a>||block_counter,</div><div class="line">          key=Encryption_key        )</div><div class="line">          key_stream  = key_stream || key_block</div><div class="line">          key_stream = truncate( key_stream, Plaintext_len )</div><div class="line">    return (first_key_block, key_stream )</div></div><!-- fragment --><p>In theory this keystream generation process allows for the encryption of up to <img class="formulaInl" alt="${2}^{36}-32$" src="form_425.png"/> octets per invocation (i.e. per packet), far longer than is actually required.</p>
+<div class="fragment"><div class="line">def GCM_keystream( Plaintext_len, IV, Encryption_key ):</div><div class="line">    assert Plaintext_len  &lt;= (2**36) - 32 ## measured in octets</div><div class="line">    key_stream = <span class="stringliteral">&quot;&quot;</span></div><div class="line">    block_counter = 1</div><div class="line">    first_key_block = AES_ENC( data=<a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36aea41ac6e2e650d48da10a7354e89e41a">IV</a>||block_counter,</div><div class="line">                               key=Encryption_key        )</div><div class="line">    while len(key_stream) &lt; Plaintext_len:</div><div class="line">          block_counter = block_counter + 1</div><div class="line">          key_block = AES_ENC( data=<a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36aea41ac6e2e650d48da10a7354e89e41a">IV</a>||block_counter,</div><div class="line">          key=Encryption_key        )</div><div class="line">          key_stream  = key_stream || key_block</div><div class="line">          key_stream = truncate( key_stream, Plaintext_len )</div><div class="line">    return (first_key_block, key_stream )</div></div><!-- fragment --><p>In theory this keystream generation process allows for the encryption of up to <img class="formulaInl" alt="${2}^{36}-32$" src="form_428.png"/> octets per invocation (i.e. per packet), far longer than is actually required.</p>
 <p>With any counter mode, if the same (IV, Encryption_key) pair is used twice, precisely the same keystream is formed. As explained in section 9.1 of RFC 3711, this is a cryptographic disaster. For GCM the consequences are even worse since such a reuse compromises GCM’s integrity mechanism not only for the current packet stream but for all future uses of the current encryption_key.</p>
 <p><b>Unneeded SRTP/SRTCP Fields</b></p>
 <p>AEAD counter mode encryption removes the need for certain existing SRTP/SRTCP mechanisms.</p>
@@ -314,7 +314,7 @@ Use of the ARIA Block cipher with SRTP</h2>
 <li>auth_function: HMAC-SHA1</li>
 <li>auth_key_length: 160 bits</li>
 <li>auth_tag_length: 80 bits</li>
-<li>maximum_lifetime: at most <img class="formulaInl" alt="$ {2}^{31}$" src="form_426.png"/> SRTCP packets and at most <img class="formulaInl" alt="$ {2}^{48}$" src="form_427.png"/> SRTP packets</li>
+<li>maximum_lifetime: at most <img class="formulaInl" alt="$ {2}^{31}$" src="form_429.png"/> SRTCP packets and at most <img class="formulaInl" alt="$ {2}^{48}$" src="form_430.png"/> SRTP packets</li>
 </ul>
 <p>SRTP_ARIA_128_CTR_HMAC_SHA1_32</p><ul>
 <li>cipher: ARIA_128_CTR</li>
@@ -325,7 +325,7 @@ Use of the ARIA Block cipher with SRTP</h2>
 <li>auth_key_length: 160 bits</li>
 <li>SRTP auth_tag_length: 32 bits</li>
 <li>SRTCP auth_tag_length: 80 bits</li>
-<li>maximum_lifetime: at most <img class="formulaInl" alt="$ {2}^{31}$" src="form_426.png"/> SRTCP packets and at most <img class="formulaInl" alt="$ {2}^{48}$" src="form_427.png"/> SRTP packets</li>
+<li>maximum_lifetime: at most <img class="formulaInl" alt="$ {2}^{31}$" src="form_429.png"/> SRTCP packets and at most <img class="formulaInl" alt="$ {2}^{48}$" src="form_430.png"/> SRTP packets</li>
 </ul>
 <p>SRTP_ARIA_192_CTR_HMAC_SHA1_80</p><ul>
 <li>cipher: ARIA_192_CTR</li>
@@ -335,7 +335,7 @@ Use of the ARIA Block cipher with SRTP</h2>
 <li>auth_function: HMAC-SHA1</li>
 <li>auth_key_length: 160 bits</li>
 <li>auth_tag_length: 80 bits</li>
-<li>maximum_lifetime: at most <img class="formulaInl" alt="$ {2}^{31}$" src="form_426.png"/> SRTCP packets and at most <img class="formulaInl" alt="$ {2}^{48}$" src="form_427.png"/> SRTP packets</li>
+<li>maximum_lifetime: at most <img class="formulaInl" alt="$ {2}^{31}$" src="form_429.png"/> SRTCP packets and at most <img class="formulaInl" alt="$ {2}^{48}$" src="form_430.png"/> SRTP packets</li>
 </ul>
 <p>SRTP_ARIA_192_CTR_HMAC_SHA1_32</p><ul>
 <li>cipher: ARIA_192_CTR</li>
@@ -346,7 +346,7 @@ Use of the ARIA Block cipher with SRTP</h2>
 <li>auth_key_length: 160 bits</li>
 <li>SRTP auth_tag_length: 32 bits</li>
 <li>SRTCP auth_tag_length: 80 bits</li>
-<li>maximum_lifetime: at most <img class="formulaInl" alt="$ {2}^{31}$" src="form_426.png"/> SRTCP packets and at most <img class="formulaInl" alt="$ {2}^{48}$" src="form_427.png"/> SRTP packets</li>
+<li>maximum_lifetime: at most <img class="formulaInl" alt="$ {2}^{31}$" src="form_429.png"/> SRTCP packets and at most <img class="formulaInl" alt="$ {2}^{48}$" src="form_430.png"/> SRTP packets</li>
 </ul>
 <p>SRTP_ARIA_256_CTR_HMAC_SHA1_80</p><ul>
 <li>cipher: ARIA_256_CTR</li>
@@ -356,7 +356,7 @@ Use of the ARIA Block cipher with SRTP</h2>
 <li>auth_function: HMAC-SHA1</li>
 <li>auth_key_length: 160 bits</li>
 <li>auth_tag_length: 80 bits</li>
-<li>maximum_lifetime: at most <img class="formulaInl" alt="$ {2}^{31}$" src="form_426.png"/> SRTCP packets and at most <img class="formulaInl" alt="$ {2}^{48}$" src="form_427.png"/> SRTP packets</li>
+<li>maximum_lifetime: at most <img class="formulaInl" alt="$ {2}^{31}$" src="form_429.png"/> SRTCP packets and at most <img class="formulaInl" alt="$ {2}^{48}$" src="form_430.png"/> SRTP packets</li>
 </ul>
 <p>SRTP_ARIA_256_CTR_HMAC_SHA1_32</p><ul>
 <li>cipher: ARIA_256_CTR</li>
@@ -367,7 +367,7 @@ Use of the ARIA Block cipher with SRTP</h2>
 <li>auth_key_length: 160 bits</li>
 <li>SRTP auth_tag_length: 32 bits</li>
 <li>SRTCP auth_tag_length: 80 bits</li>
-<li>maximum_lifetime: at most <img class="formulaInl" alt="$ {2}^{31}$" src="form_426.png"/> SRTCP packets and at most <img class="formulaInl" alt="$ {2}^{48}$" src="form_427.png"/> SRTP packets</li>
+<li>maximum_lifetime: at most <img class="formulaInl" alt="$ {2}^{31}$" src="form_429.png"/> SRTCP packets and at most <img class="formulaInl" alt="$ {2}^{48}$" src="form_430.png"/> SRTP packets</li>
 </ul>
 <p>SRTP_AEAD_ARIA_128_GCM</p><ul>
 <li>cipher: ARIA_128_GCM</li>
@@ -378,7 +378,7 @@ Use of the ARIA Block cipher with SRTP</h2>
 <li>auth_key_length: N/A</li>
 <li>auth_tag_length: N/A</li>
 <li>key derivation function: ARIA_128_CTR_PRF</li>
-<li>maximum_lifetime: at most <img class="formulaInl" alt="$ {2}^{31}$" src="form_426.png"/> SRTCP packets and at most <img class="formulaInl" alt="$ {2}^{48}$" src="form_427.png"/> SRTP packets</li>
+<li>maximum_lifetime: at most <img class="formulaInl" alt="$ {2}^{31}$" src="form_429.png"/> SRTCP packets and at most <img class="formulaInl" alt="$ {2}^{48}$" src="form_430.png"/> SRTP packets</li>
 </ul>
 <p>SRTP_AEAD_ARIA_256_GCM</p><ul>
 <li>cipher: ARIA_256_GCM</li>
@@ -389,7 +389,7 @@ Use of the ARIA Block cipher with SRTP</h2>
 <li>auth_key_length: N/A</li>
 <li>auth_tag_length: N/A</li>
 <li>key derivation function: ARIA_256_CTR_PRF</li>
-<li>maximum_lifetime: at most <img class="formulaInl" alt="$ {2}^{31}$" src="form_426.png"/> SRTCP packets and at most <img class="formulaInl" alt="$ {2}^{48}$" src="form_427.png"/> SRTP packets</li>
+<li>maximum_lifetime: at most <img class="formulaInl" alt="$ {2}^{31}$" src="form_429.png"/> SRTCP packets and at most <img class="formulaInl" alt="$ {2}^{48}$" src="form_430.png"/> SRTP packets</li>
 </ul>
 <p>The ARIA-CTR protection profiles use the same authentication transform that is mandatory to implement in SRTP, HMAC-SHA1 with a 160-bit key.</p>
 <p>Note that SRTP Protection Profiles which use AEAD algorithms do not specify an auth_function, auth_key_length, or auth_tag_length, since they do not use a separate auth_function, auth_key, or auth_tag. The term aead_auth_tag_length is used to emphasize that this refers to the authentication tag provided by the AEAD algorithm and that this tag is not located in the authentication tag field provided by SRTP/SRTCP.</p>
@@ -446,7 +446,7 @@ ProtoocolPP::jrand</dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjsrtp.html">jsrtp</a></li>
-    <li class="footer">Generated on Sun Aug 7 2022 16:51:30 for Protocol++(Protocolpp) by
+    <li class="footer">Generated on Mon Dec 12 2022 21:29:57 for Protocol++(Protocolpp) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

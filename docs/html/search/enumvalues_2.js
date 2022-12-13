@@ -7,6 +7,7 @@ var searchData=
   ['camellia_5fecb',['CAMELLIA_ECB',['../namespaceProtocolPP.html#aba84d6eeb00e8af8d8758731492dd76babf2e0e6667fb630d06fb8d667b69ba85',1,'ProtocolPP']]],
   ['camellia_5fgcm',['CAMELLIA_GCM',['../namespaceProtocolPP.html#aba84d6eeb00e8af8d8758731492dd76bac8e5e992cf9090951417ad0bd7c0b5d8',1,'ProtocolPP']]],
   ['cbc',['CBC',['../classProtocolPP_1_1jmodes.html#ab59eefcf49771a42cb6ef35e9b65d514aa0ddc98257e6823db1b44c91680c45ea',1,'ProtocolPP::jmodes']]],
+  ['cbit',['CBIT',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ab58e6142420282bf0ee79da01b62a606',1,'ProtocolPP']]],
   ['cbt',['CBT',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8a9f505fbc50603b4a49a6bcce25008703',1,'ProtocolPP']]],
   ['cc',['CC',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a1d79f274bebb7305abc7859da3c5981a',1,'ProtocolPP']]],
   ['ccm',['CCM',['../classProtocolPP_1_1jmodes.html#ab59eefcf49771a42cb6ef35e9b65d514a5ca74cede3ead8084a47e80559dd4123',1,'ProtocolPP::jmodes']]],

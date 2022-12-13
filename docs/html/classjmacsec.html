@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++(Protocolpp)
-   &#160;<span id="projectnumber">5.3.2</span>
+   &#160;<span id="projectnumber">5.4.0</span>
    </div>
   </td>
  </tr>
@@ -402,7 +402,7 @@ Supported MacSec Ciphersuites</div></div>
 <p><b>Cipher Suite capabilities</b></p>
 <p>Any Cipher Suite used with MACsec shall</p>
 <ul>
-<li>Provide integrity protection for the SCI, PN, Source Address, Destination Address, SecTAG, and from 0 through <img class="formulaInl" alt="${2}^{16}-1$" src="form_346.png"/> octets of User Data on each invocation</li>
+<li>Provide integrity protection for the SCI, PN, Source Address, Destination Address, SecTAG, and from 0 through <img class="formulaInl" alt="${2}^{16}-1$" src="form_349.png"/> octets of User Data on each invocation</li>
 <li>Provide integrity and confidentiality (if specified) for up to <img class="formulaInl" alt="${2}^{32}-1$" src="form_0.png"/> invocations, each with a different PN, without requiring a fresh SAK</li>
 <li>Given any specific number of octets of User Data, generate a predictable number of octets of Secure Data and ICV</li>
 </ul>
@@ -479,7 +479,7 @@ Macsec Ciphersuite Conformance Requirements</div></div>
 <h2><a class="anchor" id="MACSECXPN"></a>
 Media Access Control (MAC) Security–Amendment 2: Extended Packet Numbering</h2>
 <p><b>Amendment 2: Extended Packet Numbering</b></p>
-<p>This amendment to IEEE Std 802.1AE-2006 allows more than <img class="formulaInl" alt="${2}^{32}$" src="form_340.png"/> MACsec protected frames to be sent using a single Secure Association Key (SAK) by enabling the use of a 64-bit Packet Number (PN) and specifying two Cipher Suites (GCM-AES-XPN-128 and GCM-AES-XPN-256) that use that extended packet numbering as part of their Initial Value (IV) construction. MACsec frame formats and principles of MAC Security Entity operation remain unchanged. Changes are applied to the base text of IEEE Std 802.1AE-2006 as amended by IEEE Std 802.1AEbn-2011</p>
+<p>This amendment to IEEE Std 802.1AE-2006 allows more than <img class="formulaInl" alt="${2}^{32}$" src="form_343.png"/> MACsec protected frames to be sent using a single Secure Association Key (SAK) by enabling the use of a 64-bit Packet Number (PN) and specifying two Cipher Suites (GCM-AES-XPN-128 and GCM-AES-XPN-256) that use that extended packet numbering as part of their Initial Value (IV) construction. MACsec frame formats and principles of MAC Security Entity operation remain unchanged. Changes are applied to the base text of IEEE Std 802.1AE-2006 as amended by IEEE Std 802.1AEbn-2011</p>
 <h2><a class="anchor" id="SECTAGXPN"></a>
 Security TAG</h2>
 <div class="image">
@@ -498,10 +498,10 @@ Packet Number (PN)</h2>
 <h2><a class="anchor" id="XPNR"></a>
 PN recovery and preliminary replay check</h2>
 <p>If the Current Cipher Suite does not use extended packet numbering, i.e. the PN comprises 32-bits, the value of the PN is that of the lower 32 bits decoded from the SecTAG of the received frame. If extended packet numbering is used, the 32 most significant bits are recovered for each received frame as specified in by applying the assumption that they have remained unchanged since their use in the frame with the lowest acceptable PN (10.6.2) — unless the most significant of the 32 least significant bits of the lowest acceptable PN is set and the corresponding bit of the received PN is not set, in which case the 32 most significant bits of the PN are those of the lowest acceptable PN incremented by one</p>
-<p>NOTE—If a large number of successive frames were to be lost ( <img class="formulaInl" alt="${2}^{30}-1$" src="form_347.png"/> , corresponding to approximately 9 seconds of full utilization of a 400 Gb/s link by minimum sized Ethernet frames) subsequent receipt of MACsec frames might fail to establish a correct PN value. MKA, the MACsec Key Agreement protocol specified in IEEE Std 802.1X and its amendments communicates the value of the high order bits periodically to recover from this eventuality</p>
+<p>NOTE—If a large number of successive frames were to be lost ( <img class="formulaInl" alt="${2}^{30}-1$" src="form_350.png"/> , corresponding to approximately 9 seconds of full utilization of a 400 Gb/s link by minimum sized Ethernet frames) subsequent receipt of MACsec frames might fail to establish a correct PN value. MKA, the MACsec Key Agreement protocol specified in IEEE Std 802.1X and its amendments communicates the value of the high order bits periodically to recover from this eventuality</p>
 <h2><a class="anchor" id="Frame"></a>
 verification controls</h2>
-<p>If the Current Cipher Suite uses extended packet numbering, i.e. a 64-bit PN, then the maximum value of replayWindow used in the Secure Frame Verification process (10.6) is <img class="formulaInl" alt="${2}^{30}–1$" src="form_348.png"/>, but any higher value set by network management is retained for possible subsequent use with a different Cipher Suite and will be reported if read by network management. This provision provides compatibility with prior revisions of this standard, though it is unlikely that such a high value of replayWindow would have been used</p>
+<p>If the Current Cipher Suite uses extended packet numbering, i.e. a 64-bit PN, then the maximum value of replayWindow used in the Secure Frame Verification process (10.6) is <img class="formulaInl" alt="${2}^{30}–1$" src="form_351.png"/>, but any higher value set by network management is retained for possible subsequent use with a different Cipher Suite and will be reported if read by network management. This provision provides compatibility with prior revisions of this standard, though it is unlikely that such a high value of replayWindow would have been used</p>
 <h2><a class="anchor" id="RSAC"></a>
 Receive SA creation</h2>
 <p>A receive SA is created for an existing SC on request from the KaY, with the following parameters:</p>
@@ -676,7 +676,7 @@ ProtocolPP::jenum</dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjmacsec.html">jmacsec</a></li>
-    <li class="footer">Generated on Sun Aug 7 2022 16:51:30 for Protocol++(Protocolpp) by
+    <li class="footer">Generated on Mon Dec 12 2022 21:29:57 for Protocol++(Protocolpp) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

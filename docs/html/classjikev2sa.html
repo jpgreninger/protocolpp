@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++(Protocolpp)
-   &#160;<span id="projectnumber">5.3.2</span>
+   &#160;<span id="projectnumber">5.4.0</span>
    </div>
   </td>
  </tr>
@@ -126,33 +126,33 @@ Endpoint to Security Gateway Tunnel</div></div>
 <p>In the context of the IKE_SA, four cryptographic algorithms are negotiated: an encryption algorithm, an integrity protection algorithm, a Diffie-Hellman group, and a pseudo-random function (prf). The pseudo-random function is used for the construction of keying material for all of the cryptographic algorithms used in both the IKE_SA and the CHILD_SAs</p>
 <p>We assume that each encryption algorithm and integrity protection algorithm uses a fixed-size key and that any randomly chosen value of that fixed size can serve as an appropriate key. For algorithms that accept a variable length key, a fixed key size MUST be specified as part of the cryptographic transform negotiated. For algorithms for which not all values are valid keys (such as DES or 3DES with key parity), the algorithm by which keys are derived from arbitrary values MUST be specified by the cryptographic transform. For integrity protection functions based on Hashed Message Authentication Code (HMAC), the fixed key size is the size of the output of the underlying hash function. When the prf function takes a variable length key, variable length data, and produces a fixed-length output (e.g., when using HMAC), the formulas in this document apply. When the key for the prf function has fixed length, the data provided as a key is truncated or padded with zeros as necessary unless exceptional processing is explained following the formula</p>
 <p>Keying material will always be derived as the output of the negotiated prf algorithm. Since the amount of keying material needed may be greater than the size of the output of the prf algorithm, we will use the prf iteratively. We will use the terminology prf+ to describe the function that outputs a pseudo-random stream based on the inputs to a prf as follows: (where | indicates concatenation)</p>
-<p><img class="formulaInl" alt="$ prf+ (K,S) = T1\;|\;T2\;|\;T3\;|\;T4\;|\;...$" src="form_449.png"/></p>
+<p><img class="formulaInl" alt="$ prf+ (K,S) = T1\;|\;T2\;|\;T3\;|\;T4\;|\;...$" src="form_452.png"/></p>
 <p>where:</p>
 <ul>
-<li><img class="formulaInl" alt="$ T1 = prf (K,\;S\;|\;0x01)$" src="form_450.png"/></li>
-<li><img class="formulaInl" alt="$ T2 = prf (K,\;T1\;|\;S\;|\;0x01)$" src="form_451.png"/></li>
-<li><img class="formulaInl" alt="$ T3 = prf (K,\;T2\;|\;S\;|\;0x01)$" src="form_452.png"/></li>
-<li><img class="formulaInl" alt="$ T4 = prf (K,\;T3\;|\;S\;|\;0x01)$" src="form_453.png"/></li>
+<li><img class="formulaInl" alt="$ T1 = prf (K,\;S\;|\;0x01)$" src="form_453.png"/></li>
+<li><img class="formulaInl" alt="$ T2 = prf (K,\;T1\;|\;S\;|\;0x01)$" src="form_454.png"/></li>
+<li><img class="formulaInl" alt="$ T3 = prf (K,\;T2\;|\;S\;|\;0x01)$" src="form_455.png"/></li>
+<li><img class="formulaInl" alt="$ T4 = prf (K,\;T3\;|\;S\;|\;0x01)$" src="form_456.png"/></li>
 </ul>
 <p>continuing as needed to compute all required keys. The keys are taken from the output string without regard to boundaries (e.g., if the required keys are a 256-bit Advanced Encryption Standard (AES) key and a 160-bit HMAC key, and the prf function generates 160 bits, the AES key will come from T1 and the beginning of T2, while the HMAC key will come from the rest of T2 and the beginning of T3). The constant concatenated to the end of each string feeding the prf is a single octet. prf+ in this document is not defined beyond 255 times the size of the prf output</p>
 <p><b>Generating Keying Material for CHILD_SAs</b></p>
-<p>The shared keys are computed as follows. A quantity called <img class="formulaInl" alt="$ SKEYSEED$" src="form_454.png"/> is calculated from the nonces exchanged during the IKE_SA_INIT exchange and the Diffie-Hellman shared secret established during that exchange. <img class="formulaInl" alt="$ SKEYSEED$" src="form_454.png"/> is used to calculate seven other secrets:</p>
+<p>The shared keys are computed as follows. A quantity called <img class="formulaInl" alt="$ SKEYSEED$" src="form_457.png"/> is calculated from the nonces exchanged during the IKE_SA_INIT exchange and the Diffie-Hellman shared secret established during that exchange. <img class="formulaInl" alt="$ SKEYSEED$" src="form_457.png"/> is used to calculate seven other secrets:</p>
 <ul>
-<li><img class="formulaInl" alt="$ SK_d$" src="form_455.png"/> - used for deriving new keys for the CHILD_SAs established with this IKE_SA</li>
-<li><img class="formulaInl" alt="$SK_ai \; and \; SK_ar$" src="form_456.png"/> - used as a key to the integrity protection algorithm for authenticating the component messages of subsequent exchanges</li>
-<li><img class="formulaInl" alt="$ SK_ei \; and \; SK_er$" src="form_457.png"/> - used for encrypting (and of course decrypting) all subsequent exchanges</li>
-<li><img class="formulaInl" alt="$ SK_pi \; and \; SK_pr$" src="form_458.png"/> - which are used when generating an AUTH payload</li>
+<li><img class="formulaInl" alt="$ SK_d$" src="form_458.png"/> - used for deriving new keys for the CHILD_SAs established with this IKE_SA</li>
+<li><img class="formulaInl" alt="$SK_ai \; and \; SK_ar$" src="form_459.png"/> - used as a key to the integrity protection algorithm for authenticating the component messages of subsequent exchanges</li>
+<li><img class="formulaInl" alt="$ SK_ei \; and \; SK_er$" src="form_460.png"/> - used for encrypting (and of course decrypting) all subsequent exchanges</li>
+<li><img class="formulaInl" alt="$ SK_pi \; and \; SK_pr$" src="form_461.png"/> - which are used when generating an AUTH payload</li>
 </ul>
-<p><img class="formulaInl" alt="$ SKEYSEED$" src="form_454.png"/> and its derivatives are computed as follows:</p>
-<p><img class="formulaInl" alt="$ SKEYSEED = prf(Ni\;|\;Nr,\;g^ir)$" src="form_459.png"/></p>
-<p><img class="formulaInl" alt="$ {SK_d\;|\;SK_ai\;|\;SK_ar\;|\;SK_ei\;|\;SK_er\;|\;SK_pi\;|\;SK_pr\;} = prf+ (SKEYSEED,\;Ni\;|\;Nr\;|\;SPIi\;|\;SPIr)$" src="form_460.png"/></p>
-<p>(indicating that the quantities <img class="formulaInl" alt="$ SK_d,\;SK_ai,\;SK_ar,\;SK_ei,\;SK_er,\;SK_pi,\;and\;SK_pr$" src="form_461.png"/> are taken in order from the generated bits of the prf+). g^ir is the shared secret from the ephemeral Diffie-Hellman exchange. g^ir is represented as a string of octets in big endian order padded with zeros if necessary to make it the length of the modulus. Ni and Nr are the nonces, stripped of any headers. If the negotiated prf takes a fixed-length key and the lengths of Ni and Nr do not add up to that length, half the bits must come from Ni and half from Nr, taking the first bits of each</p>
+<p><img class="formulaInl" alt="$ SKEYSEED$" src="form_457.png"/> and its derivatives are computed as follows:</p>
+<p><img class="formulaInl" alt="$ SKEYSEED = prf(Ni\;|\;Nr,\;g^ir)$" src="form_462.png"/></p>
+<p><img class="formulaInl" alt="$ {SK_d\;|\;SK_ai\;|\;SK_ar\;|\;SK_ei\;|\;SK_er\;|\;SK_pi\;|\;SK_pr\;} = prf+ (SKEYSEED,\;Ni\;|\;Nr\;|\;SPIi\;|\;SPIr)$" src="form_463.png"/></p>
+<p>(indicating that the quantities <img class="formulaInl" alt="$ SK_d,\;SK_ai,\;SK_ar,\;SK_ei,\;SK_er,\;SK_pi,\;and\;SK_pr$" src="form_464.png"/> are taken in order from the generated bits of the prf+). g^ir is the shared secret from the ephemeral Diffie-Hellman exchange. g^ir is represented as a string of octets in big endian order padded with zeros if necessary to make it the length of the modulus. Ni and Nr are the nonces, stripped of any headers. If the negotiated prf takes a fixed-length key and the lengths of Ni and Nr do not add up to that length, half the bits must come from Ni and half from Nr, taking the first bits of each</p>
 <p>The two directions of traffic flow use different keys. The keys used to protect messages from the original initiator are SK_ai and SK_ei. The keys used to protect messages in the other direction are SK_ar and SK_er. Each algorithm takes a fixed number of bits of keying material, which is specified as part of the algorithm. For integrity algorithms based on a keyed hash, the key size is always equal to the length of the output of the underlying hash function</p>
 <p>A single CHILD_SA is created by the IKE_AUTH exchange, and additional CHILD_SAs can optionally be created in CREATE_CHILD_SA exchanges. Keying material for them is generated as follows:</p>
-<p><img class="formulaInl" alt="$ KEYMAT = prf+(SK_d,\;Ni\;|\;Nr) $" src="form_462.png"/></p>
+<p><img class="formulaInl" alt="$ KEYMAT = prf+(SK_d,\;Ni\;|\;Nr) $" src="form_465.png"/></p>
 <p>Where Ni and Nr are the nonces from the IKE_SA_INIT exchange if this request is the first CHILD_SA created or the fresh Ni and Nr from the CREATE_CHILD_SA exchange if this is a subsequent creation.</p>
 <p>For CREATE_CHILD_SA exchanges including an optional Diffie-Hellman exchange, the keying material is defined as:</p>
-<p><img class="formulaInl" alt="$ KEYMAT = prf+(SK_d,\;g^ir\;(new) |\;Ni\;|\;Nr) $" src="form_463.png"/></p>
+<p><img class="formulaInl" alt="$ KEYMAT = prf+(SK_d,\;g^ir\;(new) |\;Ni\;|\;Nr) $" src="form_466.png"/></p>
 <p>where g^ir (new) is the shared secret from the ephemeral Diffie-Hellman exchange of this CREATE_CHILD_SA exchange (represented as an octet string in big endian order padded with zeros in the high-order bits if necessary to make it the length of the modulus). A single CHILD_SA negotiation may result in multiple security associations. ESP and AH SAs exist in pairs (one in each direction), and four SAs could be created in a single CHILD_SA negotiation if a combination of ESP and AH is being negotiated. Keying material MUST be taken from the expanded KEYMAT in the following order:</p>
 <ul>
 <li>All keys for SAs carrying data from the initiator to the responder are taken before SAs going in the reverse direction</li>
@@ -825,7 +825,7 @@ sm4</dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjikev2sa.html">jikev2sa</a></li>
-    <li class="footer">Generated on Sun Aug 7 2022 16:51:29 for Protocol++(Protocolpp) by
+    <li class="footer">Generated on Mon Dec 12 2022 21:29:57 for Protocol++(Protocolpp) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

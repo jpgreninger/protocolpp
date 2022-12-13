@@ -6,6 +6,7 @@ var searchData=
   ['saltlen',['SALTLEN',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36aadeb787755409ed1c391cec3319573e4',1,'ProtocolPP']]],
   ['sat_5fexpak',['SAT_EXPAK',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8ac5afd7bbc375f518efda99fa0d38cf82',1,'ProtocolPP']]],
   ['sat_5fmon',['SAT_MON',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8a8cf5da6c64a0c93ebeb531f844d63482',1,'ProtocolPP']]],
+  ['sbit',['SBIT',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a31a6b16f149b172800ad648590dea7b1',1,'ProtocolPP']]],
   ['scc_5fsp',['SCC_SP',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8a88368dd0b91721ea053e6f2f5e0077c1',1,'ProtocolPP']]],
   ['sci',['SCI',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a1b3338baed22bce2b78db78f20e8a94d',1,'ProtocolPP']]],
   ['scps',['SCPS',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8a1e5d5dc8f31a0a5fa6ca05a40b32498b',1,'ProtocolPP']]],

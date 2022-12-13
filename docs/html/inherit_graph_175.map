@@ -1,9 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classtinyxml2_1_1XMLNode.html" title="tinyxml2::XMLNode" alt="" coords="5,132,141,159"/>
-<area shape="rect" id="node2" href="$classtinyxml2_1_1XMLComment.html" title="tinyxml2::XMLComment" alt="" coords="193,5,356,32"/>
-<area shape="rect" id="node3" href="$classtinyxml2_1_1XMLDeclaration.html" title="tinyxml2::XMLDeclaration" alt="" coords="189,56,360,83"/>
-<area shape="rect" id="node4" href="$classtinyxml2_1_1XMLDocument.html" title="tinyxml2::XMLDocument" alt="" coords="192,107,357,133"/>
-<area shape="rect" id="node5" href="$classtinyxml2_1_1XMLElement.html" title="tinyxml2::XMLElement" alt="" coords="197,157,352,184"/>
-<area shape="rect" id="node6" href="$classtinyxml2_1_1XMLText.html" title="tinyxml2::XMLText" alt="" coords="209,208,340,235"/>
-<area shape="rect" id="node7" href="$classtinyxml2_1_1XMLUnknown.html" title="tinyxml2::XMLUnknown" alt="" coords="195,259,354,285"/>
+<area shape="rect" id="node1" href="$classtinyxml2_1_1StrPair.html" title="tinyxml2::StrPair" alt="" coords="5,5,124,32"/>
 </map>

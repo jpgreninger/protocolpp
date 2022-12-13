@@ -70,5 +70,6 @@ var searchData=
   ['dsr',['DSR',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8ad2d05648a773e440b8ee80447f3471a7',1,'ProtocolPP']]],
   ['dsthstunknwn',['DSTHSTUNKNWN',['../namespaceProtocolPP.html#a053cb4b6f939495763f9be4b0d23c769aae4c6bfa2a8f691b945243611a6ff1f9',1,'ProtocolPP']]],
   ['dstunknwn',['DSTUNKNWN',['../namespaceProtocolPP.html#a053cb4b6f939495763f9be4b0d23c769a068376e6bc46cbed86793470da833944',1,'ProtocolPP']]],
-  ['dtls',['DTLS',['../namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186af921e1ae4c59d704473f10b1773fc320',1,'ProtocolPP']]]
+  ['dtls',['DTLS',['../namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186af921e1ae4c59d704473f10b1773fc320',1,'ProtocolPP']]],
+  ['dtls13',['DTLS13',['../namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca41c9aa8c86546629a77bfb87853a8e1c',1,'ProtocolPP']]]
 ];

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++(Protocolpp)
-   &#160;<span id="projectnumber">5.3.2</span>
+   &#160;<span id="projectnumber">5.4.0</span>
    </div>
   </td>
  </tr>
@@ -97,14 +97,14 @@ $(document).ready(function(){initNavTree('classjwifisa.html','');});
 Wifi/WiGig Protocol Security Association</h1>
 <p><b>Pairwise Master Key (PMK) derivation</b></p>
 <p>The pairwise master key (PMK) is derived from the group master key (GMK), and then used to create the pairwise transient key (PTK), the EAPOL key confirmation key (KCK), and the EAPOL key encryption key (KEK) There are two ways to obtain a PMK, either by use of a preshared key (PSK) or through the use of Extensible Authentication Protocol (EAP). When using the PSK, the PMK is derived by using the PBKDF2 algorithm to obtain the PMK from the passphase and SSID as follows:</p>
-<p><img class="formulaInl" alt="$ HMACSHAX(PSK, SSID, Interations) $" src="form_429.png"/></p>
-<p><b>for</b> <img class="formulaInl" alt="$ i \leftarrow 0 $" src="form_430.png"/> <b>do</b><br />
- &#160; &#160; &#160; <img class="formulaInl" alt="$ output \leftarrow HMACSHAX(PSK, SSID||0x00000001) $" src="form_431.png"/> <br />
- &#160; &#160; &#160; <img class="formulaInl" alt="$ input \leftarrow output $" src="form_432.png"/> <br />
+<p><img class="formulaInl" alt="$ HMACSHAX(PSK, SSID, Interations) $" src="form_432.png"/></p>
+<p><b>for</b> <img class="formulaInl" alt="$ i \leftarrow 0 $" src="form_433.png"/> <b>do</b><br />
+ &#160; &#160; &#160; <img class="formulaInl" alt="$ output \leftarrow HMACSHAX(PSK, SSID||0x00000001) $" src="form_434.png"/> <br />
+ &#160; &#160; &#160; <img class="formulaInl" alt="$ input \leftarrow output $" src="form_435.png"/> <br />
 </p>
-<p><b>for</b> <img class="formulaInl" alt="$ i \leftarrow 1 $" src="form_433.png"/> <b>to</b> <img class="formulaInl" alt="$ Iterations $" src="form_434.png"/> <b>do</b><br />
- &#160; &#160; &#160; <img class="formulaInl" alt="$ output \leftarrow HMACSHAX(PSK, input) $" src="form_435.png"/> <br />
- &#160; &#160; &#160; <img class="formulaInl" alt="$ input \leftarrow output $" src="form_432.png"/> <br />
+<p><b>for</b> <img class="formulaInl" alt="$ i \leftarrow 1 $" src="form_436.png"/> <b>to</b> <img class="formulaInl" alt="$ Iterations $" src="form_437.png"/> <b>do</b><br />
+ &#160; &#160; &#160; <img class="formulaInl" alt="$ output \leftarrow HMACSHAX(PSK, input) $" src="form_438.png"/> <br />
+ &#160; &#160; &#160; <img class="formulaInl" alt="$ input \leftarrow output $" src="form_435.png"/> <br />
  <b>return</b> L(output,0,Len) <br />
 </p>
 <p><b>Pseudo random function (PRF)</b></p>
@@ -117,10 +117,10 @@ Wifi/WiGig Protocol Security Association</h1>
 <li>PRF-512, which outputs 512 bits</li>
 </ul>
 <p>In the following, K is a key; A is a unique label for each different purpose of the PRF; B is a variable-length string; Y is a single octet containing 0; X is a single octet containing the loop parameter i; and || denotes concatenation:</p>
-<p><img class="formulaInl" alt="$ HMACSHA1(K, A, B, X) \leftarrow HMACSHA1(K, A || Y || B || X) $" src="form_436.png"/></p>
-<p><img class="formulaInl" alt="$ PRF(K, A, B, Len) $" src="form_437.png"/></p>
-<p><b>for</b> <img class="formulaInl" alt="$ i \leftarrow 0 $" src="form_430.png"/> <b>to</b> <img class="formulaInl" alt="$ (Len+159)/160 $" src="form_438.png"/> <b>do</b><br />
- &#160; &#160; &#160; <img class="formulaInl" alt="$ R \leftarrow R || H_SHA_1(K, A, B, i) $" src="form_439.png"/> <br />
+<p><img class="formulaInl" alt="$ HMACSHA1(K, A, B, X) \leftarrow HMACSHA1(K, A || Y || B || X) $" src="form_439.png"/></p>
+<p><img class="formulaInl" alt="$ PRF(K, A, B, Len) $" src="form_440.png"/></p>
+<p><b>for</b> <img class="formulaInl" alt="$ i \leftarrow 0 $" src="form_433.png"/> <b>to</b> <img class="formulaInl" alt="$ (Len+159)/160 $" src="form_441.png"/> <b>do</b><br />
+ &#160; &#160; &#160; <img class="formulaInl" alt="$ R \leftarrow R || H_SHA_1(K, A, B, i) $" src="form_442.png"/> <br />
  <b>return</b> L(R, 0, Len) <br />
 </p>
 <ul>
@@ -140,7 +140,7 @@ Wifi/WiGig Protocol Security Association</h1>
 </ul>
 <p><b>Key derivation function (KDF)</b></p>
 <p>The KDF for the FT key hierarchy is a variant of the pseudorandom function (PRF) defined in 11.6.1.2 and is defined as follows:</p>
-<p><img class="formulaInl" alt="$ Output \leftarrow KDFLength (K, label, Context) $" src="form_440.png"/> where</p>
+<p><img class="formulaInl" alt="$ Output \leftarrow KDFLength (K, label, Context) $" src="form_443.png"/> where</p>
 <ul>
 <li>K, a 256-bit key derivation key</li>
 <li>label, a string identifying the purpose of the keys derived using this KDF</li>
@@ -148,10 +148,10 @@ Wifi/WiGig Protocol Security Association</h1>
 <li>Length, the length of the derived key in bits</li>
 </ul>
 <p>Output: a Length-bit derived key</p>
-<p><img class="formulaInl" alt="$ result \leftarrow $" src="form_441.png"/> ""</p>
-<p><img class="formulaInl" alt="$ iterations \leftarrow \frac {Length}{Hashlen} $" src="form_442.png"/></p>
+<p><img class="formulaInl" alt="$ result \leftarrow $" src="form_444.png"/> ""</p>
+<p><img class="formulaInl" alt="$ iterations \leftarrow \frac {Length}{Hashlen} $" src="form_445.png"/></p>
 <p><b>do</b> i = 1 <b>to</b> iterations <br />
- &#160; &#160; &#160; &#160; <img class="formulaInl" alt="$ result \leftarrow result \parallel HMACSHA256(K, i \parallel label \parallel Context \parallel Length) $" src="form_443.png"/> <br />
+ &#160; &#160; &#160; &#160; <img class="formulaInl" alt="$ result \leftarrow result \parallel HMACSHA256(K, i \parallel label \parallel Context \parallel Length) $" src="form_446.png"/> <br />
  <b>od</b> <br />
  <b>return</b> first <em>Length</em> bits of <em>result</em>, and securely delete all unused bits</p>
 <p>In this algorithm, <em>i</em> and <em>Length</em> are encoded as 16-bit unsigned integers, represented using the bit ordering conventions of 8.2.2. <em>K, label,</em> and <em>Context</em> are bit strings and are represented using the ordering conventions of 8.2.2. Hashlen is the output length of the hash in bits</p>
@@ -575,15 +575,15 @@ Wifi HT Control Field Formatting</div></div>
 <p><b>FCS field</b></p>
 <p>The FCS field is a 32-bit field containing a 32-bit CRC. The FCS is calculated over all the fields of the MAC header and the Frame Body field. These are referred to as the calculation fields.</p>
 <p>The FCS is calculated using the following standard generator polynomial of degree 32: </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ G(x) = {x}^{32} + {x}^{26} + {x}^{23} + {x}^{22} + {x}^{16} + {x}^{12} + {x}^{11} + {x}^{10} + x^8 + x^7 + x^5 + x^4 + x^2 + x + 1 \]" src="form_444.png"/>
+<img class="formulaDsp" alt="\[ G(x) = {x}^{32} + {x}^{26} + {x}^{23} + {x}^{22} + {x}^{16} + {x}^{12} + {x}^{11} + {x}^{10} + x^8 + x^7 + x^5 + x^4 + x^2 + x + 1 \]" src="form_447.png"/>
 </p>
 <p>The FCS is the ones complement of the sum (modulo 2) of the following:</p>
-<p>a. The remainder of <img class="formulaInl" alt="$x^k × ({x}^{31} + {x}^{30} + {x}^{29} +...+ x^2 + x + 1)$" src="form_445.png"/> divided (modulo 2) by G(x), where k is the number of bits in the calculation fields, and</p>
-<p>b. The remainder after multiplication of the contents (treated as a polynomial) of the calculation fields by <img class="formulaInl" alt="${x}^{32}$" src="form_446.png"/> and then division by G(x).</p>
+<p>a. The remainder of <img class="formulaInl" alt="$x^k × ({x}^{31} + {x}^{30} + {x}^{29} +...+ x^2 + x + 1)$" src="form_448.png"/> divided (modulo 2) by G(x), where k is the number of bits in the calculation fields, and</p>
+<p>b. The remainder after multiplication of the contents (treated as a polynomial) of the calculation fields by <img class="formulaInl" alt="${x}^{32}$" src="form_449.png"/> and then division by G(x).</p>
 <p>The FCS field is transmitted commencing with the coefficient of the highest-order term.</p>
 <p>As a typical implementation, at the transmitter, the initial remainder of the division is preset to all ones and is then modified by division of the calculation fields by the generator polynomial G(x). The ones complement of this remainder is transmitted, with the highest-order bit first, as the FCS field.</p>
 <p>At the receiver, the initial remainder is preset to all ones and the serial incoming bits of the calculation fields and FCS, when divided by G(x), results (in the absence of transmission errors) in a unique nonzero remainder value. The unique remainder value is the polynomial: </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ G(x) = {x}^{31} + {x}^{30} + {x}^{26} + {x}^{25} + {x}^{24} + {x}^{18} + {x}^{15} + {x}^{14} + {x}^{12} + {x}^{11} + {x}^{10} + x^8 + x^6 + x^5 + x^4 + x^3 + x + 1 \]" src="form_447.png"/>
+<img class="formulaDsp" alt="\[ G(x) = {x}^{31} + {x}^{30} + {x}^{26} + {x}^{25} + {x}^{24} + {x}^{18} + {x}^{15} + {x}^{14} + {x}^{12} + {x}^{11} + {x}^{10} + x^8 + x^6 + x^5 + x^4 + x^3 + x + 1 \]" src="form_450.png"/>
 </p>
 <p><b>Data frame format</b></p>
 <p>The format of a data frame is defined in Figure8-30. The Frame Control, Duration/ID, Address 1, Address 2, Address 3, and Sequence Control fields are present in all data frame subtypes. The presence of the Address 4 field is determined by the setting of the To DS and From DS subfields of the Frame Control field (see below). The QoS Control field is present when the QoS subfield of the Subtype field is set to 1.</p>
@@ -677,7 +677,7 @@ WPA3 Support</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjwifisa.html">jwifisa</a></li>
-    <li class="footer">Generated on Sun Aug 7 2022 16:51:30 for Protocol++(Protocolpp) by
+    <li class="footer">Generated on Mon Dec 12 2022 21:29:58 for Protocol++(Protocolpp) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

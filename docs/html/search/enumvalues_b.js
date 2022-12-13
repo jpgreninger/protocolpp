@@ -6,6 +6,7 @@ var searchData=
   ['last_5fack',['LAST_ACK',['../classProtocolPP_1_1jtcp.html#a4d20faa798617e40c3996e5045c1c48aa783912a9222265135cf2662c15ed8269',1,'ProtocolPP::jtcp']]],
   ['late',['LATE',['../namespaceProtocolPP.html#a0160929af40c2a496fe7386216cc2c2fa8f0bc19b66e1b1a75f00a16dead1be80',1,'ProtocolPP']]],
   ['layeraddr',['LAYERADDR',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a873329fefd3fd706c57d8de28600e652',1,'ProtocolPP']]],
+  ['lbit',['LBIT',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a6ad1adfeab824fae47204cf01c6f97a6',1,'ProtocolPP']]],
   ['leaf_5f1',['LEAF_1',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8a92ea7448127ae9bad142fac43256adff',1,'ProtocolPP']]],
   ['leaf_5f2',['LEAF_2',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8ac218d96963fcb44261a0f99ae3df3e58',1,'ProtocolPP']]],
   ['length',['LENGTH',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ae91831495afd6db0587c0c5f269de3eb',1,'ProtocolPP']]],
