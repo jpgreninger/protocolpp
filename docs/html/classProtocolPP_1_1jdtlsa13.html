@@ -114,8 +114,8 @@ Collaboration diagram for ProtocolPP::jdtlsa13:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab1d2672573c15e0305195b674122aff5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jdtlsa13.html#ab1d2672573c15e0305195b674122aff5">jdtlsa13</a> ()</td></tr>
 <tr class="separator:ab1d2672573c15e0305195b674122aff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bc1b5540002f45d02a75de41747200e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jdtlsa13.html#a2bc1b5540002f45d02a75de41747200e">jdtlsa13</a> (<a class="el" href="namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2">direction_t</a> dir, <a class="el" href="namespaceProtocolPP.html#a9ba5761a52d7bcaced0b5ae7b32895d0">tls_ciphersuite_t</a> ciphersuite, <a class="el" href="namespaceProtocolPP.html#a47fba8c8ccf58726ca64a0121622e879">tlstype_t</a> type, uint64_t epoch, uint64_t seqnum, uint8_t cid, bool cbit, bool sbit, bool lbit, unsigned int icvlen, unsigned int ivlen, std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; uint8_t &gt;&gt; iv, unsigned int ckeylen, std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; uint8_t &gt;&gt; cipherkey, std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; uint8_t &gt;&gt; app_traffic_secret, unsigned int arlen, <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; uint8_t &gt; arwin, unsigned int mtu)</td></tr>
-<tr class="separator:a2bc1b5540002f45d02a75de41747200e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d4efd107915b07d330a5e768972c456"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jdtlsa13.html#a6d4efd107915b07d330a5e768972c456">jdtlsa13</a> (<a class="el" href="namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2">direction_t</a> dir, <a class="el" href="namespaceProtocolPP.html#a9ba5761a52d7bcaced0b5ae7b32895d0">tls_ciphersuite_t</a> ciphersuite, <a class="el" href="namespaceProtocolPP.html#a47fba8c8ccf58726ca64a0121622e879">tlstype_t</a> type, uint64_t epoch, uint64_t seqnum, uint64_t authfail, uint8_t cid, bool cbit, bool sbit, bool lbit, unsigned int icvlen, unsigned int ivlen, std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; uint8_t &gt;&gt; iv, unsigned int ckeylen, std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; uint8_t &gt;&gt; cipherkey, std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; uint8_t &gt;&gt; app_traffic_secret, unsigned int arlen, <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; uint8_t &gt; arwin, unsigned int mtu)</td></tr>
+<tr class="separator:a6d4efd107915b07d330a5e768972c456"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e78dec05c6ca986a683f8f689a45670"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jdtlsa13.html#a3e78dec05c6ca986a683f8f689a45670">jdtlsa13</a> (<a class="el" href="classProtocolPP_1_1jdtlsa13.html">jdtlsa13</a> &amp;rhs)</td></tr>
 <tr class="separator:a3e78dec05c6ca986a683f8f689a45670"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11944cecc24a0d2291592eb57298a71f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jdtlsa13.html#a11944cecc24a0d2291592eb57298a71f">jdtlsa13</a> (std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jdtlsa13.html">jdtlsa13</a> &gt; &amp;rhs)</td></tr>
@@ -176,6 +176,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr>
 <td>seqnum</td><td>0 </td></tr>
 <tr>
+<td>authfail</td><td>0 </td></tr>
+<tr>
 <td>cid</td><td>0 </td></tr>
 <tr>
 <td>cbit</td><td>true </td></tr>
@@ -201,8 +203,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 
 </div>
 </div>
-<a id="a2bc1b5540002f45d02a75de41747200e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bc1b5540002f45d02a75de41747200e">&#9670;&nbsp;</a></span>jdtlsa13() <span class="overload">[2/4]</span></h2>
+<a id="a6d4efd107915b07d330a5e768972c456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d4efd107915b07d330a5e768972c456">&#9670;&nbsp;</a></span>jdtlsa13() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -236,6 +238,12 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
           <td></td>
           <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>seqnum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>authfail</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -332,6 +340,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
     <tr><td class="paramname">type</td><td>- Default type of packet to send (usually Application) </td></tr>
     <tr><td class="paramname">epoch</td><td>- Initial Epoch number </td></tr>
     <tr><td class="paramname">seqnum</td><td>- Initial sequence number </td></tr>
+    <tr><td class="paramname">authfail</td><td>- Initial ICV failures </td></tr>
     <tr><td class="paramname">cid</td><td>- Connection ID </td></tr>
     <tr><td class="paramname">cbit</td><td>- Indicates presence of connection ID (CID) field in variable length DTLS header </td></tr>
     <tr><td class="paramname">sbit</td><td>- Indicates length of SeqNum field in variable length DTLS header. SBIT=0 SeqNum length is 8 bits, SBIT=1 SeqNum length is 16 bits </td></tr>
@@ -662,7 +671,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceProtocolPP.html">ProtocolPP</a></li><li class="navelem"><a class="el" href="classProtocolPP_1_1jdtlsa13.html">jdtlsa13</a></li>
-    <li class="footer">Generated on Mon Dec 12 2022 21:29:58 for Protocol++(Protocolpp) by
+    <li class="footer">Generated on Mon Dec 19 2022 22:30:32 for Protocol++(Protocolpp) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

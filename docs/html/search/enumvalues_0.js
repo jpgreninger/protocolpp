@@ -112,6 +112,7 @@ var searchData=
   ['auth_5funassigned6',['AUTH_UNASSIGNED6',['../namespaceProtocolPP.html#a24cdc6d0c8f5bbb4ec61f841e6154dfeac8cb4add196a16367181eb014c4743d0',1,'ProtocolPP']]],
   ['auth_5funassigned7',['AUTH_UNASSIGNED7',['../namespaceProtocolPP.html#a24cdc6d0c8f5bbb4ec61f841e6154dfeac3901b171588b6e0dad7ef00e94a394a',1,'ProtocolPP']]],
   ['auth_5funassigned8',['AUTH_UNASSIGNED8',['../namespaceProtocolPP.html#a24cdc6d0c8f5bbb4ec61f841e6154dfead0d46f6405839ac60b43365140667613',1,'ProtocolPP']]],
+  ['authfail',['AUTHFAIL',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ab540163422287bd1b3dd1aef9a97131e',1,'ProtocolPP']]],
   ['authkey',['AUTHKEY',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a8dc726871b7db634e3f8eae12c0b8189',1,'ProtocolPP']]],
   ['ax_5f25',['AX_25',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8ac97ac9116571485d0f80cabdf21b6605',1,'ProtocolPP']]]
 ];

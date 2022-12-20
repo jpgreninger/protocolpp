@@ -644,11 +644,12 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a31a6b16f149b172800ad648590dea7b1">SBIT</a>, 
 <br />
 &#160;&#160;<a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a6ad1adfeab824fae47204cf01c6f97a6">LBIT</a>, 
+<a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ab540163422287bd1b3dd1aef9a97131e">AUTHFAIL</a>, 
 <a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a59825da828f43ea48351e72d86e0fc55">KEY</a>, 
 <a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36abc1f9e1cabdf6be0857bbb1d8c453eb5">FLOWID</a>, 
-<a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a19ac0ec0db984f76510d0b648ab3fa5e">PROTYPE</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ad19950e18d4186309350f9579dbbe882">VNI</a>, 
+&#160;&#160;<a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a19ac0ec0db984f76510d0b648ab3fa5e">PROTYPE</a>, 
+<a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ad19950e18d4186309350f9579dbbe882">VNI</a>, 
 <a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a723809ee63ff7636413b2f35707f46b0">APP_TRAFFIC_SECRET</a>
 <br />
  }</td></tr>
@@ -1211,6 +1212,7 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23a626bc1c031361fec7112798026e0f3de">WARN_NO_VLAN</a>, 
 <a class="el" href="namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23a68171563eb12ec6e798da46281a17ec3">WARN_NO_VNI</a>, 
+<a class="el" href="namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23adca38b93a481dc0879a71de78c30e244">ERR_ICVFAIL_LIMIT</a>, 
 <a class="el" href="namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23a457c43f459c1aa041c08dfe8c9f0e0b2">ERR_UNKNOWN</a>
 <br />
  }</td></tr>
@@ -3955,6 +3957,7 @@ Variables</h2></td></tr>
     <tr><td class="paramname">ERR_PDU_LEN</td><td>- PDU length is incorrect </td></tr>
     <tr><td class="paramname">WARN_NO_VLAN</td><td>- VLAN tag did not match the Security Association </td></tr>
     <tr><td class="paramname">WARN_NO_VNI</td><td>- VNI tag did not match the Security Association </td></tr>
+    <tr><td class="paramname">ERR_ICVFAIL_LIMIT</td><td>- DTLSv13 maximum packets have failed ICV check </td></tr>
     <tr><td class="paramname">ERR_UNKNOWN</td><td>- Unknown error </td></tr>
   </table>
   </dd>
@@ -4067,6 +4070,8 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a1d763b29e1f15fd253fd4eccaf692b23a626bc1c031361fec7112798026e0f3de"></a>WARN_NO_VLAN&#160;</td><td class="fielddoc"><p>VLAN tags did not match. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1d763b29e1f15fd253fd4eccaf692b23a68171563eb12ec6e798da46281a17ec3"></a>WARN_NO_VNI&#160;</td><td class="fielddoc"><p>VXLAN tag did not match. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1d763b29e1f15fd253fd4eccaf692b23adca38b93a481dc0879a71de78c30e244"></a>ERR_ICVFAIL_LIMIT&#160;</td><td class="fielddoc"><p>DTLSv13 maximum packets failed ICV check. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1d763b29e1f15fd253fd4eccaf692b23a457c43f459c1aa041c08dfe8c9f0e0b2"></a>ERR_UNKNOWN&#160;</td><td class="fielddoc"><p>Unknown error. </p>
 </td></tr>
@@ -4743,6 +4748,7 @@ DTLS13 fields</h1>
     <tr><td class="paramname">SBIT</td><td>- Flag that indicates SEQNUM field length (0: 8-bits, 1: 16-bits) </td></tr>
     <tr><td class="paramname">LBIT</td><td>- Flag that indicates Length field is present </td></tr>
     <tr><td class="paramname">SEQNUM</td><td>- Current or recently received packet </td></tr>
+    <tr><td class="paramname">AUTHFAIL</td><td>- ICV failure counter </td></tr>
     <tr><td class="paramname">ICVLEN</td><td>- Length of the Integrity Check Value (ICV) </td></tr>
     <tr><td class="paramname">IVLEN</td><td>- Length of the Initial Vector (IV) </td></tr>
     <tr><td class="paramname">IV</td><td>- Initial Vector (IV) </td></tr>
@@ -5563,6 +5569,8 @@ and NVGRE fields</h1>
 <tr><td class="fieldname"><a id="a44018cab1f12fe3ca4e2f32c547eab36a31a6b16f149b172800ad648590dea7b1"></a>SBIT&#160;</td><td class="fielddoc"><p>Flag indicating SEQNUM field is present in GRE. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a44018cab1f12fe3ca4e2f32c547eab36a6ad1adfeab824fae47204cf01c6f97a6"></a>LBIT&#160;</td><td class="fielddoc"><p>Flag indicating the CID field is present in DTLSv13. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a44018cab1f12fe3ca4e2f32c547eab36ab540163422287bd1b3dd1aef9a97131e"></a>AUTHFAIL&#160;</td><td class="fielddoc"><p>DTLSv13 ICV failure counter. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a44018cab1f12fe3ca4e2f32c547eab36a59825da828f43ea48351e72d86e0fc55"></a>KEY&#160;</td><td class="fielddoc"><p>Key field for GRE. </p>
 </td></tr>
@@ -8687,6 +8695,7 @@ and NVGRE fields</h1>
 <br />
 <br />
 <br />
+<br />
  ICMP SubType</p>
 <p>Pointer to error in packet</p>
 <p>Identifier from the invoking message</p>
@@ -8921,6 +8930,7 @@ and NVGRE fields</h1>
 <p>Field that indicates KEY field is present in GRE</p>
 <p>Field that indicates SEQNUM field is present in GRE</p>
 <p>Field that indicates CID field is present in DTLSv13</p>
+<p>DTLSv13 ICV failure counter</p>
 <p>FlowID field in GRE</p>
 <p>Protocol type field for GRE</p>
 <p>VXLAN Network Identifier</p>
@@ -9632,7 +9642,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceProtocolPP.html">ProtocolPP</a></li>
-    <li class="footer">Generated on Mon Dec 12 2022 21:29:58 for Protocol++(Protocolpp) by
+    <li class="footer">Generated on Mon Dec 19 2022 22:30:32 for Protocol++(Protocolpp) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

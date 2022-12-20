@@ -81,6 +81,7 @@ var searchData=
   ['err_5ficmp_5fsegments_5fleft',['ERR_ICMP_SEGMENTS_LEFT',['../namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23aef1345c2f191a6d21f520ae51c2b2594',1,'ProtocolPP']]],
   ['err_5ficv',['ERR_ICV',['../namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23a31e8ed0d7685e00af6d50256720dcabb',1,'ProtocolPP']]],
   ['err_5ficv_5fsize',['ERR_ICV_SIZE',['../namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23a107c2bb5a9ca997b05127d9b85dc6e01',1,'ProtocolPP']]],
+  ['err_5ficvfail_5flimit',['ERR_ICVFAIL_LIMIT',['../namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23adca38b93a481dc0879a71de78c30e244',1,'ProtocolPP']]],
   ['err_5finvalid_5fsignature',['ERR_INVALID_SIGNATURE',['../namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23a3e5e26850b4e9c062d1d6b7cf35b31e3',1,'ProtocolPP']]],
   ['err_5fiv_5fsize',['ERR_IV_SIZE',['../namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23a6961875f2fe084de07e4c559158f5e19',1,'ProtocolPP']]],
   ['err_5fjumbogram_5fformat',['ERR_JUMBOGRAM_FORMAT',['../namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23a5115a103e63f4d514f6c3d3fb5ba8dcb',1,'ProtocolPP']]],
