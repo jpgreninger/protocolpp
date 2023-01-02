@@ -1,3 +1,4 @@
 <map id="option::Option" name="option::Option">
-<area shape="rect" id="node2" href="$structoption_1_1Descriptor.html" title="Describes an option, its help text (usage) and how it should be parsed. " alt="" coords="5,5,129,32"/>
+<area shape="rect" id="node1" title="A parsed option from the command line together with its argument if it has one." alt="" coords="17,95,119,121"/>
+<area shape="rect" id="node2" href="$structoption_1_1Descriptor.html" title="Describes an option, its help text (usage) and how it should be parsed." alt="" coords="5,5,131,32"/>
 </map>

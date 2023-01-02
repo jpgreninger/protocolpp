@@ -1,25 +1,26 @@
 /*
-@ @licstart  The following is the entire license notice for the
-JavaScript code in this file.
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
 
-Copyright (C) 1997-2017 by Dimitri van Heesch
+ The MIT License (MIT)
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
+ Copyright (C) 1997-2020 by Dimitri van Heesch
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
 
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
 
-@licend  The above is the entire license notice
-for the JavaScript code in this file
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var NAVTREE =
 [
@@ -85,17 +86,24 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-".html",
+"",
 "classInterfacePP_1_1ringin.html#a51c136d4581551c93e7f72803b289c5d",
 "classProtocolPP_1_1jecdsaed.html#a7546f777ea474855d44352c91964184a",
 "classProtocolPP_1_1jip.html#a2a6f11fea904c01a42b19f673d9d9120",
-"classProtocolPP_1_1jprotocol.html#a60cad407d81edf838ce7e6c4859928ce",
-"classProtocolPP_1_1jtestcfg.html#ab7575a0cbeccaf208dbe19cc002fa13e",
-"classjdrive.html",
-"classtinyxml2_1_1XMLComment.html#ab5da828fe023869b8c5bb69554d41bb1",
-"classtinyxml2_1_1XMLNode.html#af29ffd6cbe609b6fa04a705256150408",
-"namespacemembers_f.html",
-"structoption_1_1PrintUsageImplementation_1_1SyscallWriter.html#ae4f8677dbd79b0a9238368e28014701a"
+"classProtocolPP_1_1jprotocol.html#a5eda4bc384edf640ae7b7f224de22953",
+"classProtocolPP_1_1jtestcfg.html#a88309847da4813678dbccadc690bb7de",
+"classjdirectdrive.html",
+"classtinyxml2_1_1XMLComment.html#ae6463adc3edd93a8e5a9b2b7e99cdf91",
+"classtinyxml2_1_1XMLNode.html#af343d1ef0b45c0020e62d784d7e67a68",
+"namespaceProtocolPP.html#a053cb4b6f939495763f9be4b0d23c769a8493a6aa9ed6e6cc846bd55543f2001e",
+"namespaceProtocolPP.html#a24a23a69869948c524f31d47a862af93a46fe2eadd27dc1bc9405a4a261a3b41f",
+"namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a762f7084c32a9b4fbfb0f4c8e7eca1b4",
+"namespaceProtocolPP.html#a5f58d1d3c6f509889b286a5ca9c78d7eafa91c0f6f24e30fa5e94d8c17e4eb087",
+"namespaceProtocolPP.html#a9ba5761a52d7bcaced0b5ae7b32895d0a106c5cbb784e69dc75ca317d553d36ef",
+"namespaceProtocolPP.html#a9ba5761a52d7bcaced0b5ae7b32895d0ad5afa99d6f39110c9103524ea63a1d9d",
+"namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8a153acbcd26402e8cbc79b1b8d2f699fc",
+"namespaceProtocolPP.html#ae194a2c104fc4e9ad7e9ffa484710f80ac11f54e72cf8a04314d197aef861160e",
+"structProtocolPP_1_1jikeparse_1_1jikepolicy.html#a44d4ff3c461b91be8883327d64f0b8aa"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

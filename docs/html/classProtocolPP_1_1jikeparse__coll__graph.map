@@ -1,5 +1,7 @@
 <map id="ProtocolPP::jikeparse" name="ProtocolPP::jikeparse">
-<area shape="rect" id="node2" href="$classtinyxml2_1_1XMLPrinter.html" title="tinyxml2::XMLPrinter" alt="" coords="87,109,231,136"/>
-<area shape="rect" id="node3" href="$classtinyxml2_1_1XMLVisitor.html" title="tinyxml2::XMLVisitor" alt="" coords="5,13,148,39"/>
-<area shape="rect" id="node4" href="$classtinyxml2_1_1DynArray.html" title="tinyxml2::DynArray\l\&lt; const char *, 10 \&gt;" alt="" coords="173,5,311,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="159,185,306,212"/>
+<area shape="rect" id="node2" href="$classtinyxml2_1_1XMLPrinter.html" title=" " alt="" coords="87,109,231,136"/>
+<area shape="rect" id="node3" href="$classtinyxml2_1_1XMLVisitor.html" title=" " alt="" coords="5,13,148,39"/>
+<area shape="rect" id="node4" href="$classtinyxml2_1_1DynArray.html" title=" " alt="" coords="173,5,311,47"/>
+<area shape="rect" id="node5" title=" " alt="" coords="256,109,359,136"/>
 </map>

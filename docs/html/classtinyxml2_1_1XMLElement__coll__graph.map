@@ -1,5 +1,6 @@
 <map id="tinyxml2::XMLElement" name="tinyxml2::XMLElement">
-<area shape="rect" id="node2" href="$classtinyxml2_1_1XMLNode.html" title="tinyxml2::XMLNode" alt="" coords="155,118,291,145"/>
-<area shape="rect" id="node3" href="$classtinyxml2_1_1XMLDocument.html" title="tinyxml2::XMLDocument" alt="" coords="184,231,349,257"/>
-<area shape="rect" id="node4" href="$classtinyxml2_1_1StrPair.html" title="tinyxml2::StrPair" alt="" coords="163,5,282,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,231,160,257"/>
+<area shape="rect" id="node2" href="$classtinyxml2_1_1XMLNode.html" title=" " alt="" coords="155,118,293,145"/>
+<area shape="rect" id="node3" href="$classtinyxml2_1_1XMLDocument.html" title=" " alt="" coords="185,231,351,257"/>
+<area shape="rect" id="node4" href="$classtinyxml2_1_1StrPair.html" title=" " alt="" coords="165,5,283,32"/>
 </map>

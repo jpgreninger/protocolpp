@@ -1,6 +1,5 @@
 var classtinyxml2_1_1MemPoolT =
 [
-    [ "ITEMS_PER_BLOCK", "classtinyxml2_1_1MemPoolT.html#a402f4b0dd74e3a5260da18bc6275cb29ab72c1e16d6626854c41feb19e60c54d1", null ],
     [ "MemPoolT", "classtinyxml2_1_1MemPoolT.html#ac8fa6dbb403f009cf9c8a33c6f2803b3", null ],
     [ "~MemPoolT", "classtinyxml2_1_1MemPoolT.html#a5fa4fee934a3df2b9e74282244d78390", null ],
     [ "Alloc", "classtinyxml2_1_1MemPoolT.html#a810fd2b0caf56b8b688e55f2768f96c7", null ],

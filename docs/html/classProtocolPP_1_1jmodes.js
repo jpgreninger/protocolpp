@@ -29,6 +29,7 @@ var classProtocolPP_1_1jmodes =
       [ "GCM", "classProtocolPP_1_1jmodes.html#ab59eefcf49771a42cb6ef35e9b65d514aa6c212cd5d97e5a3d4dd453693c5a8f8", null ],
       [ "CTR", "classProtocolPP_1_1jmodes.html#ab59eefcf49771a42cb6ef35e9b65d514acd2f0f69ebe2a086ae17c1f6b4a2ee05", null ],
       [ "CCM", "classProtocolPP_1_1jmodes.html#ab59eefcf49771a42cb6ef35e9b65d514a5ca74cede3ead8084a47e80559dd4123", null ],
+      [ "XTS", "classProtocolPP_1_1jmodes.html#ab59eefcf49771a42cb6ef35e9b65d514a8b70d4d4b547782d03caa062d68ce143", null ],
       [ "XCBC_MAC", "classProtocolPP_1_1jmodes.html#ab59eefcf49771a42cb6ef35e9b65d514adf0f408b1edc2b9e2c024e2e0e017bbd", null ],
       [ "GMAC", "classProtocolPP_1_1jmodes.html#ab59eefcf49771a42cb6ef35e9b65d514adac00ff455c66b17a41b760be87f500f", null ],
       [ "CMAC", "classProtocolPP_1_1jmodes.html#ab59eefcf49771a42cb6ef35e9b65d514a5d386d6f2b1902e8bee46261cacd96a4", null ],

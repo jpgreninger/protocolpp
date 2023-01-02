@@ -1,7 +1,8 @@
 <map id="option::PrintUsageImplementation::IStringWriter" name="option::PrintUsageImplementation::IStringWriter">
-<area shape="rect" id="node2" href="$structoption_1_1PrintUsageImplementation_1_1FunctionWriter.html" title="option::PrintUsageImplementation\l::FunctionWriter\&lt; Function \&gt;" alt="" coords="278,5,497,47"/>
-<area shape="rect" id="node3" href="$structoption_1_1PrintUsageImplementation_1_1OStreamWriter.html" title="option::PrintUsageImplementation\l::OStreamWriter\&lt; OStream \&gt;" alt="" coords="278,71,497,112"/>
-<area shape="rect" id="node4" href="$structoption_1_1PrintUsageImplementation_1_1StreamWriter.html" title="option::PrintUsageImplementation\l::StreamWriter\&lt; Function, Stream \&gt;" alt="" coords="272,136,503,177"/>
-<area shape="rect" id="node5" href="$structoption_1_1PrintUsageImplementation_1_1SyscallWriter.html" title="option::PrintUsageImplementation\l::SyscallWriter\&lt; Syscall \&gt;" alt="" coords="278,201,497,243"/>
-<area shape="rect" id="node6" href="$structoption_1_1PrintUsageImplementation_1_1TemporaryWriter.html" title="option::PrintUsageImplementation\l::TemporaryWriter\&lt; Temporary \&gt;" alt="" coords="278,267,497,308"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,136,224,177"/>
+<area shape="rect" id="node2" href="$structoption_1_1PrintUsageImplementation_1_1FunctionWriter.html" title=" " alt="" coords="278,5,497,47"/>
+<area shape="rect" id="node3" href="$structoption_1_1PrintUsageImplementation_1_1OStreamWriter.html" title=" " alt="" coords="278,71,497,112"/>
+<area shape="rect" id="node4" href="$structoption_1_1PrintUsageImplementation_1_1StreamWriter.html" title=" " alt="" coords="272,136,503,177"/>
+<area shape="rect" id="node5" href="$structoption_1_1PrintUsageImplementation_1_1SyscallWriter.html" title=" " alt="" coords="278,201,497,243"/>
+<area shape="rect" id="node6" href="$structoption_1_1PrintUsageImplementation_1_1TemporaryWriter.html" title=" " alt="" coords="278,267,497,308"/>
 </map>
