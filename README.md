@@ -1,5 +1,5 @@
 # Protocolpp®(Protocol++®) 5.4.1 Released January 1, 2023!
-https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=3efb679155eb441bb8218132708ffc6e&wix-vod-comp-id=comp-j2ddnt1i
+https://www.youtube.com/watch?v=zs5Edbf4MiI
 
 Only www.protocolpp.com has the rights to update, modify,
 license, distribute, sell, or make copies of Protocolpp®(Protocol++®).
@@ -176,6 +176,7 @@ For W.A.S.P usage, see the doxygen section
   * Added JSON support to the SEC testbench
   * Many edits to make the code more efficient
   * Documentation Updates
+  * See the release video https://www.youtube.com/watch?v=zs5Edbf4MiI
   
 * Protocol++® (Protocolpp®) - 5.4.0 released December 15, 2022
   * All updates documented in the paid version RELEASE file
