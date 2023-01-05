@@ -179,7 +179,11 @@ GCM Mathematical Computation</div></div>
 Counter with CBC-MAC (CCM)</h2>
 <p>CCM mode (Counter with CBC-MAC) is a mode of operation for cryptographic block ciphers. It is an authenticated encryption algorithm designed to provide both authentication and confidentiality. CCM mode is only defined for block ciphers with a block length of 128 bits. In RFC 3610, it is defined for use with AES</p>
 <p>The Initialization Vector (IV) of CCM must be carefully chosen to never be used more than once for a given key. This is because CCM is a derivation of CTR mode and the latter is effectively a stream cipher</p>
-<p><b>Encryption and authentication</b></p>
+<div class="image">
+<img src="AES-CCM.png" alt=""/>
+<div class="caption">
+AES Counter with CBC-MAC (CCM) Encryption Mode</div></div>
+ <p><b>Encryption and authentication</b></p>
 <p>As the name suggests, CCM mode combines the well known CBC-MAC with the well known counter mode of encryption. These two primitives are applied in an "authenticate-then-encrypt" manner, that is, CBC-MAC is first computed on the message to obtain a tag t; the message and the tag are then encrypted using counter mode. One key insight is that the same encryption key can be used for both, provided that the counter values used in the encryption do not collide with the (pre-)initialization vector used in the authentication. A proof of security exists for this combination, based on the security of the underlying block cipher. The proof also applies to a generalization of CCM for any size block cipher, and for any size cryptographically strong pseudo-random function (since in both counter mode and CBC-MAC, the block cipher is only ever used in one direction)</p>
 <p>CCM mode was designed by Russ Housley, Doug Whiting and Niels Ferguson. At the time CCM mode was developed, Russ Housley was employed by RSA Laboratories</p>
 <p>A minor variation of the CCM, called CCM*, is used in the ZigBee standard. CCM* includes all of the features of CCM and additionally offers encryption-only and integrity-only capabilities</p>
@@ -413,7 +417,7 @@ Counter Mode MAC Generation</div></div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjmodes.html">jmodes</a></li>
-    <li class="footer">Generated on Mon Jan 2 2023 20:51:17 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jan 4 2023 18:29:18 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

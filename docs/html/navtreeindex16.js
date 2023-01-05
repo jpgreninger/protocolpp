@@ -1,8 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"namespaceProtocolPP.html#ae194a2c104fc4e9ad7e9ffa484710f80ac11f54e72cf8a04314d197aef861160e":[1,0,4,146,12],
-"namespaceProtocolPP.html#ae194a2c104fc4e9ad7e9ffa484710f80ac2055ad20e107f32bee34890e89a39ea":[1,0,4,146,5],
-"namespaceProtocolPP.html#ae194a2c104fc4e9ad7e9ffa484710f80ac60c3d8cfe577c3e3f850b9361a2b56d":[1,0,4,146,3],
 "namespaceProtocolPP.html#ae194a2c104fc4e9ad7e9ffa484710f80af280cf394f8055210b4aa91a0b2f033b":[1,0,4,146,10],
 "namespaceProtocolPP.html#ae2d98aff65c8156f747fa3a3ead1672b":[1,0,4,164],
 "namespaceProtocolPP.html#ae4a02fde074d0e779dc6e3659cbc8a8b":[1,0,4,211],
@@ -249,5 +246,8 @@ var NAVTREEINDEX16 =
 "structProtocolPP_1_1jikeparse_1_1jikecfg.html#af93d6b21cf39dfefa9d927cd15d448a1":[2,0,4,74,0,3],
 "structProtocolPP_1_1jikeparse_1_1jikecfg.html#afa43d9f417abecaf26131384b89e9201":[2,0,4,74,0,13],
 "structProtocolPP_1_1jikeparse_1_1jikepolicy.html":[2,0,4,74,1],
-"structProtocolPP_1_1jikeparse_1_1jikepolicy.html#a3c83bdbd6c6638229ecd533dfc65fc98":[2,0,4,74,1,2]
+"structProtocolPP_1_1jikeparse_1_1jikepolicy.html#a3c83bdbd6c6638229ecd533dfc65fc98":[2,0,4,74,1,2],
+"structProtocolPP_1_1jikeparse_1_1jikepolicy.html#a44d4ff3c461b91be8883327d64f0b8aa":[2,0,4,74,1,9],
+"structProtocolPP_1_1jikeparse_1_1jikepolicy.html#a46efaddf989d0cd194a56b2f81161521":[2,0,4,74,1,0],
+"structProtocolPP_1_1jikeparse_1_1jikepolicy.html#a5f2062f54194bdf9ab19b09dd1f185ed":[2,0,4,74,1,11]
 };

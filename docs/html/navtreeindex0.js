@@ -1,8 +1,5 @@
 var NAVTREEINDEX0 =
 {
-"":[1,0,0],
-"":[1,0,1],
-"":[1,0,5],
 "SFMT-alti_8h.html":[3,0,0,0],
 "SFMT-alti_8h.html#a0ded4443d5a9b47532e5fb13872ab6eb":[3,0,0,0,5],
 "SFMT-alti_8h.html#a35b35e2fda965ec2050902957041e3a2":[3,0,0,0,3],
@@ -249,5 +246,8 @@ var NAVTREEINDEX0 =
 "classInterfacePP_1_1ringin.html#a25841f3cbd08264167fe3841de2184e9":[2,0,1,2,6],
 "classInterfacePP_1_1ringin.html#a28e61bc7aa01d271b1726e56199edb08":[2,0,1,2,7],
 "classInterfacePP_1_1ringin.html#a2db904f13449b90a62c014a7f0e204cc":[2,0,1,2,2],
-"classInterfacePP_1_1ringin.html#a3007d0be4256e4c20d0aee553bb9c1ee":[2,0,1,2,12]
+"classInterfacePP_1_1ringin.html#a3007d0be4256e4c20d0aee553bb9c1ee":[2,0,1,2,12],
+"classInterfacePP_1_1ringin.html#a51c136d4581551c93e7f72803b289c5d":[2,0,1,2,1],
+"classInterfacePP_1_1ringin.html#a557ade85c248d6e94a1f193f5a1616ce":[2,0,1,2,0],
+"classInterfacePP_1_1ringin.html#a58a9924381a013ed1c784bf5596a28df":[2,0,1,2,3]
 };
