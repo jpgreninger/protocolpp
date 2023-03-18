@@ -1,15 +1,14 @@
 var classtinyxml2_1_1XMLAttribute =
 [
-    [ "ArrayValue", "classtinyxml2_1_1XMLAttribute.html#a9849664c0e18b9a3548df224dcf1c8f9", null ],
+    [ "ArrayValue", "classtinyxml2_1_1XMLAttribute.html#a07cbb4d29b286b78554182761e854d3e", null ],
     [ "BoolValue", "classtinyxml2_1_1XMLAttribute.html#a98ce5207344ad33a265b0422addae1ff", null ],
     [ "ByteValue", "classtinyxml2_1_1XMLAttribute.html#aec1be9fb07335750000f837cf6558c81", null ],
     [ "DoubleValue", "classtinyxml2_1_1XMLAttribute.html#a4aa73513f54ff0087d3e804f0f54e30f", null ],
     [ "FloatValue", "classtinyxml2_1_1XMLAttribute.html#a27797b45d21c981257720db94f5f8801", null ],
     [ "GetLineNum", "classtinyxml2_1_1XMLAttribute.html#a02d5ea924586e35f9c13857d1671b765", null ],
-    [ "Int64Value", "classtinyxml2_1_1XMLAttribute.html#a8762ed54f147c5744ada55c3d04d27f2", null ],
     [ "IntValue", "classtinyxml2_1_1XMLAttribute.html#adfa2433f0fdafd5c3880936de9affa80", null ],
-    [ "Name", "classtinyxml2_1_1XMLAttribute.html#ab886c486ec19f02ed826f8dc129e5ad8", null ],
-    [ "Next", "classtinyxml2_1_1XMLAttribute.html#aee53571b21e7ce5421eb929523a8bbe6", null ],
+    [ "Name", "classtinyxml2_1_1XMLAttribute.html#a5a5c135d24cce7abda6f17301c6274d8", null ],
+    [ "Next", "classtinyxml2_1_1XMLAttribute.html#aa8c7cf4c94a636ae75046658e551614e", null ],
     [ "QueryArrayValue", "classtinyxml2_1_1XMLAttribute.html#ac59e2d8109ea11666f98f544eb8c76a0", null ],
     [ "QueryBoolValue", "classtinyxml2_1_1XMLAttribute.html#a5f32e038954256f61c21ff20fd13a09c", null ],
     [ "QueryByteValue", "classtinyxml2_1_1XMLAttribute.html#a225bccaec4ea37f18f59a4d0ef907a6f", null ],
@@ -36,6 +35,5 @@ var classtinyxml2_1_1XMLAttribute =
     [ "Unsigned64Value", "classtinyxml2_1_1XMLAttribute.html#ab25d1eb942c7b76c03a73e7710aadd38", null ],
     [ "UnsignedLongValue", "classtinyxml2_1_1XMLAttribute.html#ab83aeff5e67da1a48f8eae593f7d9a89", null ],
     [ "UnsignedValue", "classtinyxml2_1_1XMLAttribute.html#a0be5343b08a957c42c02c5d32c35d338", null ],
-    [ "Value", "classtinyxml2_1_1XMLAttribute.html#a1aab1dd0e43ecbcfa306adbcf3a3d853", null ],
-    [ "XMLElement", "classtinyxml2_1_1XMLAttribute.html#ac2fba9b6e452829dd892f7392c24e0eb", null ]
+    [ "Value", "classtinyxml2_1_1XMLAttribute.html#ab1c5cd993f836a771818ca408994b14e", null ]
 ];

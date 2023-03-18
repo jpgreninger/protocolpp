@@ -1,7 +1,7 @@
 var classProtocolPP_1_1jwifisa =
 [
     [ "jwifisa", "classProtocolPP_1_1jwifisa.html#aa223d1dc416a78b0b7651f1ea67516a3", null ],
-    [ "jwifisa", "classProtocolPP_1_1jwifisa.html#af281698de766953b161e63ade6670cbe", null ],
+    [ "jwifisa", "classProtocolPP_1_1jwifisa.html#a8c0ac8eac6bf43fd1dd61452a076d0eb", null ],
     [ "jwifisa", "classProtocolPP_1_1jwifisa.html#a47f6704098946f9a15d7cac2afc7e03e", null ],
     [ "jwifisa", "classProtocolPP_1_1jwifisa.html#a2dc99b84b77fea89fb870c7308580aa1", null ],
     [ "~jwifisa", "classProtocolPP_1_1jwifisa.html#acff3b389bba962af6968fcf31c36245d", null ],

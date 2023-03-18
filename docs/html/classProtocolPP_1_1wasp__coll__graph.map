@@ -1,7 +1,7 @@
 <map id="ProtocolPP::wasp" name="ProtocolPP::wasp">
-<area shape="rect" id="node1" title=" " alt="" coords="170,185,295,212"/>
-<area shape="rect" id="node2" href="$classtinyxml2_1_1XMLPrinter.html" title=" " alt="" coords="87,109,231,136"/>
-<area shape="rect" id="node3" href="$classtinyxml2_1_1XMLVisitor.html" title=" " alt="" coords="5,13,148,39"/>
-<area shape="rect" id="node4" href="$classtinyxml2_1_1DynArray.html" title=" " alt="" coords="173,5,311,47"/>
-<area shape="rect" id="node5" title=" " alt="" coords="256,109,359,136"/>
+<area shape="rect" id="node1" title=" " alt="" coords="169,183,296,208"/>
+<area shape="rect" id="node2" href="$classtinyxml2_1_1XMLPrinter.html" title=" " alt="" coords="87,108,231,133"/>
+<area shape="rect" id="node3" href="$classtinyxml2_1_1XMLVisitor.html" title=" " alt="" coords="5,13,148,38"/>
+<area shape="rect" id="node4" href="$classtinyxml2_1_1DynArray.html" title=" " alt="" coords="173,5,311,45"/>
+<area shape="rect" id="node5" title=" " alt="" coords="255,108,359,133"/>
 </map>

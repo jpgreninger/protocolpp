@@ -2,10 +2,10 @@ var classProtocolPP_1_1jwots =
 [
     [ "jwots", "classProtocolPP_1_1jwots.html#a9839973c03f0ecef430451ab5b0435ba", null ],
     [ "jwots", "classProtocolPP_1_1jwots.html#aa5bb64a45fd1ebf0ae2ccc2e1cffa59d", null ],
-    [ "base_w", "classProtocolPP_1_1jwots.html#a3f5febfde973ab55e1f217d426118746", null ],
-    [ "chain", "classProtocolPP_1_1jwots.html#a782f21f63211258766a2455338067c99", null ],
-    [ "genpk", "classProtocolPP_1_1jwots.html#a891e2cd1d03fc236deaf950c087d2284", null ],
-    [ "gensk", "classProtocolPP_1_1jwots.html#a95cf0680467e628dca5ae002dba551c1", null ],
-    [ "pkFromSig", "classProtocolPP_1_1jwots.html#ac74a2d005e0838707b64a6d81db66adb", null ],
-    [ "sign", "classProtocolPP_1_1jwots.html#aa37bf435821ba68618f8530e0fbb3853", null ]
+    [ "base_w", "classProtocolPP_1_1jwots.html#acf09375ec6859db252f65a354a54904b", null ],
+    [ "chain", "classProtocolPP_1_1jwots.html#afc75a57c851b84e087892b818add281b", null ],
+    [ "genpk", "classProtocolPP_1_1jwots.html#a71c6a80e5e24ea6294422572e661ceb8", null ],
+    [ "gensk", "classProtocolPP_1_1jwots.html#aee4201981c32134205ea85d78853325d", null ],
+    [ "pkFromSig", "classProtocolPP_1_1jwots.html#adee53ec92fdc1157974209c31950a9bf", null ],
+    [ "sign", "classProtocolPP_1_1jwots.html#a7c740855a287c20480fa060376e31f7a", null ]
 ];

@@ -1,0 +1,4 @@
+<map id="option::Option::prev" name="option::Option::prev">
+<area shape="rect" id="node1" title="Returns a pointer to the previous element of the linked list or NULL if called on first()." alt="" coords="5,5,141,31"/>
+<area shape="rect" id="node2" href="$classoption_1_1Option.html#af51f53a553ef46110e36008a58466a2e" title="Returns true iff this is the first element of the linked list." alt="" coords="189,5,336,31"/>
+</map>

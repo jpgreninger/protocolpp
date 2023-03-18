@@ -145,6 +145,7 @@ var hierarchy =
       [ "ProtocolPP::jwimax", "classProtocolPP_1_1jwimax.html", null ],
       [ "ProtocolPP::jxmss", "classProtocolPP_1_1jxmss.html", null ]
     ] ],
+    [ "jprotocolpp", "classjprotocolpp.html", null ],
     [ "ProtocolPP::jprotocolpp", "classProtocolPP_1_1jprotocolpp.html", null ],
     [ "jrand", "classjrand.html", null ],
     [ "ProtocolPP::jrand", "classProtocolPP_1_1jrand.html", null ],
@@ -233,10 +234,10 @@ var hierarchy =
     ] ],
     [ "log_policy_interface", "classlog__policy__interface.html", null ],
     [ "tinyxml2::MemPool", "classtinyxml2_1_1MemPool.html", [
-      [ "tinyxml2::MemPoolT< sizeof(tinyxml2::XMLComment) >", "classtinyxml2_1_1MemPoolT.html", null ],
-      [ "tinyxml2::MemPoolT< sizeof(tinyxml2::XMLText) >", "classtinyxml2_1_1MemPoolT.html", null ],
-      [ "tinyxml2::MemPoolT< sizeof(tinyxml2::XMLAttribute) >", "classtinyxml2_1_1MemPoolT.html", null ],
       [ "tinyxml2::MemPoolT< sizeof(tinyxml2::XMLElement) >", "classtinyxml2_1_1MemPoolT.html", null ],
+      [ "tinyxml2::MemPoolT< sizeof(tinyxml2::XMLAttribute) >", "classtinyxml2_1_1MemPoolT.html", null ],
+      [ "tinyxml2::MemPoolT< sizeof(tinyxml2::XMLText) >", "classtinyxml2_1_1MemPoolT.html", null ],
+      [ "tinyxml2::MemPoolT< sizeof(tinyxml2::XMLComment) >", "classtinyxml2_1_1MemPoolT.html", null ],
       [ "tinyxml2::MemPoolT< ITEM_SIZE >", "classtinyxml2_1_1MemPoolT.html", null ]
     ] ],
     [ "option::Option", "classoption_1_1Option.html", null ],

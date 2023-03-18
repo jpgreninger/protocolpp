@@ -1,4 +1,4 @@
 <map id="option::PrintUsageImplementation::LineWrapper::process" name="option::PrintUsageImplementation::LineWrapper::process">
-<area shape="rect" id="node1" title="Process, wrap and output the next piece of data." alt="" coords="5,5,224,47"/>
-<area shape="rect" id="node2" href="$structoption_1_1PrintUsageImplementation.html#a41bfaabdf21e68877f3030d36acc0798" title="Returns true if ch is the unicode code point of a wide character." alt="" coords="272,5,491,47"/>
+<area shape="rect" id="node1" title="Process, wrap and output the next piece of data." alt="" coords="5,5,224,45"/>
+<area shape="rect" id="node2" href="$structoption_1_1PrintUsageImplementation.html#a41bfaabdf21e68877f3030d36acc0798" title="Returns true if ch is the unicode code point of a wide character." alt="" coords="272,5,491,45"/>
 </map>
