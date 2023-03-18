@@ -142,12 +142,16 @@ ChaCha20 and Poly1305 for IETF protocols</h1>
 <p >The Poly1305 key MUST be unpredictable to an attacker. Randomly generating the key would fulfill this requirement, except that Poly1305 is often used in communications protocols, so the receiver should know the key. Pseudo-random number generation such as by encrypting a counter is acceptable. Using ChaCha with a secret key and a nonce is also acceptable</p>
 <p >The algorithms presented here were designed to be easy to implement in constant time to avoid side-channel vulnerabilities. The operations used in ChaCha20 are all additions, XORs, and fixed rotations. All of these can and should be implemented in constant time. Access to offsets into the ChaCha state and the number of operations do not depend on any property of the key, eliminating the chance of information about the key leaking through the timing of cache misses</p>
 <p >For Poly1305, the operations are addition, multiplication and modulus, all on &gt;128-bit numbers. This can be done in constant time, but a naive implementation (such as using some generic big number library) will not be constant time. For example, if the multiplication is performed as a separate operation from the modulus, the result will some times be under <picture><source srcset="form_3_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="${2}^{256}$" src="form_3.png"/></picture> and some times be above <picture><source srcset="form_4_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$2^256$" src="form_4.png"/></picture>. Implementers should be careful about timing side-channels for Poly1305 by using the appropriate implementation of these operations</p>
-<p ><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1chacha20.html">ProtocolPP::chacha20</a> </dd>
+<p ><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1aead__chacha__poly1305.html">ProtocolPP::aead_chacha_poly1305</a> </dd>
+<dd>
+<a class="el" href="classProtocolPP_1_1chacha20.html">ProtocolPP::chacha20</a> </dd>
 <dd>
 <a class="el" href="classProtocolPP_1_1jmodes.html">ProtocolPP::jmodes</a> </dd>
 <dd>
 <a class="el" href="classProtocolPP_1_1ciphers.html">ProtocolPP::ciphers</a></dd></dl>
-<p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classchacha20.html">chacha20</a> </dd>
+<p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classaead__chacha__poly1305.html">aead_chacha_poly1305</a> </dd>
+<dd>
+<a class="el" href="classchacha20.html">chacha20</a> </dd>
 <dd>
 <a class="el" href="classjmodes.html">jmodes</a> </dd>
 <dd>
@@ -190,7 +194,7 @@ ChaCha20 and Poly1305 for IETF protocols</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classaead__chacha__poly1305.html">aead_chacha_poly1305</a></li>
-    <li class="footer">Generated on Sat Mar 18 2023 12:01:23 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Mar 18 2023 14:02:30 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>
