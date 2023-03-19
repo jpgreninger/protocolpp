@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['help_0',['help',['../structoption_1_1Descriptor.html#a9045b19311533e1b8a08645d57149c79',1,'option::Descriptor']]]
+  ['faddr_0',['faddr',['../structProtocolPP_1_1jtestcfg_1_1tstcfg.html#aeccd9253c0dd0949603d82aefdc97251',1,'ProtocolPP::jtestcfg::tstcfg']]],
+  ['fname_1',['fname',['../structProtocolPP_1_1jtestcfg_1_1tstcfg.html#a86adfe78f51418b29030b52f7c5c1cc9',1,'ProtocolPP::jtestcfg::tstcfg']]],
+  ['fsize_2',['fsize',['../structProtocolPP_1_1jtestcfg_1_1tstcfg.html#afd4429a61901a7eed1a8e2248056c574',1,'ProtocolPP::jtestcfg::tstcfg']]]
 ];

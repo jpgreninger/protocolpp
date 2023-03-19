@@ -220,6 +220,7 @@ var NAVTREEINDEX0 =
 "classInterfacePP_1_1jtestbench.html#af0467d98294008237898ae2022a1c8ed":[2,0,1,11,4],
 "classInterfacePP_1_1log__policy__interface.html":[2,0,1,12],
 "classInterfacePP_1_1log__policy__interface.html#a11119728c6b0cd8875b9ac3a7d830ace":[2,0,1,12,0],
+"classInterfacePP_1_1log__policy__interface.html#a4284db9570dd38218d54a6a8afc66f17":[2,0,1,12,5],
 "classInterfacePP_1_1log__policy__interface.html#a47b6273835d4cd4dd66d7cc5850b3afd":[2,0,1,12,3],
 "classInterfacePP_1_1log__policy__interface.html#a5c8a3ef25524ce994b3cce7b858c6126":[2,0,1,12,1],
 "classInterfacePP_1_1log__policy__interface.html#a7bab1471c51f0794f11f44fd26da9e06":[2,0,1,12,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classInterfacePP_1_1ringin.html#ac2d8446d0a9f4c1307f5b97d1eaf91f5":[2,0,1,14,11],
 "classInterfacePP_1_1ringin.html#aced5e902d6bdbe0da71db676af481ebd":[2,0,1,14,4],
 "classInterfacePP_1_1ringin.html#aee9cc5fdd39e65dcab533e99e77f9bad":[2,0,1,14,9],
-"classInterfacePP_1_1ringout.html":[2,0,1,15],
-"classInterfacePP_1_1ringout.html#a18223bea5e6608605d6c0b2e5d539d6c":[2,0,1,15,1]
+"classInterfacePP_1_1ringout.html":[2,0,1,15]
 };

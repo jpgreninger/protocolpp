@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('classciphers.html',''); initResizable(
 <div class="line">    std::cerr &lt;&lt; ricv.debug(icv);</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassProtocolPP_1_1ciphers_html_a3a13b5836bacca8531c9deb2148ca4dc"><div class="ttname"><a href="classProtocolPP_1_1ciphers.html#a3a13b5836bacca8531c9deb2148ca4dc">ProtocolPP::ciphers::get_cipher</a></div><div class="ttdeci">static std::shared_ptr&lt; jmodes &gt; get_cipher(jmodes::cipher_t cipher, jmodes::dir_t direction, jmodes::mode_t mode, uint8_t *key, unsigned int keylen, uint8_t *iv=nullptr, unsigned int ivlen=0, unsigned int icvlen=16, uint32_t count=0, uint8_t bearer=0)</div></div>
-<div class="ttc" id="aclassProtocolPP_1_1jarray_html"><div class="ttname"><a href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray</a></div><div class="ttdef"><b>Definition:</b> jarray.h:306</div></div>
+<div class="ttc" id="aclassProtocolPP_1_1jarray_html"><div class="ttname"><a href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray</a></div><div class="ttdef"><b>Definition:</b> jarray.h:300</div></div>
 <div class="ttc" id="aclassProtocolPP_1_1jmodes_html_a8208b547ec1c2b22799cdf663bac42a1ace1adf1b3cbe669ccab346b159c0c207"><div class="ttname"><a href="classProtocolPP_1_1jmodes.html#a8208b547ec1c2b22799cdf663bac42a1ace1adf1b3cbe669ccab346b159c0c207">ProtocolPP::jmodes::AES</a></div><div class="ttdeci">@ AES</div><div class="ttdoc">Advanced Encryption Standard.</div><div class="ttdef"><b>Definition:</b> jmodes.h:921</div></div>
 <div class="ttc" id="aclassProtocolPP_1_1jmodes_html_ab2cdd1d15cbef658be2040fc8a470d36aab3b9dff689746442da8a681e3d73b22"><div class="ttname"><a href="classProtocolPP_1_1jmodes.html#ab2cdd1d15cbef658be2040fc8a470d36aab3b9dff689746442da8a681e3d73b22">ProtocolPP::jmodes::ENC</a></div><div class="ttdeci">@ ENC</div><div class="ttdoc">Encryption.</div><div class="ttdef"><b>Definition:</b> jmodes.h:947</div></div>
 <div class="ttc" id="aclassProtocolPP_1_1jmodes_html_ab59eefcf49771a42cb6ef35e9b65d514aa6c212cd5d97e5a3d4dd453693c5a8f8"><div class="ttname"><a href="classProtocolPP_1_1jmodes.html#ab59eefcf49771a42cb6ef35e9b65d514aa6c212cd5d97e5a3d4dd453693c5a8f8">ProtocolPP::jmodes::GCM</a></div><div class="ttdeci">@ GCM</div><div class="ttdoc">Galois Counter Mode.</div><div class="ttdef"><b>Definition:</b> jmodes.h:972</div></div>
@@ -196,9 +196,9 @@ $(document).ready(function(){initNavTree('classciphers.html',''); initResizable(
 <div class="line"> </div>
 <div class="line"><span class="comment">// retrieve the ICV</span></div>
 <div class="line">tmp2.result(icv.get_ptr(), icv.get_size());</div>
-<div class="ttc" id="aclassProtocolPP_1_1jarray_html_a17ba287e85a719c059e7090fd1ba806b"><div class="ttname"><a href="classProtocolPP_1_1jarray.html#a17ba287e85a719c059e7090fd1ba806b">ProtocolPP::jarray::get_ptr</a></div><div class="ttdeci">T * get_ptr()</div><div class="ttdef"><b>Definition:</b> jarray.h:1157</div></div>
-<div class="ttc" id="aclassProtocolPP_1_1jarray_html_ad68d9f12c1aa3b783fbcfdfff11b44e1"><div class="ttname"><a href="classProtocolPP_1_1jarray.html#ad68d9f12c1aa3b783fbcfdfff11b44e1">ProtocolPP::jarray::get_size</a></div><div class="ttdeci">unsigned int get_size()</div><div class="ttdef"><b>Definition:</b> jarray.h:976</div></div>
-<div class="ttc" id="aclassProtocolPP_1_1jpoly1305_html"><div class="ttname"><a href="classProtocolPP_1_1jpoly1305.html">ProtocolPP::jpoly1305</a></div><div class="ttdef"><b>Definition:</b> jpoly1305.h:118</div></div>
+<div class="ttc" id="aclassProtocolPP_1_1jarray_html_a17ba287e85a719c059e7090fd1ba806b"><div class="ttname"><a href="classProtocolPP_1_1jarray.html#a17ba287e85a719c059e7090fd1ba806b">ProtocolPP::jarray::get_ptr</a></div><div class="ttdeci">T * get_ptr()</div><div class="ttdef"><b>Definition:</b> jarray.h:1151</div></div>
+<div class="ttc" id="aclassProtocolPP_1_1jarray_html_ad68d9f12c1aa3b783fbcfdfff11b44e1"><div class="ttname"><a href="classProtocolPP_1_1jarray.html#ad68d9f12c1aa3b783fbcfdfff11b44e1">ProtocolPP::jarray::get_size</a></div><div class="ttdeci">unsigned int get_size()</div><div class="ttdef"><b>Definition:</b> jarray.h:970</div></div>
+<div class="ttc" id="aclassProtocolPP_1_1jpoly1305_html"><div class="ttname"><a href="classProtocolPP_1_1jpoly1305.html">ProtocolPP::jpoly1305</a></div><div class="ttdef"><b>Definition:</b> jpoly1305.h:112</div></div>
 </div><!-- fragment --><p >Usage example for get_crc()</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray&lt;uint8_t&gt;</a> idat = myrand-&gt;getbyte(300);</div>
 <div class="line"><a class="code hl_class" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray&lt;uint8_t&gt;</a> result(1,0);</div>
@@ -277,7 +277,7 @@ $(document).ready(function(){initNavTree('classciphers.html',''); initResizable(
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classciphers.html">ciphers</a></li>
-    <li class="footer">Generated on Sat Mar 18 2023 14:02:30 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Mar 18 2023 22:44:42 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

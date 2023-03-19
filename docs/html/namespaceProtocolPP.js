@@ -38,7 +38,7 @@ var namespaceProtocolPP =
     [ "jipsa", "classProtocolPP_1_1jipsa.html", "classProtocolPP_1_1jipsa" ],
     [ "jipsec", "classProtocolPP_1_1jipsec.html", "classProtocolPP_1_1jipsec" ],
     [ "jipsecsa", "classProtocolPP_1_1jipsecsa.html", "classProtocolPP_1_1jipsecsa" ],
-    [ "jlicense", "classProtocolPP_1_1jlicense.html", null ],
+    [ "jlicense", "classProtocolPP_1_1jlicense.html", "classProtocolPP_1_1jlicense" ],
     [ "jlmots", "classProtocolPP_1_1jlmots.html", "classProtocolPP_1_1jlmots" ],
     [ "jlms", "classProtocolPP_1_1jlms.html", "classProtocolPP_1_1jlms" ],
     [ "jlmsa", "classProtocolPP_1_1jlmsa.html", "classProtocolPP_1_1jlmsa" ],

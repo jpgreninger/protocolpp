@@ -40,6 +40,7 @@ var classProtocolPP_1_1jprotocol =
     [ "update_status", "classProtocolPP_1_1jprotocol.html#ac68e3d5308f87f45d8cf9b79f0d48551", null ],
     [ "m_dir", "classProtocolPP_1_1jprotocol.html#a96450ee22b99e635e608d3b14c559ef8", null ],
     [ "m_endian", "classProtocolPP_1_1jprotocol.html#a98c2d0e85b0d735b9cd2962b06f71422", null ],
+    [ "m_file", "classProtocolPP_1_1jprotocol.html#aa8cc8ed1eb95f31dc0b7a066e55629c9", null ],
     [ "m_filename", "classProtocolPP_1_1jprotocol.html#a2b58f247ed9831c22a49602447ee98da", null ],
     [ "m_rand", "classProtocolPP_1_1jprotocol.html#a5eda4bc384edf640ae7b7f224de22953", null ],
     [ "m_status", "classProtocolPP_1_1jprotocol.html#ae6fd32f6fcadc355dd751027d4ba6a50", null ]

@@ -102,36 +102,32 @@ $(document).ready(function(){initNavTree('structProtocolPP_1_1jtestcfg_1_1tstres
 Public Attributes</h2></td></tr>
 <tr class="memitem:ab104b72b9d3ff7bc989d10d61c3c18ec"><td class="memItemLeft" align="right" valign="top"><a id="ab104b72b9d3ff7bc989d10d61c3c18ec" name="ab104b72b9d3ff7bc989d10d61c3c18ec"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>threads</b></td></tr>
+<tr class="memdesc:ab104b72b9d3ff7bc989d10d61c3c18ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of threads in this responder <br /></td></tr>
 <tr class="separator:ab104b72b9d3ff7bc989d10d61c3c18ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9627cfb89d8df678ad2ee722f90e4cc"><td class="memItemLeft" align="right" valign="top"><a id="ab9627cfb89d8df678ad2ee722f90e4cc" name="ab9627cfb89d8df678ad2ee722f90e4cc"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>units</b></td></tr>
+<tr class="memdesc:ab9627cfb89d8df678ad2ee722f90e4cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">unit of time for latencies (s, ms, us, ns, ps, fs) <br /></td></tr>
 <tr class="separator:ab9627cfb89d8df678ad2ee722f90e4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2366eb513b7bc0bce9b58afd5d216af2"><td class="memItemLeft" align="right" valign="top"><a id="a2366eb513b7bc0bce9b58afd5d216af2" name="a2366eb513b7bc0bce9b58afd5d216af2"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>rname</b></td></tr>
+<tr class="memdesc:a2366eb513b7bc0bce9b58afd5d216af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of the responder <br /></td></tr>
 <tr class="separator:a2366eb513b7bc0bce9b58afd5d216af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adce213a132b46057bf6b9b2493888380"><td class="memItemLeft" align="right" valign="top"><a id="adce213a132b46057bf6b9b2493888380" name="adce213a132b46057bf6b9b2493888380"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>writelatency</b></td></tr>
+<tr class="memdesc:adce213a132b46057bf6b9b2493888380"><td class="mdescLeft">&#160;</td><td class="mdescRight">latency for writes to memory <br /></td></tr>
 <tr class="separator:adce213a132b46057bf6b9b2493888380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa811e107d0d96975c7df449244e0a50a"><td class="memItemLeft" align="right" valign="top"><a id="aa811e107d0d96975c7df449244e0a50a" name="aa811e107d0d96975c7df449244e0a50a"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>readlatency</b></td></tr>
+<tr class="memdesc:aa811e107d0d96975c7df449244e0a50a"><td class="mdescLeft">&#160;</td><td class="mdescRight">latency for reads to memory <br /></td></tr>
 <tr class="separator:aa811e107d0d96975c7df449244e0a50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3158d9cf60f86f1ca9cd83f75b6ecdc"><td class="memItemLeft" align="right" valign="top"><a id="aa3158d9cf60f86f1ca9cd83f75b6ecdc" name="aa3158d9cf60f86f1ca9cd83f75b6ecdc"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>computelatency</b></td></tr>
+<tr class="memdesc:aa3158d9cf60f86f1ca9cd83f75b6ecdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">latency for computation of protocol, encryption, or authentication <br /></td></tr>
 <tr class="separator:aa3158d9cf60f86f1ca9cd83f75b6ecdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >tstresp - Responder configuration structure</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">threads</td><td>- number of threads in this responder </td></tr>
-    <tr><td class="paramname">units</td><td>- unit of time for latencies (s, ms, us, ns, ps, fs) </td></tr>
-    <tr><td class="paramname">rname</td><td>- name of the responder </td></tr>
-    <tr><td class="paramname">writelatency</td><td>- latency for writes to memory </td></tr>
-    <tr><td class="paramname">readlatency</td><td>- latency for reads to memory </td></tr>
-    <tr><td class="paramname">computelatency</td><td>- latency for computation of protocol, encryption, or authentication </td></tr>
-  </table>
-  </dd>
-</dl>
+<p >threads - number of threads in this responder units - unit of time for latencies (s, ms, us, ns, ps, fs) rname - name of the responder writelatency - latency for writes to memory readlatency - latency for reads to memory computelatency - latency for computation of protocol, encryption, or authentication </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/jtestcfg.h</li>
 </ul>
@@ -141,7 +137,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>computelatency
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceProtocolPP.html">ProtocolPP</a></li><li class="navelem"><a class="el" href="classProtocolPP_1_1jtestcfg.html">jtestcfg</a></li><li class="navelem"><a class="el" href="structProtocolPP_1_1jtestcfg_1_1tstresp.html">tstresp</a></li>
-    <li class="footer">Generated on Sat Mar 18 2023 14:02:30 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Mar 18 2023 22:45:49 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

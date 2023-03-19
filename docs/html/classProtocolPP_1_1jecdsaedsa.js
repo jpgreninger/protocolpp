@@ -7,6 +7,6 @@ var classProtocolPP_1_1jecdsaedsa =
     [ "~jecdsaedsa", "classProtocolPP_1_1jecdsaedsa.html#a2dc037e63fa756360ea36f138e75d658", null ],
     [ "get_field", "classProtocolPP_1_1jecdsaedsa.html#a4da0de19457fe361c3db78cf38cc79dd", null ],
     [ "set_field", "classProtocolPP_1_1jecdsaedsa.html#a09891ca25576430029b90f2cbe5210e9", null ],
-    [ "to_json", "classProtocolPP_1_1jecdsaedsa.html#a0ee22cff8c3959334934806cf5778473", null ],
+    [ "to_json", "classProtocolPP_1_1jecdsaedsa.html#a2fae8f6ccd9b153514dbbead12b61e7d", null ],
     [ "to_xml", "classProtocolPP_1_1jecdsaedsa.html#ad93c86f05729a996e68e2283240a7c4e", null ]
 ];

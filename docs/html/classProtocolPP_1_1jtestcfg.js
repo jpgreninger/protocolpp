@@ -1,7 +1,7 @@
 var classProtocolPP_1_1jtestcfg =
 [
-    [ "tstcfg", "structProtocolPP_1_1jtestcfg_1_1tstcfg.html", null ],
-    [ "tstresp", "structProtocolPP_1_1jtestcfg_1_1tstresp.html", null ],
+    [ "tstcfg", "structProtocolPP_1_1jtestcfg_1_1tstcfg.html", "structProtocolPP_1_1jtestcfg_1_1tstcfg" ],
+    [ "tstresp", "structProtocolPP_1_1jtestcfg_1_1tstresp.html", "structProtocolPP_1_1jtestcfg_1_1tstresp" ],
     [ "jtestcfg", "classProtocolPP_1_1jtestcfg.html#a116afc32de928bc7d1f6864c3a75a21f", null ],
     [ "jtestcfg", "classProtocolPP_1_1jtestcfg.html#a88309847da4813678dbccadc690bb7de", null ],
     [ "jtestcfg", "classProtocolPP_1_1jtestcfg.html#a35b0e17f78b755d06711acbe654a3353", null ],

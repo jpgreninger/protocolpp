@@ -101,8 +101,8 @@ Inheritance diagram for ProtocolPP::jipsec:</div>
 <div class="dyncontent">
 <div class="center"><img src="classProtocolPP_1_1jipsec__inherit__graph.png" border="0" usemap="#aProtocolPP_1_1jipsec_inherit__map" alt="Inheritance graph"/></div>
 <map name="aProtocolPP_1_1jipsec_inherit__map" id="aProtocolPP_1_1jipsec_inherit__map">
-<area shape="rect" title=" " alt="" coords="13,79,143,104"/>
-<area shape="rect" href="classProtocolPP_1_1jprotocol.html" title=" " alt="" coords="5,5,151,31"/>
+<area shape="rect" title=" " alt="" coords="13,79,142,104"/>
+<area shape="rect" href="classProtocolPP_1_1jprotocol.html" title=" " alt="" coords="5,5,149,31"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -110,8 +110,8 @@ Collaboration diagram for ProtocolPP::jipsec:</div>
 <div class="dyncontent">
 <div class="center"><img src="classProtocolPP_1_1jipsec__coll__graph.png" border="0" usemap="#aProtocolPP_1_1jipsec_coll__map" alt="Collaboration graph"/></div>
 <map name="aProtocolPP_1_1jipsec_coll__map" id="aProtocolPP_1_1jipsec_coll__map">
-<area shape="rect" title=" " alt="" coords="13,79,143,104"/>
-<area shape="rect" href="classProtocolPP_1_1jprotocol.html" title=" " alt="" coords="5,5,151,31"/>
+<area shape="rect" title=" " alt="" coords="13,79,142,104"/>
+<area shape="rect" href="classProtocolPP_1_1jprotocol.html" title=" " alt="" coords="5,5,149,31"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -263,6 +263,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_filename</b>
 <tr class="separator:a2b58f247ed9831c22a49602447ee98da inherit pro_attribs_classProtocolPP_1_1jprotocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8cc8ed1eb95f31dc0b7a066e55629c9 inherit pro_attribs_classProtocolPP_1_1jprotocol"><td class="memItemLeft" align="right" valign="top"><a id="aa8cc8ed1eb95f31dc0b7a066e55629c9" name="aa8cc8ed1eb95f31dc0b7a066e55629c9"></a>
 std::fstream&#160;</td><td class="memItemRight" valign="bottom"><b>m_file</b></td></tr>
+<tr class="memdesc:aa8cc8ed1eb95f31dc0b7a066e55629c9 inherit pro_attribs_classProtocolPP_1_1jprotocol"><td class="mdescLeft">&#160;</td><td class="mdescRight">input file stream object for this protocol <br /></td></tr>
 <tr class="separator:aa8cc8ed1eb95f31dc0b7a066e55629c9 inherit pro_attribs_classProtocolPP_1_1jprotocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98c2d0e85b0d735b9cd2962b06f71422 inherit pro_attribs_classProtocolPP_1_1jprotocol"><td class="memItemLeft" align="right" valign="top"><a id="a98c2d0e85b0d735b9cd2962b06f71422" name="a98c2d0e85b0d735b9cd2962b06f71422"></a>
 <a class="el" href="namespaceProtocolPP.html#a4c490fb0ae4e404f895c8b65147453ae">endian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_endian</b></td></tr>
@@ -282,18 +283,7 @@ std::fstream&#160;</td><td class="memItemRight" valign="bottom"><b>m_file</b></t
       </table>
 </div><div class="memdoc">
 <p >Audit types for IPsec</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">AUDIT_INVALIDSA</td><td>- Invalid Security Association </td></tr>
-    <tr><td class="paramname">AUDIT_FRAGMENT</td><td>- Fragment received when not allowed </td></tr>
-    <tr><td class="paramname">AUDIT_ROLLOVER</td><td>- Sequence number rolled over </td></tr>
-    <tr><td class="paramname">AUDIT_REPLAY</td><td>- Anti-Replay error </td></tr>
-    <tr><td class="paramname">AUDIT_ICV</td><td>- Received ICV was incorrect </td></tr>
-    <tr><td class="paramname">AUDIT_FORMAT</td><td>- IPv6 JUMBOGRAM formatting errors </td></tr>
-    <tr><td class="paramname">AUDIT_DUMMY</td><td>- Dummy packet received </td></tr>
-  </table>
-  </dd>
-</dl>
+<p >AUDIT_INVALIDSA - Invalid Security Association AUDIT_FRAGMENT - Fragment received when not allowed AUDIT_ROLLOVER - Sequence number rolled over AUDIT_REPLAY - Anti-Replay error AUDIT_ICV - Received ICV was incorrect AUDIT_FORMAT - IPv6 JUMBOGRAM formatting errors AUDIT_DUMMY - Dummy packet received </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9414b2d3b4543913251735e8540ec342a03ae7222bdf7df3c68ce3b0fe12845e7" name="a9414b2d3b4543913251735e8540ec342a03ae7222bdf7df3c68ce3b0fe12845e7"></a>AUDIT_INVALIDSA&#160;</td><td class="fielddoc"><p >Audit for invalid security association. </p>
 </td></tr>
@@ -875,7 +865,7 @@ std::fstream&#160;</td><td class="memItemRight" valign="bottom"><b>m_file</b></t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceProtocolPP.html">ProtocolPP</a></li><li class="navelem"><a class="el" href="classProtocolPP_1_1jipsec.html">jipsec</a></li>
-    <li class="footer">Generated on Sat Mar 18 2023 14:02:30 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Mar 18 2023 22:45:42 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

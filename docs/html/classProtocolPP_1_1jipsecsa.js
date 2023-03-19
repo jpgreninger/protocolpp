@@ -7,6 +7,6 @@ var classProtocolPP_1_1jipsecsa =
     [ "~jipsecsa", "classProtocolPP_1_1jipsecsa.html#ae6e93c341ed1a1f224f5c68ac58debd6", null ],
     [ "get_field", "classProtocolPP_1_1jipsecsa.html#ae5ce2d0a4ea9afcd083b620cac303530", null ],
     [ "set_field", "classProtocolPP_1_1jipsecsa.html#a4868c817f530235af4d9d2d64f17a4df", null ],
-    [ "to_json", "classProtocolPP_1_1jipsecsa.html#ad7057bbe966b32a862f2ef0719958e46", null ],
+    [ "to_json", "classProtocolPP_1_1jipsecsa.html#a531211925b8ebacfed8b92dd9d86c42b", null ],
     [ "to_xml", "classProtocolPP_1_1jipsecsa.html#a7a33e7300dea268edff3ed730fa64391", null ]
 ];
