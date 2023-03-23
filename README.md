@@ -1,4 +1,4 @@
-# Protocolpp®(Protocol++®) 5.4.1 Released January 1, 2023!
+# Protocolpp®(Protocol++®) 5.4.2 Released March 15, 2023!
 https://www.youtube.com/watch?v=zs5Edbf4MiI
 
 Only www.protocolpp.com has the rights to update, modify,
@@ -168,6 +168,15 @@ Examples:
 For W.A.S.P usage, see the doxygen section
 
 * See www.protocolpp.com for further updates, information and licensing
+
+* Protocol++® (Protocolpp®) - 5.4.2 released March 15, 2023
+  * Maintainence release
+  * All updates documented in the paid version RELEASE file
+  * All releases now encrypted, if yours isn't, it's a fake
+  * Added DTLSv1.3 Anti-Replay support
+  * Many edits to make the code more efficient
+  * Documentation Updates
+  * See the release video https://www.youtube.com/watch?v=zs5Edbf4MiI
 
 * Protocol++® (Protocolpp®) - 5.4.1 released January 1, 2023
   * All updates documented in the paid version RELEASE file
