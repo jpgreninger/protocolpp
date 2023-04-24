@@ -167,8 +167,11 @@ Examples:
 
 For W.A.S.P usage, see the doxygen section
 
-* See www.protocolpp.com for further updates, information and licensing
+* See www.protocolpp.com for more updates, information and licensing
 
+* Protocol++® (Protocolpp®) - 5.4.3 upcoming July 1, 2023
+  * See www.protocolpp.com for further information
+  
 * Protocol++® (Protocolpp®) - 5.4.2 released March 15, 2023
   * Maintainence release
   * All updates documented in the paid version RELEASE file
