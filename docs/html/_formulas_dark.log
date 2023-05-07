@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=latex 2023.3.18)  18 MAR 2023 22:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=latex 2023.3.18)  6 MAY 2023 22:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -83,7 +83,8 @@ File: l3backend-dvips.def 2021-05-07 L3 backend support: dvips
 \g__pdf_backend_annotation_int=\count188
 \g__pdf_backend_link_int=\count189
 \g__pdf_backend_link_sf_int=\count190
-) (./_formulas_dark.aux)
+)
+No file _formulas_dark.aux.
 \openout1 = `_formulas_dark.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -2076,8 +2077,8 @@ cmm/m/it/10 SPIi \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 SPIr\OT1/cmr/m/n/10 )$
 [462] [463] [464] [465] [466] [467] [468] [469] [470] [471] [472] [473] [474] [
 475] [476] [477] (./_formulas_dark.aux) ) 
 Here is how much of TeX's memory you used:
- 1379 strings out of 478856
- 19939 string characters out of 5858661
+ 1377 strings out of 478856
+ 19901 string characters out of 5858661
  317269 words of memory out of 6000000
  19058 multiletter control sequences out of 15000+600000
  403765 words of font info for 28 fonts, out of 8000000 for 9000

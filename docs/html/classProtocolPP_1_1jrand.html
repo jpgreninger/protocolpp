@@ -101,8 +101,8 @@ $(document).ready(function(){initNavTree('classProtocolPP_1_1jrand.html',''); in
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7d9ef084b531db993ff02bc6589bba6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jrand.html#a7d9ef084b531db993ff02bc6589bba6c">jrand</a> ()</td></tr>
 <tr class="separator:a7d9ef084b531db993ff02bc6589bba6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94808cb307be0a484158ccd48f048c09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jrand.html#a94808cb307be0a484158ccd48f048c09">jrand</a> (uint64_t myseed)</td></tr>
-<tr class="separator:a94808cb307be0a484158ccd48f048c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d619c25d513dd752d9c02d2bcca1b4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jrand.html#a9d619c25d513dd752d9c02d2bcca1b4a">jrand</a> (uint64_t myseed, bool use_crypto=false)</td></tr>
+<tr class="separator:a9d619c25d513dd752d9c02d2bcca1b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cef5ccd8d326e3b367e0545a2cfac3b"><td class="memItemLeft" align="right" valign="top"><a id="a3cef5ccd8d326e3b367e0545a2cfac3b" name="a3cef5ccd8d326e3b367e0545a2cfac3b"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~jrand</b> ()</td></tr>
 <tr class="memdesc:a3cef5ccd8d326e3b367e0545a2cfac3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard deconstructor. <br /></td></tr>
@@ -176,12 +176,12 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Standard constructor for the jrand class. Seeded with 0x5489UL, RandomPool seeded from hardware </p>
+<p >Standard constructor for the jrand class. Seeded with 0x5489UL, RandomPool seeded from hardware global use_crypto is set to false (use_crypto can be set on a function by function basis) </p>
 
 </div>
 </div>
-<a id="a94808cb307be0a484158ccd48f048c09" name="a94808cb307be0a484158ccd48f048c09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94808cb307be0a484158ccd48f048c09">&#9670;&#160;</a></span>jrand() <span class="overload">[2/2]</span></h2>
+<a id="a9d619c25d513dd752d9c02d2bcca1b4a" name="a9d619c25d513dd752d9c02d2bcca1b4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d619c25d513dd752d9c02d2bcca1b4a">&#9670;&#160;</a></span>jrand() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -193,8 +193,18 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">ProtocolPP::jrand::jrand </td>
           <td>(</td>
           <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>myseed</em></td><td>)</td>
+          <td class="paramname"><em>myseed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_crypto</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -206,6 +216,7 @@ Static Public Member Functions</h2></td></tr>
 <p >Constructor for jrand that accepts an unsigned int for the seed </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">myseed</td><td>- seed to initialize psuedo-random number generator </td></tr>
+    <tr><td class="paramname">use_crypto</td><td>- Use cryptographic quality random numbers Sets use in the randomizer globally, overrides use_crytpo in individual functions if set to true </td></tr>
   </table>
   </dd>
 </dl>
@@ -924,7 +935,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceProtocolPP.html">ProtocolPP</a></li><li class="navelem"><a class="el" href="classProtocolPP_1_1jrand.html">jrand</a></li>
-    <li class="footer">Generated on Sat Mar 18 2023 22:45:46 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat May 6 2023 22:08:00 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

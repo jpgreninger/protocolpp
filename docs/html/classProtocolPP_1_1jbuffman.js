@@ -2,6 +2,7 @@ var classProtocolPP_1_1jbuffman =
 [
     [ "jbuffman", "classProtocolPP_1_1jbuffman.html#a46e180f759ce9357aa4c41c459a94574", null ],
     [ "jbuffman", "classProtocolPP_1_1jbuffman.html#afd2f0a3f6a16a38ba50462b4f637f7b2", null ],
+    [ "jbuffman", "classProtocolPP_1_1jbuffman.html#a3c6b13d564af674f0ac568ae552dcf3e", null ],
     [ "jbuffman", "classProtocolPP_1_1jbuffman.html#a15a0484b5605223640cb2c07c5a50bfd", null ],
     [ "jbuffman", "classProtocolPP_1_1jbuffman.html#a85d09b08d8bef557bf3500b75ffa655c", null ],
     [ "~jbuffman", "classProtocolPP_1_1jbuffman.html#aee61d9c6e169e68ef3e77f14f593f923", null ],

@@ -1,7 +1,7 @@
 var classProtocolPP_1_1jrand =
 [
     [ "jrand", "classProtocolPP_1_1jrand.html#a7d9ef084b531db993ff02bc6589bba6c", null ],
-    [ "jrand", "classProtocolPP_1_1jrand.html#a94808cb307be0a484158ccd48f048c09", null ],
+    [ "jrand", "classProtocolPP_1_1jrand.html#a9d619c25d513dd752d9c02d2bcca1b4a", null ],
     [ "~jrand", "classProtocolPP_1_1jrand.html#a3cef5ccd8d326e3b367e0545a2cfac3b", null ],
     [ "get_crypto", "classProtocolPP_1_1jrand.html#aaacac281a889dd56a17fdc13767bea8b", null ],
     [ "get_int", "classProtocolPP_1_1jrand.html#ad44df0175187d79ef442b9196e5769d0", null ],
