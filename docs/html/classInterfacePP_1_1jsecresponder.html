@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Protocol++(Protocolpp)<span id="projectnumber">&#160;v5.4.2</span>
+   <div id="projectname">Protocol++(Protocolpp)<span id="projectnumber">&#160;v5.4.3</span>
    </div>
   </td>
  </tr>
@@ -98,8 +98,8 @@ $(document).ready(function(){initNavTree('classInterfacePP_1_1jsecresponder.html
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad45895fc63eccb1266ba89807a1be5e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jsecresponder.html#ad45895fc63eccb1266ba89807a1be5e2">jsecresponder</a> (std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jlogger.html">jlogger</a> &gt; &amp;logger, std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jring.html">jring</a>&lt; <a class="el" href="classInterfacePP_1_1ringflow.html">ringflow</a> &gt; &gt; &amp;flowring, std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jring.html">jring</a>&lt; <a class="el" href="classInterfacePP_1_1secin.html">secin</a> &gt; &gt; &amp;inputring, std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jring.html">jring</a>&lt; <a class="el" href="classInterfacePP_1_1secout.html">secout</a> &gt; &gt; &amp;outputring, uint64_t seed, std::string readlatency=std::string(&quot;80..120&quot;), std::string computelatency=std::string(&quot;2000..5000&quot;), std::string writelatency=std::string(&quot;50..100&quot;))</td></tr>
-<tr class="separator:ad45895fc63eccb1266ba89807a1be5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ccd3af2c72aaf1a0474dbaae71ba998"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jsecresponder.html#a0ccd3af2c72aaf1a0474dbaae71ba998">jsecresponder</a> (std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jlogger.html">jlogger</a> &gt; &amp;logger, std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jring.html">jring</a>&lt; <a class="el" href="classInterfacePP_1_1ringflow.html">ringflow</a> &gt; &gt; &amp;flowring, std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jring.html">jring</a>&lt; <a class="el" href="classInterfacePP_1_1secin.html">secin</a> &gt; &gt; &amp;inputring, std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jring.html">jring</a>&lt; <a class="el" href="classInterfacePP_1_1secout.html">secout</a> &gt; &gt; &amp;outputring, uint64_t seed, bool use_crypto, std::string readlatency=std::string(&quot;80..120&quot;), std::string computelatency=std::string(&quot;2000..5000&quot;), std::string writelatency=std::string(&quot;50..100&quot;))</td></tr>
+<tr class="separator:a0ccd3af2c72aaf1a0474dbaae71ba998"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec117e273e68128b5e56a4d14d6acebc"><td class="memItemLeft" align="right" valign="top"><a id="aec117e273e68128b5e56a4d14d6acebc" name="aec117e273e68128b5e56a4d14d6acebc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>dequeue</b> (std::string flow)</td></tr>
 <tr class="memdesc:aec117e273e68128b5e56a4d14d6acebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">enqueue flows to responder <br /></td></tr>
@@ -116,8 +116,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()</td></tr>
 <tr class="separator:a69d036fac682547f337f3edb2aeb1d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad45895fc63eccb1266ba89807a1be5e2" name="ad45895fc63eccb1266ba89807a1be5e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad45895fc63eccb1266ba89807a1be5e2">&#9670;&#160;</a></span>jsecresponder()</h2>
+<a id="a0ccd3af2c72aaf1a0474dbaae71ba998" name="a0ccd3af2c72aaf1a0474dbaae71ba998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ccd3af2c72aaf1a0474dbaae71ba998">&#9670;&#160;</a></span>jsecresponder()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -155,6 +155,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()</td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_crypto</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>readlatency</em> = <code>std::string(&quot;80..120&quot;)</code>, </td>
         </tr>
@@ -184,6 +190,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()</td></tr>
     <tr><td class="paramname">inputring</td><td>- software ring for the input packets </td></tr>
     <tr><td class="paramname">outputring</td><td>- software ring for the output packets </td></tr>
     <tr><td class="paramname">seed</td><td>- seed for the random number generator </td></tr>
+    <tr><td class="paramname">use_crypto</td><td>- use cryptographic quality random numbers </td></tr>
     <tr><td class="paramname">readlatency</td><td>- latency for read transactions </td></tr>
     <tr><td class="paramname">computelatency</td><td>- latency for compute transactions </td></tr>
     <tr><td class="paramname">writelatency</td><td>- latency for write transactions </td></tr>
@@ -287,7 +294,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()</td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>InterfacePP</b></li><li class="navelem"><a class="el" href="classInterfacePP_1_1jsecresponder.html">jsecresponder</a></li>
-    <li class="footer">Generated on Sat May 6 2023 22:07:27 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 14:07:23 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

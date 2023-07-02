@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=latex 2023.3.18)  6 MAY 2023 22:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/CVE-2023-32700 patched) (preloaded format=latex 2023.6.13)  2 JUL 2023 14:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2078,7 +2078,7 @@ cmm/m/it/10 SPIi \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 SPIr\OT1/cmr/m/n/10 )$
 475] [476] [477] (./_formulas_dark.aux) ) 
 Here is how much of TeX's memory you used:
  1377 strings out of 478856
- 19901 string characters out of 5858661
+ 19924 string characters out of 5858638
  317269 words of memory out of 6000000
  19058 multiletter control sequences out of 15000+600000
  403765 words of font info for 28 fonts, out of 8000000 for 9000

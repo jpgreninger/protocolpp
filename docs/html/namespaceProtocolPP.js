@@ -401,6 +401,7 @@ var namespaceProtocolPP =
       [ "WARN_NO_VNI", "namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23a68171563eb12ec6e798da46281a17ec3", null ],
       [ "ERR_ICVFAIL_LIMIT", "namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23adca38b93a481dc0879a71de78c30e244", null ],
       [ "ERR_PADDING", "namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23aa9019f19e58d4e8079be9c60515a45a8", null ],
+      [ "ERR_EPOCH_DTLS13", "namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23a649b5d7018c87e6042edb4baac48c3d8", null ],
       [ "ERR_UNKNOWN", "namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23a457c43f459c1aa041c08dfe8c9f0e0b2", null ]
     ] ],
     [ "esn_id_t", "namespaceProtocolPP.html#ac2745a77397be54e146e6ea44e3f6c7e", [
@@ -741,6 +742,7 @@ var namespaceProtocolPP =
       [ "COMPOUT", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36af5c55c7acab7ce4224dbf97c58f3da79", null ],
       [ "POLYNOMIAL", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a20b9c7babbd0f9ebb2b1cc124b3209f7", null ],
       [ "SEED", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a76a2ea9d5bce744be549425b2dadd0e7", null ],
+      [ "USE_CRYPTO", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a172f6ea98c1b3f7ec225cbc9e69b8082", null ],
       [ "ERRORS", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a9e943cb20c8112c7620d565aeca87ec4", null ],
       [ "FLOWS", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a7910ff541ce7214b2f1f57fe400dc52e", null ],
       [ "PACKETS", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a10c712be97b03f484be2830ef549abff", null ],

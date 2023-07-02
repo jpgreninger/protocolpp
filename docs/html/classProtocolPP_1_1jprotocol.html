@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Protocol++(Protocolpp)<span id="projectnumber">&#160;v5.4.2</span>
+   <div id="projectname">Protocol++(Protocolpp)<span id="projectnumber">&#160;v5.4.3</span>
    </div>
   </td>
  </tr>
@@ -901,7 +901,11 @@ std::fstream&#160;</td><td class="memItemRight" valign="bottom"><b>m_file</b></t
 <li>XMSS - XMSS Signature Scheme (value of 30)</li>
 <li>LMS - LMS Signature Scheme (value of 31)</li>
 <li>TLS13 - Version 1.3 of the TLS protocol (value of 32)</li>
-<li>NOPROTO - Version 1.3 of the TLS protocol (value of 33)</li>
+<li>DTLS13 - Version 1.3 of the DTLS protocol (value of 33)</li>
+<li>EGRE - Extended GRE protocol (value of 34)</li>
+<li>NVGRE - NVGRE protocol (value of 35)</li>
+<li>VXLAN - VXLAN protocol (value of 36)</li>
+<li>NOPROTO - No protocol (value of 37)</li>
 </ul>
 </li>
 <li>Error Codes in STATUS:<ul>
@@ -956,6 +960,9 @@ std::fstream&#160;</td><td class="memItemRight" valign="bottom"><b>m_file</b></t
 <li>ERR_RSA_MESSAGE_LENGTH - Decrypted RSA message length was incorrect (value of 48)</li>
 <li>ERR_INVALID_SIGNATURE - Signature verification failed (value of 49)</li>
 <li>WARN_NO_VLAN - VLAN tags did not match (value of 50)</li>
+<li>ERR_ICVFAIL_LIMIT - DTLSv13 maximum packet ICV fail limit reached</li>
+<li>ERR_PADDING - DTLSv13 non-zero padding found</li>
+<li>ERR_EPOCH_DTLS13 - DTLSv13 incorrect EPOCH used with key association</li>
 <li>ERR_UNKNOWN - Unknown error (value of 51)</li>
 </ul>
 </li>
@@ -1780,7 +1787,7 @@ template&lt;typename T , typename TE &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceProtocolPP.html">ProtocolPP</a></li><li class="navelem"><a class="el" href="classProtocolPP_1_1jprotocol.html">jprotocol</a></li>
-    <li class="footer">Generated on Sat May 6 2023 22:07:59 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 14:07:24 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

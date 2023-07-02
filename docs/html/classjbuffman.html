@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Protocol++(Protocolpp)<span id="projectnumber">&#160;v5.4.2</span>
+   <div id="projectname">Protocol++(Protocolpp)<span id="projectnumber">&#160;v5.4.3</span>
    </div>
   </td>
  </tr>
@@ -124,71 +124,38 @@ $(document).ready(function(){initNavTree('classjbuffman.html',''); initResizable
 <div class="fragment"><div class="line"><span class="keywordflow">for</span>(std::list&lt;std::array&lt;uint8_t, 256&gt;&gt;::iterator itr=buf1.begin(); itr!=buf1.end(); itr++) {</div>
 <div class="line">    std::memcpy(itr-&gt;data(), new_data.ptr(), new_data.size());</div>
 <div class="line">}</div>
-</div><!-- fragment --><p >The "itr-&gt;data() returns a pointer to the first element in the
- std::array, perfect for use with std::memcpy. The class jbuffacc
- provides a wrapper to read and write data into the buffers. Click
- the link below to see the interface for the wrapper
-
- &lt;B&gt;For API Documentation:&lt;/B&gt;
- @see ProtocolPP::jbuffman
- @see ProtocolPP::jbuffacc
-
- &lt;B&gt;For Additional Documentation:&lt;/B&gt;
- @see jbuffman
- @see jbuffacc
-
- &lt;center&gt;Protocol++&amp;reg; (ProtocolPP&amp;reg;) written by : John Peter Greninger &amp;bull; &amp;copy; John Peter Greninger 2015-2023 &amp;bull; All Rights Reserved&lt;/center&gt;
- &lt;center&gt;&lt;sub&gt;All copyrights and trademarks are the property of their respective owners&lt;/sub&gt;&lt;/center&gt;
-
- The source code contained or described herein and all documents related to the source code 
- (herein called "Material") are owned by John Peter Greninger and Sheila Rocha Greninger. Title
- to the Material remains with John Peter Greninger and Sheila Rocha Greninger. The Material contains
- trade secrets and proprietary and confidential information of John Peter Greninger and Sheila Rocha
- Greninger. The Material is protected by worldwide copyright and trade secret laws and treaty
- provisions. No part of the Material may be used, copied, reproduced, modified, published, uploaded,
- posted, transmitted, distributed, or disclosed in any way without prior express written consent of
- John Peter Greninger and Sheila Rocha Greninger (both are required)
-
- No license under any patent, copyright, trade secret, or other intellectual property right is granted
- to or conferred upon you by disclosure or delivery of the Materials, either expressly, by implication,
- inducement, estoppel, or otherwise. Any license under such intellectual property rights must be express
- and approved by John Peter Greninger and Sheila Rocha Greninger in writing
-
- Licensing information can be found at &lt;B&gt;www.protocolpp.com/license&lt;/B&gt; with use of the binary forms
- permitted provided that the following conditions are met:
-
- * Redistributions in binary form must reproduce the above copyright notice, this list
-   of conditions and the following disclaimer in the documentation and/or other materials
-   provided with the distribution
-
- * Any and all modifications must be returned to John Peter Greninger at GitHub.com
-   https://github.com/jpgreninger/protocolpp for evaluation. Inclusion of modifications
-   in the source code shall be determined solely by John Peter Greninger. Failure to
-   provide modifications shall render this license NULL and VOID and revoke any rights
-   to use of Protocol++&amp;reg;
-
- * Commercial use (incidental or not) requires a fee-based license obtainable at &lt;B&gt;www.protocolpp.com/shop&lt;/B&gt;
-
- * Academic or research use requires prior written and notarized permission from John Peter
-   and Sheila Rocha Greninger
-
- Use of the source code requires purchase of the source code. Source code can be purchased
- at &lt;B&gt;www.protocolpp.com/shop&lt;/B&gt;
-
- * &lt;B&gt;US Copyrights at https://www.copyright.gov/&lt;/B&gt;
-   * &lt;B&gt;TXu002059872 (Version 1.0.0)&lt;/B&gt;
-   * &lt;B&gt;TXu002066632 (Version 1.2.7)&lt;/B&gt;
-   * &lt;B&gt;TXu002082674 (Version 1.4.0)&lt;/B&gt;
-   * &lt;B&gt;TXu002097880 (Version 2.0.0)&lt;/B&gt;
-   * &lt;B&gt;TXu002169236 (Version 3.0.1)&lt;/B&gt;
-   * &lt;B&gt;TXu002182417 (Version 4.0.0)&lt;/B&gt;
-   * &lt;B&gt;TXu002219402 (Version 5.0.0)&lt;/B&gt;
-   * &lt;B&gt;TXu002272076 (Version 5.2.1)&lt;/B&gt;
-
- The name of its contributor may not be used to endorse or promote products derived
- from this software without specific prior written permission and licensing
-
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER AND CONTRIBUTOR "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE </p>
+</div><!-- fragment --><p >The "*itr-&gt;data()" returns a pointer to the first element in the std::array, perfect for use with std::memcpy. The class jbuffacc provides a wrapper to read and write data into the buffers. Click the link below to see the interface for the wrapper</p>
+<p ><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jbuffman.html">ProtocolPP::jbuffman</a> </dd>
+<dd>
+<a class="el" href="classProtocolPP_1_1jbuffacc.html">ProtocolPP::jbuffacc</a></dd></dl>
+<p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classjbuffman.html">jbuffman</a> </dd>
+<dd>
+<a class="el" href="classjbuffacc.html">jbuffacc</a></dd></dl>
+<center>Protocol++&reg; (<a class="el" href="namespaceProtocolPP.html">ProtocolPP</a>&reg;) written by : John Peter Greninger &bull; &copy; John Peter Greninger 2015-2023 &bull; All Rights Reserved</center> <center><sub>All copyrights and trademarks are the property of their respective owners</sub></center><p >The source code contained or described herein and all documents related to the source code (herein called "Material") are owned by John Peter Greninger and Sheila Rocha Greninger. Title to the Material remains with John Peter Greninger and Sheila Rocha Greninger. The Material contains trade secrets and proprietary and confidential information of John Peter Greninger and Sheila Rocha Greninger. The Material is protected by worldwide copyright and trade secret laws and treaty provisions. No part of the Material may be used, copied, reproduced, modified, published, uploaded, posted, transmitted, distributed, or disclosed in any way without prior express written consent of John Peter Greninger and Sheila Rocha Greninger (both are required)</p>
+<p >No license under any patent, copyright, trade secret, or other intellectual property right is granted to or conferred upon you by disclosure or delivery of the Materials, either expressly, by implication, inducement, estoppel, or otherwise. Any license under such intellectual property rights must be express and approved by John Peter Greninger and Sheila Rocha Greninger in writing</p>
+<p >Licensing information can be found at <b>www.protocolpp.com/license</b> with use of the binary forms permitted provided that the following conditions are met:</p>
+<ul>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution</li>
+<li>Any and all modifications must be returned to John Peter Greninger at GitHub.com <a href="https://github.com/jpgreninger/protocolpp">https://github.com/jpgreninger/protocolpp</a> for evaluation. Inclusion of modifications in the source code shall be determined solely by John Peter Greninger. Failure to provide modifications shall render this license NULL and VOID and revoke any rights to use of Protocol++&reg;</li>
+<li>Commercial use (incidental or not) requires a fee-based license obtainable at <b>www.protocolpp.com/shop</b></li>
+<li>Academic or research use requires prior written and notarized permission from John Peter and Sheila Rocha Greninger</li>
+</ul>
+<p >Use of the source code requires purchase of the source code. Source code can be purchased at <b>www.protocolpp.com/shop</b></p>
+<ul>
+<li><b>US Copyrights at <a href="https://www.copyright.gov/">https://www.copyright.gov/</a></b><ul>
+<li><b>TXu002059872 (Version 1.0.0)</b></li>
+<li><b>TXu002066632 (Version 1.2.7)</b></li>
+<li><b>TXu002082674 (Version 1.4.0)</b></li>
+<li><b>TXu002097880 (Version 2.0.0)</b></li>
+<li><b>TXu002169236 (Version 3.0.1)</b></li>
+<li><b>TXu002182417 (Version 4.0.0)</b></li>
+<li><b>TXu002219402 (Version 5.0.0)</b></li>
+<li><b>TXu002272076 (Version 5.2.1)</b></li>
+</ul>
+</li>
+</ul>
+<p >The name of its contributor may not be used to endorse or promote products derived from this software without specific prior written permission and licensing</p>
+<p >THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER AND CONTRIBUTOR "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/jbuffman.h</li>
 </ul>
@@ -198,7 +165,7 @@ $(document).ready(function(){initNavTree('classjbuffman.html',''); initResizable
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjbuffman.html">jbuffman</a></li>
-    <li class="footer">Generated on Sat May 6 2023 22:06:42 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 14:07:23 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>
