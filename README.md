@@ -38,6 +38,7 @@ Issued copyrights
 * Protocol++®(Protocolpp®) 4.0.0 (Canada) - 1168370
 * Protocolpp®(Protocol++®) 5.0.0 (Canada) - 1174890
 * Protocolpp®(Protocol++®) 5.2.1 (Canada) - 1185641
+* Protocolpp®(Protocol++®) 5.4.3 (Canada) - 1203893
 
 Trademarks
 
