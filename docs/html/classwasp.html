@@ -735,11 +735,11 @@ W.A.S.P Supported Schema</h2>
 <div class="line">                     &lt;/xs:restriction&gt;</div>
 <div class="line">                 &lt;/xs:simpleType&gt;</div>
 <div class="line">             &lt;/xs:attribute&gt;</div>
-<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;arwin&quot;</span>     type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
-<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;cipherkey&quot;</span> type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
-<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;authkey&quot;</span>   type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
-<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;iv&quot;</span>        type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
-<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;exthdr&quot;</span>    type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
+<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;arwin&quot;</span>     type=<span class="stringliteral">&quot;xs:hexBinary&quot;</span>/&gt;</div>
+<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;cipherkey&quot;</span> type=<span class="stringliteral">&quot;xs:hexBinary&quot;</span>/&gt;</div>
+<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;authkey&quot;</span>   type=<span class="stringliteral">&quot;xs:hexBinary&quot;</span>/&gt;</div>
+<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;iv&quot;</span>        type=<span class="stringliteral">&quot;xs:hexBinary&quot;</span>/&gt;</div>
+<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;exthdr&quot;</span>    type=<span class="stringliteral">&quot;xs:hexBinary&quot;</span>/&gt;</div>
 <div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;usext&quot;</span>&gt;</div>
 <div class="line">                 &lt;xs:simpleType&gt;</div>
 <div class="line">                     &lt;xs:restriction base=<span class="stringliteral">&quot;xs:boolean&quot;</span>&gt;</div>
@@ -886,8 +886,8 @@ W.A.S.P Supported Schema</h2>
 <div class="line">                     &lt;/xs:restriction&gt;</div>
 <div class="line">                 &lt;/xs:simpleType&gt;</div>
 <div class="line">             &lt;/xs:attribute&gt;</div>
-<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;src&quot;</span>     type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
-<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;dst&quot;</span>     type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
+<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;src&quot;</span>     type=<span class="stringliteral">&quot;xs:hexBinary&quot;</span>/&gt;</div>
+<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;dst&quot;</span>     type=<span class="stringliteral">&quot;xs:hexBinary&quot;</span>/&gt;</div>
 <div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;state&quot;</span>&gt;</div>
 <div class="line">                 &lt;xs:simpleType&gt;</div>
 <div class="line">                     &lt;xs:restriction base=<span class="stringliteral">&quot;xs:string&quot;</span>&gt;</div>
@@ -1291,9 +1291,9 @@ W.A.S.P Supported Schema</h2>
 <div class="line">                     &lt;/xs:restriction&gt;</div>
 <div class="line">                 &lt;/xs:simpleType&gt;</div>
 <div class="line">             &lt;/xs:attribute&gt;</div>
-<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;salt&quot;</span>    type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
-<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;mkidata&quot;</span> type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
-<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;csrc&quot;</span>    type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
+<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;salt&quot;</span>    type=<span class="stringliteral">&quot;xs:hexBinary&quot;</span>/&gt;</div>
+<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;mkidata&quot;</span> type=<span class="stringliteral">&quot;xs:hexBinary&quot;</span>/&gt;</div>
+<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;csrc&quot;</span>    type=<span class="stringliteral">&quot;xs:hexBinary&quot;</span>/&gt;</div>
 <div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;ctlext&quot;</span>&gt;</div>
 <div class="line">                 &lt;xs:simpleType&gt;</div>
 <div class="line">                     &lt;xs:restriction base=<span class="stringliteral">&quot;xs:string&quot;</span>&gt;</div>
@@ -1356,7 +1356,7 @@ W.A.S.P Supported Schema</h2>
 <div class="line">             &lt;/xs:attribute&gt;</div>
 <div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;cid&quot;</span> type=<span class="stringliteral">&quot;xs:unsignedByte&quot;</span>/&gt;</div>
 <div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;authfail&quot;</span> type=<span class="stringliteral">&quot;xs:unsignedLong&quot;</span>/&gt;</div>
-<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;appsec&quot;</span> type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
+<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;appsec&quot;</span> type=<span class="stringliteral">&quot;xs:hexBinary&quot;</span>/&gt;</div>
 <div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;tlsver&quot;</span>&gt;</div>
 <div class="line">                 &lt;xs:simpleType&gt;</div>
 <div class="line">                     &lt;xs:restriction base=<span class="stringliteral">&quot;xs:string&quot;</span>&gt;</div>
@@ -1831,12 +1831,12 @@ W.A.S.P Supported Schema</h2>
 <div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;bearer&quot;</span>    type=<span class="stringliteral">&quot;xs:unsignedByte&quot;</span>/&gt;</div>
 <div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;fresh&quot;</span>     type=<span class="stringliteral">&quot;xs:unsignedInt&quot;</span>/&gt;</div>
 <div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;bitmaplen&quot;</span> type=<span class="stringliteral">&quot;xs:unsignedInt&quot;</span>/&gt;</div>
-<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;bitmap&quot;</span>    type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
-<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;prime&quot;</span>     type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
-<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;subprime&quot;</span>  type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
-<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;generator&quot;</span> type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
-<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;prvkey&quot;</span>    type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
-<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;pubkey&quot;</span>    type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
+<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;bitmap&quot;</span>    type=<span class="stringliteral">&quot;xs:hexBinary&quot;</span>/&gt;</div>
+<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;prime&quot;</span>     type=<span class="stringliteral">&quot;xs:hexBinary&quot;</span>/&gt;</div>
+<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;subprime&quot;</span>  type=<span class="stringliteral">&quot;xs:hexBinary&quot;</span>/&gt;</div>
+<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;generator&quot;</span> type=<span class="stringliteral">&quot;xs:hexBinary&quot;</span>/&gt;</div>
+<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;prvkey&quot;</span>    type=<span class="stringliteral">&quot;xs:hexBinary&quot;</span>/&gt;</div>
+<div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;pubkey&quot;</span>    type=<span class="stringliteral">&quot;xs:hexBinary&quot;</span>/&gt;</div>
 <div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;bitsize&quot;</span>   type=<span class="stringliteral">&quot;xs:unsignedInt&quot;</span>/&gt;</div>
 <div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;padtype&quot;</span>&gt;</div>
 <div class="line">                 &lt;xs:simpleType&gt;</div>
@@ -1870,7 +1870,7 @@ W.A.S.P Supported Schema</h2>
 <div class="line">     &lt;xs:element name=<span class="stringliteral">&quot;input&quot;</span>&gt;</div>
 <div class="line">         &lt;xs:complexType&gt;</div>
 <div class="line">             &lt;xs:sequence&gt;</div>
-<div class="line">                 &lt;xs:element name=<span class="stringliteral">&quot;data&quot;</span>     type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
+<div class="line">                 &lt;xs:element name=<span class="stringliteral">&quot;data&quot;</span>     type=<span class="stringliteral">&quot;xs:hexBinary&quot;</span>/&gt;</div>
 <div class="line">             &lt;/xs:sequence&gt;</div>
 <div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;name&quot;</span>   type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
 <div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;stream&quot;</span> type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
@@ -1888,7 +1888,7 @@ W.A.S.P Supported Schema</h2>
 <div class="line">     &lt;xs:element name=<span class="stringliteral">&quot;expect&quot;</span>&gt;</div>
 <div class="line">         &lt;xs:complexType&gt;</div>
 <div class="line">             &lt;xs:sequence&gt;</div>
-<div class="line">                 &lt;xs:element name=<span class="stringliteral">&quot;data&quot;</span>     type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
+<div class="line">                 &lt;xs:element name=<span class="stringliteral">&quot;data&quot;</span>     type=<span class="stringliteral">&quot;xs:hexBinary&quot;</span>/&gt;</div>
 <div class="line">             &lt;/xs:sequence&gt;</div>
 <div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;name&quot;</span>   type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
 <div class="line">             &lt;xs:attribute name=<span class="stringliteral">&quot;stream&quot;</span> type=<span class="stringliteral">&quot;xs:string&quot;</span>/&gt;</div>
@@ -1964,7 +1964,7 @@ W.A.S.P Supported Schema</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classwasp.html">wasp</a></li>
-    <li class="footer">Generated on Sun Jul 2 2023 14:07:23 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sun Jul 9 2023 13:52:35 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>
