@@ -170,6 +170,9 @@ For W.A.S.P usage, see the doxygen section
 
 * See www.protocolpp.com for more updates, information and licensing
 
+* Protocolpp® (Protocol++®) - 5.4.4 Upcoming January 1, 2024
+  * See encrypted release notes in paid version
+    
 * Protocol++® (Protocolpp®) - 5.4.3 released July 1, 2023
   * See encrypted release notes in paid version
   * Documentation Updates
