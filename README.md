@@ -1,4 +1,4 @@
-# Protocolpp®(Protocol++®) 5.4.3 Released July 1, 2023!
+# Protocolpp®(Protocol++®) 5.4.4 Released September 8, 2023!
 https://www.youtube.com/watch?v=zs5Edbf4MiI
 
 Only www.protocolpp.com has the rights to update, modify,
@@ -171,8 +171,18 @@ For W.A.S.P usage, see the doxygen section
 
 * See www.protocolpp.com for more updates, information and licensing
 
-* Protocolpp® (Protocol++®) - 5.4.4 Upcoming January 1, 2024
+* Protocolpp® (Protocol++®) - 5.5.0 Upcoming January 1, 2024
   * See encrypted release notes in paid version
+    
+* Protocol++® (Protocolpp®) - 5.4.4 released September 8, 2023
+  * See encrypted release notes in paid version
+  * Maintenance release for bug fixes and code cleanup
+  * Documentation Updates
+  * JSON output syntax fixes
+  * See www.protocolpp.com for further information
+  * Contains two signatures, one for the encrypted file, one found inside the encrypted file for the release. Please verify both
+  * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=9b4fe7bf27b64e1ab017e9d6ef2f92be&wix-vod-comp-id=comp-j2ddnt1i
+  * SHA384: 
     
 * Protocol++® (Protocolpp®) - 5.4.3 released July 1, 2023
   * See encrypted release notes in paid version
