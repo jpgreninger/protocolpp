@@ -8,10 +8,10 @@ var classProtocolPP_1_1jsnowv =
       [ "SNOWV", "classProtocolPP_1_1jsnowv.html#acb36293abee974e117be976387f3aa91a64dcd89ae31b6d80c34ef75b33eff15f", null ],
       [ "SNOWV_GCM", "classProtocolPP_1_1jsnowv.html#acb36293abee974e117be976387f3aa91a5b36cbd71cce166929baf082d637d8b5", null ]
     ] ],
-    [ "jsnowv", "classProtocolPP_1_1jsnowv.html#aeefc54c33885eede835eb549db84009c", null ],
+    [ "jsnowv", "classProtocolPP_1_1jsnowv.html#a82c0dd60c57b545530efa1391a33a2c2", null ],
     [ "~jsnowv", "classProtocolPP_1_1jsnowv.html#afa6326ce0724935251648d940ccea8d2", null ],
     [ "context", "classProtocolPP_1_1jsnowv.html#abe60a6f536280cfc0b9f171361c1fa67", null ],
     [ "ProcessData", "classProtocolPP_1_1jsnowv.html#a508df4f456f84c0f093ba635be60c678", null ],
-    [ "result", "classProtocolPP_1_1jsnowv.html#af63d55ba60484405db2624a3ad8fd757", null ],
-    [ "result_size", "classProtocolPP_1_1jsnowv.html#ad9154dede350497c8b987bac06029694", null ]
+    [ "result", "classProtocolPP_1_1jsnowv.html#a0d31ea7c9ded4f5c136b222b44b7a6ca", null ],
+    [ "result_size", "classProtocolPP_1_1jsnowv.html#a4468e3505e3b9d6d59826f90ce0e1420", null ]
 ];

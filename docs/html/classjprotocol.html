@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Protocol++(Protocolpp)<span id="projectnumber">&#160;v5.4.3</span>
+   <div id="projectname">Protocol++(Protocolpp)<span id="projectnumber">&#160;v5.4.4</span>
    </div>
   </td>
  </tr>
@@ -125,9 +125,9 @@ Protocol Base Class for Protocol++® (ProtocolPP®)</h1>
 </div><!-- fragment --><p >The final two functions provide common functionality that is used across multiple protocols so are provided in the base class. The checksum() function calculates the IPsec checksum calculation also used in TCP and UDP. Input data is padded to two byte length. The checksum field for the protocol is set to zero, and the checksum is calculated across the data two bytes at a time. The calculated checksum is returned as a two-byte array ready for insertion into the packet. If the checksum is being validated (DECAP direction), the checksum is calculated without setting the checksum field to zero. If the calculated checksum results in a value of zero, the checksum is correct </p><div class="fragment"><div class="line"><a class="code hl_class" href="classjarray.html">jarray&lt;uint8_t&gt;</a> checksum(iana_t prot,</div>
 <div class="line">                         direction_t dir,</div>
 <div class="line">                         <a class="code hl_class" href="classjarray.html">jarray&lt;uint8_t&gt;</a>&amp; check,</div>
-<div class="line">                         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> offset=0);</div>
-</div><!-- fragment --><p> pad(pad_t padtype, unsigned int len) generates padding material to be appended to the packet if needed. Supports either ZERO, INCREMENTING, SIZE, or RANDOM padding to support the different protocol formats </p><div class="fragment"><div class="line"><a class="code hl_class" href="classjarray.html">jarray&lt;uint8_t&gt;</a> pad(pad_t padtype,</div>
-<div class="line">                    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len);</div>
+<div class="line">                         uint32_t offset=0);</div>
+</div><!-- fragment --><p> pad(pad_t padtype, uint32_t len) generates padding material to be appended to the packet if needed. Supports either ZERO, INCREMENTING, SIZE, or RANDOM padding to support the different protocol formats </p><div class="fragment"><div class="line"><a class="code hl_class" href="classjarray.html">jarray&lt;uint8_t&gt;</a> pad(pad_t padtype,</div>
+<div class="line">                    uint32_t len);</div>
 </div><!-- fragment --><p> There are several protected helper functions for use by the protocols during or after construction of the protocol object. This includes functions to setup the anti-replay window from the security association, the ability to update the status, functions to read and write the input and output files, and function to roundup() values</p>
 <p ><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd>tinyxml2::tinyxml2 </dd>
 <dd>
@@ -185,7 +185,7 @@ Protocol Base Class for Protocol++® (ProtocolPP®)</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjprotocol.html">jprotocol</a></li>
-    <li class="footer">Generated on Sun Jul 9 2023 13:52:35 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Sep 8 2023 09:23:04 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

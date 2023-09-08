@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Protocol++(Protocolpp)<span id="projectnumber">&#160;v5.4.3</span>
+   <div id="projectname">Protocol++(Protocolpp)<span id="projectnumber">&#160;v5.4.4</span>
    </div>
   </td>
  </tr>
@@ -129,14 +129,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:aee8c76a07877335762631491e7a5a1a9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoption.html#aee8c76a07877335762631491e7a5a1a9">ArgStatus</a> { <br />
-&#160;&#160;<a class="el" href="namespaceoption.html#aee8c76a07877335762631491e7a5a1a9a353903b042e8eb0aa2f60c0043a58a7e">ARG_NONE</a>
+<tr class="memitem:aee8c76a07877335762631491e7a5a1a9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoption.html#aee8c76a07877335762631491e7a5a1a9">ArgStatus</a> { <a class="el" href="namespaceoption.html#aee8c76a07877335762631491e7a5a1a9a353903b042e8eb0aa2f60c0043a58a7e">ARG_NONE</a>
 , <a class="el" href="namespaceoption.html#aee8c76a07877335762631491e7a5a1a9a445e08cb1747e5a22929e7ef2da43b55">ARG_OK</a>
-, <a class="el" href="namespaceoption.html#aee8c76a07877335762631491e7a5a1a9ab47c0c89c8c85212905e2bba774b4ee6">ARG_REQUIRED</a>
 , <a class="el" href="namespaceoption.html#aee8c76a07877335762631491e7a5a1a9a83e0837c79c957525918111d33cab3a9">ARG_IGNORE</a>
-, <br />
-&#160;&#160;<a class="el" href="namespaceoption.html#aee8c76a07877335762631491e7a5a1a9a9528e32563b795bd2930b12d0a5e382d">ARG_ILLEGAL</a>
-<br />
+, <a class="el" href="namespaceoption.html#aee8c76a07877335762631491e7a5a1a9a9528e32563b795bd2930b12d0a5e382d">ARG_ILLEGAL</a>
  }</td></tr>
 <tr class="memdesc:aee8c76a07877335762631491e7a5a1a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible results when checking if an argument is valid for a certain option.  <a href="namespaceoption.html#aee8c76a07877335762631491e7a5a1a9">More...</a><br /></td></tr>
 <tr class="separator:aee8c76a07877335762631491e7a5a1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,13 +177,13 @@ template&lt;typename Function , typename Stream &gt; </td></tr>
 
 <p>Signature of functions that check if an argument is valid for a certain type of option. </p>
 <p >Every <a class="el" href="classoption_1_1Option.html" title="A parsed option from the command line together with its argument if it has one.">Option</a> has such a function assigned in its <a class="el" href="structoption_1_1Descriptor.html" title="Describes an option, its help text (usage) and how it should be parsed.">Descriptor</a>. </p><div class="fragment"><div class="line"><a class="code hl_struct" href="structoption_1_1Descriptor.html">Descriptor</a> usage[] = { {UNKNOWN, 0, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <a class="code hl_function" href="structoption_1_1Arg.html#a7fc01987899c91c6b6a1be5711a46e22">Arg::None</a>, <span class="stringliteral">&quot;&quot;</span>}, ... };</div>
-<div class="ttc" id="astructoption_1_1Arg_html_a7fc01987899c91c6b6a1be5711a46e22"><div class="ttname"><a href="structoption_1_1Arg.html#a7fc01987899c91c6b6a1be5711a46e22">option::Arg::None</a></div><div class="ttdeci">static ArgStatus None(const Option &amp;, bool)</div><div class="ttdoc">For options that don't take an argument: Returns ARG_NONE.</div><div class="ttdef"><b>Definition:</b> optionparser.h:891</div></div>
-<div class="ttc" id="astructoption_1_1Descriptor_html"><div class="ttname"><a href="structoption_1_1Descriptor.html">option::Descriptor</a></div><div class="ttdoc">Describes an option, its help text (usage) and how it should be parsed.</div><div class="ttdef"><b>Definition:</b> optionparser.h:313</div></div>
+<div class="ttc" id="astructoption_1_1Arg_html_a7fc01987899c91c6b6a1be5711a46e22"><div class="ttname"><a href="structoption_1_1Arg.html#a7fc01987899c91c6b6a1be5711a46e22">option::Arg::None</a></div><div class="ttdeci">static ArgStatus None(const Option &amp;, bool)</div><div class="ttdoc">For options that don't take an argument: Returns ARG_NONE.</div><div class="ttdef"><b>Definition:</b> optionparser.h:926</div></div>
+<div class="ttc" id="astructoption_1_1Descriptor_html"><div class="ttname"><a href="structoption_1_1Descriptor.html">option::Descriptor</a></div><div class="ttdoc">Describes an option, its help text (usage) and how it should be parsed.</div><div class="ttdef"><b>Definition:</b> optionparser.h:316</div></div>
 </div><!-- fragment --><p >A CheckArg function has the following signature: </p><div class="fragment"><div class="line"><a class="code hl_enumeration" href="namespaceoption.html#aee8c76a07877335762631491e7a5a1a9">ArgStatus</a> <a class="code hl_typedef" href="namespaceoption.html#a4cdf403efae65e18bf850e2001b12a2a">CheckArg</a>(<span class="keyword">const</span> <a class="code hl_class" href="classoption_1_1Option.html">Option</a>&amp; <a class="code hl_namespace" href="namespaceoption.html">option</a>, <span class="keywordtype">bool</span> msg); </div>
-<div class="ttc" id="aclassoption_1_1Option_html"><div class="ttname"><a href="classoption_1_1Option.html">option::Option</a></div><div class="ttdoc">A parsed option from the command line together with its argument if it has one.</div><div class="ttdef"><b>Definition:</b> optionparser.h:440</div></div>
-<div class="ttc" id="anamespaceoption_html"><div class="ttname"><a href="namespaceoption.html">option</a></div><div class="ttdoc">The namespace of The Lean Mean C++ Option Parser.</div><div class="ttdef"><b>Definition:</b> optionparser.h:221</div></div>
-<div class="ttc" id="anamespaceoption_html_a4cdf403efae65e18bf850e2001b12a2a"><div class="ttname"><a href="namespaceoption.html#a4cdf403efae65e18bf850e2001b12a2a">option::CheckArg</a></div><div class="ttdeci">ArgStatus(* CheckArg)(const Option &amp;option, bool msg)</div><div class="ttdoc">Signature of functions that check if an argument is valid for a certain type of option.</div><div class="ttdef"><b>Definition:</b> optionparser.h:288</div></div>
-<div class="ttc" id="anamespaceoption_html_aee8c76a07877335762631491e7a5a1a9"><div class="ttname"><a href="namespaceoption.html#aee8c76a07877335762631491e7a5a1a9">option::ArgStatus</a></div><div class="ttdeci">ArgStatus</div><div class="ttdoc">Possible results when checking if an argument is valid for a certain option.</div><div class="ttdef"><b>Definition:</b> optionparser.h:247</div></div>
+<div class="ttc" id="aclassoption_1_1Option_html"><div class="ttname"><a href="classoption_1_1Option.html">option::Option</a></div><div class="ttdoc">A parsed option from the command line together with its argument if it has one.</div><div class="ttdef"><b>Definition:</b> optionparser.h:443</div></div>
+<div class="ttc" id="anamespaceoption_html"><div class="ttname"><a href="namespaceoption.html">option</a></div><div class="ttdoc">The namespace of The Lean Mean C++ Option Parser.</div><div class="ttdef"><b>Definition:</b> optionparser.h:228</div></div>
+<div class="ttc" id="anamespaceoption_html_a4cdf403efae65e18bf850e2001b12a2a"><div class="ttname"><a href="namespaceoption.html#a4cdf403efae65e18bf850e2001b12a2a">option::CheckArg</a></div><div class="ttdeci">ArgStatus(* CheckArg)(const Option &amp;option, bool msg)</div><div class="ttdoc">Signature of functions that check if an argument is valid for a certain type of option.</div><div class="ttdef"><b>Definition:</b> optionparser.h:291</div></div>
+<div class="ttc" id="anamespaceoption_html_aee8c76a07877335762631491e7a5a1a9"><div class="ttname"><a href="namespaceoption.html#aee8c76a07877335762631491e7a5a1a9">option::ArgStatus</a></div><div class="ttdeci">ArgStatus</div><div class="ttdoc">Possible results when checking if an argument is valid for a certain option.</div><div class="ttdef"><b>Definition:</b> optionparser.h:252</div></div>
 </div><!-- fragment --><p >It is used to check if a potential argument would be acceptable for the option. It will even be called if there is no argument. In that case <code>option.arg</code> will be <code>NULL</code>.</p>
 <p >If <code>msg</code> is <code>true</code> and the function determines that an argument is not acceptable and that this is a fatal error, it should output a message to the user before returning <a class="el" href="namespaceoption.html#aee8c76a07877335762631491e7a5a1a9a9528e32563b795bd2930b12d0a5e382d">ARG_ILLEGAL</a>. If <code>msg</code> is <code>false</code> the function should remain silent (or you will get duplicate messages).</p>
 <p >See <a class="el" href="namespaceoption.html#aee8c76a07877335762631491e7a5a1a9">ArgStatus</a> for the meaning of the return values.</p>
@@ -218,8 +214,6 @@ template&lt;typename Function , typename Stream &gt; </td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aee8c76a07877335762631491e7a5a1a9a353903b042e8eb0aa2f60c0043a58a7e" name="aee8c76a07877335762631491e7a5a1a9a353903b042e8eb0aa2f60c0043a58a7e"></a>ARG_NONE&#160;</td><td class="fielddoc"><p >The option does not take an argument. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aee8c76a07877335762631491e7a5a1a9a445e08cb1747e5a22929e7ef2da43b55" name="aee8c76a07877335762631491e7a5a1a9a445e08cb1747e5a22929e7ef2da43b55"></a>ARG_OK&#160;</td><td class="fielddoc"><p >The argument is acceptable for the option. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aee8c76a07877335762631491e7a5a1a9ab47c0c89c8c85212905e2bba774b4ee6" name="aee8c76a07877335762631491e7a5a1a9ab47c0c89c8c85212905e2bba774b4ee6"></a>ARG_REQUIRED&#160;</td><td class="fielddoc"><p >The argument is acceptable for the option. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aee8c76a07877335762631491e7a5a1a9a83e0837c79c957525918111d33cab3a9" name="aee8c76a07877335762631491e7a5a1a9a83e0837c79c957525918111d33cab3a9"></a>ARG_IGNORE&#160;</td><td class="fielddoc"><p >The argument is not acceptable but that's non-fatal because the option's argument is optional. </p>
 </td></tr>
@@ -344,7 +338,6 @@ template&lt;typename OStream &gt; </div>
 </div><!-- fragment --><p ><b>Output methods:</b></p>
 <p >Because TheLeanMeanC++Option parser is freestanding, you have to provide the means for output in the first argument(s) to <a class="el" href="namespaceoption.html#afc8bb7e040a98a0b33ff1ce9da1be0d1" title="Outputs a nicely formatted usage string with support for multi-column formatting and line-wrapping.">printUsage()</a>. Because <a class="el" href="namespaceoption.html#afc8bb7e040a98a0b33ff1ce9da1be0d1" title="Outputs a nicely formatted usage string with support for multi-column formatting and line-wrapping.">printUsage()</a> is implemented as a set of template functions, you have great flexibility in your choice of output method. The following example demonstrates typical uses. Anything that's similar enough will work.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span>  <span class="comment">// write()</span></div>
-<div class="line"><span class="preprocessor">#include &lt;io.h&gt;</span>  <span class="comment">// write()</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span>  <span class="comment">// cout</span></div>
 <div class="line"><span class="preprocessor">#include &lt;sstream&gt;</span>   <span class="comment">// ostringstream</span></div>
 <div class="line"><span class="preprocessor">#include &lt;cstdio&gt;</span>    <span class="comment">// fwrite()</span></div>
@@ -377,7 +370,7 @@ template&lt;typename OStream &gt; </div>
 <div class="line"><a class="code hl_function" href="namespaceoption.html#afc8bb7e040a98a0b33ff1ce9da1be0d1">printUsage</a>(fwrite, stdout, usage);  <span class="comment">// fwrite() to stdout</span></div>
 <div class="line">ostringstream sstr;</div>
 <div class="line"><a class="code hl_function" href="namespaceoption.html#afc8bb7e040a98a0b33ff1ce9da1be0d1">printUsage</a>(sstr, usage);        <span class="comment">// an ostringstream&amp;</span></div>
-<div class="ttc" id="anamespaceoption_html_afc8bb7e040a98a0b33ff1ce9da1be0d1"><div class="ttname"><a href="namespaceoption.html#afc8bb7e040a98a0b33ff1ce9da1be0d1">option::printUsage</a></div><div class="ttdeci">void printUsage(OStream &amp;prn, const Descriptor usage[], int width=80, int last_column_min_percent=50, int last_column_own_line_max_percent=75)</div><div class="ttdoc">Outputs a nicely formatted usage string with support for multi-column formatting and line-wrapping.</div><div class="ttdef"><b>Definition:</b> optionparser.h:2793</div></div>
+<div class="ttc" id="anamespaceoption_html_afc8bb7e040a98a0b33ff1ce9da1be0d1"><div class="ttname"><a href="namespaceoption.html#afc8bb7e040a98a0b33ff1ce9da1be0d1">option::printUsage</a></div><div class="ttdeci">void printUsage(OStream &amp;prn, const Descriptor usage[], int width=80, int last_column_min_percent=50, int last_column_own_line_max_percent=75)</div><div class="ttdoc">Outputs a nicely formatted usage string with support for multi-column formatting and line-wrapping.</div><div class="ttdef"><b>Definition:</b> optionparser.h:2824</div></div>
 </div><!-- fragment --><dl class="section user"><dt>Notes:</dt><dd><ul>
 <li>the <code>write()</code> method of a class that is to be passed as a temporary as <code>MyWriter()</code> is in the example, must be a <code>const</code> method, because temporary objects are passed as const reference. This only applies to temporary objects that are created and destroyed in the same statement. If you create an object like <code>writer</code> in the example, this restriction does not apply. </li>
 <li>a functor like <code>MyWriteFunctor</code> in the example must be passed as a pointer. This differs from the way functors are passed to e.g. the STL algorithms. </li>
@@ -422,7 +415,7 @@ template&lt;typename OStream &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceoption.html">option</a></li>
-    <li class="footer">Generated on Sun Jul 9 2023 13:52:35 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Sep 8 2023 09:23:04 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

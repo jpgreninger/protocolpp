@@ -1,8 +1,8 @@
 var classProtocolPP_1_1jpacket =
 [
     [ "jpacket", "classProtocolPP_1_1jpacket.html#afca4bfaf1853e3d677b5829a0fd91079", null ],
-    [ "jpacket", "classProtocolPP_1_1jpacket.html#a8c8babddfe5dac5f13b16fc93b3824c3", null ],
-    [ "jpacket", "classProtocolPP_1_1jpacket.html#a18680c880f7a348fb9b9fce5b3c075d2", null ],
+    [ "jpacket", "classProtocolPP_1_1jpacket.html#af6c7c68f1fdead41d9479f603f601d45", null ],
+    [ "jpacket", "classProtocolPP_1_1jpacket.html#a95bcd8954002c16cd1a5a5f0ea9467c4", null ],
     [ "jpacket", "classProtocolPP_1_1jpacket.html#a8d90040bdc5e2d5276880d6b58b3b7d9", null ],
     [ "jpacket", "classProtocolPP_1_1jpacket.html#a27042575046468416d24f987ef0a5a03", null ],
     [ "~jpacket", "classProtocolPP_1_1jpacket.html#a64ef84f8e2da3811debd0e580cee2b96", null ],

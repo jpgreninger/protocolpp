@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Protocol++(Protocolpp)<span id="projectnumber">&#160;v5.4.3</span>
+   <div id="projectname">Protocol++(Protocolpp)<span id="projectnumber">&#160;v5.4.4</span>
    </div>
   </td>
  </tr>
@@ -127,7 +127,7 @@ Stream class for Protocol++® (ProtocolPP®)</h1>
 <div class="line">        ipeng);</div>
 </div><!-- fragment --><p> Fields may be set using the accessor function "set". They are templated to access the type of field desired. STREAMSIZE is necessary to provide support for CAAM/SEC shared descriptor size (in 32-bit words) </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> set_field&lt;std::string&gt;(field_t::NAME, std::string(<span class="stringliteral">&quot;stream3&quot;</span>));</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> set_field&lt;unsigned int&gt;(field_t::STREAMSIZE, 32);</div>
+<div class="line"><span class="keywordtype">void</span> set_field&lt;uint32_t&gt;(field_t::STREAMSIZE, 32);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> set_field&lt;direction_t&gt;(field_t::DIRECTION, direction_t::ENCAP);</div>
 <div class="line"> </div>
@@ -139,7 +139,7 @@ Stream class for Protocol++® (ProtocolPP®)</h1>
 <div class="line"><span class="keywordtype">void</span> set_engine(engine);</div>
 </div><!-- fragment --><p> Fields may be retrieved using the accessor "get" funcion. They are templated to retrieve the type of field requested </p><div class="fragment"><div class="line">std::string name = get_field&lt;std::string&gt;(field_t::NAME);</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> size = get_field&lt;unsigned int&gt;(field_t::STREAMSIZE);</div>
+<div class="line">uint32_t size = get_field&lt;uint32_t&gt;(field_t::STREAMSIZE);</div>
 <div class="line"> </div>
 <div class="line">direction_t dir = get_field&lt;direction_t&gt;(field_t::DIRECTION);</div>
 <div class="line"> </div>
@@ -367,7 +367,7 @@ jrsasa </dd>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjstream.html">jstream</a></li>
-    <li class="footer">Generated on Sun Jul 9 2023 13:52:35 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Sep 8 2023 09:23:04 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

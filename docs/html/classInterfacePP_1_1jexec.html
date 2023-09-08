@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Protocol++(Protocolpp)<span id="projectnumber">&#160;v5.4.3</span>
+   <div id="projectname">Protocol++(Protocolpp)<span id="projectnumber">&#160;v5.4.4</span>
    </div>
   </td>
  </tr>
@@ -98,8 +98,8 @@ $(document).ready(function(){initNavTree('classInterfacePP_1_1jexec.html',''); i
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7d0800c9d050d533181fed919dc7467b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jexec.html#a7d0800c9d050d533181fed919dc7467b">jexec</a> (uint64_t seed, bool use_crypto, std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jlogger.html">jlogger</a> &gt; &amp;logger, std::string units=std::string(&quot;us&quot;), std::string read_latency=std::string(&quot;80..120&quot;), std::string compute_latency=std::string(&quot;2000..5000&quot;), std::string write_latency=std::string(&quot;60..100&quot;))</td></tr>
-<tr class="separator:a7d0800c9d050d533181fed919dc7467b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55643fd0608a8f20352eda1e2c46eb14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jexec.html#a55643fd0608a8f20352eda1e2c46eb14">jexec</a> (uint64_t seed, bool use_crypto, std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jlogger.html">jlogger</a> &gt; &amp;logger, std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jring.html">jring</a>&lt; <a class="el" href="classInterfacePP_1_1ringout.html">ringout</a> &gt; &gt; &amp;outputring, std::string units=std::string(&quot;us&quot;), std::string read_latency=std::string(&quot;80..120&quot;), std::string compute_latency=std::string(&quot;2000..5000&quot;), std::string write_latency=std::string(&quot;60..100&quot;))</td></tr>
+<tr class="separator:a55643fd0608a8f20352eda1e2c46eb14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a276e1cf912764eedd5afb0ad4ebab2de"><td class="memItemLeft" align="right" valign="top"><a id="a276e1cf912764eedd5afb0ad4ebab2de" name="a276e1cf912764eedd5afb0ad4ebab2de"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~jexec</b> ()</td></tr>
 <tr class="memdesc:a276e1cf912764eedd5afb0ad4ebab2de"><td class="mdescLeft">&#160;</td><td class="mdescRight">standard deconstructor <br /></td></tr>
@@ -122,12 +122,12 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~jexec</b> ()</td>
 <tr class="separator:a3681bbdee2052cfd232e696b3a907570"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97e191256d4ff76c69225726b8b0c115"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jexec.html#a97e191256d4ff76c69225726b8b0c115">get_outlen</a> ()</td></tr>
 <tr class="separator:a97e191256d4ff76c69225726b8b0c115"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acab07ec17d98dbe79ee8e4a67af939f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jexec.html#acab07ec17d98dbe79ee8e4a67af939f3">exec</a> (std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray</a>&lt; uint8_t &gt; &gt; &amp;input, uint64_t inaddr, uint64_t outaddr, unsigned int outlen, std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jstream.html">ProtocolPP::jstream</a> &gt; &gt; &amp;flows, bool protect=false, std::string stream=std::string(&quot;&quot;))</td></tr>
-<tr class="separator:acab07ec17d98dbe79ee8e4a67af939f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61245390a6b5e457896d55f2c416e4b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jexec.html#a61245390a6b5e457896d55f2c416e4b3">exec</a> (uint64_t inaddr, uint32_t inlen, uint64_t outaddr, uint32_t outlen, std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jstream.html">ProtocolPP::jstream</a> &gt; &gt; &amp;flows, bool protect=false, std::string stream=std::string(&quot;&quot;))</td></tr>
+<tr class="separator:a61245390a6b5e457896d55f2c416e4b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7d0800c9d050d533181fed919dc7467b" name="a7d0800c9d050d533181fed919dc7467b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d0800c9d050d533181fed919dc7467b">&#9670;&#160;</a></span>jexec()</h2>
+<a id="a55643fd0608a8f20352eda1e2c46eb14" name="a55643fd0608a8f20352eda1e2c46eb14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55643fd0608a8f20352eda1e2c46eb14">&#9670;&#160;</a></span>jexec()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,6 +149,12 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~jexec</b> ()</td>
           <td></td>
           <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jlogger.html">jlogger</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>logger</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jring.html">jring</a>&lt; <a class="el" href="classInterfacePP_1_1ringout.html">ringout</a> &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>outputring</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -186,6 +192,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~jexec</b> ()</td>
     <tr><td class="paramname">seed</td><td>- seed for random number generator for randomizing latencies </td></tr>
     <tr><td class="paramname">use_crypto</td><td>- use cryptographic quality random numbers </td></tr>
     <tr><td class="paramname">logger</td><td>- object for logging output </td></tr>
+    <tr><td class="paramname">outputring</td><td>- output work queue to write processed packet and status </td></tr>
     <tr><td class="paramname">units</td><td>- units of measure for latency (s, ms, us, ns) </td></tr>
     <tr><td class="paramname">read_latency</td><td>- latency of reads, can be a range (i.e., "4..30") </td></tr>
     <tr><td class="paramname">compute_latency</td><td>- latency of computation, can be a range (i.e., "100..200") </td></tr>
@@ -197,8 +204,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~jexec</b> ()</td>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="acab07ec17d98dbe79ee8e4a67af939f3" name="acab07ec17d98dbe79ee8e4a67af939f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acab07ec17d98dbe79ee8e4a67af939f3">&#9670;&#160;</a></span>exec()</h2>
+<a id="a61245390a6b5e457896d55f2c416e4b3" name="a61245390a6b5e457896d55f2c416e4b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61245390a6b5e457896d55f2c416e4b3">&#9670;&#160;</a></span>exec()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,14 +213,14 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~jexec</b> ()</td>
         <tr>
           <td class="memname">void InterfacePP::jexec::exec </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray</a>&lt; uint8_t &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>input</em>, </td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>inaddr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>inaddr</em>, </td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>inlen</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -224,7 +231,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~jexec</b> ()</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>outlen</em>, </td>
         </tr>
         <tr>
@@ -254,8 +261,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~jexec</b> ()</td>
 </div><div class="memdoc">
 <p >Executes the packet with the latencies requested </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">input</td><td>- packet to process </td></tr>
     <tr><td class="paramname">inaddr</td><td>- address to read input from </td></tr>
+    <tr><td class="paramname">inlen</td><td>- Length of the input data </td></tr>
     <tr><td class="paramname">outaddr</td><td>- address to write output to </td></tr>
     <tr><td class="paramname">outlen</td><td>- Length of the desired output </td></tr>
     <tr><td class="paramname">flows</td><td>- map to all available flows </td></tr>
@@ -456,7 +463,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~jexec</b> ()</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>InterfacePP</b></li><li class="navelem"><a class="el" href="classInterfacePP_1_1jexec.html">jexec</a></li>
-    <li class="footer">Generated on Sun Jul 9 2023 13:52:35 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Sep 8 2023 09:23:04 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

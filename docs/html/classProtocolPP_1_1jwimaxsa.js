@@ -1,7 +1,7 @@
 var classProtocolPP_1_1jwimaxsa =
 [
     [ "jwimaxsa", "classProtocolPP_1_1jwimaxsa.html#a74fac8a6e9983697de0c3bc0ad77a9fa", null ],
-    [ "jwimaxsa", "classProtocolPP_1_1jwimaxsa.html#a0f22aa57d5dbb8d27d75e5a979f87461", null ],
+    [ "jwimaxsa", "classProtocolPP_1_1jwimaxsa.html#a53b914df2727adeb8cb9a876aab1edbe", null ],
     [ "jwimaxsa", "classProtocolPP_1_1jwimaxsa.html#ad7c2eddd0343f1ad96e0f77e98088cbf", null ],
     [ "jwimaxsa", "classProtocolPP_1_1jwimaxsa.html#ac14798e7f74c77326a7bd12378b05a3a", null ],
     [ "~jwimaxsa", "classProtocolPP_1_1jwimaxsa.html#a6236fc8df93de17fbf7625cdcb4af932", null ],

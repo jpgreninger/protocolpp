@@ -9,7 +9,7 @@ var classProtocolPP_1_1jdtls13 =
     [ "get_field", "classProtocolPP_1_1jdtls13.html#a732a611e0b5a06fbe282281e8c1bde49", null ],
     [ "get_hdr", "classProtocolPP_1_1jdtls13.html#a920e8e2d5ed30e98f41ed1e8f58e9f75", null ],
     [ "get_security", "classProtocolPP_1_1jdtls13.html#af4861a6c900578842db06fe8af7f3f5d", null ],
-    [ "hkdf_expand", "classProtocolPP_1_1jdtls13.html#abe4d5b32f21837f97b456df2aa5f4ffb", null ],
+    [ "hkdf_expand", "classProtocolPP_1_1jdtls13.html#abbccb446d07e3844ecf0d1e58d3b62ac", null ],
     [ "hkdf_extract", "classProtocolPP_1_1jdtls13.html#a721f27bbab4e87db38e1611eaddb567e", null ],
     [ "set_field", "classProtocolPP_1_1jdtls13.html#a767af1439fa56f6da75237b847d650b9", null ],
     [ "set_hdr", "classProtocolPP_1_1jdtls13.html#a1f32535c414c35ac842fd4d11fadf7d7", null ],

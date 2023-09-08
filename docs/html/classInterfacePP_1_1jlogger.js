@@ -26,7 +26,7 @@ var classInterfacePP_1_1jlogger =
       [ "fatal", "classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445ae0f23db4e891663249063cc9bd7ab92a", null ],
       [ "pass", "classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445a5a14fdadea3b5f61a60f0f069e6cf08b", null ]
     ] ],
-    [ "jlogger", "classInterfacePP_1_1jlogger.html#ae1b3b2599c5dd8381a5fcdde9364b2db", null ],
+    [ "jlogger", "classInterfacePP_1_1jlogger.html#a3a6ab8b168e2e24d3f765610b2881b90", null ],
     [ "~jlogger", "classInterfacePP_1_1jlogger.html#a29a5bdef8a5eae88e0d228804132a90f", null ],
     [ "get_color", "classInterfacePP_1_1jlogger.html#a9610d63ce71149be2d5713031de6757b", null ],
     [ "print", "classInterfacePP_1_1jlogger.html#af2d4d146b0259734b2d092e77063e5e3", null ],

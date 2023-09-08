@@ -18,7 +18,7 @@ var searchData=
   ['operator_2b_3d_15',['operator+=',['../classProtocolPP_1_1jarray.html#a5e9e2276cb1a1d851815cf43c1aa0c11',1,'ProtocolPP::jarray']]],
   ['operator_3d_16',['operator=',['../classtinyxml2_1_1XMLHandle.html#aa07c9a53f78d7b2dc1018668641521d8',1,'tinyxml2::XMLHandle::operator=()'],['../classoption_1_1Option.html#adb4b44f3778df8f28a04c48bd1b4a72b',1,'option::Option::operator=()']]],
   ['operator_3d_3d_17',['operator==',['../classProtocolPP_1_1jarray.html#a689474cfc9d4d7e132e2914bd9a110f3',1,'ProtocolPP::jarray::operator==(jarray&lt; T &gt; &amp;rhs)'],['../classProtocolPP_1_1jarray.html#a2be34510c8059cc5df8dca63996a137c',1,'ProtocolPP::jarray::operator==(const jarray&lt; T &gt; &amp;rhs) const']]],
-  ['operator_5b_5d_18',['operator[]',['../classProtocolPP_1_1jarray.html#aca0c2a857d0badb5da8bbeb28e8ddde1',1,'ProtocolPP::jarray::operator[](unsigned int index)'],['../classProtocolPP_1_1jarray.html#a0630d114850dfaef61cad5fdb0b0c1fe',1,'ProtocolPP::jarray::operator[](unsigned int index) const']]],
+  ['operator_5b_5d_18',['operator[]',['../classProtocolPP_1_1jarray.html#a753ff0c4c5adea5ffa695c62d69a1652',1,'ProtocolPP::jarray::operator[](uint32_t index)'],['../classProtocolPP_1_1jarray.html#a31862e11d5f32f7a191474b1fe1fc6ab',1,'ProtocolPP::jarray::operator[](uint32_t index) const']]],
   ['operator_5e_3d_19',['operator^=',['../classProtocolPP_1_1jarray.html#a9f3589c094ab4592b8226dcee59fc27a',1,'ProtocolPP::jarray']]],
   ['operator_7c_3d_20',['operator|=',['../classProtocolPP_1_1jarray.html#a5054154ff582f4ade458b0066b6842bb',1,'ProtocolPP::jarray']]],
   ['opterr_21',['OPTERR',['../namespaceProtocolPP.html#a053cb4b6f939495763f9be4b0d23c769a92b0c79a7597d8ed961ef47a5f57e30a',1,'ProtocolPP']]],

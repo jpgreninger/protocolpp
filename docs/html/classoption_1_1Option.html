@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Protocol++(Protocolpp)<span id="projectnumber">&#160;v5.4.3</span>
+   <div id="projectname">Protocol++(Protocolpp)<span id="projectnumber">&#160;v5.4.4</span>
    </div>
   </td>
  </tr>
@@ -120,9 +120,9 @@ Public Member Functions</h2></td></tr>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>index</b> () const</td></tr>
 <tr class="memdesc:a847d12e8e76add769fbd01c703e48682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="structoption_1_1Descriptor.html#a1fee8ac44f529c99ac2b1149b4c391b1" title="Index of this option&#39;s linked list in the array filled in by the parser.">Descriptor::index</a> of this <a class="el" href="classoption_1_1Option.html" title="A parsed option from the command line together with its argument if it has one.">Option</a>'s <a class="el" href="structoption_1_1Descriptor.html" title="Describes an option, its help text (usage) and how it should be parsed.">Descriptor</a>, or -1 if this <a class="el" href="classoption_1_1Option.html" title="A parsed option from the command line together with its argument if it has one.">Option</a> is invalid (unused). <br /></td></tr>
 <tr class="separator:a847d12e8e76add769fbd01c703e48682"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a632dcd89af60fe0806deb756c08f14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoption_1_1Option.html#a8a632dcd89af60fe0806deb756c08f14">count</a> ()</td></tr>
-<tr class="memdesc:a8a632dcd89af60fe0806deb756c08f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of times this <a class="el" href="classoption_1_1Option.html" title="A parsed option from the command line together with its argument if it has one.">Option</a> (or others with the same <a class="el" href="structoption_1_1Descriptor.html#a1fee8ac44f529c99ac2b1149b4c391b1" title="Index of this option&#39;s linked list in the array filled in by the parser.">Descriptor::index</a>) occurs in the argument vector.  <a href="classoption_1_1Option.html#a8a632dcd89af60fe0806deb756c08f14">More...</a><br /></td></tr>
-<tr class="separator:a8a632dcd89af60fe0806deb756c08f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad26a118ffebde656fd82c06709086bed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoption_1_1Option.html#ad26a118ffebde656fd82c06709086bed">count</a> () const</td></tr>
+<tr class="memdesc:ad26a118ffebde656fd82c06709086bed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of times this <a class="el" href="classoption_1_1Option.html" title="A parsed option from the command line together with its argument if it has one.">Option</a> (or others with the same <a class="el" href="structoption_1_1Descriptor.html#a1fee8ac44f529c99ac2b1149b4c391b1" title="Index of this option&#39;s linked list in the array filled in by the parser.">Descriptor::index</a>) occurs in the argument vector.  <a href="classoption_1_1Option.html#ad26a118ffebde656fd82c06709086bed">More...</a><br /></td></tr>
+<tr class="separator:ad26a118ffebde656fd82c06709086bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af51f53a553ef46110e36008a58466a2e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoption_1_1Option.html#af51f53a553ef46110e36008a58466a2e">isFirst</a> () const</td></tr>
 <tr class="memdesc:af51f53a553ef46110e36008a58466a2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true iff this is the first element of the linked list.  <a href="classoption_1_1Option.html#af51f53a553ef46110e36008a58466a2e">More...</a><br /></td></tr>
 <tr class="separator:af51f53a553ef46110e36008a58466a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,18 +132,26 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>index</b> () const</td
 <tr class="memitem:a7c66347adb18256d9da9519cf5a4c53a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoption_1_1Option.html">Option</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoption_1_1Option.html#a7c66347adb18256d9da9519cf5a4c53a">first</a> ()</td></tr>
 <tr class="memdesc:a7c66347adb18256d9da9519cf5a4c53a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the first element of the linked list.  <a href="classoption_1_1Option.html#a7c66347adb18256d9da9519cf5a4c53a">More...</a><br /></td></tr>
 <tr class="separator:a7c66347adb18256d9da9519cf5a4c53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aba887ac3d5e8c9dbe0217557eb8b4c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classoption_1_1Option.html">Option</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoption_1_1Option.html#a3aba887ac3d5e8c9dbe0217557eb8b4c">first</a> () const</td></tr>
+<tr class="separator:a3aba887ac3d5e8c9dbe0217557eb8b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd9da11d4983512256d703203fae7bde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoption_1_1Option.html">Option</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoption_1_1Option.html#acd9da11d4983512256d703203fae7bde">last</a> ()</td></tr>
 <tr class="memdesc:acd9da11d4983512256d703203fae7bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the last element of the linked list.  <a href="classoption_1_1Option.html#acd9da11d4983512256d703203fae7bde">More...</a><br /></td></tr>
 <tr class="separator:acd9da11d4983512256d703203fae7bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a998cb44254e911dee65c0d15a7d4958b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classoption_1_1Option.html">Option</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoption_1_1Option.html#a998cb44254e911dee65c0d15a7d4958b">last</a> () const</td></tr>
+<tr class="separator:a998cb44254e911dee65c0d15a7d4958b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04c5cdb9105bb40fc1360f4e4379b096"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoption_1_1Option.html">Option</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoption_1_1Option.html#a04c5cdb9105bb40fc1360f4e4379b096">prev</a> ()</td></tr>
 <tr class="memdesc:a04c5cdb9105bb40fc1360f4e4379b096"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the previous element of the linked list or NULL if called on <a class="el" href="classoption_1_1Option.html#a7c66347adb18256d9da9519cf5a4c53a" title="Returns a pointer to the first element of the linked list.">first()</a>.  <a href="classoption_1_1Option.html#a04c5cdb9105bb40fc1360f4e4379b096">More...</a><br /></td></tr>
 <tr class="separator:a04c5cdb9105bb40fc1360f4e4379b096"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa9cec25fbeb4785cee49953e807b510"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoption_1_1Option.html">Option</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoption_1_1Option.html#afa9cec25fbeb4785cee49953e807b510">prevwrap</a> ()</td></tr>
 <tr class="memdesc:afa9cec25fbeb4785cee49953e807b510"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the previous element of the linked list with wrap-around from <a class="el" href="classoption_1_1Option.html#a7c66347adb18256d9da9519cf5a4c53a" title="Returns a pointer to the first element of the linked list.">first()</a> to <a class="el" href="classoption_1_1Option.html#acd9da11d4983512256d703203fae7bde" title="Returns a pointer to the last element of the linked list.">last()</a>.  <a href="classoption_1_1Option.html#afa9cec25fbeb4785cee49953e807b510">More...</a><br /></td></tr>
 <tr class="separator:afa9cec25fbeb4785cee49953e807b510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab70b19f5b98969ad567cb34bd0184da4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classoption_1_1Option.html">Option</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoption_1_1Option.html#ab70b19f5b98969ad567cb34bd0184da4">prevwrap</a> () const</td></tr>
+<tr class="separator:ab70b19f5b98969ad567cb34bd0184da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0577f8a932f78e6a392cd762ce65558d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoption_1_1Option.html">Option</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoption_1_1Option.html#a0577f8a932f78e6a392cd762ce65558d">next</a> ()</td></tr>
 <tr class="memdesc:a0577f8a932f78e6a392cd762ce65558d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the next element of the linked list or NULL if called on <a class="el" href="classoption_1_1Option.html#acd9da11d4983512256d703203fae7bde" title="Returns a pointer to the last element of the linked list.">last()</a>.  <a href="classoption_1_1Option.html#a0577f8a932f78e6a392cd762ce65558d">More...</a><br /></td></tr>
 <tr class="separator:a0577f8a932f78e6a392cd762ce65558d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cc6c92cfd86bdc1fbfbdf114a2d1fbf"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classoption_1_1Option.html">Option</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoption_1_1Option.html#a1cc6c92cfd86bdc1fbfbdf114a2d1fbf">next</a> () const</td></tr>
+<tr class="separator:a1cc6c92cfd86bdc1fbfbdf114a2d1fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0da8da407f2c531296a97f6907aae232"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoption_1_1Option.html">Option</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoption_1_1Option.html#a0da8da407f2c531296a97f6907aae232">nextwrap</a> ()</td></tr>
 <tr class="memdesc:a0da8da407f2c531296a97f6907aae232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the next element of the linked list with wrap-around from <a class="el" href="classoption_1_1Option.html#acd9da11d4983512256d703203fae7bde" title="Returns a pointer to the last element of the linked list.">last()</a> to <a class="el" href="classoption_1_1Option.html#a7c66347adb18256d9da9519cf5a4c53a" title="Returns a pointer to the first element of the linked list.">first()</a>.  <a href="classoption_1_1Option.html#a0da8da407f2c531296a97f6907aae232">More...</a><br /></td></tr>
 <tr class="separator:a0da8da407f2c531296a97f6907aae232"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,15 +200,15 @@ Public Attributes</h2></td></tr>
 <li>Test for presence of a switch in the argument vector: <div class="fragment"><div class="line"><span class="keywordflow">if</span> ( options[QUIET] ) ... </div>
 </div><!-- fragment --> </li>
 <li>Evaluate &ndash;enable-foo/&ndash;disable-foo pair where the last one used wins: <div class="fragment"><div class="line"><span class="keywordflow">if</span> ( options[FOO].<a class="code hl_function" href="classoption_1_1Option.html#acd9da11d4983512256d703203fae7bde">last</a>()-&gt;<a class="code hl_function" href="classoption_1_1Option.html#a5268a69e1a91137186ab772574296da0">type</a>() == DISABLE ) ... </div>
-<div class="ttc" id="aclassoption_1_1Option_html_a5268a69e1a91137186ab772574296da0"><div class="ttname"><a href="classoption_1_1Option.html#a5268a69e1a91137186ab772574296da0">option::Option::type</a></div><div class="ttdeci">int type() const</div><div class="ttdoc">Returns Descriptor::type of this Option's Descriptor, or 0 if this Option is invalid (unused).</div><div class="ttdef"><b>Definition:</b> optionparser.h:530</div></div>
-<div class="ttc" id="aclassoption_1_1Option_html_acd9da11d4983512256d703203fae7bde"><div class="ttname"><a href="classoption_1_1Option.html#acd9da11d4983512256d703203fae7bde">option::Option::last</a></div><div class="ttdeci">Option * last()</div><div class="ttdoc">Returns a pointer to the last element of the linked list.</div><div class="ttdef"><b>Definition:</b> optionparser.h:629</div></div>
+<div class="ttc" id="aclassoption_1_1Option_html_a5268a69e1a91137186ab772574296da0"><div class="ttname"><a href="classoption_1_1Option.html#a5268a69e1a91137186ab772574296da0">option::Option::type</a></div><div class="ttdeci">int type() const</div><div class="ttdoc">Returns Descriptor::type of this Option's Descriptor, or 0 if this Option is invalid (unused).</div><div class="ttdef"><b>Definition:</b> optionparser.h:533</div></div>
+<div class="ttc" id="aclassoption_1_1Option_html_acd9da11d4983512256d703203fae7bde"><div class="ttname"><a href="classoption_1_1Option.html#acd9da11d4983512256d703203fae7bde">option::Option::last</a></div><div class="ttdeci">Option * last()</div><div class="ttdoc">Returns a pointer to the last element of the linked list.</div><div class="ttdef"><b>Definition:</b> optionparser.h:640</div></div>
 </div><!-- fragment --> </li>
 <li>Cumulative option (-v verbose, -vv more verbose, -vvv even more verbose): <div class="fragment"><div class="line"><span class="keywordtype">int</span> verbosity = options[VERBOSE].count(); </div>
 </div><!-- fragment --> </li>
 <li>Iterate over all &ndash;file=&lt;fname&gt; arguments: <div class="fragment"><div class="line"><span class="keywordflow">for</span> (<a class="code hl_class" href="classoption_1_1Option.html">Option</a>* opt = options[FILE]; opt; opt = opt-&gt;<a class="code hl_function" href="classoption_1_1Option.html#a0577f8a932f78e6a392cd762ce65558d">next</a>())</div>
 <div class="line"> fname = opt-&gt;arg; ... </div>
-<div class="ttc" id="aclassoption_1_1Option_html"><div class="ttname"><a href="classoption_1_1Option.html">option::Option</a></div><div class="ttdoc">A parsed option from the command line together with its argument if it has one.</div><div class="ttdef"><b>Definition:</b> optionparser.h:440</div></div>
-<div class="ttc" id="aclassoption_1_1Option_html_a0577f8a932f78e6a392cd762ce65558d"><div class="ttname"><a href="classoption_1_1Option.html#a0577f8a932f78e6a392cd762ce65558d">option::Option::next</a></div><div class="ttdeci">Option * next()</div><div class="ttdoc">Returns a pointer to the next element of the linked list or NULL if called on last().</div><div class="ttdef"><b>Definition:</b> optionparser.h:668</div></div>
+<div class="ttc" id="aclassoption_1_1Option_html"><div class="ttname"><a href="classoption_1_1Option.html">option::Option</a></div><div class="ttdoc">A parsed option from the command line together with its argument if it has one.</div><div class="ttdef"><b>Definition:</b> optionparser.h:443</div></div>
+<div class="ttc" id="aclassoption_1_1Option_html_a0577f8a932f78e6a392cd762ce65558d"><div class="ttname"><a href="classoption_1_1Option.html#a0577f8a932f78e6a392cd762ce65558d">option::Option::next</a></div><div class="ttdeci">Option * next()</div><div class="ttdoc">Returns a pointer to the next element of the linked list or NULL if called on last().</div><div class="ttdef"><b>Definition:</b> optionparser.h:695</div></div>
 </div><!-- fragment --> </li>
 </ul>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -321,8 +329,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a8a632dcd89af60fe0806deb756c08f14" name="a8a632dcd89af60fe0806deb756c08f14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a632dcd89af60fe0806deb756c08f14">&#9670;&#160;</a></span>count()</h2>
+<a id="ad26a118ffebde656fd82c06709086bed" name="ad26a118ffebde656fd82c06709086bed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad26a118ffebde656fd82c06709086bed">&#9670;&#160;</a></span>count()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -334,7 +342,7 @@ Here is the call graph for this function:</div>
           <td class="memname">int option::Option::count </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -345,14 +353,14 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Returns the number of times this <a class="el" href="classoption_1_1Option.html" title="A parsed option from the command line together with its argument if it has one.">Option</a> (or others with the same <a class="el" href="structoption_1_1Descriptor.html#a1fee8ac44f529c99ac2b1149b4c391b1" title="Index of this option&#39;s linked list in the array filled in by the parser.">Descriptor::index</a>) occurs in the argument vector. </p>
-<p >This corresponds to the number of elements in the linked list this <a class="el" href="classoption_1_1Option.html" title="A parsed option from the command line together with its argument if it has one.">Option</a> is part of. It doesn't matter on which element you call <a class="el" href="classoption_1_1Option.html#a8a632dcd89af60fe0806deb756c08f14" title="Returns the number of times this Option (or others with the same Descriptor::index) occurs in the arg...">count()</a>. The return value is always the same.</p>
+<p >This corresponds to the number of elements in the linked list this <a class="el" href="classoption_1_1Option.html" title="A parsed option from the command line together with its argument if it has one.">Option</a> is part of. It doesn't matter on which element you call <a class="el" href="classoption_1_1Option.html#ad26a118ffebde656fd82c06709086bed" title="Returns the number of times this Option (or others with the same Descriptor::index) occurs in the arg...">count()</a>. The return value is always the same.</p>
 <p >Use this to implement cumulative options, such as -v, -vv, -vvv for different verbosity levels.</p>
 <p >Returns 0 when called for an unused/invalid option. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classoption_1_1Option_a8a632dcd89af60fe0806deb756c08f14_cgraph.png" border="0" usemap="#aclassoption_1_1Option_a8a632dcd89af60fe0806deb756c08f14_cgraph" alt=""/></div>
-<map name="aclassoption_1_1Option_a8a632dcd89af60fe0806deb756c08f14_cgraph" id="aclassoption_1_1Option_a8a632dcd89af60fe0806deb756c08f14_cgraph">
+<div class="center"><img src="classoption_1_1Option_ad26a118ffebde656fd82c06709086bed_cgraph.png" border="0" usemap="#aclassoption_1_1Option_ad26a118ffebde656fd82c06709086bed_cgraph" alt=""/></div>
+<map name="aclassoption_1_1Option_ad26a118ffebde656fd82c06709086bed_cgraph" id="aclassoption_1_1Option_ad26a118ffebde656fd82c06709086bed_cgraph">
 <area shape="rect" title="Returns the number of times this Option (or others with the same Descriptor::index) occurs in the arg..." alt="" coords="5,31,148,56"/>
 <area shape="rect" href="classoption_1_1Option.html#a7c66347adb18256d9da9519cf5a4c53a" title="Returns a pointer to the first element of the linked list." alt="" coords="202,5,337,31"/>
 <area shape="rect" href="classoption_1_1Option.html#a36fa8fde6fce89462ded79ab56180ff7" title="Returns true iff this is the last element of the linked list." alt="" coords="196,55,343,80"/>
@@ -363,7 +371,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a7c66347adb18256d9da9519cf5a4c53a" name="a7c66347adb18256d9da9519cf5a4c53a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c66347adb18256d9da9519cf5a4c53a">&#9670;&#160;</a></span>first()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c66347adb18256d9da9519cf5a4c53a">&#9670;&#160;</a></span>first() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -395,6 +403,42 @@ Here is the call graph for this function:</div>
 <map name="aclassoption_1_1Option_a7c66347adb18256d9da9519cf5a4c53a_cgraph" id="aclassoption_1_1Option_a7c66347adb18256d9da9519cf5a4c53a_cgraph">
 <area shape="rect" title="Returns a pointer to the first element of the linked list." alt="" coords="5,5,140,31"/>
 <area shape="rect" href="classoption_1_1Option.html#af51f53a553ef46110e36008a58466a2e" title="Returns true iff this is the first element of the linked list." alt="" coords="188,5,336,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3aba887ac3d5e8c9dbe0217557eb8b4c" name="a3aba887ac3d5e8c9dbe0217557eb8b4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aba887ac3d5e8c9dbe0217557eb8b4c">&#9670;&#160;</a></span>first() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classoption_1_1Option.html">Option</a> * option::Option::first </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >const version of <a class="el" href="classoption_1_1Option.html#a7c66347adb18256d9da9519cf5a4c53a" title="Returns a pointer to the first element of the linked list.">Option::first()</a>. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classoption_1_1Option_a3aba887ac3d5e8c9dbe0217557eb8b4c_cgraph.png" border="0" usemap="#aclassoption_1_1Option_a3aba887ac3d5e8c9dbe0217557eb8b4c_cgraph" alt=""/></div>
+<map name="aclassoption_1_1Option_a3aba887ac3d5e8c9dbe0217557eb8b4c_cgraph" id="aclassoption_1_1Option_a3aba887ac3d5e8c9dbe0217557eb8b4c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,140,31"/>
+<area shape="rect" href="classoption_1_1Option.html#a7c66347adb18256d9da9519cf5a4c53a" title="Returns a pointer to the first element of the linked list." alt="" coords="188,5,323,31"/>
+<area shape="rect" href="classoption_1_1Option.html#af51f53a553ef46110e36008a58466a2e" title="Returns true iff this is the first element of the linked list." alt="" coords="371,5,519,31"/>
 </map>
 </div>
 
@@ -459,7 +503,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="acd9da11d4983512256d703203fae7bde" name="acd9da11d4983512256d703203fae7bde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd9da11d4983512256d703203fae7bde">&#9670;&#160;</a></span>last()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acd9da11d4983512256d703203fae7bde">&#9670;&#160;</a></span>last() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -499,8 +543,45 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a998cb44254e911dee65c0d15a7d4958b" name="a998cb44254e911dee65c0d15a7d4958b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a998cb44254e911dee65c0d15a7d4958b">&#9670;&#160;</a></span>last() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classoption_1_1Option.html">Option</a> * option::Option::last </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >const version of <a class="el" href="classoption_1_1Option.html#acd9da11d4983512256d703203fae7bde" title="Returns a pointer to the last element of the linked list.">Option::last()</a>. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classoption_1_1Option_a998cb44254e911dee65c0d15a7d4958b_cgraph.png" border="0" usemap="#aclassoption_1_1Option_a998cb44254e911dee65c0d15a7d4958b_cgraph" alt=""/></div>
+<map name="aclassoption_1_1Option_a998cb44254e911dee65c0d15a7d4958b_cgraph" id="aclassoption_1_1Option_a998cb44254e911dee65c0d15a7d4958b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,137,56"/>
+<area shape="rect" href="classoption_1_1Option.html#a7c66347adb18256d9da9519cf5a4c53a" title="Returns a pointer to the first element of the linked list." alt="" coords="200,5,335,31"/>
+<area shape="rect" href="classoption_1_1Option.html#afa9cec25fbeb4785cee49953e807b510" title="Returns a pointer to the previous element of the linked list with wrap&#45;around from first() to last()." alt="" coords="185,55,349,80"/>
+<area shape="rect" href="classoption_1_1Option.html#af51f53a553ef46110e36008a58466a2e" title="Returns true iff this is the first element of the linked list." alt="" coords="397,5,545,31"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a0577f8a932f78e6a392cd762ce65558d" name="a0577f8a932f78e6a392cd762ce65558d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0577f8a932f78e6a392cd762ce65558d">&#9670;&#160;</a></span>next()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0577f8a932f78e6a392cd762ce65558d">&#9670;&#160;</a></span>next() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -530,6 +611,41 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classoption_1_1Option_a0577f8a932f78e6a392cd762ce65558d_cgraph.png" border="0" usemap="#aclassoption_1_1Option_a0577f8a932f78e6a392cd762ce65558d_cgraph" alt=""/></div>
 <map name="aclassoption_1_1Option_a0577f8a932f78e6a392cd762ce65558d_cgraph" id="aclassoption_1_1Option_a0577f8a932f78e6a392cd762ce65558d_cgraph">
 <area shape="rect" title="Returns a pointer to the next element of the linked list or NULL if called on last()." alt="" coords="5,5,141,31"/>
+<area shape="rect" href="classoption_1_1Option.html#a36fa8fde6fce89462ded79ab56180ff7" title="Returns true iff this is the last element of the linked list." alt="" coords="189,5,336,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1cc6c92cfd86bdc1fbfbdf114a2d1fbf" name="a1cc6c92cfd86bdc1fbfbdf114a2d1fbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cc6c92cfd86bdc1fbfbdf114a2d1fbf">&#9670;&#160;</a></span>next() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classoption_1_1Option.html">Option</a> * option::Option::next </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >const version of <a class="el" href="classoption_1_1Option.html#a0577f8a932f78e6a392cd762ce65558d" title="Returns a pointer to the next element of the linked list or NULL if called on last().">Option::next()</a>. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classoption_1_1Option_a1cc6c92cfd86bdc1fbfbdf114a2d1fbf_cgraph.png" border="0" usemap="#aclassoption_1_1Option_a1cc6c92cfd86bdc1fbfbdf114a2d1fbf_cgraph" alt=""/></div>
+<map name="aclassoption_1_1Option_a1cc6c92cfd86bdc1fbfbdf114a2d1fbf_cgraph" id="aclassoption_1_1Option_a1cc6c92cfd86bdc1fbfbdf114a2d1fbf_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,141,31"/>
 <area shape="rect" href="classoption_1_1Option.html#a36fa8fde6fce89462ded79ab56180ff7" title="Returns true iff this is the last element of the linked list." alt="" coords="189,5,336,31"/>
 </map>
 </div>
@@ -697,7 +813,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="afa9cec25fbeb4785cee49953e807b510" name="afa9cec25fbeb4785cee49953e807b510"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa9cec25fbeb4785cee49953e807b510">&#9670;&#160;</a></span>prevwrap()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afa9cec25fbeb4785cee49953e807b510">&#9670;&#160;</a></span>prevwrap() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -721,6 +837,32 @@ Here is the call graph for this function:</div>
 
 <p>Returns a pointer to the previous element of the linked list with wrap-around from <a class="el" href="classoption_1_1Option.html#a7c66347adb18256d9da9519cf5a4c53a" title="Returns a pointer to the first element of the linked list.">first()</a> to <a class="el" href="classoption_1_1Option.html#acd9da11d4983512256d703203fae7bde" title="Returns a pointer to the last element of the linked list.">last()</a>. </p>
 <p >If called on <a class="el" href="classoption_1_1Option.html#a7c66347adb18256d9da9519cf5a4c53a" title="Returns a pointer to the first element of the linked list.">first()</a> this method returns <a class="el" href="classoption_1_1Option.html#acd9da11d4983512256d703203fae7bde" title="Returns a pointer to the last element of the linked list.">last()</a>. Otherwise it will return the option with the same <a class="el" href="structoption_1_1Descriptor.html#a1fee8ac44f529c99ac2b1149b4c391b1" title="Index of this option&#39;s linked list in the array filled in by the parser.">Descriptor::index</a> that precedes this option on the command line. </p>
+
+</div>
+</div>
+<a id="ab70b19f5b98969ad567cb34bd0184da4" name="ab70b19f5b98969ad567cb34bd0184da4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab70b19f5b98969ad567cb34bd0184da4">&#9670;&#160;</a></span>prevwrap() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classoption_1_1Option.html">Option</a> * option::Option::prevwrap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >const version of <a class="el" href="classoption_1_1Option.html#afa9cec25fbeb4785cee49953e807b510" title="Returns a pointer to the previous element of the linked list with wrap-around from first() to last().">Option::prevwrap()</a>. </p>
 
 </div>
 </div>
@@ -760,7 +902,7 @@ Here is the call graph for this function:</div>
 <div class="line">  <span class="keywordflow">case</span> ENABLED: ...</div>
 <div class="line">  <span class="keywordflow">case</span> DISABLED: ...  <span class="comment">// UNUSED==DISABLED !</span></div>
 <div class="line">}</div>
-<div class="ttc" id="astructoption_1_1Arg_html_a7fc01987899c91c6b6a1be5711a46e22"><div class="ttname"><a href="structoption_1_1Arg.html#a7fc01987899c91c6b6a1be5711a46e22">option::Arg::None</a></div><div class="ttdeci">static ArgStatus None(const Option &amp;, bool)</div><div class="ttdoc">For options that don't take an argument: Returns ARG_NONE.</div><div class="ttdef"><b>Definition:</b> optionparser.h:891</div></div>
+<div class="ttc" id="astructoption_1_1Arg_html_a7fc01987899c91c6b6a1be5711a46e22"><div class="ttname"><a href="structoption_1_1Arg.html#a7fc01987899c91c6b6a1be5711a46e22">option::Arg::None</a></div><div class="ttdeci">static ArgStatus None(const Option &amp;, bool)</div><div class="ttdoc">For options that don't take an argument: Returns ARG_NONE.</div><div class="ttdef"><b>Definition:</b> optionparser.h:926</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -851,7 +993,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceoption.html">option</a></li><li class="navelem"><a class="el" href="classoption_1_1Option.html">Option</a></li>
-    <li class="footer">Generated on Sun Jul 9 2023 13:52:35 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Sep 8 2023 09:23:04 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

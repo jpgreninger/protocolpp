@@ -8,7 +8,7 @@ var searchData=
   ['unsignedlongvalue_5',['UnsignedLongValue',['../classtinyxml2_1_1XMLAttribute.html#ab83aeff5e67da1a48f8eae593f7d9a89',1,'tinyxml2::XMLAttribute']]],
   ['unsignedtext_6',['UnsignedText',['../classtinyxml2_1_1XMLElement.html#a49bad014ffcc17b0b6119d5b2c97dfb5',1,'tinyxml2::XMLElement']]],
   ['unsignedvalue_7',['UnsignedValue',['../classtinyxml2_1_1XMLAttribute.html#a0be5343b08a957c42c02c5d32c35d338',1,'tinyxml2::XMLAttribute']]],
-  ['update_8',['update',['../classProtocolPP_1_1jarray.html#ac4bf084c034bda7fc3a05d3415461170',1,'ProtocolPP::jarray']]],
-  ['update_5freplay_9',['update_replay',['../classProtocolPP_1_1jprotocol.html#a1c16fae7e2d701cca78386cbbfe4972b',1,'ProtocolPP::jprotocol::update_replay(protocol_t prot, T &amp;seqnum, TE &amp;extseq, bool usext, unsigned int size)'],['../classProtocolPP_1_1jprotocol.html#ade2c79b2a3e10e8a79f37b8487a79d3e',1,'ProtocolPP::jprotocol::update_replay(protocol_t prot, T &amp;seqnum, TE &amp;extseq, bool usext, unsigned int size, jarray&lt; uint8_t &gt; &amp;window)']]],
+  ['update_8',['update',['../classProtocolPP_1_1jarray.html#a9319fc14b9bf62a7d782c86278d99916',1,'ProtocolPP::jarray']]],
+  ['update_5freplay_9',['update_replay',['../classProtocolPP_1_1jprotocol.html#aeaa6261f4660f528529bf666526ac86e',1,'ProtocolPP::jprotocol::update_replay(protocol_t prot, T &amp;seqnum, TE &amp;extseq, bool usext, uint32_t size)'],['../classProtocolPP_1_1jprotocol.html#af1968594e3afaabd3efb7412e0b3db58',1,'ProtocolPP::jprotocol::update_replay(protocol_t prot, T &amp;seqnum, TE &amp;extseq, bool usext, uint32_t size, jarray&lt; uint8_t &gt; &amp;window)']]],
   ['update_5fstatus_10',['update_status',['../classProtocolPP_1_1jprotocol.html#ac68e3d5308f87f45d8cf9b79f0d48551',1,'ProtocolPP::jprotocol']]]
 ];

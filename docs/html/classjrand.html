@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Protocol++(Protocolpp)<span id="projectnumber">&#160;v5.4.3</span>
+   <div id="projectname">Protocol++(Protocolpp)<span id="projectnumber">&#160;v5.4.4</span>
    </div>
   </td>
  </tr>
@@ -101,9 +101,9 @@ Randomization Class for Protocol++® (ProtocolPP®)</h1>
 <p >The core of the randomizer is the Merseene-Twister. The randomizer object can be created with one of three constructors. The default constructor creates a randomizer that is seeded with the default seed of 1234567890 </p><div class="fragment"><div class="line"><span class="comment">// Standard constructor for the jrand</span></div>
 <div class="line"><a class="code hl_class" href="classjrand.html">jrand</a>();</div>
 <div class="ttc" id="aclassjrand_html"><div class="ttname"><a href="classjrand.html">jrand</a></div></div>
-</div><!-- fragment --><p> To improve the entropy of the randomizer, it can also be created using a long integer or by using an array of long integers </p><div class="fragment"><div class="line"><span class="comment">// Constructor for jrand that accepts an unsigned int for the seed</span></div>
+</div><!-- fragment --><p> To improve the entropy of the randomizer, it can also be created using a long integer or by using an array of long integers </p><div class="fragment"><div class="line"><span class="comment">// Constructor for jrand that accepts a uint64_t for the seed</span></div>
 <div class="line"><a class="code hl_class" href="classjrand.html">jrand</a>(uint64_t myseed);</div>
-</div><!-- fragment --><p> Additional entropy may be added by using the seed() methods to reseed the object </p><div class="fragment"><div class="line"><span class="comment">// Constructor for jrand that accepts an unsigned int for the seed</span></div>
+</div><!-- fragment --><p> Additional entropy may be added by using the seed() methods to reseed the object </p><div class="fragment"><div class="line"><span class="comment">// Constructor for jrand that accepts a uint64_t for the seed</span></div>
 <div class="line"><a class="code hl_class" href="classjrand.html">jrand</a>(<span class="keyword">const</span> uint64_t *newseed, <span class="keywordtype">int</span> size);</div>
 </div><!-- fragment --><p> The getname() and getstring() functions allow the user to obtain a randomly generated name or to choose a string from a list of colon separated values Names are generated from a-zA-Z0-9, no special characters are used </p><div class="fragment"><div class="line"><span class="comment">// generates random name of 12 characters</span></div>
 <div class="line">std::string newname = getname(12);</div>
@@ -161,7 +161,7 @@ Randomization Class for Protocol++® (ProtocolPP®)</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjrand.html">jrand</a></li>
-    <li class="footer">Generated on Sun Jul 9 2023 13:52:35 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Sep 8 2023 09:23:04 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>
