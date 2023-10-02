@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Protocol++(Protocolpp): tinyxml2::XMLNode Class Reference</title>
+<title>Protocol++&reg; (Protocolpp&reg;): tinyxml2::XMLNode Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Protocol++(Protocolpp)<span id="projectnumber">&#160;v5.4.4</span>
+   <div id="projectname">Protocol++&reg; (Protocolpp&reg;)<span id="projectnumber">&#160;v5.5.0</span>
    </div>
   </td>
  </tr>
@@ -319,16 +319,16 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>XMLElement</b></td><
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="classtinyxml2_1_1XMLNode.html">XMLNode</a> is a base class for every object that is in the XML Document Object Model (DOM), except XMLAttributes. Nodes have siblings, a parent, and children which can be navigated. A node is always in a <a class="el" href="classtinyxml2_1_1XMLDocument.html">XMLDocument</a>. The type of a <a class="el" href="classtinyxml2_1_1XMLNode.html">XMLNode</a> can be queried, and it can be cast to its more defined type.</p>
 <p >A <a class="el" href="classtinyxml2_1_1XMLDocument.html">XMLDocument</a> allocates memory for all its Nodes. When the <a class="el" href="classtinyxml2_1_1XMLDocument.html">XMLDocument</a> gets deleted, all its Nodes will also be deleted.</p>
-<pre class="fragment">    A Document can contain:     Element (container or leaf)
-                                                Comment (leaf)
-                                                Unknown (leaf)
-                                                Declaration( leaf )
+<pre class="fragment">A Document can contain: Element (container or leaf)
+                        Comment (leaf)
+                        Unknown (leaf)
+                        Declaration( leaf )
 
-    An Element can contain:     Element (container or leaf)
-                                                Text    (leaf)
-                                                Attributes (not on tree)
-                                                Comment (leaf)
-                                                Unknown (leaf)</pre> </div><h2 class="groupheader">Member Function Documentation</h2>
+An Element can contain: Element (container or leaf)
+                        Text    (leaf)
+                        Attributes (not on tree)
+                        Comment (leaf)
+                        Unknown (leaf)</pre> </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a81e66df0a44c67a7af17f3b77a152785" name="a81e66df0a44c67a7af17f3b77a152785"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81e66df0a44c67a7af17f3b77a152785">&#9670;&#160;</a></span>Accept()</h2>
 
@@ -383,14 +383,9 @@ const char* xmlcstr = printer.CStr();
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">    Make a copy of this node and all its children.
-
-    If the 'target' is null, then the nodes will
-    be allocated in the current document. If 'target'
-</pre><p> is specified, the memory will be allocated is the specified <a class="el" href="classtinyxml2_1_1XMLDocument.html">XMLDocument</a>. </p><pre class="fragment">    NOTE: This is probably not the correct tool to
-    copy a document, since XMLDocuments can have multiple
-    top level XMLNodes. You probably want to use
-</pre><p> <a class="el" href="classtinyxml2_1_1XMLDocument.html#af592ffc91514e25a39664521ac83db45">XMLDocument::DeepCopy()</a> </p>
+<p >Make a copy of this node and all its children.</p>
+<p >If the 'target' is null, then the nodes will be allocated in the current document. If 'target' is specified, the memory will be allocated is the specified <a class="el" href="classtinyxml2_1_1XMLDocument.html">XMLDocument</a>.</p>
+<p >NOTE: This is probably not the correct tool to copy a document, since XMLDocuments can have multiple top level XMLNodes. You probably want to use <a class="el" href="classtinyxml2_1_1XMLDocument.html#af592ffc91514e25a39664521ac83db45">XMLDocument::DeepCopy()</a> </p>
 
 </div>
 </div>
@@ -866,11 +861,11 @@ const char* xmlcstr = printer.CStr();
         </tr>
       </table>
 </div><div class="memdoc">
-<p >The meaning of 'value' changes for the specific type. </p><pre class="fragment">Document:       empty (NULL is returned, not an empty string)
-Element:        name of the element
-Comment:        the comment text
-Unknown:        the tag contents
-Text:           the text string
+<p >The meaning of 'value' changes for the specific type. </p><pre class="fragment">Document:   empty (NULL is returned, not an empty string)
+Element:    name of the element
+Comment:    the comment text
+Unknown:    the tag contents
+Text:       the text string
 </pre> 
 </div>
 </div>
@@ -883,7 +878,7 @@ Text:           the text string
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>tinyxml2</b></li><li class="navelem"><a class="el" href="classtinyxml2_1_1XMLNode.html">XMLNode</a></li>
-    <li class="footer">Generated on Fri Sep 8 2023 09:23:04 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sun Oct 1 2023 13:13:56 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

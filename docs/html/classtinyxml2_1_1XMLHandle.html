@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Protocol++(Protocolpp): tinyxml2::XMLHandle Class Reference</title>
+<title>Protocol++&reg; (Protocolpp&reg;): tinyxml2::XMLHandle Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Protocol++(Protocolpp)<span id="projectnumber">&#160;v5.4.4</span>
+   <div id="projectname">Protocol++&reg; (Protocolpp&reg;)<span id="projectnumber">&#160;v5.5.0</span>
    </div>
   </td>
  </tr>
@@ -172,31 +172,31 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A <a class="el" href="classtinyxml2_1_1XMLHandle.html">XMLHandle</a> is a class that wraps a node pointer with null checks; this is an incredibly useful thing. Note that <a class="el" href="classtinyxml2_1_1XMLHandle.html">XMLHandle</a> is not part of the TinyXML-2 DOM structure. It is a separate utility class.</p>
 <p >Take an example: </p><pre class="fragment">&lt;Document&gt;
-        &lt;Element attributeA = "valueA"&gt;
-                &lt;Child attributeB = "value1" /&gt;
-                &lt;Child attributeB = "value2" /&gt;
-        &lt;/Element&gt;
+    &lt;Element attributeA = "valueA"&gt;
+        &lt;Child attributeB = "value1" /&gt;
+        &lt;Child attributeB = "value2" /&gt;
+    &lt;/Element&gt;
 &lt;/Document&gt;
 </pre><p >Assuming you want the value of "attributeB" in the 2nd "Child" element, it's very easy to write a <em>lot</em> of code that looks like:</p>
 <pre class="fragment">XMLElement* root = document.FirstChildElement( "Document" );
 if ( root )
 {
-        XMLElement* element = root-&gt;FirstChildElement( "Element" );
-        if ( element )
+    XMLElement* element = root-&gt;FirstChildElement( "Element" );
+    if ( element )
+    {
+        XMLElement* child = element-&gt;FirstChildElement( "Child" );
+        if ( child )
         {
-                XMLElement* child = element-&gt;FirstChildElement( "Child" );
-                if ( child )
-                {
-                        XMLElement* child2 = child-&gt;NextSiblingElement( "Child" );
-                        if ( child2 )
-                        {
-                                // Finally do something useful.
+            XMLElement* child2 = child-&gt;NextSiblingElement( "Child" );
+            if ( child2 )
+            {
+                // Finally do something useful.
 </pre><p >And that doesn't even cover "else" cases. <a class="el" href="classtinyxml2_1_1XMLHandle.html">XMLHandle</a> addresses the verbosity of such code. A <a class="el" href="classtinyxml2_1_1XMLHandle.html">XMLHandle</a> checks for null pointers so it is perfectly safe and correct to use:</p>
 <pre class="fragment">XMLHandle docHandle( &amp;document );
 XMLElement* child2 = docHandle.FirstChildElement( "Document" ).FirstChildElement( "Element" ).FirstChildElement().NextSiblingElement();
 if ( child2 )
 {
-        // do something useful
+    // do something useful
 </pre><p >Which is MUCH more concise and useful.</p>
 <p >It is also safe to copy handles - internally they are nothing more than node pointers. </p><pre class="fragment">XMLHandle handleCopy = handle;
 </pre><p >See also <a class="el" href="classtinyxml2_1_1XMLConstHandle.html">XMLConstHandle</a>, which is the same as <a class="el" href="classtinyxml2_1_1XMLHandle.html">XMLHandle</a>, but operates on const objects. </p>
@@ -209,7 +209,7 @@ if ( child2 )
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>tinyxml2</b></li><li class="navelem"><a class="el" href="classtinyxml2_1_1XMLHandle.html">XMLHandle</a></li>
-    <li class="footer">Generated on Fri Sep 8 2023 09:23:04 for Protocol++(Protocolpp) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sun Oct 1 2023 13:13:56 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

@@ -7,6 +7,7 @@ var classInterfacePP_1_1jproducer =
     [ "get_mode", "classInterfacePP_1_1jproducer.html#a051ca1e78abe5d48660e941ad70da76d", null ],
     [ "get_status", "classInterfacePP_1_1jproducer.html#a8a7d14242f7fff56e9e109897da661c1", null ],
     [ "issue", "classInterfacePP_1_1jproducer.html#ab9d22635fc4108eefd55c1af579eda72", null ],
+    [ "process", "classInterfacePP_1_1jproducer.html#afac8b7cb79f2fd7d3e21a4f4843d84e5", null ],
     [ "read", "classInterfacePP_1_1jproducer.html#aaa6441151911c58be7df6764b5f48d38", null ],
     [ "read", "classInterfacePP_1_1jproducer.html#af9abcdffb777dab717a9dbd3d4e6f07a", null ],
     [ "read", "classInterfacePP_1_1jproducer.html#aae245d51760d2b7aa5d5ca32407979df", null ],

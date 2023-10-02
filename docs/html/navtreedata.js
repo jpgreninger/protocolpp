@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Protocol++(Protocolpp)", "index.html", [
+  [ "Protocol++® (Protocolpp®)", "index.html", [
     [ "Protocol++® (ProtocolPP®) Protocol, Encryption, and Authentication Library with Testbench and Drivers", "index.html", [
       [ "Protocol++® Use Cases", "index.html#USES", null ],
       [ "Ciphers Interface", "index.html#CPHR", null ],
@@ -87,7 +87,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "SFMT-alti_8h.html",
-"classInterfacePP_1_1ringout.html#a6905ed9a665cbb189d7c4e72abe597dc",
+"classInterfacePP_1_1ringout.html#a6836dfc8dac53c054393ad0a76934ba7",
 "classProtocolPP_1_1jconfidentsa.html",
 "classProtocolPP_1_1jecdsaf2m.html#a51dd518ec91785d3f32aa30914609b80",
 "classProtocolPP_1_1jicmp.html#ada9f1f0d84d0cda78855b2b6a7fec0ab",
@@ -97,16 +97,16 @@ var NAVTREEINDEX =
 "classProtocolPP_1_1jsnowv.html#acb36293abee974e117be976387f3aa91",
 "classProtocolPP_1_1jtls13.html#a7f08fcc218f7a28fbbf6edc1fd342942",
 "classProtocolPP_1_1jxmss.html#ace828697ea4a613168fbae0139fc3766",
-"classjzuc.html",
-"classtinyxml2_1_1XMLElement.html#a6e615bc745afd1ca8ded56d7aac02657",
-"namespaceProtocolPP.html#a0160929af40c2a496fe7386216cc2c2fa6dc93745516afae9239129f268a6b2cc",
-"namespaceProtocolPP.html#a22278102b2df1065e7ed79cdbc72c1aaa70e80c736b95b2493e324736d8132ecc",
-"namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a6ad1adfeab824fae47204cf01c6f97a6",
-"namespaceProtocolPP.html#a5f58d1d3c6f509889b286a5ca9c78d7eacf454782885f644d5abdfe73ae23dc45",
-"namespaceProtocolPP.html#a9ba5761a52d7bcaced0b5ae7b32895d0a168d62cdd02baecef462b5bd89435f45",
-"namespaceProtocolPP.html#a9ba5761a52d7bcaced0b5ae7b32895d0ae099532b07887c97fbb4fb36792c9560",
-"namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8a41df343682a4da1c84cf8fb3a3f2a25e",
-"namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2a36d2c2b37f5519dd0b3de4f12552cb71"
+"classjxmssaddr.html",
+"classtinyxml2_1_1XMLElement.html#a68569f59f6382bcea7f5013ec59736d2",
+"namespaceProtocolPP.html#a0160929af40c2a496fe7386216cc2c2fa4da8de9b5b5ba5675aa60158d005d2b7",
+"namespaceProtocolPP.html#a22278102b2df1065e7ed79cdbc72c1aaa7fa5687fcaf17a236325c85b32c7e423",
+"namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a6c394c938ec0c4421e6076f6b02239e5",
+"namespaceProtocolPP.html#a5f58d1d3c6f509889b286a5ca9c78d7ead3866751c66515ac9136a603ae9252c9",
+"namespaceProtocolPP.html#a9ba5761a52d7bcaced0b5ae7b32895d0a18ebae450e5a8f4db48208a95f913e1c",
+"namespaceProtocolPP.html#a9ba5761a52d7bcaced0b5ae7b32895d0ae0c827424a18c9a102cb32d75cdd4c85",
+"namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8a3c81180cb6021e43241aa5aa223587f1",
+"namespaceProtocolPP.html#afa6b70277e264c399f523bfab53442f9ab83848c9aed150699bbc6ca75f589ae3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
