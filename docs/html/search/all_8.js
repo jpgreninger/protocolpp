@@ -122,7 +122,7 @@ var searchData=
   ['iso_5fip_119',['ISO_IP',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8a84dcd6408b787f722707d133707bf9fc',1,'ProtocolPP']]],
   ['iso_5ftp4_120',['ISO_TP4',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8a0308f7d1f5c3e2379d16e5c4cbccb99b',1,'ProtocolPP']]],
   ['iss_121',['ISS',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ae175cdd729efbb98616275a50e3ec42d',1,'ProtocolPP']]],
-  ['issue_122',['issue',['../classInterfacePP_1_1jproducer.html#ab9d22635fc4108eefd55c1af579eda72',1,'InterfacePP::jproducer::issue()'],['../classInterfacePP_1_1jsecproducer.html#a7938b08b44054850d85e2155a10f716f',1,'InterfacePP::jsecproducer::issue()']]],
+  ['issue_122',['issue',['../classInterfacePP_1_1jproducer.html#ab9d22635fc4108eefd55c1af579eda72',1,'InterfacePP::jproducer::issue()'],['../classInterfacePP_1_1jproducerbuf.html#a84d7927fed05d59ddca390fead53d5df',1,'InterfacePP::jproducerbuf::issue()'],['../classInterfacePP_1_1jsecproducer.html#a7938b08b44054850d85e2155a10f716f',1,'InterfacePP::jsecproducer::issue()']]],
   ['istringwriter_123',['IStringWriter',['../structoption_1_1PrintUsageImplementation_1_1IStringWriter.html',1,'option::PrintUsageImplementation']]],
   ['iswidechar_124',['isWideChar',['../structoption_1_1PrintUsageImplementation.html#a41bfaabdf21e68877f3030d36acc0798',1,'option::PrintUsageImplementation']]],
   ['iv_125',['IV',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36aea41ac6e2e650d48da10a7354e89e41a',1,'ProtocolPP']]],

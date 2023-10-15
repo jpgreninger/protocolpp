@@ -63,7 +63,7 @@ var searchData=
   ['direction_60',['DIRECTION',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a2257812a84a2cb06b01f5d72a0d755b0',1,'ProtocolPP']]],
   ['dmgcts_61',['DMGCTS',['../namespaceProtocolPP.html#ae194a2c104fc4e9ad7e9ffa484710f80af280cf394f8055210b4aa91a0b2f033b',1,'ProtocolPP']]],
   ['dmgdts_62',['DMGDTS',['../namespaceProtocolPP.html#ae194a2c104fc4e9ad7e9ffa484710f80a4459c2bd02877c165c4d107dc388cd99',1,'ProtocolPP']]],
-  ['downlink_63',['DOWNLINK',['../classProtocolPP_1_1jmodes.html#ab2cdd1d15cbef658be2040fc8a470d36aa82ceabb0bb3d317d9a25e80d69ff9f7',1,'ProtocolPP::jmodes::DOWNLINK()'],['../namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2ac9a915533cf9ac1937ffdab0e81671c8',1,'ProtocolPP::DOWNLINK()']]],
+  ['downlink_63',['DOWNLINK',['../namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2ac9a915533cf9ac1937ffdab0e81671c8',1,'ProtocolPP::DOWNLINK()'],['../classProtocolPP_1_1jmodes.html#ab2cdd1d15cbef658be2040fc8a470d36aa82ceabb0bb3d317d9a25e80d69ff9f7',1,'ProtocolPP::jmodes::DOWNLINK()']]],
   ['driver_64',['DRIVER',['../namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca6db9644e7baee077ef263ece4d5f02a5',1,'ProtocolPP']]],
   ['dsa_65',['DSA',['../namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca58637556047b94ec694f080e1660c468',1,'ProtocolPP']]],
   ['dsecn_66',['DSECN',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a096b8b5ee584a744b91b068f5e6e21dd',1,'ProtocolPP']]],
@@ -71,5 +71,6 @@ var searchData=
   ['dsthstunknwn_68',['DSTHSTUNKNWN',['../namespaceProtocolPP.html#a053cb4b6f939495763f9be4b0d23c769aae4c6bfa2a8f691b945243611a6ff1f9',1,'ProtocolPP']]],
   ['dstunknwn_69',['DSTUNKNWN',['../namespaceProtocolPP.html#a053cb4b6f939495763f9be4b0d23c769a068376e6bc46cbed86793470da833944',1,'ProtocolPP']]],
   ['dtls_70',['DTLS',['../namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186af921e1ae4c59d704473f10b1773fc320',1,'ProtocolPP']]],
-  ['dtls13_71',['DTLS13',['../namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186ad31b7220ea262f7fbadeb098c44a6c21',1,'ProtocolPP']]]
+  ['dtls13_71',['DTLS13',['../namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca41c9aa8c86546629a77bfb87853a8e1c',1,'ProtocolPP']]],
+  ['dtlsv13_72',['DTLSV13',['../namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186a66f2f4b47b97ce0d8c0603feaa513846',1,'ProtocolPP']]]
 ];

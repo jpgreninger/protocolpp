@@ -19,6 +19,6 @@ var searchData=
   ['intvalue_16',['IntValue',['../classtinyxml2_1_1XMLAttribute.html#adfa2433f0fdafd5c3880936de9affa80',1,'tinyxml2::XMLAttribute']]],
   ['isfirst_17',['isFirst',['../classoption_1_1Option.html#af51f53a553ef46110e36008a58466a2e',1,'option::Option']]],
   ['islast_18',['isLast',['../classoption_1_1Option.html#a36fa8fde6fce89462ded79ab56180ff7',1,'option::Option']]],
-  ['issue_19',['issue',['../classInterfacePP_1_1jproducer.html#ab9d22635fc4108eefd55c1af579eda72',1,'InterfacePP::jproducer::issue()'],['../classInterfacePP_1_1jsecproducer.html#a7938b08b44054850d85e2155a10f716f',1,'InterfacePP::jsecproducer::issue()']]],
+  ['issue_19',['issue',['../classInterfacePP_1_1jproducer.html#ab9d22635fc4108eefd55c1af579eda72',1,'InterfacePP::jproducer::issue()'],['../classInterfacePP_1_1jproducerbuf.html#a84d7927fed05d59ddca390fead53d5df',1,'InterfacePP::jproducerbuf::issue()'],['../classInterfacePP_1_1jsecproducer.html#a7938b08b44054850d85e2155a10f716f',1,'InterfacePP::jsecproducer::issue()']]],
   ['iswidechar_20',['isWideChar',['../structoption_1_1PrintUsageImplementation.html#a41bfaabdf21e68877f3030d36acc0798',1,'option::PrintUsageImplementation']]]
 ];

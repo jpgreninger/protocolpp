@@ -199,6 +199,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmemblobsa.html">jmemblobsa</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmemory.html">jmemory</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmodes.html">jmodes</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jpacket.html">jpacket</a></td></tr>
@@ -717,8 +719,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca6f8b3788be7b5f3a0156d6b135dde350">XMSS</a>
 , <a class="el" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca28e25fdd2848797f3d8126a38d50d8b1">LMS</a>
 , <br />
-&#160;&#160;<a class="el" href="namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186ab424b019919793a0bce3ae4747b68b3c">TLS13</a> = 0x0304
-, <a class="el" href="namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186ad31b7220ea262f7fbadeb098c44a6c21">DTLS13</a> = 0xFFFD
+&#160;&#160;<a class="el" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca1ebdae7fbdf683fdd3a425e38a391b1a">TLS13</a>
+, <a class="el" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca41c9aa8c86546629a77bfb87853a8e1c">DTLS13</a>
 , <a class="el" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca40ca22c7622e6dd2af5b3d961c0014de">EGRE</a>
 , <a class="el" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca83ccd0956b9b5a7485ff58122fe229ba">NVGRE</a>
 , <br />
@@ -1342,9 +1344,9 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186a6574b5b2e3b6cf538c3d8a22a59e4ab2">TLS11</a> = 0x0302
 , <a class="el" href="namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186a60f328bfc9feba1e219ee794e2577f97">TLS12</a> = 0x0303
 , <br />
-&#160;&#160;<a class="el" href="namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186ab424b019919793a0bce3ae4747b68b3c">TLS13</a> = 0x0304
+&#160;&#160;<a class="el" href="namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186a8469d700c9c8ab55fa2fde7eb1a16047">TLSV13</a> = 0x0304
 , <a class="el" href="namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186af921e1ae4c59d704473f10b1773fc320">DTLS</a> = 0xFFFE
-, <a class="el" href="namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186ad31b7220ea262f7fbadeb098c44a6c21">DTLS13</a> = 0xFFFD
+, <a class="el" href="namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186a66f2f4b47b97ce0d8c0603feaa513846">DTLSV13</a> = 0xFFFD
 <br />
  }</td></tr>
 <tr class="separator:abf0c5bc6304322e40527c8f28a58d186"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -7145,11 +7147,9 @@ and NVGRE fields</h1>
 </td></tr>
 <tr><td class="fieldname"><a id="a15957f30f5cdc906a54e53fcb4834e5ca28e25fdd2848797f3d8126a38d50d8b1" name="a15957f30f5cdc906a54e53fcb4834e5ca28e25fdd2848797f3d8126a38d50d8b1"></a>LMS&#160;</td><td class="fielddoc"><p >LMS Signatrure method. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="abf0c5bc6304322e40527c8f28a58d186ab424b019919793a0bce3ae4747b68b3c" name="abf0c5bc6304322e40527c8f28a58d186ab424b019919793a0bce3ae4747b68b3c"></a>TLS13&#160;</td><td class="fielddoc"><p >TLS v1.3. </p>
-<p >Transprot Layer Security v1.3 - 0x0304. </p>
+<tr><td class="fieldname"><a id="a15957f30f5cdc906a54e53fcb4834e5ca1ebdae7fbdf683fdd3a425e38a391b1a" name="a15957f30f5cdc906a54e53fcb4834e5ca1ebdae7fbdf683fdd3a425e38a391b1a"></a>TLS13&#160;</td><td class="fielddoc"><p >TLS v1.3. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="abf0c5bc6304322e40527c8f28a58d186ad31b7220ea262f7fbadeb098c44a6c21" name="abf0c5bc6304322e40527c8f28a58d186ad31b7220ea262f7fbadeb098c44a6c21"></a>DTLS13&#160;</td><td class="fielddoc"><p >DTLS v1.3. </p>
-<p >Datagram Transport Layer Security v1.3 - 0xFFFD. </p>
+<tr><td class="fieldname"><a id="a15957f30f5cdc906a54e53fcb4834e5ca41c9aa8c86546629a77bfb87853a8e1c" name="a15957f30f5cdc906a54e53fcb4834e5ca41c9aa8c86546629a77bfb87853a8e1c"></a>DTLS13&#160;</td><td class="fielddoc"><p >DTLS v1.3. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a15957f30f5cdc906a54e53fcb4834e5ca40ca22c7622e6dd2af5b3d961c0014de" name="a15957f30f5cdc906a54e53fcb4834e5ca40ca22c7622e6dd2af5b3d961c0014de"></a>EGRE&#160;</td><td class="fielddoc"><p >Extended General Encapsulation Protocol (EGRE) </p>
 </td></tr>
@@ -8034,9 +8034,9 @@ and NVGRE fields</h1>
     <tr><td class="paramname">TLS10</td><td>- Transport Layer Security v1.0 </td></tr>
     <tr><td class="paramname">TLS11</td><td>- Transport Layer Security v1.1 </td></tr>
     <tr><td class="paramname">TLS12</td><td>- Transport Layer Security v1.2 </td></tr>
-    <tr><td class="paramname">TLS13</td><td>- Transport Layer Security v1.3 </td></tr>
+    <tr><td class="paramname">TLSV13</td><td>- Transport Layer Security v1.3 </td></tr>
     <tr><td class="paramname">DTLS</td><td>- Datagram Transport Layer Security </td></tr>
-    <tr><td class="paramname">DTLS13</td><td>- Datagram Transport Layer Security v1.3 </td></tr>
+    <tr><td class="paramname">DTLSV13</td><td>- Datagram Transport Layer Security v1.3 </td></tr>
   </table>
   </dd>
 </dl>
@@ -8049,13 +8049,11 @@ and NVGRE fields</h1>
 </td></tr>
 <tr><td class="fieldname"><a id="abf0c5bc6304322e40527c8f28a58d186a60f328bfc9feba1e219ee794e2577f97" name="abf0c5bc6304322e40527c8f28a58d186a60f328bfc9feba1e219ee794e2577f97"></a>TLS12&#160;</td><td class="fielddoc"><p >Transport Layer Security v1.2 - 0x0303. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="abf0c5bc6304322e40527c8f28a58d186ab424b019919793a0bce3ae4747b68b3c" name="abf0c5bc6304322e40527c8f28a58d186ab424b019919793a0bce3ae4747b68b3c"></a>TLS13&#160;</td><td class="fielddoc"><p >TLS v1.3. </p>
-<p >Transprot Layer Security v1.3 - 0x0304. </p>
+<tr><td class="fieldname"><a id="abf0c5bc6304322e40527c8f28a58d186a8469d700c9c8ab55fa2fde7eb1a16047" name="abf0c5bc6304322e40527c8f28a58d186a8469d700c9c8ab55fa2fde7eb1a16047"></a>TLSV13&#160;</td><td class="fielddoc"><p >Transprot Layer Security v1.3 - 0x0304. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="abf0c5bc6304322e40527c8f28a58d186af921e1ae4c59d704473f10b1773fc320" name="abf0c5bc6304322e40527c8f28a58d186af921e1ae4c59d704473f10b1773fc320"></a>DTLS&#160;</td><td class="fielddoc"><p >Datagram Transport Layer Security - 0xFFFE. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="abf0c5bc6304322e40527c8f28a58d186ad31b7220ea262f7fbadeb098c44a6c21" name="abf0c5bc6304322e40527c8f28a58d186ad31b7220ea262f7fbadeb098c44a6c21"></a>DTLS13&#160;</td><td class="fielddoc"><p >DTLS v1.3. </p>
-<p >Datagram Transport Layer Security v1.3 - 0xFFFD. </p>
+<tr><td class="fieldname"><a id="abf0c5bc6304322e40527c8f28a58d186a66f2f4b47b97ce0d8c0603feaa513846" name="abf0c5bc6304322e40527c8f28a58d186a66f2f4b47b97ce0d8c0603feaa513846"></a>DTLSV13&#160;</td><td class="fielddoc"><p >Datagram Transport Layer Security v1.3 - 0xFFFD. </p>
 </td></tr>
 </table>
 
@@ -9479,7 +9477,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceProtocolPP.html">ProtocolPP</a></li>
-    <li class="footer">Generated on Sun Oct 1 2023 13:13:56 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Thu Oct 12 2023 20:18:41 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

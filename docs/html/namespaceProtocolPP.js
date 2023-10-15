@@ -49,6 +49,7 @@ var namespaceProtocolPP =
     [ "jmacsecsa", "classProtocolPP_1_1jmacsecsa.html", "classProtocolPP_1_1jmacsecsa" ],
     [ "jmemblob", "classProtocolPP_1_1jmemblob.html", "classProtocolPP_1_1jmemblob" ],
     [ "jmemblobsa", "classProtocolPP_1_1jmemblobsa.html", "classProtocolPP_1_1jmemblobsa" ],
+    [ "jmemory", "classProtocolPP_1_1jmemory.html", "classProtocolPP_1_1jmemory" ],
     [ "jmodes", "classProtocolPP_1_1jmodes.html", "classProtocolPP_1_1jmodes" ],
     [ "jpacket", "classProtocolPP_1_1jpacket.html", "classProtocolPP_1_1jpacket" ],
     [ "jpoly1305", "classProtocolPP_1_1jpoly1305.html", "classProtocolPP_1_1jpoly1305" ],
@@ -1332,8 +1333,8 @@ var namespaceProtocolPP =
       [ "BLOB", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5cafa226d01a0beeb1bfb264792eaaa952e", null ],
       [ "XMSS", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca6f8b3788be7b5f3a0156d6b135dde350", null ],
       [ "LMS", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca28e25fdd2848797f3d8126a38d50d8b1", null ],
-      [ "TLS13", "namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186ab424b019919793a0bce3ae4747b68b3c", null ],
-      [ "DTLS13", "namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186ad31b7220ea262f7fbadeb098c44a6c21", null ],
+      [ "TLS13", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca1ebdae7fbdf683fdd3a425e38a391b1a", null ],
+      [ "DTLS13", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca41c9aa8c86546629a77bfb87853a8e1c", null ],
       [ "EGRE", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca40ca22c7622e6dd2af5b3d961c0014de", null ],
       [ "NVGRE", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca83ccd0956b9b5a7485ff58122fe229ba", null ],
       [ "VXLAN", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca122355e146b63736fa7f07544f0e67ef", null ],
@@ -1784,9 +1785,9 @@ var namespaceProtocolPP =
       [ "TLS10", "namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186a4a525d33c527ed5d2f87efff6e83868d", null ],
       [ "TLS11", "namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186a6574b5b2e3b6cf538c3d8a22a59e4ab2", null ],
       [ "TLS12", "namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186a60f328bfc9feba1e219ee794e2577f97", null ],
-      [ "TLS13", "namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186ab424b019919793a0bce3ae4747b68b3c", null ],
+      [ "TLSV13", "namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186a8469d700c9c8ab55fa2fde7eb1a16047", null ],
       [ "DTLS", "namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186af921e1ae4c59d704473f10b1773fc320", null ],
-      [ "DTLS13", "namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186ad31b7220ea262f7fbadeb098c44a6c21", null ]
+      [ "DTLSV13", "namespaceProtocolPP.html#abf0c5bc6304322e40527c8f28a58d186a66f2f4b47b97ce0d8c0603feaa513846", null ]
     ] ],
     [ "transform_attr_t", "namespaceProtocolPP.html#a058e83857825575a63788e155af2c664", [
       [ "ATTR_KEY_LENGTH", "namespaceProtocolPP.html#a058e83857825575a63788e155af2c664a83748c919a66b56eb6ec05aeac9f2317", null ]
