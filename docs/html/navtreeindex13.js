@@ -1,7 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"functions_e.html":[2,3,0,4],
-"functions_enum.html":[2,3,3],
 "functions_eval.html":[2,3,4],
 "functions_f.html":[2,3,0,5],
 "functions_func.html":[2,3,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX13 =
 "namespaceProtocolPP.html#a17e72d24d38c456170dbf78c05c8c27ba4a38084faf7e604af9e98ac114a0e864":[1,0,2,150,14],
 "namespaceProtocolPP.html#a17e72d24d38c456170dbf78c05c8c27ba4d916a773e99f9db0251fc0a6dbebf19":[1,0,2,150,3],
 "namespaceProtocolPP.html#a17e72d24d38c456170dbf78c05c8c27ba500b1869b1c4dd7fb292bbb6d0dc826e":[1,0,2,150,16],
-"namespaceProtocolPP.html#a17e72d24d38c456170dbf78c05c8c27ba51903b572284e0e7f981570dae821e0d":[1,0,2,150,12]
+"namespaceProtocolPP.html#a17e72d24d38c456170dbf78c05c8c27ba51903b572284e0e7f981570dae821e0d":[1,0,2,150,12],
+"namespaceProtocolPP.html#a17e72d24d38c456170dbf78c05c8c27ba5bd3aeb8b7a4576598f20eb427fde492":[1,0,2,150,8],
+"namespaceProtocolPP.html#a17e72d24d38c456170dbf78c05c8c27ba5c9e2fb2d6a4abe60eefe36ac1c282cd":[1,0,2,150,6]
 };

@@ -95,37 +95,35 @@ $(document).ready(function(){initNavTree('classjmemory.html',''); initResizable(
 
 <p><code>#include &quot;jmemory.h&quot;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Buffer manager using doubly linked-list from the</p>
+<div class="textblock"><p >Memory using doubly linked-list from the</p>
 <p >standard library. Constructs a memory with the</p>
 <p >requested number of buffers of the templated size</p>
 <div class="fragment"><div class="line"><span class="comment">// create a memory of 256 buffers each 256 bytes long</span></div>
-<div class="line"><a class="code hl_class" href="classjbuffman.html">jbuffman</a> mem1&lt;uint8_t, 256&gt;(256);</div>
+<div class="line"><a class="code hl_class" href="classjmemory.html">jmemory</a> mem1&lt;uint8_t, 256&gt;(256);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// create a memory of 16384 buffers each 384 bytes long</span></div>
-<div class="line"><a class="code hl_class" href="classjbuffman.html">jbuffman</a> mem2&lt;uint8_t, 384&gt;(16384);</div>
+<div class="line"><a class="code hl_class" href="classjmemory.html">jmemory</a> mem2&lt;uint8_t, 384&gt;(16384);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// request 20 buffers from mem1</span></div>
-<div class="line">std::list&lt;std::array&lt;uint8_t, 256&gt;&gt; buf1 = mem1.dequeue(20);</div>
+<div class="line">uint64_t addr1 = mem1.dequeue(20);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// return the buffers to the memory</span></div>
-<div class="line">mem1.enqueue(buf1);</div>
+<div class="line">mem1.enqueue(addr1);</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// request 200 buffers from mem2 wrapped in a shared_ptr</span></div>
-<div class="line">std::shared_ptr&lt;std::list&lt;std::array&lt;uint8_t, 384&gt;&gt;&gt; buf2 = std::make_shared&lt;std::list&lt;std::array&lt;uint8_t, 384&gt;&gt;&gt;();</div>
-<div class="line">mem2.dequeue(200, buf2);</div>
+<div class="line"><span class="comment">// request 200 buffers from mem2</span></div>
+<div class="line">uint64_t addr2 = mem2.dequeue(200);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// return the 200 buffers to mem2 from the shared_ptr</span></div>
-<div class="line">mem2.enqueue(buf2);</div>
+<div class="line">mem2.enqueue(addr2);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// return number of available buffers in mem1</span></div>
 <div class="line"><span class="keywordtype">int</span> numbufs = mem1.avail();</div>
-<div class="ttc" id="aclassjbuffman_html"><div class="ttname"><a href="classjbuffman.html">jbuffman</a></div></div>
-</div><!-- fragment --><p >Using the buffers is simply using the functions for std::list and std::array. Iterate through the buffers in the list, write to or reading the data from the std:: array at each node. For example, to used the buf1 above to write data it would be</p>
-<div class="fragment"><div class="line"><span class="keywordflow">for</span>(std::list&lt;std::array&lt;uint8_t, 256&gt;&gt;::iterator itr=buf1.begin(); itr!=buf1.end(); itr++) {</div>
-<div class="line">    std::memcpy(itr-&gt;data(), new_data.ptr(), new_data.size());</div>
-<div class="line">}</div>
-</div><!-- fragment --><p >The "*itr-&gt;data()" returns a pointer to the first element in the std::array, perfect for use with std::memcpy. The class jbuffacc provides a wrapper to read and write data into the buffers. Click the link below to see the interface for the wrapper</p>
-<p ><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jmemory.html">ProtocolPP::jmemory</a></dd></dl>
+<div class="ttc" id="aclassjmemory_html"><div class="ttname"><a href="classjmemory.html">jmemory</a></div></div>
+</div><!-- fragment --><p >Using the buffers is simply using the functions for std::array. Iterate through the buffers in the list, write to or reading the data from the memory at each node. For example, to used the addr1 above to write data it would be</p>
+<div class="fragment"><div class="line">mem1.write(addr1, input1, inlen);</div>
+<div class="line"> </div>
+<div class="line">mem1.read(addr1, out1, outlen);</div>
+</div><!-- fragment --><p ><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jmemory.html">ProtocolPP::jmemory</a></dd></dl>
 <p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classjmemory.html">jmemory</a></dd></dl>
 <center>Protocol++&reg; (<a class="el" href="namespaceProtocolPP.html">ProtocolPP</a>&reg;) written by : John Peter Greninger &bull; &copy; John Peter Greninger 2015-2023 &bull; All Rights Reserved</center> <center><sub>All copyrights and trademarks are the property of their respective owners</sub></center><p >The source code contained or described herein and all documents related to the source code (herein called "Material") are owned by John Peter Greninger and Sheila Rocha Greninger. Title to the Material remains with John Peter Greninger and Sheila Rocha Greninger. The Material contains trade secrets and proprietary and confidential information of John Peter Greninger and Sheila Rocha Greninger. The Material is protected by worldwide copyright and trade secret laws and treaty provisions. No part of the Material may be used, copied, reproduced, modified, published, uploaded, posted, transmitted, distributed, or disclosed in any way without prior express written consent of John Peter Greninger and Sheila Rocha Greninger (both are required)</p>
 <p >No license under any patent, copyright, trade secret, or other intellectual property right is granted to or conferred upon you by disclosure or delivery of the Materials, either expressly, by implication, inducement, estoppel, or otherwise. Any license under such intellectual property rights must be express and approved by John Peter Greninger and Sheila Rocha Greninger in writing</p>
@@ -162,7 +160,7 @@ $(document).ready(function(){initNavTree('classjmemory.html',''); initResizable(
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjmemory.html">jmemory</a></li>
-    <li class="footer">Generated on Thu Oct 12 2023 20:18:41 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Oct 20 2023 23:46:49 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

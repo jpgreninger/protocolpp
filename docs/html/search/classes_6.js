@@ -1,8 +1,8 @@
 var searchData=
 [
   ['jarray_0',['jarray',['../classjarray.html',1,'jarray'],['../classProtocolPP_1_1jarray.html',1,'ProtocolPP::jarray&lt; T &gt;']]],
-  ['jarray_3c_20int_20_3e_1',['jarray&lt; int &gt;',['../classProtocolPP_1_1jarray.html',1,'ProtocolPP']]],
-  ['jarray_3c_20uint32_5ft_20_3e_2',['jarray&lt; uint32_t &gt;',['../classProtocolPP_1_1jarray.html',1,'ProtocolPP']]],
+  ['jarray_3c_20uint32_5ft_20_3e_1',['jarray&lt; uint32_t &gt;',['../classProtocolPP_1_1jarray.html',1,'ProtocolPP']]],
+  ['jarray_3c_20uint64_5ft_20_3e_2',['jarray&lt; uint64_t &gt;',['../classProtocolPP_1_1jarray.html',1,'ProtocolPP']]],
   ['jarray_3c_20uint8_5ft_20_3e_3',['jarray&lt; uint8_t &gt;',['../classProtocolPP_1_1jarray.html',1,'ProtocolPP']]],
   ['jbuffacc_4',['jbuffacc',['../classjbuffacc.html',1,'jbuffacc'],['../classProtocolPP_1_1jbuffacc.html',1,'ProtocolPP::jbuffacc&lt; Q, T &gt;']]],
   ['jbuffman_5',['jbuffman',['../classjbuffman.html',1,'jbuffman'],['../classProtocolPP_1_1jbuffman.html',1,'ProtocolPP::jbuffman&lt; T, Q &gt;']]],

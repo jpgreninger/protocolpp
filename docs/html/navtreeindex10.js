@@ -1,7 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"classProtocolPP_1_1jwimax.html#a3b127891068dc060414fa725c8342c99":[2,0,4,77,5],
-"classProtocolPP_1_1jwimax.html#a4c6e191e20d2ce575bedd074e8590acc":[1,0,2,77,2],
 "classProtocolPP_1_1jwimax.html#a4c6e191e20d2ce575bedd074e8590acc":[2,0,4,77,2],
 "classProtocolPP_1_1jwimax.html#a7cc2fde4e33f035eeceecacdb1c0fede":[1,0,2,77,6],
 "classProtocolPP_1_1jwimax.html#a7cc2fde4e33f035eeceecacdb1c0fede":[2,0,4,77,6],
@@ -249,5 +247,7 @@ var NAVTREEINDEX10 =
 "classjbuffman.html":[2,0,13],
 "classjconfident.html":[2,0,14],
 "classjconfidentsa.html":[2,0,15],
-"classjcrc.html":[2,0,16]
+"classjcrc.html":[2,0,16],
+"classjdata.html":[2,0,17],
+"classjdirectdrive.html":[2,0,18]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX21 =
 {
-"structoption_1_1Parser_1_1Action.html#a176b5f783bb35eb015b6d2c09422457d":[2,0,2,3,0,1],
-"structoption_1_1Parser_1_1Action.html#a3ec558b51e34d33d116f14587289e032":[1,0,0,3,0,0],
 "structoption_1_1Parser_1_1Action.html#a3ec558b51e34d33d116f14587289e032":[2,0,2,3,0,0],
 "structoption_1_1PrintUsageImplementation.html":[1,0,0,4],
 "structoption_1_1PrintUsageImplementation.html":[2,0,2,4],
