@@ -5,14 +5,13 @@ var classProtocolPP_1_1jmemory =
     [ "jmemory", "classProtocolPP_1_1jmemory.html#a6bab380402102736316d0d470bd1087a", null ],
     [ "jmemory", "classProtocolPP_1_1jmemory.html#ad726cab719caf537b75a71a7da518054", null ],
     [ "~jmemory", "classProtocolPP_1_1jmemory.html#aa5864a8df5d3be2eaf7d87280d4d30e3", null ],
-    [ "add", "classProtocolPP_1_1jmemory.html#ac2ae610241bf3033616f23412fbb4a76", null ],
     [ "avail", "classProtocolPP_1_1jmemory.html#a2296eb36194c44f012349e2fb590ffb4", null ],
-    [ "dequeue", "classProtocolPP_1_1jmemory.html#aa86a2314b0523b75b5539ddfd05bb706", null ],
+    [ "dequeue", "classProtocolPP_1_1jmemory.html#a123220f9b3a056fc1a67c0396fd2291a", null ],
     [ "enqueue", "classProtocolPP_1_1jmemory.html#a04fd8604e491cae6d49448187832d627", null ],
-    [ "read", "classProtocolPP_1_1jmemory.html#a313255a11c1c488eefa58dd736e146cd", null ],
-    [ "read", "classProtocolPP_1_1jmemory.html#a57dfaeb4dab43d562e9600258f2f7711", null ],
-    [ "read", "classProtocolPP_1_1jmemory.html#a8b12a12121c9090d4d1ddc1cb082a24a", null ],
-    [ "write", "classProtocolPP_1_1jmemory.html#ad0d883bf2596fbdf368e5afbda8591d9", null ],
-    [ "write", "classProtocolPP_1_1jmemory.html#a935778c0858092ae2681151b13bc8af1", null ],
-    [ "write", "classProtocolPP_1_1jmemory.html#acb7a5bbe5d6eb5d18897bfcf176807cd", null ]
+    [ "read", "classProtocolPP_1_1jmemory.html#ad55098b553d24d318dd6c8a85e32b4b4", null ],
+    [ "read", "classProtocolPP_1_1jmemory.html#ac52f6afebbb1bf373c58abfee5c422c9", null ],
+    [ "read", "classProtocolPP_1_1jmemory.html#ac63078dac6f9ff2f8d84b29b34d0ab11", null ],
+    [ "write", "classProtocolPP_1_1jmemory.html#aadb6d5321bdd49a8ce4613da0461deaf", null ],
+    [ "write", "classProtocolPP_1_1jmemory.html#af7ccf51b0a2bacf1e76d0f6186e1c077", null ],
+    [ "write", "classProtocolPP_1_1jmemory.html#a65ac19d2a8e2e31723564bae333ba2a7", null ]
 ];

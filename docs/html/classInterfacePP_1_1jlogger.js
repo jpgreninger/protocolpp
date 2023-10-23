@@ -29,8 +29,10 @@ var classInterfacePP_1_1jlogger =
     [ "jlogger", "classInterfacePP_1_1jlogger.html#a3a6ab8b168e2e24d3f765610b2881b90", null ],
     [ "~jlogger", "classInterfacePP_1_1jlogger.html#a29a5bdef8a5eae88e0d228804132a90f", null ],
     [ "get_color", "classInterfacePP_1_1jlogger.html#a9610d63ce71149be2d5713031de6757b", null ],
+    [ "get_loglvl", "classInterfacePP_1_1jlogger.html#a3501561ca126de971c422d16fd91da4e", null ],
     [ "print", "classInterfacePP_1_1jlogger.html#af2d4d146b0259734b2d092e77063e5e3", null ],
     [ "set_color", "classInterfacePP_1_1jlogger.html#ab791acee80b44eced2c5324d4d8a4840", null ],
+    [ "set_loglvl", "classInterfacePP_1_1jlogger.html#a4b102b6b02738b9f25dfb2aa268c6b57", null ],
     [ "toCode", "classInterfacePP_1_1jlogger.html#ae9880c1c33a6cee4234ae0e7f5efba32", null ],
     [ "toEnum", "classInterfacePP_1_1jlogger.html#a86303f878a550177f3e729bbfc82b3a8", null ],
     [ "toStr", "classInterfacePP_1_1jlogger.html#af58b78e24001d631f22f3a6ba258a61f", null ]
