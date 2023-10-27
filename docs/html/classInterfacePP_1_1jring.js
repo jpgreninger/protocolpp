@@ -1,7 +1,7 @@
 var classInterfacePP_1_1jring =
 [
     [ "jring", "classInterfacePP_1_1jring.html#a5a3c2571bc366156fdb0f93fea2f21e9", null ],
-    [ "~jring", "classInterfacePP_1_1jring.html#a2a3ee1653f3b59f6e2c87ca596c3fe94", null ],
+    [ "~jring", "classInterfacePP_1_1jring.html#acdfc665a0b1eaea25bf4745673488926", null ],
     [ "get_avail", "classInterfacePP_1_1jring.html#a9bed331367123a3203e9c28c65871528", null ],
     [ "get_proc", "classInterfacePP_1_1jring.html#a0292a7c0e9313ce74a707c6a51b997c4", null ],
     [ "move", "classInterfacePP_1_1jring.html#a4e8d78d5004806fcd73db53794dccc79", null ],

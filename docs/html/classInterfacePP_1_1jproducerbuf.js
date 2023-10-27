@@ -1,7 +1,7 @@
 var classInterfacePP_1_1jproducerbuf =
 [
     [ "jproducerbuf", "classInterfacePP_1_1jproducerbuf.html#a40d02333d6e11afbe68b23854745e7df", null ],
-    [ "~jproducerbuf", "classInterfacePP_1_1jproducerbuf.html#a291a33a8f8a28584f966f78f63369ecf", null ],
+    [ "~jproducerbuf", "classInterfacePP_1_1jproducerbuf.html#a85c9ed8012ad0ea875f7aab00b24e31c", null ],
     [ "get_field", "classInterfacePP_1_1jproducerbuf.html#ac9609c95388cd3728dbc2e458f94c6da", null ],
     [ "get_mem", "classInterfacePP_1_1jproducerbuf.html#a97e4050ce5582ad438508caf7812640c", null ],
     [ "get_mode", "classInterfacePP_1_1jproducerbuf.html#a1bd7b411a0575c540d5958c6c9c34f9f", null ],

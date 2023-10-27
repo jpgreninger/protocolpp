@@ -133,6 +133,6 @@ var searchData=
   ['auth_5funassigned8_130',['AUTH_UNASSIGNED8',['../namespaceProtocolPP.html#a24cdc6d0c8f5bbb4ec61f841e6154dfead0d46f6405839ac60b43365140667613',1,'ProtocolPP']]],
   ['authfail_131',['AUTHFAIL',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ab540163422287bd1b3dd1aef9a97131e',1,'ProtocolPP']]],
   ['authkey_132',['AUTHKEY',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a8dc726871b7db634e3f8eae12c0b8189',1,'ProtocolPP']]],
-  ['avail_133',['avail',['../classProtocolPP_1_1jmemory.html#a2296eb36194c44f012349e2fb590ffb4',1,'ProtocolPP::jmemory::avail()'],['../classProtocolPP_1_1jbuffman.html#a013a70dc9091795d97486897e472bb10',1,'ProtocolPP::jbuffman::avail()'],['../classDriverPP_1_1jdirectdrive.html#a9d60d897d205d7365a9ef93902002916',1,'DriverPP::jdirectdrive::avail()']]],
+  ['avail_133',['avail',['../classProtocolPP_1_1jmemory.html#a29c4d11c713e5fef9b82cd6563196a13',1,'ProtocolPP::jmemory::avail()'],['../classProtocolPP_1_1jbuffman.html#a013a70dc9091795d97486897e472bb10',1,'ProtocolPP::jbuffman::avail()'],['../classDriverPP_1_1jdirectdrive.html#a9d60d897d205d7365a9ef93902002916',1,'DriverPP::jdirectdrive::avail()']]],
   ['ax_5f25_134',['AX_25',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8ac97ac9116571485d0f80cabdf21b6605',1,'ProtocolPP']]]
 ];

@@ -97,6 +97,158 @@ $(document).ready(function(){initNavTree('classjcrc.html',''); initResizable(); 
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h1><a class="anchor" id="CRCS"></a>
 Cyclic Redundacy Check (CRC)</h1>
+<dl class="section see"><dt>See also</dt><dd><a href="https://en.wikipedia.org/wiki/Cyclic_redundancy_check">https://en.wikipedia.org/wiki/Cyclic_redundancy_check</a> </dd>
+<dd>
+<a href="https://reveng.sourceforge.io/crc-catalogue/all.htm">https://reveng.sourceforge.io/crc-catalogue/all.htm</a></dd></dl>
+<p>A cyclic redundancy check (CRC) is an error-detecting code commonly used in digital networks and storage devices to detect accidental changes to digital data. Blocks of data entering these systems get a short check value attached, based on the remainder of a polynomial division of their contents. On retrieval, the calculation is repeated and, in the event the check values do not match, corrective action can be taken against data corruption. CRCs can be used for error correction (see bitfilters)</p>
+<p >CRCs are so called because the check (data verification) value is a redundancy (it expands the message without adding information) and the algorithm is based on cyclic codes. CRCs are popular because they are simple to implement in binary hardware, easy to analyze mathematically, and particularly good at detecting common errors caused by noise in transmission channels. Because the check value has a fixed length, the function that generates it is occasionally used as a hash function</p>
+<p ><b>Introduction</b></p>
+<p >CRCs are based on the theory of cyclic error-correcting codes. The use of systematic cyclic codes, which encode messages by adding a fixed-length check value, for the purpose of error detection in communication networks, was first proposed by W. Wesley Peterson in 1961.[2] Cyclic codes are not only simple to implement but have the benefit of being particularly well suited for the detection of burst errors: contiguous sequences of erroneous data symbols in messages. This is important because burst errors are common transmission errors in many communication channels, including magnetic and optical storage devices. Typically an n-bit CRC applied to a data block of arbitrary length will detect any single error burst not longer than n bits, and the fraction of all longer error bursts that it will detect is approximately (1 − 2−n)</p>
+<p >Specification of a CRC code requires definition of a so-called generator polynomial. This polynomial becomes the divisor in a polynomial long division, which takes the message as the dividend and in which the quotient is discarded and the remainder becomes the result. The important caveat is that the polynomial coefficients are calculated according to the arithmetic of a finite field, so the addition operation can always be performed bitwise-parallel (there is no carry between digits)</p>
+<p >In practice, all commonly used CRCs employ the finite field of two elements, GF(2). The two elements are usually called 0 and 1, comfortably matching computer architecture</p>
+<p >A CRC is called an n-bit CRC when its check value is n bits long. For a given n, multiple CRCs are possible, each with a different polynomial. Such a polynomial has highest degree n, which means it has n + 1 terms. In other words, the polynomial has a length of n + 1; its encoding requires n + 1 bits. Note that most polynomial specifications either drop the MSB or LSB, since they are always 1. The CRC and associated polynomial typically have a name of the form CRC-n-XXX as in the table below</p>
+<p >The simplest error-detection system, the parity bit, is in fact a 1-bit CRC: it uses the generator polynomial x + 1 (two terms),[3] and has the name CRC-1</p>
+<p ><b>Specification</b></p>
+<p >The concept of the CRC as an error-detecting code gets complicated when an implementer or standards committee uses it to design a practical system. Here are some of the complications:</p>
+<ul>
+<li>Sometimes an implementation prefixes a fixed bit pattern to the bitstream to be checked. This is useful when clocking errors might insert 0-bits in front of a message, an alteration that would otherwise leave the check value unchanged</li>
+<li>Usually, but not always, an implementation appends n 0-bits (n being the size of the CRC) to the bitstream to be checked before the polynomial division occurs. Such appending is explicitly demonstrated in the Computation of CRC article. This has the convenience that the remainder of the original bitstream with the check value appended is exactly zero, so the CRC can be checked simply by performing the polynomial division on the received bitstream and comparing the remainder with zero. Due to the associative and commutative properties of the exclusive-or operation, practical table driven implementations can obtain a result numerically equivalent to zero-appending without explicitly appending any zeroes, by using an equivalent, faster algorithm that combines the message bitstream with the stream being shifted out of the CRC register.</li>
+<li>Sometimes an implementation exclusive-ORs a fixed bit pattern into the remainder of the polynomial division.</li>
+<li>Bit order: Some schemes view the low-order bit of each byte as "first", which then during polynomial division means "leftmost", which is contrary to our customary understanding of "low-order". This convention makes sense when serial-port transmissions are CRC-checked in hardware, because some widespread serial-port transmission conventions transmit bytes least-significant bit first</li>
+<li>Byte order: With multi-byte CRCs, there can be confusion over whether the byte transmitted first (or stored in the lowest-addressed byte of memory) is the least-significant byte (LSB) or the most-significant byte (MSB). For example, some 16-bit CRC schemes swap the bytes of the check value.</li>
+<li>Omission of the high-order bit of the divisor polynomial: Since the high-order bit is always 1, and since an n-bit CRC must be defined by an (n + 1)-bit divisor which overflows an n-bit register, some writers assume that it is unnecessary to mention the divisor's high-order bit</li>
+<li>Omission of the low-order bit of the divisor polynomial: Since the low-order bit is always 1, authors such as Philip Koopman represent polynomials with their high-order bit intact, but without the low-order bit (the x 0 x^{0} or 1 term). This convention encodes the polynomial complete with its degree in one integer</li>
+</ul>
+<p >These complications mean that there are three common ways to express a polynomial as an integer: the first two, which are mirror images in binary, are the constants found in code; the third is the number found in Koopman's papers. In each case, one term is omitted. So the polynomial x 4 + x + 1 x^{4}+x+1 may be transcribed as:</p>
+<div class="fragment"><div class="line">0x3 = 0b0011, representing x 4 + ( 0 x 3 + 0 x 2 + 1 x 1 + 1 x 0 ) {\displaystyle x^{4}+(0x^{3}+0x^{2}+1x^{1}+1x^{0})} (MSB-first code)</div>
+<div class="line">0xC = 0b1100, representing ( 1 x 0 + 1 x 1 + 0 x 2 + 0 x 3 ) + x 4 {\displaystyle (1x^{0}+1x^{1}+0x^{2}+0x^{3})+x^{4}} (LSB-first code)</div>
+<div class="line">0x9 = 0b1001, representing ( 1 x 4 + 0 x 3 + 0 x 2 + 1 x 1 ) + x 0 {\displaystyle (1x^{4}+0x^{3}+0x^{2}+1x^{1})+x^{0}} (Koopman notation)</div>
+</div><!-- fragment --><a class="anchor" id="multi_row_crc"></a>
+<table class="doxtable">
+<caption>CRC Representations</caption>
+<tr>
+<th></th><th></th><th>Polynomial representations</th><th></th><th></th><th></th></tr>
+<tr>
+<th>Name</th><th>Uses</th><th>Normal</th><th>Reversed</th><th>Reciprocal</th><th>Reversed reciprocal </th></tr>
+<tr>
+<td>CRC-1</td><td>most hardware; also known as parity bit</td><td>0x1</td><td>0x1</td><td>0x1</td><td>0x1 </td></tr>
+<tr>
+<td>CRC-3-GSM</td><td>mobile networks</td><td>0x3</td><td>0x6</td><td>0x5</td><td>0x5 </td></tr>
+<tr>
+<td>CRC-4-ITU</td><td>ITU-T G.704, p. 12</td><td>0x3</td><td>0xC</td><td>0x9</td><td>0x9 </td></tr>
+<tr>
+<td>CRC-5-EPC</td><td>Gen 2 RFID</td><td>0x09</td><td>0x12</td><td>0x05</td><td>0x14 </td></tr>
+<tr>
+<td>CRC-5-ITU</td><td>ITU-T G.704, p. 9</td><td>0x15</td><td>0x15</td><td>0x0B</td><td>0x1A </td></tr>
+<tr>
+<td>CRC-5-USB</td><td>USB token packets</td><td>0x05</td><td>0x14</td><td>0x09</td><td>0x12 </td></tr>
+<tr>
+<td>CRC-6-CDMA2000-A</td><td>mobile networks</td><td>0x27</td><td>0x39</td><td>0x33</td><td>0x33 </td></tr>
+<tr>
+<td>CRC-6-CDMA2000-B</td><td>mobile networks</td><td>0x07</td><td>0x38</td><td>0x31</td><td>0x23 </td></tr>
+<tr>
+<td>CRC-6-DARC</td><td>Data Radio Channel</td><td>0x19</td><td>0x26</td><td>0x0D</td><td>0x2C </td></tr>
+<tr>
+<td>CRC-6-GSM</td><td>mobile networks</td><td>0x2F</td><td>0x3D</td><td>0x3B</td><td>0x37 </td></tr>
+<tr>
+<td>CRC-6-ITU</td><td>ITU-T G.704, p. 3</td><td>0x03</td><td>0x30</td><td>0x21</td><td>0x21 </td></tr>
+<tr>
+<td>CRC-7</td><td>telecom systems, ITU-T G.707, ITU-T G.832, MMC, SD</td><td>0x09</td><td>0x48</td><td>0x11</td><td>0x44 </td></tr>
+<tr>
+<td>CRC-7-MVB</td><td>Train Communication Network, IEC 60870-5</td><td>0x65</td><td>0x53</td><td>0x27</td><td>0x72 </td></tr>
+<tr>
+<td>CRC-8</td><td>DVB-S2</td><td>0xD5</td><td>0xAB</td><td>0x57</td><td>0xEA </td></tr>
+<tr>
+<td>CRC-8-AUTOSAR</td><td>automotive integration, OpenSafety</td><td>0x2F</td><td>0xF4</td><td>0xE9</td><td>0x97 </td></tr>
+<tr>
+<td>CRC-8-Bluetooth</td><td>wireless connectivity</td><td>0xA7</td><td>0xE5</td><td>0xCB</td><td>0xD3 </td></tr>
+<tr>
+<td>CRC-8-CCITT</td><td>ITU-T I.432.1; ATM, ISDN HEC and cell delineation; SMBus PEC</td><td>0x07</td><td>0xE0</td><td>0xC1</td><td>0x83 </td></tr>
+<tr>
+<td>CRC-8-Dallas/Maxim</td><td>1-Wire bus</td><td>0x31</td><td>0x8C</td><td>0x19</td><td>0x98 </td></tr>
+<tr>
+<td>CRC-8-DARC</td><td>Data Radio Channel</td><td>0x39</td><td>0x9C</td><td>0x39</td><td>0x9C </td></tr>
+<tr>
+<td>CRC-8-GSM-B</td><td>mobile networks</td><td>0x49</td><td>0x92</td><td>0x25</td><td>0xA4 </td></tr>
+<tr>
+<td>CRC-8-SAE</td><td>J1850 AES3; OBD</td><td>0x1D</td><td>0xB8</td><td>0x71</td><td>0x8E </td></tr>
+<tr>
+<td>CRC-8-WCDMA</td><td>mobile networks</td><td>0x9B</td><td>0xD9</td><td>0xB3</td><td>0xCD </td></tr>
+<tr>
+<td>CRC-10</td><td>ATM; ITU-T I.610</td><td>0x233</td><td>0x331</td><td>0x263</td><td>0x319 </td></tr>
+<tr>
+<td>CRC-10-CDMA2000</td><td>mobile networks</td><td>0x3D9</td><td>0x26F</td><td>0x0DF</td><td>0x3EC </td></tr>
+<tr>
+<td>CRC-10-GSM</td><td>mobile networks</td><td>0x175</td><td>0x2BA</td><td>0x175</td><td>0x2BA </td></tr>
+<tr>
+<td>CRC-11</td><td>FlexRay</td><td>0x385</td><td>0x50E</td><td>0x21D</td><td>0x5C2 </td></tr>
+<tr>
+<td>CRC-12</td><td>telecom systems</td><td>0x80F</td><td>0xF01</td><td>0xE03</td><td>0xC07 </td></tr>
+<tr>
+<td>CRC-12-CDMA2000</td><td>mobile networks</td><td>0xF13</td><td>0xC8F</td><td>0x91F</td><td>0xF89 </td></tr>
+<tr>
+<td>CRC-12-GSM</td><td>mobile networks</td><td>0xD31</td><td>0x8CB</td><td>0x197</td><td>0xE98 </td></tr>
+<tr>
+<td>CRC-13-BBC</td><td>Time signal, Radio teleswitch</td><td>0x1CF5</td><td>0x15E7</td><td>0x0BCF</td><td>0x1E7A </td></tr>
+<tr>
+<td>CRC-14-DARC</td><td>Data Radio Channel</td><td>0x0805</td><td>0x2804</td><td>0x1009</td><td>0x2402 </td></tr>
+<tr>
+<td>CRC-14-GSM</td><td>mobile networks</td><td>0x202D</td><td>0x2D01</td><td>0x1A03</td><td>0x3016 </td></tr>
+<tr>
+<td>CRC-15-CAN</td><td></td><td>0x4599</td><td>0x4CD1</td><td>0x19A3</td><td>0x62CC </td></tr>
+<tr>
+<td>CRC-15-MPT1327</td><td></td><td>0x6815</td><td>0x540B</td><td>0x2817</td><td>0x740A </td></tr>
+<tr>
+<td>CRC-16-Chakravarty</td><td>Optimal for payloads ≤64 bits</td><td>0x2F15</td><td>0xA8F4</td><td>0x51E9</td><td>0x978A </td></tr>
+<tr>
+<td>CRC-16-ARINC</td><td>ACARS applications</td><td>0xA02B</td><td>0xD405</td><td>0xA80B</td><td>0xD015 </td></tr>
+<tr>
+<td>CRC-16-CCITT</td><td>known as CRC-CCITT</td><td>0x1021</td><td>0x8408</td><td>0x811</td><td>0x8810 </td></tr>
+<tr>
+<td>CRC-16-CDMA2000</td><td>mobile networks</td><td>0xC867</td><td>0xE613</td><td>0xCC27</td><td>0xE433 </td></tr>
+<tr>
+<td>CRC-16-DECT</td><td>cordless telephones</td><td>0x0589</td><td>0x91A0</td><td>0x2341</td><td>0x82C4 </td></tr>
+<tr>
+<td>CRC-16-T10-DIF</td><td>SCSI DIF</td><td>0x8BB7</td><td>0xEDD1</td><td>0xDBA3</td><td>0xC5DB </td></tr>
+<tr>
+<td>CRC-16-DNP</td><td>DNP, IEC 870, M-Bus</td><td>0x3D65</td><td>0xA6BC</td><td>0x4D79</td><td>0x9EB2 </td></tr>
+<tr>
+<td>CRC-16-IBM</td><td>USB, many others; also known as CRC-16 and CRC-16-ANSI</td><td>0x8005</td><td>0xA001</td><td>0x4003</td><td>0xC002 </td></tr>
+<tr>
+<td>CRC-16-OpenSafety-A</td><td>safety fieldbus</td><td>0x5935</td><td>0xAC9A</td><td>0x5935</td><td>0xAC9A </td></tr>
+<tr>
+<td>CRC-16-OpenSafety-B</td><td>safety fieldbus</td><td>0x755B</td><td>0xDAAE</td><td>0xB55D</td><td>0xBAAD </td></tr>
+<tr>
+<td>CRC-16-Profibus</td><td>fieldbus networks</td><td>0x1DCF</td><td>0xF3B8</td><td>0xE771</td><td>0x8EE7 </td></tr>
+<tr>
+<td>CRC-17-CAN</td><td>CAN FD</td><td>0x1685B</td><td>0x1B42D</td><td>0x1685B</td><td>0x1B42D </td></tr>
+<tr>
+<td>CRC-21-CAN</td><td>CAN FD</td><td>0x102899</td><td>0x132281</td><td>0x064503</td><td>0x18144C </td></tr>
+<tr>
+<td>CRC-24</td><td>FlexRay</td><td>0x5D6DCB</td><td>0xD3B6BA</td><td>0xA76D75</td><td>0xAEB6E5 </td></tr>
+<tr>
+<td>CRC-24-Radix-64</td><td>OpenPGP, RTCM104v3</td><td>0x864CFB</td><td>0xDF3261</td><td>0xBE64C3</td><td>0xC3267D </td></tr>
+<tr>
+<td>CRC-24-WCDMA</td><td>Used in OS-9 RTOS</td><td>0x800063</td><td>0xC60001</td><td>0x8C0003</td><td>0xC00031 </td></tr>
+<tr>
+<td>CRC-30</td><td>CDMA</td><td>0x2030B9C7</td><td>0x38E74301</td><td>0x31CE8603</td><td>0x30185CE3 </td></tr>
+<tr>
+<td>CRC-32</td><td>ISO/IEC/IEEE 802-3 (Ethernet), many others</td><td>0x04C11DB7</td><td>0xEDB88320</td><td>0xDB710641</td><td>0x82608EDB </td></tr>
+<tr>
+<td>CRC-32C</td><td>Castagnoli; iSCSI</td><td>0x1EDC6F41</td><td>0x82F63B78</td><td>0x05EC76F1</td><td>0x8F6E37A0 </td></tr>
+<tr>
+<td>CRC-32K</td><td>Koopman {1,3,28}</td><td>0x741B8CD7</td><td>0xEB31D82E</td><td>0xD663B05D</td><td>0xBA0DC66B </td></tr>
+<tr>
+<td>CRC-32K2</td><td>Koopman {1,1,30}</td><td>0x32583499</td><td>0x992C1A4C</td><td>0x32583499</td><td>0x992C1A4C </td></tr>
+<tr>
+<td>CRC-32Q</td><td>aviation; AIXM</td><td>0x814141AB</td><td>0xD5828281</td><td>0xAB050503</td><td>0xC0A0A0D5 </td></tr>
+<tr>
+<td>CRC-40-GSM</td><td>GSM control channel</td><td>0x0004820009</td><td>0x9000412000</td><td>0x2000824001</td><td>0x8002410004 </td></tr>
+<tr>
+<td>CRC-64-ECMA</td><td>ECMA-182 p. 51, XZ Utils</td><td>0x42F0E1EBA9EA3693</td><td>0xC96C5795D7870F42</td><td>0x92D8AF2BAF0E1E85</td><td>0xA17870F5D4F51B49 </td></tr>
+<tr>
+<td>CRC-64-ISO</td><td>ISO 3309 (HDLC), Swiss-Prot/TrEMBL</td><td>0x000000000000001B</td><td>0xD800000000000000</td><td>0xB000000000000001</td><td>0x800000000000000D </td></tr>
+</table>
 <p ><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray</a> </dd>
 <dd>
 <a class="el" href="classProtocolPP_1_1jcrc.html">ProtocolPP::jcrc</a> </dd>
@@ -146,7 +298,7 @@ Cyclic Redundacy Check (CRC)</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjcrc.html">jcrc</a></li>
-    <li class="footer">Generated on Mon Oct 23 2023 11:44:35 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Oct 27 2023 13:46:17 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

@@ -11,5 +11,5 @@ var searchData=
   ['arrayvalue_8',['ArrayValue',['../classtinyxml2_1_1XMLAttribute.html#a07cbb4d29b286b78554182761e854d3e',1,'tinyxml2::XMLAttribute']]],
   ['attribute_9',['Attribute',['../classtinyxml2_1_1XMLElement.html#a48cf4a315cfbac7d74cd0d5ff2c5df51',1,'tinyxml2::XMLElement']]],
   ['audit_10',['audit',['../classProtocolPP_1_1jipsec.html#a453078dfa4c8711ba9f7c3ee803d000f',1,'ProtocolPP::jipsec']]],
-  ['avail_11',['avail',['../classProtocolPP_1_1jbuffman.html#a013a70dc9091795d97486897e472bb10',1,'ProtocolPP::jbuffman::avail()'],['../classProtocolPP_1_1jmemory.html#a2296eb36194c44f012349e2fb590ffb4',1,'ProtocolPP::jmemory::avail()'],['../classDriverPP_1_1jdirectdrive.html#a9d60d897d205d7365a9ef93902002916',1,'DriverPP::jdirectdrive::avail()']]]
+  ['avail_11',['avail',['../classProtocolPP_1_1jbuffman.html#a013a70dc9091795d97486897e472bb10',1,'ProtocolPP::jbuffman::avail()'],['../classProtocolPP_1_1jmemory.html#a29c4d11c713e5fef9b82cd6563196a13',1,'ProtocolPP::jmemory::avail()'],['../classDriverPP_1_1jdirectdrive.html#a9d60d897d205d7365a9ef93902002916',1,'DriverPP::jdirectdrive::avail()']]]
 ];

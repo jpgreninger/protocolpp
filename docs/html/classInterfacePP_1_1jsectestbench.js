@@ -1,7 +1,7 @@
 var classInterfacePP_1_1jsectestbench =
 [
     [ "jsectestbench", "classInterfacePP_1_1jsectestbench.html#aed31aaf9fe5d7cfa0daf51383c46efd6", null ],
-    [ "~jsectestbench", "classInterfacePP_1_1jsectestbench.html#a43e2d75744bc1e1da528a66a72c5fe82", null ],
+    [ "~jsectestbench", "classInterfacePP_1_1jsectestbench.html#a3dd99654eb1d84e9bb305ba88aa7a7d0", null ],
     [ "get_mem", "classInterfacePP_1_1jsectestbench.html#aa0461b67e4cfcb2e87f352243ceacdb6", null ],
     [ "read", "classInterfacePP_1_1jsectestbench.html#afce831032039380801a7d54a4d18ee95", null ],
     [ "read", "classInterfacePP_1_1jsectestbench.html#afcd674243e65f42d17dcb3c381bfcf71", null ],

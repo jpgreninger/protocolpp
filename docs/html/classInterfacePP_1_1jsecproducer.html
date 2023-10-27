@@ -110,10 +110,10 @@ Inheritance diagram for InterfacePP::jsecproducer:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af0be7461e3c8dd1ed03451c212f24ceb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jsecproducer.html#af0be7461e3c8dd1ed03451c212f24ceb">jsecproducer</a> (<a class="el" href="namespaceProtocolPP.html#afa6b70277e264c399f523bfab53442f9">ProtocolPP::platform_t</a> platform, uint64_t seed, bool use_crypto, int responders, std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jmmu.html">jmmu</a> &gt; &amp;mmu, std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jlogger.html">jlogger</a> &gt; &amp;logger, std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jdata.html">ProtocolPP::jdata</a> &gt; &amp;indata, std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jring.html">jring</a>&lt; <a class="el" href="classInterfacePP_1_1ringflow.html">ringflow</a> &gt; &gt; &amp;fring, std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jring.html">jring</a>&lt; <a class="el" href="classInterfacePP_1_1secin.html">secin</a> &gt; &gt; &amp;iring, std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jring.html">jring</a>&lt; <a class="el" href="classInterfacePP_1_1secout.html">secout</a> &gt; &gt; &amp;oring, <a class="el" href="namespaceProtocolPP.html#a4c490fb0ae4e404f895c8b65147453ae">ProtocolPP::endian_t</a> endianess=<a class="el" href="namespaceProtocolPP.html#a4c490fb0ae4e404f895c8b65147453aea811508292b78195e7278e873ca299f93">ProtocolPP::BIG</a>, uint32_t ptrsize=8, uint32_t sgtsize=16)</td></tr>
 <tr class="separator:af0be7461e3c8dd1ed03451c212f24ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b9f8d90c6ab717ce95d900e382d6cc7"><td class="memItemLeft" align="right" valign="top"><a id="a4b9f8d90c6ab717ce95d900e382d6cc7" name="a4b9f8d90c6ab717ce95d900e382d6cc7"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~jsecproducer</b> ()</td></tr>
-<tr class="memdesc:a4b9f8d90c6ab717ce95d900e382d6cc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">standard deconstructor <br /></td></tr>
-<tr class="separator:a4b9f8d90c6ab717ce95d900e382d6cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc26c55c1502de7f53f4e5ee08138474"><td class="memItemLeft" align="right" valign="top"><a id="abc26c55c1502de7f53f4e5ee08138474" name="abc26c55c1502de7f53f4e5ee08138474"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~jsecproducer</b> ()=default</td></tr>
+<tr class="memdesc:abc26c55c1502de7f53f4e5ee08138474"><td class="mdescLeft">&#160;</td><td class="mdescRight">standard deconstructor <br /></td></tr>
+<tr class="separator:abc26c55c1502de7f53f4e5ee08138474"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54e236da9dcbef02fafd2d2c0a64f966"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jsecproducer.html#a54e236da9dcbef02fafd2d2c0a64f966">get_mem</a> (std::string name, uint32_t length)=0</td></tr>
 <tr class="separator:a54e236da9dcbef02fafd2d2c0a64f966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd0997065b02093f702da2b4cef947bd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jsecproducer.html#afd0997065b02093f702da2b4cef947bd">write</a> (uint64_t address, uint32_t data)=0</td></tr>
@@ -148,6 +148,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()</td></tr>
 <tr class="separator:a3e5800d2f56d26d9a3b7ca102b349afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe059b564f108b2edf6bf840cf0d9bc4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jsecproducer.html#abe059b564f108b2edf6bf840cf0d9bc4">get_field</a> (<a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36">ProtocolPP::field_t</a> field)</td></tr>
 <tr class="separator:abe059b564f108b2edf6bf840cf0d9bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf269b9a55c940a651019e708fc8bb1"><td class="memItemLeft" align="right" valign="top"><a id="aadf269b9a55c940a651019e708fc8bb1" name="aadf269b9a55c940a651019e708fc8bb1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>jsecproducer</b> (<a class="el" href="classInterfacePP_1_1jsecproducer.html">jsecproducer</a> &amp;rhs)=delete</td></tr>
+<tr class="separator:aadf269b9a55c940a651019e708fc8bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb66e15008b0e73d335775656b08348"><td class="memItemLeft" align="right" valign="top"><a id="a2bb66e15008b0e73d335775656b08348" name="a2bb66e15008b0e73d335775656b08348"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>jsecproducer</b> (const <a class="el" href="classInterfacePP_1_1jsecproducer.html">jsecproducer</a> &amp;rhs)=delete</td></tr>
+<tr class="separator:a2bb66e15008b0e73d335775656b08348"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -831,7 +837,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>free_mem</b> (std::st
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>InterfacePP</b></li><li class="navelem"><a class="el" href="classInterfacePP_1_1jsecproducer.html">jsecproducer</a></li>
-    <li class="footer">Generated on Mon Oct 23 2023 11:44:36 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Oct 27 2023 13:46:17 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

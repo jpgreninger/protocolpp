@@ -98,9 +98,7 @@ $(document).ready(function(){initNavTree('classProtocolPP_1_1jmemory.html',''); 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a262741b60b90b1c45a804b1f7008ef6e"><td class="memItemLeft" align="right" valign="top"><a id="a262741b60b90b1c45a804b1f7008ef6e" name="a262741b60b90b1c45a804b1f7008ef6e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>jmemory</b> (std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jlogger.html">InterfacePP::jlogger</a> &gt; &amp;logger)</td></tr>
-<tr class="memdesc:a262741b60b90b1c45a804b1f7008ef6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">standard constructor for 16k buffers of size Q <br /></td></tr>
+<tr class="memitem:a262741b60b90b1c45a804b1f7008ef6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmemory.html#a262741b60b90b1c45a804b1f7008ef6e">jmemory</a> (std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jlogger.html">InterfacePP::jlogger</a> &gt; &amp;logger)</td></tr>
 <tr class="separator:a262741b60b90b1c45a804b1f7008ef6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a700417e4cb95c9dc1ae8ac495f73fef9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmemory.html#a700417e4cb95c9dc1ae8ac495f73fef9">jmemory</a> (int numbufs, std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jlogger.html">InterfacePP::jlogger</a> &gt; &amp;logger)</td></tr>
 <tr class="separator:a700417e4cb95c9dc1ae8ac495f73fef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,8 +112,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~jmemory</b> ()=de
 <tr class="separator:aa5864a8df5d3be2eaf7d87280d4d30e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04fd8604e491cae6d49448187832d627"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmemory.html#a04fd8604e491cae6d49448187832d627">enqueue</a> (uint64_t bufptr)</td></tr>
 <tr class="separator:a04fd8604e491cae6d49448187832d627"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a123220f9b3a056fc1a67c0396fd2291a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmemory.html#a123220f9b3a056fc1a67c0396fd2291a">dequeue</a> (int buffers, uint64_t bufptr=0xFFFFFFFFFFFFFFFF)</td></tr>
-<tr class="separator:a123220f9b3a056fc1a67c0396fd2291a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa254201556a5a077a03264ef13232c0"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmemory.html#afa254201556a5a077a03264ef13232c0">dequeue</a> (uint32_t buffers, uint64_t bufptr=0xFFFFFFFFFFFFFFFF)</td></tr>
+<tr class="separator:afa254201556a5a077a03264ef13232c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65ac19d2a8e2e31723564bae333ba2a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmemory.html#a65ac19d2a8e2e31723564bae333ba2a7">write</a> (uint64_t bufptr, T *data, uint32_t length, uint32_t offset=0)</td></tr>
 <tr class="separator:a65ac19d2a8e2e31723564bae333ba2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadb6d5321bdd49a8ce4613da0461deaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmemory.html#aadb6d5321bdd49a8ce4613da0461deaf">write</a> (uint64_t bufptr, <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; T &gt; &amp;data, uint32_t offset=0)</td></tr>
@@ -128,12 +126,46 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~jmemory</b> ()=de
 <tr class="separator:ad55098b553d24d318dd6c8a85e32b4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac52f6afebbb1bf373c58abfee5c422c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmemory.html#ac52f6afebbb1bf373c58abfee5c422c9">read</a> (uint64_t bufptr, std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; T &gt; &gt; &amp;data, uint32_t offset=0)</td></tr>
 <tr class="separator:ac52f6afebbb1bf373c58abfee5c422c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2296eb36194c44f012349e2fb590ffb4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmemory.html#a2296eb36194c44f012349e2fb590ffb4">avail</a> ()</td></tr>
-<tr class="separator:a2296eb36194c44f012349e2fb590ffb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c4d11c713e5fef9b82cd6563196a13"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmemory.html#a29c4d11c713e5fef9b82cd6563196a13">avail</a> ()</td></tr>
+<tr class="separator:a29c4d11c713e5fef9b82cd6563196a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a262741b60b90b1c45a804b1f7008ef6e" name="a262741b60b90b1c45a804b1f7008ef6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a262741b60b90b1c45a804b1f7008ef6e">&#9670;&#160;</a></span>jmemory() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::size_t Q&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">jmemory::jmemory </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jlogger.html">InterfacePP::jlogger</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>logger</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >standard constructor for 16k buffers of size Q </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">logger</td><td>- logging object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a700417e4cb95c9dc1ae8ac495f73fef9" name="a700417e4cb95c9dc1ae8ac495f73fef9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a700417e4cb95c9dc1ae8ac495f73fef9">&#9670;&#160;</a></span>jmemory() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a700417e4cb95c9dc1ae8ac495f73fef9">&#9670;&#160;</a></span>jmemory() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,6 +194,7 @@ template&lt;typename T , std::size_t Q&gt; </div>
 <p >constructor for number of buffers of size Q </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">numbufs</td><td>- number of buffers to create in memory </td></tr>
+    <tr><td class="paramname">logger</td><td>- logging object </td></tr>
   </table>
   </dd>
 </dl>
@@ -169,7 +202,7 @@ template&lt;typename T , std::size_t Q&gt; </div>
 </div>
 </div>
 <a id="a6bab380402102736316d0d470bd1087a" name="a6bab380402102736316d0d470bd1087a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bab380402102736316d0d470bd1087a">&#9670;&#160;</a></span>jmemory() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bab380402102736316d0d470bd1087a">&#9670;&#160;</a></span>jmemory() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,6 +231,7 @@ template&lt;typename T , std::size_t Q&gt; </div>
 <p >copy constructor </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rhs</td><td>- buffman to copy </td></tr>
+    <tr><td class="paramname">logger</td><td>- logging object </td></tr>
   </table>
   </dd>
 </dl>
@@ -205,7 +239,7 @@ template&lt;typename T , std::size_t Q&gt; </div>
 </div>
 </div>
 <a id="ad726cab719caf537b75a71a7da518054" name="ad726cab719caf537b75a71a7da518054"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad726cab719caf537b75a71a7da518054">&#9670;&#160;</a></span>jmemory() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad726cab719caf537b75a71a7da518054">&#9670;&#160;</a></span>jmemory() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,6 +268,7 @@ template&lt;typename T , std::size_t Q&gt; </div>
 <p >const copy constructor </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rhs</td><td>- CONST buffman to copy </td></tr>
+    <tr><td class="paramname">logger</td><td>- logging object </td></tr>
   </table>
   </dd>
 </dl>
@@ -241,8 +276,8 @@ template&lt;typename T , std::size_t Q&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2296eb36194c44f012349e2fb590ffb4" name="a2296eb36194c44f012349e2fb590ffb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2296eb36194c44f012349e2fb590ffb4">&#9670;&#160;</a></span>avail()</h2>
+<a id="a29c4d11c713e5fef9b82cd6563196a13" name="a29c4d11c713e5fef9b82cd6563196a13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29c4d11c713e5fef9b82cd6563196a13">&#9670;&#160;</a></span>avail()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -250,7 +285,7 @@ template&lt;typename T , std::size_t Q&gt; </div>
 template&lt;typename T , std::size_t Q&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">int jmemory::avail</td>
+          <td class="memname">uint32_t jmemory::avail</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -258,8 +293,8 @@ template&lt;typename T , std::size_t Q&gt; </div>
 
 </div>
 </div>
-<a id="a123220f9b3a056fc1a67c0396fd2291a" name="a123220f9b3a056fc1a67c0396fd2291a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a123220f9b3a056fc1a67c0396fd2291a">&#9670;&#160;</a></span>dequeue()</h2>
+<a id="afa254201556a5a077a03264ef13232c0" name="afa254201556a5a077a03264ef13232c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa254201556a5a077a03264ef13232c0">&#9670;&#160;</a></span>dequeue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -269,7 +304,7 @@ template&lt;typename T , std::size_t Q&gt; </div>
         <tr>
           <td class="memname">uint64_t jmemory::dequeue </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>buffers</em>, </td>
         </tr>
         <tr>
@@ -288,6 +323,7 @@ template&lt;typename T , std::size_t Q&gt; </div>
 <p >allocates buffers from the memory </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>- number of buffers requested from memory </td></tr>
+    <tr><td class="paramname">bufptr</td><td>- if provided, add buffers to the link list pointed to by bufptr </td></tr>
   </table>
   </dd>
 </dl>
@@ -295,8 +331,8 @@ template&lt;typename T , std::size_t Q&gt; </div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classProtocolPP_1_1jmemory_a123220f9b3a056fc1a67c0396fd2291a_cgraph.png" border="0" usemap="#aclassProtocolPP_1_1jmemory_a123220f9b3a056fc1a67c0396fd2291a_cgraph" alt=""/></div>
-<map name="aclassProtocolPP_1_1jmemory_a123220f9b3a056fc1a67c0396fd2291a_cgraph" id="aclassProtocolPP_1_1jmemory_a123220f9b3a056fc1a67c0396fd2291a_cgraph">
+<div class="center"><img src="classProtocolPP_1_1jmemory_afa254201556a5a077a03264ef13232c0_cgraph.png" border="0" usemap="#aclassProtocolPP_1_1jmemory_afa254201556a5a077a03264ef13232c0_cgraph" alt=""/></div>
+<map name="aclassProtocolPP_1_1jmemory_afa254201556a5a077a03264ef13232c0_cgraph" id="aclassProtocolPP_1_1jmemory_afa254201556a5a077a03264ef13232c0_cgraph">
 <area shape="rect" title=" " alt="" coords="5,37,152,77"/>
 <area shape="rect" href="classProtocolPP_1_1jarray.html#a4aeb58321449f0e17d994ad74e469cea" title=" " alt="" coords="200,5,327,45"/>
 <area shape="rect" href="classProtocolPP_1_1jarray.html#ac816a43cf192f57298418362813f9503" title=" " alt="" coords="200,69,327,109"/>
@@ -658,7 +694,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceProtocolPP.html">ProtocolPP</a></li><li class="navelem"><a class="el" href="classProtocolPP_1_1jmemory.html">jmemory</a></li>
-    <li class="footer">Generated on Mon Oct 23 2023 11:44:36 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Oct 27 2023 13:46:17 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

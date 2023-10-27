@@ -118,10 +118,10 @@ Collaboration diagram for InterfacePP::jring&lt; TR &gt;:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5a3c2571bc366156fdb0f93fea2f21e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jring.html#a5a3c2571bc366156fdb0f93fea2f21e9">jring</a> (uint64_t address, uint32_t <a class="el" href="classInterfacePP_1_1jring.html#a5d1e09a5bb0cf164f7ac4223d0a90d25">size</a>)</td></tr>
 <tr class="separator:a5a3c2571bc366156fdb0f93fea2f21e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a3ee1653f3b59f6e2c87ca596c3fe94"><td class="memItemLeft" align="right" valign="top"><a id="a2a3ee1653f3b59f6e2c87ca596c3fe94" name="a2a3ee1653f3b59f6e2c87ca596c3fe94"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~jring</b> ()</td></tr>
-<tr class="memdesc:a2a3ee1653f3b59f6e2c87ca596c3fe94"><td class="mdescLeft">&#160;</td><td class="mdescRight">standard deconstructor <br /></td></tr>
-<tr class="separator:a2a3ee1653f3b59f6e2c87ca596c3fe94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdfc665a0b1eaea25bf4745673488926"><td class="memItemLeft" align="right" valign="top"><a id="acdfc665a0b1eaea25bf4745673488926" name="acdfc665a0b1eaea25bf4745673488926"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~jring</b> ()=default</td></tr>
+<tr class="memdesc:acdfc665a0b1eaea25bf4745673488926"><td class="mdescLeft">&#160;</td><td class="mdescRight">standard deconstructor <br /></td></tr>
+<tr class="separator:acdfc665a0b1eaea25bf4745673488926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a268a9c9c09d821f4ee625f06d06c119c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jring.html#a268a9c9c09d821f4ee625f06d06c119c">push</a> (TR &amp;input)</td></tr>
 <tr class="separator:a268a9c9c09d821f4ee625f06d06c119c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07cc2fb46e5464b81928861ebd4b8a20"><td class="memItemLeft" align="right" valign="top">TR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jring.html#a07cc2fb46e5464b81928861ebd4b8a20">pop</a> ()</td></tr>
@@ -140,6 +140,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> ()</td></tr
 <tr class="separator:a9bed331367123a3203e9c28c65871528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0292a7c0e9313ce74a707c6a51b997c4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jring.html#a0292a7c0e9313ce74a707c6a51b997c4">get_proc</a> ()</td></tr>
 <tr class="separator:a0292a7c0e9313ce74a707c6a51b997c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a752d367395ce293c01d690908c82877e"><td class="memItemLeft" align="right" valign="top"><a id="a752d367395ce293c01d690908c82877e" name="a752d367395ce293c01d690908c82877e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>jring</b> (<a class="el" href="classInterfacePP_1_1jring.html">jring</a> &amp;rhs)=delete</td></tr>
+<tr class="separator:a752d367395ce293c01d690908c82877e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b06bf20195e39690e2c902e1914c008"><td class="memItemLeft" align="right" valign="top"><a id="a0b06bf20195e39690e2c902e1914c008" name="a0b06bf20195e39690e2c902e1914c008"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>jring</b> (const <a class="el" href="classInterfacePP_1_1jring.html">jring</a> &amp;rhs)=delete</td></tr>
+<tr class="separator:a0b06bf20195e39690e2c902e1914c008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5a3c2571bc366156fdb0f93fea2f21e9" name="a5a3c2571bc366156fdb0f93fea2f21e9"></a>
@@ -350,7 +356,7 @@ template&lt;typename TR &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>InterfacePP</b></li><li class="navelem"><a class="el" href="classInterfacePP_1_1jring.html">jring</a></li>
-    <li class="footer">Generated on Mon Oct 23 2023 11:44:36 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Oct 27 2023 13:46:17 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

@@ -1,7 +1,7 @@
 var classInterfacePP_1_1jtestbenchbuf =
 [
     [ "jtestbenchbuf", "classInterfacePP_1_1jtestbenchbuf.html#a589f4d9a9d8e8ddc80f32468cf1f3c16", null ],
-    [ "~jtestbenchbuf", "classInterfacePP_1_1jtestbenchbuf.html#af05061fcffcc27ed1184ab9f98e561c0", null ],
+    [ "~jtestbenchbuf", "classInterfacePP_1_1jtestbenchbuf.html#a207b8fa10fc288233653608b099c4095", null ],
     [ "get_mem", "classInterfacePP_1_1jtestbenchbuf.html#a97910cc44a351d94bfd767ec98a15795", null ],
     [ "read", "classInterfacePP_1_1jtestbenchbuf.html#a8aeaf3414b397a7e43b9ae829e6f591e", null ],
     [ "read", "classInterfacePP_1_1jtestbenchbuf.html#acb82684b6659b340ae1ab219d118a8f0", null ],

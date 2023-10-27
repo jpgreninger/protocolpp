@@ -2453,12 +2453,12 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:aca3725b363c3824187494fea67837db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b2aaa0f2cbbb2d31df61a71c4e9cd6b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceProtocolPP.html#a7b2aaa0f2cbbb2d31df61a71c4e9cd6b">crcpoly_t</a> { <br />
-&#160;&#160;<b>CRC5_POLY</b> = 0x07
-, <b>CRC7_POLY</b> = 0x07
-, <b>CRC8_POLY</b> = 0x07
-, <b>CRC11_POLY</b> = 0x07
+&#160;&#160;<b>CRC5_POLY</b> = 0x05
+, <b>CRC7_POLY</b> = 0x09
+, <b>CRC8_POLY</b> = 0xA7
+, <b>CRC11_POLY</b> = 0x385
 , <br />
-&#160;&#160;<b>CRC12_POLY</b> = 0x07
+&#160;&#160;<b>CRC12_POLY</b> = 0x80F
 , <b>CRC16_POLY</b> = 0x8005
 , <b>CRC16_CCITT_POLY</b> = 0x1021
 , <b>CRC24_POLY</b> = 0x864CFB
@@ -3507,15 +3507,15 @@ Variables</h2></td></tr>
 <tr>
 <th>Name</th><th>Polynomial</th><th>Reversed?</th><th>Init-value</th><th>XOR-out</th><th>Check </th></tr>
 <tr>
-<td>crc-5</td><td>0x07</td><td>False</td><td>0x00</td><td>0x00</td><td>0xF4 </td></tr>
+<td>crc-5</td><td>0x05</td><td>False</td><td>0x00</td><td>0x00</td><td>0xF4 </td></tr>
 <tr>
-<td>crc-7</td><td>0x07</td><td>False</td><td>0x00</td><td>0x00</td><td>0xF4 </td></tr>
+<td>crc-7</td><td>0x09</td><td>False</td><td>0x00</td><td>0x00</td><td>0xF4 </td></tr>
 <tr>
-<td>crc-8</td><td>0x07</td><td>False</td><td>0x00</td><td>0x00</td><td>0xF4 </td></tr>
+<td>crc-8</td><td>0xA7</td><td>False</td><td>0x00</td><td>0x00</td><td>0xF4 </td></tr>
 <tr>
-<td>crc-11</td><td>0x07</td><td>False</td><td>0x00</td><td>0x00</td><td>0xF4 </td></tr>
+<td>crc-11</td><td>0x385</td><td>False</td><td>0x00</td><td>0x00</td><td>0xF4 </td></tr>
 <tr>
-<td>crc-12</td><td>0x07</td><td>False</td><td>0x00</td><td>0x00</td><td>0xF4 </td></tr>
+<td>crc-12</td><td>0x80F</td><td>False</td><td>0x00</td><td>0x00</td><td>0xF4 </td></tr>
 <tr>
 <td>crc-16</td><td>0x8005</td><td>True</td><td>0x0000</td><td>0x0000</td><td>0xBB3D </td></tr>
 <tr>
@@ -9477,7 +9477,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceProtocolPP.html">ProtocolPP</a></li>
-    <li class="footer">Generated on Mon Oct 23 2023 11:44:36 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Oct 27 2023 13:46:17 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>
