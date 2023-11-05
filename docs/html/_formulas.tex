@@ -2,7 +2,6 @@
 \usepackage{ifthen}
 \usepackage{epsfig}
 \usepackage[utf8]{inputenc}
-\usepackage{xcolor}
 \usepackage{newunicodechar}
   \newunicodechar{⁻}{${}^{-}$}% Superscript minus
   \newunicodechar{²}{${}^{2}$}% Superscript two
@@ -1009,65 +1008,22 @@ $ {M}^{'}$
 $ {M}^{'} = B_0, B_1 ... B_{n-1} where n=\frac{l+k+65}{512}$
 \pagebreak
 
-\begin{eqnarray*}
- FOR&i=&0..n-1 \\
- V(i+1) &=& CF(V(i),B(i)) \\
- ENDFOR
- \end{eqnarray*}
+\begin{eqnarray*} FOR&i=&0..n-1 \\ V(i+1) &=& CF(V(i),B(i)) \\ ENDFOR \end{eqnarray*}
 \pagebreak
 
 $ W_0, W_1, ... , W_15$
 \pagebreak
 
-\begin{eqnarray*}
- FOR&j=&16..67 \\
- W_j &=& P_1(W_{j-16} \oplus W_{j-9} \oplus (W_{j-3} <<< 15)) \oplus (W_{j-13} <<< 7) \oplus W_{j-6} \\
- ENDFOR \\
- \end{eqnarray*}
+\begin{eqnarray*} FOR&j=&16..67 \\ W_j &=& P_1(W_{j-16} \oplus W_{j-9} \oplus (W_{j-3} <<< 15)) \oplus (W_{j-13} <<< 7) \oplus W_{j-6} \\ ENDFOR \\ \end{eqnarray*}
 \pagebreak
 
-\begin{eqnarray*}
- FOR&j=&0..63 \\
- {W}^{'}_j &=& W_j \oplus W_(j+4) \\
- ENDFOR \\
- \end{eqnarray*}
+\begin{eqnarray*} FOR&j=&0..63 \\ {W}^{'}_j &=& W_j \oplus W_(j+4) \\ ENDFOR \\ \end{eqnarray*}
 \pagebreak
 
 $ V_(i+1) = CF(V(i),B(i)) where 0 A!U i A!U n $
 \pagebreak
 
-\begin{eqnarray*}
-
- ABCDEFGH &=& V(i) \\
-
- FOR & j= &0..63 \\
-
- SS1 &=& (((RK[0] <<< 12) + RK[4] + (T_j <<< j)) <<< 7) \\
-
- SS2 &=& SS1 \oplus (RK[0] <<< 12) \\
-
- TT1 &=& FF_j(RK[0], RK[1], RK[2]) + RK[3] + SS2 + {W}^{'}_j \\
-
- TT1 &=& GG_j(RK[4], RK[5], RK[6]) + RK[7] + SS1 + W_j \\
-
- RK[3] &=& RK[2] \\
-
- RK[2] &=& (RK[1] <<< 9) \\
-
- RK[1] &=& RK[0] \\
-
- RK[0] &=& TT1 \\
-
- RK[7] &=& RK[6] \\
-
- RK[6] &=& (RK[5] <<< 19) \\
-
- RK[5] &=& RK[4] \\
-
- RK[4] &=& P0(TT2) \\
-
- ENDFOR \\
- \end{eqnarray*}
+\begin{eqnarray*} ABCDEFGH &=& V(i) \\ FOR & j= &0..63 \\ SS1 &=& (((RK[0] <<< 12) + RK[4] + (T_j <<< j)) <<< 7) \\ SS2 &=& SS1 \oplus (RK[0] <<< 12) \\ TT1 &=& FF_j(RK[0], RK[1], RK[2]) + RK[3] + SS2 + {W}^{'}_j \\ TT1 &=& GG_j(RK[4], RK[5], RK[6]) + RK[7] + SS1 + W_j \\ RK[3] &=& RK[2] \\ RK[2] &=& (RK[1] <<< 9) \\ RK[1] &=& RK[0] \\ RK[0] &=& TT1 \\ RK[7] &=& RK[6] \\ RK[6] &=& (RK[5] <<< 19) \\ RK[5] &=& RK[4] \\ RK[4] &=& P0(TT2) \\ ENDFOR \\ \end{eqnarray*}
 \pagebreak
 
 $ V(i+1) = ABCDEFGH \oplus V(i)$
@@ -1388,9 +1344,7 @@ $ iterations \leftarrow \frac {Length}{Hashlen} $
 $ result \leftarrow result \parallel HMACSHA256(K, i \parallel label \parallel Context \parallel Length) $
 \pagebreak
 
-\[
- G(x) = {x}^{32} + {x}^{26} + {x}^{23} + {x}^{22} + {x}^{16} + {x}^{12} + {x}^{11} + {x}^{10} + x^8 + x^7 + x^5 + x^4 + x^2 + x + 1
-\]
+\[ G(x) = {x}^{32} + {x}^{26} + {x}^{23} + {x}^{22} + {x}^{16} + {x}^{12} + {x}^{11} + {x}^{10} + x^8 + x^7 + x^5 + x^4 + x^2 + x + 1 \]
 \pagebreak
 
 $x^k × ({x}^{31} + {x}^{30} + {x}^{29} +...+ x^2 + x + 1)$
@@ -1399,9 +1353,7 @@ $x^k × ({x}^{31} + {x}^{30} + {x}^{29} +...+ x^2 + x + 1)$
 ${x}^{32}$
 \pagebreak
 
-\[
- G(x) = {x}^{31} + {x}^{30} + {x}^{26} + {x}^{25} + {x}^{24} + {x}^{18} + {x}^{15} + {x}^{14} + {x}^{12} + {x}^{11} + {x}^{10} + x^8 + x^6 + x^5 + x^4 + x^3 + x + 1
-\]
+\[ G(x) = {x}^{31} + {x}^{30} + {x}^{26} + {x}^{25} + {x}^{24} + {x}^{18} + {x}^{15} + {x}^{14} + {x}^{12} + {x}^{11} + {x}^{10} + x^8 + x^6 + x^5 + x^4 + x^3 + x + 1 \]
 \pagebreak
 
 $ IPsec\; cipher\; and\; authentication\; modes $

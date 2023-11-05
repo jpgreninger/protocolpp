@@ -2,6 +2,7 @@ var classInterfacePP_1_1ringin =
 [
     [ "ringin", "classInterfacePP_1_1ringin.html#a26def2692099007218ff5a86a79c5c72", null ],
     [ "~ringin", "classInterfacePP_1_1ringin.html#a9c100bf127ede199ff61a4204bdd901c", null ],
+    [ "ringin", "classInterfacePP_1_1ringin.html#ab623c7c11f062221c59e6c5ca005361a", null ],
     [ "get_addr", "classInterfacePP_1_1ringin.html#a2db904f13449b90a62c014a7f0e204cc", null ],
     [ "get_outaddr", "classInterfacePP_1_1ringin.html#a58a9924381a013ed1c784bf5596a28df", null ],
     [ "get_outlen", "classInterfacePP_1_1ringin.html#a5fffa980ded0e84b75b18281c20f2cde", null ],

@@ -5,14 +5,14 @@ var classProtocolPP_1_1jbuffman =
     [ "jbuffman", "classProtocolPP_1_1jbuffman.html#a3c6b13d564af674f0ac568ae552dcf3e", null ],
     [ "jbuffman", "classProtocolPP_1_1jbuffman.html#a15a0484b5605223640cb2c07c5a50bfd", null ],
     [ "jbuffman", "classProtocolPP_1_1jbuffman.html#a85d09b08d8bef557bf3500b75ffa655c", null ],
-    [ "~jbuffman", "classProtocolPP_1_1jbuffman.html#aee61d9c6e169e68ef3e77f14f593f923", null ],
+    [ "~jbuffman", "classProtocolPP_1_1jbuffman.html#a88859398c1ebb3f2944ba3dec464a8b7", null ],
     [ "avail", "classProtocolPP_1_1jbuffman.html#a013a70dc9091795d97486897e472bb10", null ],
     [ "deque", "classProtocolPP_1_1jbuffman.html#a24a624df438c99d0bb3e89b74756b1db", null ],
-    [ "deque", "classProtocolPP_1_1jbuffman.html#a77f3a80c592aeb263f95b0ec292c87a1", null ],
+    [ "deque", "classProtocolPP_1_1jbuffman.html#af93134f4b3473c2de8ad4c72b76390bd", null ],
     [ "dequea", "classProtocolPP_1_1jbuffman.html#a1f7538fb9e5f419c84bdf6e1dddbcf76", null ],
-    [ "dequea", "classProtocolPP_1_1jbuffman.html#ab489c813d0e85bf7800bae8fedf5657d", null ],
+    [ "dequea", "classProtocolPP_1_1jbuffman.html#a7e2a45e0ba4f454e1a7f726c09985eda", null ],
     [ "enque", "classProtocolPP_1_1jbuffman.html#a6f5ac4edad170c8f0c5ae960b1885ae3", null ],
-    [ "enque", "classProtocolPP_1_1jbuffman.html#a6cbfeae89f072276206089e8c540434c", null ],
-    [ "enque", "classProtocolPP_1_1jbuffman.html#a1fa565a9aa0097a043edef79425eaf0c", null ],
-    [ "enque", "classProtocolPP_1_1jbuffman.html#a9e0a0eea70c790c4b23d92a66024af4a", null ]
+    [ "enque", "classProtocolPP_1_1jbuffman.html#ae349daded81681661b6f4efcb68dc116", null ],
+    [ "enque", "classProtocolPP_1_1jbuffman.html#ad61472becd60e3f0471a79fd1286c616", null ],
+    [ "enque", "classProtocolPP_1_1jbuffman.html#afd1bdf2a527a89f45a343da365b83510", null ]
 ];

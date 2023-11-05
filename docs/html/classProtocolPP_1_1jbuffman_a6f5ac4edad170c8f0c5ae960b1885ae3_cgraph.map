@@ -1,5 +1,5 @@
 <map id="ProtocolPP::jbuffman::enque" name="ProtocolPP::jbuffman::enque">
-<area shape="rect" id="node1" title=" " alt="" coords="5,27,149,67"/>
-<area shape="rect" id="node2" href="$classProtocolPP_1_1jbuffacc.html#af5e36cfa2fb6431e67344b00ebf10151" title=" " alt="" coords="197,5,364,31"/>
-<area shape="rect" id="node3" href="$classProtocolPP_1_1jbuffacc.html#a9c5be0ba9429d0f1b7b814187dc3bbdc" title="return number of buffers being managed" alt="" coords="211,55,351,95"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,27,163,69"/>
+<area shape="rect" id="node2" href="$classProtocolPP_1_1jbuffacc.html#a1a8b08f8d81bc618b5f50f86fc804920" title=" " alt="" coords="211,5,389,32"/>
+<area shape="rect" id="node3" href="$classProtocolPP_1_1jbuffacc.html#a9c5be0ba9429d0f1b7b814187dc3bbdc" title="return number of buffers being managed" alt="" coords="225,57,375,98"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="option::Parser::Parser" name="option::Parser::Parser">
-<area shape="rect" id="node1" title="Creates a new Parser and immediately parses the given argument vector." alt="" coords="5,5,156,31"/>
-<area shape="rect" id="node2" href="$classoption_1_1Parser.html#a6e0b5778d1cfbd6cd51240e74d01e138" title="Parses the given argument vector." alt="" coords="204,5,349,31"/>
+<area shape="rect" id="node1" title="Creates a new Parser and immediately parses the given argument vector." alt="" coords="5,5,164,32"/>
+<area shape="rect" id="node2" href="$classoption_1_1Parser.html#a6e0b5778d1cfbd6cd51240e74d01e138" title="Parses the given argument vector." alt="" coords="212,5,367,32"/>
 </map>

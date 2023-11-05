@@ -1,7 +1,10 @@
 var classInterfacePP_1_1jproducer =
 [
-    [ "jproducer", "classInterfacePP_1_1jproducer.html#ac541f58ff26d312cc7a220e0c39cdec5", null ],
+    [ "jproducer", "classInterfacePP_1_1jproducer.html#a2590a1efb1f326aa5bc4834d050a878e", null ],
     [ "~jproducer", "classInterfacePP_1_1jproducer.html#a2d7007caefa38a5beab6ed64aa72c3c5", null ],
+    [ "jproducer", "classInterfacePP_1_1jproducer.html#ac6345d89e2a1f4a576aac2d04151adbb", null ],
+    [ "jproducer", "classInterfacePP_1_1jproducer.html#a33bff9729fa2c77f70e7a09ed7d9240e", null ],
+    [ "jproducer", "classInterfacePP_1_1jproducer.html#ac3e85ad1a90ff65d851e5d47e44a6507", null ],
     [ "get_field", "classInterfacePP_1_1jproducer.html#a9508347f1904dc759280833526310492", null ],
     [ "get_mem", "classInterfacePP_1_1jproducer.html#a9de758edd3d47ade03251b88d609ece1", null ],
     [ "get_mode", "classInterfacePP_1_1jproducer.html#a051ca1e78abe5d48660e941ad70da76d", null ],
@@ -17,5 +20,6 @@ var classInterfacePP_1_1jproducer =
     [ "write", "classInterfacePP_1_1jproducer.html#a151361747d06244a010f0c1ee8d5279c", null ],
     [ "write", "classInterfacePP_1_1jproducer.html#a7ad7f2c2126397c97d7d771da18c4a90", null ],
     [ "write", "classInterfacePP_1_1jproducer.html#a6cda134682ee6ba6c33c80ca7be8a9be", null ],
-    [ "write", "classInterfacePP_1_1jproducer.html#a1738d1ac1659602ef8c6171e32812fbc", null ]
+    [ "write", "classInterfacePP_1_1jproducer.html#a1738d1ac1659602ef8c6171e32812fbc", null ],
+    [ "m_mmu", "classInterfacePP_1_1jproducer.html#a9777da3a920f848f14f15719f521a260", null ]
 ];

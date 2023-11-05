@@ -1,0 +1,5 @@
+<map id="option::Option::first" name="option::Option::first">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,152,32"/>
+<area shape="rect" id="node2" href="$classoption_1_1Option.html#abb4e13cd7c90999c8a6b1f871cece283" title="Returns a pointer to the first element of the linked list." alt="" coords="200,5,347,32"/>
+<area shape="rect" id="node3" href="$classoption_1_1Option.html#af51f53a553ef46110e36008a58466a2e" title="Returns true iff this is the first element of the linked list." alt="" coords="395,5,556,32"/>
+</map>

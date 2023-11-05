@@ -9,9 +9,9 @@ var classProtocolPP_1_1jmemory =
     [ "dequeue", "classProtocolPP_1_1jmemory.html#afa254201556a5a077a03264ef13232c0", null ],
     [ "enqueue", "classProtocolPP_1_1jmemory.html#a04fd8604e491cae6d49448187832d627", null ],
     [ "read", "classProtocolPP_1_1jmemory.html#ad55098b553d24d318dd6c8a85e32b4b4", null ],
-    [ "read", "classProtocolPP_1_1jmemory.html#ac52f6afebbb1bf373c58abfee5c422c9", null ],
+    [ "read", "classProtocolPP_1_1jmemory.html#a4abea4af189730b1a11061dda790d185", null ],
     [ "read", "classProtocolPP_1_1jmemory.html#ac63078dac6f9ff2f8d84b29b34d0ab11", null ],
     [ "write", "classProtocolPP_1_1jmemory.html#aadb6d5321bdd49a8ce4613da0461deaf", null ],
-    [ "write", "classProtocolPP_1_1jmemory.html#af7ccf51b0a2bacf1e76d0f6186e1c077", null ],
+    [ "write", "classProtocolPP_1_1jmemory.html#a1f4d1f0458148f973ea600f754af511e", null ],
     [ "write", "classProtocolPP_1_1jmemory.html#a65ac19d2a8e2e31723564bae333ba2a7", null ]
 ];

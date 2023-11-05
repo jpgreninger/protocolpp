@@ -6,7 +6,7 @@ var classProtocolPP_1_1jstream =
     [ "jstream", "classProtocolPP_1_1jstream.html#a88f9c593610a53d5058d64cf86794141", null ],
     [ "jstream", "classProtocolPP_1_1jstream.html#a697c4a904018b0a854e3dcf2ffd9176d", null ],
     [ "jstream", "classProtocolPP_1_1jstream.html#a38977d34d1608e003a6af91fa77606b6", null ],
-    [ "~jstream", "classProtocolPP_1_1jstream.html#a5454206c202553e408aef61043b8ec00", null ],
+    [ "~jstream", "classProtocolPP_1_1jstream.html#a41d5ca6d4f9f00311a9ddf2765b62d46", null ],
     [ "clean", "classProtocolPP_1_1jstream.html#a9a3371df2cfcc10a185b127033c00782", null ],
     [ "get_engine", "classProtocolPP_1_1jstream.html#a989081e3b12a60c31aa2b964752caf7f", null ],
     [ "get_field", "classProtocolPP_1_1jstream.html#a0d335914b0e25e0e72ed4db57aa74e2b", null ],

@@ -1,7 +1,10 @@
 var classProtocolPP_1_1ciphers =
 [
-    [ "get_auth", "classProtocolPP_1_1ciphers.html#ae1610fdeaad1bb4ff5825865e7b52a5b", null ],
-    [ "get_auth", "classProtocolPP_1_1ciphers.html#a3d8d208d9b1c8c0f3bd3acdafde456b3", null ],
-    [ "get_cipher", "classProtocolPP_1_1ciphers.html#a446eedecf21dfe4318e6ad80261249e3", null ],
-    [ "get_crc", "classProtocolPP_1_1ciphers.html#a59c0b5df22a3340055beb95e823f4cc2", null ]
+    [ "ciphers", "classProtocolPP_1_1ciphers.html#a0472624e826f8c83838389d79a3ad9e6", null ],
+    [ "ciphers", "classProtocolPP_1_1ciphers.html#afec6f66ce7b8a390c17176848c813628", null ],
+    [ "ciphers", "classProtocolPP_1_1ciphers.html#ac723a22c64a9c00990d30eeb487ccea3", null ],
+    [ "get_auth", "classProtocolPP_1_1ciphers.html#a6afde47d608d2a5017b3ff4cc59d9a77", null ],
+    [ "get_auth", "classProtocolPP_1_1ciphers.html#a897fb0161df03d767f323c1d1da6506b", null ],
+    [ "get_cipher", "classProtocolPP_1_1ciphers.html#a2ae6fb842706444c8b71f12880beaf8f", null ],
+    [ "get_crc", "classProtocolPP_1_1ciphers.html#a03d3ede2283eba36059abcfe7efaa40c", null ]
 ];
