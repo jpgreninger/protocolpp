@@ -7,6 +7,7 @@ var namespaceProtocolPP =
     [ "EnumString", "structProtocolPP_1_1EnumString.html", "structProtocolPP_1_1EnumString" ],
     [ "jarray", "classProtocolPP_1_1jarray.html", "classProtocolPP_1_1jarray" ],
     [ "jbuffacc", "classProtocolPP_1_1jbuffacc.html", "classProtocolPP_1_1jbuffacc" ],
+    [ "jbuffer", "classProtocolPP_1_1jbuffer.html", "classProtocolPP_1_1jbuffer" ],
     [ "jbuffman", "classProtocolPP_1_1jbuffman.html", "classProtocolPP_1_1jbuffman" ],
     [ "jconfident", "classProtocolPP_1_1jconfident.html", "classProtocolPP_1_1jconfident" ],
     [ "jconfidentsa", "classProtocolPP_1_1jconfidentsa.html", "classProtocolPP_1_1jconfidentsa" ],

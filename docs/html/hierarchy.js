@@ -43,6 +43,8 @@ var hierarchy =
     [ "ProtocolPP::jarray< uint8_t >", "classProtocolPP_1_1jarray.html", null ],
     [ "jbuffacc", "classjbuffacc.html", null ],
     [ "ProtocolPP::jbuffacc< Q, T >", "classProtocolPP_1_1jbuffacc.html", null ],
+    [ "jbuffer", "classjbuffer.html", null ],
+    [ "ProtocolPP::jbuffer< T, Q >", "classProtocolPP_1_1jbuffer.html", null ],
     [ "jbuffman", "classjbuffman.html", null ],
     [ "ProtocolPP::jbuffman< T, Q >", "classProtocolPP_1_1jbuffman.html", null ],
     [ "jconfident", "classjconfident.html", null ],

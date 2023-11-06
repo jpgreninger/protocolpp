@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['_7eaead_5fchacha_5fpoly1305_2081',['~aead_chacha_poly1305',['../classProtocolPP_1_1aead__chacha__poly1305.html#a1f0e5a1912f5e2e437c3e74c708a5f34',1,'ProtocolPP::aead_chacha_poly1305']]],
-  ['_7echacha20_2082',['~chacha20',['../classProtocolPP_1_1chacha20.html#af3ae4b26d780a115bde8b565cd954b2c',1,'ProtocolPP::chacha20']]],
-  ['_7efile_5flog_5fpolicy_2083',['~file_log_policy',['../classInterfacePP_1_1file__log__policy.html#a44b914f7799597d76041ee635a363534',1,'InterfacePP::file_log_policy']]],
-  ['_7efile_5fstdout_5flog_5fpolicy_2084',['~file_stdout_log_policy',['../classInterfacePP_1_1file__stdout__log__policy.html#a7421313a15e9327651177aa4b1ac2d1b',1,'InterfacePP::file_stdout_log_policy']]],
-  ['_7ejarray_2085',['~jarray',['../classProtocolPP_1_1jarray.html#a4124854cfc8cc9e6b11903922d230dec',1,'ProtocolPP::jarray']]],
-  ['_7ejbuffacc_2086',['~jbuffacc',['../classProtocolPP_1_1jbuffacc.html#a944ce586e891f513e4ccd8014bd67a40',1,'ProtocolPP::jbuffacc']]],
+  ['_7eaead_5fchacha_5fpoly1305_2080',['~aead_chacha_poly1305',['../classProtocolPP_1_1aead__chacha__poly1305.html#a1f0e5a1912f5e2e437c3e74c708a5f34',1,'ProtocolPP::aead_chacha_poly1305']]],
+  ['_7echacha20_2081',['~chacha20',['../classProtocolPP_1_1chacha20.html#af3ae4b26d780a115bde8b565cd954b2c',1,'ProtocolPP::chacha20']]],
+  ['_7efile_5flog_5fpolicy_2082',['~file_log_policy',['../classInterfacePP_1_1file__log__policy.html#a44b914f7799597d76041ee635a363534',1,'InterfacePP::file_log_policy']]],
+  ['_7efile_5fstdout_5flog_5fpolicy_2083',['~file_stdout_log_policy',['../classInterfacePP_1_1file__stdout__log__policy.html#a7421313a15e9327651177aa4b1ac2d1b',1,'InterfacePP::file_stdout_log_policy']]],
+  ['_7ejarray_2084',['~jarray',['../classProtocolPP_1_1jarray.html#a4124854cfc8cc9e6b11903922d230dec',1,'ProtocolPP::jarray']]],
+  ['_7ejbuffacc_2085',['~jbuffacc',['../classProtocolPP_1_1jbuffacc.html#a944ce586e891f513e4ccd8014bd67a40',1,'ProtocolPP::jbuffacc']]],
+  ['_7ejbuffer_2086',['~jbuffer',['../classProtocolPP_1_1jbuffer.html#a98a0e7708a44b7cbd229f10b337912d8',1,'ProtocolPP::jbuffer']]],
   ['_7ejbuffman_2087',['~jbuffman',['../classProtocolPP_1_1jbuffman.html#a88859398c1ebb3f2944ba3dec464a8b7',1,'ProtocolPP::jbuffman']]],
   ['_7ejconfident_2088',['~jconfident',['../classProtocolPP_1_1jconfident.html#ab7d4ffd59f28aa0afe7eba54d584cbef',1,'ProtocolPP::jconfident']]],
   ['_7ejconfidentsa_2089',['~jconfidentsa',['../classProtocolPP_1_1jconfidentsa.html#a53ee6bff579037e4723852312e227513',1,'ProtocolPP::jconfidentsa']]],
