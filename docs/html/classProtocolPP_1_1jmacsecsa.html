@@ -112,8 +112,8 @@ Collaboration diagram for ProtocolPP::jmacsecsa:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8ed9abafa96b1ccfdaade3a7880f5020"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmacsecsa.html#a8ed9abafa96b1ccfdaade3a7880f5020">jmacsecsa</a> ()</td></tr>
 <tr class="separator:a8ed9abafa96b1ccfdaade3a7880f5020"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f67bdf721009984fd61f77e97d27c7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmacsecsa.html#a8f67bdf721009984fd61f77e97d27c7a">jmacsecsa</a> (<a class="el" href="namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2">direction_t</a> dir, <a class="el" href="namespaceProtocolPP.html#a0fb0143ef9f81907fc57e8a61cf4a45b">macsecmode_t</a> mode, bool usext, bool enreceive, bool entransmit, bool protectframes, uint8_t tcian, uint8_t sl, uint16_t ethtype, uint32_t vlantag1, uint32_t vlantag2, uint32_t pn, uint32_t xpn, uint32_t ssci, uint32_t arlen, uint32_t icvlen, uint32_t keylen, uint64_t src, uint64_t dst, uint64_t sci, <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; uint8_t &gt; arwin, std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; uint8_t &gt;&gt; sakey, std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; uint8_t &gt;&gt; salt)</td></tr>
-<tr class="separator:a8f67bdf721009984fd61f77e97d27c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba97c5394ffb9ddfb007650db2e774d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmacsecsa.html#aba97c5394ffb9ddfb007650db2e774d3">jmacsecsa</a> (<a class="el" href="namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2">direction_t</a> dir, <a class="el" href="namespaceProtocolPP.html#a0fb0143ef9f81907fc57e8a61cf4a45b">macsecmode_t</a> mode, bool fcs, bool usext, bool enreceive, bool entransmit, bool protectframes, uint8_t tcian, uint8_t sl, uint16_t ethtype, uint32_t vlantag1, uint32_t vlantag2, uint32_t pn, uint32_t xpn, uint32_t ssci, uint32_t arlen, uint32_t icvlen, uint32_t keylen, uint64_t src, uint64_t dst, uint64_t sci, <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; uint8_t &gt; arwin, std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; uint8_t &gt;&gt; sakey, std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; uint8_t &gt;&gt; salt)</td></tr>
+<tr class="separator:aba97c5394ffb9ddfb007650db2e774d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5baf2026247455be175bef53c9415d4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmacsecsa.html#a5baf2026247455be175bef53c9415d4c">jmacsecsa</a> (<a class="el" href="classProtocolPP_1_1jmacsecsa.html">jmacsecsa</a> &amp;rhs)</td></tr>
 <tr class="separator:a5baf2026247455be175bef53c9415d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a12d978dfd0d33461b22ea75c51a34e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmacsecsa.html#a8a12d978dfd0d33461b22ea75c51a34e">jmacsecsa</a> (std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jmacsecsa.html">jmacsecsa</a> &gt; &amp;rhs)</td></tr>
@@ -175,6 +175,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr>
 <td>mode</td><td>macsecmode_t::AES_GCM_128 </td></tr>
 <tr>
+<td>fcs</td><td>false </td></tr>
+<tr>
 <td>usext</td><td>false </td></tr>
 <tr>
 <td>enreceive</td><td>false </td></tr>
@@ -221,8 +223,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </div><!-- fragment --> 
 </div>
 </div>
-<a id="a8f67bdf721009984fd61f77e97d27c7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f67bdf721009984fd61f77e97d27c7a">&#9670;&nbsp;</a></span>jmacsecsa() <span class="overload">[2/4]</span></h2>
+<a id="aba97c5394ffb9ddfb007650db2e774d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba97c5394ffb9ddfb007650db2e774d3">&#9670;&nbsp;</a></span>jmacsecsa() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -238,6 +240,12 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
           <td></td>
           <td class="paramtype"><a class="el" href="namespaceProtocolPP.html#a0fb0143ef9f81907fc57e8a61cf4a45b">macsecmode_t</a>&#160;</td>
           <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fcs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -377,6 +385,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
   <table class="params">
     <tr><td class="paramname">dir</td><td>- Direction for processing (ENCAP or DECAP) </td></tr>
     <tr><td class="paramname">mode</td><td>- Mode for MACSEC (AES-GCM with 128-bit or 256-bit key with or without extended packet number) </td></tr>
+    <tr><td class="paramname">fcs</td><td>- Calculate the CRC-IEEE over the packet and add to packet (ENCAP) or verify (DECAP) </td></tr>
     <tr><td class="paramname">usext</td><td>- use extended sequence number </td></tr>
     <tr><td class="paramname">enreceive</td><td>- SA receiving frames </td></tr>
     <tr><td class="paramname">entransmit</td><td>- SA transmitting frames </td></tr>
@@ -491,6 +500,8 @@ template&lt;typename T &gt; </div>
 <tr>
 <td>macsecmode_t</td><td>MODE</td><td>macsecmode_t mymode = get_field&lt;macsecmode_t&gt;(field_t::MODE) </td></tr>
 <tr>
+<td>bool</td><td>FCS</td><td>bool myfcs = get_field&lt;bool&gt;(field_t::FCS) </td></tr>
+<tr>
 <td>bool</td><td>USEXT</td><td>bool myusext = get_field&lt;bool&gt;(field_t::USEXT) </td></tr>
 <tr>
 <td>uint8_t</td><td>TCIAN</td><td>uint8_t mytcian = get_field&lt;uint8_t&gt;(field_t::TCIAN) </td></tr>
@@ -572,6 +583,8 @@ template&lt;typename T &gt; </div>
 <td>direction_t</td><td>DIRECTION</td><td>set_field&lt;direction_t&gt;(field_t::DIRECTION, direction_t::ENCAP) </td></tr>
 <tr>
 <td>macsecmode_t</td><td>MODE</td><td>set_field&lt;macsecmode_t&gt;(field_t::MODE, macsecmode_t::AES_256_GCM) </td></tr>
+<tr>
+<td>bool</td><td>FCS</td><td>set_field&lt;bool&gt;(field_t::FCS, true) </td></tr>
 <tr>
 <td>bool</td><td>USEXT</td><td>set_field&lt;bool&gt;(field_t::USEXT, true) </td></tr>
 <tr>
@@ -723,7 +736,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceProtocolPP.html">ProtocolPP</a></li><li class="navelem"><a class="el" href="classProtocolPP_1_1jmacsecsa.html">jmacsecsa</a></li>
-    <li class="footer">Generated on Sun Nov 5 2023 23:19:20 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Nov 15 2023 00:46:06 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

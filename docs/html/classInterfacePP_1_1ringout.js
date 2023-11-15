@@ -1,8 +1,8 @@
 var classInterfacePP_1_1ringout =
 [
+    [ "ringout", "classInterfacePP_1_1ringout.html#a5e869046df097282856dbd74922d0b71", null ],
     [ "ringout", "classInterfacePP_1_1ringout.html#a6836dfc8dac53c054393ad0a76934ba7", null ],
     [ "~ringout", "classInterfacePP_1_1ringout.html#a12d8610f7dadadf6ba105ff8125940fd", null ],
-    [ "ringout", "classInterfacePP_1_1ringout.html#a41b6531d859b539999330a2007e7be02", null ],
     [ "get_addr", "classInterfacePP_1_1ringout.html#ae335c58c77a0932238ad892004e9ff7d", null ],
     [ "get_size", "classInterfacePP_1_1ringout.html#a6905ed9a665cbb189d7c4e72abe597dc", null ],
     [ "get_status", "classInterfacePP_1_1ringout.html#af802f959eeadae3934e013bc7bf85992", null ],

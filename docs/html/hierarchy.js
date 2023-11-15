@@ -166,6 +166,8 @@ var hierarchy =
     [ "InterfacePP::jresponderbuf", "classInterfacePP_1_1jresponderbuf.html", null ],
     [ "jresponderbuf", "classjresponderbuf.html", null ],
     [ "jring", "classjring.html", null ],
+    [ "InterfacePP::jringbuf< TR >", "classInterfacePP_1_1jringbuf.html", null ],
+    [ "jringbuf", "classjringbuf.html", null ],
     [ "DriverPP::jringdrive", "classDriverPP_1_1jringdrive.html", null ],
     [ "jringdrive", "classjringdrive.html", null ],
     [ "jrsa", "classjrsa.html", null ],
@@ -258,6 +260,7 @@ var hierarchy =
     [ "option::PrintUsageImplementation", "structoption_1_1PrintUsageImplementation.html", null ],
     [ "InterfacePP::ringflow", "classInterfacePP_1_1ringflow.html", null ],
     [ "InterfacePP::ringin", "classInterfacePP_1_1ringin.html", null ],
+    [ "ringobj", "classringobj.html", null ],
     [ "InterfacePP::ringout", "classInterfacePP_1_1ringout.html", null ],
     [ "InterfacePP::secin", "classInterfacePP_1_1secin.html", [
       [ "InterfacePP::secout", "classInterfacePP_1_1secout.html", null ]

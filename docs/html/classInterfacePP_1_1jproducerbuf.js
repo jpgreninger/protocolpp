@@ -1,6 +1,6 @@
 var classInterfacePP_1_1jproducerbuf =
 [
-    [ "jproducerbuf", "classInterfacePP_1_1jproducerbuf.html#abdab53ceed33f6dab4b0e4aa5c43d531", null ],
+    [ "jproducerbuf", "classInterfacePP_1_1jproducerbuf.html#a221e40fd36e9fc1a6c67c7e3b2bfb114", null ],
     [ "~jproducerbuf", "classInterfacePP_1_1jproducerbuf.html#a85c9ed8012ad0ea875f7aab00b24e31c", null ],
     [ "jproducerbuf", "classInterfacePP_1_1jproducerbuf.html#a1b0aec2e1138331c5f33781baa6f3010", null ],
     [ "jproducerbuf", "classInterfacePP_1_1jproducerbuf.html#a919c2664e957f222e6a14a7512bf5b8a", null ],
@@ -9,7 +9,7 @@ var classInterfacePP_1_1jproducerbuf =
     [ "get_mem", "classInterfacePP_1_1jproducerbuf.html#a97e4050ce5582ad438508caf7812640c", null ],
     [ "get_mode", "classInterfacePP_1_1jproducerbuf.html#a1bd7b411a0575c540d5958c6c9c34f9f", null ],
     [ "get_status", "classInterfacePP_1_1jproducerbuf.html#aaf763577de3cf07244021c9d5a6e7fda", null ],
-    [ "issue", "classInterfacePP_1_1jproducerbuf.html#a84d7927fed05d59ddca390fead53d5df", null ],
+    [ "issue", "classInterfacePP_1_1jproducerbuf.html#ac12687f3e58f6525ae81c126a802dc9f", null ],
     [ "process", "classInterfacePP_1_1jproducerbuf.html#a92409ebf7a4699df7c134386e092b5fd", null ],
     [ "read", "classInterfacePP_1_1jproducerbuf.html#a1dd0568ade76f42dcdfe8d24fe8c95e3", null ],
     [ "read", "classInterfacePP_1_1jproducerbuf.html#a17e10a809d3a2f5f3ba314190b3f3072", null ],
