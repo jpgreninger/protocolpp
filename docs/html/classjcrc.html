@@ -125,119 +125,25 @@ Cyclic Redundacy Check (CRC)</h1>
 <tr>
 <th>Name</th><th>Uses</th><th>Normal</th><th>Reversed</th><th>Reciprocal</th><th>Reversed reciprocal </th></tr>
 <tr>
-<td>CRC-1</td><td>most hardware; also known as parity bit</td><td>0x1</td><td>0x1</td><td>0x1</td><td>0x1 </td></tr>
-<tr>
-<td>CRC-3-GSM</td><td>mobile networks</td><td>0x3</td><td>0x6</td><td>0x5</td><td>0x5 </td></tr>
-<tr>
-<td>CRC-4-ITU</td><td>ITU-T G.704, p. 12</td><td>0x3</td><td>0xC</td><td>0x9</td><td>0x9 </td></tr>
-<tr>
-<td>CRC-5-EPC</td><td>Gen 2 RFID</td><td>0x09</td><td>0x12</td><td>0x05</td><td>0x14 </td></tr>
-<tr>
-<td>CRC-5-ITU</td><td>ITU-T G.704, p. 9</td><td>0x15</td><td>0x15</td><td>0x0B</td><td>0x1A </td></tr>
-<tr>
 <td>CRC-5-USB</td><td>USB token packets</td><td>0x05</td><td>0x14</td><td>0x09</td><td>0x12 </td></tr>
-<tr>
-<td>CRC-6-CDMA2000-A</td><td>mobile networks</td><td>0x27</td><td>0x39</td><td>0x33</td><td>0x33 </td></tr>
-<tr>
-<td>CRC-6-CDMA2000-B</td><td>mobile networks</td><td>0x07</td><td>0x38</td><td>0x31</td><td>0x23 </td></tr>
-<tr>
-<td>CRC-6-DARC</td><td>Data Radio Channel</td><td>0x19</td><td>0x26</td><td>0x0D</td><td>0x2C </td></tr>
-<tr>
-<td>CRC-6-GSM</td><td>mobile networks</td><td>0x2F</td><td>0x3D</td><td>0x3B</td><td>0x37 </td></tr>
-<tr>
-<td>CRC-6-ITU</td><td>ITU-T G.704, p. 3</td><td>0x03</td><td>0x30</td><td>0x21</td><td>0x21 </td></tr>
 <tr>
 <td>CRC-7</td><td>telecom systems, ITU-T G.707, ITU-T G.832, MMC, SD</td><td>0x09</td><td>0x48</td><td>0x11</td><td>0x44 </td></tr>
 <tr>
-<td>CRC-7-MVB</td><td>Train Communication Network, IEC 60870-5</td><td>0x65</td><td>0x53</td><td>0x27</td><td>0x72 </td></tr>
-<tr>
-<td>CRC-8</td><td>DVB-S2</td><td>0xD5</td><td>0xAB</td><td>0x57</td><td>0xEA </td></tr>
-<tr>
-<td>CRC-8-AUTOSAR</td><td>automotive integration, OpenSafety</td><td>0x2F</td><td>0xF4</td><td>0xE9</td><td>0x97 </td></tr>
-<tr>
-<td>CRC-8-Bluetooth</td><td>wireless connectivity</td><td>0xA7</td><td>0xE5</td><td>0xCB</td><td>0xD3 </td></tr>
-<tr>
 <td>CRC-8-CCITT</td><td>ITU-T I.432.1; ATM, ISDN HEC and cell delineation; SMBus PEC</td><td>0x07</td><td>0xE0</td><td>0xC1</td><td>0x83 </td></tr>
-<tr>
-<td>CRC-8-Dallas/Maxim</td><td>1-Wire bus</td><td>0x31</td><td>0x8C</td><td>0x19</td><td>0x98 </td></tr>
-<tr>
-<td>CRC-8-DARC</td><td>Data Radio Channel</td><td>0x39</td><td>0x9C</td><td>0x39</td><td>0x9C </td></tr>
-<tr>
-<td>CRC-8-GSM-B</td><td>mobile networks</td><td>0x49</td><td>0x92</td><td>0x25</td><td>0xA4 </td></tr>
-<tr>
-<td>CRC-8-SAE</td><td>J1850 AES3; OBD</td><td>0x1D</td><td>0xB8</td><td>0x71</td><td>0x8E </td></tr>
-<tr>
-<td>CRC-8-WCDMA</td><td>mobile networks</td><td>0x9B</td><td>0xD9</td><td>0xB3</td><td>0xCD </td></tr>
-<tr>
-<td>CRC-10</td><td>ATM; ITU-T I.610</td><td>0x233</td><td>0x331</td><td>0x263</td><td>0x319 </td></tr>
-<tr>
-<td>CRC-10-CDMA2000</td><td>mobile networks</td><td>0x3D9</td><td>0x26F</td><td>0x0DF</td><td>0x3EC </td></tr>
-<tr>
-<td>CRC-10-GSM</td><td>mobile networks</td><td>0x175</td><td>0x2BA</td><td>0x175</td><td>0x2BA </td></tr>
 <tr>
 <td>CRC-11</td><td>FlexRay</td><td>0x385</td><td>0x50E</td><td>0x21D</td><td>0x5C2 </td></tr>
 <tr>
 <td>CRC-12</td><td>telecom systems</td><td>0x80F</td><td>0xF01</td><td>0xE03</td><td>0xC07 </td></tr>
 <tr>
-<td>CRC-12-CDMA2000</td><td>mobile networks</td><td>0xF13</td><td>0xC8F</td><td>0x91F</td><td>0xF89 </td></tr>
-<tr>
-<td>CRC-12-GSM</td><td>mobile networks</td><td>0xD31</td><td>0x8CB</td><td>0x197</td><td>0xE98 </td></tr>
-<tr>
-<td>CRC-13-BBC</td><td>Time signal, Radio teleswitch</td><td>0x1CF5</td><td>0x15E7</td><td>0x0BCF</td><td>0x1E7A </td></tr>
-<tr>
-<td>CRC-14-DARC</td><td>Data Radio Channel</td><td>0x0805</td><td>0x2804</td><td>0x1009</td><td>0x2402 </td></tr>
-<tr>
-<td>CRC-14-GSM</td><td>mobile networks</td><td>0x202D</td><td>0x2D01</td><td>0x1A03</td><td>0x3016 </td></tr>
-<tr>
-<td>CRC-15-CAN</td><td></td><td>0x4599</td><td>0x4CD1</td><td>0x19A3</td><td>0x62CC </td></tr>
-<tr>
-<td>CRC-15-MPT1327</td><td></td><td>0x6815</td><td>0x540B</td><td>0x2817</td><td>0x740A </td></tr>
-<tr>
-<td>CRC-16-Chakravarty</td><td>Optimal for payloads ≤64 bits</td><td>0x2F15</td><td>0xA8F4</td><td>0x51E9</td><td>0x978A </td></tr>
-<tr>
-<td>CRC-16-ARINC</td><td>ACARS applications</td><td>0xA02B</td><td>0xD405</td><td>0xA80B</td><td>0xD015 </td></tr>
-<tr>
 <td>CRC-16-CCITT</td><td>known as CRC-CCITT</td><td>0x1021</td><td>0x8408</td><td>0x811</td><td>0x8810 </td></tr>
-<tr>
-<td>CRC-16-CDMA2000</td><td>mobile networks</td><td>0xC867</td><td>0xE613</td><td>0xCC27</td><td>0xE433 </td></tr>
-<tr>
-<td>CRC-16-DECT</td><td>cordless telephones</td><td>0x0589</td><td>0x91A0</td><td>0x2341</td><td>0x82C4 </td></tr>
-<tr>
-<td>CRC-16-T10-DIF</td><td>SCSI DIF</td><td>0x8BB7</td><td>0xEDD1</td><td>0xDBA3</td><td>0xC5DB </td></tr>
-<tr>
-<td>CRC-16-DNP</td><td>DNP, IEC 870, M-Bus</td><td>0x3D65</td><td>0xA6BC</td><td>0x4D79</td><td>0x9EB2 </td></tr>
 <tr>
 <td>CRC-16-IBM</td><td>USB, many others; also known as CRC-16 and CRC-16-ANSI</td><td>0x8005</td><td>0xA001</td><td>0x4003</td><td>0xC002 </td></tr>
 <tr>
-<td>CRC-16-OpenSafety-A</td><td>safety fieldbus</td><td>0x5935</td><td>0xAC9A</td><td>0x5935</td><td>0xAC9A </td></tr>
-<tr>
-<td>CRC-16-OpenSafety-B</td><td>safety fieldbus</td><td>0x755B</td><td>0xDAAE</td><td>0xB55D</td><td>0xBAAD </td></tr>
-<tr>
-<td>CRC-16-Profibus</td><td>fieldbus networks</td><td>0x1DCF</td><td>0xF3B8</td><td>0xE771</td><td>0x8EE7 </td></tr>
-<tr>
-<td>CRC-17-CAN</td><td>CAN FD</td><td>0x1685B</td><td>0x1B42D</td><td>0x1685B</td><td>0x1B42D </td></tr>
-<tr>
-<td>CRC-21-CAN</td><td>CAN FD</td><td>0x102899</td><td>0x132281</td><td>0x064503</td><td>0x18144C </td></tr>
-<tr>
-<td>CRC-24</td><td>FlexRay</td><td>0x5D6DCB</td><td>0xD3B6BA</td><td>0xA76D75</td><td>0xAEB6E5 </td></tr>
-<tr>
 <td>CRC-24-Radix-64</td><td>OpenPGP, RTCM104v3</td><td>0x864CFB</td><td>0xDF3261</td><td>0xBE64C3</td><td>0xC3267D </td></tr>
-<tr>
-<td>CRC-24-WCDMA</td><td>Used in OS-9 RTOS</td><td>0x800063</td><td>0xC60001</td><td>0x8C0003</td><td>0xC00031 </td></tr>
-<tr>
-<td>CRC-30</td><td>CDMA</td><td>0x2030B9C7</td><td>0x38E74301</td><td>0x31CE8603</td><td>0x30185CE3 </td></tr>
 <tr>
 <td>CRC-32</td><td>ISO/IEC/IEEE 802-3 (Ethernet), many others</td><td>0x04C11DB7</td><td>0xEDB88320</td><td>0xDB710641</td><td>0x82608EDB </td></tr>
 <tr>
 <td>CRC-32C</td><td>Castagnoli; iSCSI</td><td>0x1EDC6F41</td><td>0x82F63B78</td><td>0x05EC76F1</td><td>0x8F6E37A0 </td></tr>
-<tr>
-<td>CRC-32K</td><td>Koopman {1,3,28}</td><td>0x741B8CD7</td><td>0xEB31D82E</td><td>0xD663B05D</td><td>0xBA0DC66B </td></tr>
-<tr>
-<td>CRC-32K2</td><td>Koopman {1,1,30}</td><td>0x32583499</td><td>0x992C1A4C</td><td>0x32583499</td><td>0x992C1A4C </td></tr>
-<tr>
-<td>CRC-32Q</td><td>aviation; AIXM</td><td>0x814141AB</td><td>0xD5828281</td><td>0xAB050503</td><td>0xC0A0A0D5 </td></tr>
-<tr>
-<td>CRC-40-GSM</td><td>GSM control channel</td><td>0x0004820009</td><td>0x9000412000</td><td>0x2000824001</td><td>0x8002410004 </td></tr>
 <tr>
 <td>CRC-64-ECMA</td><td>ECMA-182 p. 51, XZ Utils</td><td>0x42F0E1EBA9EA3693</td><td>0xC96C5795D7870F42</td><td>0x92D8AF2BAF0E1E85</td><td>0xA17870F5D4F51B49 </td></tr>
 <tr>
@@ -292,7 +198,7 @@ Cyclic Redundacy Check (CRC)</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjcrc.html">jcrc</a></li>
-    <li class="footer">Generated on Tue Nov 21 2023 20:08:48 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Dec 29 2023 12:31:25 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

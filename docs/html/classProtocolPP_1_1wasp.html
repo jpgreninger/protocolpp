@@ -115,12 +115,12 @@ Collaboration diagram for ProtocolPP::wasp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a97fcd58f0240e9a47955a2a68a57709d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1wasp.html#a97fcd58f0240e9a47955a2a68a57709d">wasp</a> (const char *input, const char *out=nullptr, uint64_t seed=static_cast&lt; uint64_t &gt;(time(nullptr)))</td></tr>
-<tr class="separator:a97fcd58f0240e9a47955a2a68a57709d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac993f97e495be2b3848dd89bd7d6e17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1wasp.html#aac993f97e495be2b3848dd89bd7d6e17">wasp</a> (std::string &amp;input, const char *out=nullptr, uint64_t seed=static_cast&lt; uint64_t &gt;(time(nullptr)))</td></tr>
-<tr class="separator:aac993f97e495be2b3848dd89bd7d6e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28658939d15ef52f2eabae64f5d1606f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1wasp.html#a28658939d15ef52f2eabae64f5d1606f">wasp</a> (std::shared_ptr&lt; <a class="el" href="classtinyxml2_1_1XMLDocument.html">tinyxml2::XMLDocument</a> &gt; &amp;input, const char *out=nullptr, uint64_t seed=static_cast&lt; uint64_t &gt;(time(nullptr)))</td></tr>
-<tr class="separator:a28658939d15ef52f2eabae64f5d1606f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1477879cd653a6161dea1b9173431e3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1wasp.html#a1477879cd653a6161dea1b9173431e3f">wasp</a> (const char *input, const char *out=&quot;no_output&quot;, uint64_t seed=static_cast&lt; uint64_t &gt;(time(nullptr)), bool use_crypto=false)</td></tr>
+<tr class="separator:a1477879cd653a6161dea1b9173431e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b8362ff8c371c77278db8bee2d34603"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1wasp.html#a2b8362ff8c371c77278db8bee2d34603">wasp</a> (std::string &amp;input, const char *out=&quot;no_output&quot;, uint64_t seed=static_cast&lt; uint64_t &gt;(time(nullptr)), bool use_crypto=false)</td></tr>
+<tr class="separator:a2b8362ff8c371c77278db8bee2d34603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe74e21e61c8f88326acee76af9fd301"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1wasp.html#abe74e21e61c8f88326acee76af9fd301">wasp</a> (std::shared_ptr&lt; <a class="el" href="classtinyxml2_1_1XMLDocument.html">tinyxml2::XMLDocument</a> &gt; &amp;input, const char *out=&quot;no_output&quot;, uint64_t seed=static_cast&lt; uint64_t &gt;(time(nullptr)), bool use_crypto=false)</td></tr>
+<tr class="separator:abe74e21e61c8f88326acee76af9fd301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74df75da8393cacfd2ba1327a1cf7f8b"><td class="memItemLeft" align="right" valign="top"><a id="a74df75da8393cacfd2ba1327a1cf7f8b"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1wasp.html#a74df75da8393cacfd2ba1327a1cf7f8b">~wasp</a> ()=default</td></tr>
 <tr class="memdesc:a74df75da8393cacfd2ba1327a1cf7f8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">W.A.S.P standard deconstructor. <br /></td></tr>
@@ -300,8 +300,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_elementJustOpened</b
 <tr class="separator:a99d59e67e084714541bee3ae43884bef inherit pro_attribs_classtinyxml2_1_1XMLPrinter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a97fcd58f0240e9a47955a2a68a57709d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97fcd58f0240e9a47955a2a68a57709d">&#9670;&nbsp;</a></span>wasp() <span class="overload">[1/3]</span></h2>
+<a id="a1477879cd653a6161dea1b9173431e3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1477879cd653a6161dea1b9173431e3f">&#9670;&nbsp;</a></span>wasp() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -319,13 +319,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_elementJustOpened</b
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>out</em> = <code>nullptr</code>, </td>
+          <td class="paramname"><em>out</em> = <code>&quot;no_output&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>seed</em> = <code>static_cast&lt;&#160;uint64_t&#160;&gt;(time(nullptr))</code>&#160;</td>
+          <td class="paramname"><em>seed</em> = <code>static_cast&lt;&#160;uint64_t&#160;&gt;(time(nullptr))</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_crypto</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -351,8 +357,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_elementJustOpened</b
 
 </div>
 </div>
-<a id="aac993f97e495be2b3848dd89bd7d6e17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac993f97e495be2b3848dd89bd7d6e17">&#9670;&nbsp;</a></span>wasp() <span class="overload">[2/3]</span></h2>
+<a id="a2b8362ff8c371c77278db8bee2d34603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b8362ff8c371c77278db8bee2d34603">&#9670;&nbsp;</a></span>wasp() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -370,13 +376,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_elementJustOpened</b
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>out</em> = <code>nullptr</code>, </td>
+          <td class="paramname"><em>out</em> = <code>&quot;no_output&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>seed</em> = <code>static_cast&lt;&#160;uint64_t&#160;&gt;(time(nullptr))</code>&#160;</td>
+          <td class="paramname"><em>seed</em> = <code>static_cast&lt;&#160;uint64_t&#160;&gt;(time(nullptr))</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_crypto</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -402,8 +414,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_elementJustOpened</b
 
 </div>
 </div>
-<a id="a28658939d15ef52f2eabae64f5d1606f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28658939d15ef52f2eabae64f5d1606f">&#9670;&nbsp;</a></span>wasp() <span class="overload">[3/3]</span></h2>
+<a id="abe74e21e61c8f88326acee76af9fd301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe74e21e61c8f88326acee76af9fd301">&#9670;&nbsp;</a></span>wasp() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -421,13 +433,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_elementJustOpened</b
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>out</em> = <code>nullptr</code>, </td>
+          <td class="paramname"><em>out</em> = <code>&quot;no_output&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>seed</em> = <code>static_cast&lt;&#160;uint64_t&#160;&gt;(time(nullptr))</code>&#160;</td>
+          <td class="paramname"><em>seed</em> = <code>static_cast&lt;&#160;uint64_t&#160;&gt;(time(nullptr))</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_crypto</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -463,7 +481,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_elementJustOpened</b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceProtocolPP.html">ProtocolPP</a></li><li class="navelem"><a class="el" href="classProtocolPP_1_1wasp.html">wasp</a></li>
-    <li class="footer">Generated on Tue Nov 21 2023 20:08:49 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Dec 29 2023 12:31:25 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

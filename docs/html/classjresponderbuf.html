@@ -96,16 +96,16 @@ Responder unit for use in testbench for Protocol++® (ProtocolPP®)</h1>
 <p>The programmable delay times are avaiable to allow the user to define a range of latencies for reading memory, computing the packet, and writing to memory. Ranges are provided so the min and max values can be used and are in microseconds</p>
 <p>For reproducibility, a seed is passed from the calling function so a jrand object can be created to randomize read, compute, and randomization times as well as to be used in the responder for creating random data for protocol processing</p>
 <p>The constructor for jresponderbuf is found below </p><div class="fragment"><div class="line"><a class="code" href="classjresponderbuf.html">jresponderbuf</a>(std::shared_ptr&lt;jlogger&gt;&amp; logger,</div>
-<div class="line">              std::shared_ptr&lt;<a class="code" href="classjringbuf.html">jringbuf&lt;ringflow&gt;</a>&gt;&amp; flowring,</div>
-<div class="line">              std::shared_ptr&lt;<a class="code" href="classjringbuf.html">jringbuf&lt;ringin&gt;</a>&gt;&amp; inputring,</div>
-<div class="line">              std::shared_ptr&lt;<a class="code" href="classjringbuf.html">jringbuf&lt;ringout&gt;</a>&gt;&amp; outputring,</div>
+<div class="line">              std::shared_ptr&lt;<a class="code" href="classjring.html">jring&lt;ringflow&gt;</a>&gt;&amp; flowring,</div>
+<div class="line">              std::shared_ptr&lt;<a class="code" href="classjring.html">jring&lt;ringin&gt;</a>&gt;&amp; inputring,</div>
+<div class="line">              std::shared_ptr&lt;<a class="code" href="classjring.html">jring&lt;ringout&gt;</a>&gt;&amp; outputring,</div>
 <div class="line">              std::shared_ptr&lt;ProtocolPP::jbuffer&gt;&amp; memory,</div>
 <div class="line">              <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> seed,</div>
 <div class="line">              std::string readlatency=std::string(<span class="stringliteral">&quot;80..120&quot;</span>),</div>
 <div class="line">              std::string computelatency=std::string(<span class="stringliteral">&quot;2000..5000&quot;</span>),</div>
 <div class="line">              std::string writelatency=std::string(<span class="stringliteral">&quot;50..100&quot;</span>));</div>
 <div class="ttc" id="aclassjresponderbuf_html"><div class="ttname"><a href="classjresponderbuf.html">jresponderbuf</a></div></div>
-<div class="ttc" id="aclassjringbuf_html"><div class="ttname"><a href="classjringbuf.html">jringbuf</a></div></div>
+<div class="ttc" id="aclassjring_html"><div class="ttname"><a href="classjring.html">jring</a></div></div>
 </div><!-- fragment --><p> There are several accessor functions for the responder as follows </p><div class="fragment"><div class="line"><span class="comment">// enqueue flows to responder</span></div>
 <div class="line"><span class="keywordtype">void</span> dequeue(std::string flow);</div>
 <div class="line"> </div>
@@ -152,7 +152,7 @@ Responder unit for use in testbench for Protocol++® (ProtocolPP®)</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjresponderbuf.html">jresponderbuf</a></li>
-    <li class="footer">Generated on Tue Nov 21 2023 20:08:48 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Dec 29 2023 12:31:25 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

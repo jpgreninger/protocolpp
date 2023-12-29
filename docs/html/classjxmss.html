@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('classjxmss.html',''); initResizable();
 <div class="line">+---------------------------+</div>
 <div class="line">|          <a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a76a2ea9d5bce744be549425b2dadd0e7">SEED</a>             | n bytes</div>
 <div class="line">+---------------------------+</div>
-<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36a76a2ea9d5bce744be549425b2dadd0e7"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a76a2ea9d5bce744be549425b2dadd0e7">ProtocolPP::SEED</a></div><div class="ttdeci">@ SEED</div><div class="ttdoc">Testbench seed.</div><div class="ttdef"><b>Definition:</b> jenum.h:764</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36a76a2ea9d5bce744be549425b2dadd0e7"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a76a2ea9d5bce744be549425b2dadd0e7">ProtocolPP::SEED</a></div><div class="ttdeci">@ SEED</div><div class="ttdoc">Testbench seed.</div><div class="ttdef"><b>Definition:</b> jenum.h:768</div></div>
 </div><!-- fragment --><p>The authentication path is an array of h n-byte strings. It contains the siblings of the nodes on the path from the used leaf to the root. It does not contain the nodes on the path itself. A verifier needs these nodes to compute a root node for the tree from the WOTS+ public key. A node Node is addressed by its position in the tree. Node(x,y) denotes the y^th node on level x with y=0 being the leftmost node on a level. The leaves are on level 0; the root is on level h. An authentication path contains exactly one node on every layer 0 &lt;= x &lt;= (h-1). For the i^th WOTS+ key pair, counting from zero, the j^th authentication path node is</p>
 <p><img class="formulaInl" alt="$ Node(j, std::floor(i/{2}^{j}) XOR 1) $" src="form_470.png"/></p>
 <p><b>XMSS Signature Generation</b></p>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('classjxmss.html',''); initResizable();
 <div class="line">|        auth[h-1]           | n bytes</div>
 <div class="line">+----------------------------+</div>
 <div class="line">        <a class="code" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca6f8b3788be7b5f3a0156d6b135dde350">XMSS</a> Signature</div>
-<div class="ttc" id="anamespaceProtocolPP_html_a15957f30f5cdc906a54e53fcb4834e5ca6f8b3788be7b5f3a0156d6b135dde350"><div class="ttname"><a href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca6f8b3788be7b5f3a0156d6b135dde350">ProtocolPP::XMSS</a></div><div class="ttdeci">@ XMSS</div><div class="ttdoc">XMSS Signature method.</div><div class="ttdef"><b>Definition:</b> jenum.h:1272</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_a15957f30f5cdc906a54e53fcb4834e5ca6f8b3788be7b5f3a0156d6b135dde350"><div class="ttname"><a href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca6f8b3788be7b5f3a0156d6b135dde350">ProtocolPP::XMSS</a></div><div class="ttdeci">@ XMSS</div><div class="ttdoc">XMSS Signature method.</div><div class="ttdef"><b>Definition:</b> jenum.h:1284</div></div>
 </div><!-- fragment --><p><b>XMSS Signature Verification</b></p>
 <p>An XMSS signature is verified by first computing the message digest using randomness r, index idx_sig, the root from PK and message M. The used WOTS+ public key pk_ots is computed from the WOTS+ signature using WOTS_pkFromSig. The WOTS+ public key in turn is used to compute the corresponding leaf using an L-tree. The leaf, together with idex idx_sig and authentication root value for the tree. The verification succeeds if and only if the computed root value matches the one in the XMSS public key. In any other case, it MUST return fail</p>
 <p>The main part of the XMSS signature verification is done by the function XMSS_rootFromSig described below. XMSS_rootFromSig takes as input an index idx_sig, a WOTS+ signature sig_ots an authentication path auth, an n-byte message M', seed SEED, and address ADRS. XMSS_rootFromSig returns an n-byte string holding the value of the root of a tree defiend by the input data</p>
@@ -219,7 +219,7 @@ XMSS Tree</div></div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjxmss.html">jxmss</a></li>
-    <li class="footer">Generated on Tue Nov 21 2023 20:08:48 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Dec 29 2023 12:31:25 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

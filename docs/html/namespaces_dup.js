@@ -11,7 +11,6 @@ var namespaces_dup =
       [ "jproducer", "classInterfacePP_1_1jproducer.html", "classInterfacePP_1_1jproducer" ],
       [ "jproducerbuf", "classInterfacePP_1_1jproducerbuf.html", "classInterfacePP_1_1jproducerbuf" ],
       [ "jring", "classInterfacePP_1_1jring.html", "classInterfacePP_1_1jring" ],
-      [ "jringbuf", "classInterfacePP_1_1jringbuf.html", "classInterfacePP_1_1jringbuf" ],
       [ "jsecproducer", "classInterfacePP_1_1jsecproducer.html", "classInterfacePP_1_1jsecproducer" ],
       [ "jsectestbench", "classInterfacePP_1_1jsectestbench.html", "classInterfacePP_1_1jsectestbench" ],
       [ "jtestbench", "classInterfacePP_1_1jtestbench.html", "classInterfacePP_1_1jtestbench" ],

@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('classciphers.html',''); initResizable(
 <div class="fragment"><div class="line"><a class="code" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray&lt;uint8_t&gt;</a> idat = myrand-&gt;getbyte(300);</div>
 <div class="line"><a class="code" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray&lt;uint8_t&gt;</a> result(1,0);</div>
 <div class="line"> </div>
-<div class="line">engine = <a class="code" href="classProtocolPP_1_1ciphers.html#a03d3ede2283eba36059abcfe7efaa40c">ProtocolPP::ciphers::get_crc</a>(<a class="code" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014faa7cad35a282f4853e511528d789f9b3d">ProtocolPP::CRC8</a>);</div>
+<div class="line">engine = <a class="code" href="classProtocolPP_1_1ciphers.html#a03d3ede2283eba36059abcfe7efaa40c">ProtocolPP::ciphers::get_crc</a>(ProtocolPP::CRC8);</div>
 <div class="line">engine-&gt;ProcessData(idat.<a class="code" href="classProtocolPP_1_1jarray.html#a17ba287e85a719c059e7090fd1ba806b">get_ptr</a>(), idat.<a class="code" href="classProtocolPP_1_1jarray.html#a4aeb58321449f0e17d994ad74e469cea">get_size</a>());</div>
 <div class="line">engine-&gt;result(result.get_ptr(), result.get_size());</div>
 <div class="line"> </div>
@@ -212,8 +212,7 @@ $(document).ready(function(){initNavTree('classciphers.html',''); initResizable(
 <div class="line">engine-&gt;ProcessData(idat.<a class="code" href="classProtocolPP_1_1jarray.html#a17ba287e85a719c059e7090fd1ba806b">get_ptr</a>(), idat.<a class="code" href="classProtocolPP_1_1jarray.html#a4aeb58321449f0e17d994ad74e469cea">get_size</a>());</div>
 <div class="line">engine-&gt;result(result.get_ptr(), result.get_size());</div>
 <div class="ttc" id="aclassProtocolPP_1_1ciphers_html_a03d3ede2283eba36059abcfe7efaa40c"><div class="ttname"><a href="classProtocolPP_1_1ciphers.html#a03d3ede2283eba36059abcfe7efaa40c">ProtocolPP::ciphers::get_crc</a></div><div class="ttdeci">static std::shared_ptr&lt; jmodes &gt; get_crc(auth_t crc=auth_t::CRC32_IEEE, uint32_t poly=0, uint32_t polylen=0, bool zeroinit=false, bool swapin=true, bool swapout=true, bool xorout=true)</div></div>
-<div class="ttc" id="anamespaceProtocolPP_html_a95d8e842b11f21278b31c0de42e1014fa356a98a21426787bb7b39c7b2daf99ed"><div class="ttname"><a href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa356a98a21426787bb7b39c7b2daf99ed">ProtocolPP::CRC_POLY</a></div><div class="ttdeci">@ CRC_POLY</div><div class="ttdoc">CRC with user supplied polynomial.</div><div class="ttdef"><b>Definition:</b> jenum.h:1858</div></div>
-<div class="ttc" id="anamespaceProtocolPP_html_a95d8e842b11f21278b31c0de42e1014faa7cad35a282f4853e511528d789f9b3d"><div class="ttname"><a href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014faa7cad35a282f4853e511528d789f9b3d">ProtocolPP::CRC8</a></div><div class="ttdeci">@ CRC8</div><div class="ttdoc">CRC8 polynomial with 8-bit output.</div><div class="ttdef"><b>Definition:</b> jenum.h:1850</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_a95d8e842b11f21278b31c0de42e1014fa356a98a21426787bb7b39c7b2daf99ed"><div class="ttname"><a href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa356a98a21426787bb7b39c7b2daf99ed">ProtocolPP::CRC_POLY</a></div><div class="ttdeci">@ CRC_POLY</div><div class="ttdoc">CRC with user supplied polynomial.</div><div class="ttdef"><b>Definition:</b> jenum.h:1875</div></div>
 </div><!-- fragment --><p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jmodes.html">ProtocolPP::jmodes</a> </dd>
 <dd>
 <a class="el" href="classProtocolPP_1_1ciphers.html">ProtocolPP::ciphers</a> </dd>
@@ -271,7 +270,7 @@ $(document).ready(function(){initNavTree('classciphers.html',''); initResizable(
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classciphers.html">ciphers</a></li>
-    <li class="footer">Generated on Tue Nov 21 2023 20:08:48 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Dec 29 2023 12:31:25 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -23,7 +23,6 @@ var hierarchy =
       [ "ProtocolPP::EnumString< EnumType >", "structProtocolPP_1_1EnumString.html", null ]
     ] ],
     [ "std::exception", null, [
-      [ "InterfacePP::jring< TR >", "classInterfacePP_1_1jring.html", null ],
       [ "ProtocolPP::jikeparse", "classProtocolPP_1_1jikeparse.html", null ],
       [ "ProtocolPP::jtestcfg", "classProtocolPP_1_1jtestcfg.html", null ],
       [ "ProtocolPP::wasp", "classProtocolPP_1_1wasp.html", null ]
@@ -110,8 +109,6 @@ var hierarchy =
     [ "jmacsecsa", "classjmacsecsa.html", null ],
     [ "jmemblob", "classjmemblob.html", null ],
     [ "jmemblobsa", "classjmemblobsa.html", null ],
-    [ "jmemory", "classjmemory.html", null ],
-    [ "ProtocolPP::jmemory< T, Q >", "classProtocolPP_1_1jmemory.html", null ],
     [ "InterfacePP::jmmu", "classInterfacePP_1_1jmmu.html", null ],
     [ "jmmu", "classjmmu.html", null ],
     [ "jmodes", "classjmodes.html", null ],
@@ -165,9 +162,8 @@ var hierarchy =
     [ "jresponder", "classjresponder.html", null ],
     [ "InterfacePP::jresponderbuf", "classInterfacePP_1_1jresponderbuf.html", null ],
     [ "jresponderbuf", "classjresponderbuf.html", null ],
+    [ "InterfacePP::jring< TR >", "classInterfacePP_1_1jring.html", null ],
     [ "jring", "classjring.html", null ],
-    [ "InterfacePP::jringbuf< TR >", "classInterfacePP_1_1jringbuf.html", null ],
-    [ "jringbuf", "classjringbuf.html", null ],
     [ "DriverPP::jringdrive", "classDriverPP_1_1jringdrive.html", null ],
     [ "jringdrive", "classjringdrive.html", null ],
     [ "jrsa", "classjrsa.html", null ],

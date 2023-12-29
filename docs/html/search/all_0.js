@@ -2,7 +2,7 @@ var searchData=
 [
   ['a_5fn_0',['A_N',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8a1ce0711f6797506763a8068c7c6c399c',1,'ProtocolPP']]],
   ['aadlen_1',['AADLEN',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36afad1976ac10d4a64f5bec525e2accd02',1,'ProtocolPP']]],
-  ['accept_2',['Accept',['../classtinyxml2_1_1XMLDocument.html#a9efa54f7ecb37c17ab1fa2b3078ccca1',1,'tinyxml2::XMLDocument::Accept()'],['../classtinyxml2_1_1XMLElement.html#a3ea8a40e788fb9ad876c28a32932c6d5',1,'tinyxml2::XMLElement::Accept()'],['../classtinyxml2_1_1XMLUnknown.html#a70983aa1b1cff3d3aa6d4d0a80e5ee48',1,'tinyxml2::XMLUnknown::Accept()'],['../classtinyxml2_1_1XMLDeclaration.html#a5f376019fb34752eb248548f42f32045',1,'tinyxml2::XMLDeclaration::Accept()'],['../classtinyxml2_1_1XMLComment.html#a4a33dc32fae0285b03f9cfcb3e43e122',1,'tinyxml2::XMLComment::Accept()'],['../classtinyxml2_1_1XMLText.html#a1b2c1448f1a21299d0a7913f18b55206',1,'tinyxml2::XMLText::Accept()'],['../classtinyxml2_1_1XMLNode.html#a81e66df0a44c67a7af17f3b77a152785',1,'tinyxml2::XMLNode::Accept()']]],
+  ['accept_2',['Accept',['../classtinyxml2_1_1XMLDocument.html#a9efa54f7ecb37c17ab1fa2b3078ccca1',1,'tinyxml2::XMLDocument::Accept()'],['../classtinyxml2_1_1XMLNode.html#a81e66df0a44c67a7af17f3b77a152785',1,'tinyxml2::XMLNode::Accept()'],['../classtinyxml2_1_1XMLText.html#a1b2c1448f1a21299d0a7913f18b55206',1,'tinyxml2::XMLText::Accept()'],['../classtinyxml2_1_1XMLComment.html#a4a33dc32fae0285b03f9cfcb3e43e122',1,'tinyxml2::XMLComment::Accept()'],['../classtinyxml2_1_1XMLDeclaration.html#a5f376019fb34752eb248548f42f32045',1,'tinyxml2::XMLDeclaration::Accept()'],['../classtinyxml2_1_1XMLUnknown.html#a70983aa1b1cff3d3aa6d4d0a80e5ee48',1,'tinyxml2::XMLUnknown::Accept()'],['../classtinyxml2_1_1XMLElement.html#a3ea8a40e788fb9ad876c28a32932c6d5',1,'tinyxml2::XMLElement::Accept()']]],
   ['access_5fdenied_3',['ACCESS_DENIED',['../namespaceProtocolPP.html#a9496ca7bf265d90a8637e15eea79639ba8a517aa49cb931304e049d40871d9482',1,'ProtocolPP']]],
   ['ack_4',['ACK',['../namespaceProtocolPP.html#a47fba8c8ccf58726ca64a0121622e879a7949fd830bd26bf78bda364d5307a0e2',1,'ProtocolPP']]],
   ['acknum_5',['ACKNUM',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36aec7e7c3b138b6ae4f9109ed53bead8eb',1,'ProtocolPP']]],
@@ -88,8 +88,8 @@ var searchData=
   ['asciicolor_85',['asciicolor',['../classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6',1,'InterfacePP::jlogger']]],
   ['attr_5fkey_5flength_86',['ATTR_KEY_LENGTH',['../namespaceProtocolPP.html#a058e83857825575a63788e155af2c664a83748c919a66b56eb6ec05aeac9f2317',1,'ProtocolPP']]],
   ['attribute_87',['Attribute',['../classtinyxml2_1_1XMLElement.html#a70e49ed60b11212ae35f7e354cfe1de9',1,'tinyxml2::XMLElement']]],
-  ['audit_88',['AUDIT',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a0c7aca56e393e5d11f6474fc37c79ef9',1,'ProtocolPP']]],
-  ['audit_89',['audit',['../classProtocolPP_1_1jipsec.html#a453078dfa4c8711ba9f7c3ee803d000f',1,'ProtocolPP::jipsec']]],
+  ['audit_88',['audit',['../classProtocolPP_1_1jipsec.html#a453078dfa4c8711ba9f7c3ee803d000f',1,'ProtocolPP::jipsec']]],
+  ['audit_89',['AUDIT',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a0c7aca56e393e5d11f6474fc37c79ef9',1,'ProtocolPP']]],
   ['audit_5fdummy_90',['AUDIT_DUMMY',['../classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342a57bf3b99e287195838505276982cf73f',1,'ProtocolPP::jipsec']]],
   ['audit_5fformat_91',['AUDIT_FORMAT',['../classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342a120a6c5f5b12a9e759dc2bb3b61f9728',1,'ProtocolPP::jipsec']]],
   ['audit_5ffragment_92',['AUDIT_FRAGMENT',['../classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342a452370838b4fff3ebd34848939d98851',1,'ProtocolPP::jipsec']]],
@@ -99,7 +99,7 @@ var searchData=
   ['audit_5frollover_96',['AUDIT_ROLLOVER',['../classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342af548bed4e51cdfd18f165fc00d5acdab',1,'ProtocolPP::jipsec']]],
   ['audit_5ft_97',['audit_t',['../classProtocolPP_1_1jipsec.html#a9414b2d3b4543913251735e8540ec342',1,'ProtocolPP::jipsec']]],
   ['auditlog_98',['AUDITLOG',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36acc823f0abbc1cd41ebb7207296488cba',1,'ProtocolPP']]],
-  ['auth_99',['AUTH',['../classProtocolPP_1_1jmodes.html#ab59eefcf49771a42cb6ef35e9b65d514a2da6fa5d2148f45231d02a0be89105f5',1,'ProtocolPP::jmodes::AUTH()'],['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a310d9d10bdac2786126d8ea987f5df0d',1,'ProtocolPP::AUTH()']]],
+  ['auth_99',['AUTH',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a310d9d10bdac2786126d8ea987f5df0d',1,'ProtocolPP::AUTH()'],['../classProtocolPP_1_1jmodes.html#ab59eefcf49771a42cb6ef35e9b65d514a2da6fa5d2148f45231d02a0be89105f5',1,'ProtocolPP::jmodes::AUTH()']]],
   ['auth_5faes_5f128_5fgmac_100',['AUTH_AES_128_GMAC',['../namespaceProtocolPP.html#a0edb90ce21995d6681bbf0ae295e2b0ea1070d101c52acbc5e340163e27eaaa8d',1,'ProtocolPP']]],
   ['auth_5faes_5f192_5fgmac_101',['AUTH_AES_192_GMAC',['../namespaceProtocolPP.html#a0edb90ce21995d6681bbf0ae295e2b0eaa83c2de4c370e570b0b3b02a9321f080',1,'ProtocolPP']]],
   ['auth_5faes_5f256_5fgmac_102',['AUTH_AES_256_GMAC',['../namespaceProtocolPP.html#a0edb90ce21995d6681bbf0ae295e2b0eaad815a17dd5f3471256a3d9c98318581',1,'ProtocolPP']]],
@@ -133,6 +133,6 @@ var searchData=
   ['auth_5funassigned8_130',['AUTH_UNASSIGNED8',['../namespaceProtocolPP.html#a24cdc6d0c8f5bbb4ec61f841e6154dfead0d46f6405839ac60b43365140667613',1,'ProtocolPP']]],
   ['authfail_131',['AUTHFAIL',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ab540163422287bd1b3dd1aef9a97131e',1,'ProtocolPP']]],
   ['authkey_132',['AUTHKEY',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a8dc726871b7db634e3f8eae12c0b8189',1,'ProtocolPP']]],
-  ['avail_133',['avail',['../classProtocolPP_1_1jmemory.html#a29c4d11c713e5fef9b82cd6563196a13',1,'ProtocolPP::jmemory::avail()'],['../classProtocolPP_1_1jbuffer.html#aea94af8c1ab9ea2d3de76925e627bb02',1,'ProtocolPP::jbuffer::avail()'],['../classProtocolPP_1_1jbuffman.html#a013a70dc9091795d97486897e472bb10',1,'ProtocolPP::jbuffman::avail()'],['../classDriverPP_1_1jdirectdrive.html#a9d60d897d205d7365a9ef93902002916',1,'DriverPP::jdirectdrive::avail()']]],
+  ['avail_133',['avail',['../classProtocolPP_1_1jbuffman.html#a013a70dc9091795d97486897e472bb10',1,'ProtocolPP::jbuffman::avail()'],['../classDriverPP_1_1jdirectdrive.html#a9d60d897d205d7365a9ef93902002916',1,'DriverPP::jdirectdrive::avail()']]],
   ['ax_5f25_134',['AX_25',['../namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8ac97ac9116571485d0f80cabdf21b6605',1,'ProtocolPP']]]
 ];

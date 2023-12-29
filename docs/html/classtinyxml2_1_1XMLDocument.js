@@ -12,6 +12,7 @@ var classtinyxml2_1_1XMLDocument =
     [ "ErrorIDToName", "classtinyxml2_1_1XMLDocument.html#aba60537a6ee44c2b8e010c6ffc84ccfe", null ],
     [ "ErrorLineNum", "classtinyxml2_1_1XMLDocument.html#a57400f816dbe7799ece33615ead9ab76", null ],
     [ "ErrorName", "classtinyxml2_1_1XMLDocument.html#ac75d2de15c78497eadb4245b9a9862c7", null ],
+    [ "errorName", "classtinyxml2_1_1XMLDocument.html#aa6499755716bbc3c3324627a09cd458d", null ],
     [ "ErrorStr", "classtinyxml2_1_1XMLDocument.html#ad75aa9d32c4e8b300655186808aa9abf", null ],
     [ "HasBOM", "classtinyxml2_1_1XMLDocument.html#a33fc5d159db873a179fa26338adb05bd", null ],
     [ "Identify", "classtinyxml2_1_1XMLDocument.html#af255cf899d2bf5dbae54c9b6de9c2752", null ],

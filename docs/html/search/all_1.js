@@ -40,11 +40,15 @@ var searchData=
   ['brightyellow_172',['BRIGHTYELLOW',['../classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6ad641159d4ece579e2181f93523b2dc24',1,'InterfacePP::jlogger']]],
   ['buffer_5fmax_173',['buffer_max',['../structoption_1_1Stats.html#a2c9a7b4174f91ba8bcadaa9ad6f0db06',1,'option::Stats']]],
   ['buflen_174',['buflen',['../classProtocolPP_1_1jbuffacc.html#af031689998a944bc520060949ddd8daf',1,'ProtocolPP::jbuffacc']]],
-  ['byndsrcaddr_175',['BYNDSRCADDR',['../namespaceProtocolPP.html#a053cb4b6f939495763f9be4b0d23c769a5017546e9ceb978f7c5219042005dbb7',1,'ProtocolPP']]],
-  ['bypassdf_176',['BYPASSDF',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a03c10d4cf719aa7958818cca88484456',1,'ProtocolPP']]],
-  ['bypassdscp_177',['BYPASSDSCP',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a10ca58400e0315466c53ff3ea79d5e60',1,'ProtocolPP']]],
-  ['bytearray_178',['BYTEARRAY',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a851e850e4e91e6a269ecde9fbee59167',1,'ProtocolPP']]],
-  ['byteattribute_179',['ByteAttribute',['../classtinyxml2_1_1XMLElement.html#ae371f29da9fdc589186dcf56e87ffa99',1,'tinyxml2::XMLElement']]],
-  ['bytecnt_180',['BYTECNT',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a47162f0dc3b9d3fb7169615cc1859f68',1,'ProtocolPP']]],
-  ['bytevalue_181',['ByteValue',['../classtinyxml2_1_1XMLAttribute.html#aec1be9fb07335750000f837cf6558c81',1,'tinyxml2::XMLAttribute']]]
+  ['bufnum_175',['BUFNUM',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a848ad6e9316661ab1a7b4441b34b2e6f',1,'ProtocolPP']]],
+  ['bufsize_176',['BUFSIZE',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ad0c78b35fa16ec602885d6c153b60d51',1,'ProtocolPP']]],
+  ['bufwidth_177',['BUFWIDTH',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36aaa7e91beec1c0da73c0a2967a23ed0ad',1,'ProtocolPP']]],
+  ['burstlen_178',['BURSTLEN',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a23586ecdbf63e52829531d8ce936e42c',1,'ProtocolPP']]],
+  ['byndsrcaddr_179',['BYNDSRCADDR',['../namespaceProtocolPP.html#a053cb4b6f939495763f9be4b0d23c769a5017546e9ceb978f7c5219042005dbb7',1,'ProtocolPP']]],
+  ['bypassdf_180',['BYPASSDF',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a03c10d4cf719aa7958818cca88484456',1,'ProtocolPP']]],
+  ['bypassdscp_181',['BYPASSDSCP',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a10ca58400e0315466c53ff3ea79d5e60',1,'ProtocolPP']]],
+  ['bytearray_182',['BYTEARRAY',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a851e850e4e91e6a269ecde9fbee59167',1,'ProtocolPP']]],
+  ['byteattribute_183',['ByteAttribute',['../classtinyxml2_1_1XMLElement.html#ae371f29da9fdc589186dcf56e87ffa99',1,'tinyxml2::XMLElement']]],
+  ['bytecnt_184',['BYTECNT',['../namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a47162f0dc3b9d3fb7169615cc1859f68',1,'ProtocolPP']]],
+  ['bytevalue_185',['ByteValue',['../classtinyxml2_1_1XMLAttribute.html#aec1be9fb07335750000f837cf6558c81',1,'tinyxml2::XMLAttribute']]]
 ];

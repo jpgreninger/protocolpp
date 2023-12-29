@@ -177,8 +177,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmemblobsa.html">jmemblobsa</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmemory.html">jmemory</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jmodes.html">jmodes</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jpacket.html">jpacket</a></td></tr>
@@ -585,8 +583,13 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36aa0dc879d7d48dd880c8cc06325cdb4d7">PTRSIZE</a>
 , <a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a795b994d0b72e7d366a9a41e1321bad0">SGTSIZE</a>
+, <a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ad0c78b35fa16ec602885d6c153b60d51">BUFSIZE</a>
+, <a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36aaa7e91beec1c0da73c0a2967a23ed0ad">BUFWIDTH</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a848ad6e9316661ab1a7b4441b34b2e6f">BUFNUM</a>
 , <a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a13e07a7d4e6d52014b019164e419b5c7">STDOUT</a>
 , <a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a2b4dca4e6635dd4895a69957292ae393">ENDIAN</a>
+, <a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a23586ecdbf63e52829531d8ce936e42c">BURSTLEN</a>
 , <br />
 &#160;&#160;<a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a219be2bbb86472c522d7533a0ee53663">PLATFORM</a>
 , <a class="el" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ae3a1206d64dc8e3720cbb6f15812938e">DEBUGCLR</a>
@@ -946,20 +949,24 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014faa2d6114b81086d54f4c9ebb37fc4388f">SNOWA</a>
 , <a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa19fb0e2768735d9c7836fe21805f8707">SNOWVA</a>
 , <a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa3b142e9c2d27d6fdf3b5efbee8ec55ea">ZUCA</a>
-, <a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa75d944843ba6844c78afc49dee5d6937">CRC5</a>
+, <a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fae90432ff7e827f0ad9e1cb334b35f8d0">CRC5_USB</a>
 , <br />
-&#160;&#160;<a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa2fe7a0e2f07a39f415288c7236db4d88">CRC7</a>
-, <a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014faa7cad35a282f4853e511528d789f9b3d">CRC8</a>
-, <a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa8f069b7ad39842efee2e643eb1f12c8b">CRC11</a>
-, <a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fae8a1bd4964effc463374fa66d256e072">CRC12</a>
+&#160;&#160;<a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa03e7dfd4247cd618f2ebac5f2eede7d1">CRC7_UTMS</a>
+, <a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa4acb107cca9ee11ff8f3d629e657d5e2">CRC8_LTE</a>
+, <a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa51ab46f97003a10900e2867b1753ef44">CRC11_UTMS</a>
+, <a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa4d7733d2176e5037cd853ac3d18cfe8a">CRC12_UTMS</a>
 , <br />
-&#160;&#160;<a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fad1aba4ff8bb627d2bdaaaaddf16de897">CRC16</a>
+&#160;&#160;<a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa4dbdccf0fd221ebd7533aad82e7b3b6e">CRC16_IBM</a>
 , <a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa0a5018849d7dcef5239921fb032b616b">CRC16_CCITT</a>
-, <a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa8bd477d7d961799742f135d2b992fb86">CRC24</a>
-, <a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa522d7dad9ced0287c10169e928115432">CRC32_IETF</a>
+, <a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa43b8539066869b93151190cce51ecfd2">CRC24_LTE_A</a>
+, <a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014faa94347d0acf77a1e202e052b13397912">CRC24_LTE_B</a>
 , <br />
-&#160;&#160;<a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa66a34f2567c9aa12a96d9bb09f0e372a">CRC32_IEEE</a>
-, <a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa356a98a21426787bb7b39c7b2daf99ed">CRC_POLY</a>
+&#160;&#160;<a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa522d7dad9ced0287c10169e928115432">CRC32_IETF</a>
+, <a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa66a34f2567c9aa12a96d9bb09f0e372a">CRC32_IEEE</a>
+, <a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa4e7778dc87ba847656e54de0d2fc0677">CRC64_ISO</a>
+, <a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa4411941e15e4e2ece7aae0a0aee00232">CRC64_ECMA</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa356a98a21426787bb7b39c7b2daf99ed">CRC_POLY</a>
 , <a class="el" href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fab32f0c878cc4e8ddb574ff0d9e28be50">NONE_AUTH</a>
 <br />
  }</td></tr>
@@ -2449,18 +2456,22 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:aca3725b363c3824187494fea67837db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b2aaa0f2cbbb2d31df61a71c4e9cd6b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceProtocolPP.html#a7b2aaa0f2cbbb2d31df61a71c4e9cd6b">crcpoly_t</a> { <br />
-&#160;&#160;<b>CRC5_POLY</b> = 0x05
-, <b>CRC7_POLY</b> = 0x09
-, <b>CRC8_POLY</b> = 0xA7
-, <b>CRC11_POLY</b> = 0x385
+&#160;&#160;<b>CRC5_USB_POLY</b> = 0x05
+, <b>CRC7_UTMS_POLY</b> = 0x09
+, <b>CRC8_LTE_POLY</b> = 0x9B
+, <b>CRC11_UTMS_POLY</b> = 0x307
 , <br />
-&#160;&#160;<b>CRC12_POLY</b> = 0x80F
-, <b>CRC16_POLY</b> = 0x8005
+&#160;&#160;<b>CRC12_UTMS_POLY</b> = 0x80F
+, <b>CRC16_IBM_POLY</b> = 0x8005
 , <b>CRC16_CCITT_POLY</b> = 0x1021
-, <b>CRC24_POLY</b> = 0x864CFB
+, <b>CRC24_LTEA_POLY</b> = 0x864CFB
 , <br />
-&#160;&#160;<b>CRC32_IEEE_POLY</b> = 0x04C11DB7
+&#160;&#160;<b>CRC24_LTEB_POLY</b> = 0x800063
+, <b>CRC32_IEEE_POLY</b> = 0x04C11DB7
 , <b>CRC32_IETF_POLY</b> = 0x1EDC6F41
+, <b>CRC64_ISO_POLY</b> = 0x000000000000001B
+, <br />
+&#160;&#160;<b>CRC64_ECMA_POLY</b> = 0x42F0E1EBA9EA3693
 <br />
  }</td></tr>
 <tr class="separator:a7b2aaa0f2cbbb2d31df61a71c4e9cd6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3093,14 +3104,16 @@ Variables</h2></td></tr>
     <tr><td class="paramname">ZUCA</td><td>- ZUC F9 mode authentication </td></tr>
     <tr><td class="paramname">CRC5</td><td>- polynomial with 5-bit output </td></tr>
     <tr><td class="paramname">CRC7</td><td>- polynomial with 7-bit output </td></tr>
-    <tr><td class="paramname">CRC8</td><td>- polynomial with 8-bit output </td></tr>
+    <tr><td class="paramname">CRC8_CCITT</td><td>- CCITT polynomial with 8-bit output </td></tr>
     <tr><td class="paramname">CRC11</td><td>- polynomial with 11-bit output </td></tr>
     <tr><td class="paramname">CRC12</td><td>- polynomial with 12-bit output </td></tr>
-    <tr><td class="paramname">CRC16</td><td>- polynomial with 16-bit output </td></tr>
+    <tr><td class="paramname">CRC16_IBM</td><td>- IBM polynomial with 16-bit output </td></tr>
     <tr><td class="paramname">CRC16_CCITT</td><td>- CCITT polynomial with 16-bit output </td></tr>
     <tr><td class="paramname">CRC24</td><td>- polynomial with 24-bit output </td></tr>
     <tr><td class="paramname">CRC32_IETF</td><td>- IETF polynomial with 32-bit output </td></tr>
     <tr><td class="paramname">CRC32_IEEE</td><td>- IEEE polynomial with 32-bit output </td></tr>
+    <tr><td class="paramname">CRC64_ISO</td><td>- ISO polynomial with 64-bit output </td></tr>
+    <tr><td class="paramname">CRC64_ECMA</td><td>- ECMA polynomial with 64-bit output </td></tr>
     <tr><td class="paramname">CRC_POLY</td><td>- CRC with user supplied polynomial </td></tr>
     <tr><td class="paramname">NONE_AUTH</td><td>- None authentication </td></tr>
   </table>
@@ -3169,25 +3182,31 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fa3b142e9c2d27d6fdf3b5efbee8ec55ea"></a>ZUCA&#160;</td><td class="fielddoc"><p>ZUC F9 mode authentication. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fa75d944843ba6844c78afc49dee5d6937"></a>CRC5&#160;</td><td class="fielddoc"><p>CRC5 polynomial with 5-bit output. </p>
+<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fae90432ff7e827f0ad9e1cb334b35f8d0"></a>CRC5_USB&#160;</td><td class="fielddoc"><p>CRC5-USB polynomial with 5-bit output. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fa2fe7a0e2f07a39f415288c7236db4d88"></a>CRC7&#160;</td><td class="fielddoc"><p>CRC7 polynomial with 7-bit output. </p>
+<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fa03e7dfd4247cd618f2ebac5f2eede7d1"></a>CRC7_UTMS&#160;</td><td class="fielddoc"><p>CRC7-UTMS polynomial with 7-bit output. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014faa7cad35a282f4853e511528d789f9b3d"></a>CRC8&#160;</td><td class="fielddoc"><p>CRC8 polynomial with 8-bit output. </p>
+<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fa4acb107cca9ee11ff8f3d629e657d5e2"></a>CRC8_LTE&#160;</td><td class="fielddoc"><p>CRC8-LTE polynomial with 8-bit output. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fa8f069b7ad39842efee2e643eb1f12c8b"></a>CRC11&#160;</td><td class="fielddoc"><p>CRC11 polynomial with 11-bit output. </p>
+<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fa51ab46f97003a10900e2867b1753ef44"></a>CRC11_UTMS&#160;</td><td class="fielddoc"><p>CRC11-UTMS polynomial with 11-bit output. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fae8a1bd4964effc463374fa66d256e072"></a>CRC12&#160;</td><td class="fielddoc"><p>CRC12 polynomial with 12-bit output. </p>
+<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fa4d7733d2176e5037cd853ac3d18cfe8a"></a>CRC12_UTMS&#160;</td><td class="fielddoc"><p>CRC12-UTMS polynomial with 12-bit output. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fad1aba4ff8bb627d2bdaaaaddf16de897"></a>CRC16&#160;</td><td class="fielddoc"><p>CRC16 polynomial with 16-bit output. </p>
+<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fa4dbdccf0fd221ebd7533aad82e7b3b6e"></a>CRC16_IBM&#160;</td><td class="fielddoc"><p>CRC16-IBM polynomial with 16-bit output. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fa0a5018849d7dcef5239921fb032b616b"></a>CRC16_CCITT&#160;</td><td class="fielddoc"><p>CRC16 CCITT polynomial with 16-bit output. </p>
+<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fa0a5018849d7dcef5239921fb032b616b"></a>CRC16_CCITT&#160;</td><td class="fielddoc"><p>CRC16-CCITT polynomial with 16-bit output. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fa8bd477d7d961799742f135d2b992fb86"></a>CRC24&#160;</td><td class="fielddoc"><p>CRC24 polynomial with 24-bit output. </p>
+<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fa43b8539066869b93151190cce51ecfd2"></a>CRC24_LTE_A&#160;</td><td class="fielddoc"><p>CRC24-LTE-A polynomial with 24-bit output. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fa522d7dad9ced0287c10169e928115432"></a>CRC32_IETF&#160;</td><td class="fielddoc"><p>CRC32 IETF polynomial with 32-bit output. </p>
+<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014faa94347d0acf77a1e202e052b13397912"></a>CRC24_LTE_B&#160;</td><td class="fielddoc"><p>CRC24-LTE-B polynomial with 24-bit output. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fa66a34f2567c9aa12a96d9bb09f0e372a"></a>CRC32_IEEE&#160;</td><td class="fielddoc"><p>CRC32 IEEE polynomial with 32-bit output. </p>
+<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fa522d7dad9ced0287c10169e928115432"></a>CRC32_IETF&#160;</td><td class="fielddoc"><p>CRC32-IETF polynomial with 32-bit output. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fa66a34f2567c9aa12a96d9bb09f0e372a"></a>CRC32_IEEE&#160;</td><td class="fielddoc"><p>CRC32-IEEE polynomial with 32-bit output. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fa4e7778dc87ba847656e54de0d2fc0677"></a>CRC64_ISO&#160;</td><td class="fielddoc"><p>CRC64-ISO polynomial with 64-bit output. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fa4411941e15e4e2ece7aae0a0aee00232"></a>CRC64_ECMA&#160;</td><td class="fielddoc"><p>CRC64-ECMA polynomial with 64-bit output. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a95d8e842b11f21278b31c0de42e1014fa356a98a21426787bb7b39c7b2daf99ed"></a>CRC_POLY&#160;</td><td class="fielddoc"><p>CRC with user supplied polynomial. </p>
 </td></tr>
@@ -3507,13 +3526,13 @@ Variables</h2></td></tr>
 <tr>
 <td>crc-7</td><td>0x09</td><td>False</td><td>0x00</td><td>0x00</td><td>0xF4 </td></tr>
 <tr>
-<td>crc-8</td><td>0xA7</td><td>False</td><td>0x00</td><td>0x00</td><td>0xF4 </td></tr>
+<td>crc-8-ccitt</td><td>0x07</td><td>False</td><td>0x00</td><td>0x00</td><td>0xF4 </td></tr>
 <tr>
 <td>crc-11</td><td>0x385</td><td>False</td><td>0x00</td><td>0x00</td><td>0xF4 </td></tr>
 <tr>
 <td>crc-12</td><td>0x80F</td><td>False</td><td>0x00</td><td>0x00</td><td>0xF4 </td></tr>
 <tr>
-<td>crc-16</td><td>0x8005</td><td>True</td><td>0x0000</td><td>0x0000</td><td>0xBB3D </td></tr>
+<td>crc-16-ibm</td><td>0x8005</td><td>True</td><td>0x0000</td><td>0x0000</td><td>0xBB3D </td></tr>
 <tr>
 <td>crc-16-ccitt</td><td>0x1021</td><td>False</td><td>0xFFFF</td><td>0x0000</td><td>0x29B1 </td></tr>
 <tr>
@@ -3522,6 +3541,10 @@ Variables</h2></td></tr>
 <td>crc-32-ieee</td><td>0x04C11DB7</td><td>True</td><td>0x00000000</td><td>0xFFFFFFFF</td><td>0xCBF43926 </td></tr>
 <tr>
 <td>crc-32-ietf</td><td>0x1EDC6F41</td><td>True</td><td>0x00000000</td><td>0xFFFFFFFF</td><td>0xE3069283 </td></tr>
+<tr>
+<td>crc-64-iso</td><td>0x000000000000001B</td><td>True</td><td>0xD800000000000000</td><td>0x0000000000000000</td><td>0x46A5A9388A5BEFFE </td></tr>
+<tr>
+<td>crc-64-ecma</td><td>0x42F0E1EBA9EA3693</td><td>False</td><td>0xC96C5795D7870F42</td><td>0x0000000000000000</td><td>0x62EC59E3F1A4F00A </td></tr>
 </table>
 
 </div>
@@ -4963,8 +4986,12 @@ Testbench Configuration fields</h1>
     <tr><td class="paramname">LOGLVL</td><td>- Logging level </td></tr>
     <tr><td class="paramname">PTRSIZE</td><td>- Pointer size for testbench </td></tr>
     <tr><td class="paramname">SGTSIZE</td><td>- Scatter-gather table entry size </td></tr>
+    <tr><td class="paramname">BUFSIZE</td><td>- Buffer size in bytes (0, 64, 128, 192, 256, 384, 512) </td></tr>
+    <tr><td class="paramname">BUFWIDTH</td><td>- Width for buffer type in bytes (0, 1, 2, 4, 8) </td></tr>
+    <tr><td class="paramname">BUFNUM</td><td>- Number of buffers in the memory (default: 16384) </td></tr>
     <tr><td class="paramname">STDOUT</td><td>- Log to std::cout </td></tr>
     <tr><td class="paramname">ENDIAN</td><td>- Endianness for testbench </td></tr>
+    <tr><td class="paramname">BURSTLEN</td><td>- Burst length for flows </td></tr>
     <tr><td class="paramname">PLATFORM</td><td>- Platform to run testbench with </td></tr>
     <tr><td class="paramname">DEBUGCLR</td><td>- Color of debug messages </td></tr>
     <tr><td class="paramname">INFOCLR</td><td>- Color of info messages </td></tr>
@@ -5528,9 +5555,17 @@ and NVGRE fields</h1>
 </td></tr>
 <tr><td class="fieldname"><a id="a44018cab1f12fe3ca4e2f32c547eab36a795b994d0b72e7d366a9a41e1321bad0"></a>SGTSIZE&#160;</td><td class="fielddoc"><p>Scatter-gather table entry size. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a44018cab1f12fe3ca4e2f32c547eab36ad0c78b35fa16ec602885d6c153b60d51"></a>BUFSIZE&#160;</td><td class="fielddoc"><p>Width of the buffers in bytes (0, 64, 128. 192, 256, 384, 512) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a44018cab1f12fe3ca4e2f32c547eab36aaa7e91beec1c0da73c0a2967a23ed0ad"></a>BUFWIDTH&#160;</td><td class="fielddoc"><p>Width of buffer type in bytes (0, 1, 2, 4, 8) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a44018cab1f12fe3ca4e2f32c547eab36a848ad6e9316661ab1a7b4441b34b2e6f"></a>BUFNUM&#160;</td><td class="fielddoc"><p>Number of buffers in the memory (default: 16384) </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a44018cab1f12fe3ca4e2f32c547eab36a13e07a7d4e6d52014b019164e419b5c7"></a>STDOUT&#160;</td><td class="fielddoc"><p>Log to std::cout. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a44018cab1f12fe3ca4e2f32c547eab36a2b4dca4e6635dd4895a69957292ae393"></a>ENDIAN&#160;</td><td class="fielddoc"><p>Endianness for testbench. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a44018cab1f12fe3ca4e2f32c547eab36a23586ecdbf63e52829531d8ce936e42c"></a>BURSTLEN&#160;</td><td class="fielddoc"><p>Burst length for flows. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a44018cab1f12fe3ca4e2f32c547eab36a219be2bbb86472c522d7533a0ee53663"></a>PLATFORM&#160;</td><td class="fielddoc"><p>Platform to run testbench with. </p>
 </td></tr>
@@ -8707,8 +8742,12 @@ and NVGRE fields</h1>
 <p>Logging level</p>
 <p>Pointer size for testbench</p>
 <p>Scatter-gather table entry size</p>
+<p>Width of buffers in bytes (0, 64, 128, 192, 256, 384, 512)</p>
+<p>Width of buffer type in bytes (0, 1, 2, 4, 8)</p>
+<p>Number of buffers in the memory (default: 16384)</p>
 <p>Log to std::cout</p>
 <p>Endianness for testbench</p>
+<p>Burst length for flows</p>
 <p>Platform to run testbench with</p>
 <p>Color of debug messages in the testbench</p>
 <p>Color of information messages in the testbench</p>
@@ -9473,7 +9512,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceProtocolPP.html">ProtocolPP</a></li>
-    <li class="footer">Generated on Tue Nov 21 2023 20:08:48 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Dec 29 2023 12:31:25 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
