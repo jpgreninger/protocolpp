@@ -1,7 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"classtinyxml2_1_1XMLNode.html#a66344989a4b436155bcda72bd6b07b82":[2,0,5,6,50],
-"classtinyxml2_1_1XMLNode.html#a663e3a5a378169fd477378f4d17a7649":[2,0,5,6,21],
 "classtinyxml2_1_1XMLNode.html#a6a53bb83faf5c0ccc95b6cf74dba0025":[2,0,5,6,39],
 "classtinyxml2_1_1XMLNode.html#a76029693a5a54fbb721a41d7a0ca8a97":[2,0,5,6,27],
 "classtinyxml2_1_1XMLNode.html#a79db9ef0fe014d27790f2218b87bcbb5":[2,0,5,6,23],
@@ -249,5 +247,7 @@ var NAVTREEINDEX9 =
 "index.html#UDPROT":[0,4],
 "index.html#USES":[0,0],
 "index.html#VXLANPROT":[0,5],
-"index.html#WIFI_WIGIG":[0,18]
+"index.html#WIFI_WIGIG":[0,18],
+"index.html#WiMaxProt":[0,19],
+"namespacePlatformPP.html":[1,0,3]
 };

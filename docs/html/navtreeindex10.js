@@ -1,7 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"index.html#WiMaxProt":[0,19],
-"namespacePlatformPP.html":[1,0,3],
 "namespaceProtocolPP.html":[1,0,4],
 "namespaceProtocolPP.html#a0160929af40c2a496fe7386216cc2c2f":[1,0,4,133],
 "namespaceProtocolPP.html#a0160929af40c2a496fe7386216cc2c2fa1c6a911d8b1bc9123ca38f4154a9de37":[1,0,4,133,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX10 =
 "namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23af7f7424a04cfc73944d95c22129c407a":[1,0,4,101,44],
 "namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23af9795ae1832ffcbbcc20f1b03b62ff95":[1,0,4,101,11],
 "namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23afbdfd43fc15e1abb114f50bbc30b0b11":[1,0,4,101,51],
-"namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23aff99e28197a8bb33b7cd178a80de9ef3":[1,0,4,101,34]
+"namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23aff99e28197a8bb33b7cd178a80de9ef3":[1,0,4,101,34],
+"namespaceProtocolPP.html#a20dd421f7ad09f6c06493c1c2d394339":[1,0,4,164],
+"namespaceProtocolPP.html#a22278102b2df1065e7ed79cdbc72c1aa":[1,0,4,108]
 };
