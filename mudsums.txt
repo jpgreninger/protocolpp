@@ -1,1069 +1,1165 @@
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:17 -0700, Mode : SHA384, File : ./Makefile
-Mudsum : d2751b0fc7bdcd78f5f76c4ba3f9a16231595848a2f2749533ecb9c90df1702561d4ffdfbb6a3a9d4c6c12fe5e215937
+Date : 2024-01-01 19:52:49 -0700, Mode : SHA384, File : ./Makefile
+Mudsum : 956354f6ed2d62066eef72a6fd3f3487ec05b4c7261b2450b5458d63f6e8bb9d85f5abcb03479c67900fa42fe08b71e1
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:17 -0700, Mode : SHA384, File : ./ProtocolPPLicense.pdf
+Date : 2024-01-01 19:52:49 -0700, Mode : SHA384, File : ./ProtocolPPLicense.pdf
 Mudsum : 8e7c30c413c31f58671df69d599a3750d6feede4851d1b257cfd1c08b1fdee29dded8f08f39ddd20e883b60e58fc7b2b
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:17 -0700, Mode : SHA384, File : ./README.md
-Mudsum : a77c026c57ff1b3fcabe2644a3ca0aa28c30b041b0ea7113389b6709f3d149598ca0fb35eeb395f05e2a5bc666fab392
+Date : 2024-01-01 19:52:49 -0700, Mode : SHA384, File : ./README.md
+Mudsum : 1fcac3883a572aa43eea987fac3eb3e91da0522efe6cd638ace5717784dd9936dd7cd5a93bf7a326e744cdebfb75f534
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:17 -0700, Mode : SHA384, File : ./conformance/gcm/aes_gcm_noxpn.testpp
-Mudsum : 3cb411560192da7cd9f46e08da87a9ffd510001591eeb3b4f93e1dd82889d68c8f2641a815c296b378e18cd8b71c8930
+Date : 2024-01-01 19:52:49 -0700, Mode : SHA384, File : ./drivers/include/StdCapture.h
+Mudsum : 7677351e9372e6d174a3792b3ec92649212bebea6e443ce54e4b06487ff6dd3d8020c238c23a09ade3e85f5024490562
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./drivers/include/StdCapture.h
-Mudsum : e3767336abda1680359a62eb43c8cc43ba9630f368b843177b4b8971a29595923ef063d47ee72452863652971f8ee669
+Date : 2024-01-01 19:52:49 -0700, Mode : SHA384, File : ./drivers/include/jdirectdrive.h
+Mudsum : 611b49015681a03f497a35b9ab042370c41e1a511fc922aaaeeba591f23a603c6f1b9e0cd10020417a02e1e88b98dc63
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./drivers/include/jdirectdrive.h
-Mudsum : 59dad8bde38a9ea35056523d6339ee3e7652aa19902b0001ca1c963c00abce1647c7ef4fd91f84b7fc959c97a4b5afd3
+Date : 2024-01-01 19:52:49 -0700, Mode : SHA384, File : ./drivers/include/jdrive.h
+Mudsum : 5062ade732565894ed9f93055d2c75914b65013bf463081b66baeb3cb95125c50e58cf83e3ddc2721f31d3f3109d4717
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./drivers/include/jdrive.h
-Mudsum : 5b9d8005721f7a59580da7302b16166309f27a5da8cfd794def4efe00d7e9f6e4480d79300b0ff457102b264cde306b9
+Date : 2024-01-01 19:52:49 -0700, Mode : SHA384, File : ./drivers/include/jdriver.h
+Mudsum : 72a1bd694aba292179833e5827592d611b5a83e6f3ab20856f5d5fc9a1d131b6eaf58b68d29a88c13f62bdcbb3a4baee
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./drivers/include/jdriver.h
-Mudsum : b8f3714e6fa8e7dd7f04f4281e3dd7f10c495305ab5a5d30b64af304b70a898979407072c7d71ebf3f9e987379e2b29a
+Date : 2024-01-01 19:52:49 -0700, Mode : SHA384, File : ./drivers/include/jringdrive.h
+Mudsum : 22cceabc190600e5db8633875a10d8355a890c754526ee80826160b321a06c696beb497275b7d23fc24a3ac8e46cd5ab
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./drivers/include/jringdrive.h
-Mudsum : 843a74724209e126a7fdcfdd39f7df754c86301fa728c90ade34189be7747d3f0d169e8aedc2f72946a71fc91881c234
+Date : 2024-01-01 19:52:49 -0700, Mode : SHA384, File : ./i686/libprotocolpp.5.5.0.so
+Mudsum : 6b9bb70bc3a95db0fdaae3d16337897dcb564c5765da0e774681b72d0a77a45f5f649124dffc989f79b92414cfb1fc37
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./i686/libprotocolpp.a
-Mudsum : d0d760265c26a7de3043e6b8ea63c8646b21a4590065377d55a9826ef6b15ae0890334576d7056e1cf90f052d1a42681
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./i686/libprotpp.a
+Mudsum : 24c32412275242c2d496c23683a6c1bfbe98d3c3ef8dff9231ed11efba32cd49ccadea29e6ea062b9a37668402f23491
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./i686/libprotocolpp.so.5.4.4
-Mudsum : c6c4d311b6650dfc0bb75527ef1cfd165069ebf622462c6b4876951d69d67045ed26b8a0a24a207a6d80a04b6a5b529b
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./i686/protocolpp
+Mudsum : c6d9c615d90f5f42a6f5c62eb4d427c3fac7c8070208a32997bbbda737a82d43160efa5a5c56f933ac9d0a260b4ac269
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./i686/protocolpp
-Mudsum : 6337e6645b1e5fbca04b6cd6d850e6a7af01426a74c2703ab81c0d764ba45992c92b69f2f6f0db5390102eb331ed8c84
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./i686/protocolppbuf
+Mudsum : 16217c8add6ab0bbaf15fdeda35edf4ab862bb1cd7bcbb6153df9edb2159515ddf93f08e91dae23ea93d24cb380059d2
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./i686/protocolppsec
-Mudsum : 2ad902ffed4cb28d2afaaf4c559b59307d3e6e42fc7c8270ce32b33b69f73410102b7d66a96c70f66dc3ebb3d7c4cd7c
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./i686/protocolppsec
+Mudsum : 931bc32ee87e862096172a63108c575801c92bed5129a85bf95702a26c76cbbf887c812529b9a62ab8a9abc705ba30e0
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/EnumString.h
-Mudsum : 975887e3595dbab7e77c3a2f14910b249b6a2257762d297043e316c5062fcfd1dba86309a12c91888e8465d52e750b16
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/EnumString.h
+Mudsum : e5cab3a449ff2deb919af16b958c801ea84925905c99e1c70cb40aef2ee1dce6c65459d291e9284243120e20083ac023
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/SFMT-alti.h
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/SFMT-alti.h
 Mudsum : 80c33a5d7733aa945cbed5a50ec3bb912fda09ee36c4ba03028f338d1fd2dfd9fec3cb4f3eb6f2486fa22928b18174e8
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/SFMT-common.h
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/SFMT-common.h
 Mudsum : 2f1c3377790455a429ad2ccc4bf0d2d0d79e165bcdd08083f11c02abaf4d9b449a944ad3e94e1422d83f7d14f012e2f9
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/SFMT-neon.h
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/SFMT-neon.h
 Mudsum : 3fc3abe431a86a077cfc39722fe12b6505a09bcce8656fdeee79a23d530c86093f48482652e84a16b3606c5f0cdfd7f9
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/SFMT-params.h
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/SFMT-params.h
 Mudsum : 932fdc9534494791277449b109a87b4851e1bc213adedd618c9745fa281e7a9ea00492d2dd4cbab57693abacf29efe4e
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/SFMT-params11213.h
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/SFMT-params11213.h
 Mudsum : c13abeb9c18a310e2d5a196065b0c2720ca9984c467edf5c7b85f7d50e0ebe50d95932d4906db4dac16f7dc40ee65cd9
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/SFMT-params1279.h
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/SFMT-params1279.h
 Mudsum : 01a2972891e99326d1398f1bf02c829c1bc0dc9386570b88e505861e78bf29bc41cb0e985ebd25d31b97691e57ca290d
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/SFMT-params132049.h
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/SFMT-params132049.h
 Mudsum : aa87928d96f1e8ba95ef5b44fdc99b560e746b25c0856c29048ec107e3ad2a3c8d83b8df240fe92242be2ddf35c8bfe7
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/SFMT-params19937.h
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/SFMT-params19937.h
 Mudsum : cfd61b433f6c591df2617b726c3ba2403dc450efca49aa868dd9abb1e626c20cdd6e729c203622a9c2ec0181cd73c956
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/SFMT-params216091.h
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/SFMT-params216091.h
 Mudsum : dfaa5d507d65625b4d212fef637b18a1b1bd2cc94b8b01e1699bad0f65db6f3cf2f7fec6cd65687ea0025a7f355d82d0
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/SFMT-params2281.h
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/SFMT-params2281.h
 Mudsum : efdb014f2a4298e09dbe1c5b56ff1f9658125573c52a4bb154135992d6d356e9d9d9153a74f4dba5fbec5d37162f7463
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/SFMT-params4253.h
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/SFMT-params4253.h
 Mudsum : abf096b084b789358be583171dece15c365981c6f7c3e154b7af1e0671b72f33078a843fc7b36b18e9e4ed95d7d60a48
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/SFMT-params44497.h
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/SFMT-params44497.h
 Mudsum : 251f6e0b5605dac7f347791c1e1268549bfbc3291e4b35d1384f03c6796a350b281a398e70e962d1d0ce37ea95197f88
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/SFMT-params607.h
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/SFMT-params607.h
 Mudsum : f01f8db7c23bb58b96a430df35f1c414d1ada0f1207a298f47de44e2f2814658078ba9e6c21495bb33969d7d8f9c31ab
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/SFMT-params86243.h
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/SFMT-params86243.h
 Mudsum : 1efd75001c51469cf5f81991b3a8efe661b81cfae435e3552fd9e342c9066b20561664b8ae3f2aef9d01b00f69d86610
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/SFMT-sse2-msc.h
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/SFMT-sse2-msc.h
 Mudsum : d1d9b6e664d942385bef0b83986fc53928faf5e450bc454dfce6c35d42e5ba8789bd483d45d9e2d9118a7b2491f2cd8b
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/SFMT-sse2.h
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/SFMT-sse2.h
 Mudsum : 903e1c3dc64d9a28f08ccd5b8e962d584f991dfef9e661c5bb51a05ac4be9de6be90d5ac483b6335ffa7d3327b79489d
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/SFMT.h
-Mudsum : 96e179f533aa1fdeb9c5420dbd825530f4eac41fff02631d9936ffb31c54c312d10f811f9027426f7f22495205f0a6fb
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/SFMT.h
+Mudsum : 96534e4f02ceb348b6336146e9cfc0219b98cb17d0955293123a835b436bf0afd1b4603d7743c84c4d7d229a9590cecc
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/aead_chacha_poly1305.h
-Mudsum : f842d941219d9456ccb7555af4b8575b008a3111d7716b8c274c0d463911f9ec6688928fc61e809989f80c2e70ac3554
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/aead_chacha_poly1305.h
+Mudsum : 2705a4e5a53e5cb890eaf09dfb5af1cc815b509653de2312907c7a468815ca9018931e06ef4678786ada0c210c56a5d8
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/chacha20.h
-Mudsum : 826439c6dd95b6cff7e8320eb1a87a0c06e0fb328feb177df3248edc44471f15c11127568bfb8e3b636a627154604ce7
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/chacha20.h
+Mudsum : 733df1b6d4e7675a0dae0c4261157ad0a934a493b8b90ba7fe97fd456e512386a64c3e34a9c73099e8647a41d79a7d54
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/ciphers.h
-Mudsum : 8be8fb1d265986f0290f3bf1d3d8be6b37de4e7c3fd710fb40af0392747d0640957923e0282c3ca14402709cf00cab88
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/ciphers.h
+Mudsum : b1dcad0cb59e7efafada331ed0fb7401f92c33b8cb985f3f428b79d2f1681488bf3d3c490e3685c8b2d658b07ef10471
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/ert/json2xml.hpp
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/ert/json2xml.hpp
 Mudsum : f99c356d0d00eaaa8a7cf4c168f93761cd4ae06c31b1db942b9d279b1e2fcc156245c49024afd6b2b8efb8c0e20ef018
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jarray.h
-Mudsum : 7a879e1ceeefce1cc0648dd6132222e04539403ea85dc21f8705883b6889783c8505ede7c3f229c74163a7a2bd3044d5
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jarray.h
+Mudsum : a0643136fb8fff5d947ee6572143fc13a4bdc4bddf17e71de55fd25fee463e87207e19ab6b040de8a7c3cbc191aac6e7
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jbuffacc.h
-Mudsum : 0244a7315c306f13b684a88e1822fbd147770b3177c63de39d6123f87e32a308f35256db55b46f642ca229e8c2fef312
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jbuffacc.h
+Mudsum : 8b5c3f369137a51665c4254d82386bab2128c143fcf8266493e803e08de565c6f03d4e7f1a242ee48548e894c16c973d
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jbuffman.h
-Mudsum : ae46c4f22efba3481f4bfb2ca769981cc0d69ae3ae11c59ac147fa7521f83f06f055a0ae6427fea9220f892fc2510056
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jbuffer.h
+Mudsum : a137bf2e733eedb27efba47f0d90c6dca13aee0ac98e924062825640b08b69411bcfb3fe783d3c102b58dcefc82e50ab
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jconfident.h
-Mudsum : 75cdc4e1de38261e54ebcbefc78eafbe7059713f1f2616fa453efaedfad830e0c8032858d26cc3e278c724603f616d24
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jbuffman.h
+Mudsum : 963140ae323252fe03633b6c100dd14dc42b9ca5b563120861f9425533b8bc16dc8b364f1c5476b2e43aaab19f20e635
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jconfidentsa.h
-Mudsum : 93e775e85ebd779573aaf72bbf4bf3ee7be403fc90e4ed2b5ead5f85b39b4920c4f1738c25a506f0ce97549558e0e855
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jconfident.h
+Mudsum : bb018784503c621d2b15e3b153600ad7bd2567dc1e536c34f3ff6e7330ae811669b2fc157ca490ea0c7d3cb2cd5b62b2
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jcrc.h
-Mudsum : 90a317a226f0564998fcefb33bdd5475764ba990e338577647f8dd5be10bef453f4828035693bfcf78c6d8d2b333bfe7
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jconfidentsa.h
+Mudsum : dfb31a28034b90b8f17b332135dc84c546bc28f4d0a0badf71910281517dae765c3d61320be7854813b6910c90f31195
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jdata.h
-Mudsum : c30bdf9a467d46e5a21d1ccadda371b54697f571652eddfd21358e88f41989d0334099ed2cd622f4e9b7da365c08f5cc
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jcrc.h
+Mudsum : 7b3ecdb334f208a160783f7105c40191a0e02e16488332e2c4fee66e767db5089d8f0e180afa15f9bdf7bbe387000dbc
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jdsa.h
-Mudsum : 97763d1e355f9bafb15c4dea50cb093b280e71794a52902def6a790a914c758c6adce48c24bb179d62637f94e3489187
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jdata.h
+Mudsum : 8e32bc10863d6e138e705b55e12cea1134c986f80b5d00ac2c6d16c35ded0334ead157a6adc41037afc02e0c5edcdf47
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jdsasa.h
-Mudsum : 508080ff9c357c36b9a8defb625b89b494f9af1025889833682bcad607a82639f17815648c4a2504539f96c6e69d3031
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jdsa.h
+Mudsum : bc0257ebbcec48e06a1585d59fe45dcf05ab19d18ec2294ead7229c69fb24945fc64c1f0db8d468d208b7ca3142f7278
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jdtls13.h
-Mudsum : 15993852b01f30c9a04c6b5be167abb54c371bd0524391c5a48a720e0b8e0e43c6ba7d6231214e65fe99950a5c23e5ce
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jdsasa.h
+Mudsum : e6de17fc356d32997da050b08fe7b24e63667d5cde4e30dc2b5c5094c80fdd3e2dc2cea631cc3c18e18b0a4c51700805
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jdtlsa13.h
-Mudsum : 916dcd397ed9c03542132933c17a595a37c061cdaf3364ec8e671eb2db928420195c687f45bace600db4b85e5aaa6743
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jdtls13.h
+Mudsum : 6170ead03cd73697e61cd3ba8ab2694a2ce471752393d8499ed25b140924a77b9a9dd0938b27ddb6d799935a0e7a597c
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jecdsaed.h
-Mudsum : a1bddc05dc53c5f493bbbd2e0ecfe31ea9163e19bea118419a094577826d139f3a93183d8242ddc06fd0e735dfafcc0e
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jdtlsa13.h
+Mudsum : 9b8dd07dbbf070b9d202000304bf5df55271e28fb33a1f357b1fe0a364b00bd0d4404a7fc29c894b353e233557028f00
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jecdsaedsa.h
-Mudsum : e74ecd4a983944f1f66da40c91c91fc50109c9cebcd2d094f4dea7284d34f9b6e7033641d057acafcd85de67bfc434c4
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jecdsaed.h
+Mudsum : 37d901aa8ea5436ed2b8cbe92965bbf080460f8f13e033313af98f8dcc6363440737c9277d3720c6c1df3980efeb6e10
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jecdsaf2m.h
-Mudsum : eac2573cf87099598ebfaa56f9a6a9a10b43669354112513537f14b91fa0cac75353ac84febe0e45b898f4098708d2e6
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jecdsaedsa.h
+Mudsum : f13762601a423ec548ab5549eb9351dc9d7a9be5d63966b6a5059e3a0ac0a22964e42250ea1a4bb8718d8c8399949a26
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jecdsaf2msa.h
-Mudsum : bcc8cc2fea3c8edfcbfcb5e5d7203f7962b5df2e8b7d1c82b70476aef81276a429deabaf366326c6c38bfe9cf69aee70
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jecdsaf2m.h
+Mudsum : 374ac615e9897dd33e66539ddc0f44d634bab0803d6314288823122361270fff3f9140def7549892996f1aa3edbf0f86
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jecdsafp.h
-Mudsum : ab5600664d15e1a323f3278a247765206f98e3e6451e23887bf745ef0ce4eed609d7b2a3d193a662acf30ee7ffd1686a
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jecdsaf2msa.h
+Mudsum : c9491f7c1fff2217f068b4c161b21e5d0b4e1ec2d2decebf4e9bdfbe67ce81b07e3d8a74c06f4c5d275c84ba9a9c3975
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jecdsafpsa.h
-Mudsum : 2be1a5c80f9998b481466d0c7843368de1c89c6a2c310cb6c1855febb52a0ea2704a915f36996695198fbba3e0615ebe
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jecdsafp.h
+Mudsum : acf15a75526765c613aea8ce9899313d7ba85e7ef9bf31dc6ee9fbc96f17e1f9d0460875d83806b50c63ddeb3e7cae6e
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jenum.h
-Mudsum : 4dadc790454dc1d8912381ffd0af22b931ab66a5b43d9d97b8b13675e02c4ca7b7447f7a0f1d3f70f97c296e26371372
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jecdsafpsa.h
+Mudsum : 46f8e7a153778f4b9a3356497f04198cf7acab6c9bb19a83f5d82120c26870fc903d32803ec008d2fd04aaed05267863
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jgre.h
-Mudsum : 9c0523f6996a55f98c4d046175cefecbf98d0a2ee4faf1e965615d454ed2c1016a4b9876deaeb8cec899f4f6519e8f99
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jenum.h
+Mudsum : 2e3892aedf51a8e13ddc9925b7a4e4a78e4901032c39de8c36c3dbc3f4ba6ea83a83ece4fbf104c61342f7f7c3e5649b
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jgresa.h
-Mudsum : b47347dd405a7911044c52150368af5ba493feebc698a2b9d7d7ed318e1605ac871f764e77ad539fb52abab69ab5982f
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jgre.h
+Mudsum : b16b4c7d86595878e069ed6579880ba556714f44a9b4b633b38c6f52281578cf43a8be86309b124c9ac0a51f0fd9edf0
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jicmp.h
-Mudsum : 7ff9d136ee8a0d5e724a5b8722a1e6c84e9acc9e1fa9285c6a5d527c1110df55990c3a4c14b8135e5ffdcb104178a41a
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jgresa.h
+Mudsum : 21eb26f92e4441e88e43046a4f650eb294f7acba2c37f8cde5c15d23a5750cd4f99664a434a9bccdad8e01cff87a0c2d
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jicmpsa.h
-Mudsum : 6641c224e5cd519548df5857134a79eb32a7f470f6c6e18fc2f41fa58208cdc1fa032d3a203ff9344e8da224a1e53ab2
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jicmp.h
+Mudsum : 921d48f123980f6b8a4186021df11d86b3ee0149bf212f9aa59865c4853d6c9c6630d5f4728e04a6246ec6b85de64db0
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jintegrity.h
-Mudsum : fc248bfffcec747edbe0edcab9eec09d1265b2486214b3b0c0b564a00391348e7412eb7f513286707d6751e14849c5c5
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jicmpsa.h
+Mudsum : d97fecc609dd13019136c86fc90160d945d919ef9a2bba83aaa760d73595e0df884b17d1eb7cb16b230feb0a1da5a597
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jintegritysa.h
-Mudsum : 73e35df084e3e08372a71f52dac6bd2f9bed09294604b4b5034387786948744b89c8560d446b38f8a0dc6f5cb66ec830
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jintegrity.h
+Mudsum : c0f6d864910941343947a950feb76f582933eca8029ad1c11eb4c98cbba771d11a5f4e7bee04d6d86ec1ed4792a18629
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jip.h
-Mudsum : 73b23c8232f5fabec7a24dead6b24948692d7195547a9f5de5b9dbea16156d4c6690c7d42b2799577f11a42a8c0099a9
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jintegritysa.h
+Mudsum : dc1be5566b5f5a1d460673850997e8e7e06fac3595095e2526b8d94b5e640619a756e273c4bd8f1e029835b1bd855725
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jipsa.h
-Mudsum : f95bde02d130a42ace9e8d51998ad46796ea43eb3cdc3208027a2427684d3bcf6c68d6793ace880a6d32a4834a95d403
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jip.h
+Mudsum : 500fb993bb9fbaf2979e8175f5c593887b427dcdb3d0ba517e18e8b6925e0f7f75102e3de66b5db60c124b4e7c485299
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jipsec.h
-Mudsum : 785bc7fd32a7960073098d042b2ee28b5fa773d0ad8f6f9f473ab8014a6bbd781bccfa3cdbfcebb03e1096a2e9731a08
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jipsa.h
+Mudsum : feee378ee14884f6fdaa1edf6ae11519d877cecf6ee60f240ac6f10cf67e6c01bcdc144c02dd8a079d5cd2753dc110c0
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jipsecsa.h
-Mudsum : ff225e8c0cb694cf4c50a4589b41ae75e34351ce1aebc67b8005fca817eab332fe20ab3e132f19607f23174a50244a96
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jipsec.h
+Mudsum : 6d79c15ba92f44a013ae7ae482cc474ea2855ebc9136175b001162c7b67b906afffb706669c7a19528b761775a91ca05
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jlicense.h
-Mudsum : d8e38d65062ad195cf6ba48cd4ca134924606af6e361857b2c9d28a8ea41cad531f1102204608579382ebdafef7435de
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jipsecsa.h
+Mudsum : 5970cf50127b6574a66322665f3811b4cea7938990f2a0a37d9d4d98434f313f78cce8bef5f4e815cac030c43bfd2c73
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jlog.h
-Mudsum : 9a97459af5ecaab98b8386d8ce516734c55071b0d838076bc57335e662fda64ff841421de28c6fe7f01a4be0b142dc91
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jlicense.h
+Mudsum : 71210bf96eb67a0590bbe1393dfc6863cdf951aec44788260c9829c67bfa0236c2ebf8a207d915c59eb6861390593907
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jlte.h
-Mudsum : 2b9597dd6fd1f9439da2438a6e54627626ee80b072a106df744fda6e76a202fb0f1eb5a1968de7fcd1198a59bd3acfec
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jlog.h
+Mudsum : 1242d84b6f92c4347ae12026bbe583346ec8fa6e303f22700ba5a628586a68eefb4055c14655959c8087f62da02cf541
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jltesa.h
-Mudsum : c7fce3dbfa0d1285dee315920f1c991172155308a1e6d232515a0a3ea028256cc38a14576959a4e32f74cc78ce12b3fd
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jlte.h
+Mudsum : 2dc2e9f57728e82d490331d01eae03192b3f6adba5ba8318ac1d295046913ba322ef006dd11dd6ab3b0ac3daaefbb50f
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jmacsec.h
-Mudsum : a241ab771e07d704385d29fa51c255c50660e9b8ed87271186cf5553c878fa27f54db03a591e00d4339174c359693f02
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jltesa.h
+Mudsum : e8fc0f4765ba247da35b27d489b93443bd90bf790b93e636c1fbdaf62913846f5b34370d2e0df9f5d8b2915e24c6d40d
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jmacsecsa.h
-Mudsum : 2c9832935f9b34a15fe42998890a5a62f7f902075a068b2baf43d03e78e94bd784f3786678952b82f4838e220000dacd
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jmacsec.h
+Mudsum : 4fbad15599ee8fdb673f302791ac868448972509ee171f4651a32fc0d4a57c8005292e048df8410008c13b7027dbf5b7
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jmemblob.h
-Mudsum : 098730e7b861520da9705c33a76be841b929f1eae70609d9d72310ddd44d2663fbd77941a7e7002f87c122cbe3c5dbc0
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jmacsecsa.h
+Mudsum : 8a8b05c2bc7fc55ab6ef0a775975e393da2972576246a4f94053efc21d42c370e84745d8c05c1d282ff308ec16cb80b9
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jmemblobsa.h
-Mudsum : d0018517e55ba4ce206d3cc4cea343cc5933ec8aeb4435c37f52917293e789c71339ed14dada276f3c179387fa603c54
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jmemblob.h
+Mudsum : ee12e92839e15ec9b1e5a7f2307a449f2e6349d9c05ef5b71d6b55808061d5d6b9ee87921bb6e6e239c3b3898e4f4a36
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jmodes.h
-Mudsum : 69c64b7b375b24311a6ae9e6a4222cdcb4f823a98e90a9d2cebbd02d2ae541af27989a241880af69fe9a05b2fa9f2fac
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jmemblobsa.h
+Mudsum : e2572301b617b5cb850862887e4badf1a80813eb8cd2467b841364fa1517c919e52ebb136b6c92c4d82f95c24f717636
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jpacket.h
-Mudsum : 669ad26bf70c78f4ea513bfca80ac2b7e875f0c64ff34f79908b282832fac82e45f836e309bee010a336e2bdf79697af
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jmodes.h
+Mudsum : a1ba455bdd1148bbd86a160ccd4bfa52a231fabf469fbfeeb08619dcf39b8dba037f8568d8e1b9d2c983f4461d0e312e
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jpoly1305.h
-Mudsum : af730f9d7b8ae07ff0686e7a25b3679a769ec32905bea4aa1de0b6325d7777fa2baaae9bf6b26dca0fb7e8978fb0e19c
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jpacket.h
+Mudsum : f5f214681e6bdf98b77404a7d05080481a1703f4d8aae6e97efc7538eb197266a7d8b85e8f47602b12bed26a65279bd6
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jprotocol.h
-Mudsum : fb6da5cf7e1f36dc1c51e8274f6d75a575efce9c955efec14531f17df12cbb3ca0e19ef5aae51292d17383e87177107c
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jpoly1305.h
+Mudsum : 07914e8eac3665d591521ea1c12850b62dfca93271947b4d77d7123ed2c13f1dc7d05f503940a97fb81d33150987d017
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jprotocolpp.h
-Mudsum : 446e88bb8c35de829473a8402ad971abe7d9608a66736b95e272d0b6d73003aa53986abd8ef3a93973dac4ead0e0b871
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jprotocol.h
+Mudsum : 78f746e02a09815ee85a207b425788e42529f00d0c6adbe51310ef8bcbd38f47db1fb39d02533b8ba3a3a201db8d596c
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jrand.h
-Mudsum : 2586e214a3f44639913e0c5bada32baacf43f79a0a3914646116cb365a3769283fac12a4a057f8eb958eb806c7f70594
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jprotocolpp.h
+Mudsum : c21c22f4f4594cea6bdad434ed5865cb4f7e0c2395bb1c8236a2fdda15a16814bed64160600f94aa9b111260d5dc4843
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jreplay.h
-Mudsum : 3ce91d8b94fd315f54a9ff0e0e5bceecf5c4913a389ea799d6b9aadcaa9db76fe4077fe5300a7ac32d96c03fe3fde6e3
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jrand.h
+Mudsum : 639aba727277721ecf17d78fdee7cd0390fc937d206f4d0c1f05495d25a09a58e2d8a1a53070abdfa8868d07e7bc179d
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jrsa.h
-Mudsum : e7609183636b1423663ccf323f9ebe2c4f36f6a4bfd103373fd7e88a0b2a1eaca4ce95849857410cb8129e6970726297
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jreplay.h
+Mudsum : b3f771aa9a8b678e4e38a7941b1ea023d9e1fb296965227f2b986c93c2a1c227b8a0530d98fa323fab355e4c602f8cd1
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jrsasa.h
-Mudsum : 50cbfbf43c3ed9eb06be101096eccf100be0a1e8bb4780bb635b115d6495cbb6cbeaf5f67977c2c610f53af8bcd70c93
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jrsa.h
+Mudsum : a21d3ffbb96fc1d485bf6836812f31116e72bf49cc6bbf4cb27b5de8b0e6f7939a7761c0dc1996eaeb587fa18f1996fd
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jsecass.h
-Mudsum : 70fd2582817c2480c7b3f946359ca0f159d2717b8a05b874a4b28aa7822097952a814c422a6672b7bed439e894ca8f15
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jrsasa.h
+Mudsum : aa08d0adb89c4914b65d8f9d119f56c1e1b0b29aa21530c12a1566a7a6f22704ce1ae9c4cc9df549828f73bab5ad491e
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jsnow3g.h
-Mudsum : 17a57bf78104675fc69fb3a1da7e81c9b972585957d28941cacbe79f9700f3928c3f23efe9aae8c360af629155d38d45
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jsecass.h
+Mudsum : 1d4916bc87b928371ca87eaa5d552d0628d95adbd16bc5ef1e4f6cf232b040c7f089568116f546cc0c7fb7677501ae71
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jsnowv.h
-Mudsum : 7c4d98a6844814f5ecfd8d8ca2df5c5f1827d16311c6097ed465726f74894323ad37167983b6f2bc3e2e759ebe413f09
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jsnow3g.h
+Mudsum : 647dd620155e7f5091f7e4d144f099b850d137e587ea734dc0c60b7d1666cecdbfcb90e94f3d7693e9e7f87f75aab329
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jsrtp.h
-Mudsum : a7910fd83a8b722420124ad345cd3e2ce6377a9fa7bd525f629cb6d70849d9cb1bab212f66ee5a3ab8179c546347462f
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jsnowv.h
+Mudsum : 57bc9c552fa7d0066407d026ea7933860d9aa8e417506ea616e2291c95d46a533b29c9390e8c43b14557562a975bc943
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jsrtpsa.h
-Mudsum : ae92ef3516cc1bc22f98d7deb60447b9c9fb1177244f8f05015b1b496cad11e728e1b708f807ee4ae74726fe534655a4
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jsrtp.h
+Mudsum : 7c7eb94a9153f64cd51667e9dab74b156731dc93077c39b1a2842c907766760326d565b0aa6920a32683772d1e9834e9
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jstream.h
-Mudsum : 21d7f0c93066988c3707972bd77d7d9176e5f778a112829b234a32166bc5d8aa37cbaf9e117da2f29a42a5e45dbaee19
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jsrtpsa.h
+Mudsum : c3bd5fc7f6737e449bbecb439ed85d38a5e946be000d8627523dcee58a90f571310ba528d934f16f296258657095275d
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jtcp.h
-Mudsum : ad877aee0e4177edcd57c5ecf23d5750dbe4bbaf1a1cdfa43f97368a5181792a74b5ae4ffdcecf01e41791add1a440d9
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jstream.h
+Mudsum : 939facf46a0202c67a690caee7854763fbe239ed8fc8a113059946840974541ed038144799e22c3a7c598270b0122e30
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jtcpsa.h
-Mudsum : ba382cdf592deb5b88a092ea44bdb684feb7a5dd2bf79f6dedc9dcd1ac059c1ae87eab3a8a236357cc92eedff8dc2cc7
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jtcp.h
+Mudsum : 0f31e9947aac9593fee1af3cefe93404ede2855becb38ae3cf83cfbc59b32009258c26382fb24b6f6159aa3bfa792bc3
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jtestcfg.h
-Mudsum : d84543792f86afe1af7b38e1eddaa66c02d1b5fbb1fe57796c0e13ac27c3764bde4c2a077e5bf15c87ba5b239f4c048d
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jtcpsa.h
+Mudsum : 5effdadb19d21086e9ae86598a7af72773f8631bb7d351880a8f8228f26aea72d7935762641bc702d40471e5050f1faf
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jtls.h
-Mudsum : 52a32416b51d8e78e3b48c9db9af41e2ef3c9d719b2629619deb391da639fe3c48bd5368dbe8ad98e82c4f5c5d814571
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jtestcfg.h
+Mudsum : 98afe8e527b6e8511f065ba9ccf840f4fc874242541669b63ef804f687bd563ff22ef85399508e411e531d5d675d95cb
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jtls13.h
-Mudsum : cdf2a7d460aae578dacc04bfb21658c95277794fe5c6c4a80a5b7d7e1b7d822f7035dd035514d83551f6ad0f7d67f885
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jtls.h
+Mudsum : 4f30f42fcac312d7fcc10f5687964ba198f06bd1986bdf7b4e79f1e2a2c6d046084615223e9f6bb1535c5ff4140c80b9
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jtlsa.h
-Mudsum : 675bed823198be68088548f043aa89e3de5785bf8e32063f143100563766576778255b79f0bbad7ea2acc6c4d8ddcba2
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jtls13.h
+Mudsum : 30a1860deb24480f9bcb119cdb17372271f1517b38a32c62ce42339270e4f8f819c0136e74cc491a2b577b19219a40e9
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jtlsa13.h
-Mudsum : 5f6c33267bf10aeaf6fd751f44c06bd16dfcb4294edba60ba8407c7740ffa69530b9cf9f8bab21fbfe14310e3ad1c12f
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jtlsa.h
+Mudsum : 595516cf640160eee879ea6fe0d9e5906eea6e8b1dc2eb14b7014dac95a470eef410df2f2c86feb8fe116f29974ee2d5
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/judp.h
-Mudsum : b853fd63664d679d862881d3d12936f63fda0a5059fa6794fe3e542ef4c997e864ab394eda6fb356762f1ff539974a5d
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jtlsa13.h
+Mudsum : a28a1712ae58b05e19929428ac7241f8c035d990ab2ded1483c514bc74320ce084dc10d44db0037fc64c6da64aa7388e
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/judpsa.h
-Mudsum : c2feb36e826d4ef3323233b13f38b8c72a4c1aa9cefad69e5b1744e337a792fa48fb06209cac1f89e03d6ccc516b75cc
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/judp.h
+Mudsum : 7980d454605e2fe9aefca0e30540b1c6617358544b43880d8028c7e90eee65ae21c1d92357d434664116248a950147ac
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jwifi.h
-Mudsum : 1bcef860511c8eb68689b1d95dba75aa60155eb0c1567a19d5d3927460f79329cdd11511fec8a6744d84fce94447f62d
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/judpsa.h
+Mudsum : 9f5b642621aac5082ac7d0dd575e5816c6713c52b709fec7426bb507ea773c274d86d975e6553f43c70197d8b79f6e86
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jwifisa.h
-Mudsum : 2f2c56eda184667292f8d63db9d6ab84a70e9ebbbf950a2ac5d673a4373e5f686b906893dcac2de22b1098b99054bc40
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jwifi.h
+Mudsum : 95976a1025a0860ef64f3ac45ac61105a37ac662cf19c46bbe813b17db9cc0fc78f24a112f6192b204038b4f27c357c2
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jwimax.h
-Mudsum : dea49ed6d5b6b12507f060da926c2591d559e6afb6d991ee4a0b2249b59864bf992207c2b63dd2dc25e0b1a35e4e8696
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jwifisa.h
+Mudsum : d7976d6489a05288c5c43681aa1f9cc618996dbb592d0ac79fead17be4b0febc937a9e5e6ff625ab973b507312361a61
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jwimaxsa.h
-Mudsum : cddd160bcfd54944d68eaaa1ff48472bed2fbaf52d051a2ea7a65dbc0713b3ba8ec6956f05d140a0dfbdb5c80787fb3f
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jwimax.h
+Mudsum : 338f84f223f2445fd39176a09258c391b7c5978a0e7f86f21a5a9581f3f89ed1789e1e544f1dce56486ad79b1426cebc
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/jzuc.h
-Mudsum : 2ba55c8651f0cbac5fdc95db30a4f24c7eac27bc0ac04997bdac250ac08e2761f878d1ce8a58be5317e7c36fc952ff46
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jwimaxsa.h
+Mudsum : 91cb389f06be50aad42f886b79269de9fe05516f989d59f4978262c1b4b652b969ea141ccc444386529a6effa9747d06
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/nlohmann/json.hpp
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/jzuc.h
+Mudsum : b07c27a446a65fa3fe1ed2d50eb107f099ede82551be8c5ee718172ec4d27f5018d304faa100ecfc74d425a172132355
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/nlohmann/json.hpp
 Mudsum : 3d9dfce84efe9d94180fd3105854735d1f8fa7c20ab535b0ca195bce050b33df2f28ec9f9a8991845b194e61c2f823f7
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/poly1305-16.h
-Mudsum : 5f80f2df290738b926d9575fe1b9a196c9b3feacace20c026fce060ef0f44fd468f776e971debcd33144ec260fcb4079
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/poly1305-16.h
+Mudsum : 62fffed49286724afa7f503aaa7fff0d96d7006778742e5eb9d8e60f4f513781fd03a0ab5527e1fcac5a0e5a1aa23dd2
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/poly1305-32.h
-Mudsum : 6d3de2d3f4367bdf2cb82760415743ddbdc6578f462b629f6237d736b823f2c42e6bb3ac2296bcdd4ad3711e875d4261
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/poly1305-32.h
+Mudsum : 9973c774906422555239b09cc2be7180ca8e0a9392e611c4a0b15a954e930042bbf24dbe4ebebb35cf93f9a2a311e285
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/poly1305-64.h
-Mudsum : 69084e2e2d97cdf217348be5c8cd65ef5a8413ffac681d421fbb33b96c8f89c1a85666f9a3eaec7abe0c14769e1e144a
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/poly1305-64.h
+Mudsum : dde440d2d3057595e043413354a7523c4f920f0f9e32a0aaf9c734241651e3ec7f08a64644def88136f4ff3d72a69fdd
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/poly1305-8.h
-Mudsum : 204c0d2abd3d3435cfcf8d8bfc7d91f052b6747b767d87482b7a44cf5caaa0ff0522baf8a1077ab20c480c4e01588c2c
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/poly1305-8.h
+Mudsum : 6fab4766799ef753fa931295db7eb89cf616894d12174131a945882bd83adf48f1c0bf49d52f2ab56ce3d00dac3daf68
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/serase.h
-Mudsum : 306afa2758a462faee6dc6d6d0cf14fb514d47dea069bbd34be014a4bd9b78b4ff48acd3865c43cffa6cdfc5eaf9f8c4
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/serase.h
+Mudsum : 0dc6a37a68f53b5b2ce5528a5a143be30bf48a859cd6fe795efe845ca3f1f98c226eb97d356f211d796f5c5a3b554dc6
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/tinyxml2.h
-Mudsum : 9551c61347f7c6b74f50ed3b077ad492d34b6ecff3b123b8b263e54b95b793c018ae76191303096458ab4fc0dfeb94da
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/tinyxml2.h
+Mudsum : 9e6db5a08753bf7b2e7aa55a911582f989da69700f98c96bf24ee2057350d822eb7ddd054b91c367269f8022d2b4fdfd
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./include/wasp.h
-Mudsum : ba914b0d047acc813d62e9409469aac5d73007e9f732a1b6c1cceac2bfc3b3aab61962eed4156d663f814c8eccf01f01
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./include/wasp.h
+Mudsum : ed58461f03e74d4da6fbb3528948c703ef123908ade3ce02705a0c3ef35e59396f73dfcafdf6dfd9d870d435f4a0ee26
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jikev2/dhParams.cfg
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jikev2/dhParams.cfg
 Mudsum : 2519c8dc608aa171b0f6e68077ebcff63fbddf009acceaa7b6741cfbce49d565002e8d973d2ad30cce53967b3e717fd4
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jikev2/include/jikencrypt.h
-Mudsum : 579e257c644aca3fd5ad585a0ca038f36a3aa959d21dd1ad90cbd52805c480f246cfad0c765ba1332a6246da529dc483
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jikev2/include/jikencrypt.h
+Mudsum : 7070d362e56c3fac1eb6fb890b1c4b62ee196033517b7937505e122250373265884bdf90839d69341eac763ab8acc0ca
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jikev2/include/jikeparse.h
-Mudsum : c3329c01e5b68bf4dad755b10711cc10ac25c7e49518fee835136821c2f79fe7022ecb5351a61a30940ffab248263917
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jikev2/include/jikeparse.h
+Mudsum : 536d0686a99d1866a37336174e3b8881ca46e5e57554002cd80cc027f20fc9b64f1be126b8bf1787008e0a32dfa7d5ed
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jikev2/include/jikeprf.h
-Mudsum : ce33d66afc94e22687c107d228be87e91c6ec1b05d0e7e71910c18dd85de4c33e706cf562d1c7e9e6585ba683b20ad87
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jikev2/include/jikeprf.h
+Mudsum : dccd75032b3d29c5356fff3774e96e2c84c562190115700450a7823c1102a0a099aa5c46ccb9d6d34768dec177053f81
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jikev2/include/jikev2.h
-Mudsum : 3c72d5a5e8b69076c2a578ad22e1daeb540b842c23b99b0a4eabc3715493934683bc8e8400d972ae61b774f94651278c
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jikev2/include/jikev2.h
+Mudsum : 725380c9b477c09e00ffe9ca2ee65c82603c429a365428360462622029d777dbbe82d051377e85e0e1d1f2536f1a0627
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jikev2/include/jikev2dh.h
-Mudsum : d024945024a615d776d1887dac049bed91052be6f4c765cde84f3b14bb6a2c08f7f77b85993d50e1bfe9ca53fed4b859
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jikev2/include/jikev2dh.h
+Mudsum : 8e3105e7b0d571c195f8dba2762ea4edfff9258ca2339587c255006b733a89a05d11d16bc7dbb6a5e7ba1fb36ac08d66
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jikev2/include/jikev2sa.h
-Mudsum : 08ede47cef3fe6bbbc7124f112460e8340ef0f57fdedab7235eb80f2b7db9d0445b92076be2cabb70eec50b94a3eeacd
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jikev2/include/jikev2sa.h
+Mudsum : 32eb77a3adb05c9facf99c3d47a52674a924b89fd56dda16b0375a3417225bda19054e0a2da2cd31eb91edbe70241421
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jikev2/jikev2.cfg
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jikev2/jikev2.cfg
 Mudsum : 8278ac82fbbdd36751f4b8ca662a9bf2d2b244c13a9fd6fdfdfe8d7bd655c658fbe877bf1052c3a805d9c12b63419b18
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jlms/include/jlmots.h
-Mudsum : 9b4fc8c1c2083a4ad416860a33fe838edfb8f4d53ca18afebcfa468bccd8550e69d6a88b69cc0e20fbc10a28b2c00e15
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jikev2/jikev2_silicon_valley.cfg
+Mudsum : 370e39f1d9612d656f797203a70b8c8b42052882cf44488bd0f18ab1d2ac6fd9bb4ed34b15d5b2e7e07670019ac24e16
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jlms/include/jlms.h
-Mudsum : 874b343262a91f5427b364f212276cad12ffd1c2e412a0478226983e3e473475114d54f5f66ede40db3eadce193bc0a5
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jlms/include/jlmots.h
+Mudsum : 5b949213067aa7b55a9f9800819bda340283cd1f128d4ecb5dcd3bb5b9ad2c95d09d8930bef332952d759f74b92e8885
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jlms/include/jlmsa.h
-Mudsum : 42924561785e8dab0ae5ea13088af685c01321a87eeb8b6d387f0e11b0dadcdceeb90e732675e70aa10425f84e88131e
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jlms/include/jlms.h
+Mudsum : 7a543199b4823a44d2911fb26ea8f9e2aef6b97cfa09160c90381694d850c177557611446a34f057c20b78638ea1c94b
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jlogger/include/jlogger.h
-Mudsum : 499aeecdf4b515d8ab77ffcd94dc21314357193415b6c8252c9553d3e938c0f08394af14433e4fb8791928607d3dd694
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jlms/include/jlmsa.h
+Mudsum : ed08dff2c5bb8411d63c65ef521f75e7863d8946697a2208958289515789072497cc7b56943ce19edd03f456f172d7a4
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jresponder/include/jexec.h
-Mudsum : ee9415491fabe33a71a0d99bab195df23d68e2eadca1fc949cb965d178e1a2b5bb72f03e3ad1fc82934294cece6e7753
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jlogger/include/jlogger.h
+Mudsum : 27d90407fe866c0ef800163803ccbfe9b2ad214602dc87b28f2873348ef06537e18c861b78cee20617f3e67589f2b958
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jresponder/include/jresponder.h
-Mudsum : 0e3204080c83a0bc7587590d187da5b079531be1000e8b396a42a5e30177be8164e6a62a76b7c0def25d62a7a38afcff
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jresponder/include/jexec.h
+Mudsum : 009de3d34b4d3d74a22a5918b44a6719b4fdb95220c4aa0675ab18299a585712fd551e85f794dec7e1a97d474003596b
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jresponder/include/jsecresponder.h
-Mudsum : 6ec94f3ce0165811727aff90d1a771a3799dbcbe9d223dedd72505f7b191bbded97cc2dfb975a22a78ab2103617fa98d
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jresponder/include/jexecbuf.h
+Mudsum : 178fcc70b86d97d56f1a54668f1176cb25350fc1fa9f5b14e5b255937a85c89c08c279ee0dc25d10528f132a5114fbb4
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jtestbench/include/interfacepp.h
-Mudsum : 3b64de8fce5fed54500d6ef816b8e15ca37028dc17492b7b4567c85e290829b8a5e795c002467c131a2473e635954e39
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jresponder/include/jresponder.h
+Mudsum : 3fa9ac1a5363493a540c7e10695cf4d9cd1f80ec8b8397e58d817cbf49b379d63634f0fbfa6fead54ffb3b76bd818228
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jtestbench/include/jmmu.h
-Mudsum : 1ad0c2f659b696fd863e4f63235a23502e11dc2655f74b0baf5085529066f73a3817b8cb7ec6976a660945a3abce0b64
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jresponder/include/jresponderbuf.h
+Mudsum : e9a7134c92a9f13653922c717d2318377f36c49072cb57355251d02e4c9714f129ea844fefe10a8aa011b30c261895a6
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jtestbench/include/jproducer.h
-Mudsum : 55ffcbc221ca4a8a4c84ef8dadcd733c335a8b233fa31130fc8b2c1b5a39807e09c0895ac8911a07f026b435448406ec
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jresponder/include/jsecresponder.h
+Mudsum : 084577a46ad08db873302711e4d351ccf1d15a6011be22754661a6797904b9c98bfee8df11ed1c6f1703258ece864cf9
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jtestbench/include/jring.h
-Mudsum : c09c9e05a5ce5fdd54db77778051079c1ead87ec128c2af6c6bb62eece31e4a80f643ab50606c3474575810f0e754b9c
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jtestbench/include/interfacepp.h
+Mudsum : 042bbd7feec1d63f98481bab3f15ad7607cb8f13b8e5af47e1c81c6327b1b150ce18d38450ddad05ae2275eb1152d3d0
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jtestbench/include/jsecproducer.h
-Mudsum : 1ee0adabc0e808057a4c2824e58865e53909ae38dbfd27ba9cc3c78efeabb4be81fd3ce56a34d94a6480ffe55c6d9e1e
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jtestbench/include/jmmu.h
+Mudsum : 1159ca231a4e674c949aef27d46c25937f020de71cc62bdbcc8d7da901fd1948bcda901fe0c1ec9b3e2a93e29269ff0a
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jtestbench/include/jsectestbench.h
-Mudsum : 96ec49adc6e11525b6a2c8bc03dc36b2ecc54920cf30bd01f0a629180650afb0303db11aaafad3831b763ec52f6d271a
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jtestbench/include/jproducer.h
+Mudsum : e67de7b4440b8db91e97b45d312558bea45278151ea051bf5ed79af2291b18ea9d27d1faaf53db92b23b0c7daccdba25
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jtestbench/include/jtestbench.h
-Mudsum : ac6531fe09c1b654fe33c359e814b54e2b1e8a60304739d26d80aca47dc7ae97766ba60bda63654b696117864c10966a
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jtestbench/include/jproducerbuf.h
+Mudsum : 7707375ebb3a1b6d9434e32d566cf8fea1367a4b88119d0a28f9ce8bb42c25848d7906d840695998540a3f2649b9fe2c
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jtestbench/include/optionparser.h
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jtestbench/include/jring.h
+Mudsum : ff6caeeb3c7e9afb35b0b229a4ae9934fbfa1359670dff8c37783b326619dd66ddb2c7cdb85597b2a8fc784711d76957
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jtestbench/include/jsecproducer.h
+Mudsum : e617dd56a8c1197af569a15782fef74d6d5cd7e16c93ab3d99ab91d049891197cd7b5d9c12854829c64cdce0503fbcc6
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jtestbench/include/jsectestbench.h
+Mudsum : c1479d1dc66fab8a1852a5989fe1e8dec88d4a4cc1ccea24d397ed84bc859da4f51bb42af2dd26e2b9e9a683c809a47f
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jtestbench/include/jtestbench.h
+Mudsum : 4ae916c033e1235f20718a36966310618bf9f937afc47e0a57a25548e146bc12993d914ec520df4817d20fd9e6e26478
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jtestbench/include/jtestbenchbuf.h
+Mudsum : 3fdc6543f283b9474ed468e034d8df8f18931d8f33814d1f211b7350a2223b38e892a4f37f757ea4db5c3412457e4263
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jtestbench/include/optionparser.h
 Mudsum : ef494f2f4d0807093ae246ff4b5ab6b1ca7ab8a490433cb7439ed936e650bcea7c7a073071cd5617b223594cfdca39e7
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jxmss/include/jwots.h
-Mudsum : 6e144a89c660b00b2b21c0e4f34b5b9ba4818eb7c1f06f94e4430462fbb7bc55d2937b376a61f528e624d53ea1048b03
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jtestbench/include/ringobj.h
+Mudsum : 63d5feadc8ff594fe56851ccac61eec08e5dcb8e9d5fd97b2be9fc2f0945ad449b4f9c95294c6b69734c741a1d5c4cc8
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jxmss/include/jxmss.h
-Mudsum : d5120747b991d53ff001183c3df516836024fc2756bba37b1ea3aeab88180bc9d63dd2e9bf46d75e189c998e76a20f4b
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jxmss/include/jwots.h
+Mudsum : 973adff716caaa6906d45149422643f73edec1967e28ec86d375c468f47afeb400689c9b64d1800b59f6d38d549c4f95
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jxmss/include/jxmssa.h
-Mudsum : 5c30e42ca7ba19398efbab5cc459e0c58dfa0928a5b2a03a34f32d6baabcb89178194cfffb990e512268aff50c96a3bb
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jxmss/include/jxmss.h
+Mudsum : f8ce541fe14cfddeb94e14746b95620a791e7b4fc6e96eb37a09feb0bf9199a27127c35448a5ac2a0f8e81b501aeac51
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:18 -0700, Mode : SHA384, File : ./jxmss/include/jxmssaddr.h
-Mudsum : 921b354e4e7fa0e05a2243e5ef445c927af474323367aadbb147240a548099fdbaa3bee8729cf6275a81cdbfa7c9b81f
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jxmss/include/jxmssa.h
+Mudsum : 5cbe6aa1f98c95f2bdb58593e59b1494dd0e0291b71b04db0116547424f49a0a9b96867f349c077165030711e141daab
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:19 -0700, Mode : SHA384, File : ./platforms/SEC/include/jsec.h
-Mudsum : 40420a3b9d0f5d7564b0c910dd2514c9cb97be707fea583fbbacef83d7e31e13c1d89306db4ec600ba682e47dd981f40
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./jxmss/include/jxmssaddr.h
+Mudsum : 73d9d14c14045c5432fcaf88a0fb8da7cf23121f612b1d477c296ebc7898cb001e604b66157eb2fcc9cafd3d6c6298f3
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:19 -0700, Mode : SHA384, File : ./platforms/SEC/include/jsgt.h
-Mudsum : 860ec3b0fd8820e3ac30d89296b37be0ceff686bdfc98c53f27cc133da1c288a4182f0c277932628ccdb5ac604822b46
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./platforms/SEC/include/jsec.h
+Mudsum : 33e397a92662a11c8e81a1d8d183b2e6eee1209dec405e6657842988af73ad5a68cb000a4d63e506efc2155751b82880
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:19 -0700, Mode : SHA384, File : ./protocolpp544_final.enc
-Mudsum : 1b83d2da4fa3f9889117b901af215553dd6e3f2d4aeb4ce74f0e0737bc7505f526d79d892b709830b4ecc1374aab7e53
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./platforms/SEC/include/jsgt.h
+Mudsum : 58282fa6ce549ac68fbb5271a004f7d73094d511613c18dabc575ba8bc93844a5f74c89bc51653dfb99a172cee2ac320
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:19 -0700, Mode : SHA384, File : ./protocolpp544_final.enc.sig
-Mudsum : 83e062bd8dc1ee6ccadc904685cc14404fe1670902316e7e8a01ef01d3fd05265662bf590553de402a3c9641d0f3eca4
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./protocolpp550_final.zip
+Mudsum : 77d1661806c069aa05857849c9cfe7684141aca29ba4b51024631b27a61291fc7572ed53e02661ac78784b42233e140b
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:20 -0700, Mode : SHA384, File : ./protocolpp544_final.zip
-Mudsum : dd827ceb8d509d0743cc07508b891c5ea62223a3afda0c04b9b2a47e124174ea8e0fc6f70a49dafb49a9c59c57db867e
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./protocolpp550_final_enc.zip
+Mudsum : 8206410b24ca43127bda4ef180eaa69e5b2c054fd29fe7cb18f887d7dd0ff8eaf33ea9776fd6ecee0405c74e7c36f60c
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:20 -0700, Mode : SHA384, File : ./protocolpp544_final_enc.zip
-Mudsum : 41f97f1407bfca3389c82465612eb8694448e32e52d64bfa001329221d7e204d00a45c37407f390996dee4703e62aa9b
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./protocolpp550_release.zip
+Mudsum : d2de08626f0f5bf67ccfd72307ede512f9b85e7672d7239ee86393f0439d455936881576af394169762d2c3babe28365
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:20 -0700, Mode : SHA384, File : ./protocolpp544_release.sig
-Mudsum : bea026386f2203196159b776c8b16fb59228671e6d65ba3201e71b0fdd92ed4a1d7f6bd77297298daebd388636c461e8
-------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./protocolpp544_release.zip
-Mudsum : 4c6fb92b5c62e8c913b8fc9737aab44e5e801c04c40b4aebba55ef5c99ea60cadcfa407786d87b5505ed85aa69adfb79
-------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./run
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./run
 Mudsum : 822617b7fdd1e5d78819005b335704eb2ac999eb6f2d3d269399834eaddf2864bfeab1bb39839aeeb59833b755243889
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./runppp
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./runjson
+Mudsum : 445bb1b0f9d447700f331ea62439c092fc3e7c086cb1d4f76dc482523e5d5ab7e34b970a036b118608d3f010f0be1c22
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./runppp
 Mudsum : 5fcb4b773e06effab45472acd3b18845c203a9fee3bd9ea0e905cfdce3c5c6f0f62883f0e6b0bdec3372d1f1ebe7abe4
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./runprotpp
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./runprotpp
 Mudsum : eebb86108533ff826c5e55758e19de2770eb5f07c4ccdd42173de67e1856aefb699de9a73472b6b15a3f094e634749da
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./schema/ikev2.xsd
-Mudsum : b6966fffba47feedf9c10d8bb5f515b7f56db4ab6afe185ea3edd3962353de3aaa25dc993af8819372448fdcae66d57f
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./schema/ikev2.xsd
+Mudsum : 7a40f9a24c05492cf52d874c7dc1d21e5a0fa41ea055ee927d106af6d1f7c6842490a63dbc8fb47dd6f57c76692772fe
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./schema/protocolpp.xsd
-Mudsum : f39caf119f9ad714545a805590c77bd0941aa12587d3af390f5446577f7b49ca3a67eb82502dd1b6b74fd0155970e159
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./schema/protocolpp.xsd
+Mudsum : ac39508dcea0d690a6daf94dbeaafdf21feb457c2fad1cee1ad4d0a335b875a87283c2d4b054e95b84a05621abdef7b6
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./schema/testpp.xsd
-Mudsum : 4f93073e6f2142d6a8c5d272100adf1a9a18ed0666e855ab07e33eb91f8825f2b3ff42fd64b1121d1a6c7266c9cab76c
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./schema/testpp.xsd
+Mudsum : 6346bb6cc68b154b698871aeb82aa1aaf4c8ae9a0f0526dbd0f95d916a9c169314238dbe5521bbf54a6ddd11f255fe9b
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/aes_gcm.testpp
-Mudsum : 1c9ce089fd0ed60ae7894b8fd4701244478aa34241dc77c447ebaa1f51598a117b92437c7fc45706a806748e59a91f05
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/aes_gcm.testpp
+Mudsum : 7a711ded73224907636365b7647b89fa09c0d093f6f59957f1dfb6c76c2ba586397eebc312e2e3ccfe16b5968b7c2586
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/all.ppp
-Mudsum : 1e4bad5b2b13ba61e004abf2d11a9cf19698fff8c0d8fced2208a4625d5a3c3943d33f8039f7f8b93ba67cd1f0011a11
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/all.ppp
+Mudsum : 92e24866f2665e7fec29eaa7d4c03846ce08471923a3fd038428adeae03ad38db9147d97837ea025419e122df3a1d170
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/all.testpp
-Mudsum : fcec4b0e12cdf2e06d22f2ebb289d63a5515b011fe41f168f0d4b0451ff72f1e37a8a33717106f74f38cc97641470325
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/all.testpp
+Mudsum : 20280d2fa03638cb8b4c70b0b41c275593c2e04583d36efda1085152fe62962405ff586cd5fddb8ee4240341945ecf3c
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/blob.ppp
-Mudsum : fa76c476daf76bd6bd24df32c33e576d5708dfb74d11df161971035ebe7075d4592aebb640a0aaa6b0463effec54a311
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/blob.ppp
+Mudsum : 1d64b4b4542599b730e426579ecc522bbdc711e6fa59e3242e20c39d2a7ba428a32b3fb11dd12acdec33b9eb551a7f6a
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/blob.testpp
-Mudsum : 7d4a0f25822a7871f8a307200f443aed0be61def58fa02ea356710d9e56a92f9d06ba71bb023e5f9c6585d1d5ae4571b
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/blob.testpp
+Mudsum : 10eafd579b7c3e34f5a5ab0f532a7ac4c3fc461120c1df87bedff398506fa7c71cd3965388ddaaa15520b61e90bf4ea6
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/blob_dec.ppp
-Mudsum : bf95b29e9b9f1aec6d4f042ecc91fb5cddf0603c4f30cab8a1c0d77448e5f644b4b8fe9cc24d84d2b5a6273dfe790cbc
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/blob_dec.ppp
+Mudsum : 62060513e2cca786dd6534570d9eaa62def17f1bc2d983bda66ffd4cf3375c0b3360aaa7e52a11b9a48f4637038c33b7
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/blob_dec.testpp
-Mudsum : 536299a0cdc0407fdea733993793132703265a35743709eac43530681f4f944c517ec9146147bc8aee7a9207666b5e9d
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/blob_dec.testpp
+Mudsum : 29ca654761267a3ab25d76536549f9e7990652bc206805f852589047a2a7caba12e9a29c2876a8b16fc085ed933ccee5
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/blob_enc.ppp
-Mudsum : 10d1f07b3af0f009f7d92dd0cceaf92aa7f576a433f6faa60c419d197e59cc94ad32e81cd3ef5a6124eff308c969301a
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/blob_enc.ppp
+Mudsum : 29d4158903b126e5eb5ea1b7488d73b0ce6ca941fea6e718403b9005a763d4ad4c50e2e652891e43304474bb69deab4d
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/blob_enc.testpp
-Mudsum : 3a958da3266e60573f50b863dc9e9bc18efec0a67729ec6fcf139209f0c52494a6cc8ed5f03b74e602f299dc85abf344
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/blob_enc.testpp
+Mudsum : 9ccc2fd1aee309390f2e17eba50ba278c1c7b5e6aa408aec7e77cfc814ab6a5adeb5e17783765b12585f5214823e8d38
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/confident.ppp
-Mudsum : 50420e864da3b34d6f018246084ebaaacbfd832b953e58be32821a92db8778eecbbf17f30e3255c6683e96c7cc02d01d
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/confident.ppp
+Mudsum : faa3dc97bbe9ee83311940c789a746834c4da3d888fde8018fac867cc3b309d0c099c3cb82ab30cb7d6163fd658c384b
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/confident.testpp
-Mudsum : 91b94f68794cd45d15885a06fc811c8b3adee6360400ee1b2764d34a946ddb2b9ad80ee8bcb22cb701186627ea82a267
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/confident.testpp
+Mudsum : 4329cd66b3c5b50ef568611626c40a314c873fe71310d939b9ccb8488d49759868d2f58fb6d37064d9161f288195d5e3
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/confident_dec.ppp
-Mudsum : 6d196daf4845903f43431377418572d48a791ecb538f073428dc7a81f6048e04fcc1c1b268ff5ca05805c1da7ffcbccc
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/confident_dec.ppp
+Mudsum : 8e51a0bda2a2f3bbc108994715c206640d5e0e251fa737ce48416a59874d7cfbac0b722a1e8d70dc3aa1699c7e6cc06a
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/confident_dec.testpp
-Mudsum : 1b222b3b679e49b03fdc0d224840831e3e13a6ba4aceb819b9fa874f5cb159456bc782740241ecd412f0b88c2b2afbbd
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/confident_dec.testpp
+Mudsum : e1ec49176ba55883b4f1fad8892a64ecdfe8fa9bae083687e75783b3cb109b37a87d8c330ff39dd75f42572d90194e5f
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/confident_dec_xts.ppp
-Mudsum : 3bc5cd43d8b0b22738175155e3c475d0dac2d6761a53b7666aacefdf53627b0a48df7a7e658f1b99e3f67dee81e48d2b
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/confident_dec_xts.ppp
+Mudsum : be9be277b71dbaffa169e5da72f76b0c1f17c0516ca130c0c387428342bc9048ef4c756fd51df1abdd7e445bcc95b6c6
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/confident_dec_xts.testpp
-Mudsum : 8863e2aad94909c318e777edf51bfc8b8101761aafb297fd0f712bd02b79e02ca888d46b875729f93777fd024a16ead1
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/confident_dec_xts.testpp
+Mudsum : fda92fcf528cac46436c751fb4f9dbe5ae9b86565dc397f696cd777ddc99d254aaab67db517c13d8b98b1726c817bc2c
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/confident_enc.ppp
-Mudsum : 8fb82cd66fedea0116b7cb5532750c5ccb4bf838e4ca38eb9db3aaeffb64333a8d03263b67409e954c33c2890995fdfb
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/confident_enc.ppp
+Mudsum : a239bc681211a82225ae5f5c24f9e01d03c8d348a2107f3e115aa1558e55c82145aee04c72d7f30c411abedb80d89bb3
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/confident_enc.testpp
-Mudsum : cde93211171afe454144ef216d1f7f2796fe829ec1e4c634434a00bd4823d884edac383210b5b16c9deb1654802cd705
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/confident_enc.testpp
+Mudsum : a4370e5a43f4b45f5daaa9ab49e8af61a613078d8fec780255ef370b45f4a784e2f6f1d08e91676c5e4ce5c40d48f04c
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/confident_enc_xts.ppp
-Mudsum : 34b96433cedd31dec3fd20506fe4226a03da513c53aa233a8000208a1a9502a36caa211e4107566263ee6b4548825053
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/confident_enc_xts.ppp
+Mudsum : 21565d7d14ffac1f76cbefe0a88decb4fc2d51bec40bbcbdf54ab6b91890291d282c1f84ada2d43aca56c6802d25dde1
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/dut.testpp
-Mudsum : 2b45ebb468f5bd157585474d627c171c3ccac5df4b9e4a7e13a6429a7e9f501a648aa6f481c64fc0b3247096354da55e
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/confident_enc_xts.testpp
+Mudsum : f96f01ac8201d91493ffabdeddf3631bddd03aa573737e94e7435c00fd3ae8119f15f49646e4fe0c86a4603c84b64b01
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ecdsaed.ppp
-Mudsum : 672beb6ad9d6afcac4d2dce62bab9b6cae677aef00997611ff67b1ba35a4996f94c19ab09f7ed9e5c1694dd02b6cfcb9
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/confident_xts.ppp
+Mudsum : 5ae4bff8f4f566cdc03087b9a521ce5ef7c6c5b4fd5be1907b1c9a223fd363cd5a1bcba02f1898b675aa6f667454827e
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ecdsaed.testpp
-Mudsum : 2b1f78c7b014755b9871a8790178c78e788814ce6bb41cd1fd39a80ff7d85373179352c6400d0bb411be04f5c4489ff2
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/confident_xts.testpp
+Mudsum : 71d771f2ff9286178761a0a23ac00757fc37fcce830e7805970ab41e581d1578e4dba2318f54f456ba6e1f134cfeaf5e
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ecdsaed_dec.ppp
-Mudsum : 0b7c8b965f93ef8ef60eff66d18951196573ff7558789979cffb5ded8fb03ad2231e51280b7af374a248384225f3bcef
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/config.testpp
+Mudsum : 5768f77dcb133052c29145caa9b465fd862280d3f896b55ba8a5328bcb136f2ad5bb1a39b059b675fe58125ceb6338f6
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ecdsaed_dec.testpp
-Mudsum : b759c468f002817161a28035f7e19677f5e43121b6d2a3c4b1c4721bc9f6c7850732c1d3b8056d84af21034ed5e546a0
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/dsa.ppp
+Mudsum : e928148d36978fb38ef2a6e3fdca9e51638fdadf5fe5712724609d4a6ba3b5f454f0298c052124886b260e6c2789e011
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ecdsaed_enc.ppp
-Mudsum : a0280ea26b2ac7defb1a415b1636f17908b17c5397b59401dbc9f46a3bade71471710bc514a8abfa8b2fd8a3bf8abe5b
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/dsa.testpp
+Mudsum : 44470b8cb38a738056d9fcdf1c061fb0db1789902c47657e17dd6d158005d92633c82795b3f7417e6c853de52ae06fbc
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ecdsaed_enc.testpp
-Mudsum : 8597b3756e573dd66b168001ea7983236fc3dfa0dee7a9eec8a94a041ccf73d4d54ba6663bd1d28a9cee17245595aa03
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/dsa_dec.ppp
+Mudsum : e41a4ce5162e0334d64b76acbea5d83dc4585cfa4414584ce5590db26a8d72014992d5fdf167c6d460e98b439296cfd4
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ecdsaf2m.ppp
-Mudsum : a6a9a3b0b6ed5d26d20132ae07c583c06714c9a57bf8bedbebb01edd551d91c39ee880b1400d56037ee0031108aa85d5
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/dsa_dec.testpp
+Mudsum : 8d4b988e5aad68019967513fc51c0f06ba1620a4499463203a4b3c0a170e3fb216a310dbf49aea2b2e097353b1197db6
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ecdsaf2m.testpp
-Mudsum : 1c618818a329f83489833cecbbc974c3dfc8ceab2b6105f0027db1ed9cf18042c55d06591f6fd9ec08ea34aa7dfcd296
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/dsa_enc.ppp
+Mudsum : 1da9f50e8c342280b4e3af74e8aac52fca8eff975e17cfab259540a47b5ad8500486e8eb2afd1b7dc7ef8b76f3767b49
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ecdsaf2m_dec.ppp
-Mudsum : 14d03f83765e080a35d3349c7843cd9362ed50ff9fd718689aec8d8bd736ff8aaff9272013b3e1daf84817c1530d1127
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/dsa_enc.testpp
+Mudsum : d9ea7c56599c5047baffff0a931a69cb05a29297d4c46cdee7a79c4364d3637f7eecbad639923ea0beb92bbd08327443
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ecdsaf2m_dec.testpp
-Mudsum : 151d9abd7faaade9959c8e2ad909a801d87747341dff6a92f1bf866a8fbbd293af149ed7e11bfb2373d42367aa06e9d2
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/dtls13.ppp
+Mudsum : 159e9103ea387ad8180a0fc630a9bc3a7d4520f4df01382b32c9400925338e04e76c6899624c30b52aac89009910572f
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ecdsaf2m_enc.ppp
-Mudsum : feb369ba9a41a00836519516962ed9c26ce8581b216272bd32ba84a48255df90e6cac202140178ae53a363e27f7cc995
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/dtls13.testpp
+Mudsum : fbecdb0fc659d4d480bbc261cee4a35e69497e0cefd6499f71bf9437c82054c97bd61655cebc646ec5b2970062a3f5f2
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ecdsaf2m_enc.testpp
-Mudsum : 0d9d8a0fb66eccaeed27cab1dd509b0914d985d3e37a89431ad1fdef62dc18809d1811d393e80da660b31340ca4be5a1
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/dtls13_dec.ppp
+Mudsum : 3c4d5e943a81bc422864b04ff6cfbc51f9a33f50ddf86753ea6f484ee70513022d95b0dd2643b5559132c37a931944f2
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ecdsafp.ppp
-Mudsum : b0882bd4b7c5174891bb8ba13e10120e97d1f65748ae5a878c95a370a9845c6adc730b45b38804ffce6a709b1f00991a
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/dtls13_dec.testpp
+Mudsum : 00a8c4e877fcd4c01688b1a6240293ae46113717026d7df0fd3d3a8a4f9730673ad593ddf340bd56cf8d67a0980bc6d2
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ecdsafp.testpp
-Mudsum : 667ec1a3d0749152e5f3800468f3809b2ec21774a97ba8773b4af15e75c442ef3194b8a1bdd79070529e9813620a4548
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/dtls13_enc.ppp
+Mudsum : e2e9c532164effff7534096a8ef87d21a1c2cff6e0075151dc68794b2efdff92231fadbeb705786bebba17ccbe0515ef
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ecdsafp_dec.ppp
-Mudsum : 305b9b4c2f1bd4595df3f0a3031b2bc13b831e461c65c4e5ec6c4529800851479e34d086adb5139d4f0509401a607c12
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/dtls13_enc.testpp
+Mudsum : c3ba112dbbdd0cd6ac6299caf79e52686f21c3650990a963fbbccddd860642e514ca701027022d2b4c50d7a7379a092c
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ecdsafp_dec.testpp
-Mudsum : 47b36e1c78ea17e3978c9209d677b8bc5a716e9cd1bb1f54e8f237035becaed85d47f4bc6985c6eaa06b86c1edfc9ce9
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/dut.ppp
+Mudsum : 330cf8b70ab226bbe94e2e731d1adaa36d9610919a2a81c704178c91714b84db75f54d26cfd6fb9a3e3587f955271795
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ecdsafp_enc.ppp
-Mudsum : 8d3420a838889cff139567e765fee04d5cc0eac800748be16334856fd4d5e0b14716093ddf4a0bcd3054087142d8b6e3
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/dut.testpp
+Mudsum : 3e3c156c0fb1eec59c75ed009dd554d41bd366241ba3b08f49b86d4deba120c93a1a5ac6f7c4d60d6a520d8da7cfcc4b
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ecdsafp_enc.testpp
-Mudsum : 8df1057f4616dd73bbbd9c24c8692df62096192ba0e5e1062ed3a6756edac45e9e1570866f1fd2b17a0bddcf69c7f07d
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ecdsaed.ppp
+Mudsum : 1d114e4cc0fed2cae1a026dd2900217304b26cdbac25c20d2af015c0f2c1e760f1ddf10b0df7103e2520785f8e6a31ce
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/gre.ppp
-Mudsum : 2b077683b52a21a3c7b63c367f280667e00116b522c1b1bbb00a313e048f1f26191993589952df192d385a6a65ce41f0
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ecdsaed.testpp
+Mudsum : def63216acba7f7173aa8728a30197e6696a980946d29fb717783e0516aa147bfc0833e9ead7304342eff715735ce78d
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/gre.testpp
-Mudsum : 021cb3fe7e7c9adab215da0fc1b9107926adfcc073d02d3498c2ab66a6647f33aeaa4f136d836e24aa69d86ef3fff028
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ecdsaed_dec.ppp
+Mudsum : ae4ede115f78462fa4ad4b4a30b5b2b8430182926941831a03d03aec4f6ab6e02b3805fbffc7bf933b9efd4ce416ec5a
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/gre_dec.ppp
-Mudsum : f26298717f8f806d4ff1efc5e28442b4b51063692345492322d366218efa6fc90dd6df8bd90fa00cd8649b31f652deea
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ecdsaed_dec.testpp
+Mudsum : a5c29358715949b43e7283d79d23db13f4cb2029187d8ae921ff65947404574214a3a4d1c3e86315a6c38635d2847cb9
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/gre_dec.testpp
-Mudsum : a3c5c2193b56b1dee947dbdbe9a3ea549646c7b85fc9aae543f3e50311e3c6fa6eab46f6fe5e8eb3ca36b9c1be31b1e9
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ecdsaed_enc.ppp
+Mudsum : 64ab5e2e188d07eb512c767d3b2b9f17f64d8798ab8093bb6f45dd0cb5f802a5fbc6344ef692cebc9b2db21316a23ff2
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/gre_enc.ppp
-Mudsum : b815a0c5c305372236f6f7d1997b11346d289edafa1354ead1801a704bf154936ba84f1be06f20a8af0ea8cb2fecc87c
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ecdsaed_enc.testpp
+Mudsum : a7c461f093dfdc1a7d3f8306adeeaeeb338a54bd755d307a10389d4d2bd22982655518b9604ba832753b40bee49d6d89
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/gre_enc.testpp
-Mudsum : 8e11fdb104ee567fb6b1e21c740985ab9fcf12cc554b8d6f2f625a4f46432bb8b5f0c358afa8546e8f219a83725aa7dd
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ecdsaf2m.ppp
+Mudsum : e5649f8426fc463e50cace85de59903f20dc1ece6531d7bd2e52d66048700f46701962e3fc72c3092c8860a3a15f1ddb
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/hash.ppp
-Mudsum : caecf20de1a72a03c016343de9b6a2fb82e72f48279a6fe83d8e4392bbb26d1a731cd15b39921128a19de5733356f726
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ecdsaf2m.testpp
+Mudsum : 320b959c7e3c337c994885333222721a6f6dd65370203d47092f4cdf308df98e69ed5de933e9203e4f534f36f08f3a28
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/hash.testpp
-Mudsum : 9da20ad95526f3031bfb6f232273fd629f5f2be0678d5a1d625fb0b35548a1a84f4bf0cc8e36d6f4a0c789116d91508a
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ecdsaf2m_dec.ppp
+Mudsum : c623849c02b876337a955313c97c435d7151f73f1de24a5868ef5d19dc35d83fe6b64dac104d76fee464fbbca4214ffb
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/hmac.ppp
-Mudsum : 54ffdcb679e7417c98ac91e2ca8aa72bb49bebbb18058c87f8895d5917364e8d5a06aff813e8258619661cd91255e913
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ecdsaf2m_dec.testpp
+Mudsum : 73cae4f3d1cc244c7a2e4d83547db7ed39d74f4279e23cb7e1a1ef601cb6494e9120a14346f986ff6df7f19b2f9009f8
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/hmac.testpp
-Mudsum : 3cb4cd7900325bec3156817c040ffb987d856df8a02da36733522be9df7f1c4928a1767d196866c9e7fd0d9fc58d0790
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ecdsaf2m_enc.ppp
+Mudsum : 0bf2ddb21c4d1bbe4aabd4d36158a3fcc3f0fcdf2a0649b4fada77ad894e21d3cf00904d7f98b1aedc851df058f91706
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/icmp.ppp
-Mudsum : 40be91b8aab8720411d731ba65b62dd0b9c4c4c160eba489bbfc7c16b43f17a17745077c3a45cb58c6ddb6eed3e6b23e
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ecdsaf2m_enc.testpp
+Mudsum : 8e73a0cbf8b8b72784fba37a971cf110bd7aee867ad6a01ad43ed144cef2f2ea5f74ae41a1f1ad3051958be8b314c516
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/icmp.testpp
-Mudsum : efcbc12e5af4d40c2eaebc38008f30263885be76fb0bf308b90e0a4f082600651a8dfac112b9ee754373fcb6352998af
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ecdsafp.ppp
+Mudsum : e69d692ffea2a7a5025311608813c9a1eb8c6ff275c625c2f23f787aed0a0a55443b3d55666c40af75193adb16b01de9
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/icmp_dec.ppp
-Mudsum : 2a26a6306d062bc1bfc41c9846652f569052ca21c2cd9aa83ad2cb83cd2b4b91d7281c11fd6971adc16768c5fab1846a
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ecdsafp.testpp
+Mudsum : a8369fe7a16ad400e8acc472340398a4eb482d73d04044bfb747b2f8ec10c253302fd16158da141f3cb848f13e7b1ebf
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/icmp_dec.testpp
-Mudsum : 4a65f59dc7a0e2bd8a372a7b00e1903d378dd575bc3942b48a94678228f918a50a6b9da8e4652582da74a080f2719242
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ecdsafp_dec.ppp
+Mudsum : fee99bacefb121ef8d3513906c5d89a756af8fe340758abce20d8a578b1cd318c5eca1ed46c085c919de1f084e538980
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/icmp_enc.ppp
-Mudsum : 0ad0bb35c7d56701d4f68ba0a82027d3e11dc5422f94f66816fd6b56000b2e31a448f0fe462492fdb11230f7a3d35fe8
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ecdsafp_dec.testpp
+Mudsum : be7aa033819908c6bc4a3ee9b090de426ecd68a555c4d38ab39e522e23c793fb96406bfad97b14f3671e90cd87d1b10a
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/icmp_enc.testpp
-Mudsum : 51f9d5f035f2b4c117c701d79fa7ab416986443f78e27daafcfe0a9b1035a8fa7865cb061a032c4414f8589bdd752824
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ecdsafp_enc.ppp
+Mudsum : 67904f3d8806ba9aa7ff0aa173697211573deaf5b149aa0509e7e149f22700e04ecb6abab31b2affa96c1f15099e6832
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/integrity.ppp
-Mudsum : 37a7a232678e5aeca085d3a19a8594c0f969c01af4d5b9f3679a4f4332cc52fbb603f4b47ec53e0d80091e75eb4fb4a5
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ecdsafp_enc.testpp
+Mudsum : 2c96cbde94a797e2a0bb4efc99c64cd219368d52f5218b73d6e3a9d23512499c2cd363c21033f3c7c9aafbfd068a46d2
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/integrity.testpp
-Mudsum : e3f3c1b890f345fa5dee02297dbe7bd954e3deafdaa02e66bebe0d3c344ea4501c0645b6b90f544cfb04210dd031afb2
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/gre.ppp
+Mudsum : 1f4457fb1c66a7e04577794ce940d2c7ac0b5353a2edbde6de526301230b44dd775ba29f9985f707ef1e2cc2fbb80ab2
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/integrity_dec.ppp
-Mudsum : 693167b9a9147841bfc63908ba643d83e38372e0abb4593117533b2cd905722aa74e25b21f3739476905361de8d6eec4
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/gre.testpp
+Mudsum : 7dcdbaac731f3dbbb8d3b4f602cebdc96d7e10b78079114ed8133abed917f2baf8f8f32ca4d5c2fb09ade6b422146e76
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/integrity_dec.testpp
-Mudsum : 69d09f5c1b278bc7e4094da70e38f679b156f6e7e6f8808c436c8dfb772bd4484daf486fabecf9f9888891f1745f087e
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/gre_dec.ppp
+Mudsum : b67edc5f7895bc07f975d244550b47c0327199869f1a6bcb99e681b49d3b2792be9fc47b5339ce9d26059445342bc4ba
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/integrity_enc.ppp
-Mudsum : 41ce06f631e8e6d6ca32b1c197a45ee648e8e07aca156e5b1ea0f60bc8c4aff44f2b281dbaf176f70e1ab53fb26e4864
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/gre_dec.testpp
+Mudsum : 3b20c190df24db10e2d148407720e0e42d7ebcb66fada32645d393097558305c7bc6843020652ed693b139e1ef0a6e75
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/integrity_enc.testpp
-Mudsum : 7288cf2251a7a3412404148d9ddff2b4ed4876c73914bd203cb4ae5c30972994e082e4b7d3663726c59909ed385336cc
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/gre_enc.ppp
+Mudsum : ca3ddd972f6645e4b21f5ba2cebd8053366e2881baedb2483cf47e8822cf0e7cba6de28d4addde378acee3fd74e483a2
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ip.ppp
-Mudsum : fddaf34a80d5b757bd51b7cd7a1d0b811af22a19c575473ec4b2af5364ecb3effdc7ea7cc624cbb9905573321708bcdd
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/gre_enc.testpp
+Mudsum : 39e01c0f3db023b0af70133e01fe42691a1ebe2e593a97c36c7026d7412d557abd91bed45c9a34d92cd732df3a574b12
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ip.testpp
-Mudsum : 2b62c417aec4ddd27c293e47e2fc3826c7293d75a9423ed9ba2435186b0a6e03da7e36e26eb07d621864c61ad7b987aa
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/hash.ppp
+Mudsum : 60b0d1cc1a87b4f1ecb74493006b84ec9baaf61d40ed73bdc7159c5077afe9c555fa850ed76e9bec0324d1bb610649de
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ip_dec.ppp
-Mudsum : c7d0fa5d50c6a84354791d881ffa15e7b03c08526f5939a17ee935fcd827cb6a07d865eec3bb278c6905daa83804c93a
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/hash.testpp
+Mudsum : bb5b78c7ec81e2ff0cb66c04bb738682704509c5351e5b7b099c2841084cb75df4822d2359a171ad824e9039ad579a04
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ip_dec.testpp
-Mudsum : 483adc2cc107abd16c3e675294a2099fd089551b32dcf45d1b98d4d7da0353f0970bd8b7d6bd8d23f488ab0420fb53fd
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/hmac.ppp
+Mudsum : 541622b2b78881a4562894bddcbf7cee9082dbf9111eebdeb31afacecedffc366ae02b9302605bc16f782f7eefda4412
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ip_enc.ppp
-Mudsum : 8dac66c9174750d61053fbb17ae8ef5a70a3762dc7e440bf7064f21089fc05c9579d25b0f797997bd56606514aecaf0d
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/hmac.testpp
+Mudsum : 3824253bb50482efb69a91c44e55cfd6f6f8a07affcda90bf7b249c7969be6e7cf23f5f5ba5974b393fe52a261b3e1d1
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ip_enc.testpp
-Mudsum : 9dd1e2a7af20c1a6623176c35bb625405f4d2764efbc7674812591ac0b8f5974918111e383c5f5ff58375bd5608eb5b1
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/icmp.ppp
+Mudsum : 6932f5bbc7a026b1c89ba2e7b6f31335b89482cff4f3fa4387eb8e0f68377b0631c08ee2ee022bf22c467b9ed5e62fd9
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ipsec.ppp
-Mudsum : 2ad8f22271cc3d8596ca5fad18371b4953dd686eaf54933294358088a3f57abecb0748381b83f293e9dbd3769948c2d9
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/icmp.testpp
+Mudsum : 85ef429023a9f06e291426391d2bb0ba1a7f9f02cefe91ffaacc270095e06b3935eed6f6554cbbd9e233aad97138fe8b
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ipsec.testpp
-Mudsum : f9c67df495242d92507b80f7e44053bc583409065d721d431f7145aa3352de2739a380223f34cd453b46df932cfd5cf8
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/icmp_dec.ppp
+Mudsum : 27a64a7a482c30813e7a446c52edfb89c475676727f10f5e9ca127bbf95f400036ab0c3a5f74c37b65ba31ba437d3951
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ipsec_SEC.testpp
-Mudsum : 8b91f704caf8ddc9c292ac5f232a8da4ac1e5e6fbe80cf3f61071c4ff2ee33ff6738677d9f85b817c73e035b36590a27
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/icmp_dec.testpp
+Mudsum : 525f0cb22d050f479561398fcc9457c63c4a92d7b5acbdf9a72a55b7f29d48a43835eb299c649374c061aca2b9438026
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ipsec_dec.ppp
-Mudsum : 84fd9c0ad991d40e6f699be5bbad8582f3b315050f5944e9fa1148851fc0c0e20e184cd734745e846911fc959d187e2e
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/icmp_enc.ppp
+Mudsum : 7d28039f40a4f957d7cd8540e30e23452c87aaf100eb1bd807a8d865eaf01b0bc66050783d61c83da26587327c7d303c
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ipsec_dec.testpp
-Mudsum : 55d5e0b0a2c71bd01bae4c1753555a5c1add7d87e80486888b8990558a5b34e7cb54585c8326b0fb720b0e4bf142e701
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/icmp_enc.testpp
+Mudsum : c546db93859ec2826560c2821749858476a15b58284654c9eca4b58949332b32f2f31298649ae3b487ab09301182ec22
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ipsec_enc.ppp
-Mudsum : d4122f803429e4998151a84df8598d26e7dc26cc62a65a365770178dda6b2aaefef99161293aa228154d1291b2b74531
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/integrity.ppp
+Mudsum : 17db38c081dce937822a4840065e25bf12a495b10b7035c5730086bbfaffc59a72d56dea04774c401f52b91e98545fcc
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ipsec_enc.testpp
-Mudsum : ff40a5b47e8fea3d6a0dfd291972f175ab28b9048b385ad63d13669dd7611e15ac7a05e3d0f4eec0f877dcd2a8d7f85a
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/integrity.testpp
+Mudsum : 697c4d854a19c8aaaed3a79a6a2d036e177bc0690ce9adb77ea8bb0225f027f207e7f6c1f180ef8b5e2a33c90d4b3169
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ipsec_json.ppp
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/integrity_dec.ppp
+Mudsum : 3cc506fa20a8b91fbfbfa2831bd81b1308f500a9a81ea7265c81c0feeb94051f2f111cd274a9333014c04db6d9440655
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/integrity_dec.testpp
+Mudsum : a1740d7edf8ad62679f10cae4acba900122759b19f816c74c0d4814a526466800b9e98ff458aac970dfc31db71c601f5
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/integrity_enc.ppp
+Mudsum : b6c5241fc1c4ea44978b71d42a962b5eaebd42c0cd52e0c0bcc1f2aedb477251fb178c80a170d15aeeb7c71bca5319df
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/integrity_enc.testpp
+Mudsum : 4f433ff4c2fa721bd9f878ecf022bc3cd25fae422c85c9aad79d43bbecddfff75913173561b81baf772bae325ba478d4
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ip.ppp
+Mudsum : bc6ebc9470d84a10aadbcfca3eec75c4723a06a219d3761403d33e2cec85bdffc7b5c65ed4ac3b00617063593ee7ca2b
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ip.testpp
+Mudsum : bed508ee8247fbff1ea36be49adcdd96dc98cebba58a984c571904504834bce44b72fef6bcc52994a6223f7e54a0bf78
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ip_dec.ppp
+Mudsum : fac67c06077529e19d73864e8a2855c3e381de27204e1b3e340e06a28d039c1481713590dbd8fca1ff42b9c91924c992
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ip_dec.testpp
+Mudsum : 22ccdf2d92486893c196b8509cc9ac6363dfcb9059f39323933bb2aef0fa46f8a1178730cf52f125605cde167f6d7760
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ip_enc.ppp
+Mudsum : a2f023482cd018cc44b8196f939f899313a9bcb47c7b1d5b7fbf5371ec3ddfae2b33ed9af97cfa106ad37e94b495222d
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ip_enc.testpp
+Mudsum : 5c8c34c11392f1631e254ea42424278498e5aeada8f71587d63443c9b921f0d0c9b3edcee6e78b1332a2c7d4702a89fc
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ipsec.ppp
+Mudsum : ba133fbeaaf9e22ee46b21c8e0191585bc587e6073dd0d3e4f9df047b0728f5c5bb78efc83a08f1510a2baed3eb5ec36
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ipsec.testpp
+Mudsum : 2cc1974ed5144ddd24465cb66b2beeb1261a15a7aab45120c06056a26ec519c0c6c02f665f4965e5a43059da62e09ae9
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ipsec_SEC.testpp
+Mudsum : e78a673ace8a7f7f6edca0004087e3c9b92839fd646c628731758b4e5d351e7e2c7e4ee22a782d38cb83ea6f24cf38c4
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ipsec_dec.ppp
+Mudsum : add2b52a275811c4eb0b37e53f355c87ac15f65936a86a41319fae4ab5a0963a4dc045d04574e20c72284732b6cf687e
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ipsec_dec.testpp
+Mudsum : d5c81ae656ff1988475382046e7b4a0e74018412e9e85a8806151131e391829445a3d9cc31563776a15ab8327925e4ce
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ipsec_enc.ppp
+Mudsum : 90f22f3cfbf4fbe803e202cfa6c9dd5eb8627700b19b871e6492754d88e3eaaa4f56c3b710c67bee5512b9b49303b9fe
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ipsec_enc.testpp
+Mudsum : 5099175daded414ccedeaad94922fe8672dbda08bb3160237fcc4d18e23fe28f7d53c65883bc73d7773f35bb1c632a38
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ipsec_json.ppp
 Mudsum : 14e246c8381e193e3a74d0cc25f4eca462e16f91cf0a253738db5093b75f42544590d65eb43f0767c01612502fa95ba3
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ipsec_json.testpp
-Mudsum : d06a8a8f7967361cae30a9fc65d3a5c304be8de17e07b8b1b818f65c463f17be1899ae3c427a6e1e61c60fc439d0003b
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ipsec_json.testpp
+Mudsum : 4d094c9daa0f9234fcdf4ca1709facd6a7e24235b1ee8e9023350f43cd792e4425f0d5201b8acf1b1f562c9fec4a0249
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ipsec_jumbo.ppp
-Mudsum : 5d31c7aa884b72ecb484816c01a6315e62882d9c7e67700bf7c9532b9c44b7f1cd351d3123e4adf4307d5152675f6aed
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ipsec_jumbo.ppp
+Mudsum : 9f3d344f6ea07cd4dcd25214366494878ef3a46e9d8a26e63c5fc8728de08363b933d6bca985b056156ded9c294506f0
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ipsec_jumbo.testpp
-Mudsum : 8cb45d9dc6efb5465b67c8bcce8882aab41d89be307b3f0ddc501d40c7be4d0bf2aad69df975efd3777c2d13582e2dc3
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ipsec_jumbo.testpp
+Mudsum : da39ecc6f2e18e5c8c05719de8835aa8e857cc01b6ec5b2a06865c43d235c47aae0c5fa41069a05a26864cb7ef08c25a
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ipsec_jumbo_dec.ppp
-Mudsum : f43077fd64e2127ec15ffe20a47e08a01a96ce8a60e9995f2896dd3987a4862b5f21841b004651a3c02c85c85e02d2f9
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ipsec_jumbo_dec.ppp
+Mudsum : 9695f3c7c42f69c0223e24f047a0ee7f324b979033588a3dcdf124b1ce8090601561670adc8ce15bac165891662b5400
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ipsec_jumbo_dec.testpp
-Mudsum : 79ad2c504d92b995e572c72fa293f3730568b28dee51110c4a6c8c5668f06203529ce267bb0409953c4446a54e4a23ad
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ipsec_jumbo_dec.testpp
+Mudsum : f136146365faefb15cd660ab99fd0d8636419ee5b0cfffa031b730cc29afcbd0618fbd938e0f3cd28377eed0214aa442
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ipsec_jumbo_enc.ppp
-Mudsum : 63303872acfeefa880e99d721df4498e49bb2abef01a75f0d4a5b41e510f633bfe6a6b6a699c8d9a203c61a296ab3c3f
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ipsec_jumbo_enc.ppp
+Mudsum : 796c565affda5f0e51d11e75c518e93cca861b530616e018640c613d35fe57e2670184a3b0a4843d9ca495b3c0c99170
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ipsec_jumbo_enc.testpp
-Mudsum : 06ea75d614a39ec612b1fca059ddb6ac24202efab9c24be4d45257eb6502c4e301471e941af0564646b3de4b45a1c279
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ipsec_jumbo_enc.testpp
+Mudsum : c65f7d078eec69711055a83665561db2d184f4249d0cbd5836536c1ba832536c5c012073d2b5222c4fead546c636b82d
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ipsec_multi.ppp
-Mudsum : 1378a372474cf56211d9aec34c4102897a4ebd66f019dda4d8956fa14fcf662f131ed02520e5aa79548071c580916a9c
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ipsec_multi.ppp
+Mudsum : 3bf17590c7869cdc504391fb4e0ec4d25fc7292225ff51137ef685c0048935c588d2d623f9441c5170a8f6b43a03550c
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/ipsec_sm4.ppp
-Mudsum : 5267cb12885b13a2bb92edd678defb5f94971b7b5c75129111963e66343040fa550fbe1246a84b830156c0d8428df474
+Date : 2024-01-01 19:52:50 -0700, Mode : SHA384, File : ./tests/ipsec_sm4.ppp
+Mudsum : f473e7e92adfe0b6de4eb73d12e42f5971a910de2923eda833a98265c636ee37533f33e60cbf3eaf9d0358633ce4789c
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/lms.ppp
-Mudsum : f93a0c00ba20c8e2906f2bc81be17f39f7aa6941c8853d444dbb6b8c2294c557ca164436c46ebe53db6c1c33605a92e4
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/jbuilder_ccm.cpp
+Mudsum : 695906f36ff20cfa57c295d7d3ad7a63a1069b3c020b657e687066cb7fc8edeb441cff463dff23be860418f8d2b0004e
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/lms.testpp
-Mudsum : 215328868402e9551a56670a0d64e99e0e6946f28992053d693cfd1d09d90c95bf12797a859db03e44c6eb332a0a55e0
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/jbuilder_replay.cpp
+Mudsum : 91845bad6cf7bd1ae6a054ab874c661c6d3f70b4c1579eef353feff18029f58ed48b289f2adeca94cbab183188014477
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/lte.ppp
-Mudsum : 9c8070a333840436ca5c52151f159d4043402334c56656001304fa7fb5cfebc7786b8cae3a69d7ac257501465e76e73b
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/jbuilder_sm4.cpp
+Mudsum : b92a65983810c0463ab8554e189ede087c616d5b22d601f2e858319a8372a3e19bfcc8fcc6bcf7925c0c78f1d8079862
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/lte.testpp
-Mudsum : df9b4b0d389d9414804878762008c6b0c3c74ad90e3ab850afca8750448419a86037cd8f93a0f2c61dbc191ce8b17695
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/lms.ppp
+Mudsum : ce25c0c58a2cf13fafa8e2effe457950e4c533f408215d7c72391842b0214a653d2fb1e36e5617b9a0e6fbe3da021c77
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/lte_dec.ppp
-Mudsum : 48a62ed8043e0661cbdfc2749fa722b2f08e4311fad4b8f1dc13612225ca378ff5892497bb7ec8c72a797d5e55cde1b6
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/lms.testpp
+Mudsum : 2f545af0e09b10e2b5d434d38162851e986480453545a3ed341068350c8084612a03b09e5723665548713bf963eb03fa
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/lte_dec.testpp
-Mudsum : 52ec261e34c3953dfefb3bc96d80ba74ca7160805993ca2f8eb2c2f0680979db5d5c59e8dadbb79b799ff21bd0ca65e8
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/lte.ppp
+Mudsum : a7b93c77ea59742d32c7734153b1137c67fd1090bf886d3d5efbd9401835ba27dc047dfcd782772d0cedd5eb9db094d8
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/lte_enc.ppp
-Mudsum : 35a91df4f5995cb5bc0bc9ec8e2062cbd672e35e7dfa88fa74ddce8c808f9e8e17fe75417fb63b9dd37c1a4368f2557b
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/lte.testpp
+Mudsum : d4acebb81470ce5a4f1bff24d64a6f9adb25057d9b330693be00cf239835e269e0531e955f3d29b74fb78923de4bd09b
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/lte_enc.testpp
-Mudsum : cf0b4313770c5617eca4f92a55342ed41115ab7fcd0651612caea27f03692af919c766ed1401ae74dd9c4b24b6e339f3
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/lte_dec.ppp
+Mudsum : 177c100165d8c1aa8737e6b67d1879b1afdf324ceab297fda9810d840c2aa5882f3d1ea571ca2550d263e9ec81a6e7e0
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/lte_snowv.ppp
-Mudsum : 255e9f54bdeedd42aa4c64c3a090defb0272f98db1b1439b7f6a8975a27609e5ea8e1d0a092d8bd26affa1d14ca96d5b
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/lte_dec.testpp
+Mudsum : a7392396bb3963085b0fed8f6df8a5a5089dc8e26a9e10fd234a4c48ae38823fd3053f47051051acf09cd6918f6d7de4
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/lte_snowv.testpp
-Mudsum : 8ec5eae8f05e1f483c77c1a2d38a6ff06cfc43a86a3d947e93e67952e9aced3157ad8b5460f08cec766ae8d8ccc5af4f
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/lte_enc.ppp
+Mudsum : 1c19c0ccb57f8c22d4e3f481c686ca01f938d593834376631d1ca0408f0add2d8feb6f84ba50dbb5ead588f19252935f
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/lte_zuc256.ppp
-Mudsum : 40565f7da7e8a3e9540d1587afbdce27b08f16c154606dfbeb0951d21befe9d2719aba844799713eaece6ecd0283ab6a
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/lte_enc.testpp
+Mudsum : 8b76a854a8264b900c9d146ed0d52470c0df2ebe1fc886874ff6947ce75bda4d5159b81b97f5613e805226ff6014a21e
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/lte_zuc256.testpp
-Mudsum : e36b776890231348f8a558487c9dfefbc162b05ba90184d34dc8b1e63f92271be3c53f9efa1a6113056b7859d81aaadf
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/lte_snowv.ppp
+Mudsum : b75ca789b70396bec8cf933a2360b31e5c9e88bda6407fe355cc0f5bbf55179acf38f037ff04da7af77686e9c90b0e53
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/macsec.ppp
-Mudsum : 8bdae08c3d328b6da92ca156896047fde0cb1a8d3a33fc671097c2be5043fbae64859b4abd30ef9a5d88a936e7adfa97
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/lte_snowv.testpp
+Mudsum : 9419b8f014dc130e7431afc89cbf21f70f04adf1080be8678f5059c4ea253b88965b3663232bcb1b1adfbdbee57228f6
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/macsec.testpp
-Mudsum : ca0e2a38d9323df212e90dd94a8fabe6899f3546af53a6ae46c29d3c389c015f97fdcd680fabdbed9d768cdb23295725
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/lte_zuc256.ppp
+Mudsum : a49b1c49f7007650ad2da501e9f6dbeb2ce71da2ab681cb6579d9cda6c49290b33715c8057ccd89af76c1456e673e1cd
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/macsec_dec.ppp
-Mudsum : e8e17ae91d272a1c267e6f82b546069150525d76819432f9a41b109d8dfd716695851bd7bc87a043e452d0e5a2b2cddf
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/lte_zuc256.testpp
+Mudsum : feb580f8ea587175da18954b8b362e44472d15ffcb113108eb9e76d44c7ec929efbe8c92fc39d7a699cf9184fa4111cc
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/macsec_dec.testpp
-Mudsum : 17b00562b2948d7800868c3ef82ad2068be966c5e714aaeef49435d1d269625aa7ad08334a5168cd205594c5e2e17a88
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/macsec.ppp
+Mudsum : 4c74f91db014a4c39f8bbe8f65342ffc03b8862860dd2830d4d622b3d2b06d1f58877817f46cba16197b7baa497b3b3a
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/macsec_enc.ppp
-Mudsum : df956e05500b0abd5f830c26703f1bfff39f99ed4db04d379acfce961e27260edb96a98fe1b0e7943e3d5ae2c90a9399
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/macsec.testpp
+Mudsum : 962cf5213d41860ba5bfd82e9e3b65225934b6097d824b3e31b468918c4f697ec6001e2951bd484bdf7af18ecebcf1f2
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/macsec_enc.testpp
-Mudsum : 4a5e514e4426da34f2576827a4da203e2abe5108b405be8091170459caf8b2bf956445b57e0136d116dcd87eea98dc84
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/macsec_dec.ppp
+Mudsum : fb39adec60830cfdf7a1bef156f88fe97180b04a45dc933c2287cd5566170c7369eec7cfd0b26b97e2556778f924e054
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/macsec_json.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/macsec_dec.testpp
+Mudsum : 47caab05da3b1af8d2c0fee4669d05001a1f0c987bddbb7a501521f9a9dd259ae14e1cfa98beda234dc1ddaebcd7a5df
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/macsec_enc.ppp
+Mudsum : c41985b10caf1c1bf63a9d6352785a968a0c69dd1c396ac6092b17afb44af59afe84049c56d4f092feca6bba7e3d1ff4
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/macsec_enc.testpp
+Mudsum : 3141823ea0d6ddd9a19e20a676fd4975f4210286fc0a23389a0fcbb29f635f9e3b89f8da97fc93c5c096804e7cb9cf69
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/macsec_json.ppp
 Mudsum : 6ccf953a209a601adc4dfc75650614cdab83cf9b9750798c8876221e9c533264142bc4033b0da61a5301a1b42322b8d2
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/massif.ppp
-Mudsum : c57b9540ef519e02bea95693974d5dce335d499f4178484982b2a278cc3f752f692ca6ce7d13d02a9649999fbc618360
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/massif.ppp
+Mudsum : 2b8f88256b46b0546abf86e8888773fa1c8df3da2316cd0cd89d2cac977a1cb7b0a28bd5678d18562bb99b12ee50b34f
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/massif.testpp
-Mudsum : bcc2eceb0430be9a5fc080d14d5d9366cc76c52de09aa2672a8733deca109e06919fc603ac32e8f1ad74e084094bb3dd
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/massif.testpp
+Mudsum : acef545c276c8ebfc14370e9de9b1723b3b6a612acb36f2a84cacd060a4029c58b9758fd0da6a32d4d7e75740f079867
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/multi10.testpp
-Mudsum : f694396e5cf5cd821b39e053cfac09611d492d6ef91dd7d1e79d986bd6308eb27c6c5f2ba2b101473270f372b83a5588
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/multi10.testpp
+Mudsum : 4c277b5aab508194ed7892456432e7535b71cddb07f718ed3b40b6a9dad290baaa309a79c2903110a1d84db7c4c7156c
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:21 -0700, Mode : SHA384, File : ./tests/multi1000.testpp
-Mudsum : 2a4527a1eed312f5edd98dfef26edf4f6d454f1d36b6c2b6a6335e6e6ae6177f077fb59a69a31fff45bfa93248484303
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/multi100.testpp
+Mudsum : aa25dde4ec25ab70f6d75d73f28255bcebad562286ab7ee599f517aa21908222948f3a49803bdb1197d1513281db61e9
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/multi10000.testpp
-Mudsum : b3626014c7cf8b5f7e2875387ca17942a1801e56d7dd92f7b06b003c339eae7a7d7da282192adcb985991d5a10991aba
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/multi1000.testpp
+Mudsum : 3f8b6c988ee2be50181b76037ebaa7bd43a0ff9c2c274b57cbd5fe90ab14688920568592d296b6b3e43b5c39b8e81de3
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/multi100k.testpp
-Mudsum : 4845fb9e945532b943a559731c9a362210b55cd16a63f03d147aad75dee2a371c900bdc97e4f3d443e52f95c27b3bbf5
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/multi10000.testpp
+Mudsum : b62061561ae909fed5711a8f494a2ee01ee629996e25ff98f575ecdd6bfed84ce790f40e0ba3469e59b743941b1d40da
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/multi1024.testpp
-Mudsum : 381064dc3adedae269a9d90c852bf9584191ddd4290b37aeaa4453e8ea212aec85efea4d2a3e88c298decddc5d9efef3
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/multi100k.testpp
+Mudsum : 475766d3b475094abe8581cf3fd59b753b7554549c4e8333df40b516b4136d1342be6cffd4bf10bcc46e4a687b188d62
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/multi25.testpp
-Mudsum : b1db2b1831ff896c6d0bc8e8c738c9deaeeae72c5b734363d45d7243b8865327a8fab3533c56d47923596830696396ed
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/multi1024.testpp
+Mudsum : b527bdea5a8dd86eba702d8352e2c2d9acf4cac2732369d26b199be33339200e03a2624d486eef83f839c894d3ddc672
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/multi3.testpp
-Mudsum : d527f65efd44ed7e275e87eee0cbe6bae04eb62f1238540307b209ab1f135e635b24f1df5d9dd055b0781037eb245aa9
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/multi25.testpp
+Mudsum : 780ef1bc3271fa880f9b0190b4c2bf73f5fe3a057e3df064e6b13c73bcb827323ff30c8a87d11ecc94d68c7353e910f6
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/multi3_json.testpp
-Mudsum : dc16c4967d91605be6d318e7540379b1393446bdd8b81f86959b2dffb86429912d508408cdc6a83ee4b3e21e9485b2cc
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/multi3.testpp
+Mudsum : e25a68075d2ac4f66621a33f32a4907671fb51f5a7f165713ab74481f3998d76b580aec50f95c26a7281f0f7634ea0cb
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/multi50.testpp
-Mudsum : aa958964795db3a2ee3ea133f47b4443bbef54491ce02c0b83ebb782d8398d5741fff5f41a9a4efc6dd892640e438f3c
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/multi3_buf.testpp
+Mudsum : fc882c7bdf0d06cda4b7aa973233d757df2da058368611fa808f48d6df2e7c1406626615e272fc0a7c8ed9bc3f021cd2
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/oneoff.ppp
-Mudsum : 790d8236918ba49d82e20bcfc70c9e8070757fff3adb1e98ca9068bcbee35b5f377bb83a5e58a309725398f238a1da90
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/multi3_crypto.testpp
+Mudsum : b93d4bf2b65688d663325db42d4e3ae933a29887b42894d7d576d341bb19e896d3ee8e4f428220ecbf10eae36431f055
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/oneoff.testpp
-Mudsum : ad07f157a3552d007b3c5df31fdb332c3c0042f7f09a25f8154c035a4b7e9d36a6ffc3dcb6ac44c6c722b55bc992f7e2
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/multi3_json.testpp
+Mudsum : c482134d918c281426896322031766fd2bec8f603c3964ffa07ffb1ee48cfd05425eaa6ca8040127ebc0ea7ed7105317
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/random.ppp
-Mudsum : 98dbdfee1c3073bb8d058a6e6f45c38aa5fdaf9e07e8afd984c482be019bef52f800b7706dcf08a4bd82bec60bcbb082
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/multi50.testpp
+Mudsum : 0958bc6c785d88e766318fe947ea99fac269036a67edca33b6aa2459a044f1f6c6b260026794d267eba6ada44a2aa2a8
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/random.testpp
-Mudsum : cd5a9bbb39230d161f6bc198f62e95c36b9655d8c900d2c5caba539902197bd11fa93f8653018fd66f5c3fe2211d7678
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/oneoff.ppp
+Mudsum : 310488ebd1e0ad381051d420cc8c6f5e69ff3390fbfb8c3d066679c9d15fadb51442793b88d86a164812261f4bf0074d
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/random_dec.ppp
-Mudsum : f46e6ad696a1d8abbf988513cec294850d20490f0b6b695e182f8da7d0434857b224ab03e2dc7ecf64bf49bf6460e0d5
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/oneoff.testpp
+Mudsum : 3110aa14de3459671630d75308e20c125c1bcae0b93439e2aba572c988750c085e6b2018d332a80d450284e64a89cc8e
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/random_enc.ppp
-Mudsum : d287c1126df7626c18784bbd366cbda21eb11712c1d84df03b33f6e490f7ec5d86e3741925b921850c75eabfe5a496cf
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/random.ppp
+Mudsum : b9c0bc0934c737c1449bfc2cb76451549a673f890d72f746aff304a10953e7cf28aa7deea0ba59e3d013b136ed5815e8
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/rlc.ppp
-Mudsum : 1dc4324d4889dcdb5c642ea62f4b7aed540a650f2c046bdafd2dd5d814b02da347b509bf76216439622af461950221d2
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/random.testpp
+Mudsum : ab897cd838f6b34eeeafc79abe5fb47c3ceb71178e1d25cb81d545b67a570cc35443924b6c79890073f4d32bbcc99d7c
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/rlc.testpp
-Mudsum : 0a14cbb3da59a8e953fd6e4db219da98a689065c2ac145957df4c690bee337138eb486525797ee7023179b0570e1b054
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/random_dec.ppp
+Mudsum : b3f223f7d570075501ab0f35a9f40efeb84d5f6616970bb09c78069ab7ccbfac8c48c5219e30329d3764c4ddbd682956
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/rlc_dec.ppp
-Mudsum : 9688c2d4a56aee853ecfc070c24a2b7b96981a81aff0a6aff3db59921637d86f99143a0fb09cf9dedf9850aac59e9763
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/random_enc.ppp
+Mudsum : 99fc7143cb144782ec80629462990ae832d2f37de0ecfba9aec61eb8618a43ceba974e6028a9d05d3aed05ca26bde8a8
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/rlc_dec.testpp
-Mudsum : af44f69d8dced9367509816926c41cc3904707dd337515f883721fc5e9489d39e7aea6891c8efd93a3fb6a3bba07cbb0
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/rlc.ppp
+Mudsum : b92e8fe04e663611fa20738e82f6985762d2de0ee24cc5666c5be50bb4c97aa4813454ee44971f7b5530034d8164ea6e
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/rlc_enc.ppp
-Mudsum : 6a29549b7932d3a56d70b8650a7f784ac01a0f51b45cb6f78665cca9ebd8ddf1c6f3df4d3bf74576f84e2d0d1252d4e6
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/rlc.testpp
+Mudsum : 6cad5831af955b91dd844844e957a656cb17f687d7bfc9a124a11be14fcfaa5e4815e96ce8993783cd4e140e3e96dbb9
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/rlc_enc.testpp
-Mudsum : 02f23702834ce9ff092cdc4805081cc3f70468c877b27dc592bb5c8033d6b3471d1336cf3e2c3409339889524c4d234e
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/rlc_dec.ppp
+Mudsum : f6d57b07af551163646c3e899d5fd3f390eba8a95303e04b4ed8af5e7e5763924e977e1a45f4e76f11f9a96bfdb6130c
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/rsa.ppp
-Mudsum : 7cb6153403a61637295e668c52d740d1c69427d532765526a156e4bf3dc324fccc254e4519211273063e044cd335ba3b
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/rlc_dec.testpp
+Mudsum : b2c3c5f336fdaca16d050e0be1235a8fcd5ca615dbc26938ac461ed96929542a48ccae4c686a7e380d75a934504d5905
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/rsa.testpp
-Mudsum : bb403073b825f813be3de30125d102d0b82937e2675c1c9f9d2fae35c2a5e94765c900b6854862b5be43d5e6764365ec
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/rlc_enc.ppp
+Mudsum : 613dce00ead841138ad84522061f63b9beab8de47a4869002be4ee492a07a8b83b5bc7741717feaca9b85f13215f7c33
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/rsa_dec.ppp
-Mudsum : a8a79cd4f3133918b4cc2494751a3d9982427d1296414543570c5161e5c538373207e4049c6c93937600e9392e02c86a
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/rlc_enc.testpp
+Mudsum : 3bb4fabd8f0983adb4eab8d1b8c287163d0b9fed572fcbb6057e0e98e855dd0d5333f816043e2e3325dbca5857e78a1d
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/rsa_dec.testpp
-Mudsum : 9f98d441df0c0dd8a0f10d04430681902f80f5d57e3e33d4f2d9938fb60425d0f1a7e1a3b39703c03207b36f4160f24b
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/rsa.ppp
+Mudsum : b7ac53a6b43244e04435034b670991501f8ba7cc38178ffa21ac03cef5ac669fec9256fc64995967abe63d11b6f8e13e
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/rsa_enc.ppp
-Mudsum : 009d531eb5f93eeae4e6f3b025a6e37f8eb0229598239912c8da0c3b9f86ca46a314ec15fba97fb5214c92c89a628893
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/rsa.testpp
+Mudsum : 54182694b57879da92d8c1b04ab6264efe14baa1d731c52dc9a51701e29b5e954020fc5c0660d9683192d5cd04a0e849
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/rsa_enc.testpp
-Mudsum : 0001ad4552dcf690e01171e5b9534d30528427306864cb10c4899dff487d22c342f8068002c95c2dbf2e53f38861783f
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/rsa_dec.ppp
+Mudsum : 02bb364a650a33a8349a40367287275753c74926320bec93177cd42ac0d2155b60e8a2033f1335829f24f21980a694ee
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/sha3.ppp
-Mudsum : 8448b8f10abd028810c99e7db90609b4eb6f8e34d4352ebf6beca41b3a3b72e3d8aab7e328733d55e646d841ca3610f2
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/rsa_dec.testpp
+Mudsum : b3ce9093557d660006c5b755d3e5c8ad7bcd38398730cc0ceb399fc980e39c3b48bbe4613e66cf7551337f9e4b58c00c
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/sha3.testpp
-Mudsum : 12b64f43ff4e4dba6d419cf150adfc23ce662d4fe442fa183e2bce83ffcdd009ee3602b6a50bdc1ce4e842858aa9ce86
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/rsa_enc.ppp
+Mudsum : 9ac573e12b2246d917ee1030c31259865aee7a0e02c366e7058eecebd6c666b0e334c549183d7f745fd8e397aae8be0c
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/shake.ppp
-Mudsum : a5c7bac236cc236d479ba3586444c4805c9ab774bb65ac8d06cb50d99417ed10815a3a107ec31eb1966722bcd5fb97be
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/rsa_enc.testpp
+Mudsum : 3c6dde47ba9d76d220a26de376c804a5a533805a32311afc610e4ded96029957f4ae57e9d85ee34eb305cf0c14c4b7f3
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/shake.testpp
-Mudsum : 897e97fb871c77c94834def7f91423a7f9489e49204404cf37881cd82e7930d634014b1411c5ce8f59035f750021ce86
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/sha3.ppp
+Mudsum : 9aca04fb49d68323c1d844dcf824196057ff96fa6e80097adb185bc711b1b316782ef190f22935c94be75bc3c8b7172f
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/snowv.ppp
-Mudsum : 6582014dc2f8dfa0a4c26b7fc2dab17d182ceb307d98ce7e6f9740c0dd8bfef2eabcaf88c53a8d6891f0add887810d49
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/sha3.testpp
+Mudsum : 3879ee5e03a70906929cd658e3a023ceeef08791f261b4ea161a4c5f1a5031f05adf9ea7aa6ca1aa48c181ca05441c77
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/snowv.testpp
-Mudsum : c2ea062c0cf28ec66e4ecb15e42e2055105e4eed5ddf306d43ab4cf54ad06670578018ea57acec3b6e0af760712fbf33
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/shake.ppp
+Mudsum : a20d1f4dd94a3538b339479ffd272392bce845e3ddc77f775b0bb927bc9e586b315a5fdda306d1664fe7fa713a204c7e
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/snowva.ppp
-Mudsum : f28c9ba08d33f39e1919727bf8a7c165fe92e4f05c85bf0f445ba547837cd7f1cdba63175ba1e52b97b06ec8e29584a0
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/shake.testpp
+Mudsum : e8db1e67303cb33d158456daf0a59f0b9944e5da9be084f13435223d81d2dc389359740e1d40de9ab8585ff7a2a14fac
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/snowva.testpp
-Mudsum : 8fa8d29fe794e833e6724e9477ca5e8b56a4ced24a3ae5171662e22eef648144ef0b15a5445d3be8ed0edcae8215d42e
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/snowv.ppp
+Mudsum : 9d87d7bf9a491f26c31e67c103e1ae1581b1b8ea4c73e5560b7a65d1c41f98ec665091705bf064bd1b99507c8d2e10dd
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/srtp.ppp
-Mudsum : b1daab5b772d8ab6a0443bfcea294cd20b3e6dd8e69b4961dfd86f26c5aba5aa9e3dd2b2db67b804d881a339961e5fdf
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/snowv.testpp
+Mudsum : f8e228f166bda2abffa338f2a86effffe8f75b1b633bccf854361269943be2eeb40da9292eac7be74440b53ec8d16516
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/srtp.testpp
-Mudsum : 2c6bd2ca55e633154b73fff38baaf9864d8ea70063da4d3cc6270f2372afd815001536b9d60c99fae57e455f15028cc1
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/snowva.ppp
+Mudsum : 2ce5916cec98cc7abbeabffd76901c04f130eabb326541561f2b0147092171b565d8e23ec1eb78d7211fd7aaa6aa4c2e
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/srtp_dec.ppp
-Mudsum : cb56f6bbe3d3928c4868b77039d53dd23884c83172393283546acc0b7fcc376e27d1aba1ace2ab3cde164a26c95079b2
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/snowva.testpp
+Mudsum : 0c305aeca8234bf4ff3437b499b1d4c1527b1372bcc6282110e817d21bdb62ac087ad9bc111a0d57e02be94f452d3226
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/srtp_dec.testpp
-Mudsum : 87f75319b0dc226d0c9d6cb80423c019e8bfa3d2bdb71a0e7f79799b3c831d8eebcb0c95e4524498a6d0796944000950
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/srtp.ppp
+Mudsum : 29c0be1e7ed20d4e6d4fe6f186cbd0c0248e096781b3558d4ce51a1e6d0081ef4067624b655a7d44e51aff721d929497
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/srtp_enc.ppp
-Mudsum : 80427fb3d25c730e45922b4484885c409e85ed29f0e2fd9ca049d26d9e2017ecb5e2c902393db1a62ea14dcfcb8943f5
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/srtp.testpp
+Mudsum : 9577a5667c9362f054f57f965c3eaa552ff700eea76fa922fbd31310dd429119d3c60aa99184d95e7f50455896121c08
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/srtp_enc.testpp
-Mudsum : 07aca8905fd308a5fb8028055e19cde099414a1afaaa8540a39b0fc0ca04f9a650ceb8d0bbb9f3386f6c7fec60d2a662
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/srtp_dec.ppp
+Mudsum : 9029493048f2c042f70d2ae263ecbd57459168bc3d73eb62e13c71f4df842e55d6348f00c57255fb7eac0c627649dc38
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tcp.ppp
-Mudsum : e814317c96dbb5ab45f5109b53647a376a7d8b44183684a95cf407b61ab8babe6033c9b21b8c4b01567e56fbf083e3a5
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/srtp_dec.testpp
+Mudsum : 6f2bbba23993ca88a85ae90c577446d35efc048e36e16af80d827550128026b4327050ca60ff096bbce2156dd7839c8d
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tcp.testpp
-Mudsum : 5719a00082255a3e0566613a85202d3f819703c9ae5acb1f5fb272a4fa799e59367648ad312b77e1e3db6c9011103b10
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/srtp_enc.ppp
+Mudsum : a359b671ef336b8e5c5aff82b25a025be7ed4119ae1b9d10d67f28b10c34b86372c344a718bf6a0adee001a0ed2723d1
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tcp_dec.ppp
-Mudsum : 414c9826bc2cc5e9d6a7d3599ae704979386e7d11e0441e4bf9f6390ff9ee884d782ac7d1a8c710027f965e1c211a839
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/srtp_enc.testpp
+Mudsum : 0ac5e05032d155572089dfe88fcba88732ba143da27a214a3b831f681db16e2e05da1a26e55e05a8c32b0ca95959bdd2
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tcp_dec.testpp
-Mudsum : b1582e9541bee926f92febfdf96600a55bc811fafa258f97b3ee33d6515e2a52f197417d076fef5be6e2fd615138b398
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tcp.ppp
+Mudsum : 6d85afd47aec63ae38b976184364632275cf5fecbe7a466c6d8cd1c446cf896cf5fc4dd015eab80064d95294403648e2
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tcp_enc.ppp
-Mudsum : b17de35c4b1a7668e3f8d985aef06c6b0f5fe871d4a290812d9325a1e7bd2bc0ffa0749758c9950f50fde3b2d6101efe
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tcp.testpp
+Mudsum : c45cfad561a978588b3872e1bd15d1690df1c130b3198aca1fc31745fcb613fb8f0abf81f2cecd3d9b1e2a0cfc82a98b
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tcp_enc.testpp
-Mudsum : 5618dbaeec69e7932be21e725f22bd5b10b311d00c52df6c567e464be978b561cf32e6d1feb62271fbd8c95c0856abc7
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tcp_dec.ppp
+Mudsum : 246cacea5b1f60bfe597d80a41e98746b9805905f7c1cf7a889f4e12a563639661a0096d137733649d2e19f6e8fc61bc
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tls.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tcp_dec.testpp
+Mudsum : 79edfdac6e9d0ba7106f2e4b6726ccfdbb2dbee2cc41facbcb861e192397d57db65e2af38e007b8fe77266b663fafa6f
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tcp_enc.ppp
+Mudsum : 2be66c3b544ba8c3b528e87c6403a03a67ff264e6e95e992a9c5cac1a2bab6ea6cf601aee343b17ae8d4c00e7aff2771
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tcp_enc.testpp
+Mudsum : 745528fc614fb977e580a5cd17d302d659e81eaa328ad52a7f84399f099ac1068bb5d6274ec094f581d935ac8f924454
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/test.cpp
+Mudsum : db99085e750079bcb971fa060fa507f9f0d31ad317e1f7ad281e0cda5bc705fafb2e7925e2413f8c6394c0b1d2c3d785
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/test.cpp.update
+Mudsum : 2e4ef9f92f4c7c52901e799c733746f01864ed079cbb1ca3b29bf2010aca30aef81348d59952c4b2649749f68f748706
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tls.ppp
 Mudsum : fcb10d2bd3c24ab74f05e390044bbfceb7dd10ec197e67f362d9bd21f3772f19106ee2a919c0b692b48639dc6b72f46c
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tls.testpp
-Mudsum : 673d9f7f39bc6e6d3c8c3c11e5df8d315f565e4737958c229e8167c6ecc0f0e4c4adf1e1955e14aaf6d6120adfc7bc81
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tls.testpp
+Mudsum : 2eb5b70a129f82c25fc65b6f8681fc7910475be1bbe27ca5e8bd66b1a4b7bc0bd2f3e0c02c7ff83d9f391fb4746e0c76
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tls13.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tls13.ppp
 Mudsum : a0e653a4ce72efd1bfdff082c113baf122b0d086a387ff1f81b372ef8e7281aaffb1d75264cc296fbb0fbf64e3e7bbfa
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tls13.testpp
-Mudsum : 24ddd142187840a63c5eb125d680230f514d1cde804db3303990fccf7200c589464ca6c4f2927acd566bfb3b95bf4599
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tls13.testpp
+Mudsum : 40ddf985b7e8c386239a216316a7f42136e74986c02e876270466bf2133729ff4b5bff0fbba60759b302888bdd074fab
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tls13_dec.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tls13_dec.ppp
 Mudsum : 8a247a1cc927b666716e77568a4bc5f2e70abc90f09b07052d8ca5e52a7cc9fb2d995e47b6cce7f7d8a601457419453e
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tls13_dec.testpp
-Mudsum : 01e5ca4aad6e4bb12217240dacd358e684f85f052c7347692b74a510aa8665b9991264392210a82e8d6e2775a86e18db
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tls13_dec.testpp
+Mudsum : 25aacaf4b222bc4f8b331cbbdca31f620dd9063a8b945dfb13b979787ba283115573ef5f3f3e9ba670b86885f8a81767
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tls13_enc.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tls13_enc.ppp
 Mudsum : e27935c4ccdd0fc8b39a0f068f3cfca5ebb640c66a0233bd4b93eb599d2574eaf4173f2ccecf312eea4f52bb80b6bdb5
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tls13_enc.testpp
-Mudsum : 6cdcfc10287912faddc0a4668791405ad578e3702fd54588c0ead3ffbf69f0ca9ad7eb87efab7abc2cfc6adf6161cc28
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tls13_enc.testpp
+Mudsum : 08dec6b22905a9689548ee81868538db82aeef6bad4915702113db5d917c2910ebdde410212d799b2ca09888f7a964bc
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tls_dec.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tls_dec.ppp
 Mudsum : 044b5a50299256ac64e3f7c5763bbd3a78164d07a0df1a39640e569c66cb2eaab95917b559dde8503fc1b49dbff2d85c
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tls_dec.testpp
-Mudsum : 7f0ae575d4f76587b964aa5dd41c7c5f64d3ad034e5fa67a90d3b33b749c1d847f77076df2af2998b54bf512dd6c2fb6
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tls_dec.testpp
+Mudsum : dd313135f37651a3da68844196faea2199096b04c2d25c24ba068f1cac94e29e82c4405da83458d9075bc47d152b454b
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tls_enc.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tls_enc.ppp
 Mudsum : 1ca0e17091c70ffa1f3ae81a0330c7610f0e33c21735d915506109c9fa5197c2a7586caf0db36052a6c9916265af626a
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tls_enc.testpp
-Mudsum : c2b5b5f1ab024cba9fc17292a78a8ff1e49dd1b0218a4899e3e930a15de89033ab9b6134402416eba9c7b8cd127607c0
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tls_enc.testpp
+Mudsum : 975259497291fede9b06b1fc54a7790f08e9d9fe383743d6bdcb47b51653d31ff11947d8c93034fa3d1aceb359499d6a
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tls_encthenmac.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tls_encthenmac.ppp
 Mudsum : 7a56840a41fb830848e7eff3c299f27a95cd80955f8ad6b8577c6e3d267c29534007c2235c1badaa4ec3a02418d9030f
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tls_encthenmac.testpp
-Mudsum : ed924d366f3685fe63f4b7ff54bf1fe436a468d82314ac2676bc9f2ae01be4aa8ccaf416164b501cbb6a9fb2f3fc689d
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tls_encthenmac.testpp
+Mudsum : 4be953aa9728e7d8dc3dd3fa9691b3087a111956243dd54c035f1cc6802993fd2cff613bd4e44154ae0f94f22000fe70
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tls_json.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tls_json.ppp
 Mudsum : eb256bb324047e2842bcd2e726048f026f4bf82bd332044730e2e5dd462c589aeada46e426cc5d976839a76262a38927
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/tls_multi.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tls_multi.ppp
 Mudsum : 840bacd092db4bd41078f61a515db31c604e95eacfeeee68b25d5e23c326b28159cd20665b2ed1483b7f7b615d44fd62
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/udp.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/tstparse.cpp
+Mudsum : 2e7c3976a6c2eb44d8f91d6d1dcfa65f1ef9900e80a55be11d23c63e0e14e8549e9282314b2c0faa3019fa286c290e97
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/udp.ppp
 Mudsum : 08e12abce6f257b5eb430f700230edc0608f6d4899fad906093d54c932479eac68e73f5740c99ed74daf687261b0c081
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/udp.testpp
-Mudsum : 2abcadd1a98e0bd06de7848c8f155512f1a00bcaa2dd9de55fdb21d37c9017a6f72490784b75aafbca45774713337130
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/udp.testpp
+Mudsum : bb4df281a1cf33c74d5853bb996a130772b04f28cb0c95cd545610e5f378c5f420cb2624d61a51d7ec7f772255162525
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/udp_dec.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/udp_dec.ppp
 Mudsum : f648aede4c423aa122f0d2a40364d3c2820ab2faf3e5e9502b29fc039cf4ec9ae129b493c195919807029bd25147da58
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/udp_dec.testpp
-Mudsum : 750187814f328533e755fba48710a5daecfaf2719de902f0324a5784cf2f47ab4315b91e2ac1cee6769ee76aed6e790f
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/udp_dec.testpp
+Mudsum : 56f75c5fedd717a51faaf62d7bbc354c6baf4f6514a44d1869b633825531534156ec5ff6fd4fc9f3313b506923f3d004
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/udp_enc.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/udp_enc.ppp
 Mudsum : 25f3f794577ed2637d552d9bd7bce43fc36506f655db046fd6405846050b5d64a58caa98613f5712f05a72cfbb8120aa
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/udp_enc.testpp
-Mudsum : 06e24356d8966ff128fc602769b8b49df32b7e793341679e02966b44e996d0ceea22872c17f1db15a3badfd7203d1ac2
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/udp_enc.testpp
+Mudsum : e567256948de04de82a40465a5f7723669e112ef463322cec6d021e95bc1a2464d6be35cb15a47ad5f368bea6993b1fb
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/valgrind.ppp
-Mudsum : d279fb6694cf8ba7c5ac8d3c27a6331cac78062d2b2f10df1a10f5959819265ff74d54909047361e0ef9781e2985d0f6
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/valgrind.ppp
+Mudsum : 8a137ba439589cb22bdb2d24d331465996247e844c797625051f46157cb21296fbf27bae9fce19ca0305696cba104289
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/valgrind.testpp
-Mudsum : 5d8ef6a42c9a28a37a95fcd9bbbd628aec3beda75e4df00f83eb61f016e1adcc831778e1ac1e4aa9e63335d7059c499b
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/valgrind.testpp
+Mudsum : cc12291056d42561db31478061738dc800a17f450072e582b56cc63c36aca5870e5c2f692f6d73c2ee0244c8f410bbf9
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/vxlan.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/vxlan.ppp
 Mudsum : 0abda080018e426ba709257f5a23b56f93bd751434cd6f15c1047afdfc653e6da55b1a61666e103077ce58c5fb573bbf
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/vxlan.testpp
-Mudsum : 8aee30ee6d702f310b358cd8f24d381c96acc761ca14583092f99298c84c444be0fcec78d1ad641ea3dd6a0528100b40
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/vxlan.testpp
+Mudsum : dc0b968674449867ccb28b9e43e4b59be2242e8445ccbc30237297707e5568b27076e2e80730713746a66e5ac6ee9b78
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/vxlan_dec.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/vxlan_dec.ppp
 Mudsum : 3e9a9d30ddc8e192092a83a568d60c3ef05f55f79edde0804702dbe75d4a84cad811664691591e95619841f6efa05c9c
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/vxlan_dec.testpp
-Mudsum : 34e811b03a7bd02f12569916180ba3617670cdacfa5b3abd4376eda6190e89f1d001475c6be59668cc2037382ffbaefd
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/vxlan_dec.testpp
+Mudsum : 77c174673d4c16c68cc11425c4ad73409ee4b65d0947fdc23d1dafbced34c3f8a330556cce92928ec1ea00722c6a483c
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/vxlan_enc.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/vxlan_enc.ppp
 Mudsum : 2b1efebecca9310010195ebb149611a1f60a696d0adc9e5b71fe8b831677f7370adcc98c047ee11d4ced84ca88ae95a1
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/vxlan_enc.testpp
-Mudsum : 041d8b3f1e0c095f4b46c90b85227d9eb2aa38f9b072b5823df6fc290e29927645d6a9eb5ed5653448d82bb4c9d375bf
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/vxlan_enc.testpp
+Mudsum : 81f631bf60b4bc102191e186fe1ae8b9013cab926531e3cac2b315fda635a2d8d01fd675c1148f749b6e724ef127d6e7
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/wifi.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/wifi.ppp
 Mudsum : 5301fdb30002c82575d87ca1d21a9067f39afe2a56954edcd0d709352f9a86f68069b6380a7e23ece5903f2aa5c79ed2
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/wifi.testpp
-Mudsum : 91f224fa4808ea1f64b96b8defe6d2b4c98656b9ced2745843f1dc048ee70dc2d94b326d691e1899764249e4626ae757
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/wifi.testpp
+Mudsum : c94d4a20cbd9d27096619b3b45960e1f0753a3ab2b8f8ff9630dea46afdd61b3fd716e2b96455ecef402bf303cd805db
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/wifi_dec.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/wifi_dec.ppp
 Mudsum : 3156d75135b92b659f3d836db4dece4c1542e93a60bfcd730d41be3c362b6a9184023ff786f0b1309301cc8c9b2cad1f
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/wifi_dec.testpp
-Mudsum : 5330a41ce7875acf7d588c54e5e98ed915ba596dae813978644252ac164ac8e7c0531a8850b0964dab811865fe0c640f
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/wifi_dec.testpp
+Mudsum : 5b4743c2e1ee6ae3963fa6d46c7e3cfb26778ebbb1556f42008732a28ed2873d9c1fd954776b1f05b9c930e70399bfda
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/wifi_enc.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/wifi_enc.ppp
 Mudsum : 7ec3029bc66b92835a79dce70dea7e3aba2f095300f39f523317c0e7c064f016e1e0c940569b97741ca10c5cda7c1aa4
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/wifi_enc.testpp
-Mudsum : 880e8acccda4ee8553e66994f91a46d12b055191acade34582d0e005a1eab3a6b239f95cd935bb9c53cc95db7b88d923
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/wifi_enc.testpp
+Mudsum : 87a8e784249fb4115e10e4742ec95635243b4278af06ee2142050fbe8d71f98b4b689aa527efa86524d3b750a9179046
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/wifi_json.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/wifi_json.ppp
 Mudsum : 44c9e86d46a9e51d9a8c88196fa113071a8660d3421582363cbdfeb962735ed12ddae4f7b40b59d29540b1eeb4ef5465
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/wimax.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/wimax.ppp
 Mudsum : 5ede19dd444c18a85bce17c5ffe165322402448fb59408fb16f2d372f01d0fa0c33d3fcdeca8ef1265e3bc7f763c7917
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/wimax.testpp
-Mudsum : 6587e4f22b347a6dbd137ad9675c627982a33d2d985aba9d8e1744a09bd27f0d46bca35992a4b7280ff439c4810f13ac
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/wimax.testpp
+Mudsum : 57485e50e1aa088309abcddfb287ece18d744d32436cc9f232265a3177b019982b5615a830d18918e50deb2d2c12c4b7
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/wimax_ctr.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/wimax_ctr.ppp
 Mudsum : 63f20a5ea434815c912acb2cef4c57a2858e6dd9fb276050a9d05c25fe3ecf45c4669ffb4c9b01b9a6d892324a6469a8
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/wimax_dec.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/wimax_dec.ppp
 Mudsum : f467c5dc95de250547400c26b331bae9ab3f05f96ae9193b89e8953d02cb163e6762b6becbdfa9e7502a9f3a952745a9
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/wimax_dec.testpp
-Mudsum : 2e2f598ddbd7dc376f496ada67a309ab9aa7e7b2168c6956885f940b17583b13c0613e4e352eceae2d4c85daf93219ce
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/wimax_dec.testpp
+Mudsum : 77585f071ffa4b3a556e415e27f517ec278a6fcb5a661718084efdcbb311d634f352029ffb4ee0a9fc6161ede726edae
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/wimax_enc.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/wimax_enc.ppp
 Mudsum : 70dc045a5029ae0cec1323dff8b1663a23e8d090c7a0ef896c3c7f7fe7e0c53f3b13b0790dc0b1b6bdaa8c64ae8a27cb
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/wimax_enc.testpp
-Mudsum : ec1344254c1911d5930079909fd68f07d4a507fd3e48a45b94efe18a85923bb1da04685e9f121315039943d8d89f95e5
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/wimax_enc.testpp
+Mudsum : 6702a3e616511cecb3bf16b04849b2ab637df15e4c10114af51e17a7e059781dc328560879bde2504c75d4dfc199f20d
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/xmss.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/xmss.ppp
 Mudsum : 5966e83f50dc3fcd118f6b7ebdce275e977746c83b45d019c03cca73c27a96bdb3ddcf33e6fa0860c78725bef2d0dc19
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/xmss.testpp
-Mudsum : 4710a11db99d76f4ff9b3030921e6cd9d6c6ac1a90edc0368401a6b829795f44e87357743ad7f85158fda3ee5331c0c6
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/xmss.testpp
+Mudsum : 96f9caf74c66fe1c0cb350ed4fa5142504b749c7028ea0298ce055fad559e921b96e3107f388c118493b7dc52cab3654
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/zuc.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/zuc.ppp
 Mudsum : 5c630fa58b94e057543d35e6b642a0b9487a64d33e3974f0f0e707669e28257e7f4e2b4c493aeb041a66d3060bf665fd
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/zuc.testpp
-Mudsum : c6724051e7baca64a30c1bd58c8a8f75d62ae14e97b448a80f783461c9424f01f24e8236f2fcfd741a2cb6cd6d0c49fb
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/zuc.testpp
+Mudsum : 066b84d8cec56bd119ff5f8e669edafdcadc58d6a59051b20465d0a9559128f8b850e93bd432d1cbf1e5ecebcf089082
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/zuc256.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/zuc256.ppp
 Mudsum : 72e730a8fd0a1948c33d77e0c02df9d76e0a985f7d2807b7ab71fe2ef70bb2f87588339e720797b6124a2330a2d970c4
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/zuc256.testpp
-Mudsum : 8b2a6c427ab09bb6f7a285e732bca4066a443017496eef786f6886e40869f0f650621b02759f7b4b61d36b99962add02
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/zuc256.testpp
+Mudsum : 3571dc8af0ebd4b625e794d05e399329bba6c26b3f073e9b0fe02b70ccfdfb6561ee211c5555b1efc0bca66274f23e40
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/zuca256.ppp
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/zuca256.ppp
 Mudsum : 7fff0e8c4fc9e34da3026f396f682bbe2e90274103f47b7a9be4ebaee712f648c2eec2e5af6c1ec6c8eda9c803fd1fa8
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:22 -0700, Mode : SHA384, File : ./tests/zuca256.testpp
-Mudsum : 944a6977248bfdb88b3f066d9ee64cdaba009e55cad4871a13c3dd9f66d6ca805701c3119e21d69de751486d9d931500
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./tests/zuca256.testpp
+Mudsum : 8c8d78738aac1ad3b218ad03d6a390ef797e874ad631dc3a651145adf0f65a03bf9d188c8c07a70febb17b23dd9a93e7
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:23 -0700, Mode : SHA384, File : ./x64/libprotocolpp.a
-Mudsum : 0c5415b49f11bbc1071e83439a91e26f91d0e6c131bd6f48c60e25d771e6df8b7dc30e970bd7a7e4c583df20ef30e7a0
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./utils/updateRunPaths.rb
+Mudsum : bb3b67b772ae5f875196e759c0a1673d560f4342e54c1415fb8ed564547099519f1cdcafcd069b6b0141e3b4022dcb3b
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:23 -0700, Mode : SHA384, File : ./x64/libprotocolpp.so.5.4.4
-Mudsum : ddec577e7fac19f1b073af6a8051d2a8ccdee43f36f589a3d29369337cf7fdab65b1ecf035b414fae863721c16bfbc5a
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./x64/libprotocolpp.5.5.0.so
+Mudsum : d36948fd6b2166149f59b89285fed91903a3e64f652ded838bb9d3f396e11570d66ed3da820dbb6d7f987d009f5ba9ab
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:23 -0700, Mode : SHA384, File : ./x64/protocolpp
-Mudsum : 1bef5d9559b22329780ec37e75c970a6936f9171b3faa17445a2329afb058051cd00364da7a8c8fdfbbd871480925621
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./x64/libprotpp.a
+Mudsum : 94bf83d71b0b0bcad1754e247dad925a62c670368de1e968fb4ba368c7a774319af77bb165be88677061149b9ece11a2
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:24 -0700, Mode : SHA384, File : ./x64/protocolppsec
-Mudsum : 9596d074a5b3a0a10fb1a7e4866cf03a12f899865b70d1fe4d81641cf7a53833211a3523c017fac0eea92113d82fba03
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./x64/protocolpp
+Mudsum : 0d1b2aa69e7b6b249d3a7c205b68c04395d89a0baf9e9bc1c45f306e5f550e758ed715ce7829ba34efeeb4b21630188b
 ------------------------------------------------------------------------------------------
-Date : 2023-09-08 20:45:24 -0700, Mode : SHA384, File : ./x64/test.exe
-Mudsum : 9f8e4c9885e646399d166560fb7779b2235f8308076ccdbd5158e43f099687e003323b419c8c78ff35b50172b73a5b27
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./x64/protocolppbuf
+Mudsum : 7c0d61be37265ee6d8685dd429f669d18e5215bb92153fa5e1c1059aa2bdd27c2aa8abb91ed929745cce2dfb166f5c2e
+------------------------------------------------------------------------------------------
+Date : 2024-01-01 19:52:51 -0700, Mode : SHA384, File : ./x64/protocolppsec
+Mudsum : bd7b1b0ae4d9bb88faa9f69e9aba0f499bc517b87966853d51fe50368047c1f4880c839554b3960b46f05ac2d5bcb02d
 ------------------------------------------------------------------------------------------
