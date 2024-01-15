@@ -173,7 +173,12 @@ For W.A.S.P usage, see the doxygen section
 
 * Protocolpp® (Protocol++®) - 5.5.0 Released January 1, 2024
   * See release notes in paid version
-    
+  * See www.protocolpp.com for further information
+  * Contains two signatures, one for the encrypted file, one found inside the encrypted file for the release. Please verify both
+  * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=54bf3114429c41ca9938239838815498&wix-vod-comp-id=comp-j2ddnt1i
+  * SHA384 (encrypt file) : 8206410b24ca43127bda4ef180eaa69e5b2c054fd29fe7cb18f887d7dd0ff8eaf33ea9776fd6ecee0405c74e7c36f60c
+  * SHA384 (release file) : d2de08626f0f5bf67ccfd72307ede512f9b85e7672d7239ee86393f0439d455936881576af394169762d2c3babe28365
+
 * Protocol++® (Protocolpp®) - 5.4.4 released September 8, 2023
   * See encrypted release notes in paid version
   * Maintenance release for bug fixes and code cleanup
