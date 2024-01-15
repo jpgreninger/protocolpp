@@ -1,4 +1,4 @@
-# Protocolpp®(Protocol++®) 5.4.4 Released September 8, 2023!
+# Protocolpp®(Protocol++®) 5.5.0 Released January, 2024!
 https://www.youtube.com/watch?v=zs5Edbf4MiI
 
 Only www.protocolpp.com has the rights to update, modify,
@@ -59,7 +59,7 @@ protocolpp® - Executable of the full set of protocols, ciphers, testbench,
 
 libprotocolpp.a - Static library of the protocolpp.h interface, wasp.h, and ciphers.h
 
-libprotocolpp.so.5.4.3 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
+libprotocolpp.so.5.5.0 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
 
 winprot++.lib - Static library for Windows compiled under VC++ 19
 
@@ -171,8 +171,8 @@ For W.A.S.P usage, see the doxygen section
 
 * See www.protocolpp.com for more updates, information and licensing
 
-* Protocolpp® (Protocol++®) - 5.5.0 Upcoming January 1, 2024
-  * See encrypted release notes in paid version
+* Protocolpp® (Protocol++®) - 5.5.0 Released January 1, 2024
+  * See release notes in paid version
     
 * Protocol++® (Protocolpp®) - 5.4.4 released September 8, 2023
   * See encrypted release notes in paid version
