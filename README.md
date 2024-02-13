@@ -171,6 +171,8 @@ For W.A.S.P usage, see the doxygen section
 
 * See www.protocolpp.com for more updates, information and licensing
 
+* Protocolpp® (Protocol++®) - 5.5.1 Upcoming July 1, 2024
+
 * Protocolpp® (Protocol++®) - 5.5.0 Released January 1, 2024
   * See release notes in paid version
   * See www.protocolpp.com for further information
