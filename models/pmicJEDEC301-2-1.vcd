@@ -1,5 +1,5 @@
 $date
-     Mar 27, 2024       14:37:56
+     Mar 28, 2024       01:41:08
 $end
 
 $version
@@ -22,7 +22,15 @@ $var wire   32  aaaah  railB_out [31:0]  $end
 $var wire   32  aaaai  railC_out [31:0]  $end
 $var wire   32  aaaaj  v1p8_out [31:0]  $end
 $var wire   32  aaaak  v1p0_out [31:0]  $end
-$var wire    8  aaaal  data_out [7:0]  $end
+$var wire    8  aaaal  dac_cmd [7:0]  $end
+$var wire    8  aaaam  dac_data_out [7:0]  $end
+$var wire    1  aaaan  rail_en       $end
+$var wire    1  aaaao  railA_pwrgd       $end
+$var wire    1  aaaap  railB_pwrgd       $end
+$var wire    1  aaaaq  railC_pwrgd       $end
+$var wire    1  aaaar  railA_zero       $end
+$var wire    1  aaaas  railB_zero       $end
+$var wire    1  aaaat  railC_zero       $end
 $upscope $end
 $enddefinitions  $end
 
@@ -43,6 +51,14 @@ b0 aaaai
 b0 aaaaj
 b0 aaaak
 b0 aaaal
+b0 aaaam
+0aaaan
+0aaaao
+0aaaap
+0aaaaq
+0aaaar
+0aaaas
+0aaaat
 $end
 
 #84000
@@ -108,7 +124,6 @@ b1110110110 aaaaj
 #103000
 0aaaad
 b1111101000 aaaaj
-b10000000 aaaal
 
 #104000
 b10000011010 aaaaj
@@ -217,40 +232,62 @@ b1110110110 aaaak
 b1111101000 aaaak
 
 #141000
-b1110000100 aaaai
-
-#1000141000
 b11100001000 aaaai
+1aaaan
+1aaaaq
+1aaaat
 
 #2000141000
-b1000100110 aaaah
-
-#3000141000
 b10001001100 aaaah
+1aaaap
+1aaaas
 
 #4000141000
-b1000100110 aaaag
-
-#5000141000
-b10001001100 aaaag
-
-#6000141000
 1aaaac
+b10001001100 aaaag
+1aaaao
+1aaaar
 
 #10000103000
 1aaaad
 
 #10000104000
 b0 aaaaf
-b0 aaaag
-b0 aaaah
-b0 aaaai
 
 #10000105000
 0aaaad
-b0 aaaal
 
 #10000106000
 0aaaac
+b0 aaaag
+b0 aaaah
+b0 aaaai
+0aaaan
+0aaaao
+0aaaap
+0aaaaq
+0aaaar
+0aaaas
+0aaaat
 
-#20000105000
+#20000106000
+1aaaaa
+
+#20000107000
+b11100001000 aaaai
+1aaaan
+1aaaaq
+1aaaat
+
+#22000107000
+b10001001100 aaaah
+1aaaap
+1aaaas
+
+#24000107000
+1aaaac
+b10001001100 aaaag
+1aaaao
+1aaaar
+
+#26000107000
