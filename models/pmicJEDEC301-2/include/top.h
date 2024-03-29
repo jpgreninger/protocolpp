@@ -25,9 +25,9 @@ SC_MODULE(TOP) {
     SC_CTOR(TOP) {
         // rail configurations
         std::vector<jrail::railcfg> railcfg;
-        railcfg.emplace_back(1100, 100, 6000, 4000, 24000, 1100, 2200, 5000, 0);
-        railcfg.emplace_back(1100, 100, 6000, 4000, 24000, 1100, 2200, 3000, 500);
-        railcfg.emplace_back(1800, 100, 6000, 2000, 12000, 1800, 1800, 0, 1000);
+        railcfg.emplace_back(1100, 0.275, 6000, 4000, 24000, 1100, 2200, 5000, 0);
+        railcfg.emplace_back(1100, 0.275, 6000, 4000, 24000, 1100, 2200, 3000, 500);
+        railcfg.emplace_back(1800, 1.8, 6000, 2000, 12000, 1800, 1800, 0, 1000);
 
         // PMIC configuration
         jpmic::pmicfg cfg;
