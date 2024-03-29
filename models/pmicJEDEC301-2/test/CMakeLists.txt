@@ -59,7 +59,7 @@ endif()
 
 # list the source files
 set(INCLUDE_DIRS
-    /home/jgreninger/systemc/include
+    systemc/include
     ../include)
 
 message("BUILD: ${CMAKE_BUILD_TYPE}")
@@ -72,7 +72,7 @@ endif(COMMAND cmake_policy)
 include_directories(${INCLUDE_DIRS})
 
 ADD_LIBRARY(libsystemc STATIC IMPORTED)
-SET_TARGET_PROPERTIES(libsystemc PROPERTIES IMPORTED_LOCATION /home/jgreninger/systemc/build/src/libsystemc.a)
+SET_TARGET_PROPERTIES(libsystemc PROPERTIES IMPORTED_LOCATION libsystemc.a)
 
 # build testrail
 add_executable(testrail
