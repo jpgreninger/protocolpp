@@ -1,5 +1,5 @@
 $date
-     Mar 28, 2024       01:41:08
+     Mar 29, 2024       14:55:00
 $end
 
 $version
@@ -11,26 +11,27 @@ $timescale
 $end
 
 $scope module SystemC $end
-$var wire    1  aaaaa  vren       $end
-$var wire    1  aaaab  gsi_n       $end
-$var wire    1  aaaac  pwrgd       $end
-$var wire    1  aaaad  wrb       $end
-$var wire    8  aaaae  addr_in [7:0]  $end
-$var wire    8  aaaaf  data_in [7:0]  $end
-$var wire   32  aaaag  railA_out [31:0]  $end
-$var wire   32  aaaah  railB_out [31:0]  $end
-$var wire   32  aaaai  railC_out [31:0]  $end
-$var wire   32  aaaaj  v1p8_out [31:0]  $end
-$var wire   32  aaaak  v1p0_out [31:0]  $end
-$var wire    8  aaaal  dac_cmd [7:0]  $end
-$var wire    8  aaaam  dac_data_out [7:0]  $end
-$var wire    1  aaaan  rail_en       $end
-$var wire    1  aaaao  railA_pwrgd       $end
-$var wire    1  aaaap  railB_pwrgd       $end
-$var wire    1  aaaaq  railC_pwrgd       $end
-$var wire    1  aaaar  railA_zero       $end
-$var wire    1  aaaas  railB_zero       $end
-$var wire    1  aaaat  railC_zero       $end
+$var wire   32  aaaaa  bulk_voltage [31:0]  $end
+$var wire    1  aaaab  vren       $end
+$var wire    1  aaaac  gsi_n       $end
+$var wire    1  aaaad  pwrgd       $end
+$var wire    1  aaaae  wrb       $end
+$var wire    8  aaaaf  addr_in [7:0]  $end
+$var wire    8  aaaag  data_in [7:0]  $end
+$var wire   32  aaaah  railA_out [31:0]  $end
+$var wire   32  aaaai  railB_out [31:0]  $end
+$var wire   32  aaaaj  railC_out [31:0]  $end
+$var wire   32  aaaak  v1p8_out [31:0]  $end
+$var wire   32  aaaal  v1p0_out [31:0]  $end
+$var wire    8  aaaam  dac_cmd [7:0]  $end
+$var wire    8  aaaan  dac_data_out [7:0]  $end
+$var wire    1  aaaao  rail_en       $end
+$var wire    1  aaaap  railA_pwrgd       $end
+$var wire    1  aaaaq  railB_pwrgd       $end
+$var wire    1  aaaar  railC_pwrgd       $end
+$var wire    1  aaaas  railA_zero       $end
+$var wire    1  aaaat  railB_zero       $end
+$var wire    1  aaaau  railC_zero       $end
 $upscope $end
 $enddefinitions  $end
 
@@ -39,11 +40,11 @@ All initial values are dumped below at time 0 sec = 0 timescale units.
 $end
 
 $dumpvars
-0aaaaa
+b110010 aaaaa
 0aaaab
 0aaaac
 0aaaad
-b0 aaaae
+0aaaae
 b0 aaaaf
 b0 aaaag
 b0 aaaah
@@ -52,242 +53,384 @@ b0 aaaaj
 b0 aaaak
 b0 aaaal
 b0 aaaam
-0aaaan
+b0 aaaan
 0aaaao
 0aaaap
 0aaaaq
 0aaaar
 0aaaas
 0aaaat
+0aaaau
 $end
 
+#1000
+b1100100 aaaaa
+
+#2000
+b10010110 aaaaa
+
+#3000
+b11001000 aaaaa
+
+#4000
+b11111010 aaaaa
+
+#5000
+b100101100 aaaaa
+
+#6000
+b101011110 aaaaa
+
+#7000
+b110010000 aaaaa
+
+#8000
+b111000010 aaaaa
+
+#9000
+b111110100 aaaaa
+
+#10000
+b1000100110 aaaaa
+
+#11000
+b1001011000 aaaaa
+
+#12000
+b1010001010 aaaaa
+
+#13000
+b1010111100 aaaaa
+
+#14000
+b1011101110 aaaaa
+
+#15000
+b1100100000 aaaaa
+
+#16000
+b1101010010 aaaaa
+
+#17000
+b1110000100 aaaaa
+
+#18000
+b1110110110 aaaaa
+
+#19000
+b1111101000 aaaaa
+
+#20000
+b10000011010 aaaaa
+
+#21000
+b10001001100 aaaaa
+
+#22000
+b10001111110 aaaaa
+
+#23000
+b10010110000 aaaaa
+
+#24000
+b10011100010 aaaaa
+
+#25000
+b10100010100 aaaaa
+
+#26000
+b10101000110 aaaaa
+
+#27000
+b10101111000 aaaaa
+
+#28000
+b10110101010 aaaaa
+
+#29000
+b10111011100 aaaaa
+
+#30000
+b11000001110 aaaaa
+
+#31000
+b11001000000 aaaaa
+
+#32000
+b11001110010 aaaaa
+
+#33000
+b11010100100 aaaaa
+
+#34000
+b11011010110 aaaaa
+
+#35000
+b11100001000 aaaaa
+
+#36000
+b11100111010 aaaaa
+
+#37000
+b11101101100 aaaaa
+
+#38000
+b11110011110 aaaaa
+
+#39000
+b11111010000 aaaaa
+
+#40000
+b100000000010 aaaaa
+
+#41000
+b100000110100 aaaaa
+
+#42000
+b100001100110 aaaaa
+
+#43000
+b100010011000 aaaaa
+
+#44000
+b100011001010 aaaaa
+
+#45000
+b100011111100 aaaaa
+
+#46000
+b100100101110 aaaaa
+
+#47000
+b100101100000 aaaaa
+
+#48000
+b100110010010 aaaaa
+
+#49000
+b100111000100 aaaaa
+
+#50000
+b100111110110 aaaaa
+
+#51000
+b101000101000 aaaaa
+
+#52000
+b101001011010 aaaaa
+
+#53000
+b101010001100 aaaaa
+
+#54000
+b101010111110 aaaaa
+
+#55000
+b101011110000 aaaaa
+
+#56000
+b101100100010 aaaaa
+
+#57000
+b101101010100 aaaaa
+
+#58000
+b101110000110 aaaaa
+
+#59000
+b101110111000 aaaaa
+
+#60000
+b101111101010 aaaaa
+
+#61000
+b110000011100 aaaaa
+
+#62000
+b110001001110 aaaaa
+
+#63000
+b110010000000 aaaaa
+
+#64000
+b110010110010 aaaaa
+
+#65000
+b110011100100 aaaaa
+
+#66000
+b110100010110 aaaaa
+
+#67000
+b110101001000 aaaaa
+
+#68000
+b110101111010 aaaaa
+
+#69000
+b110110101100 aaaaa
+
+#70000
+b110111011110 aaaaa
+
+#71000
+b111000010000 aaaaa
+
+#72000
+b111001000010 aaaaa
+
+#73000
+b111001110100 aaaaa
+
+#74000
+b111010100110 aaaaa
+
+#75000
+b111011011000 aaaaa
+
+#76000
+b111100001010 aaaaa
+
+#77000
+b111100111100 aaaaa
+
+#78000
+b111101101110 aaaaa
+
+#79000
+b111110100000 aaaaa
+
+#80000
+b111111010010 aaaaa
+
+#81000
+b1000000000100 aaaaa
+
+#82000
+b1000000110110 aaaaa
+
+#83000
+b1000001101000 aaaaa
+
 #84000
-b110010 aaaaj
+b1000010011010 aaaaa
+b11100001000 aaaak
+b1111101000 aaaal
 
 #85000
-b1100100 aaaaj
+b1000011001100 aaaaa
+1aaaad
 
 #86000
-b10010110 aaaaj
+b1000011111110 aaaaa
+b11100001000 aaaaj
+1aaaao
+1aaaar
+1aaaau
 
 #87000
-b11001000 aaaaj
+b1000100110000 aaaaa
 
 #88000
-b11111010 aaaaj
+b1000101100010 aaaaa
 
 #89000
-b100101100 aaaaj
+b1000110010100 aaaaa
 
 #90000
-b101011110 aaaaj
+b1000111000110 aaaaa
 
 #91000
-b110010000 aaaaj
+b1000111111000 aaaaa
 
 #92000
-b111000010 aaaaj
+b1001000101010 aaaaa
 
 #93000
-b111110100 aaaaj
+b1001001011100 aaaaa
 
 #94000
-b1000100110 aaaaj
+b1001010001110 aaaaa
 
 #95000
-b1001011000 aaaaj
+b1001011000000 aaaaa
 
 #96000
-b1010001010 aaaaj
+b1001011110010 aaaaa
 
 #97000
-b1010111100 aaaaj
+b1001100100100 aaaaa
 
 #98000
-b1011101110 aaaaj
+b1001101010110 aaaaa
 
 #99000
-b1100100000 aaaaj
+b1001110001000 aaaaa
 
 #100000
-b110010 aaaae
-b1101010010 aaaaj
+b110010 aaaaf
 
 #101000
-1aaaad
-b1110000100 aaaaj
+1aaaae
 
 #102000
-b10000000 aaaaf
-b1110110110 aaaaj
+b10000000 aaaag
 
 #103000
-0aaaad
-b1111101000 aaaaj
+0aaaae
 
-#104000
-b10000011010 aaaaj
-
-#105000
-b10001001100 aaaaj
-
-#106000
-b10001111110 aaaaj
-
-#107000
-b10010110000 aaaaj
-
-#108000
-b10011100010 aaaaj
-
-#109000
-b10100010100 aaaaj
-
-#110000
-b10101000110 aaaaj
-
-#111000
-b10101111000 aaaaj
-
-#112000
-b10110101010 aaaaj
-
-#113000
-b10111011100 aaaaj
-
-#114000
-b11000001110 aaaaj
-
-#115000
-b11001000000 aaaaj
-
-#116000
-b11001110010 aaaaj
-
-#117000
-b11010100100 aaaaj
-
-#118000
-b11011010110 aaaaj
-
-#119000
-b11100001000 aaaaj
-b110010 aaaak
-
-#120000
-b1100100 aaaak
-
-#121000
-b10010110 aaaak
-
-#122000
-b11001000 aaaak
-
-#123000
-b11111010 aaaak
-
-#124000
-b100101100 aaaak
-
-#125000
-b101011110 aaaak
-
-#126000
-b110010000 aaaak
-
-#127000
-b111000010 aaaak
-
-#128000
-b111110100 aaaak
-
-#129000
-b1000100110 aaaak
-
-#130000
-b1001011000 aaaak
-
-#131000
-b1010001010 aaaak
-
-#132000
-b1010111100 aaaak
-
-#133000
-b1011101110 aaaak
-
-#134000
-b1100100000 aaaak
-
-#135000
-b1101010010 aaaak
-
-#136000
-b1110000100 aaaak
-
-#137000
-b1110110110 aaaak
-
-#138000
-b1111101000 aaaak
-
-#141000
-b11100001000 aaaai
-1aaaan
+#3000086000
+b10001001100 aaaai
 1aaaaq
 1aaaat
 
-#2000141000
+#5000086000
 b10001001100 aaaah
 1aaaap
 1aaaas
 
-#4000141000
-1aaaac
-b10001001100 aaaag
-1aaaao
-1aaaar
+#15000103000
+1aaaae
 
-#10000103000
-1aaaad
-
-#10000104000
-b0 aaaaf
-
-#10000105000
-0aaaad
-
-#10000106000
-0aaaac
+#15000104000
 b0 aaaag
+
+#15000105000
+0aaaae
+
+#15000106000
 b0 aaaah
-b0 aaaai
-0aaaan
 0aaaao
 0aaaap
-0aaaaq
-0aaaar
 0aaaas
+
+#15500106000
+b0 aaaai
+0aaaaq
 0aaaat
 
-#20000106000
-1aaaaa
+#16000106000
+b0 aaaaj
+0aaaar
+0aaaau
 
-#20000107000
-b11100001000 aaaai
-1aaaan
+#25000106000
+1aaaab
+
+#25000107000
+b11100001000 aaaaj
+1aaaao
+1aaaar
+1aaaau
+
+#28000107000
+b10001001100 aaaai
 1aaaaq
 1aaaat
 
-#22000107000
+#30000107000
 b10001001100 aaaah
 1aaaap
 1aaaas
 
-#24000107000
-1aaaac
-b10001001100 aaaag
-1aaaao
-1aaaar
-
-#26000107000
+#36000107000
