@@ -59,7 +59,7 @@ public:
     };
 
     // ports
-    sc_clock clk_in;
+    sc_in<bool> clk_in;
     sc_in<bool> wrb_in;
     sc_in<bool> vren_in;
     sc_out<bool> gsi_n_out;
@@ -73,15 +73,16 @@ public:
     sc_out<uint32_t> railB_out;
     sc_out<uint32_t> railC_out;
 
-    sc_signal<uint32_t> railA_volt;
-    sc_signal<uint32_t> railB_volt;
-    sc_signal<uint32_t> railC_volt;
-
     sc_out<uint32_t> v1p8_out;
     sc_out<uint32_t> v1p0_out;
     sc_out<uint8_t> data_out;
 
     // wires
+    sc_signal<uint32_t> railA_volt;
+    sc_signal<uint32_t> railB_volt;
+    sc_signal<uint32_t> railC_volt;
+
+    sc_buffer<uint8_t> dac_data_out;
     sc_buffer<uint8_t> cmd_in;
     sc_buffer<bool> rail_en;
     sc_buffer<bool> pwrsum_wire;
@@ -111,16 +112,16 @@ public:
                                   railA_out("railA_out"),
                                   railB_out("railB_out"),
                                   railC_out("railC_out"),
-                                  railA_volt("railA_volt_in"),
-                                  railB_volt("railB_volt_in"),
-                                  railC_volt("railC_volt_in"),
                                   v1p8_out("v1p8_out"),
                                   v1p0_out("v1p0_out"),
                                   data_out("data_out"),
+                                  railA_volt("railA_volt_in", 1100),
+                                  railB_volt("railB_volt_in", 1100),
+                                  railC_volt("railC_volt_in", 1800),
                                   cmd_in("cmd_in"),
                                   rail_en("rail_en"),
                                   pwrsum_wire("pwrsum"),
-                                  ldo_ramp_en("ldo_ramp_en"),
+                                  ldo_ramp_en("ldo_ramp_en", 0),
                                   railA_pwrgd("railA_pwrgd"),
                                   railB_pwrgd("railB_pwrgd"),
                                   railC_pwrgd("railC_pwrgd"),
@@ -154,6 +155,7 @@ public:
 
         // create the rails
         railA = new jrail("railA", cfg.railcfg[0]);
+        railA->clk_in(clk_in);
         railA->enable_in(rail_en);
         railA->volt_in(railA_volt);
         railA->rail_out(railA_out);
@@ -162,6 +164,7 @@ public:
         rails->push_back(railA);
 
         railB = new jrail("railB", cfg.railcfg[1]);
+        railB->clk_in(clk_in);
         railB->enable_in(rail_en);
         railB->volt_in(railB_volt);
         railB->rail_out(railB_out);
@@ -170,6 +173,7 @@ public:
         rails->push_back(railB);
 
         railC = new jrail("railC", cfg.railcfg[2]);
+        railC->clk_in(clk_in);
         railC->enable_in(rail_en);
         railC->volt_in(railC_volt);
         railC->rail_out(railC_out);
@@ -181,12 +185,11 @@ public:
         dac = new jdac("dac", cfg.dac_samples, cfg.dac_sample_time, rails);
         dac->clk_in(clk_in);
         dac->cmd_in(cmd_in);
-        dac->data_out(data_out);
+        dac->data_out(dac_data_out);
         dac->pwrsum_in(pwrsum_wire);
 
-        SC_CTHREAD(run, clk_in);
-        SC_THREAD(regs);
-            sensitive << addr_in << data_in << wrb_in;
+        SC_CTHREAD(run, clk_in.pos());
+        SC_CTHREAD(regs, clk_in.pos());
         SC_THREAD(ldo_ramp);
             sensitive << ldo_ramp_en;
     }

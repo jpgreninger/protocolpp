@@ -27,7 +27,7 @@ void tb::run() {
     wait(1, SC_NS);
     wrb_out.write(false);
 
-    wait(10, SC_MS);
+    wait(15, SC_MS);
     std::cout << "RailA enabled to 1100mV, at: " << (int)railA_in.read() << std::endl;
     std::cout << "RailB enabled to 1100mV, at: " << (int)railB_in.read() << std::endl;
     std::cout << "RailC enabled to 1800mV, at: " << (int)railC_in.read() << std::endl;
@@ -70,10 +70,9 @@ void tb::run() {
 
     // write VR_EN
     vren_out.write(true);
-    wait(1, SC_NS);
-    std::cout << std::endl << "Toggle VR_EN pin=1" << std::endl;
+    std::cout << std::endl << "Assert VR_EN pin=1" << std::endl;
 
-    wait(10, SC_MS);
+    wait(5, SC_MS);
 
     std::cout << "RailA enabled to 1100mV, at: " << (int)railA_in.read() << std::endl;
     std::cout << "RailB enabled to 1100mV, at: " << (int)railB_in.read() << std::endl;

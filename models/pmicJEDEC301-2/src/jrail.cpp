@@ -14,7 +14,7 @@ void jrail::enable() {
                 wait(m_rail.slewupdly, SC_US);
                 zero_out.write(true);
         
-                while(abs(m_volt) != abs(m_rail.voltage)) {
+                while(abs(m_volt) < abs(m_rail.voltage)) {
                     if (m_rail.voltage > 0) {
                         m_volt = (((m_volt+m_rail.slewup) < m_rail.voltage) ? (m_volt+m_rail.slewup) : m_rail.voltage);
                     }

@@ -56,8 +56,7 @@ public:
         }
 
         SC_CTHREAD(sample, clk_in.pos());
-        SC_THREAD(cmd);
-            sensitive << cmd_in << pwrsum_in;
+        SC_CTHREAD(cmd, clk_in.pos());
     }
 
 

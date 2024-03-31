@@ -7,7 +7,8 @@ SC_MODULE(TOP) {
     tb *tb0;
     jpmic *pmic;
 
-    sc_buffer<bool> vren_in;
+    sc_clock clk_in;
+    sc_signal<bool> vren_in;
     sc_signal<bool> pwrgd;
     sc_buffer<bool> gsi_n;
     sc_buffer<bool> wrb;
@@ -22,12 +23,25 @@ SC_MODULE(TOP) {
     sc_buffer<uint8_t> data_out;
 
     // instantiate rail
-    SC_CTOR(TOP) {
+    SC_CTOR(TOP) : clk_in("clk_in"),
+                   vren_in("vren_in"),
+                   pwrgd("pwrgd"),
+                   gsi_n("gsi_n"),
+                   wrb("wrb"),
+                   addr_in("addr_in"),
+                   data_in("data_in"),
+                   bulk_out("bulk_out"),
+                   railA_out("railA_out"),
+                   railB_out("railB_out"),
+                   railC_out("railC_out"),
+                   v1p8_out("v1p8_out"),
+                   v1p0_out("v1p0_out"),
+                   data_out("data_out") {
         // rail configurations
         std::vector<jrail::railcfg> railcfg;
-        railcfg.emplace_back(1100, 0.275, 6000, 4000, 24000, 1100, 2200, 5000, 0);
+        railcfg.emplace_back(1100, 0.275, 6000, 4000, 24000, 1100, 2200, 6000, 0);
         railcfg.emplace_back(1100, 0.275, 6000, 4000, 24000, 1100, 2200, 3000, 500);
-        railcfg.emplace_back(1800, 1.8, 6000, 2000, 12000, 1800, 1800, 0, 1000);
+        railcfg.emplace_back(1800, 1.800, 6000, 2000, 12000, 1800, 1800, 0, 1000);
 
         // PMIC configuration
         jpmic::pmicfg cfg;
@@ -49,6 +63,7 @@ SC_MODULE(TOP) {
         tb0 = new tb("tb");
 
         // outputs
+        tb0->clk_in(clk_in);
         tb0->vren_out(vren_in);
         tb0->pwrgd_inout(pwrgd);
         tb0->bulk_out(bulk_out);
@@ -69,6 +84,7 @@ SC_MODULE(TOP) {
         pmic = new jpmic("pmic", cfg);
 
         // inputs
+        pmic->clk_in(clk_in);
         pmic->wrb_in(wrb);
         pmic->vren_in(vren_in);
         pmic->pwrgd_inout(pwrgd);

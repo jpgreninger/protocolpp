@@ -34,22 +34,16 @@ project(${META_PROJECT_NAME}
 if(CMAKE_BUILD_TYPE STREQUAL "Debug32")
     set(CMAKE_CXX_FLAGS "-std=c++17 -fPIC -pipe -m32 -O0 -g -Wall")
     message("CXX_FLAGS_DEBUG_32: ${CMAKE_CXX_FLAGS}")
-elseif(CMAKE_BUILD_TYPE STREQUAL "lean32")
-    set(CMAKE_CXX_FLAGS "-std=c++17 -fPIC -pipe -m32 -O2 -ffunction-sections -fdata-sections")
-    message("CXX_FLAGS_LEAN_32: ${CMAKE_CXX_FLAGS}")
-elseif(CMAKE_BUILD_TYPE STREQUAL "release32")
-    set(CMAKE_CXX_FLAGS "-std=c++17 -fPIC -pipe -m32 -O2")
-    message("CXX_FLAGS_RELEASE_32: ${CMAKE_CXX_FLAGS}")
-elseif(CMAKE_BUILD_TYPE STREQUAL "coverage32")
+elseif(CMAKE_BUILD_TYPE STREQUAL "Coverage32")
     set(CMAKE_CXX_FLAGS "-std=c++17 -fPIC -pipe -m32 -O2 -coverage")
     message("CXX_FLAGS_COVERAGE: ${CMAKE_CXX_FLAGS}")
+elseif(CMAKE_BUILD_TYPE STREQUAL "Release32")
+    set(CMAKE_CXX_FLAGS "-std=c++17 -fPIC -pipe -m32 -O2")
+    message("CXX_FLAGS_RELEASE_32: ${CMAKE_CXX_FLAGS}")
 elseif(CMAKE_BUILD_TYPE STREQUAL "Debug")
     set(CMAKE_CXX_FLAGS "-std=c++17 -fPIC -pipe -O0 -g -Wall")
     message("CXX_FLAGS_DEBUG: ${CMAKE_CXX_FLAGS}")
-elseif(CMAKE_BUILD_TYPE STREQUAL "lean")
-    set(CMAKE_CXX_FLAGS "-std=c++17 -fPIC -pipe -O2 -ffunction-sections -fdata-sections")
-    message("CXX_FLAGS_LEAN: ${CMAKE_CXX_FLAGS}")
-elseif(CMAKE_BUILD_TYPE STREQUAL "coverage")
+elseif(CMAKE_BUILD_TYPE STREQUAL "Coverage")
     set(CMAKE_CXX_FLAGS "-std=c++17 -fPIC -pipe -O2 -coverage")
     message("CXX_FLAGS_COVERAGE: ${CMAKE_CXX_FLAGS}")
 else()
@@ -59,7 +53,7 @@ endif()
 
 # list the source files
 set(INCLUDE_DIRS
-    systemc/include
+    /home/jgreninger/systemc/include
     ../include)
 
 message("BUILD: ${CMAKE_BUILD_TYPE}")
@@ -72,7 +66,7 @@ endif(COMMAND cmake_policy)
 include_directories(${INCLUDE_DIRS})
 
 ADD_LIBRARY(libsystemc STATIC IMPORTED)
-SET_TARGET_PROPERTIES(libsystemc PROPERTIES IMPORTED_LOCATION libsystemc.a)
+SET_TARGET_PROPERTIES(libsystemc PROPERTIES IMPORTED_LOCATION /home/jgreninger/systemc/build/src/libsystemc.a)
 
 # build testrail
 add_executable(testrail

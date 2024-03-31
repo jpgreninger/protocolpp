@@ -7,6 +7,7 @@ class jrail : sc_module {
 
 public:
 
+    sc_in<bool> clk_in;
     sc_in<bool> enable_in;
     sc_in<uint32_t> volt_in;
     sc_out<uint32_t> rail_out;
@@ -71,8 +72,7 @@ public:
                                     m_nvolt(0)
 
     {
-        SC_THREAD(enable);
-            sensitive << enable_in.pos() << enable_in.neg() << volt_in;
+        SC_CTHREAD(enable, clk_in.pos());
     }
 
     ////////////////////////////////////////////////////
