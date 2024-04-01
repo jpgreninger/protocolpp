@@ -87,6 +87,7 @@ public:
 
     sc_buffer<uint8_t> dac_data_out;
     sc_buffer<uint8_t> cmd_in;
+    sc_signal<uint8_t> temp_in;
     sc_buffer<bool> rail_en;
     sc_buffer<bool> pwrsum_wire;
     sc_signal<bool> ldo_ramp_en;
@@ -122,6 +123,7 @@ public:
                                   railB_volt("railB_volt_in", 1100),
                                   railC_volt("railC_volt_in", 1800),
                                   cmd_in("cmd_in"),
+                                  temp_in("temp_in", 105),
                                   rail_en("rail_en"),
                                   pwrsum_wire("pwrsum"),
                                   ldo_ramp_en("ldo_ramp_en", 0),
@@ -191,6 +193,7 @@ public:
         dac = new jdac("dac", cfg.dac_samples, cfg.dac_sample_time, rails);
         dac->clk_in(clk_in);
         dac->cmd_in(cmd_in);
+        dac->temp_in(temp_in);
         dac->data_out(dac_data_out);
         dac->pwrsum_in(pwrsum_wire);
 

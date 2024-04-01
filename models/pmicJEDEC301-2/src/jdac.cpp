@@ -6,6 +6,7 @@ void jdac::sample() {
         wait();
 
         if(m_enable) {
+            wait(m_stime/1000000, SC_MS);
             for(size_t i=0; i<m_rails->size(); i++) {
                 m_voltavg[i].emplace_back((uint64_t)m_rails->at(i)->voltage());
                 m_curravg[i].emplace_back((uint64_t)m_rails->at(i)->current());
@@ -32,6 +33,7 @@ void jdac::cmd() {
         uint8_t cmds = cmd_in.read();
         uint32_t command=(cmds & 0x0F);
         bool pwrsum = pwrsum_in.read();
+        uint8_t currtemp = temp_in.read();
         uint32_t channel=((cmds >> 4) & 0x0F);
 
         switch(command) {
@@ -86,6 +88,85 @@ void jdac::cmd() {
                     avg = (avg/m_samples)/125;
                     result = ((avg > 63) ? 63 : avg);
                 }
+                break;
+            case dac_t::TEMP:
+                switch (currtemp) {
+                    case 85:
+                    case 86:
+                    case 87:
+                    case 88:
+                    case 89:
+                        result = 0x01;
+                        break;
+                    case 90:
+                    case 91:
+                    case 92:
+                    case 93:
+                    case 94:
+                    case 95:
+                    case 96:
+                    case 97:
+                    case 98:
+                    case 99:
+                        result = 0x02;
+                        break;
+                    case 100:
+                    case 101:
+                    case 102:
+                    case 103:
+                    case 104:
+                    case 105:
+                    case 106:
+                    case 107:
+                    case 108:
+                    case 109:
+                        result = 0x03;
+                        break;
+                    case 110:
+                    case 111:
+                    case 112:
+                    case 113:
+                    case 114:
+                    case 115:
+                    case 116:
+                    case 117:
+                    case 118:
+                    case 119:
+                        result = 0x04;
+                        break;
+                    case 120:
+                    case 121:
+                    case 122:
+                    case 123:
+                    case 124:
+                    case 125:
+                    case 126:
+                    case 127:
+                    case 128:
+                    case 129:
+                        result = 0x05;
+                        break;
+                    case 130:
+                    case 131:
+                    case 132:
+                    case 133:
+                    case 134:
+                    case 135:
+                    case 136:
+                    case 137:
+                    case 138:
+                    case 139:
+                        result = 0x06;
+                        break;
+                    default:
+                        if (currtemp >= 140) {
+                            result = 0x07;
+                        }
+                        else {
+                            result = 0;
+                        }
+                }
+
                 break;
             case dac_t::ENABLE:
                 m_enable = true;

@@ -56,7 +56,7 @@ SC_MODULE(TOP) {
         cfg.v10_setting = 1000;
         cfg.restart_time = 10000;
         cfg.dac_samples = 8;
-        cfg.dac_sample_time = 8;
+        cfg.dac_sample_time = 1000000; // nanoseconds (1ms = 1000000ns)
         cfg.railcfg = railcfg;
 
         // connect testbench

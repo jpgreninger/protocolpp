@@ -82,6 +82,7 @@ int main(int argc, char* argv[]) {
 
     // wires
     sc_trace(file, top.pmic->cmd_in, "dac_cmd");
+    sc_trace(file, top.pmic->temp_in, "temp");
     sc_trace(file, top.data_out, "dac_data_out");
     sc_trace(file, top.pmic->rail_en, "rail_en");
     sc_trace(file, top.pmic->railA_pwrgd, "railA_pwrgd");

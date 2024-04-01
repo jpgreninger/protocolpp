@@ -19,13 +19,15 @@ public:
         CURRAVG = 0x04,
         POWER   = 0x05,
         POWRAVG = 0x06,
-        ENABLE  = 0x07,
-        DISABLE = 0x08
+        TEMP    = 0x07,
+        ENABLE  = 0x08,
+        DISABLE = 0x09
     };
 
     sc_in<bool> clk_in;
     sc_in<bool> pwrsum_in;
     sc_in<uint8_t> cmd_in;
+    sc_in<uint8_t> temp_in;
     sc_out<uint8_t> data_out;
 
     ////////////////////////////////////////////////////
@@ -40,6 +42,7 @@ public:
             std::shared_ptr<std::vector<jrail*>>& rails) : clk_in("clk_in"),
                                                            pwrsum_in("pwrsum_en"),
                                                            cmd_in("cmd_in"),
+                                                           temp_in("temp_in"),
                                                            data_out("data_out"),
                                                            m_enable(true),
                                                            m_samples(samples),
