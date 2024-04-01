@@ -1,9 +1,10 @@
-JEDEC301-2-1 PMIC SystemC model
+# JEDEC301-2-1 PMIC SystemC model
 
-Basic model for this PMIC spec. See chapter 6 for the basic functionalty. Most status registers are not updated except for rail PG, Table 102-203, and the ADC outputs. The ADC is fully functional and the I2c/I3C interface has been turned into a simple C++ read/write with wrb strobe. Missing functionality that may or may not be implemented in the future
+Basic model for this PMIC spec. Out of a concern for being too "fancy", I've limited the model to the default functionality as expressed in the default settings of the registers. See chapter 6 for the basic functionalty. Most status registers are not updated except for rail PG, Table 102-203, and the ADC outputs. The ADC is fully functional and the I2c/I3C interface has been turned into a simple C++ read/write with wrb strobe. Missing functionality that may or may not be implemented in the future
 
 * Error injection
 * Programmable mode single rail on/off
+* PWRGD and GSI_n full functionality (see the multiple charts in the GSI_n section, by default they are both disabled)
 
 Functionality that will be added in the future:
 
