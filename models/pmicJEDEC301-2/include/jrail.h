@@ -9,6 +9,7 @@ public:
 
     sc_in<bool> clk_in;
     sc_in<bool> enable_in;
+    sc_in<bool> update_in;
     sc_in<uint32_t> volt_in;
     sc_out<uint32_t> rail_out;
     sc_out<bool> pwrgd_out;
@@ -61,18 +62,16 @@ public:
     /// @param rail - Structure with rail configuration
     ////////////////////////////////////////////////////
     SC_CTOR(jrail, railcfg& rail) : enable_in("enable_in"),
+                                    update_in("update_in"),
                                     volt_in("volt_in"),
                                     rail_out("rail_out"),
                                     pwrgd_out("pwrgd_out"),
                                     zero_out("zero_out"),
                                     m_rail(rail),
-                                    m_volt(0),
-                                    m_update(false),
-                                    m_enable(false),
-                                    m_nvolt(0)
-
+                                    m_volt(0)
     {
-        SC_CTHREAD(enable, clk_in.pos());
+        SC_THREAD(enable);
+            sensitive << enable_in << update_in;
     }
 
     ////////////////////////////////////////////////////
@@ -107,9 +106,6 @@ private:
 
     railcfg m_rail;
     int m_volt;
-    bool m_update;
-    bool m_enable;
-    uint32_t m_nvolt;
 };
 
 #endif // JRAIL_H_

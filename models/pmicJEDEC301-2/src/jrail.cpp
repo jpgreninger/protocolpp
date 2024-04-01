@@ -6,50 +6,52 @@ void jrail::enable() {
     while(true) {
         wait();
 
-        m_enable = enable_in.read();
-        m_nvolt  = volt_in.read();
-
-        if (m_enable) {
-            if (!m_update) {
-                wait(m_rail.slewupdly, SC_US);
-                zero_out.write(true);
-        
-                while(abs(m_volt) < abs(m_rail.voltage)) {
-                    if (m_rail.voltage > 0) {
-                        m_volt = (((m_volt+m_rail.slewup) < m_rail.voltage) ? (m_volt+m_rail.slewup) : m_rail.voltage);
-                    }
-                    else {
-                        m_volt = (((m_volt-m_rail.slewup) > m_rail.voltage) ? (m_volt-m_rail.slewup) : m_rail.voltage);
-                    }
-        
-                    rail_out.write(m_volt);
-
-                    if(abs(m_volt) == abs(m_rail.voltage)) {
-                        pwrgd_out.write(true);
-                        m_update = true;
-                    }
-                    else {
-                        wait(1, SC_MS);
-                    }
+        // we can't just define this to be sensitive to enable.posedge() and enable.negedge()
+        // in programmable mode it's possible to adjust the voltage by writing to the register
+        if (enable_in.posedge()) {
+            // wait for idle time
+            wait(m_rail.slewupdly, SC_US);
+            zero_out.write(true);
+    
+            // ramp the rail
+            while(abs(m_volt) < abs(m_rail.voltage)) {
+                if (m_rail.voltage > 0) {
+                    m_volt = (((m_volt+m_rail.slewup) < m_rail.voltage) ? (m_volt+m_rail.slewup) : m_rail.voltage);
                 }
-            }
-            else if (m_volt != m_nvolt) {
-                // updates allowed
-                while(m_volt != m_nvolt) {
-                    if (m_nvolt > m_volt) {
-                        m_volt = (((m_volt+m_rail.slewup) < m_nvolt) ? (m_volt+m_rail.slewup) : m_nvolt);
-                    }
-                    else {
-                        m_volt = (((m_volt-m_rail.slewdn) > m_nvolt) ? (m_volt-m_rail.slewdn) : m_nvolt);
-                    }
-            
-                    rail_out.write(m_volt);
+                else {
+                    m_volt = (((m_volt-m_rail.slewup) > m_rail.voltage) ? (m_volt-m_rail.slewup) : m_rail.voltage);
+                }
+    
+                rail_out.write(m_volt);
+
+                if(abs(m_volt) == abs(m_rail.voltage)) {
+                    // assert rail pwrgd
+                    pwrgd_out.write(true);
+                }
+                else {
+                    // skew is defined as mV/mS
                     wait(1, SC_MS);
                 }
-                std::cout << basename() << " Updated voltage reached: " << m_volt << std::endl;
             }
         }
-        else {
+        else if (update_in.posedge() && enable_in.read()) {
+            int nvolt  = (int)volt_in.read();
+
+            while(abs(m_volt) != abs(nvolt)) {
+                if (nvolt > m_volt) {
+                    m_volt = (((m_volt+m_rail.slewup) < nvolt) ? (m_volt+m_rail.slewup) : nvolt);
+                }
+                else {
+                    m_volt = (((m_volt-m_rail.slewdn) > nvolt) ? (m_volt-m_rail.slewdn) : nvolt);
+                }
+        
+                // rail can only change at 1mV/mS
+                rail_out.write(m_volt);
+                wait(1, SC_MS);
+            }
+        }
+        else if (enable_in.negedge()) {
+            // wait for STOP idle time, deassert pwrgd
             wait(m_rail.slewdndly, SC_US);
             pwrgd_out.write(false);
     
@@ -64,10 +66,11 @@ void jrail::enable() {
                 rail_out.write(m_volt);
 
                 if (m_volt == 0) {
+                    // assert zero reached
                     zero_out.write(false);
-                    m_update = false;
                 }
                 else {
+                    // skew is defined as mV/mS
                     wait(1, SC_MS);
                 }
             }

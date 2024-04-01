@@ -78,8 +78,11 @@ public:
     sc_out<uint8_t> data_out;
 
     // wires
+    sc_signal<bool> railA_update;
     sc_signal<uint32_t> railA_volt;
+    sc_signal<bool> railB_update;
     sc_signal<uint32_t> railB_volt;
+    sc_signal<bool> railC_update;
     sc_signal<uint32_t> railC_volt;
 
     sc_buffer<uint8_t> dac_data_out;
@@ -157,6 +160,7 @@ public:
         railA = new jrail("railA", cfg.railcfg[0]);
         railA->clk_in(clk_in);
         railA->enable_in(rail_en);
+        railA->update_in(railA_update);
         railA->volt_in(railA_volt);
         railA->rail_out(railA_out);
         railA->pwrgd_out(railA_pwrgd);
@@ -166,6 +170,7 @@ public:
         railB = new jrail("railB", cfg.railcfg[1]);
         railB->clk_in(clk_in);
         railB->enable_in(rail_en);
+        railB->update_in(railB_update);
         railB->volt_in(railB_volt);
         railB->rail_out(railB_out);
         railB->pwrgd_out(railB_pwrgd);
@@ -175,6 +180,7 @@ public:
         railC = new jrail("railC", cfg.railcfg[2]);
         railC->clk_in(clk_in);
         railC->enable_in(rail_en);
+        railC->update_in(railC_update);
         railC->volt_in(railC_volt);
         railC->rail_out(railC_out);
         railC->pwrgd_out(railC_pwrgd);
@@ -188,8 +194,14 @@ public:
         dac->data_out(dac_data_out);
         dac->pwrsum_in(pwrsum_wire);
 
-        SC_CTHREAD(run, clk_in.pos());
+        // Register read/write are based on CLK_IN
         SC_CTHREAD(regs, clk_in.pos());
+
+        // FSM needs to sensitive to CLK_IN but also to VREN and PWRGD pins
+        SC_THREAD(fsm);
+            sensitive << clk_in.pos() << vren_in << pwrgd_inout;
+
+        // LDO ramp is controlled by ldo_ramp_en posedge or negedge
         SC_THREAD(ldo_ramp);
             sensitive << ldo_ramp_en;
     }
@@ -207,7 +219,7 @@ public:
     ////////////////////////////////////////////////////
     /// run the pmic
     ////////////////////////////////////////////////////
-    void run();
+    void fsm();
 
     ////////////////////////////////////////////////////
     /// ramp output LDOs

@@ -72,7 +72,7 @@ void tb::run() {
     vren_out.write(true);
     std::cout << std::endl << "Assert VR_EN pin=1" << std::endl;
 
-    wait(5, SC_MS);
+    wait(10, SC_MS);
 
     std::cout << "RailA enabled to 1100mV, at: " << (int)railA_in.read() << std::endl;
     std::cout << "RailB enabled to 1100mV, at: " << (int)railB_in.read() << std::endl;

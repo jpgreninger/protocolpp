@@ -8,104 +8,139 @@ void jpmic::regs() {
         bool wrb = wrb_in.read();
         uint8_t addr = addr_in.read();
         uint8_t data = data_in.read();
+        bool secured = (((m_regs[0x2F] & 0x02) && (m_regs[0x32] & 0x80)) ? true : false);
 
-        switch(addr) {
-            case 0x0C:
-                if (wrb) {
-                    data_out.write(0);
-                }
-                else {
-                    m_regs[0x0C] = railA_out.read();
-                    data_out.write(m_regs[0x0C]);
-                }
-                break;
-            case 0x0E:
-                if (wrb) {
-                    data_out.write(0);
-                }
-                else {
-                    m_regs[0x0C] = railA_out.read();
-                    data_out.write(m_regs[0x0E]);
-                }
-                break;
-            case 0x0F:
-                if (wrb) {
-                    data_out.write(0);
-                }
-                else {
-                    m_regs[0x0C] = railA_out.read();
-                    data_out.write(m_regs[0x0F]);
-                }
-                break;
-            case 0x1A:
-                m_regs[0x1A] = data;
-
-                // enable power summation
-                if ((m_regs[0x1B] & 0x40) && (data & 0x02)) {
-                    pwrsum_wire.write(true);
-                }
-                else {
-                    pwrsum_wire.write(false);
-                }
-                break;
-            case 0x30: {
-                m_regs[addr] = data;
-                uint32_t railVolt = 0;
-
-                if (data & 0x80) {
-                    switch(data & 0x78) {
-                        case 0:
-                            railVolt = railA_out.read();
-                            m_regs[0x31] = ((railVolt >= 3875) ? 0xFF : railVolt/15);
-                        case 2:
-                            railVolt = railB_out.read();
-                            m_regs[0x31] = ((railVolt >= 3875) ? 0xFF : railVolt/15);
-                        case 3:
-                            railVolt = railC_out.read();
-                            m_regs[0x31] = ((railVolt >= 3875) ? 0xFF : railVolt/15);
-                        case 5:
-                            railVolt = bulk_in->read();
-                            m_regs[0x31] = ((railVolt >= 17850) ? 0xFF : railVolt/70);
-                        case 8:
-                            m_regs[0x31] = ((m_v18 >= 3875) ? 0xFF : m_v18/15);
-                        case 9:
-                            m_regs[0x31] = ((m_v10 >= 3875) ? 0xFF : m_v10/15);
-                        default:
-                            m_regs[0x31] = 0;
-                    }
-
+        if (secured && (((addr >= 0x15) && (addr <= 0x2F)) || ((addr >= 0x40) && (addr <= 0x6F)) || (addr == 0x32))) {
+            if (!wrb) {
+                data_out.write(0);
+            }
+        }
+        else {
+            switch(addr) {
+                case 0x0C:
                     if (wrb) {
                         data_out.write(0);
                     }
                     else {
-                        data_out.write(m_regs[0x31]);
+                        m_regs[0x0C] = railA_out.read();
+                        data_out.write(m_regs[0x0C]);
                     }
-                }
-                break;
-            }
-            case 0x32: {
-                if((data & 0x80) && ((m_regs[addr] & 0x80) == 0)) {
-                    m_vren = true;
-                }
-                else if(((data & 0x80) == 0) && (m_regs[addr] & 0x80)) {
-                    m_vrdis = true;
-                }
-
-                m_regs[addr] = data;
-                break;
-            }
-            default:
-                if (wrb) {
+                    break;
+                case 0x0E:
+                    if (wrb) {
+                        data_out.write(0);
+                    }
+                    else {
+                        m_regs[0x0C] = railA_out.read();
+                        data_out.write(m_regs[0x0E]);
+                    }
+                    break;
+                case 0x0F:
+                    if (wrb) {
+                        data_out.write(0);
+                    }
+                    else {
+                        m_regs[0x0C] = railA_out.read();
+                        data_out.write(m_regs[0x0F]);
+                    }
+                    break;
+                case 0x1A:
+                    m_regs[0x1A] = data;
+    
+                    // enable power summation
+                    if ((m_regs[0x1B] & 0x40) && (data & 0x02)) {
+                        pwrsum_wire.write(true);
+                    }
+                    else {
+                        pwrsum_wire.write(false);
+                    }
+                    break;
+                case 0x21:
+                    // change the rail voltage
+                    if ((m_regs[0x21] & 0xFE) != (data & 0xFE)) {
+                        railA_volt.write((800 + (5 * (data & 0xFE))));
+                        railA_update.write(true);
+                    }
+    
+                    m_regs[0x21] = data;
+                    break;
+                case 0x25:
+                    // change the rail voltage
+                    if ((m_regs[0x25] & 0xFE) != (data & 0xFE)) {
+                        railB_volt.write((800 + (5 * (data & 0xFE))));
+                        railB_update.write(true);
+                    }
+    
+                    m_regs[0x25] = data;
+                    break;
+                case 0x27:
+                    // change the rail voltage
+                    if ((m_regs[0x27] & 0xFE) != (data & 0xFE)) {
+                        railC_volt.write((1500 + (5 * (data & 0xFE))));
+                        railC_update.write(true);
+                    }
+    
+                    m_regs[0x27] = data;
+                    break;
+                case 0x30: {
                     m_regs[addr] = data;
+                    uint32_t railVolt = 0;
+    
+                    if (data & 0x80) {
+                        switch(data & 0x78) {
+                            case 0:
+                                railVolt = railA_out.read();
+                                m_regs[0x31] = ((railVolt >= 3875) ? 0xFF : railVolt/15);
+                            case 2:
+                                railVolt = railB_out.read();
+                                m_regs[0x31] = ((railVolt >= 3875) ? 0xFF : railVolt/15);
+                            case 3:
+                                railVolt = railC_out.read();
+                                m_regs[0x31] = ((railVolt >= 3875) ? 0xFF : railVolt/15);
+                            case 5:
+                                railVolt = bulk_in->read();
+                                m_regs[0x31] = ((railVolt >= 17850) ? 0xFF : railVolt/70);
+                            case 8:
+                                m_regs[0x31] = ((m_v18 >= 3875) ? 0xFF : m_v18/15);
+                            case 9:
+                                m_regs[0x31] = ((m_v10 >= 3875) ? 0xFF : m_v10/15);
+                            default:
+                                m_regs[0x31] = 0;
+                        }
+    
+                        if (wrb) {
+                            data_out.write(0);
+                        }
+                        else {
+                            data_out.write(m_regs[0x31]);
+                        }
+                    }
+                    break;
                 }
-                else {
-                    data_out.write(m_regs[addr]);
+                case 0x32: {
+                    if((data & 0x80) && ((m_regs[addr] & 0x80) == 0)) {
+                        m_vren = true;
+                    }
+                    else if(((data & 0x80) == 0) && (m_regs[addr] & 0x80)) {
+                        m_vrdis = true;
+                    }
+    
+                    m_regs[addr] = data;
+                    break;
                 }
+                default:
+                    if (wrb) {
+                        m_regs[addr] = data;
+                    }
+                    else {
+                        data_out.write(m_regs[addr]);
+                    }
+            }
         }
     }
 }
 
-void jpmic::run() {
+void jpmic::fsm() {
     while (true) {
         wait();
 
@@ -245,7 +280,7 @@ void jpmic::run() {
                 if (bulk_in->read() < m_cfg.bulk_pg_thresh) {
                     m_state = pmic_state_t::P0;
                 }
-                else if (vren_in.read() &&
+                else if (vren_in.posedge() &&
                         ((m_regs[0x32] & 0x20) == 0) &&
                         ((m_regs[0x1A] & 0x10) == 0)) {
                     //pwrgd_inout.write(true);
