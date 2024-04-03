@@ -1,6 +1,24 @@
 #ifndef JDAC_H_
 #define JDAC_H_
 
+///
+///\class jdac jdac "include/jdac.h"
+///
+///\section JDAC Analog-to-Digital (ADC) model
+///
+/// ADC model for use in PMICs
+/// 
+/// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER AND CONTRIBUTOR "AS IS" AND ANY
+/// EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+/// OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+/// SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+/// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+/// OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+/// HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+/// TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+/// EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
+///
+
 #include <deque>
 #include <memory>
 #include <systemc.h>
@@ -24,10 +42,17 @@ public:
         DISABLE = 0x09
     };
 
+    ////////////////////////////////////////////////////
+    /// SystemC input ports
+    ////////////////////////////////////////////////////
     sc_in<bool> clk_in;
     sc_in<bool> pwrsum_in;
     sc_in<uint8_t> cmd_in;
     sc_in<uint8_t> temp_in;
+
+    ////////////////////////////////////////////////////
+    /// SystemC output ports
+    ////////////////////////////////////////////////////
     sc_out<uint8_t> data_out;
 
     ////////////////////////////////////////////////////

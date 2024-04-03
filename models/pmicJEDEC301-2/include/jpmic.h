@@ -1,10 +1,26 @@
 #ifndef JPMIC_H_
 #define JPMIC_H_
 
-#include <deque>
+///
+///\class jpmic jpmic "include/jpmic.h"
+///
+///\section JPMIC Power Management IC model
+///
+/// Model for power management of DDR5 DIMMs with the following features
+/// 
+/// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER AND CONTRIBUTOR "AS IS" AND ANY
+/// EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+/// OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+/// SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+/// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+/// OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+/// HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+/// TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+/// EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
+///
+
 #include <memory>
 #include <systemc.h>
-#include <thread>
 #include <vector>
 
 #include "jdac.h"
@@ -58,81 +74,92 @@ public:
         std::vector<jrail::railcfg> railcfg;
     };
 
-    // ports
-    sc_in<bool> clk_in;
-    sc_in<bool> wrb_in;
-    sc_in<bool> vren_in;
-    sc_out<bool> gsi_n_out;
+    ////////////////////////////////////////////////////
+    /// SystemC inout ports
+    ////////////////////////////////////////////////////
     sc_inout<bool> pwrgd_inout;
 
-    sc_in<uint32_t> bulk_in;
+    ////////////////////////////////////////////////////
+    /// SystemC input ports
+    ////////////////////////////////////////////////////
+    sc_in<bool> clk_in;
+    sc_in<bool> vren_in;
+    sc_in<bool> wrb_in;
     sc_in<uint8_t> addr_in;
     sc_in<uint8_t> data_in;
+    sc_in<uint32_t> bulk_in;
 
+    ////////////////////////////////////////////////////
+    /// SystemC output ports
+    ////////////////////////////////////////////////////
+    sc_out<bool> gsi_n_out;
+    sc_out<uint8_t> data_out;
     sc_out<uint32_t> railA_out;
     sc_out<uint32_t> railB_out;
     sc_out<uint32_t> railC_out;
-
     sc_out<uint32_t> v1p8_out;
     sc_out<uint32_t> v1p0_out;
-    sc_out<uint8_t> data_out;
 
-    // wires
-    sc_signal<bool> railA_update;
-    sc_signal<uint32_t> railA_volt;
-    sc_signal<bool> railB_update;
-    sc_signal<uint32_t> railB_volt;
-    sc_signal<bool> railC_update;
-    sc_signal<uint32_t> railC_volt;
-
-    sc_buffer<uint8_t> dac_data_out;
-    sc_buffer<uint8_t> cmd_in;
-    sc_signal<uint8_t> temp_in;
-    sc_buffer<bool> rail_en;
-    sc_buffer<bool> pwrsum_wire;
+    ////////////////////////////////////////////////////
+    /// internal wires
+    ////////////////////////////////////////////////////
     sc_signal<bool> ldo_ramp_en;
-
+    sc_buffer<bool> pwrsum_wire;
+    sc_buffer<bool> rail_en;
+    sc_signal<bool> railA_update;
+    sc_signal<bool> railB_update;
+    sc_signal<bool> railC_update;
     sc_buffer<bool> railA_pwrgd;
     sc_buffer<bool> railB_pwrgd;
     sc_buffer<bool> railC_pwrgd;
-
     sc_buffer<bool> railA_zero;
     sc_buffer<bool> railB_zero;
     sc_buffer<bool> railC_zero;
 
+    sc_buffer<uint8_t> dac_data_out;
+    sc_buffer<uint8_t> cmd_in;
+    sc_signal<uint8_t> temp_in;
+
+    sc_signal<uint32_t> railA_volt;
+    sc_signal<uint32_t> railB_volt;
+    sc_signal<uint32_t> railC_volt;
+
     ////////////////////////////////////////////////////
     /// Constructor
     /// @param cfg - pmic configuration
-    /// @param clk - clock object
     ////////////////////////////////////////////////////
-    SC_CTOR(jpmic, pmicfg& cfg) : clk_in("clk_in"),
-                                  wrb_in("wrb_in"),
+    SC_CTOR(jpmic, pmicfg& cfg) : pwrgd_inout("pwrgd_inout"),
+                                  clk_in("clk_in"),
                                   vren_in("vren_in"),
-                                  gsi_n_out("gsi_n"),
-                                  pwrgd_inout("pwrgd_inou"),
-                                  bulk_in("bulk_in"),
+                                  wrb_in("wrb_in"),
                                   addr_in("addr_in"),
                                   data_in("data_in"),
+                                  bulk_in("bulk_in"),
+                                  gsi_n_out("gsi_n"),
+                                  data_out("data_out"),
                                   railA_out("railA_out"),
                                   railB_out("railB_out"),
                                   railC_out("railC_out"),
                                   v1p8_out("v1p8_out"),
                                   v1p0_out("v1p0_out"),
-                                  data_out("data_out"),
-                                  railA_volt("railA_volt_in", 1100),
-                                  railB_volt("railB_volt_in", 1100),
-                                  railC_volt("railC_volt_in", 1800),
-                                  cmd_in("cmd_in"),
-                                  temp_in("temp_in", 105),
-                                  rail_en("rail_en"),
-                                  pwrsum_wire("pwrsum"),
                                   ldo_ramp_en("ldo_ramp_en", 0),
+                                  pwrsum_wire("pwrsum"),
+                                  rail_en("rail_en"),
+                                  railA_update("railA_update"),
+                                  railB_update("railB_update"),
+                                  railC_update("railC_update"),
                                   railA_pwrgd("railA_pwrgd"),
                                   railB_pwrgd("railB_pwrgd"),
                                   railC_pwrgd("railC_pwrgd"),
                                   railA_zero("railA_zero"),
                                   railB_zero("railB_zero"),
                                   railC_zero("railC_zero"),
+                                  dac_data_out("dac_data_out"),
+                                  cmd_in("cmd_in"),
+                                  temp_in("temp_in", 105),
+                                  railA_volt("railA_volt", 1100),
+                                  railB_volt("railB_volt", 1100),
+                                  railC_volt("railC_volt", 1800),
                                   m_state(pmic_state_t::P0),
                                   m_bulk_valid(false),
                                   m_vren(false),
@@ -158,9 +185,8 @@ public:
                   0x00, 0x42, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                   0x00, 0x00, 0x00, 0x00, 0x00, 0x20, 0x22, 0x00};
 
-        // create the rails
+        // create and connect the rails
         railA = new jrail("railA", cfg.railcfg[0]);
-        railA->clk_in(clk_in);
         railA->enable_in(rail_en);
         railA->update_in(railA_update);
         railA->volt_in(railA_volt);
@@ -170,7 +196,6 @@ public:
         rails->push_back(railA);
 
         railB = new jrail("railB", cfg.railcfg[1]);
-        railB->clk_in(clk_in);
         railB->enable_in(rail_en);
         railB->update_in(railB_update);
         railB->volt_in(railB_volt);
@@ -180,7 +205,6 @@ public:
         rails->push_back(railB);
 
         railC = new jrail("railC", cfg.railcfg[2]);
-        railC->clk_in(clk_in);
         railC->enable_in(rail_en);
         railC->update_in(railC_update);
         railC->volt_in(railC_volt);
@@ -189,7 +213,7 @@ public:
         railC->zero_out(railC_zero);
         rails->push_back(railC);
 
-        // add the DAC
+        // create and connect the DAC
         dac = new jdac("dac", cfg.dac_samples, cfg.dac_sample_time, rails);
         dac->clk_in(clk_in);
         dac->cmd_in(cmd_in);

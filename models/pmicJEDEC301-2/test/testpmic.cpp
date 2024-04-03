@@ -16,11 +16,8 @@
 #include "jdac.h"
 #include "jrail.h"
 #include "jpmic.h"
-#include "jlogger.h"
 #include "top.h"
 #include "optionparser.h"
-
-std::shared_ptr<InterfacePP::jlogger> logger;
 
 enum  optionIndex { UNKNOWN, HELP, LOG };
 
@@ -39,8 +36,6 @@ int main(int argc, char* argv[]) {
 
     // variables
     std::string log("./testPmic.log");
-
-    logger = std::make_shared<InterfacePP::jlogger>(log, true, 4);
 
     // skip program name argv[0] if present
     argc-=(argc>0); argv+=(argc>0);

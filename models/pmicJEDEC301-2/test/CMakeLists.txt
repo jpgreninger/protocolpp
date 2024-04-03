@@ -88,7 +88,6 @@ TARGET_LINK_LIBRARIES(testdac libsystemc)
 # build testpmic
 add_executable(testpmic
         ./tb.cpp
-        ../src/jlogger.cpp
         ../src/jrail.cpp
         ../src/jdac.cpp
         ../src/jpmic.cpp

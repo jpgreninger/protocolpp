@@ -1,42 +1,84 @@
+#ifndef TOP_H_
+#define TOP_H_
+
+///
+///\class top top "include/top.h"
+///
+///\section TOP Power Management IC top level module 
+///
+/// Model for power management IC (PMIC) that follows the JEDEC301-2-1 spec
+/// with the following features
+///
+/// * Three rails (A, B, C)
+/// * All three rails independent or dual AB and independent C
+/// * Secure and programmable modes
+/// * ADC supporting instantaneous and average voltage, current, and power
+/// * ADC number of samples
+/// * ADC sample time
+/// 
+/// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER AND CONTRIBUTOR "AS IS" AND ANY
+/// EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+/// OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+/// SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+/// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+/// OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+/// HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+/// TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+/// EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
+///
+
 #include <systemc.h>
+
 #include "tb.h"
 #include "jpmic.h"
 #include "jrail.h"
 
 SC_MODULE(TOP) {
+    /////////////////////////////////////////////////////
+    /// SystemC top-level modules
+    /////////////////////////////////////////////////////
     tb *tb0;
     jpmic *pmic;
 
+    /////////////////////////////////////////////////////
+    /// SystemC inout ports
+    /////////////////////////////////////////////////////
     sc_clock clk_in;
-    sc_signal<bool> vren_in;
-    sc_signal<bool> pwrgd;
+
+    /////////////////////////////////////////////////////
+    /// SystemC internal wires
+    /////////////////////////////////////////////////////
     sc_buffer<bool> gsi_n;
+    sc_signal<bool> pwrgd;
+    sc_signal<bool> vren_in;
     sc_buffer<bool> wrb;
     sc_buffer<uint8_t> addr_in;
     sc_buffer<uint8_t> data_in;
+    sc_buffer<uint8_t> data_out;
     sc_buffer<uint32_t> bulk_out;
     sc_buffer<uint32_t> railA_out;
     sc_buffer<uint32_t> railB_out;
     sc_buffer<uint32_t> railC_out;
     sc_buffer<uint32_t> v1p8_out;;
     sc_buffer<uint32_t> v1p0_out;
-    sc_buffer<uint8_t> data_out;
 
-    // instantiate rail
+    /////////////////////////////////////////////////////
+    /// SystemC constructor
+    /////////////////////////////////////////////////////
     SC_CTOR(TOP) : clk_in("clk_in"),
-                   vren_in("vren_in"),
-                   pwrgd("pwrgd"),
                    gsi_n("gsi_n"),
+                   pwrgd("pwrgd"),
+                   vren_in("vren_in"),
                    wrb("wrb"),
                    addr_in("addr_in"),
                    data_in("data_in"),
+                   data_out("data_out"),
                    bulk_out("bulk_out"),
                    railA_out("railA_out"),
                    railB_out("railB_out"),
                    railC_out("railC_out"),
                    v1p8_out("v1p8_out"),
-                   v1p0_out("v1p0_out"),
-                   data_out("data_out") {
+                   v1p0_out("v1p0_out") {
         // rail configurations
         std::vector<jrail::railcfg> railcfg;
         railcfg.emplace_back(1100, 0.275, 6000, 4000, 24000, 1100, 2200, 6000, 0);
@@ -102,3 +144,5 @@ SC_MODULE(TOP) {
         pmic->gsi_n_out(gsi_n);
     }
 };
+
+#endif // TOP_H_
