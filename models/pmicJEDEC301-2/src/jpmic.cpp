@@ -48,7 +48,6 @@ void jpmic::regs() {
                     break;
                 case 0x1A:
                     m_regs[0x1A] = data;
-                    //std::cout << "REG0x1A: " << std::setw(2) << std::setfill('0') << std::hex << (int)m_regs[0x1A] << std::endl;
 
                     // enable power summation
                     if ((m_regs[0x1B] & 0x40) && (data & 0x02)) {
@@ -87,7 +86,6 @@ void jpmic::regs() {
                     break;
                 case 0x2F: {
                     m_regs[0x2F] = data;
-                    //std::cout << "REG0x2F: " << std::setw(2) << std::setfill('0') << std::hex << (int)m_regs[0x2F] << std::endl;
                     break;
                 }
                 case 0x30: {
@@ -139,7 +137,6 @@ void jpmic::regs() {
                         m_vrdis = true;
                     }
     
-                    //std::cout << "REG0x32: " << std::setw(2) << std::setfill('0') << std::hex << (int)m_regs[0x32] << std::endl;
                     m_regs[addr] = data;
                     break;
                 }
@@ -280,7 +277,6 @@ void jpmic::fsm() {
                         m_state = pmic_state_t::P1;
                     }
                     else {
-                        // internal VR Disable Event (fault)
                         // P3 -> P2_A2
                         m_state = pmic_state_t::P2_A2;
                     }
