@@ -8,7 +8,7 @@ void jpmic::regs() {
         bool wrb = wrb_in.read();
         uint8_t addr = addr_in.read();
         uint8_t data = data_in.read();
-        bool secured = (((m_regs[0x2F] & 0x02) && (m_regs[0x32] & 0x80)) ? true : false);
+        bool secured = ((!(m_regs[0x2F] & 0x04) && (m_regs[0x32] & 0x80)) ? true : false);
 
         if (secured &&
            (((addr >= 0x15) && (addr <= 0x2F)) ||
@@ -48,7 +48,8 @@ void jpmic::regs() {
                     break;
                 case 0x1A:
                     m_regs[0x1A] = data;
-    
+                    //std::cout << "REG0x1A: " << std::setw(2) << std::setfill('0') << std::hex << (int)m_regs[0x1A] << std::endl;
+
                     // enable power summation
                     if ((m_regs[0x1B] & 0x40) && (data & 0x02)) {
                         pwrsum_wire.write(true);
@@ -84,6 +85,11 @@ void jpmic::regs() {
     
                     m_regs[0x27] = data;
                     break;
+                case 0x2F: {
+                    m_regs[0x2F] = data;
+                    //std::cout << "REG0x2F: " << std::setw(2) << std::setfill('0') << std::hex << (int)m_regs[0x2F] << std::endl;
+                    break;
+                }
                 case 0x30: {
                     m_regs[addr] = data;
                     uint32_t railVolt = 0;
@@ -93,19 +99,25 @@ void jpmic::regs() {
                             case 0:
                                 railVolt = railA_out.read();
                                 m_regs[0x31] = ((railVolt >= 3875) ? 0xFF : railVolt/15);
+                                break;
                             case 2:
                                 railVolt = railB_out.read();
                                 m_regs[0x31] = ((railVolt >= 3875) ? 0xFF : railVolt/15);
+                                break;
                             case 3:
                                 railVolt = railC_out.read();
                                 m_regs[0x31] = ((railVolt >= 3875) ? 0xFF : railVolt/15);
+                                break;
                             case 5:
                                 railVolt = bulk_in->read();
                                 m_regs[0x31] = ((railVolt >= 17850) ? 0xFF : railVolt/70);
+                                break;
                             case 8:
                                 m_regs[0x31] = ((m_v18 >= 3875) ? 0xFF : m_v18/15);
+                                break;
                             case 9:
                                 m_regs[0x31] = ((m_v10 >= 3875) ? 0xFF : m_v10/15);
+                                break;
                             default:
                                 m_regs[0x31] = 0;
                         }
@@ -127,6 +139,7 @@ void jpmic::regs() {
                         m_vrdis = true;
                     }
     
+                    //std::cout << "REG0x32: " << std::setw(2) << std::setfill('0') << std::hex << (int)m_regs[0x32] << std::endl;
                     m_regs[addr] = data;
                     break;
                 }
@@ -156,6 +169,7 @@ void jpmic::fsm() {
                 else if (bulk_in->read() >= m_cfg.bulk_pg_thresh) {
                     pwrgd_inout.write(false);
                     ldo_ramp_en.write(true);
+                    m_regs = m_regs_backup;
                 }
 
                 break;
@@ -178,7 +192,6 @@ void jpmic::fsm() {
                 if (railA_pwrgd.read() && railB_pwrgd.read() && railC_pwrgd.read()) {
                     // go to RUN state
                     pwrgd_inout.write(true);
-                    m_vren = ((m_vren) ? false : m_vren);
                     m_regs[0x2F] |= 0x4C;
                     m_state = pmic_state_t::P3;
                 }
@@ -187,15 +200,17 @@ void jpmic::fsm() {
                     rail_en.write(true);
                 }
 
+                m_vren = ((m_vren) ? false : m_vren);
                 break;
             }
             case pmic_state_t::P3: {
                 if (bulk_in->read() < m_cfg.bulk_pg_thresh) {
                     // soft reset (ramp down nicely)
-                    m_state = pmic_state_t::P0;
+                    ldo_ramp_en.write(false);
+                    m_state = pmic_state_t::RAMPDN;
                 }
-                else if ((m_vrdis && (((m_regs[0x2F] & 0x02) && !(m_regs[0x1A] & 0x10)) ||
-                                      ((m_regs[0x2F] & 0x02) && (m_regs[0x1A] & 0x10)))) ||
+                else if ((m_vrdis && (((m_regs[0x2F] & 0x04) && !(m_regs[0x1A] & 0x10)) ||
+                                      ((m_regs[0x2F] & 0x04) && (m_regs[0x1A] & 0x10)))) ||
                          (vren_in.negedge() && ((!(m_regs[0x32] & 0x20) && !(m_regs[0x1A] & 0x10)) ||
                                                  !(m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10))) ||
                          (pwrgd_inout.negedge() && (m_regs[0x32] & 0x20))) {
@@ -231,7 +246,7 @@ void jpmic::fsm() {
 //                            error = true;
 //                        }
 //
-                        if (error) {
+                        if (m_error) {
                             // drive PWRGD low if a pin toggles
                             pwrgd_inout.write(false);
                             m_state = pmic_state_t::RAMPDN;
@@ -245,18 +260,21 @@ void jpmic::fsm() {
                 // disable all rails
                 if(railA_pwrgd.read() && railA_pwrgd.read() && railA_pwrgd.read()) {
                     rail_en.write(false);
-                    m_regs[0x2F] &= 0xB3;
+                    m_regs[0x2F] &= 0x07;
                 }
                 else if(!railA_zero.read() && !railA_zero.read() && !railA_zero.read()) {
                     // reset rail power good
-                    if ((vren_in.negedge() && !(m_regs[0x32] & 0x20) && !(m_regs[0x1A] & 0x10)) ||
-                        (m_vrdis && (m_regs[0x2F] & 0x02) && !(m_regs[0x1A] & 0x10)) ||
-                        (pwrgd_inout.negedge() && (m_regs[0x32] & 0x20))) {
+                    if (bulk_in->read() < m_cfg.bulk_pg_thresh) {
+                        m_state = pmic_state_t::P0;
+                    }
+                    else if ((!(m_regs[0x32] & 0x20) && !(m_regs[0x1A] & 0x10)) ||
+                              ((m_regs[0x2F] & 0x04) && !(m_regs[0x1A] & 0x10)) ||
+                               (m_regs[0x32] & 0x20)) {
                         // P3 -> P2_A1
                         m_state = pmic_state_t::P2_A1;
                     }
-                    else if ((vren_in.negedge() && !(m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)) ||
-                             (m_vrdis && (m_regs[0x2F] & 0x02) && (m_regs[0x1A] & 0x10))) {
+                    else if ((!(m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)) ||
+                             ((m_regs[0x2F] & 0x04) && (m_regs[0x1A] & 0x10))) {
                         // P3 -> P1
                         ldo_ramp_en.write(false);
                         m_state = pmic_state_t::P1;
@@ -276,7 +294,8 @@ void jpmic::fsm() {
             case pmic_state_t::P2_A1: {
                 // if we have lost power, go OFFLINE; otherwise go to CONFIG
                 if (bulk_in->read() < m_cfg.bulk_pg_thresh) {
-                    m_state = pmic_state_t::P0;
+                    ldo_ramp_en.write(false);
+                    m_state = pmic_state_t::RAMPDN;
                 }
                 else if (vren_in.posedge() &&
                         !(m_regs[0x32] & 0x20) &&
@@ -285,9 +304,9 @@ void jpmic::fsm() {
                     m_state = pmic_state_t::RAMPUP;
                 }
                 else if (m_vren && 
-                        ((!(m_regs[0x2F] & 0x02) && (m_regs[0x32] & 0x20)) ||
-                        ((m_regs[0x2F] & 0x02) && !(m_regs[0x1A] & 0x10)) ||
-                        ((m_regs[0x2F] & 0x02) && (m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)))) {
+                        ((!(m_regs[0x2F] & 0x04) && (m_regs[0x32] & 0x20)) ||
+                        ((m_regs[0x2F] & 0x04) && !(m_regs[0x1A] & 0x10)) ||
+                        ((m_regs[0x2F] & 0x04) && (m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)))) {
                     //pwrgd_inout.write(true);
                     m_state = pmic_state_t::RAMPUP;
                 }
@@ -303,7 +322,7 @@ void jpmic::fsm() {
 //                            error = true;
 //                        }
 //
-                        if (error) {
+                        if (m_error) {
                             m_state = pmic_state_t::P2_A2;
                         }
 //                    }
@@ -314,21 +333,22 @@ void jpmic::fsm() {
             case pmic_state_t::P2_A2: {
                 // if we have lost power, go OFFLINE; otherwise go to CONFIG
                 if (bulk_in->read() < m_cfg.bulk_pg_thresh) {
-                    m_state = pmic_state_t::P0;
+                    ldo_ramp_en.write(false);
+                    m_state = pmic_state_t::RAMPDN;
                 }
                 else if ((m_vren || vren_in.posedge()) && !(m_regs[0x32] & 0x20)) {
                     // pin or VR_EN written when not allowed
                     pwrgd_inout.write(false);
                 }
                 else if (vren_in.posedge() &&
-                        (((m_regs[0x2F] & 0x02) && !(m_regs[0x32] & 0x20) && !(m_regs[0x1A] & 0x10)) ||
-                        ((m_regs[0x2F] & 0x02) && !(m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)))) {
+                        (((m_regs[0x2F] & 0x04) && !(m_regs[0x32] & 0x20) && !(m_regs[0x1A] & 0x10)) ||
+                        ((m_regs[0x2F] & 0x04) && !(m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)))) {
                     pwrgd_inout.write(true);
                     m_state = pmic_state_t::RAMPUP;
                 }
-                else if (m_vren && (((m_regs[0x2F] & 0x02) && !(m_regs[0x1A] & 0x10)) ||
-                        ((m_regs[0x2F] & 0x02) && !(m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)) ||
-                        ((m_regs[0x2F] & 0x02) && (m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)))) {
+                else if (m_vren && (((m_regs[0x2F] & 0x04) && !(m_regs[0x1A] & 0x10)) ||
+                        ((m_regs[0x2F] & 0x04) && !(m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)) ||
+                        ((m_regs[0x2F] & 0x04) && (m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)))) {
                     pwrgd_inout.write(true);
                     m_state = pmic_state_t::RAMPUP;
                 }
@@ -360,8 +380,8 @@ void jpmic::ldo_ramp() {
         }
         else if (ldo_ramp_en.negedge()) {
             while ((m_v18 > 0) || (m_v10 > 0)) {
-                m_v18 = (((m_v18-50) > 0) ? m_v18-50 : 0);
-                m_v10 = (((m_v10-50) > 0) ? m_v10-50 : 0);
+                m_v18 = (((int)(m_v18-50) < 0) ? 0 : m_v18-50);
+                m_v10 = (((int)(m_v10-50) < 0) ? 0 : m_v10-50);
 
                 v1p8_out.write(m_v18);
                 v1p0_out.write(m_v10);
