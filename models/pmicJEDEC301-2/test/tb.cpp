@@ -13,8 +13,15 @@ void tb::run() {
         wait(1, SC_NS);
     }
 
+    //addr_out.write(jpmic::pmicreg_t::R2F);
+    // shouldn't have to wait here
+    //wait(1, SC_PS);
+    //data_reg = data_in.read();
+    //std::cout << std::endl << "Start R2F: " << std::setw(2) << std::setfill('0') << std::hex << (int)data_reg << std::dec << std::endl << std::endl;
+
     // read R32 for read-update-write
     addr_out.write(jpmic::pmicreg_t::R32);
+    wait(1, SC_PS);
     data_reg = data_in.read();
     data_reg |= 0x80;
 
@@ -30,7 +37,6 @@ void tb::run() {
     wrb_out.write(false);
     addr_out.write(0);
 
-    // wait for rail ramp (could pull the three rail outputs)
     wait(15, SC_MS);
     std::cout << "RailA enabled to 1100mV, at: " << (int)railA_in.read() << std::endl;
     std::cout << "RailB enabled to 1100mV, at: " << (int)railB_in.read() << std::endl;
@@ -40,6 +46,11 @@ void tb::run() {
     std::cout << "PWRGD floats, at: " << pwrgd_inout.read() << std::endl;
 
     wait(5, SC_MS);
+
+    //addr_out.write(jpmic::pmicreg_t::R2F);
+    //wait(1, SC_NS);
+    //data_reg = data_in.read();
+    //std::cout << std::endl << "Before VR_EN=0 R2F: " << std::setw(2) << std::setfill('0') << std::hex << (int)data_reg << std::dec << std::endl << std::endl;
 
     // read R32 for read-update-write
     addr_out.write(jpmic::pmicreg_t::R32);
@@ -55,8 +66,8 @@ void tb::run() {
     wrb_out.write(false);
     addr_out.write(0);
 
-    // wait for rails to ramp down to zero
     wait(5, SC_MS);
+
     std::cout << "RailA enabled to 1100mV, at: " << (int)railA_in.read() << std::endl;
     std::cout << "RailB enabled to 1100mV, at: " << (int)railB_in.read() << std::endl;
     std::cout << "RailC enabled to 1800mV, at: " << (int)railC_in.read() << std::endl;
@@ -66,12 +77,12 @@ void tb::run() {
 
     wait(6, SC_MS);
 
-    // L->H toggle of VR_EN pin
+    // write VR_EN
     vren_out.write(true);
     std::cout << std::endl << "Assert VR_EN pin=1" << std::endl;
 
-    // wait for rails to come back on from P2_A1
     wait(10, SC_MS);
+
     std::cout << "RailA enabled to 1100mV, at: " << (int)railA_in.read() << std::endl;
     std::cout << "RailB enabled to 1100mV, at: " << (int)railB_in.read() << std::endl;
     std::cout << "RailC enabled to 1800mV, at: " << (int)railC_in.read() << std::endl;
@@ -81,7 +92,6 @@ void tb::run() {
 
     wait(1, SC_MS);
 
-    // ramp down BULK to exit SECURE_MODE
     while(bulk_volt != 0) {
         bulk_volt = ((bulk_volt-50 < 0) ? 0 : bulk_volt-50);
         bulk_out.write(bulk_volt);
@@ -89,7 +99,7 @@ void tb::run() {
     }
 
     std::cout << "PMIC BULK IN RAMPED down: " << (int)bulk_volt << std::endl;
-    wait(1, SC_MS);
+    wait(10, SC_MS);
 
     while(bulk_volt < 5000) {
         bulk_volt += 50;
@@ -106,7 +116,7 @@ void tb::run() {
 
     wait(1, SC_NS);
 
-    // enable programmable mode
+    // write programmable mode
     wrb_out.write(true);
     wait(1, SC_NS);
     std::cout << "Write R2F[2]=1, enable Programmable Mode..." << std::endl;
@@ -135,7 +145,6 @@ void tb::run() {
     wrb_out.write(false);
     addr_out.write(0);
 
-    // wait for rails to ramp up from VR_EN=1 bus write
     wait(15, SC_MS);
     std::cout << "RailA enabled to 1100mV, at: " << (int)railA_in.read() << std::endl;
     std::cout << "RailB enabled to 1100mV, at: " << (int)railB_in.read() << std::endl;
@@ -150,7 +159,7 @@ void tb::run() {
     addr_out.write(jpmic::pmicreg_t::R32);
     data_reg = data_in.read();
 
-    // Disable VR_EN=0 while in programmable mode
+    // Disable VR_EN
     wrb_out.write(true);
     wait(1, SC_NS);
     std::cout << "Write VR_EN=0" << std::endl;
@@ -160,8 +169,8 @@ void tb::run() {
     wrb_out.write(false);
     addr_out.write(0);
 
-    // wait for rails to ramp down to zero
     wait(5, SC_MS);
+
     std::cout << "RailA enabled to 1100mV, at: " << (int)railA_in.read() << std::endl;
     std::cout << "RailB enabled to 1100mV, at: " << (int)railB_in.read() << std::endl;
     std::cout << "RailC enabled to 1800mV, at: " << (int)railC_in.read() << std::endl;
@@ -178,7 +187,7 @@ void tb::run() {
 
     wait(1, SC_NS);
 
-    // write VR_EN=1
+    // write VR_EN
     wrb_out.write(true);
     wait(1, SC_NS);
     std::cout << "Write VR_EN=1" << std::endl;
@@ -188,8 +197,8 @@ void tb::run() {
     wrb_out.write(false);
     addr_out.write(0);
 
-    // wait for rails to ramp up by VR_EN=1 bus write
     wait(15, SC_MS);
+
     std::cout << "RailA enabled to 1100mV, at: " << (int)railA_in.read() << std::endl;
     std::cout << "RailB enabled to 1100mV, at: " << (int)railB_in.read() << std::endl;
     std::cout << "RailC enabled to 1800mV, at: " << (int)railC_in.read() << std::endl;
@@ -199,7 +208,5 @@ void tb::run() {
 
     wait(1, SC_MS);
 
-    // @todo test of quiescence mode
-    
     sc_stop();
 }

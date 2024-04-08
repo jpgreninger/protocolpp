@@ -186,6 +186,8 @@ public:
                          0x00, 0x42, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                          0x00, 0x00, 0x00, 0x00, 0x00, 0x20, 0x22, 0x00};
 
+        m_regs = m_regs_backup;
+
         // create and connect the rails
         railA = new jrail("railA", cfg.railcfg[0]);
         railA->enable_in(rail_en);
@@ -223,7 +225,8 @@ public:
         dac->pwrsum_in(pwrsum_wire);
 
         // Register read/write are based on CLK_IN
-        SC_CTHREAD(regs, clk_in.pos());
+        SC_THREAD(regs);
+            sensitive << clk_in.pos() << wrb_in << addr_in << data_in;
 
         // FSM needs to sensitive to CLK_IN but also to VREN and PWRGD pins
         SC_THREAD(fsm);
@@ -254,6 +257,8 @@ public:
     ////////////////////////////////////////////////////
     void ldo_ramp();
 
+    std::array<uint8_t, 96> m_regs;
+
 private:
 
     pmic_state_t m_state;
@@ -264,7 +269,6 @@ private:
     pmicfg m_cfg;
     uint32_t m_v18, m_v10;
     std::shared_ptr<std::vector<jrail*>> rails;
-    std::array<uint8_t, 96> m_regs;
     std::array<uint8_t, 96> m_regs_backup;
 };
 

@@ -54,7 +54,7 @@ SC_MODULE(TOP) {
     sc_buffer<bool> wrb;
     sc_buffer<uint8_t> addr_in;
     sc_buffer<uint8_t> data_in;
-    sc_buffer<uint8_t> data_out;
+    sc_buffer<uint8_t> reg_data_out;
     sc_buffer<uint32_t> bulk_out;
     sc_buffer<uint32_t> railA_out;
     sc_buffer<uint32_t> railB_out;
@@ -72,7 +72,7 @@ SC_MODULE(TOP) {
                    wrb("wrb"),
                    addr_in("addr_in"),
                    data_in("data_in"),
-                   data_out("data_out"),
+                   reg_data_out("reg_data_out"),
                    bulk_out("bulk_out"),
                    railA_out("railA_out"),
                    railB_out("railB_out"),
@@ -119,7 +119,7 @@ SC_MODULE(TOP) {
         tb0->railA_in(railA_out);
         tb0->railB_in(railB_out);
         tb0->railC_in(railC_out);
-        tb0->data_in(data_out);
+        tb0->data_in(reg_data_out);
         tb0->gsi_n_in(gsi_n);
 
         // connect rail
@@ -140,7 +140,7 @@ SC_MODULE(TOP) {
         pmic->railC_out(railC_out);
         pmic->v1p8_out(v1p8_out);
         pmic->v1p0_out(v1p0_out);
-        pmic->data_out(data_out);
+        pmic->data_out(reg_data_out);
         pmic->gsi_n_out(gsi_n);
     }
 };
