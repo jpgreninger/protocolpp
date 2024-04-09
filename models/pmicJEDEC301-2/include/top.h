@@ -66,7 +66,7 @@ SC_MODULE(TOP) {
     /// SystemC constructor
     /////////////////////////////////////////////////////
     SC_CTOR(TOP) : clk_in("clk_in"),
-                   gsi_n("gsi_n"),
+                   gsi_n("gsi_n", true),
                    pwrgd("pwrgd"),
                    vren_in("vren_in"),
                    wrb("wrb"),
