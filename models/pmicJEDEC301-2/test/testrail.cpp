@@ -62,9 +62,9 @@ int main(int argc, char* argv[]) {
     sc_trace(file, top.enable_wire, "enable");
     sc_trace(file, top.volt_wire, "volt_in");
     sc_trace(file, top.rail_wire, "rail_voltage");
-    sc_trace(file, top.rail->m_update, "update");
-    sc_trace(file, top.rail->myenable, "inten");
-    sc_trace(file, top.rail->new_voltage, "new_volt");
+    sc_trace(file, top.rail->update_in, "update");
+    sc_trace(file, top.rail->enable_in, "enable");
+    sc_trace(file, top.rail->volt_in, "new_volt");
                                   
     sc_start();
     sc_close_vcd_trace_file(file); // close trace file

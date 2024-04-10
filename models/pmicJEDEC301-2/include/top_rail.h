@@ -7,6 +7,9 @@ SC_MODULE(TOPRAIL) {
     jrail *rail;
 
     sc_buffer<bool> enable_wire;
+    sc_buffer<bool> pwrgd_wire;
+    sc_buffer<bool> zero_wire;
+    sc_buffer<bool> update_wire;
     sc_buffer<uint32_t> volt_wire;
     sc_buffer<uint32_t> rail_wire;
 
@@ -20,15 +23,21 @@ SC_MODULE(TOPRAIL) {
 
         // outputs
         tb->enable_out(enable_wire);
+        tb->update_out(update_wire);
         tb->volt_out(volt_wire);
         tb->rail_in(rail_wire);
+        tb->pwrgd_in(pwrgd_wire);
+        tb->zero_in(zero_wire);
 
         // connect rail
         rail = new jrail("rail", railcfg);
 
         // inputs
         rail->enable_in(enable_wire);
+        rail->update_in(update_wire);
         rail->volt_in(volt_wire);
         rail->rail_out(rail_wire);
+        rail->pwrgd_out(pwrgd_wire);
+        rail->zero_out(zero_wire);
     }
 };
