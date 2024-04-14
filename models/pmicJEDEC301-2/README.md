@@ -1,6 +1,6 @@
 # JEDEC301-2-1 PMIC SystemC model
 
-Basic model for this PMIC spec. Out of a concern for being too "fancy", I've limited the model to the default functionality as expressed in the default settings of the registers. See chapter 6 for the basic functionalty. Most status registers are not updated except for rail PG, Table 102-203, and the ADC outputs. The ADC is fully functional and the I2c/I3C interface has been turned into a simple C++ read/write with wrb strobe. Missing functionality that may or may not be implemented in the future
+Basic model for this PMIC spec. I have often been accused of being too "fancy" because I implement all the features and every detail, so I have limited the model to the default functionality as expressed in the default settings of the registers and in the diagrams of the spec. See chapter 6 for the basic functionalty. Most status registers are not updated except for rail PG, Table 102-203, and the ADC outputs. The ADC is fully functional and the I2c/I3C interface has been turned into a simple C++ read/write with wrb strobe. Missing functionality that may or may not be implemented in the future
 
 * Error injection
 * Programmable mode single rail on/off
@@ -10,6 +10,7 @@ Functionality that will be added in the future:
 
 * Fault detection for OVM/UVM/OCM/UCM/BULK and temperature
 
+If you would like a fully functional SystemC model of this spec, you can find it in the paid version of Protocolpp®
 
 Rail configuratin to support the soft_start/stop idle times and soft_start/stop times for rails requires adding the ramp time to the idle time for the correct effect. For example, using the default values, the soft_start_time is 1ms with an idle of 2ms. To get the staggered rails ramp of D-B-A, add the ramp time of D to the idle time of B, etc. Here's an example from jrail::railcfg
 
