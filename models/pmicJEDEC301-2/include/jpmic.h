@@ -144,7 +144,7 @@ public:
                                   railC_out("railC_out"),
                                   v1p8_out("v1p8_out"),
                                   v1p0_out("v1p0_out"),
-                                  ldo_ramp_en("ldo_ramp_en", 0),
+                                  ldo_ramp_en("ldo_ramp_en", false),
                                   pwrsum_wire("pwrsum"),
                                   rail_en("rail_en"),
                                   railA_update("railA_update"),
