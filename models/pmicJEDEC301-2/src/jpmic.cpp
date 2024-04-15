@@ -81,9 +81,9 @@ void jpmic::regs() {
                 }
                 case 0x30: {
                     m_regs[addr] = data;
-                    uint32_t railVolt = 0;
-    
+
                     if (data & 0x80) {
+                        uint32_t railVolt = 0;
                         switch(data & 0x78) {
                             case 0:
                                 railVolt = railA_out.read();
@@ -150,6 +150,206 @@ void jpmic::regs() {
                     data_out.write(m_regs[addr]);
             }
         }
+    }
+}
+
+void jpmic::volt_chk() {
+    bool m_ovrA=false;
+    bool m_ovrB=false;
+    bool m_ovrC=false;
+
+    bool m_uvrA=false;
+    bool m_uvrB=false;
+    bool m_uvrC=false;
+
+    while (true) {
+        wait();
+
+        int railA_setting = (800 + (5 * ((m_regs[0x21] & 0xFE) >> 1)));
+        int railB_setting = (800 + (5 * ((m_regs[0x25] & 0xFE) >> 1)));
+        int railC_setting = (1500 + (5 * ((m_regs[0x27] & 0xFE) >> 1)));
+
+        // read the voltage
+        int railA_vout = rails->at(0)->voltage();
+        int railB_vout = rails->at(1)->voltage();
+        int railC_vout = rails->at(2)->voltage();
+
+        // read bulk in
+        uint32_t bulk_in_read = bulk_in.read();
+
+        // SWA OVR
+        switch(m_regs[0x22] & 0x30) {
+            case 0x00:
+                m_ovrA = (railA_vout > (railA_setting + (railA_setting * 0.0075)));
+                break;
+            case 0x10:
+                m_ovrA = (railA_vout > (railA_setting + (railA_setting * 0.01)));
+                break;
+            case 0x20:
+                m_ovrA = (railA_vout > (railA_setting + (railA_setting * 0.0125)));
+                break;
+            default:
+                m_ovrA = false;
+        }
+
+        // SWA UVR
+        switch(m_regs[0x22] & 0x0C) {
+            case 0x00:
+                m_uvrA = (railA_vout < (railA_setting - (railA_setting * 0.010)));
+                break;
+            case 0x04:
+                m_uvrA = (railA_vout < (railA_setting - (railA_setting * 0.0125)));
+                break;
+            default:
+                m_uvrA = false;
+        }
+
+        // SWB OVR
+        switch(m_regs[0x26] & 0x30) {
+            case 0x00:
+                m_ovrB = (railB_vout > (railB_setting + (railB_setting * 0.0075)));
+                break;
+            case 0x10:
+                m_ovrB = (railA_vout > (railA_setting + (railA_setting * 0.01)));
+                break;
+            case 0x20:
+                m_ovrB = (railA_vout > (railA_setting + (railA_setting * 0.0125)));
+                break;
+            default:
+                m_ovrB = false;
+        }
+
+        // SWA UVR
+        switch(m_regs[0x26] & 0x0C) {
+            case 0x00:
+                m_uvrB = (railB_vout < (railB_setting - (railB_setting * 0.010)));
+                break;
+            case 0x04:
+                m_uvrA = (railB_vout < (railB_setting - (railB_setting * 0.0125)));
+                break;
+            default:
+                m_uvrB = false;
+        }
+
+        // SWC OVR
+        switch(m_regs[0x28] & 0x30) {
+            case 0x00:
+                m_ovrC = (railC_vout > (railC_setting + (railC_setting * 0.0075)));
+                break;
+            case 0x10:
+                m_ovrC = (railC_vout > (railC_setting + (railC_setting * 0.01)));
+                break;
+            case 0x20:
+                m_ovrC = (railC_vout > (railC_setting + (railC_setting * 0.0125)));
+                break;
+            default:
+                m_ovrC = false;
+        }
+
+        // SWC UVR
+        switch(m_regs[0x28] & 0x0C) {
+            case 0x00:
+                m_uvrC = (railC_vout < (railC_setting - (railC_setting * 0.010)));
+                break;
+            case 0x04:
+                m_uvrC = (railC_vout < (railC_setting - (railC_setting * 0.0125)));
+                break;
+            default:
+                m_uvrC = false;
+        }
+
+        // rail OVR/UVR
+        m_ovr = m_ovrA | m_ovrB | m_ovrC;
+        m_uvr = m_uvrA | m_uvrB | m_uvrC;
+
+        // bulk input OVR/UVR
+        m_bulk_ovr = bulk_in_read > m_cfg.bulk_max_volt;
+        m_bulk_uvr = bulk_in_read < m_cfg.bulk_min_volt;
+    }
+}
+
+void jpmic::curr_chk() {
+    bool m_limitA=false;
+    bool m_limitB=false;
+    bool m_limitC=false;
+    bool m_consumA=false;
+    bool m_consumB=false;
+    bool m_consumC=false;
+
+    while (true) {
+        wait();
+
+        // rail curent limiter setting
+        int railA_limit = (3000 + (500 * ((m_regs[0x20] & 0xC0) >> 6)));
+        int railB_limit = (3000 + (500 * ((m_regs[0x20] & 0x0C) >> 2)));
+        int railC_limit = (500 + (500 * (m_regs[0x20] & 0x03)));
+
+        // rail current consumption setting
+        int railA_consump = (125 * ((m_regs[0x1C] & 0xFC) >> 2));
+        int railB_consump = (125 * ((m_regs[0x1E] & 0xFC) >> 2));
+        int railC_consump = (125 * ((m_regs[0x1F] & 0xFC) >> 2));
+
+        // read the current
+        int railA_curr = rails->at(0)->current();
+        int railB_curr = rails->at(1)->current();
+        int railC_curr = rails->at(2)->current();
+
+        // SWA current limiter
+        m_limitA = railA_curr > railA_limit;
+
+        // SWA current consumption
+        m_consumA = railA_curr > railA_consump;
+
+        // SWB current limiter
+        m_limitB = railB_curr > railB_limit;
+
+        // SWB current consumption
+        m_consumB = railB_curr > railB_consump;
+
+        // SWC current limiter
+        m_limitC = railC_curr > railC_limit;
+
+        // SWC current consumption
+        m_consumC = railC_curr > railC_consump;
+
+        // rail OVR/UVR
+        m_limit = m_limitA | m_limitB | m_limitC;
+        m_consum = m_consumA | m_consumB | m_consumC;
+    }
+}
+
+void jpmic::temp_chk() {
+    while(true) {
+        wait();
+
+        uint8_t temp = temp_in.read();
+
+        // check temperature warning
+        switch(m_regs[0x1B] & 0x07) {
+            case 0x01:
+                m_twarn = (temp >= 85);
+                break;
+            case 0x02:
+                m_twarn = (temp >= 95);
+                break;
+            case 0x03:
+                m_twarn = (temp >= 105);
+                break;
+            case 0x04:
+                m_twarn = (temp >= 115);
+                break;
+            case 0x05:
+                m_twarn = (temp >= 125);
+                break;
+            case 0x06:
+                m_twarn = (temp >= 135);
+                break;
+            default:
+                m_twarn = false;
+        }
+
+        // check shutdown temperature
+        m_shutdown = (temp >= (105 + (5 * (m_regs[0x2E] & 0x07))));
     }
 }
 
@@ -235,22 +435,11 @@ void jpmic::fsm() {
                 }
                 else {
                     // check the rails for faults
-                    m_error = false;
-
-//                    for(auto &rail : *rails) {
-//                        if (rail->voltage() > m_cfg.bulk_max_volt) {
-//                            error = true;
-//                        }
-//                        else if (rail->voltage() < m_cfg.bulk_pg_thresh) {
-//                            error = true;
-//                        }
-//
-                        if (m_error) {
-                            // drive PWRGD low if a pin toggles
-                            pwrgd_inout.write(false);
-                            m_state = pmic_state_t::RAMPDN;
-                        }
-//                    }
+                    if (m_ovr | m_uvr | m_bulk_ovr | m_bulk_uvr) {
+                        // drive PWRGD low if a pin toggles
+                        pwrgd_inout.write(false);
+                        m_state = pmic_state_t::RAMPDN;
+                    }
                 }
     
                 break;
@@ -285,7 +474,6 @@ void jpmic::fsm() {
                     }
 
                     m_vrdis = ((m_vrdis) ? false : m_vrdis);
-                    m_error = false;
                 }
 
                 break;
@@ -310,21 +498,9 @@ void jpmic::fsm() {
                     m_state = pmic_state_t::RAMPUP;
                 }
                 else {
-                    // check the rails for faults
-                    m_error = false;
-
-//                    for(auto &rail : *rails) {
-//                        if (rail->voltage() > m_cfg.bulk_max_volt) {
-//                            error = true;
-//                        }
-//                        else if (rail->voltage() < m_cfg.bulk_pg_thresh) {
-//                            error = true;
-//                        }
-//
-                        if (m_error) {
-                            m_state = pmic_state_t::P2_A2;
-                        }
-//                    }
+                    if (m_bulk_ovr | m_bulk_uvr) {
+                        m_state = pmic_state_t::P2_A2;
+                    }
                 }
 
                 break;

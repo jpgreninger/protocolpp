@@ -63,6 +63,7 @@ public:
     ////////////////////////////////////////////////////
     struct pmicfg {
         uint32_t bulk_pg_thresh;
+        uint32_t bulk_min_volt;
         uint32_t bulk_max_volt;
         uint32_t bulk_to_vren;
         uint32_t v18_pg_thresh;
@@ -162,13 +163,19 @@ public:
                                   railB_volt("railB_volt", 1100),
                                   railC_volt("railC_volt", 1800),
                                   m_state(pmic_state_t::P0),
-                                  m_bulk_valid(false),
                                   m_vren(false),
                                   m_vrdis(false),
-                                  m_error(false),
                                   m_cfg(cfg),
                                   m_v18(0),
-                                  m_v10(0) {
+                                  m_v10(0),
+                                  m_ovr(false),
+                                  m_uvr(false),
+                                  m_bulk_ovr(false),
+                                  m_bulk_uvr(false),
+                                  m_limit(false),
+                                  m_consum(false),
+                                  m_twarn(false),
+                                  m_shutdown(false) {
 
         rails = std::make_shared<std::vector<jrail*>>();
 
@@ -228,6 +235,15 @@ public:
         SC_THREAD(regs);
             sensitive << clk_in.pos() << wrb_in << addr_in << data_in;
 
+        // monitor voltage
+        SC_CTHREAD(volt_chk, clk_in.pos());
+
+        // monitor current
+        SC_CTHREAD(curr_chk, clk_in.pos());
+
+        // monitor temperature
+        SC_CTHREAD(temp_chk, clk_in.pos());
+
         // FSM needs to sensitive to CLK_IN but also to VREN and PWRGD pins
         SC_THREAD(fsm);
             sensitive << clk_in.pos() << vren_in << pwrgd_inout;
@@ -248,6 +264,21 @@ public:
     void regs();
 
     ////////////////////////////////////////////////////
+    /// monitor rail and bulk voltage (OVR/UVR)
+    ////////////////////////////////////////////////////
+    void volt_chk();
+
+    ////////////////////////////////////////////////////
+    /// monitor rail current (LIMITER/CONSUMPTION)
+    ////////////////////////////////////////////////////
+    void curr_chk();
+
+    ////////////////////////////////////////////////////
+    /// monitor die temperature
+    ////////////////////////////////////////////////////
+    void temp_chk();
+
+    ////////////////////////////////////////////////////
     /// run the pmic
     ////////////////////////////////////////////////////
     void fsm();
@@ -262,14 +293,20 @@ public:
 private:
 
     pmic_state_t m_state;
-    bool m_bulk_valid;
     bool m_vren;
     bool m_vrdis;
-    bool m_error;
     pmicfg m_cfg;
     uint32_t m_v18, m_v10;
     std::shared_ptr<std::vector<jrail*>> rails;
     std::array<uint8_t, 96> m_regs_backup;
+    bool m_ovr;
+    bool m_uvr;
+    bool m_bulk_ovr;
+    bool m_bulk_uvr;
+    bool m_limit;
+    bool m_consum;
+    bool m_twarn;
+    bool m_shutdown;
 };
 
 #endif // JPMIC_H_

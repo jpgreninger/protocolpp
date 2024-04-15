@@ -90,6 +90,7 @@ SC_MODULE(TOP) {
     
         // populate the PMIC configuration
         cfg.bulk_pg_thresh = 4250;
+        cfg.bulk_min_volt = 4000;
         cfg.bulk_max_volt = 6000;
         cfg.bulk_to_vren = 8;
         cfg.v18_pg_thresh = 1600;

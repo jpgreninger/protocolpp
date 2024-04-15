@@ -28,10 +28,10 @@ void tb::run() {
     wait(1, SC_NS);
 
     // write VR_EN
-    wrb_out.write(true);
+    addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     std::cout << "Write VR_EN=1" << std::endl;
-    addr_out.write(jpmic::pmicreg_t::R32);
+    wrb_out.write(true);
     data_out.write(data_reg);
     wait(1, SC_NS);
     wrb_out.write(false);
@@ -57,10 +57,10 @@ void tb::run() {
     data_reg = data_in.read();
 
     // Disable VR_EN
-    wrb_out.write(true);
+    addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     std::cout << std::endl << "Write VR_EN=0" << std::endl;
-    addr_out.write(jpmic::pmicreg_t::R32);
+    wrb_out.write(true);
     data_out.write(0x7F & data_reg);
     wait(1, SC_NS);
     wrb_out.write(false);
@@ -117,10 +117,10 @@ void tb::run() {
     wait(1, SC_NS);
 
     // write programmable mode
-    wrb_out.write(true);
+    addr_out.write(jpmic::pmicreg_t::R2F);
     wait(1, SC_NS);
     std::cout << "Write R2F[2]=1, enable Programmable Mode..." << std::endl;
-    addr_out.write(jpmic::pmicreg_t::R2F);
+    wrb_out.write(true);
     data_out.write(data_reg);
     wait(1, SC_NS);
     wrb_out.write(false);
@@ -131,15 +131,14 @@ void tb::run() {
     // read R32 for read-update-write
     addr_out.write(jpmic::pmicreg_t::R32);
     data_reg = data_in.read();
+    wait(1, SC_NS);
     data_reg |= 0x80;
 
-    wait(1, SC_NS);
-
     // write VR_EN
-    wrb_out.write(true);
+    addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     std::cout << "Write VR_EN=1" << std::endl;
-    addr_out.write(jpmic::pmicreg_t::R32);
+    wrb_out.write(true);
     data_out.write(data_reg);
     wait(1, SC_NS);
     wrb_out.write(false);
@@ -160,10 +159,10 @@ void tb::run() {
     data_reg = data_in.read();
 
     // Disable VR_EN
-    wrb_out.write(true);
+    addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     std::cout << "Write VR_EN=0" << std::endl;
-    addr_out.write(jpmic::pmicreg_t::R32);
+    wrb_out.write(true);
     data_out.write(0x7F & data_reg);
     wait(1, SC_NS);
     wrb_out.write(false);
@@ -183,15 +182,14 @@ void tb::run() {
     // read R32 for read-update-write
     addr_out.write(jpmic::pmicreg_t::R32);
     data_reg = data_in.read();
+    wait(1, SC_NS);
     data_reg |= 0x80;
 
-    wait(1, SC_NS);
-
     // write VR_EN
-    wrb_out.write(true);
+    addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     std::cout << "Write VR_EN=1" << std::endl;
-    addr_out.write(jpmic::pmicreg_t::R32);
+    wrb_out.write(true);
     data_out.write(data_reg);
     wait(1, SC_NS);
     wrb_out.write(false);

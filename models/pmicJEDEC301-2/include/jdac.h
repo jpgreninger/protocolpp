@@ -2,7 +2,7 @@
 #define JDAC_H_
 
 ///
-///\class jdac jdac "include/jdac.h"
+///\class jdac JDAC "include/jdac.h"
 ///
 ///\section JDAC Analog-to-Digital (ADC) model
 ///
@@ -59,7 +59,7 @@ public:
     /// Constructor
     /// @param samples - Number of sample in average calculation
     /// @param sample_time - Sample time in nanoseconds
-    /// @param rail - Structure with rail configuration
+    /// @param rails - Structure with rail configuration
     ////////////////////////////////////////////////////
     SC_CTOR(jdac,
             uint32_t samples,
