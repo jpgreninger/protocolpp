@@ -257,11 +257,11 @@ void jpmic::fsm() {
             }
             case pmic_state_t::RAMPDN: {
                 // disable all rails
-                if(railA_pwrgd.read() && railA_pwrgd.read() && railA_pwrgd.read()) {
+                if(railA_pwrgd.read() && railB_pwrgd.read() && railC_pwrgd.read()) {
                     rail_en.write(false);
                     m_regs[0x2F] &= 0x07;
                 }
-                else if(!railA_zero.read() && !railA_zero.read() && !railA_zero.read()) {
+                else if(!railA_zero.read() && !railB_zero.read() && !railC_zero.read()) {
                     // reset rail power good
                     if (bulk_in->read() < m_cfg.bulk_pg_thresh) {
                         m_state = pmic_state_t::P0;
