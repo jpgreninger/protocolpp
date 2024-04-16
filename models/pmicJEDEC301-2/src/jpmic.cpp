@@ -145,6 +145,7 @@ void jpmic::regs() {
                 case 0x37:
                 case 0x38:
                     // WO registers
+                    data_out.write(0);
                     break;
                 default:
                     data_out.write(m_regs[addr]);
@@ -259,11 +260,17 @@ void jpmic::volt_chk() {
         }
 
         // rail OVR/UVR
-        m_ovr = m_ovrA | m_ovrB | m_ovrC;
-        m_uvr = m_uvrA | m_uvrB | m_uvrC;
+        m_ovr = ((m_ovrA && tOutput_OV_VR_Disable_A_trigger) ||
+                 (m_ovrB && tOutput_OV_VR_Disable_B_trigger) ||
+                 (m_ovrC && tOutput_OV_VR_Disable_C_trigger));
+
+        m_uvr = ((m_uvrA && tOutput_UV_VR_Disable_A_trigger) ||
+                 (m_uvrB && tOutput_UV_VR_Disable_B_trigger) ||
+                 (m_uvrC && tOutput_UV_VR_Disable_C_trigger));
 
         // bulk input OVR/UVR
-        m_bulk_ovr = bulk_in_read > m_cfg.bulk_max_volt;
+        m_bovr     = (bulk_in_read > m_cfg.bulk_max_volt);
+        m_bulk_ovr = (tInput_OV_VR_Disable_trigger && m_bovr);
         m_bulk_uvr = bulk_in_read < m_cfg.bulk_min_volt;
     }
 }
@@ -313,7 +320,10 @@ void jpmic::curr_chk() {
         m_consumC = railC_curr > railC_consump;
 
         // rail OVR/UVR
-        m_limit = m_limitA | m_limitB | m_limitC;
+        m_limit = ((m_limitA && tOutput_Current_Limiter_A_trigger) ||
+                   (m_limitB && tOutput_Current_Limiter_B_trigger) ||
+                   (m_limitC && tOutput_Current_Limiter_C_trigger));
+
         m_consum = m_consumA | m_consumB | m_consumC;
     }
 }
@@ -349,7 +359,183 @@ void jpmic::temp_chk() {
         }
 
         // check shutdown temperature
-        m_shutdown = (temp >= (105 + (5 * (m_regs[0x2E] & 0x07))));
+        m_shutdwn = (temp >= (105 + (5 * (m_regs[0x2E] & 0x07))));
+
+        // temperature triggers
+        m_temp_warning = m_twarn && tHigh_Temp_Warning_trigger;
+        m_shutdown = m_shutdwn && tShut_Down_Temp_trigger;
+    }
+}
+
+void jpmic::timers() {
+    int tOutput_OV_VR_Disable_A_cntr=0;
+    int tOutput_OV_VR_Disable_B_cntr=0;
+    int tOutput_OV_VR_Disable_C_cntr=0;
+    int tOutput_UV_VR_Disable_A_cntr=0;
+    int tOutput_UV_VR_Disable_B_cntr=0;
+    int tOutput_UV_VR_Disable_C_cntr=0;
+    int tOutput_Current_Limiter_A_cntr=0;
+    int tOutput_Current_Limiter_B_cntr=0;
+    int tOutput_Current_Limiter_C_cntr=0;
+    int tHigh_Temp_Warning_cntr=0;
+    int tShut_Down_Temp_cntr=0;
+
+    while (true) {
+        wait();
+
+        // OVR for railA
+        if (m_ovrA) {
+            if (tOutput_OV_VR_Disable_A_cntr < m_cfg.tOutput_OV_VR_Disable_A) {
+                tOutput_OV_VR_Disable_A_cntr++;
+            }
+            else {
+                tOutput_OV_VR_Disable_A_trigger = true;
+            }
+        }
+        else {
+            tOutput_OV_VR_Disable_A_cntr=0;
+            tOutput_OV_VR_Disable_A_trigger = false;
+        }
+
+        // OVR for railB
+        if (m_ovrB) {
+            if (tOutput_OV_VR_Disable_B_cntr < m_cfg.tOutput_OV_VR_Disable_B) {
+                tOutput_OV_VR_Disable_B_cntr++;
+            }
+            else {
+                tOutput_OV_VR_Disable_B_trigger = true;
+            }
+        }
+        else {
+            tOutput_OV_VR_Disable_B_cntr=0;
+            tOutput_OV_VR_Disable_B_trigger = false;
+        }
+
+        // OVR for railC
+        if (m_ovrC) {
+            if (tOutput_OV_VR_Disable_C_cntr < m_cfg.tOutput_OV_VR_Disable_C) {
+                tOutput_OV_VR_Disable_C_cntr++;
+            }
+            else {
+                tOutput_OV_VR_Disable_C_trigger = true;
+            }
+        }
+        else {
+            tOutput_OV_VR_Disable_C_cntr=0;
+            tOutput_OV_VR_Disable_C_trigger = false;
+        }
+
+        // UVR for railA
+        if (m_uvrA) {
+            if (tOutput_UV_VR_Disable_A_cntr < m_cfg.tOutput_UV_VR_Disable_A) {
+                tOutput_UV_VR_Disable_A_cntr++;
+            }
+            else {
+                tOutput_UV_VR_Disable_A_trigger = true;
+            }
+        }
+        else {
+            tOutput_UV_VR_Disable_A_cntr=0;
+            tOutput_UV_VR_Disable_A_trigger = false;
+        }
+
+        // UVR for railB
+        if (m_uvrB) {
+            if (tOutput_UV_VR_Disable_B_cntr < m_cfg.tOutput_UV_VR_Disable_B) {
+                tOutput_UV_VR_Disable_B_cntr++;
+            }
+            else {
+                tOutput_UV_VR_Disable_B_trigger = true;
+            }
+        }
+        else {
+            tOutput_UV_VR_Disable_B_cntr=0;
+            tOutput_UV_VR_Disable_B_trigger = false;
+        }
+
+        // UVR for railC
+        if (m_uvrC) {
+            if (tOutput_UV_VR_Disable_C_cntr < m_cfg.tOutput_UV_VR_Disable_C) {
+                tOutput_UV_VR_Disable_C_cntr++;
+            }
+            else {
+                tOutput_UV_VR_Disable_C_trigger = true;
+            }
+        }
+        else {
+            tOutput_UV_VR_Disable_C_cntr=0;
+            tOutput_UV_VR_Disable_C_trigger = false;
+        }
+
+        // current limiter warning for railA
+        if (m_limitA) {
+            if (tOutput_Current_Limiter_A_cntr < m_cfg.tOutput_Current_Limiter_A) {
+                tOutput_Current_Limiter_A_cntr++;
+            }
+            else {
+                tOutput_Current_Limiter_A_trigger = true;
+            }
+        }
+        else {
+            tOutput_Current_Limiter_A_cntr=0;
+            tOutput_Current_Limiter_A_trigger = false;
+        }
+
+        // current limiter warning for railB
+        if (m_limitB) {
+            if (tOutput_Current_Limiter_B_cntr < m_cfg.tOutput_Current_Limiter_B) {
+                tOutput_Current_Limiter_B_cntr++;
+            }
+            else {
+                tOutput_Current_Limiter_B_trigger = true;
+            }
+        }
+        else {
+            tOutput_Current_Limiter_B_cntr=0;
+            tOutput_Current_Limiter_B_trigger = false;
+        }
+
+        // current limiter warning for railC
+        if (m_limitC) {
+            if (tOutput_Current_Limiter_C_cntr < m_cfg.tOutput_Current_Limiter_C) {
+                tOutput_Current_Limiter_C_cntr++;
+            }
+            else {
+                tOutput_Current_Limiter_C_trigger = true;
+            }
+        }
+        else {
+            tOutput_Current_Limiter_C_cntr=0;
+            tOutput_Current_Limiter_C_trigger = false;
+        }
+
+        // temperature warning after 10 us
+        if (m_twarn) {
+            if (tHigh_Temp_Warning_cntr < m_cfg.tHigh_Temp_Warning) {
+                tHigh_Temp_Warning_cntr++;
+            }
+            else {
+                tHigh_Temp_Warning_trigger = true;
+            }
+        }
+        else {
+            tHigh_Temp_Warning_cntr=0;
+            tHigh_Temp_Warning_trigger = false;
+        }
+
+        // temperature shutdown after 10 us
+        if (m_shutdwn) {
+            if (tShut_Down_Temp_cntr < m_cfg.tShut_Down_Temp) {
+                tShut_Down_Temp_cntr++;
+            }
+            else {
+                tShut_Down_Temp_trigger = true;
+            }
+        }
+        else {
+            tShut_Down_Temp_cntr=0;
+            tShut_Down_Temp_trigger = false;
+        }
     }
 }
 

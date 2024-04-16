@@ -73,6 +73,23 @@ public:
         uint32_t restart_time;
         uint32_t dac_samples;
         uint64_t dac_sample_time;
+        int tInput_PWR_GOOD_GSI_Assertion;
+        int tInput_OV_GSI_Assertion;
+        int tInput_OV_VR_Disable;
+        int tOutput_PWR_GOOD_GSI_Assertion;
+        int tOutput_OV_VR_Disable;
+        int tOutput_UV_VR_Disable;
+        int tOutput_Current_Limiter;
+        int tHigh_Temp_Warning;
+        int tShut_Down_Temp;
+        int tVIN_Bulk_to_VR_Enable;
+        int t1p8V_Ready;
+        int t1p0V_Ready;
+        int tManagement_Ready;
+        int tPMIC_PWR_Good_Out;
+        int tPMIC_Output_Off;
+        int tPWR_GOOD_Low_Pulse_Width;
+        int tPWR_GOOD_Low_Pulse_Width_Filter;
         std::vector<jrail::railcfg> railcfg;
     };
 
@@ -244,6 +261,9 @@ public:
         // monitor temperature
         SC_CTHREAD(temp_chk, clk_in.pos());
 
+        // fault timers
+        SC_CTHREAD(timers, clk_in.pos());
+
         // FSM needs to sensitive to CLK_IN but also to VREN and PWRGD pins
         SC_THREAD(fsm);
             sensitive << clk_in.pos() << vren_in << pwrgd_inout;
@@ -307,6 +327,23 @@ private:
     bool m_consum;
     bool m_twarn;
     bool m_shutdown;
+    bool tInput_PWR_GOOD_GSI_Assertion_trigger;
+    bool tInput_OV_GSI_Assertion_trigger;
+    bool tInput_OV_VR_Disable_trigger;
+    bool tOutput_PWR_GOOD_GSI_Assertion_trigger;
+    bool tOutput_OV_VR_Disable_trigger;
+    bool tOutput_UV_VR_Disable_trigger;
+    bool tOutput_Current_Limiter_trigger;
+    bool tHigh_Temp_Warning_trigger;
+    bool tShut_Down_Temp_trigger;
+    bool tVIN_Bulk_to_VR_Enable_trigger;
+    bool t1p8V_Ready_trigger;
+    bool t1p0V_Ready_trigger;
+    bool tManagement_Ready_trigger;
+    bool tPMIC_PWR_Good_Out_trigger;
+    bool tPMIC_Output_Off_trigger;
+    bool tPWR_GOOD_Low_Pulse_Width_trigger;
+    bool tPWR_GOOD_Low_Pulse_Width_Filter_trigger;
 };
 
 #endif // JPMIC_H_
