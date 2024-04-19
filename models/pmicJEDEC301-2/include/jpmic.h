@@ -187,12 +187,13 @@ public:
                                   m_v10(0),
                                   m_ovr(false),
                                   m_uvr(false),
+                                  m_bulk_gsi(false),
                                   m_bulk_ovr(false),
                                   m_bulk_uvr(false),
                                   m_limit(false),
                                   m_consum(false),
-                                  m_twarn(false),
-                                  m_shutdown(false) {
+                                  m_shutdown(false),
+                                  m_temp_warning(false) {
 
         rails = std::make_shared<std::vector<jrail*>>();
 
@@ -261,9 +262,6 @@ public:
         // monitor temperature
         SC_CTHREAD(temp_chk, clk_in.pos());
 
-        // fault timers
-        SC_CTHREAD(timers, clk_in.pos());
-
         // FSM needs to sensitive to CLK_IN but also to VREN and PWRGD pins
         SC_THREAD(fsm);
             sensitive << clk_in.pos() << vren_in << pwrgd_inout;
@@ -321,21 +319,15 @@ private:
     std::array<uint8_t, 96> m_regs_backup;
     bool m_ovr;
     bool m_uvr;
+    bool m_bulk_gsi;
     bool m_bulk_ovr;
     bool m_bulk_uvr;
     bool m_limit;
     bool m_consum;
-    bool m_twarn;
     bool m_shutdown;
+    bool m_temp_warning;
     bool tInput_PWR_GOOD_GSI_Assertion_trigger;
-    bool tInput_OV_GSI_Assertion_trigger;
-    bool tInput_OV_VR_Disable_trigger;
     bool tOutput_PWR_GOOD_GSI_Assertion_trigger;
-    bool tOutput_OV_VR_Disable_trigger;
-    bool tOutput_UV_VR_Disable_trigger;
-    bool tOutput_Current_Limiter_trigger;
-    bool tHigh_Temp_Warning_trigger;
-    bool tShut_Down_Temp_trigger;
     bool tVIN_Bulk_to_VR_Enable_trigger;
     bool t1p8V_Ready_trigger;
     bool t1p0V_Ready_trigger;

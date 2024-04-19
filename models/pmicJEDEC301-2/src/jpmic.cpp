@@ -155,6 +155,8 @@ void jpmic::regs() {
 }
 
 void jpmic::volt_chk() {
+
+    // initial values
     bool m_ovrA=false;
     bool m_ovrB=false;
     bool m_ovrC=false;
@@ -162,6 +164,28 @@ void jpmic::volt_chk() {
     bool m_uvrA=false;
     bool m_uvrB=false;
     bool m_uvrC=false;
+
+    bool m_bovr=false;
+
+    int tOutput_OV_VR_Disable_A_cntr=0;
+    int tOutput_OV_VR_Disable_B_cntr=0;
+    int tOutput_OV_VR_Disable_C_cntr=0;
+    int tOutput_UV_VR_Disable_A_cntr=0;
+    int tOutput_UV_VR_Disable_B_cntr=0;
+    int tOutput_UV_VR_Disable_C_cntr=0;
+
+    bool tOutput_OV_VR_Disable_A_trigger=false;
+    bool tOutput_OV_VR_Disable_B_trigger=false;
+    bool tOutput_OV_VR_Disable_C_trigger=false;
+    bool tOutput_UV_VR_Disable_A_trigger=false;
+    bool tOutput_UV_VR_Disable_B_trigger=false;
+    bool tOutput_UV_VR_Disable_C_trigger=false;
+
+    int tInput_OV_GSI_Assertion_cntr=0;
+    int tInput_OV_VR_Disable_cntr=0;
+
+    bool tInput_OV_GSI_Assertion_trigger=false;
+    bool tInput_OV_VR_Disable_trigger=false;
 
     while (true) {
         wait();
@@ -259,6 +283,118 @@ void jpmic::volt_chk() {
                 m_uvrC = false;
         }
 
+        // OVR timer for railA
+        if (m_ovrA) {
+            if (tOutput_OV_VR_Disable_A_cntr < m_cfg.tOutput_OV_VR_Disable) {
+                tOutput_OV_VR_Disable_A_cntr++;
+            }
+            else {
+                tOutput_OV_VR_Disable_A_trigger = true;
+            }
+        }
+        else {
+            tOutput_OV_VR_Disable_A_cntr=0;
+            tOutput_OV_VR_Disable_A_trigger = false;
+        }
+
+        // OVR timer for railB
+        if (m_ovrB) {
+            if (tOutput_OV_VR_Disable_B_cntr < m_cfg.tOutput_OV_VR_Disable) {
+                tOutput_OV_VR_Disable_B_cntr++;
+            }
+            else {
+                tOutput_OV_VR_Disable_B_trigger = true;
+            }
+        }
+        else {
+            tOutput_OV_VR_Disable_B_cntr=0;
+            tOutput_OV_VR_Disable_B_trigger = false;
+        }
+
+        // OVR timer for railC
+        if (m_ovrC) {
+            if (tOutput_OV_VR_Disable_C_cntr < m_cfg.tOutput_OV_VR_Disable) {
+                tOutput_OV_VR_Disable_C_cntr++;
+            }
+            else {
+                tOutput_OV_VR_Disable_C_trigger = true;
+            }
+        }
+        else {
+            tOutput_OV_VR_Disable_C_cntr=0;
+            tOutput_OV_VR_Disable_C_trigger = false;
+        }
+
+        // UVR timer for railA
+        if (m_uvrA) {
+            if (tOutput_UV_VR_Disable_A_cntr < m_cfg.tOutput_UV_VR_Disable) {
+                tOutput_UV_VR_Disable_A_cntr++;
+            }
+            else {
+                tOutput_UV_VR_Disable_A_trigger = true;
+            }
+        }
+        else {
+            tOutput_UV_VR_Disable_A_cntr=0;
+            tOutput_UV_VR_Disable_A_trigger = false;
+        }
+
+        // UVR timer for railB
+        if (m_uvrB) {
+            if (tOutput_UV_VR_Disable_B_cntr < m_cfg.tOutput_UV_VR_Disable) {
+                tOutput_UV_VR_Disable_B_cntr++;
+            }
+            else {
+                tOutput_UV_VR_Disable_B_trigger = true;
+            }
+        }
+        else {
+            tOutput_UV_VR_Disable_B_cntr=0;
+            tOutput_UV_VR_Disable_B_trigger = false;
+        }
+
+        // UVR timer for railC
+        if (m_uvrC) {
+            if (tOutput_UV_VR_Disable_C_cntr < m_cfg.tOutput_UV_VR_Disable) {
+                tOutput_UV_VR_Disable_C_cntr++;
+            }
+            else {
+                tOutput_UV_VR_Disable_C_trigger = true;
+            }
+        }
+        else {
+            tOutput_UV_VR_Disable_C_cntr=0;
+            tOutput_UV_VR_Disable_C_trigger = false;
+        }
+
+        // bulk GSI assertion timer
+        if (m_bovr) {
+            if (tInput_OV_GSI_Assertion_cntr < m_cfg.tInput_OV_GSI_Assertion) {
+                tInput_OV_GSI_Assertion_cntr++;
+            }
+            else {
+                tInput_OV_GSI_Assertion_trigger = true;
+            }
+        }
+        else {
+            tInput_OV_GSI_Assertion_cntr=0;
+            tInput_OV_GSI_Assertion_trigger = false;
+        }
+
+        // bulk OVR assertion timer
+        if (m_bovr) {
+            if (tInput_OV_VR_Disable_cntr < m_cfg.tInput_OV_VR_Disable) {
+                tInput_OV_VR_Disable_cntr++;
+            }
+            else {
+                tInput_OV_VR_Disable_trigger = true;
+            }
+        }
+        else {
+            tInput_OV_VR_Disable_cntr=0;
+            tInput_OV_VR_Disable_trigger = false;
+        }
+
         // rail OVR/UVR
         m_ovr = ((m_ovrA && tOutput_OV_VR_Disable_A_trigger) ||
                  (m_ovrB && tOutput_OV_VR_Disable_B_trigger) ||
@@ -268,14 +404,20 @@ void jpmic::volt_chk() {
                  (m_uvrB && tOutput_UV_VR_Disable_B_trigger) ||
                  (m_uvrC && tOutput_UV_VR_Disable_C_trigger));
 
+        // bulk input OVR
+        m_bovr = (bulk_in_read > m_cfg.bulk_max_volt);
+
+        // bulk input GSI_n
+        m_bulk_gsi = (tInput_OV_GSI_Assertion_trigger && m_bovr);
+        
         // bulk input OVR/UVR
-        m_bovr     = (bulk_in_read > m_cfg.bulk_max_volt);
         m_bulk_ovr = (tInput_OV_VR_Disable_trigger && m_bovr);
         m_bulk_uvr = bulk_in_read < m_cfg.bulk_min_volt;
     }
 }
 
 void jpmic::curr_chk() {
+    // initial values
     bool m_limitA=false;
     bool m_limitB=false;
     bool m_limitC=false;
@@ -283,7 +425,16 @@ void jpmic::curr_chk() {
     bool m_consumB=false;
     bool m_consumC=false;
 
+    int tOutput_Current_Limiter_A_cntr=0;
+    int tOutput_Current_Limiter_B_cntr=0;
+    int tOutput_Current_Limiter_C_cntr=0;
+
+    bool tOutput_Current_Limiter_A_trigger=false;
+    bool tOutput_Current_Limiter_B_trigger=false;
+    bool tOutput_Current_Limiter_C_trigger=false;
+
     while (true) {
+
         wait();
 
         // rail curent limiter setting
@@ -319,6 +470,48 @@ void jpmic::curr_chk() {
         // SWC current consumption
         m_consumC = railC_curr > railC_consump;
 
+        // current limiter warning timer for railA
+        if (m_limitA) {
+            if (tOutput_Current_Limiter_A_cntr < m_cfg.tOutput_Current_Limiter) {
+                tOutput_Current_Limiter_A_cntr++;
+            }
+            else {
+                tOutput_Current_Limiter_A_trigger = true;
+            }
+        }
+        else {
+            tOutput_Current_Limiter_A_cntr=0;
+            tOutput_Current_Limiter_A_trigger = false;
+        }
+
+        // current limiter warning timer for railB
+        if (m_limitB) {
+            if (tOutput_Current_Limiter_B_cntr < m_cfg.tOutput_Current_Limiter) {
+                tOutput_Current_Limiter_B_cntr++;
+            }
+            else {
+                tOutput_Current_Limiter_B_trigger = true;
+            }
+        }
+        else {
+            tOutput_Current_Limiter_B_cntr=0;
+            tOutput_Current_Limiter_B_trigger = false;
+        }
+
+        // current limiter warning timer for railC
+        if (m_limitC) {
+            if (tOutput_Current_Limiter_C_cntr < m_cfg.tOutput_Current_Limiter) {
+                tOutput_Current_Limiter_C_cntr++;
+            }
+            else {
+                tOutput_Current_Limiter_C_trigger = true;
+            }
+        }
+        else {
+            tOutput_Current_Limiter_C_cntr=0;
+            tOutput_Current_Limiter_C_trigger = false;
+        }
+
         // rail OVR/UVR
         m_limit = ((m_limitA && tOutput_Current_Limiter_A_trigger) ||
                    (m_limitB && tOutput_Current_Limiter_B_trigger) ||
@@ -329,6 +522,16 @@ void jpmic::curr_chk() {
 }
 
 void jpmic::temp_chk() {
+    // initial values
+    bool m_shutdwn=false;
+    bool m_twarn=false;
+
+    int tHigh_Temp_Warning_cntr=0;
+    int tShut_Down_Temp_cntr=0;
+
+    bool tHigh_Temp_Warning_trigger=false;
+    bool tShut_Down_Temp_trigger=false;
+
     while(true) {
         wait();
 
@@ -361,155 +564,7 @@ void jpmic::temp_chk() {
         // check shutdown temperature
         m_shutdwn = (temp >= (105 + (5 * (m_regs[0x2E] & 0x07))));
 
-        // temperature triggers
-        m_temp_warning = m_twarn && tHigh_Temp_Warning_trigger;
-        m_shutdown = m_shutdwn && tShut_Down_Temp_trigger;
-    }
-}
-
-void jpmic::timers() {
-    int tOutput_OV_VR_Disable_A_cntr=0;
-    int tOutput_OV_VR_Disable_B_cntr=0;
-    int tOutput_OV_VR_Disable_C_cntr=0;
-    int tOutput_UV_VR_Disable_A_cntr=0;
-    int tOutput_UV_VR_Disable_B_cntr=0;
-    int tOutput_UV_VR_Disable_C_cntr=0;
-    int tOutput_Current_Limiter_A_cntr=0;
-    int tOutput_Current_Limiter_B_cntr=0;
-    int tOutput_Current_Limiter_C_cntr=0;
-    int tHigh_Temp_Warning_cntr=0;
-    int tShut_Down_Temp_cntr=0;
-
-    while (true) {
-        wait();
-
-        // OVR for railA
-        if (m_ovrA) {
-            if (tOutput_OV_VR_Disable_A_cntr < m_cfg.tOutput_OV_VR_Disable_A) {
-                tOutput_OV_VR_Disable_A_cntr++;
-            }
-            else {
-                tOutput_OV_VR_Disable_A_trigger = true;
-            }
-        }
-        else {
-            tOutput_OV_VR_Disable_A_cntr=0;
-            tOutput_OV_VR_Disable_A_trigger = false;
-        }
-
-        // OVR for railB
-        if (m_ovrB) {
-            if (tOutput_OV_VR_Disable_B_cntr < m_cfg.tOutput_OV_VR_Disable_B) {
-                tOutput_OV_VR_Disable_B_cntr++;
-            }
-            else {
-                tOutput_OV_VR_Disable_B_trigger = true;
-            }
-        }
-        else {
-            tOutput_OV_VR_Disable_B_cntr=0;
-            tOutput_OV_VR_Disable_B_trigger = false;
-        }
-
-        // OVR for railC
-        if (m_ovrC) {
-            if (tOutput_OV_VR_Disable_C_cntr < m_cfg.tOutput_OV_VR_Disable_C) {
-                tOutput_OV_VR_Disable_C_cntr++;
-            }
-            else {
-                tOutput_OV_VR_Disable_C_trigger = true;
-            }
-        }
-        else {
-            tOutput_OV_VR_Disable_C_cntr=0;
-            tOutput_OV_VR_Disable_C_trigger = false;
-        }
-
-        // UVR for railA
-        if (m_uvrA) {
-            if (tOutput_UV_VR_Disable_A_cntr < m_cfg.tOutput_UV_VR_Disable_A) {
-                tOutput_UV_VR_Disable_A_cntr++;
-            }
-            else {
-                tOutput_UV_VR_Disable_A_trigger = true;
-            }
-        }
-        else {
-            tOutput_UV_VR_Disable_A_cntr=0;
-            tOutput_UV_VR_Disable_A_trigger = false;
-        }
-
-        // UVR for railB
-        if (m_uvrB) {
-            if (tOutput_UV_VR_Disable_B_cntr < m_cfg.tOutput_UV_VR_Disable_B) {
-                tOutput_UV_VR_Disable_B_cntr++;
-            }
-            else {
-                tOutput_UV_VR_Disable_B_trigger = true;
-            }
-        }
-        else {
-            tOutput_UV_VR_Disable_B_cntr=0;
-            tOutput_UV_VR_Disable_B_trigger = false;
-        }
-
-        // UVR for railC
-        if (m_uvrC) {
-            if (tOutput_UV_VR_Disable_C_cntr < m_cfg.tOutput_UV_VR_Disable_C) {
-                tOutput_UV_VR_Disable_C_cntr++;
-            }
-            else {
-                tOutput_UV_VR_Disable_C_trigger = true;
-            }
-        }
-        else {
-            tOutput_UV_VR_Disable_C_cntr=0;
-            tOutput_UV_VR_Disable_C_trigger = false;
-        }
-
-        // current limiter warning for railA
-        if (m_limitA) {
-            if (tOutput_Current_Limiter_A_cntr < m_cfg.tOutput_Current_Limiter_A) {
-                tOutput_Current_Limiter_A_cntr++;
-            }
-            else {
-                tOutput_Current_Limiter_A_trigger = true;
-            }
-        }
-        else {
-            tOutput_Current_Limiter_A_cntr=0;
-            tOutput_Current_Limiter_A_trigger = false;
-        }
-
-        // current limiter warning for railB
-        if (m_limitB) {
-            if (tOutput_Current_Limiter_B_cntr < m_cfg.tOutput_Current_Limiter_B) {
-                tOutput_Current_Limiter_B_cntr++;
-            }
-            else {
-                tOutput_Current_Limiter_B_trigger = true;
-            }
-        }
-        else {
-            tOutput_Current_Limiter_B_cntr=0;
-            tOutput_Current_Limiter_B_trigger = false;
-        }
-
-        // current limiter warning for railC
-        if (m_limitC) {
-            if (tOutput_Current_Limiter_C_cntr < m_cfg.tOutput_Current_Limiter_C) {
-                tOutput_Current_Limiter_C_cntr++;
-            }
-            else {
-                tOutput_Current_Limiter_C_trigger = true;
-            }
-        }
-        else {
-            tOutput_Current_Limiter_C_cntr=0;
-            tOutput_Current_Limiter_C_trigger = false;
-        }
-
-        // temperature warning after 10 us
+        // temperature warning timer after 10 us
         if (m_twarn) {
             if (tHigh_Temp_Warning_cntr < m_cfg.tHigh_Temp_Warning) {
                 tHigh_Temp_Warning_cntr++;
@@ -523,7 +578,7 @@ void jpmic::timers() {
             tHigh_Temp_Warning_trigger = false;
         }
 
-        // temperature shutdown after 10 us
+        // temperature shutdown timer after 10 us
         if (m_shutdwn) {
             if (tShut_Down_Temp_cntr < m_cfg.tShut_Down_Temp) {
                 tShut_Down_Temp_cntr++;
@@ -536,6 +591,10 @@ void jpmic::timers() {
             tShut_Down_Temp_cntr=0;
             tShut_Down_Temp_trigger = false;
         }
+
+        // temperature triggers
+        m_temp_warning = m_twarn && tHigh_Temp_Warning_trigger;
+        m_shutdown = m_shutdwn && tShut_Down_Temp_trigger;
     }
 }
 
