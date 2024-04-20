@@ -2,17 +2,20 @@
 
 // Reset the device (cold, hard, soft)
 void jpmic::regs() {
+    uint32_t railVolt=0;
+
     while(true) {
         wait();
 
         bool wrb = wrb_in.read();
         uint8_t addr = addr_in.read();
         uint8_t data = data_in.read();
-        bool secured = ((((m_regs[0x2F] & 0x04) == 0) && ((m_regs[0x32] & 0x80) == 0x80)) ? true : false);
 
-        if (secured &&
+        if ((secured &&
            (((addr >= 0x15) && (addr <= 0x2F)) ||
-           ((addr >= 0x40) && (addr <= 0x6F)) || (addr == 0x32))) {
+           ((addr >= 0x40) && (addr <= 0x6F)))) || 
+            (r32_locked && (addr == 0x32))) {
+            // block writes to registers if secured
             if (!wrb) {
                 data_out.write(m_regs[addr]);
             }
@@ -76,14 +79,15 @@ void jpmic::regs() {
                     m_regs[0x27] = data;
                     break;
                 case 0x2F: {
+                    // bits 7 and 5 are reserved
                     m_regs[0x2F] = data;
                     break;
                 }
                 case 0x30: {
+                    // bit 2 reserved
                     m_regs[addr] = data;
 
                     if (data & 0x80) {
-                        uint32_t railVolt = 0;
                         switch(data & 0x78) {
                             case 0:
                                 railVolt = railA_out.read();
@@ -124,7 +128,8 @@ void jpmic::regs() {
                         m_vrdis = true;
                     }
 
-                    m_regs[addr] = data;
+                    // cannot write bit 6 (read-only), 2:0 reserved
+                    m_regs[addr] = (data & 0xB8);
                     break;
                 }
                 case 0x33:
@@ -188,6 +193,7 @@ void jpmic::volt_chk() {
     bool tInput_OV_VR_Disable_trigger=false;
 
     while (true) {
+        // wait for posedge clock
         wait();
 
         int railA_setting = (800 + (5 * ((m_regs[0x21] & 0xFE) >> 1)));
@@ -613,6 +619,8 @@ void jpmic::fsm() {
                     ldo_ramp_en.write(true);
                 }
                 else {
+                    secured = false;
+                    r32_locked = false;
                     m_regs = m_regs_backup;
                 }
 
@@ -625,8 +633,14 @@ void jpmic::fsm() {
 
                 break;
             case pmic_state_t::P2_B: {
-                // VR_EN must be written and BULK must be valid to ramp rails (initial start, after a fault, etc)
+                // VR_EN must be written or VREN_In must toggle and BULK must be valid to ramp rails (initial start, after a fault, etc)
                 if (m_vren || (vren_in.posedge() && !(m_regs[0x32] & 0x20))) {
+                    if (!(m_regs[0x2F] & 0x04)) {
+                        // PWRGD low can unlock R32
+                        secured = true;
+                        r32_locked = true;
+                    }
+
                     m_state = pmic_state_t::RAMPUP;
                 }
 
@@ -663,6 +677,11 @@ void jpmic::fsm() {
                         // drive PWRGD low if a pin toggles
                         pwrgd_inout.write(false);
                     }
+                    else if (pwrgd_inout.negedge() && (m_regs[0x32] & 0x20)) {
+                        // external device forced PWRGD low (exception from R32 note 4)
+                        r32_locked = false;
+                    }
+
                     m_state = pmic_state_t::RAMPDN;
                 }
                 else if ((m_regs[0x2F] & 0x4C) != 0x4C) {
@@ -698,23 +717,24 @@ void jpmic::fsm() {
                 else if(!railA_zero.read() && !railB_zero.read() && !railC_zero.read()) {
                     // reset rail power good
                     if (bulk_in->read() < m_cfg.bulk_pg_thresh) {
+                        // P3 -> P0 (LDOs off)
                         m_state = pmic_state_t::P0;
                     }
                     else if ((!(m_regs[0x32] & 0x20) && !(m_regs[0x1A] & 0x10)) ||
                               ((m_regs[0x2F] & 0x04) && !(m_regs[0x1A] & 0x10)) ||
                                (m_regs[0x32] & 0x20)) {
-                        // P3 -> P2_A1
+                        // P3 -> P2_A1 (LDOs on)
                         m_state = pmic_state_t::P2_A1;
                     }
                     else if ((!(m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)) ||
                              ((m_regs[0x2F] & 0x04) && (m_regs[0x1A] & 0x10))) {
-                        // P3 -> P1
+                        // P3 -> P1 (LDOs on)
                         ldo_ramp_en.write(false);
                         m_state = pmic_state_t::P1;
                     }
                     else {
                         // internal VR Disable Event (fault)
-                        // P3 -> P2_A2
+                        // P3 -> P2_A2 (LDOs on)
                         m_state = pmic_state_t::P2_A2;
                     }
 
@@ -740,6 +760,9 @@ void jpmic::fsm() {
                         ((m_regs[0x2F] & 0x04) && !(m_regs[0x1A] & 0x10)) ||
                         ((m_regs[0x2F] & 0x04) && (m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)))) {
                     //pwrgd_inout.write(true);
+                    if (m_vren && secured) {
+                        r32_locked = true;
+                    }
                     m_state = pmic_state_t::RAMPUP;
                 }
                 else {
@@ -769,6 +792,9 @@ void jpmic::fsm() {
                 else if (m_vren && (((m_regs[0x2F] & 0x04) && !(m_regs[0x1A] & 0x10)) ||
                         ((m_regs[0x2F] & 0x04) && !(m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)) ||
                         ((m_regs[0x2F] & 0x04) && (m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)))) {
+                    if (m_vren && secured) {
+                        r32_locked = true;
+                    }
                     pwrgd_inout.write(true);
                     m_state = pmic_state_t::RAMPUP;
                 }

@@ -193,7 +193,9 @@ public:
                                   m_limit(false),
                                   m_consum(false),
                                   m_shutdown(false),
-                                  m_temp_warning(false) {
+                                  m_temp_warning(false),
+                                  r32_locked(false),
+                                  secured(false) {
 
         rails = std::make_shared<std::vector<jrail*>>();
 
@@ -326,6 +328,8 @@ private:
     bool m_consum;
     bool m_shutdown;
     bool m_temp_warning;
+    bool r32_locked;
+    bool secured;
     bool tInput_PWR_GOOD_GSI_Assertion_trigger;
     bool tOutput_PWR_GOOD_GSI_Assertion_trigger;
     bool tVIN_Bulk_to_VR_Enable_trigger;
