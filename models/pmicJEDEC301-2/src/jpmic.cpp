@@ -664,6 +664,7 @@ void jpmic::fsm() {
             case pmic_state_t::P3: {
                 if (bulk_in->read() < m_cfg.bulk_pg_thresh) {
                     // soft reset (ramp down nicely)
+                    m_regs[0x32] &= 0x3F;
                     ldo_ramp_en.write(false);
                     m_state = pmic_state_t::RAMPDN;
                 }
@@ -673,18 +674,15 @@ void jpmic::fsm() {
                                                  (!(m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)))) ||
                          (pwrgd_inout.negedge() && (m_regs[0x32] & 0x20))) {
                     // ramp down nicely
-                    if (!m_vrdis) {
-                        // drive PWRGD low if a pin toggles
-                        pwrgd_inout.write(false);
-                    }
-                    else if (pwrgd_inout.negedge() && (m_regs[0x32] & 0x20)) {
+                    if (pwrgd_inout.negedge() && (m_regs[0x32] & 0x20)) {
                         // external device forced PWRGD low (exception from R32 note 4)
                         r32_locked = false;
                     }
 
+                    m_regs[0x32] &= 0x3F;
                     m_state = pmic_state_t::RAMPDN;
                 }
-                else if ((m_regs[0x2F] & 0x4C) != 0x4C) {
+                else if ((m_regs[0x2F] & 0x58) != 0x58) {
                     for(auto &rail : *rails) {
                         if (!(m_regs[0x2F] & 0x40)) {
                             rail_en.write(false);
@@ -701,6 +699,7 @@ void jpmic::fsm() {
                     // check the rails for faults
                     if (m_ovr | m_uvr | m_bulk_ovr | m_bulk_uvr) {
                         // drive PWRGD low if a pin toggles
+                        m_regs[0x32] &= 0x3F;
                         pwrgd_inout.write(false);
                         m_state = pmic_state_t::RAMPDN;
                     }

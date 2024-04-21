@@ -49,7 +49,7 @@ SC_MODULE(TOP) {
     /// SystemC internal wires
     /////////////////////////////////////////////////////
     sc_buffer<bool> gsi_n;
-    sc_signal<bool> pwrgd;
+    sc_signal<bool, SC_MANY_WRITERS> pwrgd;
     sc_signal<bool> vren_in;
     sc_buffer<bool> wrb;
     sc_buffer<uint8_t> addr_in;
