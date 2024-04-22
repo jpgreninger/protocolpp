@@ -63,7 +63,7 @@ int main(int argc, char* argv[]) {
 
     TOP top("top");
     sc_trace(file, top.bulk_out, "bulk_voltage");
-    sc_trace(file, top.vren_in, "vren");
+    sc_trace(file, top.vren_wire, "vren");
     sc_trace(file, top.gsi_n, "gsi_n");
     sc_trace(file, top.pwrgd, "pwrgd");
     sc_trace(file, top.wrb, "wrb");

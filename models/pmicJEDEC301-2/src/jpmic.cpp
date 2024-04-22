@@ -628,7 +628,11 @@ void jpmic::fsm() {
             case pmic_state_t::P1:
                 if (vren_in.posedge() && (m_regs[0x1A] & 0x10)) {
                     // turn back on from Quiescent state
+                    ldo_ramp_en.write(true);
                     m_state = pmic_state_t::RAMPUP;
+                }
+                else if (vren_in.event()) {
+                    std::cout << "************* P1 VREN EVENT: " << vren_in.read() << std::endl;
                 }
 
                 break;

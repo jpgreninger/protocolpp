@@ -43,6 +43,7 @@ SC_MODULE(TOP) {
     /////////////////////////////////////////////////////
     /// SystemC inout ports
     /////////////////////////////////////////////////////
+    sc_time clkp;
     sc_clock clk_in;
 
     /////////////////////////////////////////////////////
@@ -50,7 +51,7 @@ SC_MODULE(TOP) {
     /////////////////////////////////////////////////////
     sc_buffer<bool> gsi_n;
     sc_signal<bool, SC_MANY_WRITERS> pwrgd;
-    sc_signal<bool> vren_in;
+    sc_signal<bool> vren_wire;
     sc_buffer<bool> wrb;
     sc_buffer<uint8_t> addr_in;
     sc_buffer<uint8_t> data_in;
@@ -65,10 +66,11 @@ SC_MODULE(TOP) {
     /////////////////////////////////////////////////////
     /// SystemC constructor
     /////////////////////////////////////////////////////
-    SC_CTOR(TOP) : clk_in("clk_in"),
+    SC_CTOR(TOP) : clkp(20, SC_NS),
+                   clk_in("clk_in", clkp),
                    gsi_n("gsi_n", true),
                    pwrgd("pwrgd"),
-                   vren_in("vren_in"),
+                   vren_wire("vren_wire", false),
                    wrb("wrb"),
                    addr_in("addr_in"),
                    data_in("data_in"),
@@ -107,7 +109,7 @@ SC_MODULE(TOP) {
 
         // outputs
         tb0->clk_in(clk_in);
-        tb0->vren_out(vren_in);
+        tb0->vren_out(vren_wire);
         tb0->pwrgd_inout(pwrgd);
         tb0->bulk_out(bulk_out);
         tb0->wrb_out(wrb);
@@ -129,7 +131,7 @@ SC_MODULE(TOP) {
         // inputs
         pmic->clk_in(clk_in);
         pmic->wrb_in(wrb);
-        pmic->vren_in(vren_in);
+        pmic->vren_in(vren_wire);
         pmic->pwrgd_inout(pwrgd);
         pmic->bulk_in(bulk_out);
         pmic->addr_in(addr_in);
