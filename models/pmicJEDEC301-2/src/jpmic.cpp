@@ -631,9 +631,6 @@ void jpmic::fsm() {
                     ldo_ramp_en.write(true);
                     m_state = pmic_state_t::RAMPUP;
                 }
-                else if (vren_in.event()) {
-                    std::cout << "************* P1 VREN EVENT: " << vren_in.read() << std::endl;
-                }
 
                 break;
             case pmic_state_t::P2_B: {
