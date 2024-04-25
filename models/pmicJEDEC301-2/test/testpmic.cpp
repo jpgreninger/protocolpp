@@ -79,7 +79,9 @@ int main(int argc, char* argv[]) {
     sc_trace(file, top.pmic->cmd_in, "dac_cmd");
     sc_trace(file, top.pmic->temp_in, "temp");
     sc_trace(file, top.reg_data_out, "reg_data_out");
-    sc_trace(file, top.pmic->rail_en, "rail_en");
+    sc_trace(file, top.pmic->railA_en, "railA_en");
+    sc_trace(file, top.pmic->railB_en, "railB_en");
+    sc_trace(file, top.pmic->railC_en, "railC_en");
     sc_trace(file, top.pmic->railA_pwrgd, "railA_pwrgd");
     sc_trace(file, top.pmic->railB_pwrgd, "railB_pwrgd");
     sc_trace(file, top.pmic->railC_pwrgd, "railC_pwrgd");

@@ -79,6 +79,35 @@ void jpmic::regs() {
                     m_regs[0x27] = data;
                     break;
                 case 0x2F: {
+                    if ((m_regs[0x2F] & 0x04) == 0x04) {
+                        if (((m_regs[0x2F] & 0x40) == 0x40) && ((data & 0x40) == 0x00)) {
+                            // turn off railA
+                            railA_ramp = false;
+                        }
+                        else if (((m_regs[0x2F] & 0x40) == 0x00) && ((data & 0x40) == 0x40)) {
+                            // turn on railA
+                            railA_ramp = true; 
+                        }
+    
+                        if (((m_regs[0x2F] & 0x10) == 0x10) && ((data & 0x10) == 0x00)) {
+                            // turn off railB
+                            railB_ramp = false;
+                        }
+                        else if (((m_regs[0x2F] & 0x10) == 0x00) && ((data & 0x10) == 0x10)) {
+                            // turn on railB
+                            railB_ramp = true; 
+                        }
+    
+                        if (((m_regs[0x2F] & 0x08) == 0x08) && ((data & 0x08) == 0x00)) {
+                            // turn off railC
+                            railC_ramp = false;
+                        }
+                        else if (((m_regs[0x2F] & 0x08) == 0x00) && ((data & 0x08) == 0x08)) {
+                            // turn on railC
+                            railC_ramp = true; 
+                        }
+                    }
+
                     // bits 7 and 5 are reserved
                     m_regs[0x2F] = data;
                     break;
@@ -656,24 +685,26 @@ void jpmic::fsm() {
                 }
                 else if (!railA_zero.read() && !railB_zero.read() && !railC_zero.read()) {
                     // enable all rails
-                    rail_en.write(true);
+                    railA_en.write(true);
+                    railB_en.write(true);
+                    railC_en.write(true);
                 }
 
                 m_vren = ((m_vren) ? false : m_vren);
                 break;
             }
             case pmic_state_t::P3: {
-                if (bulk_in->read() < m_cfg.bulk_pg_thresh) {
+                if (bulk_in->read() < m_cfg.bulk_pg_thresh) { // covered
                     // soft reset (ramp down nicely)
                     m_regs[0x32] &= 0x3F;
                     ldo_ramp_en.write(false);
                     m_state = pmic_state_t::RAMPDN;
                 }
-                else if ((m_vrdis && (((m_regs[0x2F] & 0x04) && !(m_regs[0x1A] & 0x10)) ||
-                                      ((m_regs[0x2F] & 0x04) && (m_regs[0x1A] & 0x10)))) ||
-                         (vren_in.negedge() && ((!(m_regs[0x32] & 0x20) && !(m_regs[0x1A] & 0x10)) ||
-                                                 (!(m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)))) ||
-                         (pwrgd_inout.negedge() && (m_regs[0x32] & 0x20))) {
+                else if ((m_vrdis && (((m_regs[0x2F] & 0x04) && !(m_regs[0x1A] & 0x10)) || // covered
+                                      ((m_regs[0x2F] & 0x04) && (m_regs[0x1A] & 0x10)))) || // covered
+                         (vren_in.negedge() && ((!(m_regs[0x32] & 0x20) && !(m_regs[0x1A] & 0x10)) || // covered
+                                                 (!(m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)))) || // covered
+                         (pwrgd_inout.negedge() && (m_regs[0x32] & 0x20))) { // covered
                     // ramp down nicely
                     if (pwrgd_inout.negedge() && (m_regs[0x32] & 0x20)) {
                         // external device forced PWRGD low (exception from R32 note 4)
@@ -683,26 +714,40 @@ void jpmic::fsm() {
                     m_regs[0x32] &= 0x3F;
                     m_state = pmic_state_t::RAMPDN;
                 }
-                else if ((m_regs[0x2F] & 0x58) != 0x58) {
-                    for(auto &rail : *rails) {
-                        if (!(m_regs[0x2F] & 0x40)) {
-                            rail_en.write(false);
-                        }
-                        else if (!(m_regs[0x2F] & 0x10)) {
-                            rail_en.write(false);
-                        }
-                        else if (!(m_regs[0x2F] & 0x08)) {
-                            rail_en.write(false);
-                        }
-                    }
+                else if (m_ovr | m_uvr | m_bulk_ovr | m_bulk_uvr) {
+                    // check for faults
+                    m_regs[0x32] &= 0x3F;
+                    pwrgd_inout.write(false);
+                    m_state = pmic_state_t::RAMPDN;
                 }
-                else {
-                    // check the rails for faults
-                    if (m_ovr | m_uvr | m_bulk_ovr | m_bulk_uvr) {
-                        // drive PWRGD low if a pin toggles
-                        m_regs[0x32] &= 0x3F;
-                        pwrgd_inout.write(false);
-                        m_state = pmic_state_t::RAMPDN;
+                else if ((m_regs[0x2F] & 0x04) != 0x04) {
+                    // turn off individual rails if requested
+
+                    if (((m_regs[0x2F] & 0x40) == 0x00) && !railA_ramp) {
+                        // turn off railA
+                        railA_en.write(false);
+                    }
+                    else if (((m_regs[0x2F] & 0x40) == 0x40) && railA_ramp) {
+                        // turn on railA
+                        railA_en.write(true);
+                    }
+
+                    if (((m_regs[0x2F] & 0x10) == 0x00) && !railB_ramp) {
+                        // turn off railB
+                        railB_en.write(false);
+                    }
+                    else if (((m_regs[0x2F] & 0x10) == 0x10) && railB_ramp) {
+                        // turn on railB
+                        railB_en.write(true);
+                    }
+
+                    if (((m_regs[0x2F] & 0x08) == 0x00) && !railC_ramp) {
+                        // turn off railC
+                        railC_en.write(false);
+                    }
+                    else if (((m_regs[0x2F] & 0x08) == 0x08) && railC_ramp) {
+                        // turn on railC
+                        railC_en.write(true);
                     }
                 }
     
@@ -711,7 +756,9 @@ void jpmic::fsm() {
             case pmic_state_t::RAMPDN: {
                 // disable all rails
                 if(railA_pwrgd.read() && railB_pwrgd.read() && railC_pwrgd.read()) {
-                    rail_en.write(false);
+                    railA_en.write(false);
+                    railB_en.write(false);
+                    railC_en.write(false);
                     m_regs[0x2F] &= 0x07;
                 }
                 else if(!railA_zero.read() && !railB_zero.read() && !railC_zero.read()) {

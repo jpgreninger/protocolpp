@@ -308,6 +308,110 @@ void tb::run() {
     std::cout << sc_time_stamp().to_seconds() << " PMIC BULK IN RAMPED up: " << (int)bulk_volt << std::endl << std::endl;
 
     //////////////////////////////////////////////////////////////////////////////////
+    /// Test secure mode with QUIESCENT mode disabled, use VR_EN to enable/reenable rails
+    //////////////////////////////////////////////////////////////////////////////////
+   
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " Test secure mode with QUIESCENT mode disabled, use VR_EN to enable/reenable rails" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
+
+    wait(1, SC_NS);
+
+    // read R32 for read-update-write
+    addr_out.write(jpmic::pmicreg_t::R32);
+    wait(1, SC_PS);
+    data_reg = data_in.read();
+    data_reg |= 0x80;
+
+    wait(1, SC_NS);
+
+    // write VR_EN
+    addr_out.write(jpmic::pmicreg_t::R32);
+    wait(1, SC_NS);
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " Write VR_EN=1 should enable rails" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
+    wrb_out.write(true);
+    data_out.write(data_reg);
+    wait(1, SC_NS);
+    wrb_out.write(false);
+    addr_out.write(0);
+
+    wait(15, SC_MS);
+    std::cout << sc_time_stamp().to_seconds() << " RailA enabled to 1100mV, at: " << (int)railA_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailB enabled to 1100mV, at: " << (int)railB_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailC enabled to 1800mV, at: " << (int)railC_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.8v enabled to 1800mV, at: " << (int)v1p8_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.0v enabled to 1000mV, at: " << (int)v1p0_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " PWRGD floats, at: " << pwrgd_inout.read() << std::endl << std::endl;
+
+    wait(5, SC_MS);
+
+    // write VR_EN
+    vren_out.write(true);
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " Assert VR_EN pin=1, should have no effect" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
+
+    wait(1, SC_MS);
+
+    std::cout << sc_time_stamp().to_seconds() << " RailA enabled to 1100mV, at: " << (int)railA_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailB enabled to 1100mV, at: " << (int)railB_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailC enabled to 1800mV, at: " << (int)railC_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.8v enabled to 1800mV, at: " << (int)v1p8_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.0v enabled to 1000mV, at: " << (int)v1p0_in.read() << std::endl << std::endl;
+
+    wait(6, SC_MS);
+
+    vren_out.write(false);
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " Assert VR_EN pin=0, should disable rails and LD0" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
+
+    wait(10, SC_MS);
+
+    std::cout << sc_time_stamp().to_seconds() << " RailA enabled to 1100mV, at: " << (int)railA_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailB enabled to 1100mV, at: " << (int)railB_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailC enabled to 1800mV, at: " << (int)railC_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.8v enabled to 1800mV, at: " << (int)v1p8_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.0v enabled to 1000mV, at: " << (int)v1p0_in.read() << std::endl << std::endl;
+
+    wait(6, SC_MS);
+
+    vren_out.write(true);
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " Assert VR_EN pin=1, should re-enable rails and LD0" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
+
+    wait(10, SC_MS);
+
+    std::cout << sc_time_stamp().to_seconds() << " RailA enabled to 1100mV, at: " << (int)railA_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailB enabled to 1100mV, at: " << (int)railB_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailC enabled to 1800mV, at: " << (int)railC_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.8v enabled to 1800mV, at: " << (int)v1p8_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.0v enabled to 1000mV, at: " << (int)v1p0_in.read() << std::endl << std::endl;
+
+    wait(6, SC_MS);
+
+    while(bulk_volt != 0) {
+        bulk_volt = ((bulk_volt-50 < 0) ? 0 : bulk_volt-50);
+        bulk_out.write(bulk_volt);
+        wait(1, SC_NS);
+    }
+
+    std::cout << sc_time_stamp().to_seconds() << " PMIC BULK IN RAMPED down: " << (int)bulk_volt << std::endl;
+    wait(10, SC_MS);
+    vren_out.write(false);
+
+    while(bulk_volt < 5000) {
+        bulk_volt += 50;
+        bulk_out.write(bulk_volt);
+        wait(1, SC_NS);
+    }
+
+    std::cout << sc_time_stamp().to_seconds() << " PMIC BULK IN RAMPED up: " << (int)bulk_volt << std::endl << std::endl;
+
+    //////////////////////////////////////////////////////////////////////////////////
     /// Test secure mode with QUIESCENT mode enabled, use VR_EN to enable/reenable rails
     //////////////////////////////////////////////////////////////////////////////////
    
@@ -683,6 +787,251 @@ void tb::run() {
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
     std::cout << sc_time_stamp().to_seconds() << " Write VR_EN=1 should reenable rails" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
+    wrb_out.write(true);
+    data_out.write(data_reg);
+    wait(1, SC_NS);
+    wrb_out.write(false);
+    addr_out.write(0);
+
+    wait(15, SC_MS);
+
+    std::cout << sc_time_stamp().to_seconds() << " RailA enabled to 1100mV, at: " << (int)railA_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailB enabled to 1100mV, at: " << (int)railB_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailC enabled to 1800mV, at: " << (int)railC_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.8v enabled to 1800mV, at: " << (int)v1p8_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.0v enabled to 1000mV, at: " << (int)v1p0_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " PWRGD floats, at: " << pwrgd_inout.read() << std::endl << std::endl;
+
+    wait(6, SC_MS);
+
+    while(bulk_volt != 0) {
+        bulk_volt = ((bulk_volt-50 < 0) ? 0 : bulk_volt-50);
+        bulk_out.write(bulk_volt);
+        wait(1, SC_NS);
+    }
+
+    std::cout << sc_time_stamp().to_seconds() << " PMIC BULK IN RAMPED down: " << (int)bulk_volt << std::endl;
+    wait(10, SC_MS);
+
+    while(bulk_volt < 5000) {
+        bulk_volt += 50;
+        bulk_out.write(bulk_volt);
+        wait(1, SC_NS);
+    }
+
+    std::cout << sc_time_stamp().to_seconds() << " PMIC BULK IN RAMPED up: " << (int)bulk_volt << std::endl << std::endl;
+
+    //////////////////////////////////////////////////////////////////////////////////
+    /// Test programmable mode. Use R2F to turn on/off individual rails
+    //////////////////////////////////////////////////////////////////////////////////
+    
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " Test programmable mode. Use R2F to turn on/off individual rails" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
+
+    // read R2F for read-update-write
+    addr_out.write(jpmic::pmicreg_t::R2F);
+    wait(1, SC_NS);
+    data_reg = data_in.read();
+    data_reg |= 0x04;
+
+    // write programmable mode
+    addr_out.write(jpmic::pmicreg_t::R2F);
+    wait(1, SC_NS);
+    std::cout << sc_time_stamp().to_seconds() << " Write R2F[2]=1, enable Programmable Mode..." << std::endl;
+    wrb_out.write(true);
+    data_out.write(data_reg);
+    wait(1, SC_NS);
+    wrb_out.write(false);
+    addr_out.write(0);
+
+    wait(1, SC_NS);
+
+    // read R32 for read-update-write
+    addr_out.write(jpmic::pmicreg_t::R32);
+    wait(1, SC_NS);
+    data_reg = data_in.read();
+    data_reg |= 0x80;
+
+    // write VR_EN
+    addr_out.write(jpmic::pmicreg_t::R32);
+    wait(1, SC_NS);
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " Write VR_EN=1 should enable rails" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
+    wrb_out.write(true);
+    data_out.write(data_reg);
+    wait(1, SC_NS);
+    wrb_out.write(false);
+    addr_out.write(0);
+
+    wait(15, SC_MS);
+    std::cout << sc_time_stamp().to_seconds() << " RailA enabled to 1100mV, at: " << (int)railA_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailB enabled to 1100mV, at: " << (int)railB_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailC enabled to 1800mV, at: " << (int)railC_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.8v enabled to 1800mV, at: " << (int)v1p8_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.0v enabled to 1000mV, at: " << (int)v1p0_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " PWRGD floats, at: " << pwrgd_inout.read() << std::endl << std::endl;
+
+    wait(5, SC_MS);
+
+    // read R32 for read-update-write
+    addr_out.write(jpmic::pmicreg_t::R2F);
+    wait(1, SC_NS);
+    data_reg = data_in.read();
+    data_reg &= 0xBF;
+
+    // Disable VR_EN
+    addr_out.write(jpmic::pmicreg_t::R2F);
+    wait(1, SC_NS);
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " Write R2F=0x18 should disable railA" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
+    wrb_out.write(true);
+    data_out.write(data_reg);
+    wait(1, SC_NS);
+    wrb_out.write(false);
+    addr_out.write(0);
+
+    wait(5, SC_MS);
+
+    std::cout << sc_time_stamp().to_seconds() << " RailA disabled to 0mV, at: " << (int)railA_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailB enabled to 1100mV, at: " << (int)railB_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailC enabled to 1800mV, at: " << (int)railC_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.8v enabled to 1800mV, at: " << (int)v1p8_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.0v enabled to 1000mV, at: " << (int)v1p0_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " PWRGD asserted, at: " << pwrgd_inout.read() << std::endl << std::endl;
+
+    wait(6, SC_MS);
+
+    // read R32 for read-update-write
+    addr_out.write(jpmic::pmicreg_t::R2F);
+    wait(1, SC_NS);
+    data_reg = data_in.read();
+    data_reg &= 0xAF;
+
+    // write VR_EN
+    addr_out.write(jpmic::pmicreg_t::R2F);
+    wait(1, SC_NS);
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " Write R2F=0x08 should disable railB" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
+    wrb_out.write(true);
+    data_out.write(data_reg);
+    wait(1, SC_NS);
+    wrb_out.write(false);
+    addr_out.write(0);
+
+    wait(15, SC_MS);
+
+    std::cout << sc_time_stamp().to_seconds() << " RailA enabled to 0mV, at: " << (int)railA_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailB enabled to 0mV, at: " << (int)railB_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailC enabled to 1800mV, at: " << (int)railC_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.8v enabled to 1800mV, at: " << (int)v1p8_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.0v enabled to 1000mV, at: " << (int)v1p0_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " PWRGD floats, at: " << pwrgd_inout.read() << std::endl << std::endl;
+
+    wait(6, SC_MS);
+
+    // read R32 for read-update-write
+    addr_out.write(jpmic::pmicreg_t::R2F);
+    wait(1, SC_NS);
+    data_reg = data_in.read();
+    data_reg &= 0xA7;
+
+    // write VR_EN
+    addr_out.write(jpmic::pmicreg_t::R2F);
+    wait(1, SC_NS);
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " Write R2F=0x00 should disable railC" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
+    wrb_out.write(true);
+    data_out.write(data_reg);
+    wait(1, SC_NS);
+    wrb_out.write(false);
+    addr_out.write(0);
+
+    wait(15, SC_MS);
+
+    std::cout << sc_time_stamp().to_seconds() << " RailA enabled to 0mV, at: " << (int)railA_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailB enabled to 0mV, at: " << (int)railB_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailC enabled to 0mV, at: " << (int)railC_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.8v enabled to 1800mV, at: " << (int)v1p8_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.0v enabled to 1000mV, at: " << (int)v1p0_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " PWRGD floats, at: " << pwrgd_inout.read() << std::endl << std::endl;
+
+    wait(5, SC_MS);
+
+    // read R32 for read-update-write
+    addr_out.write(jpmic::pmicreg_t::R2F);
+    wait(1, SC_NS);
+    data_reg = data_in.read();
+    data_reg |= 0x08;
+
+    // Disable VR_EN
+    addr_out.write(jpmic::pmicreg_t::R2F);
+    wait(1, SC_NS);
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " Write R2F=0x08 should enable railC" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
+    wrb_out.write(true);
+    data_out.write(data_reg);
+    wait(1, SC_NS);
+    wrb_out.write(false);
+    addr_out.write(0);
+
+    wait(5, SC_MS);
+
+    std::cout << sc_time_stamp().to_seconds() << " RailA disabled to 0mV, at: " << (int)railA_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailB enabled to 0mV, at: " << (int)railB_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailC enabled to 1800mV, at: " << (int)railC_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.8v enabled to 1800mV, at: " << (int)v1p8_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.0v enabled to 1000mV, at: " << (int)v1p0_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " PWRGD asserted, at: " << pwrgd_inout.read() << std::endl << std::endl;
+
+    wait(6, SC_MS);
+
+    // read R32 for read-update-write
+    addr_out.write(jpmic::pmicreg_t::R2F);
+    wait(1, SC_NS);
+    data_reg = data_in.read();
+    data_reg |= 0x10;
+
+    // write VR_EN
+    addr_out.write(jpmic::pmicreg_t::R2F);
+    wait(1, SC_NS);
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " Write R2F=0x10 should enable railB" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
+    wrb_out.write(true);
+    data_out.write(data_reg);
+    wait(1, SC_NS);
+    wrb_out.write(false);
+    addr_out.write(0);
+
+    wait(15, SC_MS);
+
+    std::cout << sc_time_stamp().to_seconds() << " RailA enabled to 0mV, at: " << (int)railA_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailB enabled to 1100mV, at: " << (int)railB_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " RailC enabled to 1800mV, at: " << (int)railC_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.8v enabled to 1800mV, at: " << (int)v1p8_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " VDI 1.0v enabled to 1000mV, at: " << (int)v1p0_in.read() << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " PWRGD floats, at: " << pwrgd_inout.read() << std::endl << std::endl;
+
+    wait(6, SC_MS);
+
+    // read R32 for read-update-write
+    addr_out.write(jpmic::pmicreg_t::R2F);
+    wait(1, SC_NS);
+    data_reg = data_in.read();
+    data_reg |= 0x40;
+
+    // write VR_EN
+    addr_out.write(jpmic::pmicreg_t::R2F);
+    wait(1, SC_NS);
+    std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " Write R2F=0x40 should disable railA" << std::endl;
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
     wrb_out.write(true);
     data_out.write(data_reg);

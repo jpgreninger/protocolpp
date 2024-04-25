@@ -124,7 +124,9 @@ public:
     ////////////////////////////////////////////////////
     sc_signal<bool> ldo_ramp_en;
     sc_buffer<bool> pwrsum_wire;
-    sc_buffer<bool> rail_en;
+    sc_signal<bool> railA_en;
+    sc_signal<bool> railB_en;
+    sc_signal<bool> railC_en;
     sc_signal<bool> railA_update;
     sc_signal<bool> railB_update;
     sc_signal<bool> railC_update;
@@ -163,7 +165,9 @@ public:
                                   v1p0_out("v1p0_out"),
                                   ldo_ramp_en("ldo_ramp_en", false),
                                   pwrsum_wire("pwrsum"),
-                                  rail_en("rail_en"),
+                                  railA_en("railA_en", 0),
+                                  railB_en("railB_en", 0),
+                                  railC_en("railC_en", 0),
                                   railA_update("railA_update"),
                                   railB_update("railB_update"),
                                   railC_update("railC_update"),
@@ -195,7 +199,10 @@ public:
                                   m_shutdown(false),
                                   m_temp_warning(false),
                                   r32_locked(false),
-                                  secured(false) {
+                                  secured(false),
+                                  railA_ramp(true),
+                                  railB_ramp(true),
+                                  railC_ramp(true) {
 
         rails = std::make_shared<std::vector<jrail*>>();
 
@@ -217,7 +224,7 @@ public:
 
         // create and connect the rails
         railA = new jrail("railA", cfg.railcfg[0]);
-        railA->enable_in(rail_en);
+        railA->enable_in(railA_en);
         railA->update_in(railA_update);
         railA->volt_in(railA_volt);
         railA->rail_out(railA_out);
@@ -226,7 +233,7 @@ public:
         rails->push_back(railA);
 
         railB = new jrail("railB", cfg.railcfg[1]);
-        railB->enable_in(rail_en);
+        railB->enable_in(railB_en);
         railB->update_in(railB_update);
         railB->volt_in(railB_volt);
         railB->rail_out(railB_out);
@@ -235,7 +242,7 @@ public:
         rails->push_back(railB);
 
         railC = new jrail("railC", cfg.railcfg[2]);
-        railC->enable_in(rail_en);
+        railC->enable_in(railC_en);
         railC->update_in(railC_update);
         railC->volt_in(railC_volt);
         railC->rail_out(railC_out);
@@ -330,6 +337,9 @@ private:
     bool m_temp_warning;
     bool r32_locked;
     bool secured;
+    bool railA_ramp;
+    bool railB_ramp;
+    bool railC_ramp;
     bool tInput_PWR_GOOD_GSI_Assertion_trigger;
     bool tOutput_PWR_GOOD_GSI_Assertion_trigger;
     bool tVIN_Bulk_to_VR_Enable_trigger;
