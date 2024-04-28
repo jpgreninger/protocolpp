@@ -200,20 +200,25 @@ void jpmic::volt_chk() {
     bool m_uvrC=false;
 
     bool m_bovr=false;
+    bool m_buvr=false;
 
     int tOutput_OV_VR_Disable_A_cntr=0;
     int tOutput_OV_VR_Disable_B_cntr=0;
     int tOutput_OV_VR_Disable_C_cntr=0;
+
     int tOutput_UV_VR_Disable_A_cntr=0;
     int tOutput_UV_VR_Disable_B_cntr=0;
     int tOutput_UV_VR_Disable_C_cntr=0;
+    int tOutput_UV_VR_Disable_Bulk_cntr=0;
 
     bool tOutput_OV_VR_Disable_A_trigger=false;
     bool tOutput_OV_VR_Disable_B_trigger=false;
     bool tOutput_OV_VR_Disable_C_trigger=false;
+
     bool tOutput_UV_VR_Disable_A_trigger=false;
     bool tOutput_UV_VR_Disable_B_trigger=false;
     bool tOutput_UV_VR_Disable_C_trigger=false;
+    bool tOutput_UV_VR_Disable_Bulk_trigger=false;
 
     int tInput_OV_GSI_Assertion_cntr=0;
     int tInput_OV_VR_Disable_cntr=0;
@@ -430,6 +435,20 @@ void jpmic::volt_chk() {
             tInput_OV_VR_Disable_trigger = false;
         }
 
+        // bulk UVR assertion timer
+        if (m_buvr) {
+            if (tOutput_UV_VR_Disable_Bulk_cntr < m_cfg.tOutput_UV_VR_Disable) {
+                tOutput_UV_VR_Disable_Bulk_cntr++;
+            }
+            else {
+                tOutput_UV_VR_Disable_Bulk_trigger = true;
+            }
+        }
+        else {
+            tOutput_UV_VR_Disable_Bulk_cntr=0;
+            tOutput_UV_VR_Disable_Bulk_trigger = false;
+        }
+
         // rail OVR/UVR
         m_ovr = ((m_ovrA && tOutput_OV_VR_Disable_A_trigger) ||
                  (m_ovrB && tOutput_OV_VR_Disable_B_trigger) ||
@@ -445,9 +464,12 @@ void jpmic::volt_chk() {
         // bulk input GSI_n
         m_bulk_gsi = (tInput_OV_GSI_Assertion_trigger && m_bovr);
         
+        // bulk input UVR
+        m_buvr = (bulk_in_read > m_cfg.bulk_min_volt);
+
         // bulk input OVR/UVR
         m_bulk_ovr = (tInput_OV_VR_Disable_trigger && m_bovr);
-        m_bulk_uvr = bulk_in_read < m_cfg.bulk_min_volt;
+        m_bulk_uvr = (tOutput_UV_VR_Disable_Bulk_trigger && m_buvr);
     }
 }
 
@@ -694,17 +716,17 @@ void jpmic::fsm() {
                 break;
             }
             case pmic_state_t::P3: {
-                if (bulk_in->read() < m_cfg.bulk_pg_thresh) { // covered
+                if (m_bulk_uvr) {
                     // soft reset (ramp down nicely)
                     m_regs[0x32] &= 0x3F;
                     ldo_ramp_en.write(false);
                     m_state = pmic_state_t::RAMPDN;
                 }
-                else if ((m_vrdis && (((m_regs[0x2F] & 0x04) && !(m_regs[0x1A] & 0x10)) || // covered
-                                      ((m_regs[0x2F] & 0x04) && (m_regs[0x1A] & 0x10)))) || // covered
-                         (vren_in.negedge() && ((!(m_regs[0x32] & 0x20) && !(m_regs[0x1A] & 0x10)) || // covered
-                                                 (!(m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)))) || // covered
-                         (pwrgd_inout.negedge() && (m_regs[0x32] & 0x20))) { // covered
+                else if ((m_vrdis && (((m_regs[0x2F] & 0x04) && !(m_regs[0x1A] & 0x10)) ||
+                                      ((m_regs[0x2F] & 0x04) && (m_regs[0x1A] & 0x10)))) ||
+                         (vren_in.negedge() && ((!(m_regs[0x32] & 0x20) && !(m_regs[0x1A] & 0x10)) ||
+                                                 (!(m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)))) ||
+                         (pwrgd_inout.negedge() && (m_regs[0x32] & 0x20))) {
                     // ramp down nicely
                     if (pwrgd_inout.negedge() && (m_regs[0x32] & 0x20)) {
                         // external device forced PWRGD low (exception from R32 note 4)
@@ -714,7 +736,7 @@ void jpmic::fsm() {
                     m_regs[0x32] &= 0x3F;
                     m_state = pmic_state_t::RAMPDN;
                 }
-                else if (m_ovr | m_uvr | m_bulk_ovr | m_bulk_uvr) {
+                else if (m_ovr | m_uvr | m_bulk_ovr) {
                     // check for faults
                     m_regs[0x32] &= 0x3F;
                     pwrgd_inout.write(false);
@@ -792,9 +814,9 @@ void jpmic::fsm() {
             }
             case pmic_state_t::P2_A1: {
                 // if we have lost power, go OFFLINE; otherwise go to CONFIG
-                if (bulk_in->read() < m_cfg.bulk_pg_thresh) {
+                if (m_bulk_uvr) {
                     ldo_ramp_en.write(false);
-                    m_state = pmic_state_t::RAMPDN;
+                    m_state = pmic_state_t::P0;
                 }
                 else if (vren_in.posedge() &&
                         !(m_regs[0x32] & 0x20) &&
@@ -813,7 +835,7 @@ void jpmic::fsm() {
                     m_state = pmic_state_t::RAMPUP;
                 }
                 else {
-                    if (m_bulk_ovr | m_bulk_uvr) {
+                    if (m_bulk_ovr) {
                         m_state = pmic_state_t::P2_A2;
                     }
                 }
@@ -822,9 +844,9 @@ void jpmic::fsm() {
             }
             case pmic_state_t::P2_A2: {
                 // if we have lost power, go OFFLINE; otherwise go to CONFIG
-                if (bulk_in->read() < m_cfg.bulk_pg_thresh) {
+                if (m_bulk_uvr) {
                     ldo_ramp_en.write(false);
-                    m_state = pmic_state_t::RAMPDN;
+                    m_state = pmic_state_t::P0;
                 }
                 else if ((m_vren || vren_in.posedge()) && !(m_regs[0x32] & 0x20)) {
                     // pin or VR_EN written when not allowed
