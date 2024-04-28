@@ -785,7 +785,7 @@ void jpmic::fsm() {
                 }
                 else if(!railA_zero.read() && !railB_zero.read() && !railC_zero.read()) {
                     // reset rail power good
-                    if (bulk_in->read() < m_cfg.bulk_pg_thresh) {
+                    if (m_bulk_uvr) {
                         // P3 -> P0 (LDOs off)
                         m_state = pmic_state_t::P0;
                     }
