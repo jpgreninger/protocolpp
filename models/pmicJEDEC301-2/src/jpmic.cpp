@@ -465,7 +465,7 @@ void jpmic::volt_chk() {
         m_bulk_gsi = (tInput_OV_GSI_Assertion_trigger && m_bovr);
         
         // bulk input UVR
-        m_buvr = (bulk_in_read > m_cfg.bulk_min_volt);
+        m_buvr = (bulk_in_read < m_cfg.bulk_min_volt);
 
         // bulk input OVR/UVR
         m_bulk_ovr = (tInput_OV_VR_Disable_trigger && m_bovr);
