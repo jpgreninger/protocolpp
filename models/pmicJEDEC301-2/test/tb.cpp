@@ -365,7 +365,7 @@ void tb::run() {
 
     vren_out.write(false);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
-    std::cout << sc_time_stamp().to_seconds() << " Assert VR_EN pin=0, should disable rails and LD0" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " Assert VR_EN pin=0, should disable rails" << std::endl;
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
 
     wait(10, SC_MS);
@@ -380,7 +380,7 @@ void tb::run() {
 
     vren_out.write(true);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
-    std::cout << sc_time_stamp().to_seconds() << " Assert VR_EN pin=1, should re-enable rails and LD0" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " Assert VR_EN pin=1, should re-enable rails" << std::endl;
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
 
     wait(10, SC_MS);
