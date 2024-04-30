@@ -672,7 +672,22 @@ void jpmic::fsm() {
                 else {
                     secured = false;
                     r32_locked = false;
-                    m_regs = m_regs_backup;
+                    
+                    // reload defaults from vendor region
+                    m_regs[0x20] = m_regs[0x50];
+                    m_regs[0x21] = m_regs[0x45];
+                    m_regs[0x22] = m_regs[0x46];
+                    m_regs[0x23] = m_regs[0x47];
+                    m_regs[0x24] = m_regs[0x48];
+                    m_regs[0x25] = m_regs[0x49];
+                    m_regs[0x26] = m_regs[0x4A];
+                    m_regs[0x27] = m_regs[0x4B];
+                    m_regs[0x28] = m_regs[0x4C];
+                    m_regs[0x29] = m_regs[0x4D];
+                    m_regs[0x2A] = m_regs[0x4E];
+                    m_regs[0x2B] = m_regs[0x51];
+                    m_regs[0x2C] = m_regs[0x5D];
+                    m_regs[0x2D] = m_regs[0x5E];
                 }
 
                 break;
