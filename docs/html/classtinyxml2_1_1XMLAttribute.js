@@ -19,7 +19,6 @@ var classtinyxml2_1_1XMLAttribute =
     [ "QueryIntValue", "classtinyxml2_1_1XMLAttribute.html#a6d5176260db00ea301c01af8457cd993", null ],
     [ "QueryShortValue", "classtinyxml2_1_1XMLAttribute.html#aed1d744ae1afbf40d6fa9f5077dff87f", null ],
     [ "QueryUnsigned64Value", "classtinyxml2_1_1XMLAttribute.html#af793c695e7ee65cf20b8010d38b1d157", null ],
-    [ "QueryUnsignedLongValue", "classtinyxml2_1_1XMLAttribute.html#af8f11bd19f5437001b8632236e6b779e", null ],
     [ "QueryUnsignedValue", "classtinyxml2_1_1XMLAttribute.html#a48a7f3496f1415832e451bd8d09c9cb9", null ],
     [ "SetAttribute", "classtinyxml2_1_1XMLAttribute.html#ab3516def4fe058fe328f2b89fc2d77da", null ],
     [ "SetAttribute", "classtinyxml2_1_1XMLAttribute.html#a406d2c4a13c7af99a65edb59dd9f7581", null ],
@@ -34,7 +33,6 @@ var classtinyxml2_1_1XMLAttribute =
     [ "SetAttribute", "classtinyxml2_1_1XMLAttribute.html#ae70468c0f6df2748ba3529c716999fae", null ],
     [ "ShortValue", "classtinyxml2_1_1XMLAttribute.html#a9b8a3667f6d14144b7397bab556c3c83", null ],
     [ "Unsigned64Value", "classtinyxml2_1_1XMLAttribute.html#ab25d1eb942c7b76c03a73e7710aadd38", null ],
-    [ "UnsignedLongValue", "classtinyxml2_1_1XMLAttribute.html#ab83aeff5e67da1a48f8eae593f7d9a89", null ],
     [ "UnsignedValue", "classtinyxml2_1_1XMLAttribute.html#a0be5343b08a957c42c02c5d32c35d338", null ],
     [ "Value", "classtinyxml2_1_1XMLAttribute.html#a1aab1dd0e43ecbcfa306adbcf3a3d853", null ],
     [ "XMLElement", "classtinyxml2_1_1XMLAttribute.html#ac2fba9b6e452829dd892f7392c24e0eb", null ]

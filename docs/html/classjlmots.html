@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++&reg; (Protocolpp&reg;)
-   &#160;<span id="projectnumber">v5.5.0</span>
+   &#160;<span id="projectnumber">v5.5.1</span>
    </div>
   </td>
  </tr>
@@ -127,8 +127,8 @@ $(document).ready(function(){initNavTree('classjlmots.html',''); initResizable()
 <p>The format of the LM-OTS private key is defined as </p><div class="fragment"><div class="line">--------------------------------------------------</div>
 <div class="line">| <a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a4ab4c9028975c23e2a867d60c653a485">TYPE</a> <a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a37cf6dfaa1dca99f3314be554cacef6d">CODE</a> | I | Q | x[0] | x[1] | ... | x[p-1] |</div>
 <div class="line">--------------------------------------------------</div>
-<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36a37cf6dfaa1dca99f3314be554cacef6d"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a37cf6dfaa1dca99f3314be554cacef6d">ProtocolPP::CODE</a></div><div class="ttdeci">@ CODE</div><div class="ttdoc">ICMP SubType.</div><div class="ttdef"><b>Definition:</b> jenum.h:589</div></div>
-<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36a4ab4c9028975c23e2a867d60c653a485"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a4ab4c9028975c23e2a867d60c653a485">ProtocolPP::TYPE</a></div><div class="ttdeci">@ TYPE</div><div class="ttdoc">ICMP Type.</div><div class="ttdef"><b>Definition:</b> jenum.h:588</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36a37cf6dfaa1dca99f3314be554cacef6d"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a37cf6dfaa1dca99f3314be554cacef6d">ProtocolPP::CODE</a></div><div class="ttdeci">@ CODE</div><div class="ttdoc">ICMP SubType.</div><div class="ttdef"><b>Definition:</b> jenum.h:591</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36a4ab4c9028975c23e2a867d60c653a485"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a4ab4c9028975c23e2a867d60c653a485">ProtocolPP::TYPE</a></div><div class="ttdeci">@ TYPE</div><div class="ttdoc">ICMP Type.</div><div class="ttdef"><b>Definition:</b> jenum.h:590</div></div>
 </div><!-- fragment --><p>An implementation MAY use a psuedorandom method to compute x[i]. The details of the psuedorandom method do not affect interoperability, but the cryptographic strength MUST match that of the LM-OTS algorithm</p>
 <p><b>LMS-OTS Public Key</b></p>
 <p>The LM-OTS public key is generated from the private key by iteratively applying the function H to each individual element of x, for <img class="formulaInl" alt="$ {2}^{w} - 1 $" src="form_471.png"/> iterations, then hashing all of the resulting values. The format of the LM-OTS public key is defined as </p><div class="fragment"><div class="line">--------------------------------------------------</div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('classjlmots.html',''); initResizable()
 <div class="line">----------------------------------------------</div>
 </div><!-- fragment --><p><b>LMS-OTS Signature Verification</b></p>
 <p>In order to verify a message with its signature (an array of n-byte strings, denoted by y), the receiver must "complete" the chain of iterations of H using the w-bit coefficients of the string resulting from the concatenation of the message hash and it's checksum. This computation should result in a value that matches the provided public key</p>
-<center>Protocol++&reg; (<a class="el" href="namespaceProtocolPP.html">ProtocolPP</a>&reg;) written by : John Peter Greninger &bull; &copy; John Peter Greninger 2015-2023 &bull; All Rights Reserved</center> <center><sub>All copyrights and trademarks are the property of their respective owners</sub></center><p>The source code contained or described herein and all documents related to the source code (herein called "Material") are owned by John Peter Greninger and Sheila Rocha Greninger. Title to the Material remains with John Peter Greninger and Sheila Rocha Greninger. The Material contains trade secrets and proprietary and confidential information of John Peter Greninger and Sheila Rocha Greninger. The Material is protected by worldwide copyright and trade secret laws and treaty provisions. No part of the Material may be used, copied, reproduced, modified, published, uploaded, posted, transmitted, distributed, or disclosed in any way without prior express written consent of John Peter Greninger and Sheila Rocha Greninger (both are required)</p>
+<center>Protocol++&reg; (<a class="el" href="namespaceProtocolPP.html">ProtocolPP</a>&reg;) written by : John Peter Greninger &bull; &copy; John Peter Greninger 2015-2024 &bull; All Rights Reserved</center> <center><sub>All copyrights and trademarks are the property of their respective owners</sub></center><p>The source code contained or described herein and all documents related to the source code (herein called "Material") are owned by John Peter Greninger and Sheila Rocha Greninger. Title to the Material remains with John Peter Greninger and Sheila Rocha Greninger. The Material contains trade secrets and proprietary and confidential information of John Peter Greninger and Sheila Rocha Greninger. The Material is protected by worldwide copyright and trade secret laws and treaty provisions. No part of the Material may be used, copied, reproduced, modified, published, uploaded, posted, transmitted, distributed, or disclosed in any way without prior express written consent of John Peter Greninger and Sheila Rocha Greninger (both are required)</p>
 <p>No license under any patent, copyright, trade secret, or other intellectual property right is granted to or conferred upon you by disclosure or delivery of the Materials, either expressly, by implication, inducement, estoppel, or otherwise. Any license under such intellectual property rights must be express and approved by John Peter Greninger and Sheila Rocha Greninger in writing</p>
 <p>Licensing information can be found at <b>www.protocolpp.com/license</b> with use of the binary forms permitted provided that the following conditions are met:</p>
 <ul>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('classjlmots.html',''); initResizable()
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjlmots.html">jlmots</a></li>
-    <li class="footer">Generated on Mon Jan 1 2024 19:46:15 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jun 4 2024 11:11:18 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

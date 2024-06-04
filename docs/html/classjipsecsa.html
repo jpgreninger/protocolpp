@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++&reg; (Protocolpp&reg;)
-   &#160;<span id="projectnumber">v5.5.0</span>
+   &#160;<span id="projectnumber">v5.5.1</span>
    </div>
   </td>
  </tr>
@@ -119,7 +119,7 @@ Encapsulating Security Payload (ESP) Security Association</h1>
 <div class="line">      data, e.g., an Initialization Vector (IV, see Section 2.3),</div>
 <div class="line">      usually is not encrypted per se, although it often is referred</div>
 <div class="line">      to as being part of the ciphertext.</div>
-<div class="ttc" id="anamespaceProtocolPP_html_acfb3e3c6ca0eb6279a8e73b93f9c91e8a3c81180cb6021e43241aa5aa223587f1"><div class="ttname"><a href="namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8a3c81180cb6021e43241aa5aa223587f1">ProtocolPP::ESP</a></div><div class="ttdeci">@ ESP</div><div class="ttdoc">Encapsulating Security Payload - 50.</div><div class="ttdef"><b>Definition:</b> jenum.h:1985</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_acfb3e3c6ca0eb6279a8e73b93f9c91e8a3c81180cb6021e43241aa5aa223587f1"><div class="ttname"><a href="namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8a3c81180cb6021e43241aa5aa223587f1">ProtocolPP::ESP</a></div><div class="ttdeci">@ ESP</div><div class="ttdoc">Encapsulating Security Payload - 50.</div><div class="ttdef"><b>Definition:</b> jenum.h:1989</div></div>
 </div><!-- fragment --><p>The (transmitted) ESP trailer consists of the Padding, Pad Length, and Next Header fields. Additional, implicit ESP trailer data (which is not transmitted) is included in the integrity computation, as described below.</p>
 <p>If the integrity service is selected, the integrity computation encompasses the SPI, Sequence Number, Payload Data, and the ESP trailer (explicit and implicit).</p>
 <p>If the confidentiality service is selected, the ciphertext consists of the Payload Data (except for any cryptographic synchronization data that may be included) and the (explicit) ESP trailer.</p>
@@ -159,7 +159,7 @@ Encapsulating Security Payload (ESP) Security Association</h1>
 <div class="line">        can add Traffic Flow Confidentiality (TFC) padding (see</div>
 <div class="line">        Section 2.4)  after the Payload Data and before the Padding</div>
 <div class="line">        (0-255 bytes) field.</div>
-<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36aea41ac6e2e650d48da10a7354e89e41a"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36aea41ac6e2e650d48da10a7354e89e41a">ProtocolPP::IV</a></div><div class="ttdeci">@ IV</div><div class="ttdoc">Initializaton Vector (IV)</div><div class="ttdef"><b>Definition:</b> jenum.h:551</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36aea41ac6e2e650d48da10a7354e89e41a"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36aea41ac6e2e650d48da10a7354e89e41a">ProtocolPP::IV</a></div><div class="ttdeci">@ IV</div><div class="ttdoc">Initializaton Vector (IV)</div><div class="ttdef"><b>Definition:</b> jenum.h:553</div></div>
 </div><!-- fragment --><p>If a combined algorithm mode is employed, the explicit ICV shown in Figures 1 and 2 may be omitted (see Section 3.3.2.2 below). Because algorithms and modes are fixed when an SA is established, the detailed format of ESP packets for a given SA (including the Payload Data substructure) is fixed, for all traffic on the SA.</p>
 <p>The tables below refer to the fields in the preceding figures and illustrate how several categories of algorithmic options, each with a different processing model, affect the fields noted above. The processing details are described in later sections.</p>
 <div class="fragment"><div class="line">       Table 1. Separate Encryption and Integrity Algorithms</div>
@@ -222,8 +222,8 @@ Encapsulating Security Payload (ESP) Security Association</h1>
 <div class="line">             to <a class="code" href="namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8a3c81180cb6021e43241aa5aa223587f1">ESP</a></div>
 <div class="line">         [6] The algorithm spec determines whether <span class="keyword">this</span> field is</div>
 <div class="line">             present</div>
-<div class="ttc" id="anamespaceProtocolPP_html_a15957f30f5cdc906a54e53fcb4834e5caec00ad7afee63cf726ab1f8b00ff16a5"><div class="ttname"><a href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5caec00ad7afee63cf726ab1f8b00ff16a5">ProtocolPP::IP</a></div><div class="ttdeci">@ IP</div><div class="ttdoc">IP.</div><div class="ttdef"><b>Definition:</b> jenum.h:1267</div></div>
-<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36a30d4418841c837a19e971f95530b9aba"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a30d4418841c837a19e971f95530b9aba">ProtocolPP::SPI</a></div><div class="ttdeci">@ SPI</div><div class="ttdoc">Security parameter index (SPI)</div><div class="ttdef"><b>Definition:</b> jenum.h:539</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_a15957f30f5cdc906a54e53fcb4834e5caec00ad7afee63cf726ab1f8b00ff16a5"><div class="ttname"><a href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5caec00ad7afee63cf726ab1f8b00ff16a5">ProtocolPP::IP</a></div><div class="ttdeci">@ IP</div><div class="ttdoc">IP.</div><div class="ttdef"><b>Definition:</b> jenum.h:1271</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36a30d4418841c837a19e971f95530b9aba"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a30d4418841c837a19e971f95530b9aba">ProtocolPP::SPI</a></div><div class="ttdeci">@ SPI</div><div class="ttdoc">Security parameter index (SPI)</div><div class="ttdef"><b>Definition:</b> jenum.h:541</div></div>
 </div><!-- fragment --><p>The following subsections describe the fields in the header format. "Optional" means that the field is omitted if the option is not selected, i.e., it is present in neither the packet as transmitted nor as formatted for computation of an ICV (see Section 2.7). Whether or not an option is selected is determined as part of Security Association (SA) establishment. Thus, the format of ESP packets for a given SA is fixed, for the duration of the SA. In contrast, "mandatory" fields are always present in the ESP packet format, for all SAs.</p>
 <p>Note: All of the cryptographic algorithms used in IPsec expect their input in canonical network byte order (see Appendix of RFC 791 [Pos81]) and generate their output in canonical network byte order. IP packets are also transmitted in network byte order.</p>
 <p>ESP does not contain a version number, therefore if there are concerns about backward compatibility, they MUST be addressed by using a signaling mechanism between the two IPsec peers to ensure compatible versions of ESP (e.g., Internet Key Exchange (IKEv2) [Kau05]) or an out-of-band configuration mechanism.</p>
@@ -310,7 +310,7 @@ Encapsulating Security Payload (ESP) Security Association</h1>
 <a class="el" href="classjicmpsa.html">jicmpsa</a> </dd>
 <dd>
 <a class="el" href="classjmodes.html">jmodes</a></dd></dl>
-<center>Protocol++&reg; (<a class="el" href="namespaceProtocolPP.html">ProtocolPP</a>&reg;) written by : John Peter Greninger &bull; &copy; John Peter Greninger 2015-2023 &bull; All Rights Reserved</center> <center><sub>All copyrights and trademarks are the property of their respective owners</sub></center><p>The source code contained or described herein and all documents related to the source code (herein called "Material") are owned by John Peter Greninger and Sheila Rocha Greninger. Title to the Material remains with John Peter Greninger and Sheila Rocha Greninger. The Material contains trade secrets and proprietary and confidential information of John Peter Greninger and Sheila Rocha Greninger. The Material is protected by worldwide copyright and trade secret laws and treaty provisions. No part of the Material may be used, copied, reproduced, modified, published, uploaded, posted, transmitted, distributed, or disclosed in any way without prior express written consent of John Peter Greninger and Sheila Rocha Greninger (both are required)</p>
+<center>Protocol++&reg; (<a class="el" href="namespaceProtocolPP.html">ProtocolPP</a>&reg;) written by : John Peter Greninger &bull; &copy; John Peter Greninger 2015-2024 &bull; All Rights Reserved</center> <center><sub>All copyrights and trademarks are the property of their respective owners</sub></center><p>The source code contained or described herein and all documents related to the source code (herein called "Material") are owned by John Peter Greninger and Sheila Rocha Greninger. Title to the Material remains with John Peter Greninger and Sheila Rocha Greninger. The Material contains trade secrets and proprietary and confidential information of John Peter Greninger and Sheila Rocha Greninger. The Material is protected by worldwide copyright and trade secret laws and treaty provisions. No part of the Material may be used, copied, reproduced, modified, published, uploaded, posted, transmitted, distributed, or disclosed in any way without prior express written consent of John Peter Greninger and Sheila Rocha Greninger (both are required)</p>
 <p>No license under any patent, copyright, trade secret, or other intellectual property right is granted to or conferred upon you by disclosure or delivery of the Materials, either expressly, by implication, inducement, estoppel, or otherwise. Any license under such intellectual property rights must be express and approved by John Peter Greninger and Sheila Rocha Greninger in writing</p>
 <p>Licensing information can be found at <b>www.protocolpp.com/license</b> with use of the binary forms permitted provided that the following conditions are met:</p>
 <ul>
@@ -345,7 +345,7 @@ Encapsulating Security Payload (ESP) Security Association</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjipsecsa.html">jipsecsa</a></li>
-    <li class="footer">Generated on Mon Jan 1 2024 19:46:15 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jun 4 2024 11:11:18 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

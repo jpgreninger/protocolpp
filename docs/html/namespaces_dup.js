@@ -53,7 +53,8 @@ var namespaces_dup =
       [ "XMLPrinter", "classtinyxml2_1_1XMLPrinter.html", "classtinyxml2_1_1XMLPrinter" ],
       [ "Whitespace", "tinyxml2_8h.html#a7f91d00f77360f850fd5da0861e27dd5", [
         [ "PRESERVE_WHITESPACE", "tinyxml2_8h.html#a7f91d00f77360f850fd5da0861e27dd5a751769aa625fe5fe5286e9779edec56a", null ],
-        [ "COLLAPSE_WHITESPACE", "tinyxml2_8h.html#a7f91d00f77360f850fd5da0861e27dd5a9a4a309029a6f5e636e20ef5e0b65136", null ]
+        [ "COLLAPSE_WHITESPACE", "tinyxml2_8h.html#a7f91d00f77360f850fd5da0861e27dd5a9a4a309029a6f5e636e20ef5e0b65136", null ],
+        [ "PEDANTIC_WHITESPACE", "tinyxml2_8h.html#a7f91d00f77360f850fd5da0861e27dd5acde18a65d58ce966a983ea656396a931", null ]
       ] ],
       [ "XMLError", "tinyxml2_8h.html#a1fbf88509c3ac88c09117b1947414e08", [
         [ "XML_SUCCESS", "tinyxml2_8h.html#a1fbf88509c3ac88c09117b1947414e08a1fe1262fdb5ac05dd9cc4631f8c8e00d", null ],

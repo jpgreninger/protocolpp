@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++&reg; (Protocolpp&reg;)
-   &#160;<span id="projectnumber">v5.5.0</span>
+   &#160;<span id="projectnumber">v5.5.1</span>
    </div>
   </td>
  </tr>
@@ -120,9 +120,11 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>maxentries</b></t
 <div class="textblock"><p>Structure for scatter-gather tables in SEC/CAAM QorIQ or Layerscape processors </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">chunksize</td><td>- range of lengths to split the data into when creating a SG table, i.e., "256..1024" </td></tr>
+    <tr><td class="paramname">ptrsize</td><td>- size of pointers (either 4 or 8 for SEC/CAAM) </td></tr>
     <tr><td class="paramname">sgtsize</td><td>- size of entries (either 8 or 16 for SEC/CAAM) </td></tr>
     <tr><td class="paramname">bufpool</td><td>- Buffer pool to use for memory </td></tr>
     <tr><td class="paramname">offset</td><td>- size of the offset into data buffers, i.e., "20..100" </td></tr>
+    <tr><td class="paramname">endianess</td><td>- endianess of SEC. Note that in CAAM all command words are big endian regardless of the underlying system endianess. Some immediate data values will be the system endianess </td></tr>
     <tr><td class="paramname">maxentries</td><td>- maximum number of entries to read in a SG table </td></tr>
   </table>
   </dd>
@@ -136,7 +138,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>maxentries</b></t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacePlatformPP.html">PlatformPP</a></li><li class="navelem"><a class="el" href="classPlatformPP_1_1jsec.html">jsec</a></li><li class="navelem"><a class="el" href="structPlatformPP_1_1jsec_1_1sgt__t.html">sgt_t</a></li>
-    <li class="footer">Generated on Mon Jan 1 2024 19:46:16 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jun 4 2024 11:11:19 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

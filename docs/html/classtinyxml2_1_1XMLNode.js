@@ -3,6 +3,8 @@ var classtinyxml2_1_1XMLNode =
     [ "XMLNode", "classtinyxml2_1_1XMLNode.html#a29868df6ca383d574f584dfdd15105b6", null ],
     [ "~XMLNode", "classtinyxml2_1_1XMLNode.html#a8ae1bcd23a08ce5c5f97b2ab347b0893", null ],
     [ "Accept", "classtinyxml2_1_1XMLNode.html#a81e66df0a44c67a7af17f3b77a152785", null ],
+    [ "ChildElementCount", "classtinyxml2_1_1XMLNode.html#af4d4ed49437c715a8549be55f4566d33", null ],
+    [ "ChildElementCount", "classtinyxml2_1_1XMLNode.html#afca6116430d31cc39de9eb2f647b83bb", null ],
     [ "DeepClone", "classtinyxml2_1_1XMLNode.html#a62c71b6bf8734b5424063b8d9a61c266", null ],
     [ "DeleteChild", "classtinyxml2_1_1XMLNode.html#a363b6edbd6ebd55f8387d2b89f2b0921", null ],
     [ "DeleteChildren", "classtinyxml2_1_1XMLNode.html#a0360085cc54df5bff85d5c5da13afdce", null ],

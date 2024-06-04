@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++&reg; (Protocolpp&reg;)
-   &#160;<span id="projectnumber">v5.5.0</span>
+   &#160;<span id="projectnumber">v5.5.1</span>
    </div>
   </td>
  </tr>
@@ -189,8 +189,8 @@ $(document).ready(function(){initNavTree('classciphers.html',''); initResizable(
 <div class="line"> </div>
 <div class="line"><span class="comment">// retrieve the ICV</span></div>
 <div class="line">tmp2.result(icv.get_ptr(), icv.get_size());</div>
-<div class="ttc" id="aclassProtocolPP_1_1jarray_html_a17ba287e85a719c059e7090fd1ba806b"><div class="ttname"><a href="classProtocolPP_1_1jarray.html#a17ba287e85a719c059e7090fd1ba806b">ProtocolPP::jarray::get_ptr</a></div><div class="ttdeci">T * get_ptr()</div><div class="ttdef"><b>Definition:</b> jarray.h:1158</div></div>
-<div class="ttc" id="aclassProtocolPP_1_1jarray_html_a4aeb58321449f0e17d994ad74e469cea"><div class="ttname"><a href="classProtocolPP_1_1jarray.html#a4aeb58321449f0e17d994ad74e469cea">ProtocolPP::jarray::get_size</a></div><div class="ttdeci">uint32_t get_size()</div><div class="ttdef"><b>Definition:</b> jarray.h:977</div></div>
+<div class="ttc" id="aclassProtocolPP_1_1jarray_html_a17ba287e85a719c059e7090fd1ba806b"><div class="ttname"><a href="classProtocolPP_1_1jarray.html#a17ba287e85a719c059e7090fd1ba806b">ProtocolPP::jarray::get_ptr</a></div><div class="ttdeci">T * get_ptr()</div><div class="ttdef"><b>Definition:</b> jarray.h:1176</div></div>
+<div class="ttc" id="aclassProtocolPP_1_1jarray_html_a4aeb58321449f0e17d994ad74e469cea"><div class="ttname"><a href="classProtocolPP_1_1jarray.html#a4aeb58321449f0e17d994ad74e469cea">ProtocolPP::jarray::get_size</a></div><div class="ttdeci">uint32_t get_size()</div><div class="ttdef"><b>Definition:</b> jarray.h:982</div></div>
 <div class="ttc" id="aclassProtocolPP_1_1jpoly1305_html"><div class="ttname"><a href="classProtocolPP_1_1jpoly1305.html">ProtocolPP::jpoly1305</a></div><div class="ttdef"><b>Definition:</b> jpoly1305.h:113</div></div>
 </div><!-- fragment --><p>Usage example for get_crc()</p>
 <div class="fragment"><div class="line"><a class="code" href="classProtocolPP_1_1jarray.html">ProtocolPP::jarray&lt;uint8_t&gt;</a> idat = myrand-&gt;getbyte(300);</div>
@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('classciphers.html',''); initResizable(
 <div class="line">engine-&gt;ProcessData(idat.<a class="code" href="classProtocolPP_1_1jarray.html#a17ba287e85a719c059e7090fd1ba806b">get_ptr</a>(), idat.<a class="code" href="classProtocolPP_1_1jarray.html#a4aeb58321449f0e17d994ad74e469cea">get_size</a>());</div>
 <div class="line">engine-&gt;result(result.get_ptr(), result.get_size());</div>
 <div class="ttc" id="aclassProtocolPP_1_1ciphers_html_a03d3ede2283eba36059abcfe7efaa40c"><div class="ttname"><a href="classProtocolPP_1_1ciphers.html#a03d3ede2283eba36059abcfe7efaa40c">ProtocolPP::ciphers::get_crc</a></div><div class="ttdeci">static std::shared_ptr&lt; jmodes &gt; get_crc(auth_t crc=auth_t::CRC32_IEEE, uint32_t poly=0, uint32_t polylen=0, bool zeroinit=false, bool swapin=true, bool swapout=true, bool xorout=true)</div></div>
-<div class="ttc" id="anamespaceProtocolPP_html_a95d8e842b11f21278b31c0de42e1014fa356a98a21426787bb7b39c7b2daf99ed"><div class="ttname"><a href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa356a98a21426787bb7b39c7b2daf99ed">ProtocolPP::CRC_POLY</a></div><div class="ttdeci">@ CRC_POLY</div><div class="ttdoc">CRC with user supplied polynomial.</div><div class="ttdef"><b>Definition:</b> jenum.h:1875</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_a95d8e842b11f21278b31c0de42e1014fa356a98a21426787bb7b39c7b2daf99ed"><div class="ttname"><a href="namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa356a98a21426787bb7b39c7b2daf99ed">ProtocolPP::CRC_POLY</a></div><div class="ttdeci">@ CRC_POLY</div><div class="ttdoc">CRC with user supplied polynomial.</div><div class="ttdef"><b>Definition:</b> jenum.h:1879</div></div>
 </div><!-- fragment --><p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jmodes.html">ProtocolPP::jmodes</a> </dd>
 <dd>
 <a class="el" href="classProtocolPP_1_1ciphers.html">ProtocolPP::ciphers</a> </dd>
@@ -235,7 +235,7 @@ $(document).ready(function(){initNavTree('classciphers.html',''); initResizable(
 <a class="el" href="classjintegrity.html">jintegrity</a> </dd>
 <dd>
 <a class="el" href="classjintegritysa.html">jintegritysa</a></dd></dl>
-<center>Protocol++&reg; (Protocolpp&reg;) written by : John Peter Greninger &bull; &copy; John Peter Greninger 2015-2023 &bull; All Rights Reserved</center> <center><sub>All copyrights and trademarks are the property of their respective owners</sub></center><p>The source code contained or described herein and all documents related to the source code (herein called "Material") are owned by John Peter Greninger and Sheila Rocha Greninger. Title to the Material remains with John Peter Greninger and Sheila Rocha Greninger. The Material contains trade secrets and proprietary and confidential information of John Peter Greninger and Sheila Rocha Greninger. The Material is protected by worldwide copyright and trade secret laws and treaty provisions. No part of the Material may be used, copied, reproduced, modified, published, uploaded, posted, transmitted, distributed, or disclosed in any way without prior express written consent of John Peter Greninger and Sheila Rocha Greninger (both are required)</p>
+<center>Protocol++&reg; (Protocolpp&reg;) written by : John Peter Greninger &bull; &copy; John Peter Greninger 2015-2024 &bull; All Rights Reserved</center> <center><sub>All copyrights and trademarks are the property of their respective owners</sub></center><p>The source code contained or described herein and all documents related to the source code (herein called "Material") are owned by John Peter Greninger and Sheila Rocha Greninger. Title to the Material remains with John Peter Greninger and Sheila Rocha Greninger. The Material contains trade secrets and proprietary and confidential information of John Peter Greninger and Sheila Rocha Greninger. The Material is protected by worldwide copyright and trade secret laws and treaty provisions. No part of the Material may be used, copied, reproduced, modified, published, uploaded, posted, transmitted, distributed, or disclosed in any way without prior express written consent of John Peter Greninger and Sheila Rocha Greninger (both are required)</p>
 <p>No license under any patent, copyright, trade secret, or other intellectual property right is granted to or conferred upon you by disclosure or delivery of the Materials, either expressly, by implication, inducement, estoppel, or otherwise. Any license under such intellectual property rights must be express and approved by John Peter Greninger and Sheila Rocha Greninger in writing</p>
 <p>Licensing information can be found at <b>www.protocolpp.com/license</b> with use of the binary forms permitted provided that the following conditions are met:</p>
 <ul>
@@ -270,7 +270,7 @@ $(document).ready(function(){initNavTree('classciphers.html',''); initResizable(
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classciphers.html">ciphers</a></li>
-    <li class="footer">Generated on Mon Jan 1 2024 19:46:14 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jun 4 2024 11:11:18 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
