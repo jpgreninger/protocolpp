@@ -59,7 +59,7 @@ protocolpp® - Executable of the full set of protocols, ciphers, testbench,
 
 libprotocolpp.a - Static library of the protocolpp.h interface, wasp.h, and ciphers.h
 
-libprotocolpp.so.5.5.0 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
+libprotocolpp.so.5.5.1 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
 
 winprot++.lib - Static library for Windows compiled under VC++ 19
 
@@ -171,7 +171,7 @@ For W.A.S.P usage, see the doxygen section
 
 * See www.protocolpp.com for more updates, information and licensing
 
-* Protocolpp® (Protocol++®) - 5.5.1 Upcoming June 7, 2024
+* Protocolpp® (Protocol++®) - 5.5.1 Released June 7, 2024
   * See release notes in paid version
   * See www.protocolpp.com for further information
   * Contains two signatures, one for the encrypted file, one found inside the encrypted file for the release. Please verify both
