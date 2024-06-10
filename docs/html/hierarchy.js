@@ -256,7 +256,7 @@ var hierarchy =
     [ "option::PrintUsageImplementation", "structoption_1_1PrintUsageImplementation.html", null ],
     [ "InterfacePP::ringflow", "classInterfacePP_1_1ringflow.html", null ],
     [ "InterfacePP::ringin", "classInterfacePP_1_1ringin.html", null ],
-    [ "ringobj", "classringobj.html", null ],
+    [ "RINGOBJ", "classRINGOBJ.html", null ],
     [ "InterfacePP::ringout", "classInterfacePP_1_1ringout.html", null ],
     [ "InterfacePP::secin", "classInterfacePP_1_1secin.html", [
       [ "InterfacePP::secout", "classInterfacePP_1_1secout.html", null ]

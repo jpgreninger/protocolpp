@@ -37,7 +37,7 @@ var searchData=
   ['ringdriver_1520',['RINGDRIVER',['../namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca620847f57fdc29147111e638bc34644a',1,'ProtocolPP']]],
   ['ringflow_1521',['ringflow',['../classInterfacePP_1_1ringflow.html',1,'InterfacePP::ringflow'],['../classInterfacePP_1_1ringflow.html#a88d06381bfd299176047a91ff17e50e4',1,'InterfacePP::ringflow::ringflow()']]],
   ['ringin_1522',['ringin',['../classInterfacePP_1_1ringin.html',1,'InterfacePP::ringin'],['../classInterfacePP_1_1ringin.html#afbeaa233c9cdfcc0ab54170d4b372b69',1,'InterfacePP::ringin::ringin()']]],
-  ['ringobj_1523',['ringobj',['../classringobj.html',1,'']]],
+  ['ringobj_1523',['RINGOBJ',['../classRINGOBJ.html',1,'']]],
   ['ringout_1524',['ringout',['../classInterfacePP_1_1ringout.html',1,'InterfacePP::ringout'],['../classInterfacePP_1_1ringout.html#a32a5a64db42a62b760c5e9d0376e4719',1,'InterfacePP::ringout::ringout()']]],
   ['rlc_1525',['RLC',['../namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5cae7d0ba200e397675fdbbf1d816fc07a1',1,'ProtocolPP']]],
   ['rname_1526',['rname',['../structProtocolPP_1_1jtestcfg_1_1tstresp.html#a2366eb513b7bc0bce9b58afd5d216af2',1,'ProtocolPP::jtestcfg::tstresp']]],

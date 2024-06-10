@@ -251,7 +251,7 @@ var annotated_dup =
     [ "jxmssaddr", "classjxmssaddr.html", null ],
     [ "jzuc", "classjzuc.html", null ],
     [ "log_policy_interface", "classlog__policy__interface.html", null ],
-    [ "ringobj", "classringobj.html", null ],
+    [ "RINGOBJ", "classRINGOBJ.html", null ],
     [ "SFMT", "classSFMT.html", null ],
     [ "StdCapture", "classStdCapture.html", "classStdCapture" ],
     [ "wasp", "classwasp.html", null ]
