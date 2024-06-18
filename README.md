@@ -178,8 +178,8 @@ For W.A.S.P usage, see the doxygen section
   * XMSS^MT support
   * CSNA 1.0 and 2.0 compliance
   * See the release video 
-  * SHA384 (encrypt file) : 
-  * SHA384 (release file) : 
+  * SHA384 (encrypt file) : c6cede633c6b3e2f33f59e6f07b7837849a416bb41fc320eb278f3201bd856131c8726a008ac1c03d2fe72fa8cb41023
+  * SHA384 (release file) : 3492ebbac0ffa70dd74f57c0004a87fab2b746580e9ef46e2e3c11271afcf64317c825cf6158da9a4e5b32614060daa8
 
 * Protocolpp® (Protocol++®) - 5.5.0 Released January 1, 2024
   * See release notes in paid version
