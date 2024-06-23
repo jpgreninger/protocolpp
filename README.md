@@ -64,8 +64,9 @@ libprotocolpp.so.5.5.1 - Shared library of the protocolpp.h interface, wasp.h, a
 winprot++.lib - Static library for Windows compiled under VC++ 19
 
 rdriver - Ring driver that for UDP, TCP, TLS, or SRTP. Underlying protocols include
-          ICMP, IP, IPsec, MACsec, Ethernet, LTE, RLC, Wifi, WiGig, WiMax with separate
-          threads that run both the send and receive functions from the rings
+          ICMP, IP, IPsec, MACsec, Ethernet, LTE, RLC, Wifi, WiGig, WiMax, VXLAN,
+          NVGRE with separate threads that run both the send and receive functions
+          from the rings
 
 ddriver - Same as the ring driver except the input and output are queues rather than
           rings and have push and pop routines to send and receive packets
@@ -171,6 +172,15 @@ For W.A.S.P usage, see the doxygen section
 
 * See www.protocolpp.com for more updates, information and licensing
 
+* Protocol++® (Protocolpp®) - 5.6.0 Released July 1, 2024
+  * See release notes in paid version
+  * See www.protocolpp.com for further information
+  * Contains two signatures, one for the encrypted file, one found inside the encrypted file for the release. Please verify both
+  * XMSS and XMSS^MT: SHA2, SHAKE256, 192 and 256-bit. XML and JSON formats (as found in NIST800-208)
+  * LMS-HSS: SHA2, SHAKE256, 192 and 256-bit. XML and JSON formats (as found in NIST800-208)
+  * CSNA 1.0 and 2.0 compliance
+  * See the release video
+    
 * Protocolpp® (Protocol++®) - 5.5.1 Released June 7, 2024
   * See release notes in paid version
   * See www.protocolpp.com for further information
