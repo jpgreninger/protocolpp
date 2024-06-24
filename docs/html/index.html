@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++&reg; (Protocolpp&reg;)
-   &#160;<span id="projectnumber">v5.5.1</span>
+   &#160;<span id="projectnumber">v5.6.0</span>
    </div>
   </td>
  </tr>
@@ -1074,7 +1074,7 @@ jprotocolpp</dd></dl>
 </div>
  <h1><a class="anchor" id="JXMSS"></a>
 eXtended Merkle Signature System (XMSS)</h1>
-<p>See RFC8391 XMSS: eXtended Merkle Signature Scheme (XMSS) from the IETF</p>
+<p>See RFC8391 XMSS: eXtended Merkle Signature Scheme (XMSS) from the IETF See NIST SP 800-208 Recommendation for Stateful Hash-Based Signature Schemes</p>
 <p>The eXtended Merkle Signature Scheme (XMSS) is a hash-based digital signature system that is based on existing descriptions in scientific literature. The specification specifices Winternitz One-Time Signature Plus (WOTS+), a one-time signature scheme; XMSS, a single-tree scheme; and XMSS^MT, a multi-tree variant of XMSS. Both XMSS and XMSS^MT use WOTS+ as a main bulding block. XMSS provides cryptographic digital signatures without relying on the conjectured hardness of mathematical problems. Instead, it relies on the properties of the cryptographic hash functions. XMSS provides strong security guarantees and is even secure when the collision resistance of the underlying hash is broken. It is suitable for compact implementations, relatively simple to implement, and naturally resists side-channel attacks. Unlike most other signature schemes, hash-based signatures can so far withstand know quantum computer attacks</p>
 <p>For the Protocol++&reg; interface to XMSS see</p>
 <p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jxmss.html">ProtocolPP::jxmss</a> </dd>
@@ -1095,7 +1095,7 @@ eXtended Merkle Signature System (XMSS)</h1>
 jprotocolpp</dd></dl>
 <h1><a class="anchor" id="LMSHash"></a>
 Leighton-Micali Hash-Based Signatures (LMS)</h1>
-<p>See RFC8554 Leighton-Micali Hash-Based Signatures (LMS) from the IETF</p>
+<p>See RFC8554 Leighton-Micali Hash-Based Signatures (LMS) from the IETF See NIST SP 800-208 Recommendation for Stateful Hash-Based Signature Schemes</p>
 <p>The Leighton-Micali Signature (LMS) method can sign a potentially large but fixed number of messages. An LMS system uses two cryptographic components: a one-time signature method and a hash function. Each LMS public/private key pair is associated with a perfect binary tree, each node of which contains an m-byte value, where m is the output length of the hash function. Each leaf of the tree contains the value of the public key of an LM-OTS public/private key pair. The value contained by the root of the tree is the LMS public key. Each interior node is computed by applying the hash function to the concatenation of the values of its children nodes</p>
 <p>Each node of the tree is associated with a node number, an unsigned integer that is denoted as node_num in the algorithms below, which is computed as follows. The root node has node number 1; for each node with node number <img class="formulaInl" alt="$ N &lt; {2}^{h} $" src="form_380.png"/> (where h is the height of the tree), its left child has node number <img class="formulaInl" alt="$ 2*N $" src="form_381.png"/>, while its right child has node number <img class="formulaInl" alt="$ 2*N + 1 $" src="form_382.png"/>. The result of this is that each node within the tree will have a unique node number, and the leaves will have node numbers 2^h, (2^h)+1, (2^h)+2, ..., (2^h)+(2^h)-1 In general, the j-th node at level i has node number <img class="formulaInl" alt="$ {2}^{i} + j $" src="form_383.png"/>. The node number can conveniently be computed when it is needed in the LMS algorithms, as described in those algorithms</p>
 <p>For the Protocol++&reg; interface to LMS see</p>
@@ -1357,7 +1357,7 @@ jrsasa </dd>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jun 8 2024 16:26:36 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jun 23 2024 21:18:18 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++&reg; (Protocolpp&reg;)
-   &#160;<span id="projectnumber">v5.5.1</span>
+   &#160;<span id="projectnumber">v5.6.0</span>
    </div>
   </td>
  </tr>
@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('classProtocolPP_1_1jlms.html',''); ini
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classProtocolPP_1_1jlms-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ProtocolPP::jlms Class Reference</div>  </div>
@@ -112,8 +113,8 @@ Collaboration diagram for ProtocolPP::jlms:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1dc6fcac528631b1fd7f92340af3cded"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jlms.html#a1dc6fcac528631b1fd7f92340af3cded">jlms</a> (std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jrand.html">jrand</a> &gt; &amp;rand)</td></tr>
 <tr class="separator:a1dc6fcac528631b1fd7f92340af3cded"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada1074b47d9b1daf6df0e19e608dfb00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jlms.html#ada1074b47d9b1daf6df0e19e608dfb00">jlms</a> (std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jrand.html">jrand</a> &gt; &amp;rand, <a class="el" href="namespaceProtocolPP.html#a05592e926d650d45a3cb2569246e43b1">lms_algorithm_t</a> alg, <a class="el" href="namespaceProtocolPP.html#ac747fc297fa950746a3f741f7c3a36a9">lmots_algorithm_t</a> otsalg)</td></tr>
-<tr class="separator:ada1074b47d9b1daf6df0e19e608dfb00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c744cad2925d818b08e67aafa6b0bbc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jlms.html#a2c744cad2925d818b08e67aafa6b0bbc">jlms</a> (std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jrand.html">jrand</a> &gt; &amp;rand, const char *alg, const char *otsalg, int treelvls)</td></tr>
+<tr class="separator:a2c744cad2925d818b08e67aafa6b0bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a179b00cedf1d87e44b72d34cd0d7ec95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jlms.html#a179b00cedf1d87e44b72d34cd0d7ec95">jlms</a> (std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jrand.html">jrand</a> &gt; &amp;rand, std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jlmsa.html">jlmsa</a> &gt; &amp;security)</td></tr>
 <tr class="separator:a179b00cedf1d87e44b72d34cd0d7ec95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfcd313f9f5936fc7bce24bbe0061b12"><td class="memItemLeft" align="right" valign="top"><a id="adfcd313f9f5936fc7bce24bbe0061b12"></a>
@@ -184,8 +185,11 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 &#160;</td><td class="memItemRight" valign="bottom"><b>jprotocol</b> (const <a class="el" href="classProtocolPP_1_1jprotocol.html">jprotocol</a> &amp;<a class="el" href="classProtocolPP_1_1jprotocol.html">jprotocol</a>)=delete</td></tr>
 <tr class="separator:abd5388366ecac8e3d0db3835a99dce2e inherit pub_methods_classProtocolPP_1_1jprotocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a90529a43cca4281fc8ac4bf39d22defd"><td class="memItemLeft" align="right" valign="top"><a id="a90529a43cca4281fc8ac4bf39d22defd"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>rand</b> (void *output, size_t len)</td></tr>
+<tr class="separator:a90529a43cca4281fc8ac4bf39d22defd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classProtocolPP_1_1jprotocol"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classProtocolPP_1_1jprotocol')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classProtocolPP_1_1jprotocol.html">ProtocolPP::jprotocol</a></td></tr>
 <tr class="memitem:a9b83a375abb4666f47a3ce4092826bfa inherit pub_static_methods_classProtocolPP_1_1jprotocol"><td class="memItemLeft" align="right" valign="top">const static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jprotocol.html#a9b83a375abb4666f47a3ce4092826bfa">currentDateTime</a> ()</td></tr>
 <tr class="separator:a9b83a375abb4666f47a3ce4092826bfa inherit pub_static_methods_classProtocolPP_1_1jprotocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,6 +213,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a5407c6590d042898346826c5c90a27f1 inherit pub_static_methods_classProtocolPP_1_1jprotocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49be9926483f27d4cbd788a1e3b9940f inherit pub_static_methods_classProtocolPP_1_1jprotocol"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jprotocol.html#a49be9926483f27d4cbd788a1e3b9940f">fnv_hash</a> (std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; uint8_t &gt;&gt; &amp;header, <a class="el" href="classProtocolPP_1_1jarray.html">jarray</a>&lt; uint8_t &gt; &amp;mask, uint32_t hdrlen)</td></tr>
 <tr class="separator:a49be9926483f27d4cbd788a1e3b9940f inherit pub_static_methods_classProtocolPP_1_1jprotocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classProtocolPP_1_1jprotocol"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classProtocolPP_1_1jprotocol')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classProtocolPP_1_1jprotocol.html">ProtocolPP::jprotocol</a></td></tr>
 <tr class="memitem:a8975ba53a5af524613f1cf9995c4a0ac inherit pro_methods_classProtocolPP_1_1jprotocol"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TE &gt; </td></tr>
 <tr class="memitem:a8975ba53a5af524613f1cf9995c4a0ac inherit pro_methods_classProtocolPP_1_1jprotocol"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jreplay.html">jreplay</a>&lt; T, TE &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jprotocol.html#a8975ba53a5af524613f1cf9995c4a0ac">update_replay</a> (<a class="el" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5c">protocol_t</a> prot, T &amp;seqnum, TE &amp;extseq, bool usext, uint32_t size)</td></tr>
@@ -285,8 +292,8 @@ std::fstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="ada1074b47d9b1daf6df0e19e608dfb00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada1074b47d9b1daf6df0e19e608dfb00">&#9670;&nbsp;</a></span>jlms() <span class="overload">[2/3]</span></h2>
+<a id="a2c744cad2925d818b08e67aafa6b0bbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c744cad2925d818b08e67aafa6b0bbc">&#9670;&nbsp;</a></span>jlms() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -300,14 +307,20 @@ std::fstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceProtocolPP.html#a05592e926d650d45a3cb2569246e43b1">lms_algorithm_t</a>&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>alg</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceProtocolPP.html#ac747fc297fa950746a3f741f7c3a36a9">lmots_algorithm_t</a>&#160;</td>
-          <td class="paramname"><em>otsalg</em>&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>otsalg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>treelvls</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -319,8 +332,9 @@ std::fstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Standard constructor with XMSS type </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rand</td><td>- pseudorandom with uniform distribution </td></tr>
-    <tr><td class="paramname">alg</td><td>- LMS algorithm type </td></tr>
-    <tr><td class="paramname">otsalg</td><td>- LMSOTS algorithm type </td></tr>
+    <tr><td class="paramname">alg</td><td>- LMS algorithm type. Must match otsalg in length equal to treelvls. Ex: "LMS_SHA256_M32_H5,LMS_SHA256_M32_H10" </td></tr>
+    <tr><td class="paramname">otsalg</td><td>- LMSOTS algorithm type. Must match alg in length equal to treelvls. Ex: "PLMOTS_SHA256_N32_W1,PLMOTS_SHA256_N32_W2" </td></tr>
+    <tr><td class="paramname">treelvls</td><td>- number of tree levels </td></tr>
   </table>
   </dd>
 </dl>
@@ -733,7 +747,7 @@ std::fstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceProtocolPP.html">ProtocolPP</a></li><li class="navelem"><a class="el" href="classProtocolPP_1_1jlms.html">jlms</a></li>
-    <li class="footer">Generated on Sat Jun 8 2024 16:26:36 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jun 23 2024 21:18:18 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

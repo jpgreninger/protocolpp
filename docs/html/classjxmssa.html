@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++&reg; (Protocolpp&reg;)
-   &#160;<span id="projectnumber">v5.5.1</span>
+   &#160;<span id="projectnumber">v5.6.0</span>
    </div>
   </td>
  </tr>
@@ -91,6 +91,110 @@ $(document).ready(function(){initNavTree('classjxmssa.html',''); initResizable()
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The eXtended Merkel Signature Scheme (XMSS), a hash-bashed digital signature scheme that is based on existing descriptions in scientific literature. There are three types of signatures specified for Winternitz One-Time Signature Plus (WOTS+), a one-time signature scheme; XMSS, a single-tree scheme; and XMSS^MT, a multi-tree variant of XMSS. Both XMSS and XMSS^MT use WOTS+ as a main bulding block. XMSS provides cryptographic digital signatures without relying on the conjectured hardness of mathematical problems. Instead, it is proven that it only relies on the properties of cryptographic hash functions. XMSS provides strong security guarantees and is even secure when the collison resistance of the underlying hash function is broken. Its is suitable for compact implementations, is relatively simple to implement, and naturally resists side-channel attacks. Unlike most other signature systems, hash-based signatures can so far withstand known attacks using quantum computers</p>
 <p>The xmss_algorithm_t used to create the security association is sufficient to determine all other initial parameters for the desired XMSS signatures</p>
+<h2><a class="anchor" id="XMSSSAP"></a>
+Supported XMSS Parameters</h2>
+<a class="anchor" id="XMSSAP"></a>
+<table class="doxtable">
+<caption>XMSS Parameters</caption>
+<tr>
+<th>Name</th><th>H</th><th>m</th><th>h</th><th>type value </th></tr>
+<tr>
+<td>XMSS_SHA2_10_256</td><td>SHA256</td><td>32</td><td>10</td><td>0x00000001 </td></tr>
+<tr>
+<td>XMSS_SHA2_16_256</td><td>SHA256</td><td>32</td><td>16</td><td>0x00000002 </td></tr>
+<tr>
+<td>XMSS_SHA2_20_256</td><td>SHA256</td><td>32</td><td>20</td><td>0x00000003 </td></tr>
+<tr>
+<td>XMSS_SHA2_10_192</td><td>SHA256</td><td>24</td><td>10</td><td>0x0000000D </td></tr>
+<tr>
+<td>XMSS_SHA2_16_192</td><td>SHA256</td><td>24</td><td>16</td><td>0x0000000E </td></tr>
+<tr>
+<td>XMSS_SHA2_20_192</td><td>SHA256</td><td>24</td><td>20</td><td>0x0000000F </td></tr>
+<tr>
+<td>XMSS_SHAKE256_10_256</td><td>SHAKE256</td><td>32</td><td>10</td><td>0x00000010 </td></tr>
+<tr>
+<td>XMSS_SHAKE256_16_256</td><td>SHAKE256</td><td>32</td><td>16</td><td>0x00000011 </td></tr>
+<tr>
+<td>XMSS_SHAKE256_20_256</td><td>SHAKE256</td><td>32</td><td>20</td><td>0x00000012 </td></tr>
+<tr>
+<td>XMSS_SHAKE256_10_192</td><td>SHAKE256</td><td>24</td><td>10</td><td>0x00000013 </td></tr>
+<tr>
+<td>XMSS_SHAKE256_16_192</td><td>SHAKE256</td><td>24</td><td>16</td><td>0x00000014 </td></tr>
+<tr>
+<td>XMSS_SHAKE256_20_192</td><td>SHAKE256</td><td>24</td><td>20</td><td>0x00000015 </td></tr>
+</table>
+<h2><a class="anchor" id="XMSSMTSAP"></a>
+Supported XMSS^MT Parameters</h2>
+<a class="anchor" id="XMSSMTAP"></a>
+<table class="doxtable">
+<caption>XMSS^MT Parameters</caption>
+<tr>
+<th>Name</th><th>H</th><th>m</th><th>h</th><th>d</th><th>type value </th></tr>
+<tr>
+<td>XMSSMT_SHA2_20_2_256</td><td>SHA256</td><td>32</td><td>20</td><td>2</td><td>0x00000001 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_20_4_256</td><td>SHA256</td><td>32</td><td>20</td><td>4</td><td>0x00000002 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_40_2_256</td><td>SHA256</td><td>32</td><td>40</td><td>2</td><td>0x00000003 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_40_4_256</td><td>SHA256</td><td>32</td><td>40</td><td>4</td><td>0x00000004 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_40_8_256</td><td>SHA256</td><td>32</td><td>40</td><td>4</td><td>0x00000005 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_60_3_256</td><td>SHA256</td><td>32</td><td>60</td><td>3</td><td>0x00000006 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_60_6_256</td><td>SHA256</td><td>32</td><td>60</td><td>6</td><td>0x00000007 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_60_12_256</td><td>SHA256</td><td>32</td><td>60</td><td>12</td><td>0x00000008 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_20_2_192</td><td>SHA256</td><td>32</td><td>20</td><td>2</td><td>0x00000021 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_20_4_192</td><td>SHA256</td><td>32</td><td>20</td><td>4</td><td>0x00000022 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_40_2_192</td><td>SHA256</td><td>32</td><td>40</td><td>2</td><td>0x00000023 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_40_4_192</td><td>SHA256</td><td>32</td><td>40</td><td>4</td><td>0x00000024 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_40_8_192</td><td>SHA256</td><td>32</td><td>40</td><td>4</td><td>0x00000025 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_60_3_192</td><td>SHA256</td><td>32</td><td>60</td><td>3</td><td>0x00000026 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_60_6_192</td><td>SHA256</td><td>32</td><td>60</td><td>6</td><td>0x00000027 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_60_12_192</td><td>SHA256</td><td>32</td><td>60</td><td>12</td><td>0x00000028 </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_20_2_256</td><td>SHAKE256</td><td>32</td><td>20</td><td>2</td><td>0x00000029 </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_20_4_256</td><td>SHAKE256</td><td>32</td><td>20</td><td>4</td><td>0x0000002A </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_40_2_256</td><td>SHAKE256</td><td>32</td><td>40</td><td>2</td><td>0x0000002B </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_40_4_256</td><td>SHAKE256</td><td>32</td><td>40</td><td>4</td><td>0x0000002C </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_40_8_256</td><td>SHAKE256</td><td>32</td><td>40</td><td>4</td><td>0x0000002D </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_60_3_256</td><td>SHAKE256</td><td>32</td><td>60</td><td>3</td><td>0x0000002E </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_60_6_256</td><td>SHAKE256</td><td>32</td><td>60</td><td>6</td><td>0x0000002F </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_60_12_256</td><td>SHAKE256</td><td>32</td><td>60</td><td>12</td><td>0x00000030 </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_20_2_192</td><td>SHAKE256</td><td>32</td><td>20</td><td>2</td><td>0x00000031 </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_20_4_192</td><td>SHAKE256</td><td>32</td><td>20</td><td>4</td><td>0x00000032 </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_40_2_192</td><td>SHAKE256</td><td>32</td><td>40</td><td>2</td><td>0x00000033 </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_40_4_192</td><td>SHAKE256</td><td>32</td><td>40</td><td>4</td><td>0x00000034 </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_40_8_192</td><td>SHAKE256</td><td>32</td><td>40</td><td>4</td><td>0x00000035 </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_60_3_192</td><td>SHAKE256</td><td>32</td><td>60</td><td>3</td><td>0x00000036 </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_60_6_192</td><td>SHAKE256</td><td>32</td><td>60</td><td>6</td><td>0x00000037 </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_60_12_192</td><td>SHAKE256</td><td>32</td><td>60</td><td>12</td><td>0x00000038 </td></tr>
+</table>
 <div class="image">
 <img src="quantumresist.jpg" alt=""/>
 <div class="caption">
@@ -133,7 +237,7 @@ XMSS Tree</div></div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjxmssa.html">jxmssa</a></li>
-    <li class="footer">Generated on Sat Jun 8 2024 16:26:36 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jun 23 2024 21:18:17 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

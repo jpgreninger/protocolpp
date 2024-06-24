@@ -1,7 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"classProtocolPP_1_1sfmt.html#aeb40df45377cd49d0fee3ec3d24afdd1":[2,0,4,72,2],
-"classProtocolPP_1_1sfmt.html#aecbbec30293839ced7a1faee3759d382":[2,0,4,72,26],
 "classProtocolPP_1_1wasp.html":[2,0,4,73],
 "classProtocolPP_1_1wasp.html#a0058ce26e26ad63ab0c85aa8e029cfd9":[2,0,4,73,0],
 "classProtocolPP_1_1wasp.html#a082373b722bfa8fda17f24d561738892":[2,0,4,73,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX7 =
 "classtinyxml2_1_1XMLAttribute.html#a049dea6449a6259b6cfed44a9427b607":[2,0,5,11,14],
 "classtinyxml2_1_1XMLAttribute.html#a0be5343b08a957c42c02c5d32c35d338":[2,0,5,11,33],
 "classtinyxml2_1_1XMLAttribute.html#a10964060a5c0d92486ecf8705bdf37da":[2,0,5,11,28],
-"classtinyxml2_1_1XMLAttribute.html#a1aab1dd0e43ecbcfa306adbcf3a3d853":[2,0,5,11,34]
+"classtinyxml2_1_1XMLAttribute.html#a1aab1dd0e43ecbcfa306adbcf3a3d853":[2,0,5,11,34],
+"classtinyxml2_1_1XMLAttribute.html#a225bccaec4ea37f18f59a4d0ef907a6f":[2,0,5,11,12],
+"classtinyxml2_1_1XMLAttribute.html#a26a13b158ca18e05f002f1a9bd26bcd8":[2,0,5,11,26]
 };

@@ -1,7 +1,7 @@
 var classProtocolPP_1_1jlms =
 [
     [ "jlms", "classProtocolPP_1_1jlms.html#a1dc6fcac528631b1fd7f92340af3cded", null ],
-    [ "jlms", "classProtocolPP_1_1jlms.html#ada1074b47d9b1daf6df0e19e608dfb00", null ],
+    [ "jlms", "classProtocolPP_1_1jlms.html#a2c744cad2925d818b08e67aafa6b0bbc", null ],
     [ "jlms", "classProtocolPP_1_1jlms.html#a179b00cedf1d87e44b72d34cd0d7ec95", null ],
     [ "~jlms", "classProtocolPP_1_1jlms.html#adfcd313f9f5936fc7bce24bbe0061b12", null ],
     [ "decap_packet", "classProtocolPP_1_1jlms.html#ad80dd5e638de07cf17cdd1b434174612", null ],
@@ -11,6 +11,7 @@ var classProtocolPP_1_1jlms =
     [ "get_field", "classProtocolPP_1_1jlms.html#a7383f4e036ef6cf8826fe1df888706e7", null ],
     [ "get_hdr", "classProtocolPP_1_1jlms.html#a5a2a4134bf858e613ab3cae6d75491c1", null ],
     [ "get_security", "classProtocolPP_1_1jlms.html#a7ca74dddf52adc156722aca8279d02de", null ],
+    [ "rand", "classProtocolPP_1_1jlms.html#a90529a43cca4281fc8ac4bf39d22defd", null ],
     [ "set_field", "classProtocolPP_1_1jlms.html#a94a9428a28baa6df0fc7028cddf4a78d", null ],
     [ "set_hdr", "classProtocolPP_1_1jlms.html#a8e58fd8e2a4c95f43324fb1ff1206010", null ],
     [ "sign", "classProtocolPP_1_1jlms.html#af8ae609471cf17c0dc0d44a4205e84e0", null ],

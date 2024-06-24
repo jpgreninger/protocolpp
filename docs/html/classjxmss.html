@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++&reg; (Protocolpp&reg;)
-   &#160;<span id="projectnumber">v5.5.1</span>
+   &#160;<span id="projectnumber">v5.6.0</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('classjxmss.html',''); initResizable();
 <div class="line">+---------------------------+</div>
 <div class="line">|          <a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a76a2ea9d5bce744be549425b2dadd0e7">SEED</a>             | n bytes</div>
 <div class="line">+---------------------------+</div>
-<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36a76a2ea9d5bce744be549425b2dadd0e7"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a76a2ea9d5bce744be549425b2dadd0e7">ProtocolPP::SEED</a></div><div class="ttdeci">@ SEED</div><div class="ttdoc">Testbench seed.</div><div class="ttdef"><b>Definition:</b> jenum.h:770</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36a76a2ea9d5bce744be549425b2dadd0e7"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a76a2ea9d5bce744be549425b2dadd0e7">ProtocolPP::SEED</a></div><div class="ttdeci">@ SEED</div><div class="ttdoc">Testbench seed.</div><div class="ttdef"><b>Definition:</b> jenum.h:773</div></div>
 </div><!-- fragment --><p>The authentication path is an array of h n-byte strings. It contains the siblings of the nodes on the path from the used leaf to the root. It does not contain the nodes on the path itself. A verifier needs these nodes to compute a root node for the tree from the WOTS+ public key. A node Node is addressed by its position in the tree. Node(x,y) denotes the y^th node on level x with y=0 being the leftmost node on a level. The leaves are on level 0; the root is on level h. An authentication path contains exactly one node on every layer 0 &lt;= x &lt;= (h-1). For the i^th WOTS+ key pair, counting from zero, the j^th authentication path node is</p>
 <p><img class="formulaInl" alt="$ Node(j, std::floor(i/{2}^{j}) XOR 1) $" src="form_470.png"/></p>
 <p><b>XMSS Signature Generation</b></p>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('classjxmss.html',''); initResizable();
 <div class="line">|        auth[h-1]           | n bytes</div>
 <div class="line">+----------------------------+</div>
 <div class="line">        <a class="code" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca6f8b3788be7b5f3a0156d6b135dde350">XMSS</a> Signature</div>
-<div class="ttc" id="anamespaceProtocolPP_html_a15957f30f5cdc906a54e53fcb4834e5ca6f8b3788be7b5f3a0156d6b135dde350"><div class="ttname"><a href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca6f8b3788be7b5f3a0156d6b135dde350">ProtocolPP::XMSS</a></div><div class="ttdeci">@ XMSS</div><div class="ttdoc">XMSS Signature method.</div><div class="ttdef"><b>Definition:</b> jenum.h:1288</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_a15957f30f5cdc906a54e53fcb4834e5ca6f8b3788be7b5f3a0156d6b135dde350"><div class="ttname"><a href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca6f8b3788be7b5f3a0156d6b135dde350">ProtocolPP::XMSS</a></div><div class="ttdeci">@ XMSS</div><div class="ttdoc">XMSS Signature method.</div><div class="ttdef"><b>Definition:</b> jenum.h:1297</div></div>
 </div><!-- fragment --><p><b>XMSS Signature Verification</b></p>
 <p>An XMSS signature is verified by first computing the message digest using randomness r, index idx_sig, the root from PK and message M. The used WOTS+ public key pk_ots is computed from the WOTS+ signature using WOTS_pkFromSig. The WOTS+ public key in turn is used to compute the corresponding leaf using an L-tree. The leaf, together with idex idx_sig and authentication root value for the tree. The verification succeeds if and only if the computed root value matches the one in the XMSS public key. In any other case, it MUST return fail</p>
 <p>The main part of the XMSS signature verification is done by the function XMSS_rootFromSig described below. XMSS_rootFromSig takes as input an index idx_sig, a WOTS+ signature sig_ots an authentication path auth, an n-byte message M', seed SEED, and address ADRS. XMSS_rootFromSig returns an n-byte string holding the value of the root of a tree defiend by the input data</p>
@@ -185,7 +185,124 @@ QuantumResist</div></div>
 <img src="xmss_tree.png" alt=""/>
 <div class="caption">
 XMSS Tree</div></div>
- <center>Protocol++&reg; (<a class="el" href="namespaceProtocolPP.html">ProtocolPP</a>&reg;) written by : John Peter Greninger &bull; &copy; John Peter Greninger 2015-2024 &bull; All Rights Reserved</center> <center><sub>All copyrights and trademarks are the property of their respective owners</sub></center><p>The source code contained or described herein and all documents related to the source code (herein called "Material") are owned by John Peter Greninger and Sheila Rocha Greninger. Title to the Material remains with John Peter Greninger and Sheila Rocha Greninger. The Material contains trade secrets and proprietary and confidential information of John Peter Greninger and Sheila Rocha Greninger. The Material is protected by worldwide copyright and trade secret laws and treaty provisions. No part of the Material may be used, copied, reproduced, modified, published, uploaded, posted, transmitted, distributed, or disclosed in any way without prior express written consent of John Peter Greninger and Sheila Rocha Greninger (both are required)</p>
+ <h2><a class="anchor" id="NIST800208X"></a>
+NIST SP 800-208 Additions - eXtended Merkle Signature Scheme (XMSS) Parameter Sets</h2>
+<p>The XMSS and XMSSMT algorithms are described in RFC 8391 [1]. This Special Publication approves the use of XMSS and XMSSMT with four different hash functions: SHA-256, SHA-256/192, SHAKE256/256, and SHAKE256/192 (see Section 2.3). 5 The parameter sets that use SHA-256 are defined in RFC 8391 [1]. The parameter sets that use SHA-256/192, SHAKE256/256, and SHAKE256/192 are defined below</p>
+<p>The WOTS+ parameters that correspond to the use of each of these hash functions are specified in table 9</p>
+<p><b>XMSS and XMSSMT Random Number Generation Requirements</b></p>
+<p>The n-byte values SK_PRF and SEED shall be generated using an approved random bit generator (see the SP 800-90 series of publications [6]), where the instantiation of the random bit generator supports at least 8n bits of security strength</p>
+<p>The private n-byte strings in the WOTS+ private keys (sk[i] in Section 3.1.3 of [1]) shall be generated using the pseudorandom key generation method specified in Algorithm 10' in Section 7.2.1:</p>
+<p>sk[j] = PRFkeygen(S_XMSS, SEED || ADRS)</p>
+<p>where PRFkeygen is as defined in Section 5 for the parameter set being used. 6 The private seed, S_XMSS, shall be generated using an approved random bit generator [6], where the instantiation of the random bit generator supports at least 8n bits of security strength. If more than one XMSS key pair is being created within a cryptographic module (including XMSS keys that belong to a single XMSSMT instance), then a separate random S_XMSS shall be generated for each XMSS key pair</p>
+<p><b>XMSS^MT Key Generation</b></p>
+<p>Distributing the implementation of an XMSSMT instance across multiple cryptographic modules requires each cryptographic module to implement slightly modified versions of the XMSS key and signature generation algorithms provided in [1]. The modified versions of these algorithms are provided in Section 7.2.1. The modifications are primarily intended to ensure that each XMSS key uses the appropriate values for its layer and tree addresses when computing prefixes and bitmasks. The modifications also ensure that every XMSS key uses the same value for SEED and that the root of the top-level tree is used when computing the hashes of messages to be signed</p>
+<p>Note that while Algorithm 15 in [1] indicates that an XMSSMT secret key has a single SK_PRF value that is shared by all of the XMSS secret keys, Algorithm 10' in Section 7.2.1 has each cryptographic module generate its own value for SK_PRF. While generating a different SK_PRF for each cryptographic module does not exactly align with the specification in [1], doing so does not affect either interoperability or security. SK_PRF is only used to pseudorandomly generate the value r in Algorithm 16, which is used for randomized hashing, and any secure method for generating random values could be used to generate r</p>
+<p>Section 7.2.2 describes the steps that an external, non-cryptographic device needs to perform in order to implement XMSSMT key and signature generation using a set of cryptographic modules that implement the algorithms in Section 7.2.1. While Algorithms 10' and 12' in Section 7.2.1 have been designed to work with XMSSMT instances that have more than two layers, the algorithms in Section 7.2.2 assume that an XMSSMT instance with exactly two layers is being created</p>
+<h2><a class="anchor" id="XMSSSP"></a>
+Supported XMSS Parameters</h2>
+<a class="anchor" id="XMSSP"></a>
+<table class="doxtable">
+<caption>XMSS Parameters</caption>
+<tr>
+<th>Name</th><th>H</th><th>m</th><th>h</th><th>type value </th></tr>
+<tr>
+<td>XMSS_SHA2_10_256</td><td>SHA256</td><td>32</td><td>10</td><td>0x00000001 </td></tr>
+<tr>
+<td>XMSS_SHA2_16_256</td><td>SHA256</td><td>32</td><td>16</td><td>0x00000002 </td></tr>
+<tr>
+<td>XMSS_SHA2_20_256</td><td>SHA256</td><td>32</td><td>20</td><td>0x00000003 </td></tr>
+<tr>
+<td>XMSS_SHA2_10_192</td><td>SHA256</td><td>24</td><td>10</td><td>0x0000000D </td></tr>
+<tr>
+<td>XMSS_SHA2_16_192</td><td>SHA256</td><td>24</td><td>16</td><td>0x0000000E </td></tr>
+<tr>
+<td>XMSS_SHA2_20_192</td><td>SHA256</td><td>24</td><td>20</td><td>0x0000000F </td></tr>
+<tr>
+<td>XMSS_SHAKE256_10_256</td><td>SHAKE256</td><td>32</td><td>10</td><td>0x00000010 </td></tr>
+<tr>
+<td>XMSS_SHAKE256_16_256</td><td>SHAKE256</td><td>32</td><td>16</td><td>0x00000011 </td></tr>
+<tr>
+<td>XMSS_SHAKE256_20_256</td><td>SHAKE256</td><td>32</td><td>20</td><td>0x00000012 </td></tr>
+<tr>
+<td>XMSS_SHAKE256_10_192</td><td>SHAKE256</td><td>24</td><td>10</td><td>0x00000013 </td></tr>
+<tr>
+<td>XMSS_SHAKE256_16_192</td><td>SHAKE256</td><td>24</td><td>16</td><td>0x00000014 </td></tr>
+<tr>
+<td>XMSS_SHAKE256_20_192</td><td>SHAKE256</td><td>24</td><td>20</td><td>0x00000015 </td></tr>
+</table>
+<h2><a class="anchor" id="XMSSMTSP"></a>
+Supported XMSS^MT Parameters</h2>
+<a class="anchor" id="XMSSMTP"></a>
+<table class="doxtable">
+<caption>XMSS^MT Parameters</caption>
+<tr>
+<th>Name</th><th>H</th><th>m</th><th>h</th><th>d</th><th>type value </th></tr>
+<tr>
+<td>XMSSMT_SHA2_20_2_256</td><td>SHA256</td><td>32</td><td>20</td><td>2</td><td>0x00000001 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_20_4_256</td><td>SHA256</td><td>32</td><td>20</td><td>4</td><td>0x00000002 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_40_2_256</td><td>SHA256</td><td>32</td><td>40</td><td>2</td><td>0x00000003 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_40_4_256</td><td>SHA256</td><td>32</td><td>40</td><td>4</td><td>0x00000004 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_40_8_256</td><td>SHA256</td><td>32</td><td>40</td><td>4</td><td>0x00000005 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_60_3_256</td><td>SHA256</td><td>32</td><td>60</td><td>3</td><td>0x00000006 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_60_6_256</td><td>SHA256</td><td>32</td><td>60</td><td>6</td><td>0x00000007 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_60_12_256</td><td>SHA256</td><td>32</td><td>60</td><td>12</td><td>0x00000008 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_20_2_192</td><td>SHA256</td><td>32</td><td>20</td><td>2</td><td>0x00000021 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_20_4_192</td><td>SHA256</td><td>32</td><td>20</td><td>4</td><td>0x00000022 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_40_2_192</td><td>SHA256</td><td>32</td><td>40</td><td>2</td><td>0x00000023 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_40_4_192</td><td>SHA256</td><td>32</td><td>40</td><td>4</td><td>0x00000024 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_40_8_192</td><td>SHA256</td><td>32</td><td>40</td><td>4</td><td>0x00000025 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_60_3_192</td><td>SHA256</td><td>32</td><td>60</td><td>3</td><td>0x00000026 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_60_6_192</td><td>SHA256</td><td>32</td><td>60</td><td>6</td><td>0x00000027 </td></tr>
+<tr>
+<td>XMSSMT_SHA2_60_12_192</td><td>SHA256</td><td>32</td><td>60</td><td>12</td><td>0x00000028 </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_20_2_256</td><td>SHAKE256</td><td>32</td><td>20</td><td>2</td><td>0x00000029 </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_20_4_256</td><td>SHAKE256</td><td>32</td><td>20</td><td>4</td><td>0x0000002A </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_40_2_256</td><td>SHAKE256</td><td>32</td><td>40</td><td>2</td><td>0x0000002B </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_40_4_256</td><td>SHAKE256</td><td>32</td><td>40</td><td>4</td><td>0x0000002C </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_40_8_256</td><td>SHAKE256</td><td>32</td><td>40</td><td>4</td><td>0x0000002D </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_60_3_256</td><td>SHAKE256</td><td>32</td><td>60</td><td>3</td><td>0x0000002E </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_60_6_256</td><td>SHAKE256</td><td>32</td><td>60</td><td>6</td><td>0x0000002F </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_60_12_256</td><td>SHAKE256</td><td>32</td><td>60</td><td>12</td><td>0x00000030 </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_20_2_192</td><td>SHAKE256</td><td>32</td><td>20</td><td>2</td><td>0x00000031 </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_20_4_192</td><td>SHAKE256</td><td>32</td><td>20</td><td>4</td><td>0x00000032 </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_40_2_192</td><td>SHAKE256</td><td>32</td><td>40</td><td>2</td><td>0x00000033 </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_40_4_192</td><td>SHAKE256</td><td>32</td><td>40</td><td>4</td><td>0x00000034 </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_40_8_192</td><td>SHAKE256</td><td>32</td><td>40</td><td>4</td><td>0x00000035 </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_60_3_192</td><td>SHAKE256</td><td>32</td><td>60</td><td>3</td><td>0x00000036 </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_60_6_192</td><td>SHAKE256</td><td>32</td><td>60</td><td>6</td><td>0x00000037 </td></tr>
+<tr>
+<td>XMSSMT_SHAKE256_60_12_192</td><td>SHAKE256</td><td>32</td><td>60</td><td>12</td><td>0x00000038 </td></tr>
+</table>
+<center>Protocol++&reg; (<a class="el" href="namespaceProtocolPP.html">ProtocolPP</a>&reg;) written by : John Peter Greninger &bull; &copy; John Peter Greninger 2015-2024 &bull; All Rights Reserved</center> <center><sub>All copyrights and trademarks are the property of their respective owners</sub></center><p>The source code contained or described herein and all documents related to the source code (herein called "Material") are owned by John Peter Greninger and Sheila Rocha Greninger. Title to the Material remains with John Peter Greninger and Sheila Rocha Greninger. The Material contains trade secrets and proprietary and confidential information of John Peter Greninger and Sheila Rocha Greninger. The Material is protected by worldwide copyright and trade secret laws and treaty provisions. No part of the Material may be used, copied, reproduced, modified, published, uploaded, posted, transmitted, distributed, or disclosed in any way without prior express written consent of John Peter Greninger and Sheila Rocha Greninger (both are required)</p>
 <p>No license under any patent, copyright, trade secret, or other intellectual property right is granted to or conferred upon you by disclosure or delivery of the Materials, either expressly, by implication, inducement, estoppel, or otherwise. Any license under such intellectual property rights must be express and approved by John Peter Greninger and Sheila Rocha Greninger in writing</p>
 <p>Licensing information can be found at <b>www.protocolpp.com/license</b> with use of the binary forms permitted provided that the following conditions are met:</p>
 <ul>
@@ -219,7 +336,7 @@ XMSS Tree</div></div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjxmss.html">jxmss</a></li>
-    <li class="footer">Generated on Sat Jun 8 2024 16:26:36 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jun 23 2024 21:18:17 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
