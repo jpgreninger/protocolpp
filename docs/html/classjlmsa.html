@@ -90,6 +90,113 @@ $(document).ready(function(){initNavTree('classjlmsa.html',''); initResizable();
 <p><code>#include &quot;include/jlmsa.h&quot;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Security Association for LMS Signature System (LMS)</p>
+<p><b>Leighton-Micali Signatures</b></p>
+<p>The Leighton-Micali Signature (LMS) method can sign a potentially large but fixed number of messages An LMS system uses two cryptographic components: a one-time signature method and a hash function. Each LMS public/private key pair is associated with a perfect binary tree, each node of which contains an m-byte value, where m is the output length of the hash function. Each leaf of the tree contains the value of the public key of an LM-OTS public/private key pair. The value contained by the root of the tree is the LMS key pair. The value contained by the root fo teh tree is the LMS key pair. Each interior node is computed by applying the hash function to the concatenation of the values of its children nodes</p>
+<p>Each node of the tree is associated with a node number, an unsigned integer that is denoted as node_num in the algorithms below, which is computed as follows. The root node has node number 1; for each node with node number <img class="formulaInl" alt="$ N lt {2}^{h} $" src="form_475.png"/> (where h is the height of the tree), its left child has node number <img class="formulaInl" alt="$ 2*N $" src="form_381.png"/>, while its right child has node number</p>
+<p><img class="formulaInl" alt="$ {2}^{h}, ({2}^{h} + 1), ({2}^{h} + 2), ..., ({2}^{h})+({2}^{h})-1 $" src="form_476.png"/></p>
+<p>In general, the j-th node at level i hash node <img class="formulaInl" alt="$ {2}^{i} + j $" src="form_383.png"/>. The node number can conveniently be computed when it is needed in the LMS algorithms, as described in those algorithms</p>
+<p><b>LMS Parameters</b></p>
+<p>An LMS system has the following parameters:</p>
+<ul>
+<li>h - the height of the tree</li>
+<li>m - the number of bytes associated with each node</li>
+<li>H - a second-preimage-resistant cryptographic hash function that accepts byte strings of any length and returns an m-byte string</li>
+</ul>
+<a class="anchor" id="LMSPA"></a>
+<table class="doxtable">
+<caption>LMS Parameters</caption>
+<tr>
+<th>Name</th><th>H</th><th>m</th><th>h</th><th>type value </th></tr>
+<tr>
+<td>LMOTS_SHA256_M32_H5</td><td>SHA256</td><td>32</td><td>5</td><td>0x00000005 </td></tr>
+<tr>
+<td>LMOTS_SHA256_M32_H10</td><td>SHA256</td><td>32</td><td>10</td><td>0x00000006 </td></tr>
+<tr>
+<td>LMOTS_SHA256_M32_H15</td><td>SHA256</td><td>32</td><td>15</td><td>0x00000007 </td></tr>
+<tr>
+<td>LMOTS_SHA256_M32_H20</td><td>SHA256</td><td>32</td><td>20</td><td>0x00000008 </td></tr>
+<tr>
+<td>LMOTS_SHA256_M32_H25</td><td>SHA256</td><td>32</td><td>25</td><td>0x00000009 </td></tr>
+<tr>
+<td>LMOTS_SHA256_M24_H5</td><td>SHA256</td><td>24</td><td>5</td><td>0x0000000A </td></tr>
+<tr>
+<td>LMOTS_SHA256_M24_H10</td><td>SHA256</td><td>24</td><td>10</td><td>0x0000000B </td></tr>
+<tr>
+<td>LMOTS_SHA256_M24_H15</td><td>SHA256</td><td>24</td><td>15</td><td>0x0000000C </td></tr>
+<tr>
+<td>LMOTS_SHA256_M24_H20</td><td>SHA256</td><td>24</td><td>20</td><td>0x0000000D </td></tr>
+<tr>
+<td>LMOTS_SHA256_M24_H25</td><td>SHA256</td><td>24</td><td>25</td><td>0x0000000E </td></tr>
+<tr>
+<td>LMOTS_SHAKE_M32_H5</td><td>SHAKE256</td><td>32</td><td>5</td><td>0x0000000F </td></tr>
+<tr>
+<td>LMOTS_SHAKE_M32_H10</td><td>SHAKE256</td><td>32</td><td>10</td><td>0x00000010 </td></tr>
+<tr>
+<td>LMOTS_SHAKE_M32_H15</td><td>SHAKE256</td><td>32</td><td>15</td><td>0x00000011 </td></tr>
+<tr>
+<td>LMOTS_SHAKE_M32_H20</td><td>SHAKE256</td><td>32</td><td>20</td><td>0x00000012 </td></tr>
+<tr>
+<td>LMOTS_SHAKE_M32_H25</td><td>SHAKE256</td><td>32</td><td>25</td><td>0x00000013 </td></tr>
+<tr>
+<td>LMOTS_SHAKE_M24_H5</td><td>SHAKE256</td><td>24</td><td>5</td><td>0x00000014 </td></tr>
+<tr>
+<td>LMOTS_SHAKE_M24_H10</td><td>SHAKE256</td><td>24</td><td>10</td><td>0x00000015 </td></tr>
+<tr>
+<td>LMOTS_SHAKE_M24_H15</td><td>SHAKE256</td><td>24</td><td>15</td><td>0x00000016 </td></tr>
+<tr>
+<td>LMOTS_SHAKE_M24_H20</td><td>SHAKE256</td><td>24</td><td>20</td><td>0x00000017 </td></tr>
+<tr>
+<td>LMOTS_SHAKE_M24_H25</td><td>SHAKE256</td><td>24</td><td>25</td><td>0x00000018 </td></tr>
+</table>
+<p><b>LMS Private Key</b></p>
+<p>The format of the LMS private key is an internal matter to the implementation, and this document does not attempt to define it. One possibility is that it may consist of an array OTS_PRIV[] of 2^h LM-OTS private keys and the leaf number q of the next LM-OTS private key that has not yet been used. The q-th element of OTS_PRIV[] is generated using Algorithm 0 with the identifiers I, q. The leaf number q is initialized to zero when the LMS private key is created. The format of the LMS Private Key consists of </p><div class="fragment"><div class="line">------------------------------------------------</div>
+<div class="line">| <a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36addb9e18e7e549d61113327785304fb45">LMOTSQ</a>+1 | LMOTS_SK[0] | ... | LMOTS_SK[H-1] |</div>
+<div class="line">------------------------------------------------</div>
+<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36addb9e18e7e549d61113327785304fb45"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36addb9e18e7e549d61113327785304fb45">ProtocolPP::LMOTSQ</a></div><div class="ttdeci">@ LMOTSQ</div><div class="ttdoc">LMOTS value of 'q' parameter.</div><div class="ttdef"><b>Definition:</b> jenum.h:820</div></div>
+</div><!-- fragment --><p><b>LMS Public Key</b></p>
+<p>An LMS public key is defined as follows, where we denote the public key final hash value (namely, the K value computed in Algorithm 1) associated with the i-th LM-OTS private key as OTS_PUB_HASH[i], with i ranging from 0 to (2^h)-1. Each instance of an LMS public/private key pair is associated with a balanced binary tree, and the nodes of that tree are indexed from 1 to 2^(h+1)-1. Each node is associated with an m-byte string. The string for the r-th node is denoted as T[r]. The format of the LMS Public Key consists of </p><div class="fragment"><div class="line">------------------------------------------</div>
+<div class="line">| LMS_TYPE | LMOTS_TYPE | I | LMOTS_T[1] |</div>
+<div class="line">------------------------------------------</div>
+</div><!-- fragment --><p><b>LMS Signature</b></p>
+<p>An LMS signature consists of</p>
+<ul>
+<li>the number q of the leaf associated with the LM-OTS signature, as a four-byte unsigned integer in network byte order, an LM-OTS signature</li>
+<li>a typecode indicating the particular LMS algorithm</li>
+<li>an array of h m-byte values that is associated with the path through the tree from the leaf associated with the LM-OTS signature to the root</li>
+</ul>
+<p>The format for the LMS Signature consists of </p><div class="fragment"><div class="line">-------------------------------------------------------------------</div>
+<div class="line">| <a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36addb9e18e7e549d61113327785304fb45">LMOTSQ</a> | LMOTS_SIGNATURE | LMS_TYPE | PATH[0] | ... | PATH[H-1] |</div>
+<div class="line">-------------------------------------------------------------------</div>
+</div><!-- fragment --><p>To compute the LMS signature of a message with an LMS private key, the signer first computes the LM-OTS signature of the message using the leaf number of the next unused LM-OTS private key. The leaf number q in the signature is set to the leaf number of the LMS private key that was used in the signature. Before releasing the signature, the leaf number q in the LMS private key MUST be incremented to prevent the LM-OTS private key from being used again. If the LMS private key is maintained in nonvolatile memory, then the implementation MUST ensure that the incremented value has been stored before releasing the signature. The issue this tries to prevent is a scenario where</p>
+<p>a) we generate a signature using one LM-OTS private key and release it to the application</p>
+<p>b) before we update the nonvolatile memory, we crash, and</p>
+<p>c) we reboot and generate a second signature using the same LM-OTS private key. With two different signatures using the same LM-OTS private key, an attacker could potentially generate a forged signature of a third message</p>
+<div class="image">
+<img src="LMSTree.png" alt=""/>
+<div class="caption">
+LMS Tree</div></div>
+ <p><b>LMS Signature Verification</b></p>
+<p>An LMS signature is verified by first using the LM-OTS signature verification algorithm (Algorithm 4b) to compute the LM-OTS public key from the LM-OTS signature and the message. The value of that public key is then assigned to the associated leaf of the LMS tree, and then the root of the tree is computed from the leaf value and the array path[] as described in Algorithm 6 If the root value matches the public key, then the signature is valid; otherwise, the signature verification fails</p>
+<p><b>Comparison with Other Work</b></p>
+<p>The eXtended Merkle Signature Scheme (XMSS) is similar to HSS in several ways. Both are stateful hash-based signature schemes, and both use a hierarchical approach, with a Merkle tree at each level of the hierarchy. XMSS signatures are slightly shorter than HSS signatures, for equivalent security and an equal number of signatures</p>
+<p>HSS has several advantages over XMSS. HSS operations are roughly four times faster than the comparable XMSS ones, when SHA256 is used as the underlying hash. This occurs because the hash operation done as a part of the Winternitz iterations dominates performance, and XMSS performs four compression-function invocations (two for the PRF, two for the F function) where HSS only needs to perform one. Additionally, HSS is somewhat simpler (as each hash invocation is just a prefix followed by the data being hashed)</p>
+<h2><a class="anchor" id="NIST800208LA"></a>
+NIST SP 800-208 Additions - Leighton-Micali Signatures (LMS) Parameter Sets</h2>
+<p>This Special Publication approves the use of LMS and HSS with four different hash functions: SHA-256, SHA-256/192, SHAKE256/256, and SHAKE256/192 (see Section 2.3). The parameter sets that use SHA-256 are defined in RFC 8554 [2]. The parameter sets that use SHA-256/192, SHAKE256/256, and SHAKE256/192 are defined in this publication</p>
+<p>When generating a key pair for an LMS instance, each LM-OTS key in the system shall use the same parameter set, and the hash function used for the LMS system shall be the same as the hash function used in the LM-OTS keys. The height of the tree (h) shall be 5, 10, 15, 20, or 25</p>
+<p>When generating a key pair for an HSS instance, the requirements specified in the previous paragraph apply to each LMS tree in the instance. If the HSS instance has more than one level, then the hash function used for the tree at level 0 shall be used for every LMS tree at every other level. For each level, the same LMS and LM-OTS parameter sets shall be used for every LMS tree at that level. Different LMS and LM-OTS parameter sets may be used at different levels, as long as all chosen parameter sets use the same hash function</p>
+<p>The LMS and LM-OTS parameter sets that are approved for use by this Special Publication are specified in tables in Sections 4.1 through 4.4. The parameters n, w, p, m, and h specified in the tables are defined in Sections 4.1 and 5.1</p>
+<p><b>LMS and HSS Random Number Generation Requirements</b></p>
+<p>The LMS key pair identifier, I, shall be generated using an approved random bit generator (see the SP 800-90 series of publications [6]), where the instantiation of the random bit generator supports at least 128 bits of security strength</p>
+<p>The n-byte private elements of the LM-OTS private keys (x[i] in Section 4.2 of [2]) shall be generated using the pseudorandom key generation method specified in Appendix A of [2]. The same SEED value shall be used to generate every private element in a single LMS instance, and SEED shall be generated using an approved random bit generator [6], where the instantiation of the random bit generator supports at least 8n bits of security strength</p>
+<p>If more than one LMS instance is being created (e.g., for an HSS instance), then a separate key pair identifier, I, and SEED shall be generated for each LMS instance</p>
+<p>When generating a signature, the n-byte randomizer C (see Section 4.5 of [2]) shall be generated using an approved random bit generator [6], where the instantiation of the random bit generator supports at least 8n bits of security strength</p>
+<p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jlmsa.html">ProtocolPP::jlmsa</a> </dd>
+<dd>
+<a class="el" href="classProtocolPP_1_1jlms.html">ProtocolPP::jlms</a></dd></dl>
+<p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classjlmsa.html">jlmsa</a> </dd>
+<dd>
+<a class="el" href="classjlms.html">jlms</a></dd></dl>
 <center>Protocol++&reg; (<a class="el" href="namespaceProtocolPP.html">ProtocolPP</a>&reg;) written by : John Peter Greninger &bull; &copy; John Peter Greninger 2015-2024 &bull; All Rights Reserved</center> <center><sub>All copyrights and trademarks are the property of their respective owners</sub></center><p>The source code contained or described herein and all documents related to the source code (herein called "Material") are owned by John Peter Greninger and Sheila Rocha Greninger. Title to the Material remains with John Peter Greninger and Sheila Rocha Greninger. The Material contains trade secrets and proprietary and confidential information of John Peter Greninger and Sheila Rocha Greninger. The Material is protected by worldwide copyright and trade secret laws and treaty provisions. No part of the Material may be used, copied, reproduced, modified, published, uploaded, posted, transmitted, distributed, or disclosed in any way without prior express written consent of John Peter Greninger and Sheila Rocha Greninger (both are required)</p>
 <p>No license under any patent, copyright, trade secret, or other intellectual property right is granted to or conferred upon you by disclosure or delivery of the Materials, either expressly, by implication, inducement, estoppel, or otherwise. Any license under such intellectual property rights must be express and approved by John Peter Greninger and Sheila Rocha Greninger in writing</p>
 <p>Licensing information can be found at <b>www.protocolpp.com/license</b> with use of the binary forms permitted provided that the following conditions are met:</p>
@@ -125,7 +232,7 @@ $(document).ready(function(){initNavTree('classjlmsa.html',''); initResizable();
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjlmsa.html">jlmsa</a></li>
-    <li class="footer">Generated on Sun Jun 23 2024 21:18:17 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 24 2024 21:33:11 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

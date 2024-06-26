@@ -127,25 +127,25 @@ $(document).ready(function(){initNavTree('classjlms.html',''); initResizable(); 
 <tr>
 <td>LMOTS_SHA256_M24_H25</td><td>SHA256</td><td>24</td><td>25</td><td>0x0000000E </td></tr>
 <tr>
-<td>LMOTS_SHAKE_M32_H5</td><td>SHAKE</td><td>32</td><td>5</td><td>0x0000000F </td></tr>
+<td>LMOTS_SHAKE_M32_H5</td><td>SHAKE256</td><td>32</td><td>5</td><td>0x0000000F </td></tr>
 <tr>
-<td>LMOTS_SHAKE_M32_H10</td><td>SHAKE</td><td>32</td><td>10</td><td>0x00000010 </td></tr>
+<td>LMOTS_SHAKE_M32_H10</td><td>SHAKE256</td><td>32</td><td>10</td><td>0x00000010 </td></tr>
 <tr>
-<td>LMOTS_SHAKE_M32_H15</td><td>SHAKE</td><td>32</td><td>15</td><td>0x00000011 </td></tr>
+<td>LMOTS_SHAKE_M32_H15</td><td>SHAKE256</td><td>32</td><td>15</td><td>0x00000011 </td></tr>
 <tr>
-<td>LMOTS_SHAKE_M32_H20</td><td>SHAKE</td><td>32</td><td>20</td><td>0x00000012 </td></tr>
+<td>LMOTS_SHAKE_M32_H20</td><td>SHAKE256</td><td>32</td><td>20</td><td>0x00000012 </td></tr>
 <tr>
-<td>LMOTS_SHAKE_M32_H25</td><td>SHAKE</td><td>32</td><td>25</td><td>0x00000013 </td></tr>
+<td>LMOTS_SHAKE_M32_H25</td><td>SHAKE256</td><td>32</td><td>25</td><td>0x00000013 </td></tr>
 <tr>
-<td>LMOTS_SHAKE_M24_H5</td><td>SHAKE</td><td>24</td><td>5</td><td>0x00000014 </td></tr>
+<td>LMOTS_SHAKE_M24_H5</td><td>SHAKE256</td><td>24</td><td>5</td><td>0x00000014 </td></tr>
 <tr>
-<td>LMOTS_SHAKE_M24_H10</td><td>SHAKE</td><td>24</td><td>10</td><td>0x00000015 </td></tr>
+<td>LMOTS_SHAKE_M24_H10</td><td>SHAKE256</td><td>24</td><td>10</td><td>0x00000015 </td></tr>
 <tr>
-<td>LMOTS_SHAKE_M24_H15</td><td>SHAKE</td><td>24</td><td>15</td><td>0x00000016 </td></tr>
+<td>LMOTS_SHAKE_M24_H15</td><td>SHAKE256</td><td>24</td><td>15</td><td>0x00000016 </td></tr>
 <tr>
-<td>LMOTS_SHAKE_M24_H20</td><td>SHAKE</td><td>24</td><td>20</td><td>0x00000017 </td></tr>
+<td>LMOTS_SHAKE_M24_H20</td><td>SHAKE256</td><td>24</td><td>20</td><td>0x00000017 </td></tr>
 <tr>
-<td>LMOTS_SHAKE_M24_H25</td><td>SHAKE</td><td>24</td><td>25</td><td>0x00000018 </td></tr>
+<td>LMOTS_SHAKE_M24_H25</td><td>SHAKE256</td><td>24</td><td>25</td><td>0x00000018 </td></tr>
 </table>
 <p><b>LMS Private Key</b></p>
 <p>The format of the LMS private key is an internal matter to the implementation, and this document does not attempt to define it. One possibility is that it may consist of an array OTS_PRIV[] of 2^h LM-OTS private keys and the leaf number q of the next LM-OTS private key that has not yet been used. The q-th element of OTS_PRIV[] is generated using Algorithm 0 with the identifiers I, q. The leaf number q is initialized to zero when the LMS private key is created. The format of the LMS Private Key consists of </p><div class="fragment"><div class="line">------------------------------------------------</div>
@@ -190,6 +190,12 @@ NIST SP 800-208 Additions - Leighton-Micali Signatures (LMS) Parameter Sets</h2>
 <p>The n-byte private elements of the LM-OTS private keys (x[i] in Section 4.2 of [2]) shall be generated using the pseudorandom key generation method specified in Appendix A of [2]. The same SEED value shall be used to generate every private element in a single LMS instance, and SEED shall be generated using an approved random bit generator [6], where the instantiation of the random bit generator supports at least 8n bits of security strength</p>
 <p>If more than one LMS instance is being created (e.g., for an HSS instance), then a separate key pair identifier, I, and SEED shall be generated for each LMS instance</p>
 <p>When generating a signature, the n-byte randomizer C (see Section 4.5 of [2]) shall be generated using an approved random bit generator [6], where the instantiation of the random bit generator supports at least 8n bits of security strength</p>
+<p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jlms.html">ProtocolPP::jlms</a> </dd>
+<dd>
+<a class="el" href="classProtocolPP_1_1jlmsa.html">ProtocolPP::jlmsa</a></dd></dl>
+<p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classjlms.html">jlms</a> </dd>
+<dd>
+<a class="el" href="classjlmsa.html">jlmsa</a></dd></dl>
 <center>Protocol++&reg; (<a class="el" href="namespaceProtocolPP.html">ProtocolPP</a>&reg;) written by : John Peter Greninger &bull; &copy; John Peter Greninger 2015-2024 &bull; All Rights Reserved</center> <center><sub>All copyrights and trademarks are the property of their respective owners</sub></center><p>The source code contained or described herein and all documents related to the source code (herein called "Material") are owned by John Peter Greninger and Sheila Rocha Greninger. Title to the Material remains with John Peter Greninger and Sheila Rocha Greninger. The Material contains trade secrets and proprietary and confidential information of John Peter Greninger and Sheila Rocha Greninger. The Material is protected by worldwide copyright and trade secret laws and treaty provisions. No part of the Material may be used, copied, reproduced, modified, published, uploaded, posted, transmitted, distributed, or disclosed in any way without prior express written consent of John Peter Greninger and Sheila Rocha Greninger (both are required)</p>
 <p>No license under any patent, copyright, trade secret, or other intellectual property right is granted to or conferred upon you by disclosure or delivery of the Materials, either expressly, by implication, inducement, estoppel, or otherwise. Any license under such intellectual property rights must be express and approved by John Peter Greninger and Sheila Rocha Greninger in writing</p>
 <p>Licensing information can be found at <b>www.protocolpp.com/license</b> with use of the binary forms permitted provided that the following conditions are met:</p>
@@ -225,7 +231,7 @@ NIST SP 800-208 Additions - Leighton-Micali Signatures (LMS) Parameter Sets</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjlms.html">jlms</a></li>
-    <li class="footer">Generated on Sun Jun 23 2024 21:18:17 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 24 2024 21:33:11 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

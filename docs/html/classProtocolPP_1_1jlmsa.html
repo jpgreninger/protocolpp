@@ -349,13 +349,27 @@ template&lt;typename T &gt; </div>
 <tr>
 <td>direction_t</td><td>DIRECTION</td><td><a class="el" href="namespaceProtocolPP.html#afe4eb20d30c83951336a9fd2627d41f2">ProtocolPP::direction_t</a> mydir = get_field&lt;ProtocolPP::direction_t&gt;(ProtocolPP::field_t::DIRECTION) </td></tr>
 <tr>
-<td>lms_algorithm_t</td><td>AUTH</td><td><a class="el" href="namespaceProtocolPP.html#a05592e926d650d45a3cb2569246e43b1">ProtocolPP::lms_algorithm_t</a> myalg = get_field&lt;ProtocolPP::lms_algorithm_t&gt;(ProtocolPP::field_t::AUTH) </td></tr>
+<td>std::vector&lt;lms_algorithm_t&gt;</td><td>AUTH</td><td>std::vector&lt;ProtocolPP::lms_algorithm_t&gt; myalg = get_field&lt;std::vector&lt;ProtocolPP::lms_algorithm_t&gt;&gt;(ProtocolPP::field_t::AUTH) </td></tr>
 <tr>
-<td>lmots_algorithm_t</td><td>AUTH</td><td><a class="el" href="namespaceProtocolPP.html#ac747fc297fa950746a3f741f7c3a36a9">ProtocolPP::lmots_algorithm_t</a> myalg = get_field&lt;ProtocolPP::lmots_algorithm_t&gt;(ProtocolPP::field_t::AUTH) </td></tr>
+<td>std::vector&lt;lmots_algorithm_t&gt;</td><td>AUTH</td><td>std::vector&lt;ProtocolPP::lmots_algorithm_t&gt; myalg = get_field&lt;std::vector&lt;ProtocolPP::lmots_algorithm_t&gt;&gt;(ProtocolPP::field_t::AUTH) </td></tr>
+<tr>
+<td>int</td><td>LMTREELVLS</td><td>int mytreelvl = get_field&lt;int&gt;(ProtocolPP::field_t::LMTREELVLS) </td></tr>
 <tr>
 <td>uint32_t</td><td>PRVKEYLEN</td><td>uint32_t myprvlen = get_field&lt;uint32_t&gt;(ProtocolPP::field_t::PRVKEYLEN) </td></tr>
 <tr>
 <td>uint32_t</td><td>PUBKEYLEN</td><td>uint32_t mypublen = get_field&lt;uint32_t&gt;(ProtocolPP::field_t::PUBKEYLEN) </td></tr>
+<tr>
+<td><a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a></td><td>PRVKEY</td><td><a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a> myprvkey = get_field&lt;<a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a>&gt;(ProtocolPP::field_t::PRVKEY) </td></tr>
+<tr>
+<td><a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a></td><td>PUBKEY</td><td><a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a> mypubkey = get_field&lt;<a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a>&gt;(ProtocolPP::field_t::PUBKEY) </td></tr>
+<tr>
+<td>uint8_t*</td><td>PRVKEY</td><td>uint8_t* myprvkey = get_field&lt;uint8_t*&gt;(ProtocolPP::field_t::PRVKEY) </td></tr>
+<tr>
+<td>uint8_t*</td><td>PUBKEY</td><td>uint8_t* mypubkey = get_field&lt;uint8_t*&gt;(ProtocolPP::field_t::PUBKEY) </td></tr>
+<tr>
+<td>std::shared_ptr&lt;<a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a>&gt;</td><td>PRVKEY</td><td>std::shared_ptr&lt;<a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a>&gt; myprvkey = get_field&lt;std::shared_ptr&lt;<a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a>&gt;&gt;(ProtocolPP::field_t::PRVKEY) </td></tr>
+<tr>
+<td>std::shared_ptr&lt;<a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a>&gt;</td><td>PUBKEY</td><td>std::shared_ptr&lt;<a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a>&gt; mypubkey = get_field&lt;std::shared_ptr&lt;<a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a>&gt;&gt;(ProtocolPP::field_t::PUBKEY) </td></tr>
 </table>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -401,9 +415,19 @@ template&lt;typename T &gt; </div>
 <tr>
 <th>field type</th><th>field name</th><th>Example </th></tr>
 <tr>
-<td>lms_algorithm_t</td><td>AUTH</td><td>set_field&lt;ProtocolPP::lms_algorithm_t&gt;(ProtocolPP::field_t::AUTH, ProtocolPP::LMS_SHA256_M32_H10) </td></tr>
+<td>std::vector&lt;lms_algorithm_t</td><td>AUTH</td><td>set_field&lt;std::vector&lt;lms_algorithm_t&gt;(ProtocolPP::field_t::AUTH, std::vector&lt;lms_algorithm_t&gt;&amp; fieldval) </td></tr>
 <tr>
-<td>lmots_algorithm_t</td><td>AUTH</td><td>set_field&lt;ProtocolPP::lmots_algorithm_t&gt;(ProtocolPP::field_t::AUTH, ProtocolPP::LMS_SHA256_M32_H10) </td></tr>
+<td>std::vector&lt;lmots_algorithm_t</td><td>AUTH</td><td>set_field&lt;std::vector&lt;lmots_algorithm_t&gt;(ProtocolPP::field_t::AUTH, std::vector&lt;lmots_algorithm_t&gt;&amp; fieldval) </td></tr>
+<tr>
+<td>int</td><td>LMTREELVLS</td><td>set_field&lt;int&gt;(ProtocolPP::field_t::LMTREELVLS, int fieldval) </td></tr>
+<tr>
+<td><a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a></td><td>PRVKEY</td><td>set_field&lt;<a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a>&gt;(ProtocolPP::field_t::PRVKEY, <a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a>&amp; fieldval) </td></tr>
+<tr>
+<td><a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a></td><td>PUBKEY</td><td>set_field&lt;<a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a>&gt;(ProtocolPP::field_t::PUBKEY, <a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a>&amp; fieldval) </td></tr>
+<tr>
+<td>std::shared_ptr&lt;<a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a>&gt;</td><td>PRVKEY</td><td>set_field&lt;std::shared_ptr&lt;<a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a>&gt;&gt;(ProtocolPP::field_t::PRVKEY, std::shared_ptr&lt;<a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a>&gt;&amp; fieldval) </td></tr>
+<tr>
+<td>std::shared_ptr&lt;<a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a>&gt;</td><td>PUBKEY</td><td>set_field&lt;std::shared_ptr&lt;<a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a>&gt;&gt;(ProtocolPP::field_t::PUBKEY, std::shared_ptr&lt;<a class="el" href="classProtocolPP_1_1jarray.html">jarray&lt;uint8_t&gt;</a>&gt;&amp; fieldval) </td></tr>
 </table>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -521,7 +545,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceProtocolPP.html">ProtocolPP</a></li><li class="navelem"><a class="el" href="classProtocolPP_1_1jlmsa.html">jlmsa</a></li>
-    <li class="footer">Generated on Sun Jun 23 2024 21:18:18 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 24 2024 21:33:12 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
