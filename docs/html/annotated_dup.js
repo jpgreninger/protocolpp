@@ -129,7 +129,11 @@ var annotated_dup =
       [ "jxmssaddr", "classProtocolPP_1_1jxmssaddr.html", "classProtocolPP_1_1jxmssaddr" ],
       [ "jlmots", "classProtocolPP_1_1jlmots.html", "classProtocolPP_1_1jlmots" ],
       [ "jlms", "classProtocolPP_1_1jlms.html", "classProtocolPP_1_1jlms" ],
-      [ "jlmsa", "classProtocolPP_1_1jlmsa.html", "classProtocolPP_1_1jlmsa" ]
+      [ "jlmsa", "classProtocolPP_1_1jlmsa.html", "classProtocolPP_1_1jlmsa" ],
+      [ "jkyber", "classProtocolPP_1_1jkyber.html", "classProtocolPP_1_1jkyber" ],
+      [ "jkybersa", "classProtocolPP_1_1jkybersa.html", "classProtocolPP_1_1jkybersa" ],
+      [ "jdilithium", "classProtocolPP_1_1jdilithium.html", "classProtocolPP_1_1jdilithium" ],
+      [ "jdilithiumsa", "classProtocolPP_1_1jdilithiumsa.html", "classProtocolPP_1_1jdilithiumsa" ]
     ] ],
     [ "tinyxml2", null, [
       [ "StrPair", "classtinyxml2_1_1StrPair.html", "classtinyxml2_1_1StrPair" ],
@@ -163,6 +167,8 @@ var annotated_dup =
     [ "jconfidentsa", "classjconfidentsa.html", null ],
     [ "jcrc", "classjcrc.html", null ],
     [ "jdata", "classjdata.html", null ],
+    [ "jdilithium", "classjdilithium.html", null ],
+    [ "jdilithiumsa", "classjdilithiumsa.html", null ],
     [ "jdirectdrive", "classjdirectdrive.html", null ],
     [ "jdrive", "classjdrive.html", null ],
     [ "jdriver", "classjdriver.html", null ],
@@ -195,6 +201,8 @@ var annotated_dup =
     [ "jipsa", "classjipsa.html", null ],
     [ "jipsec", "classjipsec.html", null ],
     [ "jipsecsa", "classjipsecsa.html", null ],
+    [ "jkyber", "classjkyber.html", null ],
+    [ "jkybersa", "classjkybersa.html", null ],
     [ "jlmots", "classjlmots.html", null ],
     [ "jlms", "classjlms.html", null ],
     [ "jlmsa", "classjlmsa.html", null ],

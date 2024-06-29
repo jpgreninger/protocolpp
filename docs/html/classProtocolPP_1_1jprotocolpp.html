@@ -162,6 +162,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:abfd3a4d4b83f95a162a2766c33dc5cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0990a6e80db9663f90adb68b14b5f2cc"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jlms.html">jlms</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jprotocolpp.html#a0990a6e80db9663f90adb68b14b5f2cc">get_lms</a> (std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jrand.html">jrand</a> &gt; &amp;rand, std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jlmsa.html">jlmsa</a> &gt; &amp;security)</td></tr>
 <tr class="separator:a0990a6e80db9663f90adb68b14b5f2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1d3cb442c131a1ca418d2b7732e3b96"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jkyber.html">jkyber</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jprotocolpp.html#ab1d3cb442c131a1ca418d2b7732e3b96">get_kyber</a> (std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jrand.html">jrand</a> &gt; &amp;rand, std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jkybersa.html">jkybersa</a> &gt; &amp;security)</td></tr>
+<tr class="separator:ab1d3cb442c131a1ca418d2b7732e3b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f73bcbc75f282b844fd6176dabfb7ee"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jdilithium.html">jdilithium</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jprotocolpp.html#a3f73bcbc75f282b844fd6176dabfb7ee">get_dilithium</a> (std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jrand.html">jrand</a> &gt; &amp;rand, std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jdilithiumsa.html">jdilithiumsa</a> &gt; &amp;security)</td></tr>
+<tr class="separator:a3f73bcbc75f282b844fd6176dabfb7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a209466b48e4185e2951addf2a37d30cc"><td class="memItemLeft" align="right" valign="top"><a id="a209466b48e4185e2951addf2a37d30cc"></a>
 static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jprotocolpp.html#a209466b48e4185e2951addf2a37d30cc">version</a> ()</td></tr>
 <tr class="memdesc:a209466b48e4185e2951addf2a37d30cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the version as a string (v5.5.1) <br /></td></tr>
@@ -269,6 +273,50 @@ static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class=
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">security</td><td>- parameters necessary to setup a CONFIDENT flow </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3f73bcbc75f282b844fd6176dabfb7ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f73bcbc75f282b844fd6176dabfb7ee">&#9670;&nbsp;</a></span>get_dilithium()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::shared_ptr&lt;<a class="el" href="classProtocolPP_1_1jdilithium.html">jdilithium</a>&gt; ProtocolPP::jprotocolpp::get_dilithium </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jrand.html">jrand</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rand</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jdilithiumsa.html">jdilithiumsa</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>security</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Factory method to create an instance of the DILITHIUM protocol</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rand</td><td>- Random data generator for IVs, padding, anti-replay </td></tr>
+    <tr><td class="paramname">security</td><td>- parameters necessary to setup a DILITHIUM flow </td></tr>
   </table>
   </dd>
 </dl>
@@ -737,6 +785,50 @@ static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class=
     <tr><td class="paramname">rand</td><td>- Random data generator for IVs, padding, anti-replay </td></tr>
     <tr><td class="paramname">security</td><td>- Security association (SA) for this IPsec flow </td></tr>
     <tr><td class="paramname">replay</td><td>- Types of packets to create </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab1d3cb442c131a1ca418d2b7732e3b96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1d3cb442c131a1ca418d2b7732e3b96">&#9670;&nbsp;</a></span>get_kyber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::shared_ptr&lt;<a class="el" href="classProtocolPP_1_1jkyber.html">jkyber</a>&gt; ProtocolPP::jprotocolpp::get_kyber </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jrand.html">jrand</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rand</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jkybersa.html">jkybersa</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>security</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Factory method to create an instance of the KYBER protocol</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rand</td><td>- Random data generator for IVs, padding, anti-replay </td></tr>
+    <tr><td class="paramname">security</td><td>- parameters necessary to setup a KYBER flow </td></tr>
   </table>
   </dd>
 </dl>
@@ -1544,7 +1636,7 @@ static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class=
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceProtocolPP.html">ProtocolPP</a></li><li class="navelem"><a class="el" href="classProtocolPP_1_1jprotocolpp.html">jprotocolpp</a></li>
-    <li class="footer">Generated on Mon Jun 24 2024 21:33:11 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jun 29 2024 00:36:21 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

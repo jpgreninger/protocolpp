@@ -269,6 +269,14 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jlmsa.html">jlmsa</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jkyber.html">jkyber</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jkybersa.html">jkybersa</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jdilithium.html">jdilithium</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProtocolPP_1_1jdilithiumsa.html">jdilithiumsa</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -729,6 +737,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca83ccd0956b9b5a7485ff58122fe229ba">NVGRE</a>
 , <br />
 &#160;&#160;<a class="el" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca122355e146b63736fa7f07544f0e67ef">VXLAN</a>
+, <a class="el" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5cae4a54a5dde758466040b2a7397b3f9b3">KYBER</a>
+, <a class="el" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca18b5c8dce77d800a608ba1ba74ff5e93">DILITHIUM</a>
 , <a class="el" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca80a0105cbfdbf8d19c128444a455518e">NOPROTO</a>
 <br />
  }</td></tr>
@@ -2086,6 +2096,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespaceProtocolPP.html#aca3725b363c3824187494fea67837db6aba0f3d3fa1001ffca87cbeef2f699b06">RSAENCRYPT</a>
 , <br />
 &#160;&#160;<a class="el" href="namespaceProtocolPP.html#aca3725b363c3824187494fea67837db6a796f7e2dfa9e7e5088d300010984a809">RSADECRYPT</a>
+, <a class="el" href="namespaceProtocolPP.html#aca3725b363c3824187494fea67837db6ac686a3db6d3e0748f30995e9b3047199">KYBERENC</a>
+, <a class="el" href="namespaceProtocolPP.html#aca3725b363c3824187494fea67837db6ab6ee7d7ba3a911fb7cb0dea3301e125b">KYBERDEC</a>
 <br />
  }</td></tr>
 <tr class="separator:aca3725b363c3824187494fea67837db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2236,6 +2248,16 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a5730b9984b0e1effa5ef5dcf11d11059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67ebc73d3d1974dba7f0ee20086a3020"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceProtocolPP.html#a67ebc73d3d1974dba7f0ee20086a3020">kyber_algorithm_t</a> { <a class="el" href="namespaceProtocolPP.html#a67ebc73d3d1974dba7f0ee20086a3020a71a29283ed48ec89d542e5ac5d1e8dd8">KYBER_512</a> = 0x00000002
+, <a class="el" href="namespaceProtocolPP.html#a67ebc73d3d1974dba7f0ee20086a3020ae4ee0fec48aab94a96d73e7e8c44e75c">KYBER_768</a> = 0x00000003
+, <a class="el" href="namespaceProtocolPP.html#a67ebc73d3d1974dba7f0ee20086a3020a56528f51ae650cd9ef7efe326034f9c4">KYBER_1024</a> = 0x00000004
+ }</td></tr>
+<tr class="separator:a67ebc73d3d1974dba7f0ee20086a3020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b4f9144cc9f975cbaa490b782bba4d7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceProtocolPP.html#a5b4f9144cc9f975cbaa490b782bba4d7">dilithium_algorithm_t</a> { <a class="el" href="namespaceProtocolPP.html#a5b4f9144cc9f975cbaa490b782bba4d7aade03b144c36891f9210d0fd76b93f17">DILITHIUM_LVL2</a> = 0x00000002
+, <a class="el" href="namespaceProtocolPP.html#a5b4f9144cc9f975cbaa490b782bba4d7a9583a9123a18c5ad938cf1050bf8251c">DILITHIUM_LVL3</a> = 0x00000003
+, <a class="el" href="namespaceProtocolPP.html#a5b4f9144cc9f975cbaa490b782bba4d7a92f269d9f19119c797d32211f50cf326">DILITHIUM_LVL5</a> = 0x00000005
+ }</td></tr>
+<tr class="separator:a5b4f9144cc9f975cbaa490b782bba4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -2430,6 +2452,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a5af886937ddcea91246c99dc0224a1d1"><td class="memItemLeft" align="right" valign="top"><a id="a5af886937ddcea91246c99dc0224a1d1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Begin_Enum_String</b> (<a class="el" href="namespaceProtocolPP.html#a5730b9984b0e1effa5ef5dcf11d11059">xmssmt_algorithm_t</a>)</td></tr>
 <tr class="separator:a5af886937ddcea91246c99dc0224a1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebb0f0a74acbe7ff87ee5068e13254a7"><td class="memItemLeft" align="right" valign="top"><a id="aebb0f0a74acbe7ff87ee5068e13254a7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Begin_Enum_String</b> (<a class="el" href="namespaceProtocolPP.html#a67ebc73d3d1974dba7f0ee20086a3020">kyber_algorithm_t</a>)</td></tr>
+<tr class="separator:aebb0f0a74acbe7ff87ee5068e13254a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6bc88617148202553824f228d625b75"><td class="memItemLeft" align="right" valign="top"><a id="af6bc88617148202553824f228d625b75"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Begin_Enum_String</b> (<a class="el" href="namespaceProtocolPP.html#a5b4f9144cc9f975cbaa490b782bba4d7">dilithium_algorithm_t</a>)</td></tr>
+<tr class="separator:af6bc88617148202553824f228d625b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf6a60a2235ae118e6e835498f75df31"><td class="memItemLeft" align="right" valign="top"><a id="aaf6a60a2235ae118e6e835498f75df31"></a>
 static unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>U8TO16</b> (const unsigned char *p)</td></tr>
 <tr class="separator:aaf6a60a2235ae118e6e835498f75df31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3329,6 +3357,30 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a5f58d1d3c6f509889b286a5ca9c78d7ead96f70fbc45eaf9d609ccf3e4b5eff69"></a>DH_CURVE_25519&#160;</td><td class="fielddoc"><p>Curve 25519. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a5f58d1d3c6f509889b286a5ca9c78d7eaa40738782b3814f890fa62f4f12be7a0"></a>DH_CURVE_448&#160;</td><td class="fielddoc"><p>Curve 448. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a5b4f9144cc9f975cbaa490b782bba4d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b4f9144cc9f975cbaa490b782bba4d7">&#9670;&nbsp;</a></span>dilithium_algorithm_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceProtocolPP.html#a5b4f9144cc9f975cbaa490b782bba4d7">ProtocolPP::dilithium_algorithm_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dilithium Signature Algorithm</p>
+<p>DILITHIUM_LVL2 - Dilithium signature algorithm with 1312 byte public key and 2420 byte signature DILITHIUM_LVL3 - Dilithium signature algorithm with 1952 byte public key and 3293 byte signature DILITHIUM_LVL5 - Dilithium signature algorithm with 2592 byte public key and 4595 byte signature </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5b4f9144cc9f975cbaa490b782bba4d7aade03b144c36891f9210d0fd76b93f17"></a>DILITHIUM_LVL2&#160;</td><td class="fielddoc"><p>Dilithium signature algorithm with 1312 byte public key and 2420 byte signature. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5b4f9144cc9f975cbaa490b782bba4d7a9583a9123a18c5ad938cf1050bf8251c"></a>DILITHIUM_LVL3&#160;</td><td class="fielddoc"><p>Dilithium signature algorithm with 1952 byte public key and 3293 byte signature. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5b4f9144cc9f975cbaa490b782bba4d7a92f269d9f19119c797d32211f50cf326"></a>DILITHIUM_LVL5&#160;</td><td class="fielddoc"><p>Dilithium signature algorithm with 2592 byte public key and 4595 byte signature. </p>
 </td></tr>
 </table>
 
@@ -6405,6 +6457,8 @@ and NVGRE fields</h1>
     <tr><td class="paramname">PKIVERIFY</td><td>- Verify Signature </td></tr>
     <tr><td class="paramname">RSAENCRYPT</td><td>- Encrypt data with RSA Key Pair </td></tr>
     <tr><td class="paramname">RSADECRYPT</td><td>- Decrypt data with RSA Key Pair </td></tr>
+    <tr><td class="paramname">KYBERENC</td><td>- Encrypt data with Kyber Key Pair </td></tr>
+    <tr><td class="paramname">KYBERDEC</td><td>- Decrypt data with Kyber Key Pair </td></tr>
   </table>
   </dd>
 </dl>
@@ -6418,6 +6472,34 @@ and NVGRE fields</h1>
 <tr><td class="fieldname"><a id="aca3725b363c3824187494fea67837db6aba0f3d3fa1001ffca87cbeef2f699b06"></a>RSAENCRYPT&#160;</td><td class="fielddoc"><p>Encrypt data with RSA Key Pair. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aca3725b363c3824187494fea67837db6a796f7e2dfa9e7e5088d300010984a809"></a>RSADECRYPT&#160;</td><td class="fielddoc"><p>Decrypt data with RSA Key Pair. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aca3725b363c3824187494fea67837db6ac686a3db6d3e0748f30995e9b3047199"></a>KYBERENC&#160;</td><td class="fielddoc"><p>Encrypt data with Kyber Key Pair. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aca3725b363c3824187494fea67837db6ab6ee7d7ba3a911fb7cb0dea3301e125b"></a>KYBERDEC&#160;</td><td class="fielddoc"><p>Decrypt data with Kyber Key Pair. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a67ebc73d3d1974dba7f0ee20086a3020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67ebc73d3d1974dba7f0ee20086a3020">&#9670;&nbsp;</a></span>kyber_algorithm_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceProtocolPP.html#a67ebc73d3d1974dba7f0ee20086a3020">ProtocolPP::kyber_algorithm_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kyber Key Exchange Algorithm</p>
+<p>KYBER_512 - Kyber shared secret with 512-bit public key KYBER_768 - Kyber shared secret with 768-bit public key KYBER_1024 - Kyber shared secret with 1024-bit public key </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a67ebc73d3d1974dba7f0ee20086a3020a71a29283ed48ec89d542e5ac5d1e8dd8"></a>KYBER_512&#160;</td><td class="fielddoc"><p>Kyber shared secret with 512-bit public key. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a67ebc73d3d1974dba7f0ee20086a3020ae4ee0fec48aab94a96d73e7e8c44e75c"></a>KYBER_768&#160;</td><td class="fielddoc"><p>Kyber shared secret with 768-bit public key. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a67ebc73d3d1974dba7f0ee20086a3020a56528f51ae650cd9ef7efe326034f9c4"></a>KYBER_1024&#160;</td><td class="fielddoc"><p>Kyber shared secret with 1024-bit public key. </p>
 </td></tr>
 </table>
 
@@ -6838,6 +6920,8 @@ and NVGRE fields</h1>
     <tr><td class="paramname">EGRE</td><td>- Extended General Encapsulation Protocol (GRE) </td></tr>
     <tr><td class="paramname">NVGRE</td><td>- Node Virtual General Encapsulation Protocol (NVGRE) </td></tr>
     <tr><td class="paramname">VXLAN</td><td>- Virtual eXtensible Local Area Network (VXLAN) </td></tr>
+    <tr><td class="paramname">KYBER</td><td>- Kyber key exchange post quantum algorithm </td></tr>
+    <tr><td class="paramname">DILITHIUM</td><td>- Dilithium signature post quantum algorithm </td></tr>
     <tr><td class="paramname">NOPROTO</td><td>- No protocol selected </td></tr>
   </table>
   </dd>
@@ -6916,6 +7000,10 @@ and NVGRE fields</h1>
 <tr><td class="fieldname"><a id="a15957f30f5cdc906a54e53fcb4834e5ca83ccd0956b9b5a7485ff58122fe229ba"></a>NVGRE&#160;</td><td class="fielddoc"><p>Node Virtual General Encapsulation Protocol (NVGRE) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a15957f30f5cdc906a54e53fcb4834e5ca122355e146b63736fa7f07544f0e67ef"></a>VXLAN&#160;</td><td class="fielddoc"><p>Virtual eXtensible Local Area Network (VXLAN) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a15957f30f5cdc906a54e53fcb4834e5cae4a54a5dde758466040b2a7397b3f9b3"></a>KYBER&#160;</td><td class="fielddoc"><p>Kyber key exchange post quantum algorithm. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a15957f30f5cdc906a54e53fcb4834e5ca18b5c8dce77d800a608ba1ba74ff5e93"></a>DILITHIUM&#160;</td><td class="fielddoc"><p>Dilithium signature post quantum algorithm. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a15957f30f5cdc906a54e53fcb4834e5ca80a0105cbfdbf8d19c128444a455518e"></a>NOPROTO&#160;</td><td class="fielddoc"><p>No Protocol. </p>
 </td></tr>
@@ -8893,7 +8981,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceProtocolPP.html">ProtocolPP</a></li>
-    <li class="footer">Generated on Mon Jun 24 2024 21:33:11 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jun 29 2024 00:36:21 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

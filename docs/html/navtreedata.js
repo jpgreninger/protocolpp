@@ -54,6 +54,8 @@ var NAVTREE =
       [ "Offline Key Protection using memory BLOBs (BLOBs)", "index.html#MEMBLOBPP", null ],
       [ "eXtended Merkle Signature System (XMSS)", "index.html#JXMSS", null ],
       [ "Leighton-Micali Hash-Based Signatures (LMS)", "index.html#LMSHash", null ],
+      [ "Kyber Key Agreement Algorithm (KYBER)", "index.html#KYBERsec", null ],
+      [ "Dilithium Signature Algorithm (DILITHIUM)", "index.html#DILITHIUMsec", null ],
       [ "W.A.S.P", "index.html#Testbench", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
@@ -89,21 +91,22 @@ var NAVTREEINDEX =
 "",
 "classInterfacePP_1_1jring.html#af8ddac91e09989ff097d824414e8b85b",
 "classProtocolPP_1_1jbuffer.html#a5bf511b55edd49cf3f741cc2a72e1f50",
-"classProtocolPP_1_1jecdsafp.html#aa55844adacadaa5ca2eab06885a28017",
-"classProtocolPP_1_1jlicense.html#a287fb0fbdac93678defa827dbceacd15",
-"classProtocolPP_1_1jprotocolpp.html#a142322983aee4b34c0b52523298b4046",
-"classProtocolPP_1_1jtestcfg.html#a2da254343a7aec09cfd9b2b10d1bfb13",
-"classProtocolPP_1_1sfmt.html#ae1f7bc614254a2467845699c0b60fa18",
-"classtinyxml2_1_1XMLAttribute.html#a1aab1dd0e43ecbcfa306adbcf3a3d853",
-"classtinyxml2_1_1XMLNode.html#a62c71b6bf8734b5424063b8d9a61c266",
-"index.html#USES",
-"namespaceProtocolPP.html#a1d763b29e1f15fd253fd4eccaf692b23ad96f069d76f21e28312ec035d1c90c59",
-"namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a4127471b6c0f0a207a845b8efbafd6f3",
-"namespaceProtocolPP.html#a5730b9984b0e1effa5ef5dcf11d11059a5a2d014e5eae2565471b29ff4de10ff9",
-"namespaceProtocolPP.html#a95d8e842b11f21278b31c0de42e1014fa43b8539066869b93151190cce51ecfd2",
-"namespaceProtocolPP.html#ac1045bbb98ea5c53661a87b04437bff2ac16b95766a26c5c492e16403b81cd85c",
-"namespaceProtocolPP.html#ad03472292b460fe223692cafcae43afcab7e6fd9ad9c3d1e77dbbd905f1186c2b",
-"structProtocolPP_1_1jikeparse_1_1jikecfg.html#aafc60ee4c56f4d92308fdb5f2aa4ecb1"
+"classProtocolPP_1_1jecdsaf2msa.html#a7b4453b50d527e489bc95a48eec265d5",
+"classProtocolPP_1_1jipsec.html#a5cb43b9c6414597c9110d645b1c2fc04",
+"classProtocolPP_1_1jpoly1305.html#a1a7cce32c38ffe7a66d2c4116782fd4b",
+"classProtocolPP_1_1jstream.html#a697c4a904018b0a854e3dcf2ffd9176d",
+"classProtocolPP_1_1jxmssa.html#a5382fd6f1c63be973c04d7388e052c68",
+"classoption_1_1PrintUsageImplementation_1_1LineWrapper.html#add20eca40865ad892d6c28b412ac14d5",
+"classtinyxml2_1_1XMLElement.html#ab5f90e2493c35702175235127e2935b4aa2857344b98a931536c443cd0cadc4b7",
+"functions_func_j.html",
+"namespaceProtocolPP.html#a172286d905920e4959593f021ece042dae0781b39a021deff7b67abc4a352e9c6",
+"namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a1028404cd0865a4d7ca6a827e30948e9",
+"namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ae0fada47a44cada778df3d30c806ecf6",
+"namespaceProtocolPP.html#a861f08e1090aeb647a661114e8f3a33d",
+"namespaceProtocolPP.html#aba84d6eeb00e8af8d8758731492dd76ba03445e9e300d573bd3a829e288e6f0c6",
+"namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8adda07a5dc712778ffe05edeb191f710f",
+"structPlatformPP_1_1jsec_1_1sgt__t.html#a1e9707fb31cf0e58729058ebf975be6a",
+"tinyxml2_8h.html#a7f91d00f77360f850fd5da0861e27dd5a9a4a309029a6f5e636e20ef5e0b65136"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
