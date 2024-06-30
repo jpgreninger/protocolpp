@@ -180,6 +180,8 @@ For W.A.S.P usage, see the doxygen section
   * LMS-HSS: SHA2, SHAKE256, 192 and 256-bit. XML and JSON formats (as found in NIST800-208)
   * CSNA 1.0 and 2.0 compliance
   * See the release video
+  * SHA384 (encrypt file) : b33ceb793ef6cc700a6b6a02755405ecbdb78de3602e61b93050bb6e9967c3bfdf6e8c5483b97af4f0cdb82983aad950
+  * SHA384 (release file) : 97fa9a484ec2c11f5e61d3ee487b61c98763c71826e98fcc119acc8fbff5038ab8fb0434c043db051b8e6c2d3b442bfc
     
 * Protocolpp® (Protocol++®) - 5.5.1 Released June 7, 2024
   * See release notes in paid version
