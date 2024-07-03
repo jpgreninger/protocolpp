@@ -1,4 +1,4 @@
-# Protocolpp®(Protocol++®) 5.5.1 Released June 7, 2024!
+# Protocolpp®(Protocol++®) 5.6.0 Released June 28, 2024!
 https://www.youtube.com/watch?v=zs5Edbf4MiI
 
 Only www.protocolpp.com has the rights to update, modify,
@@ -172,12 +172,14 @@ For W.A.S.P usage, see the doxygen section
 
 * See www.protocolpp.com for more updates, information and licensing
 
-* Protocol++® (Protocolpp®) - 5.6.0 Released July 1, 2024
+* Protocol++® (Protocolpp®) - 5.6.0 Released June 28, 2024
   * See release notes in paid version
   * See www.protocolpp.com for further information
   * Contains two signatures, one for the encrypted file, one found inside the encrypted file for the release. Please verify both
   * XMSS and XMSS^MT: SHA2, SHAKE256, 192 and 256-bit. XML and JSON formats (as found in NIST800-208)
   * LMS-HSS: SHA2, SHAKE256, 192 and 256-bit. XML and JSON formats (as found in NIST800-208)
+  * KYBER: Level 2, 3 and 4. XML and JSON formats
+  * DILITHIUM: 512, 768, and 1024 bits. XML and JSON formats
   * CSNA 1.0 and 2.0 compliance
   * See the release video
   * SHA384 (encrypt file) : b33ceb793ef6cc700a6b6a02755405ecbdb78de3602e61b93050bb6e9967c3bfdf6e8c5483b97af4f0cdb82983aad950
