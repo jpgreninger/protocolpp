@@ -1,4 +1,4 @@
-# Protocolpp®(Protocol++®) 5.6.0 Released June 28, 2024!
+# Protocolpp®(Protocol++®) 5.6.1 Released July 14, 2024!
 https://www.youtube.com/watch?v=zs5Edbf4MiI
 
 Only www.protocolpp.com has the rights to update, modify,
@@ -59,7 +59,7 @@ protocolpp® - Executable of the full set of protocols, ciphers, testbench,
 
 libprotocolpp.a - Static library of the protocolpp.h interface, wasp.h, and ciphers.h
 
-libprotocolpp.so.5.5.1 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
+libprotocolpp.so.5.6.1 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
 
 winprot++.lib - Static library for Windows compiled under VC++ 19
 
@@ -172,6 +172,16 @@ For W.A.S.P usage, see the doxygen section
 
 * See www.protocolpp.com for more updates, information and licensing
 
+* Protocol++® (Protocolpp®) - 5.6.1 Released July 14, 2024
+  * See release notes in paid version
+  * See www.protocolpp.com for further information
+  * Contains two signatures, one for the encrypted file, one found inside the encrypted file for the release. Please verify both
+  * Use all security strengths without recompile by passing parameter found in jenum.h
+  * CSNA 1.0 and 2.0 compliance
+  * See the release video
+  * SHA384 (encrypt file) : ca4e5fe86ece9bc953088c06c4e5252ea93e7e9f330a45f000c9538daf6e8948ab0799f0144da62f1fc77d1e63b8b65b
+  * SHA384 (release file) : 82c71bf181fbce004453c1007889acea3bcc241cead2830e03a03d5d964b6622d9e95def8d6e03a81bcf52d7d7cfc696
+    
 * Protocol++® (Protocolpp®) - 5.6.0 Released June 28, 2024
   * See release notes in paid version
   * See www.protocolpp.com for further information
