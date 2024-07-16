@@ -133,7 +133,9 @@ var annotated_dup =
       [ "jkyber", "classProtocolPP_1_1jkyber.html", "classProtocolPP_1_1jkyber" ],
       [ "jkybersa", "classProtocolPP_1_1jkybersa.html", "classProtocolPP_1_1jkybersa" ],
       [ "jdilithium", "classProtocolPP_1_1jdilithium.html", "classProtocolPP_1_1jdilithium" ],
-      [ "jdilithiumsa", "classProtocolPP_1_1jdilithiumsa.html", "classProtocolPP_1_1jdilithiumsa" ]
+      [ "jdilithiumsa", "classProtocolPP_1_1jdilithiumsa.html", "classProtocolPP_1_1jdilithiumsa" ],
+      [ "jfalcon", "classProtocolPP_1_1jfalcon.html", "classProtocolPP_1_1jfalcon" ],
+      [ "jfalconsa", "classProtocolPP_1_1jfalconsa.html", "classProtocolPP_1_1jfalconsa" ]
     ] ],
     [ "tinyxml2", null, [
       [ "StrPair", "classtinyxml2_1_1StrPair.html", "classtinyxml2_1_1StrPair" ],
@@ -185,6 +187,8 @@ var annotated_dup =
     [ "jenum", "classjenum.html", null ],
     [ "jexec", "classjexec.html", null ],
     [ "jexecbuf", "classjexecbuf.html", null ],
+    [ "jfalcon", "classjfalcon.html", null ],
+    [ "jfalconsa", "classjfalconsa.html", null ],
     [ "jgre", "classjgre.html", null ],
     [ "jgresa", "classjgresa.html", null ],
     [ "jicmp", "classjicmp.html", null ],

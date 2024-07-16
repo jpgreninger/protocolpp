@@ -56,6 +56,7 @@ var NAVTREE =
       [ "Leighton-Micali Hash-Based Signatures (LMS)", "index.html#LMSHash", null ],
       [ "Kyber Key Agreement Algorithm (KYBER)", "index.html#KYBERsec", null ],
       [ "Dilithium Signature Algorithm (DILITHIUM)", "index.html#DILITHIUMsec", null ],
+      [ "Falcon Signature Algorithm (FALCON)", "index.html#FALCONsec", null ],
       [ "W.A.S.P", "index.html#Testbench", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
@@ -92,21 +93,21 @@ var NAVTREEINDEX =
 "classInterfacePP_1_1jring.html#af8ddac91e09989ff097d824414e8b85b",
 "classProtocolPP_1_1jbuffer.html#a5bf511b55edd49cf3f741cc2a72e1f50",
 "classProtocolPP_1_1jecdsaf2msa.html#a7b4453b50d527e489bc95a48eec265d5",
-"classProtocolPP_1_1jipsec.html#a5cb43b9c6414597c9110d645b1c2fc04",
-"classProtocolPP_1_1jpoly1305.html#a1a7cce32c38ffe7a66d2c4116782fd4b",
-"classProtocolPP_1_1jstream.html#a697c4a904018b0a854e3dcf2ffd9176d",
-"classProtocolPP_1_1jxmssa.html#a5382fd6f1c63be973c04d7388e052c68",
-"classoption_1_1PrintUsageImplementation_1_1LineWrapper.html#add20eca40865ad892d6c28b412ac14d5",
-"classtinyxml2_1_1XMLElement.html#ab5f90e2493c35702175235127e2935b4aa2857344b98a931536c443cd0cadc4b7",
-"functions_func_j.html",
-"namespaceProtocolPP.html#a172286d905920e4959593f021ece042dae0781b39a021deff7b67abc4a352e9c6",
-"namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a1028404cd0865a4d7ca6a827e30948e9",
-"namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ae0fada47a44cada778df3d30c806ecf6",
-"namespaceProtocolPP.html#a861f08e1090aeb647a661114e8f3a33d",
-"namespaceProtocolPP.html#aba84d6eeb00e8af8d8758731492dd76ba03445e9e300d573bd3a829e288e6f0c6",
-"namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8adda07a5dc712778ffe05edeb191f710f",
-"structPlatformPP_1_1jsec_1_1sgt__t.html#a1e9707fb31cf0e58729058ebf975be6a",
-"tinyxml2_8h.html#a7f91d00f77360f850fd5da0861e27dd5a9a4a309029a6f5e636e20ef5e0b65136"
+"classProtocolPP_1_1jip.html#a8bc1e04c8e946a639c6e08ca6c2388b2",
+"classProtocolPP_1_1jmodes.html#ab2cdd1d15cbef658be2040fc8a470d36aab3b9dff689746442da8a681e3d73b22",
+"classProtocolPP_1_1jsrtp.html#a31a64cfb9cb66dafa0030f90db0d6d5b",
+"classProtocolPP_1_1jwots.html",
+"classoption_1_1Parser.html#a2c11b050f4248d71758dda52c5f9154d",
+"classtinyxml2_1_1XMLElement.html#a66d96972adecd816194191f13cc4a0a0",
+"classtinyxml2_1_1XMLVisitor.html#a14e4748387c34bf53d24e8119bb1f292",
+"namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca711bcbf5dea19f237002df3c1b0cdb25",
+"namespaceProtocolPP.html#a30ed9cafe3158b376ead116ee027b3c7a8a204f952589c4fbb7b42372dfdb7bd2",
+"namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ab58ec71cd10dcdc01c6e152a1047930c",
+"namespaceProtocolPP.html#a7aad853c8a1e515a0ce0d3e0c08b00e7",
+"namespaceProtocolPP.html#aac36df16c38920fc98e9b6454eccef42",
+"namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8a84dcd6408b787f722707d133707bf9fc",
+"namespacemembers_eval_t.html",
+"structoption_1_1PrintUsageImplementation_1_1FunctionWriter.html#adc6c3f7ba11b3cad65c018955bab47e5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

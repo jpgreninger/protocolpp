@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++&reg; (Protocolpp&reg;)
-   &#160;<span id="projectnumber">v5.6.0</span>
+   &#160;<span id="projectnumber">v5.6.1</span>
    </div>
   </td>
  </tr>
@@ -1192,6 +1192,49 @@ Dilithium Signature Algorithm (DILITHIUM)</h1>
 <a class="el" href="classjsecass.html">jsecass</a> </dd>
 <dd>
 jprotocolpp</dd></dl>
+<h1><a class="anchor" id="FALCONsec"></a>
+Falcon Signature Algorithm (FALCON)</h1>
+<div class="image">
+<img src="falconLogo.png" alt=""/>
+</div>
+<p>See CSNA 2.0 from NIST <br  />
+ See Post Quantum Cryptography from NIST <br  />
+ See Falcon: Fast-Fourier Lattice-based Compact Signatures over NTRU v1.2 <br  />
+ See <a href="https://pq-crystals.org/dilithium/index.shtml">https://pq-crystals.org/dilithium/index.shtml</a> <br  />
+</p>
+<p><b>Introduction</b></p>
+<p>Falcon is a lattice-based signature scheme. It stands for the following acronym:</p>
+<p>Fast Fourier lattice-based compact signatures over NTRU</p>
+<p>The high-level design of Falcon is simple: we instantiate the theoretical framework described by Gentry, Peikert and Vaikuntanathan [GPV08] for constructing hash-and-sign lattice-based signature schemes.</p>
+<p>This framework requires two ingredients:</p>
+<ul>
+<li>A class of cryptographic lattices. We chose the class of NTRU lattices.</li>
+<li>A trapdoor sampler. We rely on a new technique which we call fast Fourier sampling</li>
+</ul>
+<p>In a nutshell, the Falcon signature scheme may therefore be described as follows:</p>
+<p>Falcon = GPV framework + NTRU lattices + Fast Fourier sampling</p>
+<p><b>A Quest for Compactness</b></p>
+<p>The design rationale of Falcon stems from a simple observation: when switching from RSA- or discrete logarithm-based signatures to post-quantum signatures, communication complexity will likely be a larger problem than speed. Indeed, many post-quantum schemes have a simple algebraic description which makes them fast, but all require either larger keys than pre-quantum schemes, larger signatures, or both. We expect such performance issues will hinder transition from pre-quantum to post-quantum schemes. Hence our leading design principle was to minimize the following quantity:</p>
+<p>|pk| + |sig| = (bitsize of the public key) + (bitsize of a signature)</p>
+<p>This led us to consider lattice-based signatures, which manage to keep both |pk| and |sig| rather small, especially for structured lattices. When it comes to lattice-based signatures, there are essentially two paradigms: Fiat-Shamir or hash-and-sign</p>
+<p>Both paradigms achieve comparable levels of compactness, but hash-and-sign have interesting proper- ties: the GPV framework [GPV08], which describes how to obtain hash-and-sign lattice-based signature schemes, is secure in the classical and quantum oracle models [GPV08, BDF+11]. In addition, it enjoys message-recovery capabilities [dLP16]. So we chose this framework</p>
+<p>Next, we chose a class of cryptographic lattices to instantiate this framework. A close to optimal choice with respect to our main design principle – compactness – is NTRU lattices: they allow to obtain a compact instantiation [DLP14] of the GPV framework. In addition, their structure speeds up many operations by two orders of magnitude</p>
+<p>The last step was the trapdoor sampler. We devised a new trapdoor sampler which is asymptotically as fast as the fastest generic trapdoor sampler [Pei10] and provides the same level of security as the most secure sampler</p>
+<p>For the Protocol++&reg; interface to FALCON see</p>
+<p><b>For API Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProtocolPP_1_1jfalcon.html">ProtocolPP::jfalcon</a> </dd>
+<dd>
+<a class="el" href="classProtocolPP_1_1jfalconsa.html">ProtocolPP::jfalconsa</a> </dd>
+<dd>
+<a class="el" href="classProtocolPP_1_1jsecass.html">ProtocolPP::jsecass</a> </dd>
+<dd>
+<a class="el" href="classProtocolPP_1_1jprotocolpp.html">ProtocolPP::jprotocolpp</a></dd></dl>
+<p><b>For Additional Documentation:</b> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classjfalcon.html">jfalcon</a> </dd>
+<dd>
+<a class="el" href="classjfalconsa.html">jfalconsa</a> </dd>
+<dd>
+<a class="el" href="classjsecass.html">jsecass</a> </dd>
+<dd>
+jprotocolpp</dd></dl>
 <h1><a class="anchor" id="Testbench"></a>
 W.A.S.P</h1>
 <p>W.A.S.P is an interface to allow protocol++ to connect to a testbench. Data is either randomly generated or can be passed to the interface using an XML format. Users need to overload the virtual functions to connect to their own testbench. The included makefile can create static and shared object libraries for W.A.S.P and Protocol++&reg;</p>
@@ -1304,6 +1347,10 @@ W.A.S.P</h1>
 <dd>
 <a class="el" href="classProtocolPP_1_1jdilithium.html">ProtocolPP::jdilithium</a> </dd>
 <dd>
+<a class="el" href="classProtocolPP_1_1jfalconsa.html">ProtocolPP::jfalconsa</a> </dd>
+<dd>
+<a class="el" href="classProtocolPP_1_1jfalcon.html">ProtocolPP::jfalcon</a> </dd>
+<dd>
 <a class="el" href="classProtocolPP_1_1jsnow3g.html">ProtocolPP::jsnow3g</a> </dd>
 <dd>
 <a class="el" href="classProtocolPP_1_1jsnowv.html">ProtocolPP::jsnowv</a> </dd>
@@ -1411,6 +1458,10 @@ jrsasa </dd>
 <dd>
 <a class="el" href="classjdilithium.html">jdilithium</a> </dd>
 <dd>
+<a class="el" href="classjfalconsa.html">jfalconsa</a> </dd>
+<dd>
+<a class="el" href="classjfalcon.html">jfalcon</a> </dd>
+<dd>
 <a class="el" href="classjsnow3g.html">jsnow3g</a> </dd>
 <dd>
 <a class="el" href="classjsnowv.html">jsnowv</a> </dd>
@@ -1448,7 +1499,7 @@ jrsasa </dd>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jul 3 2024 13:58:01 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jul 15 2024 18:13:26 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

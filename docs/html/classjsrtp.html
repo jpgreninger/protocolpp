@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++&reg; (Protocolpp&reg;)
-   &#160;<span id="projectnumber">v5.6.0</span>
+   &#160;<span id="projectnumber">v5.6.1</span>
    </div>
   </td>
  </tr>
@@ -279,7 +279,7 @@ Counter Mode Encryption</h2>
 <div class="line">          key_stream  = key_stream || key_block</div>
 <div class="line">          key_stream = truncate( key_stream, Plaintext_len )</div>
 <div class="line">    return (first_key_block, key_stream )</div>
-<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36aea41ac6e2e650d48da10a7354e89e41a"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36aea41ac6e2e650d48da10a7354e89e41a">ProtocolPP::IV</a></div><div class="ttdeci">@ IV</div><div class="ttdoc">Initializaton Vector (IV)</div><div class="ttdef"><b>Definition:</b> jenum.h:556</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36aea41ac6e2e650d48da10a7354e89e41a"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36aea41ac6e2e650d48da10a7354e89e41a">ProtocolPP::IV</a></div><div class="ttdeci">@ IV</div><div class="ttdoc">Initializaton Vector (IV)</div><div class="ttdef"><b>Definition:</b> jenum.h:575</div></div>
 </div><!-- fragment --><p>In theory this keystream generation process allows for the encryption of up to <img class="formulaInl" alt="${2}^{36}-32$" src="form_426.png"/> octets per invocation (i.e. per packet), far longer than is actually required.</p>
 <p>With any counter mode, if the same (IV, Encryption_key) pair is used twice, precisely the same keystream is formed. As explained in section 9.1 of RFC 3711, this is a cryptographic disaster. For GCM the consequences are even worse since such a reuse compromises GCM’s integrity mechanism not only for the current packet stream but for all future uses of the current encryption_key.</p>
 <p><b>Unneeded SRTP/SRTCP Fields</b></p>
@@ -307,8 +307,8 @@ AES-GCM processing for SRTP</h2>
 <div class="line"> </div>
 <div class="line">Figure 1: AES-GCM SRTP Initialization</div>
 <div class="line">                Vector Formation</div>
-<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36a5a1e29d6086a1f73243c7011251ebe05"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a5a1e29d6086a1f73243c7011251ebe05">ProtocolPP::ROC</a></div><div class="ttdeci">@ ROC</div><div class="ttdoc">Rollover Counter (ROC)</div><div class="ttdef"><b>Definition:</b> jenum.h:644</div></div>
-<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36a7d80d3a533775a3c8c284b3fa4e912dc"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a7d80d3a533775a3c8c284b3fa4e912dc">ProtocolPP::SSRC</a></div><div class="ttdeci">@ SSRC</div><div class="ttdoc">Synchronization source identifier (SSRC)</div><div class="ttdef"><b>Definition:</b> jenum.h:646</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36a5a1e29d6086a1f73243c7011251ebe05"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a5a1e29d6086a1f73243c7011251ebe05">ProtocolPP::ROC</a></div><div class="ttdeci">@ ROC</div><div class="ttdoc">Rollover Counter (ROC)</div><div class="ttdef"><b>Definition:</b> jenum.h:663</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36a7d80d3a533775a3c8c284b3fa4e912dc"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a7d80d3a533775a3c8c284b3fa4e912dc">ProtocolPP::SSRC</a></div><div class="ttdeci">@ SSRC</div><div class="ttdoc">Synchronization source identifier (SSRC)</div><div class="ttdef"><b>Definition:</b> jenum.h:665</div></div>
 </div><!-- fragment --><p>Vector formation - The 12 octet initialization vector used by AES-GCM SRTP is formed by first concatenating 2 octets of zeroes, the 4-octet SSRC, the 4-octet Rollover Counter (ROC) and the 2-octet sequence number SEQ. The resulting 12-octet value is then XORed to the 12-octet salt to form the 12-octet IV.</p>
 <p><b>Summary of AES-GCM in SRTP/SRTCP</b></p>
 <p>For convenience, much of the information about the use of AES-GCM family of algorithms in SRTP is collected in the tables contained in this section. The AES-GCM family of AEAD algorithms is built around the AES block cipher algorithm. AES-GCM uses AES counter mode for encryption and Galois Message Authentication Code (GMAC) for authentication. A detailed description of the AES-GCM family can be found in [RFC5116]. The following members of the AES-GCM family may be used with SRTP/SRTCP:</p>
@@ -319,8 +319,8 @@ AES-GCM processing for SRTP</h2>
 <div class="line"><a class="code" href="namespaceProtocolPP.html#af9de89d351f27b280c94bd76e19ba48aaab1321b4cf5cd60af7427c10a0e69b46">AEAD_AES_256_GCM</a>     32 octets     16 octets          [RFC5116]</div>
 <div class="line"> </div>
 <div class="line">        Table 1: AES-GCM algorithms <span class="keywordflow">for</span> <a class="code" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca19a12da0b094a55286f5772f95ee7a72">SRTP</a>/SRTCP</div>
-<div class="ttc" id="anamespaceProtocolPP_html_a15957f30f5cdc906a54e53fcb4834e5ca19a12da0b094a55286f5772f95ee7a72"><div class="ttname"><a href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca19a12da0b094a55286f5772f95ee7a72">ProtocolPP::SRTP</a></div><div class="ttdeci">@ SRTP</div><div class="ttdoc">Secure RTP protocol.</div><div class="ttdef"><b>Definition:</b> jenum.h:1278</div></div>
-<div class="ttc" id="anamespaceProtocolPP_html_af9de89d351f27b280c94bd76e19ba48aaab1321b4cf5cd60af7427c10a0e69b46"><div class="ttname"><a href="namespaceProtocolPP.html#af9de89d351f27b280c94bd76e19ba48aaab1321b4cf5cd60af7427c10a0e69b46">ProtocolPP::AEAD_AES_256_GCM</a></div><div class="ttdeci">@ AEAD_AES_256_GCM</div><div class="ttdoc">AES-GCM with 32-byte key and 16-byte ICV.</div><div class="ttdef"><b>Definition:</b> jenum.h:2968</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_a15957f30f5cdc906a54e53fcb4834e5ca19a12da0b094a55286f5772f95ee7a72"><div class="ttname"><a href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca19a12da0b094a55286f5772f95ee7a72">ProtocolPP::SRTP</a></div><div class="ttdeci">@ SRTP</div><div class="ttdoc">Secure RTP protocol.</div><div class="ttdef"><b>Definition:</b> jenum.h:1331</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_af9de89d351f27b280c94bd76e19ba48aaab1321b4cf5cd60af7427c10a0e69b46"><div class="ttname"><a href="namespaceProtocolPP.html#af9de89d351f27b280c94bd76e19ba48aaab1321b4cf5cd60af7427c10a0e69b46">ProtocolPP::AEAD_AES_256_GCM</a></div><div class="ttdeci">@ AEAD_AES_256_GCM</div><div class="ttdoc">AES-GCM with 32-byte key and 16-byte ICV.</div><div class="ttdef"><b>Definition:</b> jenum.h:3025</div></div>
 </div><!-- fragment --><p> Any implementation of AES-GCM SRTP MUST support both AEAD_AES_128_GCM and AEAD_AES_256_GCM (the versions with 16 octet AEAD authentication tags), and it MAY support AEAD_AES_128_GCM_8 Below we summarize parameters associated with these three GCM algorithms:</p>
 <div class="fragment"><div class="line">+--------------------------------+------------------------------+</div>
 <div class="line">| Parameter                      | Value                        |</div>
@@ -374,9 +374,9 @@ AES-CCM for SRTP/SRTCP</h2>
 <div class="line"> <a class="code" href="namespaceProtocolPP.html#af9de89d351f27b280c94bd76e19ba48aa0b385f08c1fec36eaadb97fd584ebb20">AEAD_AES_256_CCM_8</a>   256 bits     8 octets        [RFC6655]</div>
 <div class="line"> </div>
 <div class="line">         Table 6: AES-CCM algorithms <span class="keywordflow">for</span> <a class="code" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca19a12da0b094a55286f5772f95ee7a72">SRTP</a>/SRTCP</div>
-<div class="ttc" id="anamespaceProtocolPP_html_af9de89d351f27b280c94bd76e19ba48aa0b385f08c1fec36eaadb97fd584ebb20"><div class="ttname"><a href="namespaceProtocolPP.html#af9de89d351f27b280c94bd76e19ba48aa0b385f08c1fec36eaadb97fd584ebb20">ProtocolPP::AEAD_AES_256_CCM_8</a></div><div class="ttdeci">@ AEAD_AES_256_CCM_8</div><div class="ttdoc">AES-CCM with 32-byte key and 8-byte ICV.</div><div class="ttdef"><b>Definition:</b> jenum.h:2972</div></div>
-<div class="ttc" id="anamespaceProtocolPP_html_af9de89d351f27b280c94bd76e19ba48aa4a7fb6f702219969093b81a0bf205d69"><div class="ttname"><a href="namespaceProtocolPP.html#af9de89d351f27b280c94bd76e19ba48aa4a7fb6f702219969093b81a0bf205d69">ProtocolPP::AEAD_AES_256_CCM_12</a></div><div class="ttdeci">@ AEAD_AES_256_CCM_12</div><div class="ttdoc">AES-CCM with 32-byte key and 12-byte ICV.</div><div class="ttdef"><b>Definition:</b> jenum.h:2973</div></div>
-<div class="ttc" id="anamespaceProtocolPP_html_af9de89d351f27b280c94bd76e19ba48aab9bd2280e0c25c38fb7d3a4752c3062f"><div class="ttname"><a href="namespaceProtocolPP.html#af9de89d351f27b280c94bd76e19ba48aab9bd2280e0c25c38fb7d3a4752c3062f">ProtocolPP::AEAD_AES_256_CCM</a></div><div class="ttdeci">@ AEAD_AES_256_CCM</div><div class="ttdoc">AES-CCM with 32-byte key and 16-byte ICV.</div><div class="ttdef"><b>Definition:</b> jenum.h:2971</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_af9de89d351f27b280c94bd76e19ba48aa0b385f08c1fec36eaadb97fd584ebb20"><div class="ttname"><a href="namespaceProtocolPP.html#af9de89d351f27b280c94bd76e19ba48aa0b385f08c1fec36eaadb97fd584ebb20">ProtocolPP::AEAD_AES_256_CCM_8</a></div><div class="ttdeci">@ AEAD_AES_256_CCM_8</div><div class="ttdoc">AES-CCM with 32-byte key and 8-byte ICV.</div><div class="ttdef"><b>Definition:</b> jenum.h:3029</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_af9de89d351f27b280c94bd76e19ba48aa4a7fb6f702219969093b81a0bf205d69"><div class="ttname"><a href="namespaceProtocolPP.html#af9de89d351f27b280c94bd76e19ba48aa4a7fb6f702219969093b81a0bf205d69">ProtocolPP::AEAD_AES_256_CCM_12</a></div><div class="ttdeci">@ AEAD_AES_256_CCM_12</div><div class="ttdoc">AES-CCM with 32-byte key and 12-byte ICV.</div><div class="ttdef"><b>Definition:</b> jenum.h:3030</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_af9de89d351f27b280c94bd76e19ba48aab9bd2280e0c25c38fb7d3a4752c3062f"><div class="ttname"><a href="namespaceProtocolPP.html#af9de89d351f27b280c94bd76e19ba48aab9bd2280e0c25c38fb7d3a4752c3062f">ProtocolPP::AEAD_AES_256_CCM</a></div><div class="ttdeci">@ AEAD_AES_256_CCM</div><div class="ttdoc">AES-CCM with 32-byte key and 16-byte ICV.</div><div class="ttdef"><b>Definition:</b> jenum.h:3028</div></div>
 </div><!-- fragment --><p> In addition to the flag octet used in counter mode encryption, AES-CCM authentications also uses a flag octet that conveys information about the length of the authentication tag, length of the block counter, and presence of additional authenticated data (see section 2.2 of [RFC3610]). For AES-CCM in SRTP/SRTCP, the flag octet has the hex value 5A if an 8-octet AEAD authentication tag is used, 6A if a 12-octet AEAD authentication tag is used, and 7A if a 16-octet AEAD authentication tag is used. The flag octet is one of the inputs to AES during the counter mode encryption of the plaintext. </p><div class="fragment"><div class="line">+--------------------------------+------------------------------+</div>
 <div class="line">| Parameter                      | Value                        |     </div>
 <div class="line">+--------------------------------+------------------------------+</div>
@@ -618,7 +618,7 @@ ProtoocolPP::jrand</dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjsrtp.html">jsrtp</a></li>
-    <li class="footer">Generated on Wed Jul 3 2024 13:58:01 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jul 15 2024 18:13:26 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -91,6 +91,8 @@ var namespaceProtocolPP =
     [ "jkybersa", "classProtocolPP_1_1jkybersa.html", "classProtocolPP_1_1jkybersa" ],
     [ "jdilithium", "classProtocolPP_1_1jdilithium.html", "classProtocolPP_1_1jdilithium" ],
     [ "jdilithiumsa", "classProtocolPP_1_1jdilithiumsa.html", "classProtocolPP_1_1jdilithiumsa" ],
+    [ "jfalcon", "classProtocolPP_1_1jfalcon.html", "classProtocolPP_1_1jfalcon" ],
+    [ "jfalconsa", "classProtocolPP_1_1jfalconsa.html", "classProtocolPP_1_1jfalconsa" ],
     [ "jpoly1305_state_internal_t", "namespaceProtocolPP.html#a88f1286f96324cf36a14682523aa4793", null ],
     [ "w128_t", "namespaceProtocolPP.html#a6a7fa6d634d3483e638fbe04e6043520", null ],
     [ "auth_method_t", "namespaceProtocolPP.html#a24cdc6d0c8f5bbb4ec61f841e6154dfe", [
@@ -289,9 +291,9 @@ var namespaceProtocolPP =
       [ "DH_CURVE_448", "namespaceProtocolPP.html#a5f58d1d3c6f509889b286a5ca9c78d7eaa40738782b3814f890fa62f4f12be7a0", null ]
     ] ],
     [ "dilithium_algorithm_t", "namespaceProtocolPP.html#a5b4f9144cc9f975cbaa490b782bba4d7", [
-      [ "DILITHIUM_LVL2", "namespaceProtocolPP.html#a5b4f9144cc9f975cbaa490b782bba4d7aade03b144c36891f9210d0fd76b93f17", null ],
-      [ "DILITHIUM_LVL3", "namespaceProtocolPP.html#a5b4f9144cc9f975cbaa490b782bba4d7a9583a9123a18c5ad938cf1050bf8251c", null ],
-      [ "DILITHIUM_LVL5", "namespaceProtocolPP.html#a5b4f9144cc9f975cbaa490b782bba4d7a92f269d9f19119c797d32211f50cf326", null ]
+      [ "DILITHIUM2", "namespaceProtocolPP.html#a5b4f9144cc9f975cbaa490b782bba4d7a9a27954c096dbfd6e9fddd3418f64d98", null ],
+      [ "DILITHIUM3", "namespaceProtocolPP.html#a5b4f9144cc9f975cbaa490b782bba4d7ae0e7df9d22556c5006990204ee554fea", null ],
+      [ "DILITHIUM5", "namespaceProtocolPP.html#a5b4f9144cc9f975cbaa490b782bba4d7a72921d09b3ddd9f4c61e2f84cb325cf7", null ]
     ] ],
     [ "dir_id_t", "namespaceProtocolPP.html#a7c27b0a043e10bd868a3d52961ef5505", [
       [ "DIR_IN", "namespaceProtocolPP.html#a7c27b0a043e10bd868a3d52961ef5505a024856b3c5fb00621c7aaa4a35b643ea", null ],
@@ -525,6 +527,10 @@ var namespaceProtocolPP =
       [ "EXCHG_IKE_PARSE", "namespaceProtocolPP.html#a172286d905920e4959593f021ece042da644e0e8a390af3365031dbbbf99f4ccc", null ],
       [ "EXCHG_IKE_RESEND", "namespaceProtocolPP.html#a172286d905920e4959593f021ece042da11089850013bcfec0c9e5e6436814180", null ],
       [ "EXCHG_IKE_LISTEN", "namespaceProtocolPP.html#a172286d905920e4959593f021ece042dae289dd1ef71e9c443122eb9983b4f882", null ]
+    ] ],
+    [ "falcon_algorithm_t", "namespaceProtocolPP.html#aabf962590530a1b11c04d6a229eaccba", [
+      [ "FALCON_512", "namespaceProtocolPP.html#aabf962590530a1b11c04d6a229eaccbaa2db0f3dd399b550e21f1b8f8e3525456", null ],
+      [ "FALCON_1024", "namespaceProtocolPP.html#aabf962590530a1b11c04d6a229eaccbaa94ce6dd0c9d37cf464f83c7703994813", null ]
     ] ],
     [ "field_t", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36", [
       [ "DIRECTION", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a2257812a84a2cb06b01f5d72a0d755b0", null ],
@@ -830,7 +836,23 @@ var namespaceProtocolPP =
       [ "FLOWID", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36abc1f9e1cabdf6be0857bbb1d8c453eb5", null ],
       [ "PROTYPE", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a19ac0ec0db984f76510d0b648ab3fa5e", null ],
       [ "VNI", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ad19950e18d4186309350f9579dbbe882", null ],
-      [ "APP_TRAFFIC_SECRET", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a723809ee63ff7636413b2f35707f46b0", null ]
+      [ "APP_TRAFFIC_SECRET", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a723809ee63ff7636413b2f35707f46b0", null ],
+      [ "PRVIKEYLEN", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a0a1ce006b5db18aacb56a44592ba42b2", null ],
+      [ "PUBIKEYLEN", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36abe409bc388c7080ee6dd26fa2365b21e", null ],
+      [ "SYMBYTES", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a8101106f24dbe5cb6a7aeb995bed50d3", null ],
+      [ "KYBERK", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a6173fc261eae4dac9f8b3e285dcdc685", null ],
+      [ "KYBERN", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a0e89325ad9e24f7dc9f228583c29391a", null ],
+      [ "KYBERQ", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36aadb0c2cb8086014b88baf6a6de8ec796", null ],
+      [ "POLYBYTES", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a11858d258e663905acb0fc5ed0e46e8f", null ],
+      [ "POLYVECBYTES", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a50bc2850b55c6ff7dfe76e6f60179c95", null ],
+      [ "SSBYTES", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36adef31cc2e7cf7790f67001b6e724795e", null ],
+      [ "PCBYTES", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a254ad5496cfedc621da8b28fb8a9a128", null ],
+      [ "PVCBYTES", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36aefbbe1f052929051ba4db7c7145529b0", null ],
+      [ "MSGIBYTES", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36af2005945ae679e5b7e4d22754eb6b5d8", null ],
+      [ "ILENGTH", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a56fcd068dabee20efb865b4de0cf3b41", null ],
+      [ "QINV", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36ae9fc76ffd56e68fb86b7c3a2a1afaa39", null ],
+      [ "KYBERETA1", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a4e6f8047771f01b6c0285ca1fa903eff", null ],
+      [ "KYBERETA2", "namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36a9dd48c3e4435facdc54dd587343e2556", null ]
     ] ],
     [ "iana_t", "namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8", [
       [ "HOPOPT", "namespaceProtocolPP.html#acfb3e3c6ca0eb6279a8e73b93f9c91e8a8ec4049ffe6eafd761a19869cedb9f13", null ],
@@ -1397,6 +1419,8 @@ var namespaceProtocolPP =
       [ "VXLAN", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca122355e146b63736fa7f07544f0e67ef", null ],
       [ "KYBER", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5cae4a54a5dde758466040b2a7397b3f9b3", null ],
       [ "DILITHIUM", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca18b5c8dce77d800a608ba1ba74ff5e93", null ],
+      [ "FALCON", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca4c313c435c05ff8b3d6db5c9d8463216", null ],
+      [ "SPHINX", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca81c8071a665f063c35ac785b89b72928", null ],
       [ "NOPROTO", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca80a0105cbfdbf8d19c128444a455518e", null ]
     ] ],
     [ "replay_t", "namespaceProtocolPP.html#a0160929af40c2a496fe7386216cc2c2f", [
@@ -1678,6 +1702,7 @@ var namespaceProtocolPP =
     [ "Begin_Enum_String", "namespaceProtocolPP.html#a30f7fa84e81de4b4845d941328a71d54", null ],
     [ "Begin_Enum_String", "namespaceProtocolPP.html#aee4b52ef45bdc85b678e17cb63a3a458", null ],
     [ "Begin_Enum_String", "namespaceProtocolPP.html#a4d9f056f1d27a26f6fb732707779ad2c", null ],
+    [ "Begin_Enum_String", "namespaceProtocolPP.html#ae8b0f525c982082d50023268ebddf083", null ],
     [ "Begin_Enum_String", "namespaceProtocolPP.html#a4d9e89af1b4316663c9a97cae1330b67", null ],
     [ "Begin_Enum_String", "namespaceProtocolPP.html#a7de1889eea0b224fa437a5b39fc916a3", null ],
     [ "Begin_Enum_String", "namespaceProtocolPP.html#a1bb0fcfb99f03d2331e1c641a50046aa", null ],

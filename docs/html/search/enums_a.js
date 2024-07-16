@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['ots_5faddrtype_5ft_3183',['ots_addrtype_t',['../namespaceProtocolPP.html#aac2ca759f4c6c20b06ca44e54b6d6941',1,'ProtocolPP']]],
-  ['ots_5falgorithm_5ft_3184',['ots_algorithm_t',['../namespaceProtocolPP.html#a35f4c814e3eeb1f5c0d7e54d55002174',1,'ProtocolPP']]]
+  ['ots_5faddrtype_5ft_3217',['ots_addrtype_t',['../namespaceProtocolPP.html#aac2ca759f4c6c20b06ca44e54b6d6941',1,'ProtocolPP']]],
+  ['ots_5falgorithm_5ft_3218',['ots_algorithm_t',['../namespaceProtocolPP.html#a35f4c814e3eeb1f5c0d7e54d55002174',1,'ProtocolPP']]]
 ];

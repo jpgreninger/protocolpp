@@ -13,6 +13,7 @@ var classProtocolPP_1_1jprotocolpp =
     [ "get_ecdsaed", "classProtocolPP_1_1jprotocolpp.html#a142322983aee4b34c0b52523298b4046", null ],
     [ "get_ecdsaf2m", "classProtocolPP_1_1jprotocolpp.html#a48298a56a9818d5db7d578c064f4f61a", null ],
     [ "get_ecdsafp", "classProtocolPP_1_1jprotocolpp.html#aa5882c7caf4e8247ba73967d40d64845", null ],
+    [ "get_falcon", "classProtocolPP_1_1jprotocolpp.html#a50e346633aee8e23b3910baaab357b7e", null ],
     [ "get_gre", "classProtocolPP_1_1jprotocolpp.html#a945b9c7214efb39fb7338f8d4a3278df", null ],
     [ "get_icmp", "classProtocolPP_1_1jprotocolpp.html#a419c2499f7762548b7ef5b8fbb77c2a6", null ],
     [ "get_integrity", "classProtocolPP_1_1jprotocolpp.html#acc4d52f53d2496e85bbd3b11c8530acf", null ],

@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++&reg; (Protocolpp&reg;)
-   &#160;<span id="projectnumber">v5.6.0</span>
+   &#160;<span id="projectnumber">v5.6.1</span>
    </div>
   </td>
  </tr>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('classjlmsa.html',''); initResizable();
 <p>The format of the LMS private key is an internal matter to the implementation, and this document does not attempt to define it. One possibility is that it may consist of an array OTS_PRIV[] of 2^h LM-OTS private keys and the leaf number q of the next LM-OTS private key that has not yet been used. The q-th element of OTS_PRIV[] is generated using Algorithm 0 with the identifiers I, q. The leaf number q is initialized to zero when the LMS private key is created. The format of the LMS Private Key consists of </p><div class="fragment"><div class="line">------------------------------------------------</div>
 <div class="line">| <a class="code" href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36addb9e18e7e549d61113327785304fb45">LMOTSQ</a>+1 | LMOTS_SK[0] | ... | LMOTS_SK[H-1] |</div>
 <div class="line">------------------------------------------------</div>
-<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36addb9e18e7e549d61113327785304fb45"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36addb9e18e7e549d61113327785304fb45">ProtocolPP::LMOTSQ</a></div><div class="ttdeci">@ LMOTSQ</div><div class="ttdoc">LMOTS value of 'q' parameter.</div><div class="ttdef"><b>Definition:</b> jenum.h:820</div></div>
+<div class="ttc" id="anamespaceProtocolPP_html_a44018cab1f12fe3ca4e2f32c547eab36addb9e18e7e549d61113327785304fb45"><div class="ttname"><a href="namespaceProtocolPP.html#a44018cab1f12fe3ca4e2f32c547eab36addb9e18e7e549d61113327785304fb45">ProtocolPP::LMOTSQ</a></div><div class="ttdeci">@ LMOTSQ</div><div class="ttdoc">LMOTS value of 'q' parameter.</div><div class="ttdef"><b>Definition:</b> jenum.h:839</div></div>
 </div><!-- fragment --><p><b>LMS Public Key</b></p>
 <p>An LMS public key is defined as follows, where we denote the public key final hash value (namely, the K value computed in Algorithm 1) associated with the i-th LM-OTS private key as OTS_PUB_HASH[i], with i ranging from 0 to (2^h)-1. Each instance of an LMS public/private key pair is associated with a balanced binary tree, and the nodes of that tree are indexed from 1 to 2^(h+1)-1. Each node is associated with an m-byte string. The string for the r-th node is denoted as T[r]. The format of the LMS Public Key consists of </p><div class="fragment"><div class="line">------------------------------------------</div>
 <div class="line">| LMS_TYPE | LMOTS_TYPE | I | LMOTS_T[1] |</div>
@@ -232,7 +232,7 @@ NIST SP 800-208 Additions - Leighton-Micali Signatures (LMS) Parameter Sets</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjlmsa.html">jlmsa</a></li>
-    <li class="footer">Generated on Wed Jul 3 2024 13:58:01 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jul 15 2024 18:13:26 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
