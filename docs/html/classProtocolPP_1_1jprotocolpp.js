@@ -30,13 +30,13 @@ var classProtocolPP_1_1jprotocolpp =
     [ "get_tcp", "classProtocolPP_1_1jprotocolpp.html#a6d3972389438af85ffdae50ab8b6d2f1", null ],
     [ "get_tls", "classProtocolPP_1_1jprotocolpp.html#a7cbca584145211f0dd628c91489477d4", null ],
     [ "get_tls", "classProtocolPP_1_1jprotocolpp.html#a3e89a2ae023bbf06aca5c53e3389336b", null ],
-    [ "get_tls13", "classProtocolPP_1_1jprotocolpp.html#a6f8a859e432106b43baa1218da6e7165", null ],
-    [ "get_tls13", "classProtocolPP_1_1jprotocolpp.html#ab6e8b8b5852c6295f458b6f98e2fb930", null ],
+    [ "get_tls13", "classProtocolPP_1_1jprotocolpp.html#ae08d6c8a2af7e08612156932f74603c9", null ],
+    [ "get_tls13", "classProtocolPP_1_1jprotocolpp.html#ab79cef9e883524b57b423f3603171408", null ],
     [ "get_udp", "classProtocolPP_1_1jprotocolpp.html#a484da6deecf3557f0394f292b7ded6fc", null ],
     [ "get_udp", "classProtocolPP_1_1jprotocolpp.html#ad4c6a74d7b247b430fdd208936900eb2", null ],
     [ "get_wifi", "classProtocolPP_1_1jprotocolpp.html#a3c89fdbefb467c276ac311de57be8167", null ],
     [ "get_wimax", "classProtocolPP_1_1jprotocolpp.html#ad4f278610917b9d03f916c710e8c89a5", null ],
     [ "get_xmss", "classProtocolPP_1_1jprotocolpp.html#abfd3a4d4b83f95a162a2766c33dc5cd1", null ],
     [ "usage", "classProtocolPP_1_1jprotocolpp.html#a659baeec490525f19e59cc023cac5953", null ],
-    [ "version", "classProtocolPP_1_1jprotocolpp.html#a209466b48e4185e2951addf2a37d30cc", null ]
+    [ "version", "classProtocolPP_1_1jprotocolpp.html#ac51e8379b7da727944ddd6d653d0dc70", null ]
 ];

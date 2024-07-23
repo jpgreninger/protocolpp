@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++&reg; (Protocolpp&reg;)
-   &#160;<span id="projectnumber">v5.6.1</span>
+   &#160;<span id="projectnumber">v5.6.2</span>
    </div>
   </td>
  </tr>
@@ -765,7 +765,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca18b5c8dce77d800a608ba1ba74ff5e93">DILITHIUM</a>
 , <a class="el" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca4c313c435c05ff8b3d6db5c9d8463216">FALCON</a>
 , <br />
-&#160;&#160;<a class="el" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca81c8071a665f063c35ac785b89b72928">SPHINX</a>
+&#160;&#160;<a class="el" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca85567bbcb92789db0d5e11bcdc29fd35">SPHINCS</a>
 , <a class="el" href="namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca80a0105cbfdbf8d19c128444a455518e">NOPROTO</a>
 <br />
  }</td></tr>
@@ -2289,6 +2289,24 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespaceProtocolPP.html#aabf962590530a1b11c04d6a229eaccbaa94ce6dd0c9d37cf464f83c7703994813">FALCON_1024</a>
  }</td></tr>
 <tr class="separator:aabf962590530a1b11c04d6a229eaccba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb07467fc50ca0a3df15948c0df7fa16"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16">sphincs_algorithm_t</a> { <br />
+&#160;&#160;<a class="el" href="namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16a0c1f9a12e3ec7fc08995f236dfe448e9">SPHINCS_SHA2_128F</a>
+, <a class="el" href="namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16accc1f3de5df9a24785a6129d38251951">SPHINCS_SHA2_128S</a>
+, <a class="el" href="namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16ab066760239bb0d7bf6f20f26174ecbce">SPHINCS_SHA2_192F</a>
+, <a class="el" href="namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16a3b20c54db1e137a50ab2ad4b6f328704">SPHINCS_SHA2_192S</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16aac622317ea8050d2898cb736ebdb833d">SPHINCS_SHA2_256F</a>
+, <a class="el" href="namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16a5c7b82c08efdee079c92565e28eaef01">SPHINCS_SHA2_256S</a>
+, <a class="el" href="namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16a3b2853e462c05c470310f74b3aae4bd3">SPHINCS_SHAKE_128F</a>
+, <a class="el" href="namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16a2a8b4ac9cad89887c3c2671523abf1bf">SPHINCS_SHAKE_128S</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16ae73607fcc6e901acacc8270bf807bd67">SPHINCS_SHAKE_192F</a>
+, <a class="el" href="namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16a9f8dd9964dc50e187ccfd1cf43f56d17">SPHINCS_SHAKE_192S</a>
+, <a class="el" href="namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16ae8722ae52ccd1f96e94e83a23a940ee1">SPHINCS_SHAKE_256F</a>
+, <a class="el" href="namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16aa1f7d17fc39f095d1ac875d2d6335113">SPHINCS_SHAKE_256S</a>
+<br />
+ }</td></tr>
+<tr class="separator:aeb07467fc50ca0a3df15948c0df7fa16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -2492,6 +2510,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae8b0f525c982082d50023268ebddf083"><td class="memItemLeft" align="right" valign="top"><a id="ae8b0f525c982082d50023268ebddf083"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Begin_Enum_String</b> (<a class="el" href="namespaceProtocolPP.html#aabf962590530a1b11c04d6a229eaccba">falcon_algorithm_t</a>)</td></tr>
 <tr class="separator:ae8b0f525c982082d50023268ebddf083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52a0f5996b50d9022139261a09018d14"><td class="memItemLeft" align="right" valign="top"><a id="a52a0f5996b50d9022139261a09018d14"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Begin_Enum_String</b> (<a class="el" href="namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16">sphincs_algorithm_t</a>)</td></tr>
+<tr class="separator:a52a0f5996b50d9022139261a09018d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf6a60a2235ae118e6e835498f75df31"><td class="memItemLeft" align="right" valign="top"><a id="aaf6a60a2235ae118e6e835498f75df31"></a>
 static unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>U8TO16</b> (const unsigned char *p)</td></tr>
 <tr class="separator:aaf6a60a2235ae118e6e835498f75df31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -7034,7 +7055,7 @@ fields</h1>
     <tr><td class="paramname">KYBER</td><td>- Kyber key exchange post quantum algorithm </td></tr>
     <tr><td class="paramname">DILITHIUM</td><td>- Dilithium signature post quantum algorithm </td></tr>
     <tr><td class="paramname">FALCON</td><td>- Falcon signature post quantum algorithm </td></tr>
-    <tr><td class="paramname">SPHINX</td><td>- Sphinx signature post quantum algorithm </td></tr>
+    <tr><td class="paramname">SPHINCS</td><td>- Sphincs+ signature post quantum algorithm </td></tr>
     <tr><td class="paramname">NOPROTO</td><td>- No protocol selected </td></tr>
   </table>
   </dd>
@@ -7120,7 +7141,7 @@ fields</h1>
 </td></tr>
 <tr><td class="fieldname"><a id="a15957f30f5cdc906a54e53fcb4834e5ca4c313c435c05ff8b3d6db5c9d8463216"></a>FALCON&#160;</td><td class="fielddoc"><p>Falcon signature post quantum algorithm. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a15957f30f5cdc906a54e53fcb4834e5ca81c8071a665f063c35ac785b89b72928"></a>SPHINX&#160;</td><td class="fielddoc"><p>Sphinx signature post quantum algorithm. </p>
+<tr><td class="fieldname"><a id="a15957f30f5cdc906a54e53fcb4834e5ca85567bbcb92789db0d5e11bcdc29fd35"></a>SPHINCS&#160;</td><td class="fielddoc"><p>Sphincs+ signature post quantum algorithm. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a15957f30f5cdc906a54e53fcb4834e5ca80a0105cbfdbf8d19c128444a455518e"></a>NOPROTO&#160;</td><td class="fielddoc"><p>No Protocol. </p>
 </td></tr>
@@ -7286,6 +7307,48 @@ fields</h1>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad62ec36e4436383ce51a70c3f1417b60a75205220734734744f6b93700d4edaa8"></a>PKCS15&#160;</td><td class="fielddoc"><p>PKCS v1.5 padding. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ad62ec36e4436383ce51a70c3f1417b60ab68eaa1d4bf3290b56ad4650ad6f4051"></a>PSS&#160;</td><td class="fielddoc"><p>Secure padding. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="aeb07467fc50ca0a3df15948c0df7fa16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb07467fc50ca0a3df15948c0df7fa16">&#9670;&nbsp;</a></span>sphincs_algorithm_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16">ProtocolPP::sphincs_algorithm_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SPHINCS+ Signature Algorithm</p>
+<p>SPHINCS_SHA2_128F - Sphincs+ algorithm using SHA2 equivalent to 128-bit security SPHINCS_SHA2_128S - Sphincs+ algorithm using SHA2 equivalent to 128-bit security SPHINCS_SHA2_192F - Sphincs+ algorithm using SHA2 equivalent to 192-bit security SPHINCS_SHA2_192S - Sphincs+ algorithm using SHA2 equivalent to 192-bit security SPHINCS_SHA2_256F - Sphincs+ algorithm using SHA2 equivalent to 256-bit security SPHINCS_SHA2_256S - Sphincs+ algorithm using SHA2 equivalent to 256-bit security SPHINCS_SHAKE_128F - Sphincs+ algorithm using SHAKE equivalent to 128-bit security SPHINCS_SHAKE_128S - Sphincs+ algorithm using SHAKE equivalent to 128-bit security SPHINCS_SHAKE_192F - Sphincs+ algorithm using SHAKE equivalent to 192-bit security SPHINCS_SHAKE_192S - Sphincs+ algorithm using SHAKE equivalent to 192-bit security SPHINCS_SHAKE_256F - Sphincs+ algorithm using SHAKE equivalent to 256-bit security SPHINCS_SHAKE_256S - Sphincs+ algorithm using SHAKE equivalent to 256-bit security </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aeb07467fc50ca0a3df15948c0df7fa16a0c1f9a12e3ec7fc08995f236dfe448e9"></a>SPHINCS_SHA2_128F&#160;</td><td class="fielddoc"><p>Sphincs+ algorithm using SHA2 equivalent to 128-bit security. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aeb07467fc50ca0a3df15948c0df7fa16accc1f3de5df9a24785a6129d38251951"></a>SPHINCS_SHA2_128S&#160;</td><td class="fielddoc"><p>Sphincs+ algorithm using SHA2 equivalent to 128-bit security. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aeb07467fc50ca0a3df15948c0df7fa16ab066760239bb0d7bf6f20f26174ecbce"></a>SPHINCS_SHA2_192F&#160;</td><td class="fielddoc"><p>Sphincs+ algorithm using SHA2 equivalent to 192-bit security. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aeb07467fc50ca0a3df15948c0df7fa16a3b20c54db1e137a50ab2ad4b6f328704"></a>SPHINCS_SHA2_192S&#160;</td><td class="fielddoc"><p>Sphincs+ algorithm using SHA2 equivalent to 192-bit security. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aeb07467fc50ca0a3df15948c0df7fa16aac622317ea8050d2898cb736ebdb833d"></a>SPHINCS_SHA2_256F&#160;</td><td class="fielddoc"><p>Sphincs+ algorithm using SHA2 equivalent to 256-bit security. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aeb07467fc50ca0a3df15948c0df7fa16a5c7b82c08efdee079c92565e28eaef01"></a>SPHINCS_SHA2_256S&#160;</td><td class="fielddoc"><p>Sphincs+ algorithm using SHA2 equivalent to 256-bit security. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aeb07467fc50ca0a3df15948c0df7fa16a3b2853e462c05c470310f74b3aae4bd3"></a>SPHINCS_SHAKE_128F&#160;</td><td class="fielddoc"><p>Sphincs+ algorithm using SHAKE equivalent to 128-bit security. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aeb07467fc50ca0a3df15948c0df7fa16a2a8b4ac9cad89887c3c2671523abf1bf"></a>SPHINCS_SHAKE_128S&#160;</td><td class="fielddoc"><p>Sphincs+ algorithm using SHAKE equivalent to 128-bit security. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aeb07467fc50ca0a3df15948c0df7fa16ae73607fcc6e901acacc8270bf807bd67"></a>SPHINCS_SHAKE_192F&#160;</td><td class="fielddoc"><p>Sphincs+ algorithm using SHAKE equivlaent to 192-bit security. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aeb07467fc50ca0a3df15948c0df7fa16a9f8dd9964dc50e187ccfd1cf43f56d17"></a>SPHINCS_SHAKE_192S&#160;</td><td class="fielddoc"><p>Sphincs+ algorithm using SHAKE equivalent to 192-bit security. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aeb07467fc50ca0a3df15948c0df7fa16ae8722ae52ccd1f96e94e83a23a940ee1"></a>SPHINCS_SHAKE_256F&#160;</td><td class="fielddoc"><p>Sphincs+ algorithm using SHAKE equivalent to 256-bit security. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aeb07467fc50ca0a3df15948c0df7fa16aa1f7d17fc39f095d1ac875d2d6335113"></a>SPHINCS_SHAKE_256S&#160;</td><td class="fielddoc"><p>Sphincs+ algorithm using SHAKE equivalent to 256-bit security. </p>
 </td></tr>
 </table>
 
@@ -9114,7 +9177,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceProtocolPP.html">ProtocolPP</a></li>
-    <li class="footer">Generated on Mon Jul 15 2024 18:13:26 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jul 23 2024 08:35:47 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

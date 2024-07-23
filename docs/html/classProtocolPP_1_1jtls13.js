@@ -1,7 +1,7 @@
 var classProtocolPP_1_1jtls13 =
 [
-    [ "jtls13", "classProtocolPP_1_1jtls13.html#ab53196f3129485daac30766b8c62ebb3", null ],
-    [ "jtls13", "classProtocolPP_1_1jtls13.html#a9995086ae0e7741cd9223684bdec622a", null ],
+    [ "jtls13", "classProtocolPP_1_1jtls13.html#a0db0412ebacd6a5ecfeaf7248eb08d8c", null ],
+    [ "jtls13", "classProtocolPP_1_1jtls13.html#af82f5d1fcfd0803fd3acb52288c8399d", null ],
     [ "~jtls13", "classProtocolPP_1_1jtls13.html#ac410e68f4020bd12f2b173acc25fb64e", null ],
     [ "jtls13", "classProtocolPP_1_1jtls13.html#aebcff3f9819b56bfebd3b5e8194d4539", null ],
     [ "jtls13", "classProtocolPP_1_1jtls13.html#ad2f2e18bd2f342e3048721c47081fa2c", null ],

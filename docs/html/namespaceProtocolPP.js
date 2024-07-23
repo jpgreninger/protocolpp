@@ -1420,7 +1420,7 @@ var namespaceProtocolPP =
       [ "KYBER", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5cae4a54a5dde758466040b2a7397b3f9b3", null ],
       [ "DILITHIUM", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca18b5c8dce77d800a608ba1ba74ff5e93", null ],
       [ "FALCON", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca4c313c435c05ff8b3d6db5c9d8463216", null ],
-      [ "SPHINX", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca81c8071a665f063c35ac785b89b72928", null ],
+      [ "SPHINCS", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca85567bbcb92789db0d5e11bcdc29fd35", null ],
       [ "NOPROTO", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca80a0105cbfdbf8d19c128444a455518e", null ]
     ] ],
     [ "replay_t", "namespaceProtocolPP.html#a0160929af40c2a496fe7386216cc2c2f", [
@@ -1451,6 +1451,20 @@ var namespaceProtocolPP =
     [ "rsapadtype_t", "namespaceProtocolPP.html#ad62ec36e4436383ce51a70c3f1417b60", [
       [ "PKCS15", "namespaceProtocolPP.html#ad62ec36e4436383ce51a70c3f1417b60a75205220734734744f6b93700d4edaa8", null ],
       [ "PSS", "namespaceProtocolPP.html#ad62ec36e4436383ce51a70c3f1417b60ab68eaa1d4bf3290b56ad4650ad6f4051", null ]
+    ] ],
+    [ "sphincs_algorithm_t", "namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16", [
+      [ "SPHINCS_SHA2_128F", "namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16a0c1f9a12e3ec7fc08995f236dfe448e9", null ],
+      [ "SPHINCS_SHA2_128S", "namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16accc1f3de5df9a24785a6129d38251951", null ],
+      [ "SPHINCS_SHA2_192F", "namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16ab066760239bb0d7bf6f20f26174ecbce", null ],
+      [ "SPHINCS_SHA2_192S", "namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16a3b20c54db1e137a50ab2ad4b6f328704", null ],
+      [ "SPHINCS_SHA2_256F", "namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16aac622317ea8050d2898cb736ebdb833d", null ],
+      [ "SPHINCS_SHA2_256S", "namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16a5c7b82c08efdee079c92565e28eaef01", null ],
+      [ "SPHINCS_SHAKE_128F", "namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16a3b2853e462c05c470310f74b3aae4bd3", null ],
+      [ "SPHINCS_SHAKE_128S", "namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16a2a8b4ac9cad89887c3c2671523abf1bf", null ],
+      [ "SPHINCS_SHAKE_192F", "namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16ae73607fcc6e901acacc8270bf807bd67", null ],
+      [ "SPHINCS_SHAKE_192S", "namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16a9f8dd9964dc50e187ccfd1cf43f56d17", null ],
+      [ "SPHINCS_SHAKE_256F", "namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16ae8722ae52ccd1f96e94e83a23a940ee1", null ],
+      [ "SPHINCS_SHAKE_256S", "namespaceProtocolPP.html#aeb07467fc50ca0a3df15948c0df7fa16aa1f7d17fc39f095d1ac875d2d6335113", null ]
     ] ],
     [ "srtpcipher_t", "namespaceProtocolPP.html#af9de89d351f27b280c94bd76e19ba48a", [
       [ "NULL_SRTP", "namespaceProtocolPP.html#af9de89d351f27b280c94bd76e19ba48aa36770d99271efe628aadeb5c4686df4b", null ],
@@ -1737,6 +1751,7 @@ var namespaceProtocolPP =
     [ "Begin_Enum_String", "namespaceProtocolPP.html#a2435d0cc09c7317697b216ddaf6a4960", null ],
     [ "Begin_Enum_String", "namespaceProtocolPP.html#a3ca29859a40b7f9404c176e4378c56e3", null ],
     [ "Begin_Enum_String", "namespaceProtocolPP.html#a0c0b340d28d0614718510c9dc3d22950", null ],
+    [ "Begin_Enum_String", "namespaceProtocolPP.html#a52a0f5996b50d9022139261a09018d14", null ],
     [ "Begin_Enum_String", "namespaceProtocolPP.html#a47e2a63fb5b8fdaa5bd8fac9c954e136", null ],
     [ "Begin_Enum_String", "namespaceProtocolPP.html#a28428ee4481db7586e51b4215c4156fd", null ],
     [ "Begin_Enum_String", "namespaceProtocolPP.html#aa52267701a184acf313c9b0c4c9765c9", null ],
