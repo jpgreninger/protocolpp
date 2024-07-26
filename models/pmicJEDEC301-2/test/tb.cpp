@@ -95,11 +95,11 @@ void tb::run() {
 
     wait(1, SC_MS);
 
-    pwrgd_inout.write(false);
+    pwrgd_inout.write(sc_dt::SC_LOGIC_0);
     wait(10, SC_MS);
     std::cout << sc_time_stamp().to_seconds() << " PWRGD deasserted, no effect set to output only: " << pwrgd_inout.read() << std::endl;
     wait(1, SC_MS);
-    pwrgd_inout.write(true);
+    pwrgd_inout.write(sc_dt::SC_LOGIC_Z);
     wait(1, SC_MS);
     std::cout << sc_time_stamp().to_seconds() << " PWRGD asserted, no effect set to output only: " << pwrgd_inout.read() << std::endl << std::endl;
 
@@ -241,13 +241,13 @@ void tb::run() {
 
     wait(1, SC_MS);
 
-    pwrgd_inout.write(false);
+    pwrgd_inout.write(sc_dt::SC_LOGIC_0);
     wait(10, SC_MS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
     std::cout << sc_time_stamp().to_seconds() << " PWRGD deasserted, should disable rails: " << pwrgd_inout.read() << std::endl;
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
     wait(1, SC_MS);
-    pwrgd_inout.write(true);
+    pwrgd_inout.write(sc_dt::SC_LOGIC_Z);
     wait(1, SC_MS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
     std::cout << sc_time_stamp().to_seconds() << " PWRGD asserted, should have no effect: " << pwrgd_inout.read() << std::endl;

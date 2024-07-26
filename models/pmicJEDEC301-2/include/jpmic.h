@@ -31,6 +31,8 @@ class jpmic : public sc_module {
 
 public:
 
+    uint8_t m_stateint;
+
     jrail* railA;
     jrail* railB;
     jrail* railC;
@@ -96,7 +98,7 @@ public:
     ////////////////////////////////////////////////////
     /// SystemC inout ports
     ////////////////////////////////////////////////////
-    sc_inout<bool> pwrgd_inout;
+    sc_inout_resolved pwrgd_inout;
 
     ////////////////////////////////////////////////////
     /// SystemC input ports
@@ -333,11 +335,15 @@ public:
     ////////////////////////////////////////////////////
     void ldo_ramp();
 
+    ////////////////////////////////////////////////////
+    /// registers
+    ////////////////////////////////////////////////////
     std::array<uint8_t, 256> m_regs;
+
+    pmic_state_t m_state;
 
 private:
 
-    pmic_state_t m_state;
     bool m_vren;
     bool m_vrdis;
     pmicfg m_cfg;

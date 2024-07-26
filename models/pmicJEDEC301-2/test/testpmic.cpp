@@ -76,6 +76,8 @@ int main(int argc, char* argv[]) {
     sc_trace(file, top.v1p0_out, "v1p0_out");
 
     // wires
+    sc_trace(file, top.pmic->m_stateint, "pstate_int");
+    sc_trace(file, top.pmic->m_state, "pstate");
     sc_trace(file, top.pmic->cmd_in, "dac_cmd");
     sc_trace(file, top.pmic->temp_in, "temp");
     sc_trace(file, top.reg_data_out, "reg_data_out");

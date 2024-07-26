@@ -50,7 +50,7 @@ SC_MODULE(TOP) {
     /// SystemC internal wires
     /////////////////////////////////////////////////////
     sc_buffer<bool> gsi_n;
-    sc_signal<bool, SC_MANY_WRITERS> pwrgd;
+    sc_signal_resolved pwrgd;
     sc_signal<bool> vren_wire;
     sc_buffer<bool> wrb;
     sc_buffer<uint8_t> addr_in;
@@ -69,7 +69,7 @@ SC_MODULE(TOP) {
     SC_CTOR(TOP) : clkp(20, SC_NS),
                    clk_in("clk_in", clkp),
                    gsi_n("gsi_n", true),
-                   pwrgd("pwrgd"),
+                   pwrgd("pwrgd", sc_dt::SC_LOGIC_1),
                    vren_wire("vren_wire", false),
                    wrb("wrb"),
                    addr_in("addr_in"),

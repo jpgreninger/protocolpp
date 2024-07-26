@@ -461,15 +461,15 @@ void jpmic::volt_chk() {
         // bulk input OVR
         m_bovr = (bulk_in_read > m_cfg.bulk_max_volt);
 
-        // bulk input GSI_n
-        m_bulk_gsi = (tInput_OV_GSI_Assertion_trigger && m_bovr);
-        
         // bulk input UVR
         m_buvr = (bulk_in_read < m_cfg.bulk_min_volt);
 
         // bulk input OVR/UVR
         m_bulk_ovr = (tInput_OV_VR_Disable_trigger && m_bovr);
         m_bulk_uvr = (tOutput_UV_VR_Disable_Bulk_trigger && m_buvr);
+
+        // bulk input GSI_n
+        m_bulk_gsi = (tInput_OV_GSI_Assertion_trigger && m_bovr);
     }
 }
 
@@ -569,11 +569,12 @@ void jpmic::curr_chk() {
             tOutput_Current_Limiter_C_trigger = false;
         }
 
-        // rail OVR/UVR
+        // rail current limit overage
         m_limit = ((m_limitA && tOutput_Current_Limiter_A_trigger) ||
                    (m_limitB && tOutput_Current_Limiter_B_trigger) ||
                    (m_limitC && tOutput_Current_Limiter_C_trigger));
 
+        // rail current high consumption
         m_consum = m_consumA | m_consumB | m_consumC;
     }
 }
@@ -666,7 +667,7 @@ void jpmic::fsm() {
                     m_state = pmic_state_t::P2_B;
                 }
                 else if (bulk_in->read() >= m_cfg.bulk_pg_thresh) {
-                    pwrgd_inout.write(false);
+                    //pwrgd_inout.write(false);
                     ldo_ramp_en.write(true);
                 }
                 else {
@@ -706,6 +707,7 @@ void jpmic::fsm() {
                     m_regs[0x32] = 0x00;
                 }
 
+                m_stateint = 0x00;
                 break;
             case pmic_state_t::P1:
                 if (vren_in.posedge() && (m_regs[0x1A] & 0x10)) {
@@ -714,6 +716,7 @@ void jpmic::fsm() {
                     m_state = pmic_state_t::RAMPUP;
                 }
 
+                m_stateint = 0x01;
                 break;
             case pmic_state_t::P2_B: {
                 // VR_EN must be written or VREN_In must toggle and BULK must be valid to ramp rails (initial start, after a fault, etc)
@@ -727,12 +730,13 @@ void jpmic::fsm() {
                     m_state = pmic_state_t::RAMPUP;
                 }
 
+                m_stateint = 0x2B;
                 break;
             }
             case pmic_state_t::RAMPUP: {
                 if (railA_pwrgd.read() && railB_pwrgd.read() && railC_pwrgd.read()) {
                     // go to RUN state
-                    pwrgd_inout.write(true);
+                    //pwrgd_inout.write(true);
                     m_regs[0x2F] |= 0x58;
                     m_state = pmic_state_t::P3;
                 }
@@ -744,6 +748,7 @@ void jpmic::fsm() {
                 }
 
                 m_vren = ((m_vren) ? false : m_vren);
+                m_stateint = 0xFF;
                 break;
             }
             case pmic_state_t::P3: {
@@ -770,7 +775,7 @@ void jpmic::fsm() {
                 else if (m_ovr | m_uvr | m_bulk_ovr) {
                     // check for faults
                     m_regs[0x32] &= 0x3F;
-                    pwrgd_inout.write(false);
+                    //pwrgd_inout.write(false);
                     m_state = pmic_state_t::RAMPDN;
                 }
                 else if ((m_regs[0x2F] & 0x04) != 0x04) {
@@ -804,6 +809,7 @@ void jpmic::fsm() {
                     }
                 }
     
+                m_stateint = 0x03;
                 break;
             }
             case pmic_state_t::RAMPDN: {
@@ -841,6 +847,7 @@ void jpmic::fsm() {
                     m_vrdis = ((m_vrdis) ? false : m_vrdis);
                 }
 
+                m_stateint = 0xFD;
                 break;
             }
             case pmic_state_t::P2_A1: {
@@ -865,12 +872,11 @@ void jpmic::fsm() {
                     }
                     m_state = pmic_state_t::RAMPUP;
                 }
-                else {
-                    if (m_bulk_ovr) {
-                        m_state = pmic_state_t::P2_A2;
-                    }
+                else if (m_bulk_ovr) {
+                    m_state = pmic_state_t::P2_A2;
                 }
 
+                m_stateint = 0xA1;
                 break;
             }
             case pmic_state_t::P2_A2: {
@@ -879,14 +885,14 @@ void jpmic::fsm() {
                     ldo_ramp_en.write(false);
                     m_state = pmic_state_t::P0;
                 }
-                else if ((m_vren || vren_in.posedge()) && !(m_regs[0x32] & 0x20)) {
+                //else if ((m_vren || vren_in.posedge()) && !(m_regs[0x32] & 0x20)) {
                     // pin or VR_EN written when not allowed
-                    pwrgd_inout.write(false);
-                }
+                //    pwrgd_inout.write(sc_dt::SC_LOGIC_0);
+                //}
                 else if (vren_in.posedge() &&
                         (((m_regs[0x2F] & 0x04) && !(m_regs[0x32] & 0x20) && !(m_regs[0x1A] & 0x10)) ||
                         ((m_regs[0x2F] & 0x04) && !(m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)))) {
-                    pwrgd_inout.write(true);
+                    //pwrgd_inout.write(true);
                     m_state = pmic_state_t::RAMPUP;
                 }
                 else if (m_vren && (((m_regs[0x2F] & 0x04) && !(m_regs[0x1A] & 0x10)) ||
@@ -895,14 +901,32 @@ void jpmic::fsm() {
                     if (m_vren && secured) {
                         r32_locked = true;
                     }
-                    pwrgd_inout.write(true);
+                    //pwrgd_inout.write(true);
                     m_state = pmic_state_t::RAMPUP;
                 }
 
+                m_stateint = 0xA2;
                 break;
             }
             default:
                 m_state = m_state;
+        }
+
+        // control PWRGD pin
+        if (m_bulk_uvr | m_bulk_ovr | m_ovr | m_uvr | m_bulk_ovr | m_bulk_uvr | m_shutdown) {
+            pwrgd_inout.write(sc_dt::SC_LOGIC_0);
+        }
+        else {
+            pwrgd_inout.write(sc_dt::SC_LOGIC_Z);
+        }
+
+        // control GSI_N pin
+        if (m_bulk_uvr | m_bulk_ovr | m_ovr | m_uvr | m_bulk_ovr | m_bulk_uvr | m_consum | m_limit | m_temp_warning | m_shutdown |
+           ((m_vren || vren_in.posedge()) && !(m_regs[0x32] & 0x20))) {
+            gsi_n_out.write(false);
+        }
+        else {
+            gsi_n_out.write(true);
         }
     }
 }
