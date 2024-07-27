@@ -793,18 +793,6 @@ void jpmic::fsm() {
                     secured = false;
                     r32_locked = false;
                     
-                    m_regs[0x15] = 0x2C;
-                    m_regs[0x16] = 0x20;
-                    m_regs[0x17] = 0x00;
-                    m_regs[0x18] = 0x00;
-                    m_regs[0x19] = 0x04;
-                    m_regs[0x1A] = 0x00;
-                    m_regs[0x1B] = 0x05;
-                    m_regs[0x1C] = 0x60;
-                    m_regs[0x1D] = 0x00;
-                    m_regs[0x1E] = 0x60;
-                    m_regs[0x1F] = 0x60;
-
                     // default register values from JEDEC301-2-1 spec
                     // reload defaults from vendor region
                     m_regs = {0x00, 0x00, 0x00, 0x00,                         // 0x00-0x03
