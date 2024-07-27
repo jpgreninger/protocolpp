@@ -102,25 +102,26 @@ public:
     ////////////////////////////////////////////////////
     /// Command queue for the DAC
     ///
-    /// ----------------------------------
-    /// | 8-bit channel | 24-bit command |
-    /// ----------------------------------
+    /// ---------------------------------
+    /// | 4-bit channel | 4-bit command |
+    /// ---------------------------------
     ///
     /// Example command for rail 9 voltage average is
     /// 
-    /// 0x0900002
+    /// 0x92
     ///
     /// <table>
     /// <caption id="DAC Commands">DAC Commands</caption>
     /// <tr><th>command<th>value
-    /// <tr><td>voltage<td>0x000001
-    /// <tr><td>voltage avg avg<td>0x000002
-    /// <tr><td>current<td>0x000003
-    /// <tr><td>current avg<td>0x000004
-    /// <tr><td>power<td>0x000005
-    /// <tr><td>power avg<td>0x000006
-    /// <tr><td>enable<td>0x000010
-    /// <tr><td>disable<td>0x000020
+    /// <tr><td>voltage<td>0x01
+    /// <tr><td>voltage avg avg<td>0x02
+    /// <tr><td>current<td>0x03
+    /// <tr><td>current avg<td>0x04
+    /// <tr><td>power<td>0x05
+    /// <tr><td>power avg<td>0x06
+    /// <tr><td>temp<td>0x07
+    /// <tr><td>enable<td>0x08
+    /// <tr><td>disable<td>0x09
     /// </table>
     ////////////////////////////////////////////////////
     void cmd();

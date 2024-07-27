@@ -189,6 +189,8 @@ public:
                                   m_vren(false),
                                   m_vrdis(false),
                                   m_cfg(cfg),
+                                  m_errcnt(0),
+                                  m_errlog(0),
                                   m_v18(0),
                                   m_v10(0),
                                   m_ovr(false),
@@ -347,6 +349,8 @@ private:
     bool m_vren;
     bool m_vrdis;
     pmicfg m_cfg;
+    uint8_t m_errcnt;
+    uint8_t m_errlog;
     uint32_t m_v18, m_v10;
     std::shared_ptr<std::vector<jrail*>> rails;
     bool m_ovr;

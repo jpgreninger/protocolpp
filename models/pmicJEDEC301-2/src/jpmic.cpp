@@ -2,7 +2,6 @@
 
 // Reset the device (cold, hard, soft)
 void jpmic::regs() {
-    uint32_t railVolt=0;
 
     while(true) {
         wait();
@@ -10,6 +9,11 @@ void jpmic::regs() {
         bool wrb = wrb_in.read();
         uint8_t addr = addr_in.read();
         uint8_t data = data_in.read();
+        uint32_t railVolt = 0;
+
+        // update status registers
+        m_regs[0x04] = 0;
+        m_regs[0x05] = 0;
 
         if ((secured &&
            (((addr >= 0x15) && (addr <= 0x2F)) ||
@@ -39,6 +43,30 @@ void jpmic::regs() {
                 case 0x0E:
                 case 0x0F:
                     // RO registers
+                    break;
+                case 0x10:
+                    m_regs[0x08] ^= data;
+                    break;
+                case 0x11:
+                    m_regs[0x09] ^= data;
+                    break;
+                case 0x12:
+                    m_regs[0x0A] ^= data;
+                    break;
+                case 0x13:
+                    m_regs[0x0B] ^= data;
+                    break;
+                case 0x14:
+                    if (data & 0x01) {
+                        m_regs[0x08] = 0;
+                        m_regs[0x0A] = 0;
+                        m_regs[0x0B] = 0;
+                        m_regs[0x0C] = 0;
+                        m_regs[0x0D] = 0;
+                    }
+                    else {
+                        m_regs[0x0C] ^= (data & 0x04);
+                    }
                     break;
                 case 0x1A:
                     m_regs[0x1A] = data;
@@ -119,29 +147,19 @@ void jpmic::regs() {
                     if (data & 0x80) {
                         switch(data & 0x78) {
                             case 0:
-                                railVolt = railA_out.read();
-                                m_regs[0x31] = ((railVolt >= 3875) ? 0xFF : railVolt/15);
+                                // ADC select for SWA voltage
+                                cmd_in.write(0x01);
                                 break;
                             case 2:
-                                railVolt = railB_out.read();
-                                m_regs[0x31] = ((railVolt >= 3875) ? 0xFF : railVolt/15);
+                                // ADC select for SWB voltage
+                                cmd_in.write(0x11);
                                 break;
                             case 3:
-                                railVolt = railC_out.read();
-                                m_regs[0x31] = ((railVolt >= 3875) ? 0xFF : railVolt/15);
-                                break;
-                            case 5:
-                                railVolt = bulk_in->read();
-                                m_regs[0x31] = ((railVolt >= 17850) ? 0xFF : railVolt/70);
-                                break;
-                            case 8:
-                                m_regs[0x31] = ((m_v18 >= 3875) ? 0xFF : m_v18/15);
-                                break;
-                            case 9:
-                                m_regs[0x31] = ((m_v10 >= 3875) ? 0xFF : m_v10/15);
+                                // ADC select for SWC voltage
+                                cmd_in.write(0x21);
                                 break;
                             default:
-                                m_regs[0x31] = 0;
+                                m_regs[0x31] = m_regs[0x31];
                         }
                     }
                     break;
@@ -176,6 +194,74 @@ void jpmic::regs() {
         }
         else {
             switch(addr) {
+                case 0x0C:
+                    if (m_regs[0x1B] & 0x40) {
+                        // write the SWA power measurement
+                        cmd_in.write(0x06);
+                        m_regs[addr] = dac_data_out.read();
+                    }
+                    else {
+                        // write the SWA current measurement
+                        cmd_in.write(0x04);
+                        m_regs[addr] = dac_data_out.read();
+                    }
+                    break;
+                case 0x0E:
+                    if (m_regs[0x1B] & 0x40) {
+                        // write the SWB power measurement
+                        cmd_in.write(0x16);
+                        m_regs[addr] = dac_data_out.read();
+                    }
+                    else {
+                        // write the SWB current measurement
+                        cmd_in.write(0x14);
+                        m_regs[addr] = dac_data_out.read();
+                    }
+                    break;
+                case 0x0F:
+                    if (m_regs[0x1B] & 0x40) {
+                        // write the SWC power measurement
+                        cmd_in.write(0x26);
+                        m_regs[addr] = dac_data_out.read();
+                    }
+                    else {
+                        // write the SWC current measurement
+                        cmd_in.write(0x24);
+                        m_regs[addr] = dac_data_out.read();
+                    }
+                    break;
+                case 0x31:
+                    if (m_regs[0x30] & 0x80) {
+                        switch(m_regs[0x30] & 0x78) {
+                            case 0:
+                            case 2:
+                            case 3:
+                                m_regs[0x31] = dac_data_out.read(); 
+                                break;
+                            case 5: {
+                                railVolt = bulk_in->read();
+                                m_regs[0x31] = ((railVolt >= 17850) ? 0xFF : railVolt/70);
+                                break;
+                            }
+                            case 8:
+                                m_regs[0x31] = ((m_v18 >= 3875) ? 0xFF : m_v18/15);
+                                break;
+                            case 9:
+                                m_regs[0x31] = ((m_v10 >= 3875) ? 0xFF : m_v10/15);
+                                break;
+                            default:
+                                m_regs[0x31] = 0;
+                        }
+                    }
+                    else {
+                        m_regs[0x31] = 0;
+                    }
+                    break;
+                case 0x33:
+                    // sample the temperature
+                    cmd_in.write(0x07);
+                    m_regs[addr] = (dac_data_out.read() << 5);
+                    break;
                 case 0x37:
                 case 0x38:
                     // WO registers
@@ -201,6 +287,11 @@ void jpmic::volt_chk() {
 
     bool m_bovr=false;
     bool m_buvr=false;
+
+    bool swa_pg=false;
+    bool swb_pg=false;
+    bool swc_pg=false;
+    bool bul_pg=false;
 
     int tOutput_OV_VR_Disable_A_cntr=0;
     int tOutput_OV_VR_Disable_B_cntr=0;
@@ -470,6 +561,24 @@ void jpmic::volt_chk() {
 
         // bulk input GSI_n
         m_bulk_gsi = (tInput_OV_GSI_Assertion_trigger && m_bovr);
+
+        // rail power good
+        swa_pg = !m_ovrA && !m_uvrA;
+        swb_pg = !m_ovrB && !m_uvrB;
+        swc_pg = !m_ovrC && !m_uvrC;
+        bul_pg = !m_bovr && !m_buvr;
+
+        // error log
+        m_errlog = ((m_ovr || m_uvr) ? 0x02 : ((m_shutdown) ? 0x03 : ((m_bulk_ovr) ? 0x04 : 0x00)));
+        m_errcnt += ((m_errlog != 0) ? 1 : 0);
+
+        // set SWA, SWB, SWC rails OVR, UVR status bits
+        m_regs[0x04] = ((m_errcnt << 7) | ((m_ovr | m_uvr) << 6) | (m_bulk_ovr << 5) | (m_shutdown << 4));
+        m_regs[0x05] = ((swa_pg << 6) | (swb_pg << 4) | (swc_pg << 3) | m_errlog);
+        m_regs[0x06] = ((m_uvrA << 7) | (m_uvrB << 5) | (m_uvrC << 4) | (m_ovrA << 3) | (m_ovrB << 1) | m_ovrC);
+        m_regs[0x08] = ((m_shutdown << 6) | (swa_pg << 5) | (swb_pg << 3) | (swc_pg << 2) | bul_pg);
+        m_regs[0x0A] = ((m_ovrA << 7) | (m_ovrB << 5) | (m_ovrC << 4));
+        m_regs[0x0B] |= ((m_uvrA << 3) | (m_uvrB << 1) | m_uvrC);
     }
 }
 
@@ -481,6 +590,7 @@ void jpmic::curr_chk() {
     bool m_consumA=false;
     bool m_consumB=false;
     bool m_consumC=false;
+    bool m_v18pg=false;
 
     int tOutput_Current_Limiter_A_cntr=0;
     int tOutput_Current_Limiter_B_cntr=0;
@@ -508,6 +618,10 @@ void jpmic::curr_chk() {
         int railA_curr = rails->at(0)->current();
         int railB_curr = rails->at(1)->current();
         int railC_curr = rails->at(2)->current();
+
+        m_regs[0x0C] = railA_curr;
+        m_regs[0x0E] = railB_curr;
+        m_regs[0x0F] = railC_curr;
 
         // SWA current limiter
         m_limitA = railA_curr > railA_limit;
@@ -570,12 +684,20 @@ void jpmic::curr_chk() {
         }
 
         // rail current limit overage
-        m_limit = ((m_limitA && tOutput_Current_Limiter_A_trigger) ||
-                   (m_limitB && tOutput_Current_Limiter_B_trigger) ||
-                   (m_limitC && tOutput_Current_Limiter_C_trigger));
+        m_limit = ((m_limitA && ((m_regs[0x18] & 0x80) == 0) && tOutput_Current_Limiter_A_trigger) ||
+                   (m_limitB && ((m_regs[0x18] & 0x20) == 0) && tOutput_Current_Limiter_B_trigger) ||
+                   (m_limitC && ((m_regs[0x18] & 0x10) == 0) && tOutput_Current_Limiter_C_trigger));
 
         // rail current high consumption
-        m_consum = m_consumA | m_consumB | m_consumC;
+        m_consum = ((m_consumA && ((m_regs[0x16] & 0x08) == 0)) ||
+                    (m_consumB && ((m_regs[0x16] & 0x02) == 0)) ||
+                    (m_consumC && ((m_regs[0x16] & 0x01) == 0)));
+
+        m_v18pg = m_v18 >= m_cfg.v18_setting;
+
+        // set SWA, SWB, SWC rails OVR, UVR status bits
+        m_regs[0x09] = ((m_temp_warning << 7) | (m_v18pg << 5) | (m_consumA << 3) | (m_consumB << 1) | m_consumC);
+        m_regs[0x0B] |= ((m_limitA << 7) | (m_limitB << 5) | (m_limitC << 4));
     }
 }
 
@@ -651,7 +773,7 @@ void jpmic::temp_chk() {
         }
 
         // temperature triggers
-        m_temp_warning = m_twarn && tHigh_Temp_Warning_trigger;
+        m_temp_warning = m_twarn && ((m_regs[0x16] & 0x80) == 0) && tHigh_Temp_Warning_trigger;
         m_shutdown = m_shutdwn && tShut_Down_Temp_trigger;
     }
 }
@@ -913,7 +1035,7 @@ void jpmic::fsm() {
         }
 
         // control PWRGD pin
-        if (m_bulk_uvr | m_bulk_ovr | m_ovr | m_uvr | m_bulk_ovr | m_bulk_uvr | m_shutdown) {
+        if (m_bulk_uvr | m_bulk_ovr | m_ovr | m_uvr | m_shutdown) {
             pwrgd_inout.write(sc_dt::SC_LOGIC_0);
         }
         else {
@@ -921,8 +1043,11 @@ void jpmic::fsm() {
         }
 
         // control GSI_N pin
-        if (m_bulk_uvr | m_bulk_ovr | m_ovr | m_uvr | m_bulk_ovr | m_bulk_uvr | m_consum | m_limit | m_temp_warning | m_shutdown |
-           ((m_vren || vren_in.posedge()) && !(m_regs[0x32] & 0x20))) {
+        if (((m_regs[0x2F] & 0x03) == 0x01) &&
+             (m_bulk_uvr | m_bulk_ovr | m_ovr | m_uvr | m_bulk_ovr |
+             m_bulk_uvr | m_consum | m_limit | m_temp_warning | m_shutdown |
+             (m_temp_warning && (m_regs[0x16] & 0x80)) | m_limit |
+            ((m_vren || vren_in.posedge()) && !(m_regs[0x32] & 0x20)))) {
             gsi_n_out.write(false);
         }
         else {
