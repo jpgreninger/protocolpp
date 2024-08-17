@@ -205,8 +205,11 @@ public:
                                   r32_locked(false),
                                   secured(false),
                                   railA_ramp(true),
+                                  railA_fault_mask(false),
                                   railB_ramp(true),
-                                  railC_ramp(true) {
+                                  railB_fault_mask(false),
+                                  railC_ramp(true),
+                                  railC_fault_mask(false) {
 
         rails = std::make_shared<std::vector<jrail*>>();
 
@@ -277,6 +280,9 @@ public:
         dac->clk_in(clk_in);
         dac->cmd_in(cmd_in);
         dac->temp_in(temp_in);
+        dac->bulk_in(bulk_in);
+        dac->ldo18_in(v1p8_out);
+        dac->ldo10_in(v1p0_out);
         dac->data_out(dac_data_out);
         dac->pwrsum_in(pwrsum_wire);
 
@@ -365,8 +371,11 @@ private:
     bool r32_locked;
     bool secured;
     bool railA_ramp;
+    bool railA_fault_mask;
     bool railB_ramp;
+    bool railB_fault_mask;
     bool railC_ramp;
+    bool railC_fault_mask;
     bool tInput_PWR_GOOD_GSI_Assertion_trigger;
     bool tOutput_PWR_GOOD_GSI_Assertion_trigger;
     bool tVIN_Bulk_to_VR_Enable_trigger;

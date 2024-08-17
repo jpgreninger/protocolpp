@@ -41,16 +41,16 @@ void jpmic::regs() {
                     // RO registers
                     break;
                 case 0x10:
-                    m_regs[0x08] ^= data;
+                    m_regs[0x08] &= ~data;
                     break;
                 case 0x11:
-                    m_regs[0x09] ^= data;
+                    m_regs[0x09] &= ~data;
                     break;
                 case 0x12:
-                    m_regs[0x0A] ^= data;
+                    m_regs[0x0A] &= ~data;
                     break;
                 case 0x13:
-                    m_regs[0x0B] ^= data;
+                    m_regs[0x0B] &= ~data;
                     break;
                 case 0x14:
                     if (data & 0x01) {
@@ -61,7 +61,7 @@ void jpmic::regs() {
                         m_regs[0x0D] = 0;
                     }
                     else {
-                        m_regs[0x0C] ^= (data & 0x04);
+                        m_regs[0x0C] &= ~(data & 0x04);
                     }
                     break;
                 case 0x1A:
@@ -132,8 +132,8 @@ void jpmic::regs() {
                         }
                     }
 
-                    // bits 7 and 5 are reserved
-                    m_regs[0x2F] = data;
+                    // bits 7 and 5 are reserved, only write SECURE_MODE before VR_EN=1
+                    m_regs[0x2F] = ((m_regs[0x32] & 0x80) ? (data | (m_regs[0x2F] & 0x04)) : data);
                     break;
                 }
                 case 0x30: {
@@ -144,19 +144,34 @@ void jpmic::regs() {
                         switch(data & 0x78) {
                             case 0:
                                 // ADC select for SWA voltage
-                                cmd_in.write(0x01);
+                                cmd_in.write(jdac::dac_t::VOLTAGE);
                                 break;
                             case 2:
                                 // ADC select for SWB voltage
-                                cmd_in.write(0x11);
+                                cmd_in.write(jdac::dac_t::VOLTAGE | 0x10);
                                 break;
                             case 3:
                                 // ADC select for SWC voltage
-                                cmd_in.write(0x21);
+                                cmd_in.write(jdac::dac_t::VOLTAGE | 0x20);
+                                break;
+                            case 5:
+                                // ADC select for BULK voltage
+                                cmd_in.write(jdac::dac_t::BULK);
+                                break;
+                            case 8:
+                                // ADC select for LDO 1.8v
+                                cmd_in.write(jdac::dac_t::LDO18);
+                                break;
+                            case 9:
+                                // ADC select for LDO 1.0v
+                                cmd_in.write(jdac::dac_t::LDO10);
                                 break;
                             default:
                                 m_regs[0x31] = m_regs[0x31];
                         }
+                    }
+                    else {
+                        m_regs[0x31] = 0;
                     }
                     break;
                 }
@@ -178,6 +193,65 @@ void jpmic::regs() {
                 case 0x33:
                 case 0x34:
                     // RO register
+                    break;
+                case 0x35:
+                    // error injection
+                    switch(data & 0x77) {
+                        case 0x02:
+                            shutdn_error = true;
+                            break;
+                        case 0x03:
+                            hi_temp_warn = true;
+                            break;
+                        case 0x04:
+                            ldo_v18_pg_err = true;
+                            break;
+                        case 0x05:
+                            hi_curr_err = true;
+                            break;
+                        case 0x07:
+                            curr_limit_err = true;
+                            break;
+                        case 0x10:
+                            swa_error = true;
+                            break;
+                        case 0x30:
+                            swb_error = true;
+                            break;
+                        case 0x40:
+                            swc_error = true;
+                            break;
+                        case 0x50:
+                            bulk_error = true;
+                            break;
+                        default:
+                    }
+
+                    error_inject = ((data & 0x80) ? true : false);
+                    ovrb_uvr = ((data & 0x08) ? true : false);
+                    m_regs[addr] = data;
+                    break;
+                case 0x37:
+                    if (burn_passwd) {
+                        m_regs[0x37] = data;
+                    }
+                    else if (m_regs[0x37] == data) {
+                        passwd_byte_0_passed = true;
+                    }
+                    else {
+                        passwd_byte_0_passed = false;
+                    }
+                    break;
+                case 0x38:
+                    if (burn_passwd) {
+                        m_regs[0x38] = data;
+                    }
+                    else if (m_regs[0x38] == data) {
+                        passwd_byte_1_passed = true;
+                    }
+                    else {
+                        passwd_byte_1_passed = false;
+                    }
                     break;
                 case 0x3B:
                 case 0x3C:
@@ -232,18 +306,10 @@ void jpmic::regs() {
                             case 0:
                             case 2:
                             case 3:
-                                m_regs[0x31] = dac_data_out.read(); 
-                                break;
-                            case 5: {
-                                railVolt = bulk_in->read();
-                                m_regs[0x31] = ((railVolt >= 17850) ? 0xFF : railVolt/70);
-                                break;
-                            }
+                            case 5:
                             case 8:
-                                m_regs[0x31] = ((m_v18 >= 3875) ? 0xFF : m_v18/15);
-                                break;
                             case 9:
-                                m_regs[0x31] = ((m_v10 >= 3875) ? 0xFF : m_v10/15);
+                                m_regs[0x31] = dac_data_out.read();
                                 break;
                             default:
                                 m_regs[0x31] = 0;
@@ -541,9 +607,9 @@ void jpmic::volt_chk() {
                  (m_ovrB && tOutput_OV_VR_Disable_B_trigger) ||
                  (m_ovrC && tOutput_OV_VR_Disable_C_trigger));
 
-        m_uvr = ((m_uvrA && tOutput_UV_VR_Disable_A_trigger) ||
-                 (m_uvrB && tOutput_UV_VR_Disable_B_trigger) ||
-                 (m_uvrC && tOutput_UV_VR_Disable_C_trigger));
+        m_uvr = ((m_uvrA && tOutput_UV_VR_Disable_A_trigger && !railA_fault_mask) ||
+                 (m_uvrB && tOutput_UV_VR_Disable_B_trigger && !railB_fault_mask) ||
+                 (m_uvrC && tOutput_UV_VR_Disable_C_trigger && !railC_fault_mask));
 
         // bulk input OVR
         m_bovr = (bulk_in_read > m_cfg.bulk_max_volt);
@@ -903,34 +969,46 @@ void jpmic::fsm() {
                     //pwrgd_inout.write(false);
                     m_state = pmic_state_t::RAMPDN;
                 }
-                else if ((m_regs[0x2F] & 0x04) != 0x04) {
+                else if ((m_regs[0x2F] & 0x04) == 0x04) {
                     // turn off individual rails if requested
 
                     if (((m_regs[0x2F] & 0x40) == 0x00) && !railA_ramp) {
                         // turn off railA
                         railA_en.write(false);
+                        railA_fault_mask = true;
                     }
                     else if (((m_regs[0x2F] & 0x40) == 0x40) && railA_ramp) {
                         // turn on railA
                         railA_en.write(true);
                     }
+                    else if (railA_pwrgd.read()) {
+                        railA_fault_mask = false;
+                    }
 
                     if (((m_regs[0x2F] & 0x10) == 0x00) && !railB_ramp) {
                         // turn off railB
                         railB_en.write(false);
+                        railB_fault_mask = true;
                     }
                     else if (((m_regs[0x2F] & 0x10) == 0x10) && railB_ramp) {
                         // turn on railB
                         railB_en.write(true);
                     }
+                    else if (railB_pwrgd.read()) {
+                        railB_fault_mask = false;
+                    }
 
                     if (((m_regs[0x2F] & 0x08) == 0x00) && !railC_ramp) {
                         // turn off railC
                         railC_en.write(false);
+                        railC_fault_mask = true;
                     }
                     else if (((m_regs[0x2F] & 0x08) == 0x08) && railC_ramp) {
                         // turn on railC
                         railC_en.write(true);
+                    }
+                    else if (railC_pwrgd.read()) {
+                        railC_fault_mask = false;
                     }
                 }
     

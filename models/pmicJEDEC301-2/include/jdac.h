@@ -38,8 +38,11 @@ public:
         POWER   = 0x05,
         POWRAVG = 0x06,
         TEMP    = 0x07,
-        ENABLE  = 0x08,
-        DISABLE = 0x09
+        BULK    = 0x08,
+        LDO18   = 0x09,
+        LDO10   = 0x0A,
+        ENABLE  = 0x0B,
+        DISABLE = 0x0C
     };
 
     ////////////////////////////////////////////////////
@@ -49,6 +52,9 @@ public:
     sc_in<bool> pwrsum_in;
     sc_in<uint8_t> cmd_in;
     sc_in<uint8_t> temp_in;
+    sc_in<uint32_t> bulk_in;
+    sc_in<uint32_t> ldo18_in;
+    sc_in<uint32_t> ldo10_in;
 
     ////////////////////////////////////////////////////
     /// SystemC output ports
@@ -68,6 +74,9 @@ public:
                                                            pwrsum_in("pwrsum_en"),
                                                            cmd_in("cmd_in"),
                                                            temp_in("temp_in"),
+                                                           bulk_in("bulk_in"),
+                                                           ldo18_in("ldo18_in"),
+                                                           ldo10_in("ldo10_in"),
                                                            data_out("data_out"),
                                                            m_enable(true),
                                                            m_samples(samples),

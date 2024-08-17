@@ -31,10 +31,10 @@ void jdac::cmd() {
         uint32_t avg=0;
         uint8_t result=0;
         uint8_t cmds = cmd_in.read();
-        uint32_t command=(cmds & 0x0F);
+        uint8_t command=(cmds & 0x0F);
         bool pwrsum = pwrsum_in.read();
         uint8_t currtemp = temp_in.read();
-        uint32_t channel=((cmds >> 4) & 0x0F);
+        uint8_t channel=((cmds >> 4) & 0x0F);
 
         switch(command) {
             case dac_t::VOLTAGE:
@@ -167,6 +167,18 @@ void jdac::cmd() {
                         }
                 }
 
+                break;
+            case dac_t::BULK:
+                avg = bulk_in->read();
+                result = ((avg >= 17850) ? 0xFF : avg/70);
+                break;
+            case dac_t::LDO18:
+                avg = ldo18_in->read();
+                result = ((avg >= 3875) ? 0xFF : avg/15);
+                break;
+            case dac_t::LDO10:
+                avg = ldo10_in->read();
+                result = ((avg >= 3875) ? 0xFF : avg/15);
                 break;
             case dac_t::ENABLE:
                 m_enable = true;

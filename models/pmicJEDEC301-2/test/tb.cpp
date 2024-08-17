@@ -7,6 +7,9 @@ void tb::run() {
     uint32_t bulk_volt = 0;
     uint8_t data_reg = 0;
 
+    //////////////////////////////////////////////////////////////////////////////////
+    // drive the bulk input
+    //////////////////////////////////////////////////////////////////////////////////
     while(bulk_volt < 5000) {
         bulk_volt += 50;
         bulk_out.write(bulk_volt);
@@ -14,14 +17,16 @@ void tb::run() {
     }
 
     //////////////////////////////////////////////////////////////////////////////////
-    /// Test secure mode with PWRGD set to output only, R32 locked
+    // Test secure mode with PWRGD set to output only, R32 locked
     //////////////////////////////////////////////////////////////////////////////////
     
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
     std::cout << sc_time_stamp().to_seconds() << " Test secure mode with PWRGD set to output only, R32 locked" << std::endl;
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_PS);
     data_reg = data_in.read();
@@ -29,7 +34,9 @@ void tb::run() {
 
     wait(1, SC_NS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
@@ -51,11 +58,15 @@ void tb::run() {
 
     wait(5, SC_MS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     data_reg = data_in.read();
 
+    //////////////////////////////////////////////////////////////////////////////////
     // Disable VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
@@ -78,7 +89,9 @@ void tb::run() {
 
     wait(6, SC_MS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     vren_out.write(true);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
     std::cout << sc_time_stamp().to_seconds() << " Assert VR_EN pin=1, has no effect" << std::endl;
@@ -111,13 +124,17 @@ void tb::run() {
 
     wait(5, SC_MS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_PS);
     data_reg = data_in.read();
     data_reg |= 0x80;
 
+    //////////////////////////////////////////////////////////////////////////////////
     // Disable VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
@@ -140,6 +157,9 @@ void tb::run() {
 
     wait(6, SC_MS);
 
+    //////////////////////////////////////////////////////////////////////////////////
+    // Detach power
+    //////////////////////////////////////////////////////////////////////////////////
     while(bulk_volt != 0) {
         bulk_volt = ((bulk_volt-50 < 0) ? 0 : bulk_volt-50);
         bulk_out.write(bulk_volt);
@@ -149,6 +169,9 @@ void tb::run() {
     std::cout << sc_time_stamp().to_seconds() << " PMIC BULK IN RAMPED down: " << (int)bulk_volt << std::endl;
     wait(10, SC_MS);
 
+    //////////////////////////////////////////////////////////////////////////////////
+    // Reattach power
+    //////////////////////////////////////////////////////////////////////////////////
     while(bulk_volt < 5000) {
         bulk_volt += 50;
         bulk_out.write(bulk_volt);
@@ -167,7 +190,9 @@ void tb::run() {
     std::cout << sc_time_stamp().to_seconds() << " PWRGD to power down and unlock R32. Write VR_EN=1 to restart" << std::endl;
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_PS);
     data_reg = data_in.read();
@@ -175,7 +200,9 @@ void tb::run() {
 
     wait(1, SC_NS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
@@ -197,11 +224,15 @@ void tb::run() {
 
     wait(5, SC_MS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     data_reg = data_in.read();
 
+    //////////////////////////////////////////////////////////////////////////////////
     // Disable VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
@@ -224,7 +255,9 @@ void tb::run() {
 
     wait(6, SC_MS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     vren_out.write(true);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
     std::cout << sc_time_stamp().to_seconds() << " Assert VR_EN pin=1 should have no effect" << std::endl;
@@ -261,13 +294,17 @@ void tb::run() {
 
     wait(5, SC_MS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_PS);
     data_reg = data_in.read();
     data_reg |= 0x80;
 
+    //////////////////////////////////////////////////////////////////////////////////
     // Disable VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
@@ -317,7 +354,9 @@ void tb::run() {
 
     wait(1, SC_NS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_PS);
     data_reg = data_in.read();
@@ -325,7 +364,9 @@ void tb::run() {
 
     wait(1, SC_NS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
@@ -347,7 +388,9 @@ void tb::run() {
 
     wait(5, SC_MS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     vren_out.write(true);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
     std::cout << sc_time_stamp().to_seconds() << " Assert VR_EN pin=1, should have no effect" << std::endl;
@@ -419,14 +462,18 @@ void tb::run() {
     std::cout << sc_time_stamp().to_seconds() << " Test secure mode with QUIESCENT mode enabled, use VR_EN to enable/reenable rails" << std::endl;
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R1A for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R1A);
     data_reg = data_in.read();
     data_reg |= 0x10;
 
     wait(1, SC_NS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write programmable mode
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R1A);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " Write R1A[4]=1, enable Quiescent mode..." << std::endl;
@@ -438,7 +485,9 @@ void tb::run() {
 
     wait(1, SC_NS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_PS);
     data_reg = data_in.read();
@@ -446,7 +495,9 @@ void tb::run() {
 
     wait(1, SC_NS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
@@ -468,7 +519,9 @@ void tb::run() {
 
     wait(5, SC_MS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     vren_out.write(true);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
     std::cout << sc_time_stamp().to_seconds() << " Assert VR_EN pin=1, should have no effect" << std::endl;
@@ -540,14 +593,18 @@ void tb::run() {
     std::cout << sc_time_stamp().to_seconds() << " Test programmable mode with QUIESCENT mode" << std::endl;
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R1A for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R1A);
     data_reg = data_in.read();
     data_reg |= 0x10;
 
     wait(1, SC_NS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write quiescent mode
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R1A);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " Write R1A[4]=1, enable Quiescent mode..." << std::endl;
@@ -559,14 +616,18 @@ void tb::run() {
 
     wait(1, SC_NS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R2F for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R2F);
     data_reg = data_in.read();
     data_reg |= 0x04;
 
     wait(1, SC_NS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write programmable mode
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R2F);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " Write R2F[2]=1, enable Programmable Mode..." << std::endl;
@@ -578,13 +639,17 @@ void tb::run() {
 
     wait(1, SC_NS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     data_reg = data_in.read();
     wait(1, SC_NS);
     data_reg |= 0x80;
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
@@ -606,11 +671,15 @@ void tb::run() {
 
     wait(5, SC_MS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     data_reg = data_in.read();
 
+    //////////////////////////////////////////////////////////////////////////////////
     // Disable VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
@@ -633,13 +702,17 @@ void tb::run() {
 
     wait(6, SC_MS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     data_reg = data_in.read();
     wait(1, SC_NS);
     data_reg |= 0x80;
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
@@ -702,14 +775,18 @@ void tb::run() {
     std::cout << sc_time_stamp().to_seconds() << " Test programmable mode. Use VREN=0 to disable, VREN=1 to reenable" << std::endl;
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R2F for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R2F);
     data_reg = data_in.read();
     data_reg |= 0x04;
 
     wait(1, SC_NS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write programmable mode
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R2F);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " Write R2F[2]=1, enable Programmable Mode..." << std::endl;
@@ -721,13 +798,17 @@ void tb::run() {
 
     wait(1, SC_NS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     data_reg = data_in.read();
     wait(1, SC_NS);
     data_reg |= 0x80;
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
@@ -749,11 +830,15 @@ void tb::run() {
 
     wait(5, SC_MS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     data_reg = data_in.read();
 
+    //////////////////////////////////////////////////////////////////////////////////
     // Disable VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
@@ -776,13 +861,17 @@ void tb::run() {
 
     wait(6, SC_MS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     data_reg = data_in.read();
     wait(1, SC_NS);
     data_reg |= 0x80;
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
@@ -830,13 +919,17 @@ void tb::run() {
     std::cout << sc_time_stamp().to_seconds() << " Test programmable mode. Use R2F to turn on/off individual rails" << std::endl;
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R2F for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R2F);
     wait(1, SC_NS);
     data_reg = data_in.read();
     data_reg |= 0x04;
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write programmable mode
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R2F);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " Write R2F[2]=1, enable Programmable Mode..." << std::endl;
@@ -848,13 +941,17 @@ void tb::run() {
 
     wait(1, SC_NS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     data_reg = data_in.read();
     data_reg |= 0x80;
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R32);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
@@ -876,13 +973,17 @@ void tb::run() {
 
     wait(5, SC_MS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R2F);
     wait(1, SC_NS);
     data_reg = data_in.read();
     data_reg &= 0xBF;
 
+    //////////////////////////////////////////////////////////////////////////////////
     // Disable VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R2F);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
@@ -905,13 +1006,17 @@ void tb::run() {
 
     wait(6, SC_MS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R2F);
     wait(1, SC_NS);
     data_reg = data_in.read();
     data_reg &= 0xAF;
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R2F);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
@@ -934,13 +1039,17 @@ void tb::run() {
 
     wait(6, SC_MS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R2F);
     wait(1, SC_NS);
     data_reg = data_in.read();
     data_reg &= 0xA7;
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R2F);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
@@ -963,13 +1072,17 @@ void tb::run() {
 
     wait(5, SC_MS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R2F);
     wait(1, SC_NS);
     data_reg = data_in.read();
     data_reg |= 0x08;
 
+    //////////////////////////////////////////////////////////////////////////////////
     // Disable VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R2F);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
@@ -992,13 +1105,17 @@ void tb::run() {
 
     wait(6, SC_MS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R2F);
     wait(1, SC_NS);
     data_reg = data_in.read();
     data_reg |= 0x10;
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R2F);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
@@ -1021,17 +1138,21 @@ void tb::run() {
 
     wait(6, SC_MS);
 
+    //////////////////////////////////////////////////////////////////////////////////
     // read R32 for read-update-write
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R2F);
     wait(1, SC_NS);
     data_reg = data_in.read();
     data_reg |= 0x40;
 
+    //////////////////////////////////////////////////////////////////////////////////
     // write VR_EN
+    //////////////////////////////////////////////////////////////////////////////////
     addr_out.write(jpmic::pmicreg_t::R2F);
     wait(1, SC_NS);
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl;
-    std::cout << sc_time_stamp().to_seconds() << " Write R2F=0x40 should disable railA" << std::endl;
+    std::cout << sc_time_stamp().to_seconds() << " Write R2F=0x40 should enable railA" << std::endl;
     std::cout << sc_time_stamp().to_seconds() << " --------------------------------------------" << std::endl << std::endl;
     wrb_out.write(true);
     data_out.write(data_reg);
