@@ -204,14 +204,32 @@ public:
                                   m_temp_warning(false),
                                   r32_locked(false),
                                   secured(false),
+                                  unlocked(false),
+                                  burn_memory(false),
+                                  passwd0_wr(false),
+                                  passwd1_wr(false),
                                   railA_ramp(true),
                                   railA_fault_mask(false),
                                   railB_ramp(true),
                                   railB_fault_mask(false),
                                   railC_ramp(true),
-                                  railC_fault_mask(false) {
+                                  railC_fault_mask(false),
+                                  shutdn_inj(false),
+                                  hi_temp_warn_inj(false),
+                                  ldo_v18_pg_inj(false),
+                                  hi_consump_inj(false),
+                                  curr_limit_inj(false),
+                                  swa_inj(false),
+                                  swb_inj(false),
+                                  swc_inj(false),
+                                  bulk_inj(false),
+                                  err_inject(false),
+                                  ovrb_uvr_inj(false) {
 
         rails = std::make_shared<std::vector<jrail*>>();
+
+        // default password
+        passwd = {0x73, 0x94};
 
         // default register values from JEDEC301-2-1 spec
         m_regs = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // 0x00-0x07
@@ -348,6 +366,7 @@ public:
     ////////////////////////////////////////////////////
     std::array<uint8_t, 256> m_regs;
 
+    bool railA_fault_mask;
     pmic_state_t m_state;
 
 private:
@@ -358,6 +377,7 @@ private:
     uint8_t m_errcnt;
     uint8_t m_errlog;
     uint32_t m_v18, m_v10;
+    std::array<uint8_t, 2> passwd;
     std::shared_ptr<std::vector<jrail*>> rails;
     bool m_ovr;
     bool m_uvr;
@@ -370,12 +390,26 @@ private:
     bool m_temp_warning;
     bool r32_locked;
     bool secured;
+    bool unlocked;
+    bool burn_memory;
+    bool passwd0_wr;
+    bool passwd1_wr;
     bool railA_ramp;
-    bool railA_fault_mask;
     bool railB_ramp;
     bool railB_fault_mask;
     bool railC_ramp;
     bool railC_fault_mask;
+    bool shutdn_inj;
+    bool hi_temp_warn_inj;
+    bool ldo_v18_pg_inj;
+    bool hi_consump_inj;
+    bool curr_limit_inj;
+    bool swa_inj;
+    bool swb_inj;
+    bool swc_inj;
+    bool bulk_inj;
+    bool err_inject;
+    bool ovrb_uvr_inj;
     bool tInput_PWR_GOOD_GSI_Assertion_trigger;
     bool tOutput_PWR_GOOD_GSI_Assertion_trigger;
     bool tVIN_Bulk_to_VR_Enable_trigger;
