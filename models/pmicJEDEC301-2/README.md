@@ -2,7 +2,7 @@
 
 Model for this PMIC spec
 
-Rail configuratin to support the soft_start/stop idle times and soft_start/stop times for rails requires adding the ramp time to the idle time for the correct effect. For example, using the default values, the soft_start_time is 1ms with an idle of 2ms. To get the staggered rails ramp of D-B-A, add the ramp time of D to the idle time of B, etc. Here's an example from jrail::railcfg
+Rail configuration to support the soft_start/stop idle times and soft_start/stop times for rails requires adding the ramp time to the idle time for the correct effect. For example, using the default values, the soft_start_time is 1ms with an idle of 2ms. To get the staggered rails ramp of D-B-A, add the ramp time of D to the idle time of B, etc. Here's an example from jrail::railcfg
 
     std::vector<jrail::railcfg> railcfg;
     railcfg.emplace_back(1100, 0.275, 6000, 4000, 24000, 1100, 2200, 5000, 0);
