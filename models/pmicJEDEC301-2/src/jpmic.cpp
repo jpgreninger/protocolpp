@@ -439,6 +439,8 @@ void jpmic::regs() {
                 case 0x2E:
                 case 0x2F:
                 case 0x30:
+                    data_out.write(m_regs[addr]);
+                    break;
                 case 0x31:
                     if (m_regs[0x30] & 0x80) {
                         switch(m_regs[0x30] & 0x78) {
