@@ -50,9 +50,12 @@ public:
     };
 
     enum pmicreg_t {
+        R0A = 0x0A,
+        R0B = 0x0B,
         R1A = 0x1A,
         R2F = 0x2F,
         R32 = 0x32,
+        R35 = 0x35,
         ENABLE = 0xFF
     };
 

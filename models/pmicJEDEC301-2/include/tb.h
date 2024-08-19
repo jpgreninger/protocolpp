@@ -18,6 +18,7 @@
 ///
 
 #include <systemc.h>
+#include <string>
 #include "jpmic.h"
 
 SC_MODULE(tb) {

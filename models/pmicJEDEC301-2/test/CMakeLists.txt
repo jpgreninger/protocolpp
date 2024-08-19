@@ -94,3 +94,13 @@ add_executable(testpmic
         ./testpmic.cpp)
 
 TARGET_LINK_LIBRARIES(testpmic libsystemc)
+
+# build testpmic
+add_executable(testinjection
+        ./tb_inject.cpp
+        ../src/jrail.cpp
+        ../src/jdac.cpp
+        ../src/jpmic.cpp
+        ./testpmic.cpp)
+
+TARGET_LINK_LIBRARIES(testinjection libsystemc)

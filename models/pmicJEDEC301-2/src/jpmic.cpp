@@ -204,46 +204,55 @@ void jpmic::regs() {
                 case 0x35:
                     // error injection
                     if ((m_state == pmic_state_t::P2_B) || (m_state == pmic_state_t::P3)) {
-                        switch(data & 0x77) {
-                            case 0x02:
-                                shutdn_inj = true;
-                                break;
-                            case 0x03:
-                                hi_temp_warn_inj = true;
-                                break;
-                            case 0x04:
-                                ldo_v18_pg_inj = true;
-                                break;
-                            case 0x05:
-                                hi_consump_inj = true;
-                                break;
-                            case 0x07:
-                                curr_limit_inj = true;
-                                break;
-                            case 0x10:
-                                swa_inj = true;
-                                break;
-                            case 0x30:
-                                swb_inj = true;
-                                break;
-                            case 0x40:
-                                swc_inj = true;
-                                break;
-                            case 0x50:
-                                bulk_inj = true;
-                                break;
-                            default:
-                                shutdn_inj = false;
-                                hi_temp_warn_inj = false;
-                                ldo_v18_pg_inj = false;
-                                hi_consump_inj = false;
-                                curr_limit_inj = false;
-                                swa_inj = false;
-                                swb_inj = false;
-                                swc_inj = false;
-                                bulk_inj = false;
-                        }
+//                        switch(data & 0x77) {
+//                            case 0x02:
+//                                shutdn_inj = true;
+//                                break;
+//                            case 0x03:
+//                                hi_temp_warn_inj = true;
+//                                break;
+//                            case 0x04:
+//                                ldo_v18_pg_inj = true;
+//                                break;
+//                            case 0x05:
+//                                hi_consump_inj = true;
+//                                break;
+//                            case 0x07:
+//                                curr_limit_inj = true;
+//                                break;
+//                            case 0x10:
+//                                swa_inj = true;
+//                                break;
+//                            case 0x30:
+//                                swb_inj = true;
+//                                break;
+//                            case 0x40:
+//                                swc_inj = true;
+//                                break;
+//                            case 0x50:
+//                                bulk_inj = true;
+//                                break;
+//                            default:
+//                                shutdn_inj = false;
+//                                hi_temp_warn_inj = false;
+//                                ldo_v18_pg_inj = false;
+//                                hi_consump_inj = false;
+//                                curr_limit_inj = false;
+//                                swa_inj = false;
+//                                swb_inj = false;
+//                                swc_inj = false;
+//                                bulk_inj = false;
+//                        }
     
+                        shutdn_inj       = (((data & 0x77) == 0x02) ? true : false);
+                        hi_temp_warn_inj = (((data & 0x77) == 0x03) ? true : false);
+                        ldo_v18_pg_inj   = (((data & 0x77) == 0x04) ? true : false);
+                        hi_consump_inj   = (((data & 0x77) == 0x05) ? true : false);
+                        curr_limit_inj   = (((data & 0x77) == 0x07) ? true : false);
+                        swa_inj          = (((data & 0x77) == 0x10) ? true : false);
+                        swb_inj          = (((data & 0x77) == 0x30) ? true : false);
+                        swc_inj          = (((data & 0x77) == 0x40) ? true : false);
+                        bulk_inj         = (((data & 0x77) == 0x50) ? true : false);
                         err_inject   = (((data & 0x80) && ((data & 0x77) != 0)) ? true : false);
                         ovrb_uvr_inj = ((data & 0x08) ? true : false);
                         m_regs[addr] = data;
@@ -1027,65 +1036,69 @@ void jpmic::fsm() {
                     
                     // default register values from JEDEC301-2-1 spec
                     // reload defaults from vendor region
-                    m_regs = {0x00, 0x00, 0x00, 0x00,                                 // 0x00-0x03
-                              m_regs[0x04], m_regs[0x05], m_regs[0x06], 0x00,         // 0x04-0x07
-                              0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,         // 0x08-0x0F
-                              0x00, 0x00, 0x00, 0x00, 0x00, 0x2C, 0x20, 0x00,         // 0x10-0x17
-                              0x00, 0x04, 0x00, 0x05, 0x60, 0x00, 0x60, 0x60,         // 0x18-0x1F
-                              m_regs[0x50], m_regs[0x45], m_regs[0x46], m_regs[0x47], // 0x20-0x23
-                              m_regs[0x48], m_regs[0x49], m_regs[0x4A], m_regs[0x4B], // 0x24-0x27
-                              m_regs[0x4C], m_regs[0x4D], m_regs[0x4E], m_regs[0x51], // 0x28-0x2B
-                              m_regs[0x5D], m_regs[0x5E], 0x04, 0x02,                 // 0x2C-0x2F
-                              0x00, 0x00, 0x00, 0x00, 0x0E, 0x00, 0x00, 0x00,         // 0x30-0x37
-                              0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,         // 0x38-0x3F
-                              m_regs[0x40], m_regs[0x41], m_regs[0x42], m_regs[0x43], // 0x40-0x43                                                
-                              m_regs[0x44], m_regs[0x45], m_regs[0x46], m_regs[0x47], // 0x44-0x47                                               
-                              m_regs[0x48], m_regs[0x49], m_regs[0x4A], m_regs[0x4B], // 0x48-0x4B                                                
-                              m_regs[0x4C], m_regs[0x4D], m_regs[0x4E], m_regs[0x4F], // 0x4C-0x4F                                               
-                              m_regs[0x50], m_regs[0x51], m_regs[0x52], m_regs[0x53], // 0x50-0x53                                                
-                              m_regs[0x54], m_regs[0x55], m_regs[0x56], m_regs[0x57], // 0x54-0x57                                               
-                              m_regs[0x58], m_regs[0x59], m_regs[0x5A], m_regs[0x5B], // 0x58-0x5B                                                
-                              m_regs[0x5C], m_regs[0x5D], m_regs[0x5E], m_regs[0x5F], // 0x5C-0x5F                                               
-                              m_regs[0x60], m_regs[0x61], m_regs[0x62], m_regs[0x63], // 0x60-0x63                                                
-                              m_regs[0x64], m_regs[0x65], m_regs[0x66], m_regs[0x67], // 0x64-0x67                                               
-                              m_regs[0x68], m_regs[0x69], m_regs[0x6A], m_regs[0x6B], // 0x68-0x6B                                                
-                              m_regs[0x6C], m_regs[0x6D], m_regs[0x6E], m_regs[0x6F], // 0x6C-0x6F                                               
-                              m_regs[0x70], m_regs[0x71], m_regs[0x72], m_regs[0x73], // 0x70-0x73                                                
-                              m_regs[0x74], m_regs[0x75], m_regs[0x76], m_regs[0x77], // 0x74-0x77                                               
-                              m_regs[0x78], m_regs[0x79], m_regs[0x7A], m_regs[0x7B], // 0x78-0x7B                                                
-                              m_regs[0x7C], m_regs[0x7D], m_regs[0x7E], m_regs[0x7F], // 0x7C-0x7F                                               
-                              m_regs[0x80], m_regs[0x81], m_regs[0x82], m_regs[0x83], // 0x80-0x83                                                
-                              m_regs[0x84], m_regs[0x85], m_regs[0x86], m_regs[0x87], // 0x84-0x87                                               
-                              m_regs[0x88], m_regs[0x89], m_regs[0x8A], m_regs[0x8B], // 0x88-0x8B                                                
-                              m_regs[0x8C], m_regs[0x8D], m_regs[0x8E], m_regs[0x8F], // 0x8C-0x8F                                               
-                              m_regs[0x90], m_regs[0x91], m_regs[0x92], m_regs[0x93], // 0x90-0x93                                                
-                              m_regs[0x94], m_regs[0x95], m_regs[0x96], m_regs[0x97], // 0x94-0x97                                               
-                              m_regs[0x98], m_regs[0x99], m_regs[0x9A], m_regs[0x9B], // 0x98-0x9B                                                
-                              m_regs[0x9C], m_regs[0x9D], m_regs[0x9E], m_regs[0x9F], // 0x9C-0x9F                                               
-                              m_regs[0xA0], m_regs[0xA1], m_regs[0xA2], m_regs[0xA3], // 0xA0-0xA3                                                
-                              m_regs[0xA4], m_regs[0xA5], m_regs[0xA6], m_regs[0xA7], // 0xA4-0xA7                                               
-                              m_regs[0xA8], m_regs[0xA9], m_regs[0xAA], m_regs[0xAB], // 0xA8-0xAB                                                
-                              m_regs[0xAC], m_regs[0xAD], m_regs[0xAE], m_regs[0xAF], // 0xAC-0xAF                                               
-                              m_regs[0xB0], m_regs[0xB1], m_regs[0xB2], m_regs[0xB3], // 0xB0-0xB3                                                
-                              m_regs[0xB4], m_regs[0xB5], m_regs[0xB6], m_regs[0xB7], // 0xB4-0xB7                                               
-                              m_regs[0xB8], m_regs[0xB9], m_regs[0xBA], m_regs[0xBB], // 0xB8-0xBB                                                
-                              m_regs[0xBC], m_regs[0xBD], m_regs[0xBE], m_regs[0xBF], // 0xBC-0xBF                                               
-                              m_regs[0xC0], m_regs[0xC1], m_regs[0xC2], m_regs[0xC3], // 0xC0-0xC3                                                
-                              m_regs[0xC4], m_regs[0xC5], m_regs[0xC6], m_regs[0xC7], // 0xC4-0xC7                                               
-                              m_regs[0xC8], m_regs[0xC9], m_regs[0xCA], m_regs[0xCB], // 0xC8-0xCB                                                
-                              m_regs[0xCC], m_regs[0xCD], m_regs[0xCE], m_regs[0xCF], // 0xCC-0xCF                                               
-                              m_regs[0xD0], m_regs[0xD1], m_regs[0xD2], m_regs[0xD3], // 0xD0-0xD3                                                
-                              m_regs[0xD4], m_regs[0xD5], m_regs[0xD6], m_regs[0xD7], // 0xD4-0xD7                                               
-                              m_regs[0xD8], m_regs[0xD9], m_regs[0xDA], m_regs[0xDB], // 0xD8-0xDB                                                
-                              m_regs[0xDC], m_regs[0xDD], m_regs[0xDE], m_regs[0xDF], // 0xDC-0xDF                                               
-                              m_regs[0xE0], m_regs[0xE1], m_regs[0xE2], m_regs[0xE3], // 0xE0-0xE3                                                
-                              m_regs[0xE4], m_regs[0xE5], m_regs[0xE6], m_regs[0xE7], // 0xE4-0xE7                                               
-                              m_regs[0xE8], m_regs[0xE9], m_regs[0xEA], m_regs[0xEB], // 0xE8-0xEB                                                
-                              m_regs[0xEC], m_regs[0xED], m_regs[0xEE], m_regs[0xEF], // 0xEC-0xEF                                               
-                              m_regs[0xF0], m_regs[0xF1], m_regs[0xF2], m_regs[0xF3], // 0xF0-0xF3                                                
-                              m_regs[0xF4], m_regs[0xF5], m_regs[0xF6], m_regs[0xF7], // 0xF4-0xF7                                               
-                              m_regs[0xF8], m_regs[0xF9], m_regs[0xFA], m_regs[0xFB], // 0xF8-0xFB                                                
-                              m_regs[0xFC], m_regs[0xFD], m_regs[0xFE], m_regs[0xFF]}; // 0xFC-0xFF                                               
+                    m_regs[0x08] = 0x00;
+                    m_regs[0x09] = 0x00;
+                    m_regs[0x0A] = 0x00;
+                    m_regs[0x0B] = 0x00;
+                    m_regs[0x0C] = 0x00;
+                    m_regs[0x0D] = 0x00;
+                    m_regs[0x0E] = 0x00;
+                    m_regs[0x0F] = 0x00;
+
+                    m_regs[0x10] = 0x00;
+                    m_regs[0x11] = 0x00;
+                    m_regs[0x12] = 0x00;
+                    m_regs[0x13] = 0x00;
+                    m_regs[0x14] = 0x00;
+                    m_regs[0x15] = 0x2C;
+                    m_regs[0x16] = 0x20;
+                    m_regs[0x17] = 0x00;
+
+                    m_regs[0x20] = m_regs[0x50];
+                    m_regs[0x21] = m_regs[0x45];
+                    m_regs[0x22] = m_regs[0x46];
+                    m_regs[0x23] = m_regs[0x47];
+                    m_regs[0x24] = m_regs[0x48];
+                    m_regs[0x25] = m_regs[0x49];
+                    m_regs[0x26] = m_regs[0x4A];
+                    m_regs[0x27] = m_regs[0x4B];
+
+                    m_regs[0x28] = m_regs[0x4C];
+                    m_regs[0x29] = m_regs[0x4D];
+                    m_regs[0x2A] = m_regs[0x4E];
+                    m_regs[0x2B] = m_regs[0x51];
+                    m_regs[0x2C] = m_regs[0x5D];
+                    m_regs[0x2D] = m_regs[0x5E];
+                    m_regs[0x2E] = 0x04;
+                    m_regs[0x2F] = 0x02;
+
+                    m_regs[0x30] = 0x00;
+                    m_regs[0x31] = 0x00;
+                    m_regs[0x32] = 0x00;
+                    m_regs[0x33] = 0x00;
+                    m_regs[0x34] = 0x0E;
+                    m_regs[0x35] = 0x00;
+                    m_regs[0x36] = 0x00;
+                    m_regs[0x37] = 0x00;
+
+                    m_regs[0x38] = 0x00;
+                    m_regs[0x39] = 0x00;
+                    m_regs[0x3A] = 0x00;
+                    m_regs[0x3B] = 0x00;
+                    m_regs[0x3C] = 0x0E;
+                    m_regs[0x3D] = 0x00;
+                    m_regs[0x3E] = 0x00;
+                    m_regs[0x3F] = 0x00;
+
+                    shutdn_inj = false;
+                    hi_temp_warn_inj = false;
+                    ldo_v18_pg_inj = false;
+                    hi_consump_inj = false;
+                    curr_limit_inj = false;
+                    swa_inj = false;
+                    swb_inj = false;
+                    swc_inj = false;
+                    bulk_inj = false;
                 }
 
                 m_stateint = 0x00;
@@ -1101,7 +1114,13 @@ void jpmic::fsm() {
                 break;
             case pmic_state_t::P2_B: {
                 // VR_EN must be written or VREN_In must toggle and BULK must be valid to ramp rails (initial start, after a fault, etc)
-                if (m_vren || (vren_in.posedge() && !(m_regs[0x32] & 0x20))) {
+                if (m_bulk_uvr) {
+                    // soft reset (ramp down nicely)
+                    m_regs[0x32] &= 0x3F;
+                    ldo_ramp_en.write(false);
+                    m_state = pmic_state_t::P0;
+                }
+                else if (m_vren || (vren_in.posedge() && !(m_regs[0x32] & 0x20))) {
                     if (!(m_regs[0x2F] & 0x04)) {
                         // PWRGD low can unlock R32
                         secured = true;
