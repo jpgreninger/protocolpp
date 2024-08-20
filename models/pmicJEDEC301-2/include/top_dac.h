@@ -30,6 +30,9 @@ SC_MODULE(TOPDAC) {
     sc_buffer<uint8_t> cmd_out_wire;
     sc_buffer<uint8_t> data_in_wire;
     sc_buffer<uint8_t> temp_in_wire;
+    sc_buffer<uint32_t> bulk_in_wire;
+    sc_buffer<uint32_t> ldo18_in_wire;
+    sc_buffer<uint32_t> ldo10_in_wire;
     sc_buffer<uint32_t> railA_volt_wire;
     sc_buffer<uint32_t> railB_volt_wire;
     sc_buffer<uint32_t> railC_volt_wire;
@@ -69,6 +72,9 @@ SC_MODULE(TOPDAC) {
         tb->data_in(data_in_wire);
         tb->pwrsum_out(pwrsum_wire);
         tb->temp_out(temp_in_wire);
+        tb->bulk_out(bulk_in_wire);
+        tb->ldo18_out(ldo18_in_wire);
+        tb->ldo10_out(ldo10_in_wire);
 
         // connect rail
         railA = new jrail("railA", railcfgA);
@@ -109,5 +115,8 @@ SC_MODULE(TOPDAC) {
         dac->temp_in(temp_in_wire);
         dac->data_out(data_in_wire);
         dac->pwrsum_in(pwrsum_wire);
+        dac->bulk_in(bulk_in_wire);
+        dac->ldo18_in(ldo18_in_wire);
+        dac->ldo10_in(ldo10_in_wire);
     }
 };

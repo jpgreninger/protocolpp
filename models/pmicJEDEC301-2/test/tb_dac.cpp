@@ -5,6 +5,9 @@ void tb_dac::run() {
     railA_volt.write(1100);
     railB_volt.write(1100);
     railC_volt.write(1800);
+    bulk_out.write(5000);
+    ldo18_out.write(1800);
+    ldo10_out.write(1000);
 
     railA_en.write(true);
     railB_en.write(true);

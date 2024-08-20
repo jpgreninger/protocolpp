@@ -1438,7 +1438,7 @@ void tb::run() {
     data_reg = (int)data_in.read();
 
     if (data_reg == 0xB0) {
-        std::cout << sc_time_stamp().to_string() << " PASS: CURR Limiter WARN Status set at: " << std::to_string(data_reg) << std::endl;
+        std::cout << sc_time_stamp().to_string() << " PASS: CURR Limiter WARN Status set at: " << std::to_string(data_reg) << std::endl << std::endl;
     }
     else {
         errcnt++;
@@ -1456,10 +1456,10 @@ void tb::run() {
     wait(1, SC_MS);
 
     if (errcnt != 0) {
-        std::cerr << sc_time_stamp().to_string() << " ***** Simulation FAILED, errors: " << errcnt << " *****" << std::endl << std::endl;
+        std::cerr << sc_time_stamp().to_string() << " ***** Simulation FAILED, errors: " << errcnt << " *****" << std::endl;
     }
     else {
-        std::cout << sc_time_stamp().to_string() << " ***** Simulation PASSED *****" << std::endl << std::endl;
+        std::cout << sc_time_stamp().to_string() << " ***** Simulation PASSED *****" << std::endl;
     }
 
     sc_stop();

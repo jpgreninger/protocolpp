@@ -15,6 +15,9 @@ SC_MODULE(tb_dac) {
     sc_out<uint32_t> railC_volt;
     sc_out<uint8_t> cmd_out;
     sc_out<uint8_t> temp_out;
+    sc_out<uint32_t> bulk_out;
+    sc_out<uint32_t> ldo18_out;
+    sc_out<uint32_t> ldo10_out;
     sc_in<uint8_t> data_in;
     sc_in<bool> railA_pwrgd;
     sc_in<bool> railB_pwrgd;
@@ -38,6 +41,9 @@ SC_MODULE(tb_dac) {
                       railC_volt("railC_volt"),
                       cmd_out("cmd_out"),
                       temp_out("temp_out"),
+                      bulk_out("bulk_out"),
+                      ldo18_out("ldo18_out"),
+                      ldo10_out("ldo10_out"),
                       data_in("data_in"),
                       railA_pwrgd("railA_pwrgd"),
                       railB_pwrgd("railB_pwrgd"),
