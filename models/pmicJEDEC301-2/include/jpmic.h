@@ -41,15 +41,17 @@ public:
     enum pmic_state_t {
         P0,
         P1,
-        P2_A1,
-        P2_A2,
         P2_B,
         RAMPUP,
+        P3,
         RAMPDN,
-        P3
+        P2_A1,
+        P2_A2
     };
 
     enum pmicreg_t {
+        R08 = 0x08,
+        R09 = 0x09,
         R0A = 0x0A,
         R0B = 0x0B,
         R1A = 0x1A,
@@ -369,7 +371,6 @@ public:
     ////////////////////////////////////////////////////
     std::array<uint8_t, 256> m_regs;
 
-    bool railA_fault_mask;
     pmic_state_t m_state;
 
 private:
@@ -398,6 +399,7 @@ private:
     bool passwd0_wr;
     bool passwd1_wr;
     bool railA_ramp;
+    bool railA_fault_mask;
     bool railB_ramp;
     bool railB_fault_mask;
     bool railC_ramp;

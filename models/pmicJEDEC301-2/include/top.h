@@ -104,6 +104,25 @@ SC_MODULE(TOP) {
         cfg.dac_sample_time = 1000000; // nanoseconds (1ms = 1000000ns)
         cfg.railcfg = railcfg;
 
+        // counts in relation to 20ns input clock
+        cfg.tInput_PWR_GOOD_GSI_Assertion = 500;
+        cfg.tInput_OV_GSI_Assertion = 500;
+        cfg.tInput_OV_VR_Disable = 1000;
+        cfg.tOutput_PWR_GOOD_GSI_Assertion = 500;
+        cfg.tOutput_OV_VR_Disable = 1000;
+        cfg.tOutput_UV_VR_Disable = 1000;
+        cfg.tOutput_Current_Limiter = 500;
+        cfg.tHigh_Temp_Warning = 500;
+        cfg.tShut_Down_Temp = 500;
+        cfg.tVIN_Bulk_to_VR_Enable = 325000;
+        cfg.t1p8V_Ready = 125000;
+        cfg.t1p0V_Ready = 50000;
+        cfg.tManagement_Ready = 150000;
+        cfg.tPMIC_PWR_Good_Out = 150000;
+        cfg.tPMIC_Output_Off = 150000;
+        cfg.tPWR_GOOD_Low_Pulse_Width = 100;
+        cfg.tPWR_GOOD_Low_Pulse_Width_Filter = 18;
+
         // connect testbench
         tb0 = new tb("tb");
 

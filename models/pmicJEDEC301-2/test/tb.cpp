@@ -6,6 +6,7 @@ void tb::run() {
 
     uint32_t bulk_volt = 0;
     uint8_t data_reg = 0;
+    int errcnt = 0;
     int railA = 0;
     int railB = 0;
     int railC = 0;
@@ -65,6 +66,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -72,6 +74,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -79,6 +82,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -86,6 +90,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -93,6 +98,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -132,6 +138,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -139,6 +146,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -146,6 +154,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -153,6 +162,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -160,6 +170,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -187,6 +198,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -194,6 +206,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -201,6 +214,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -208,6 +222,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -215,6 +230,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -240,6 +256,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -247,6 +264,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -254,6 +272,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -261,6 +280,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -268,6 +288,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl << std::endl;
     }
 
@@ -307,6 +328,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -314,6 +336,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -321,6 +344,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -328,6 +352,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -335,6 +360,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -411,6 +437,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -418,6 +445,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -425,6 +453,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -432,6 +461,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -439,6 +469,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -478,6 +509,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -485,6 +517,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -492,6 +525,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -499,6 +533,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -506,6 +541,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -533,6 +569,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -540,6 +577,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -547,6 +585,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -554,6 +593,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -561,6 +601,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -590,6 +631,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA disabled to 0mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -597,6 +639,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB disabled to 0mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -604,6 +647,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC disabled to 0mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -611,6 +655,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -618,6 +663,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl << std::endl;
     }
 
@@ -657,6 +703,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -664,6 +711,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -671,6 +719,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -678,6 +727,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -685,6 +735,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -755,6 +806,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -762,6 +814,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -769,6 +822,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -776,6 +830,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -783,6 +838,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -810,6 +866,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -817,6 +874,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -824,6 +882,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -831,6 +890,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -838,6 +898,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl << std::endl;
     }
 
@@ -860,6 +921,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA disabled to 0mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -867,6 +929,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB disabled to 0mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -874,6 +937,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC disabled to 0mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -881,6 +945,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -888,6 +953,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl << std::endl;
     }
 
@@ -910,6 +976,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -917,6 +984,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -924,6 +992,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -931,6 +1000,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -938,6 +1008,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -1030,6 +1101,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -1037,6 +1109,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -1044,6 +1117,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -1051,6 +1125,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -1058,6 +1133,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -1085,6 +1161,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -1092,6 +1169,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -1099,6 +1177,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -1106,6 +1185,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -1113,6 +1193,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl << std::endl;
     }
 
@@ -1135,6 +1216,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA disabled to 0mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -1142,6 +1224,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB disabled to 0mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -1149,6 +1232,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC disabled to 0mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -1156,6 +1240,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v disabled to 0mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -1163,6 +1248,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v disabled to 0mV, at: " << v1p0ldo << std::endl << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl << std::endl;
     }
 
@@ -1185,6 +1271,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -1192,6 +1279,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -1199,6 +1287,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -1206,6 +1295,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -1213,6 +1303,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -1324,6 +1415,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -1331,6 +1423,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -1338,6 +1431,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -1345,6 +1439,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -1352,6 +1447,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -1391,6 +1487,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA disabled to 0mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -1398,6 +1495,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB disabled to 0mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -1405,6 +1503,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC disabled to 0mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -1412,6 +1511,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v disabled to 0mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -1419,6 +1519,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v disabled to 0mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -1460,6 +1561,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA disabled to 0mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -1467,6 +1569,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB disabled to 0mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -1474,6 +1577,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC disabled to 0mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -1481,6 +1585,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v disabled to 0mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -1488,6 +1593,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v disabled to 0mV, at: " << v1p0ldo << std::endl << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl << std::endl;
     }
 
@@ -1511,6 +1617,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -1518,6 +1625,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -1525,6 +1633,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -1532,6 +1641,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -1539,6 +1649,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -1628,6 +1739,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -1635,6 +1747,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -1642,6 +1755,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -1649,6 +1763,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -1656,6 +1771,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -1695,6 +1811,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA disabled to 0mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -1702,6 +1819,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB disabled to 0mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -1709,6 +1827,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC disabled to 0mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -1716,6 +1835,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -1723,6 +1843,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -1764,6 +1885,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -1771,6 +1893,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -1778,6 +1901,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -1785,6 +1909,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -1792,6 +1917,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -1880,6 +2006,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -1887,6 +2014,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -1894,6 +2022,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -1901,6 +2030,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -1908,6 +2038,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -1949,6 +2080,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA disabled to 0mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -1956,6 +2088,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -1963,6 +2096,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -1970,6 +2104,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -1977,6 +2112,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -2018,6 +2154,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA disabled to 0mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -2025,6 +2162,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB disabled to 0mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -2032,6 +2170,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -2039,6 +2178,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -2046,6 +2186,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -2094,6 +2235,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB disabled to 0mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -2101,6 +2243,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC disabled to 0mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -2108,6 +2251,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -2115,6 +2259,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -2156,6 +2301,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA disabled to 0mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -2163,6 +2309,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 0mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -2170,6 +2317,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -2177,6 +2325,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -2184,6 +2333,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -2225,6 +2375,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA disabled to 0mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -2232,6 +2383,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -2239,6 +2391,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -2246,6 +2399,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -2253,6 +2407,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
@@ -2294,6 +2449,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailA enabled to 1100mV, at: " << railA << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailA enabled to 1100mV, failed at: " << railA << std::endl;
     }
 
@@ -2301,6 +2457,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailB enabled to 1100mV, at: " << railB << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailB enabled to 1100mV, failed at: " << railB << std::endl;
     }
 
@@ -2308,6 +2465,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: RailC enabled to 1800mV, at: " << railC << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: RailC enabled to 1800mV, failed at: " << railC << std::endl;
     }
 
@@ -2315,6 +2473,7 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.8v enabled to 1800mV, at: " << v1p8ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.8v enabled to 1800mV, failed at: " << v1p8ldo << std::endl;
     }
 
@@ -2322,12 +2481,20 @@ void tb::run() {
         std::cout << sc_time_stamp().to_string() << " PASS: VDI 1.0v enabled to 1000mV, at: " << v1p0ldo << std::endl;
     }
     else {
+        errcnt++;
         std::cerr << sc_time_stamp().to_string() << " FAIL: VDI 1.0v enabled to 1000mV, failed at: " << v1p0ldo << std::endl;
     }
 
-    std::cout << sc_time_stamp().to_string() << " PWRGD floats, at: " << pwrgd_inout.read() << std::endl;
+    std::cout << sc_time_stamp().to_string() << " PWRGD floats, at: " << pwrgd_inout.read() << std::endl << std::endl;
 
     wait(1, SC_MS);
+
+    if (errcnt != 0) {
+        std::cerr << sc_time_stamp().to_string() << " ***** Simulation FAILED, errors: " << errcnt << " *****" << std::endl;
+    }
+    else {
+        std::cout << sc_time_stamp().to_string() << " ***** Simulation PASSED *****" << std::endl;
+    }
 
     sc_stop();
 }

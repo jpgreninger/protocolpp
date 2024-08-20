@@ -9,7 +9,6 @@ void jpmic::regs() {
         bool wrb = wrb_in.read();
         uint8_t addr = addr_in.read();
         uint8_t data = data_in.read();
-        uint32_t railVolt = 0;
 
         // burn memory and new password
         if (burn_memory) {
@@ -204,46 +203,6 @@ void jpmic::regs() {
                 case 0x35:
                     // error injection
                     if ((m_state == pmic_state_t::P2_B) || (m_state == pmic_state_t::P3)) {
-//                        switch(data & 0x77) {
-//                            case 0x02:
-//                                shutdn_inj = true;
-//                                break;
-//                            case 0x03:
-//                                hi_temp_warn_inj = true;
-//                                break;
-//                            case 0x04:
-//                                ldo_v18_pg_inj = true;
-//                                break;
-//                            case 0x05:
-//                                hi_consump_inj = true;
-//                                break;
-//                            case 0x07:
-//                                curr_limit_inj = true;
-//                                break;
-//                            case 0x10:
-//                                swa_inj = true;
-//                                break;
-//                            case 0x30:
-//                                swb_inj = true;
-//                                break;
-//                            case 0x40:
-//                                swc_inj = true;
-//                                break;
-//                            case 0x50:
-//                                bulk_inj = true;
-//                                break;
-//                            default:
-//                                shutdn_inj = false;
-//                                hi_temp_warn_inj = false;
-//                                ldo_v18_pg_inj = false;
-//                                hi_consump_inj = false;
-//                                curr_limit_inj = false;
-//                                swa_inj = false;
-//                                swb_inj = false;
-//                                swc_inj = false;
-//                                bulk_inj = false;
-//                        }
-    
                         shutdn_inj       = (((data & 0x77) == 0x02) ? true : false);
                         hi_temp_warn_inj = (((data & 0x77) == 0x03) ? true : false);
                         ldo_v18_pg_inj   = (((data & 0x77) == 0x04) ? true : false);
@@ -376,6 +335,8 @@ void jpmic::regs() {
                 case 0x06:
                 case 0x07:
                 case 0x08:
+                    data_out.write(m_regs[addr]);
+                    break;
                 case 0x09:
                 case 0x0A:
                 case 0x0B:
@@ -524,7 +485,7 @@ void jpmic::volt_chk() {
     bool swa_pg=false;
     bool swb_pg=false;
     bool swc_pg=false;
-    bool bul_pg=false;
+    //bool bul_pg=false;
 
     int tOutput_OV_VR_Disable_A_cntr=0;
     int tOutput_OV_VR_Disable_B_cntr=0;
@@ -584,10 +545,10 @@ void jpmic::volt_chk() {
         // SWA UVR
         switch(m_regs[0x22] & 0x0C) {
             case 0x00:
-                m_uvrA = ((railA_vout < (railA_setting - (railA_setting * 0.010))) || (err_inject && ovrb_uvr_inj && swa_inj));
+                m_uvrA = (((railA_vout < (railA_setting - (railA_setting * 0.010))) && (m_state == pmic_state_t::P3)) || (err_inject && ovrb_uvr_inj && swa_inj));
                 break;
             case 0x04:
-                m_uvrA = ((railA_vout < (railA_setting - (railA_setting * 0.0125))) || (err_inject && ovrb_uvr_inj && swa_inj));
+                m_uvrA = (((railA_vout < (railA_setting - (railA_setting * 0.0125))) && (m_state == pmic_state_t::P3)) || (err_inject && ovrb_uvr_inj && swa_inj));
                 break;
             default:
                 m_uvrA = false;
@@ -611,10 +572,10 @@ void jpmic::volt_chk() {
         // SWB UVR
         switch(m_regs[0x26] & 0x0C) {
             case 0x00:
-                m_uvrB = ((railB_vout < (railB_setting - (railB_setting * 0.010))) || (err_inject && ovrb_uvr_inj && swb_inj));
+                m_uvrB = (((railB_vout < (railB_setting - (railB_setting * 0.010))) && (m_state == pmic_state_t::P3)) || (err_inject && ovrb_uvr_inj && swb_inj));
                 break;
             case 0x04:
-                m_uvrA = ((railB_vout < (railB_setting - (railB_setting * 0.0125))) || (err_inject && ovrb_uvr_inj && swb_inj));
+                m_uvrA = (((railB_vout < (railB_setting - (railB_setting * 0.0125))) && (m_state == pmic_state_t::P3)) || (err_inject && ovrb_uvr_inj && swb_inj));
                 break;
             default:
                 m_uvrB = false;
@@ -638,10 +599,10 @@ void jpmic::volt_chk() {
         // SWC UVR
         switch(m_regs[0x28] & 0x0C) {
             case 0x00:
-                m_uvrC = ((railC_vout < (railC_setting - (railC_setting * 0.010))) || (err_inject && ovrb_uvr_inj && swc_inj));
+                m_uvrC = (((railC_vout < (railC_setting - (railC_setting * 0.010))) && (m_state == pmic_state_t::P3)) || (err_inject && ovrb_uvr_inj && swc_inj));
                 break;
             case 0x04:
-                m_uvrC = ((railC_vout < (railC_setting - (railC_setting * 0.0125))) || (err_inject && ovrb_uvr_inj && swc_inj));
+                m_uvrC = (((railC_vout < (railC_setting - (railC_setting * 0.0125))) && (m_state == pmic_state_t::P3)) || (err_inject && ovrb_uvr_inj && swc_inj));
                 break;
             default:
                 m_uvrC = false;
@@ -799,7 +760,7 @@ void jpmic::volt_chk() {
         swa_pg = !m_ovrA && !m_uvrA;
         swb_pg = !m_ovrB && !m_uvrB;
         swc_pg = !m_ovrC && !m_uvrC;
-        bul_pg = !m_bovr && !m_buvr;
+        //bul_pg = !m_bovr && !m_buvr;
 
         // error log
         m_errlog = ((m_ovr || m_uvr) ? 0x02 : ((m_shutdown) ? 0x03 : ((m_bulk_ovr) ? 0x04 : 0x00)));
@@ -813,7 +774,7 @@ void jpmic::volt_chk() {
         }
 
         // set SWA, SWB, SWC rails OVR, UVR status bits
-        m_regs[0x08] = ((m_shutdown << 6) | (swa_pg << 5) | (swb_pg << 3) | (swc_pg << 2) | bul_pg);
+        m_regs[0x08] = ((m_shutdown << 6) | (swa_pg << 5) | (swb_pg << 3) | (swc_pg << 2) | m_bulk_ovr);
         m_regs[0x0A] = ((m_ovrA << 7) | (m_ovrB << 5) | (m_ovrC << 4));
         m_regs[0x0B] |= ((m_uvrA << 3) | (m_uvrB << 1) | m_uvrC);
     }
@@ -931,7 +892,7 @@ void jpmic::curr_chk() {
                     (m_consumC && ((m_regs[0x16] & 0x01) == 0)));
 
         // 1.8v power good
-        m_v18pg = ((m_v18 >= m_cfg.v18_setting) || ~(err_inject && ldo_v18_pg_inj));
+        m_v18pg = ((m_v18 < m_cfg.v18_pg_thresh) || (err_inject && ldo_v18_pg_inj));
 
         // set SWA, SWB, SWC rails OVR, UVR status bits
         m_regs[0x09] = ((m_temp_warning << 7) | (m_v18pg << 5) | (m_consumA << 3) | (m_consumB << 1) | m_consumC);
@@ -1054,11 +1015,20 @@ void jpmic::fsm() {
                     m_regs[0x16] = 0x20;
                     m_regs[0x17] = 0x00;
 
+                    m_regs[0x18] = 0x00;
+                    m_regs[0x19] = 0x04;
+                    m_regs[0x1A] = 0x00;
+                    m_regs[0x1B] = 0x05;
+                    m_regs[0x1C] = 0x60;
+                    m_regs[0x1D] = 0x00;
+                    m_regs[0x1E] = 0x60;
+                    m_regs[0x1F] = 0x60;
+
                     m_regs[0x20] = m_regs[0x50];
                     m_regs[0x21] = m_regs[0x45];
                     m_regs[0x22] = m_regs[0x46];
-                    m_regs[0x23] = m_regs[0x47];
-                    m_regs[0x24] = m_regs[0x48];
+                    m_regs[0x23] = 0;
+                    m_regs[0x24] = 0;
                     m_regs[0x25] = m_regs[0x49];
                     m_regs[0x26] = m_regs[0x4A];
                     m_regs[0x27] = m_regs[0x4B];
@@ -1084,11 +1054,6 @@ void jpmic::fsm() {
                     m_regs[0x38] = 0x00;
                     m_regs[0x39] = 0x00;
                     m_regs[0x3A] = 0x00;
-                    m_regs[0x3B] = 0x00;
-                    m_regs[0x3C] = 0x0E;
-                    m_regs[0x3D] = 0x00;
-                    m_regs[0x3E] = 0x00;
-                    m_regs[0x3F] = 0x00;
 
                     shutdn_inj = false;
                     hi_temp_warn_inj = false;
