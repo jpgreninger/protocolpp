@@ -335,8 +335,6 @@ void jpmic::regs() {
                 case 0x06:
                 case 0x07:
                 case 0x08:
-                    data_out.write(m_regs[addr]);
-                    break;
                 case 0x09:
                 case 0x0A:
                 case 0x0B:
@@ -802,6 +800,11 @@ void jpmic::curr_chk() {
 
         wait();
 
+        // rail voltage setting
+        int railA_setting = (800 + (5 * ((m_regs[0x21] & 0xFE) >> 1)));
+        int railB_setting = (800 + (5 * ((m_regs[0x25] & 0xFE) >> 1)));
+        int railC_setting = (1500 + (5 * ((m_regs[0x27] & 0xFE) >> 1)));
+
         // rail curent limiter setting
         int railA_limit = (3000 + (500 * ((m_regs[0x20] & 0xC0) >> 6)));
         int railB_limit = (3000 + (500 * ((m_regs[0x20] & 0x0C) >> 2)));
@@ -813,31 +816,31 @@ void jpmic::curr_chk() {
         int railC_consump = (125 * ((m_regs[0x1F] & 0xFC) >> 2));
 
         // read the current
-        int railA_curr = rails->at(0)->current();
-        int railB_curr = rails->at(1)->current();
-        int railC_curr = rails->at(2)->current();
+        int railA_curr = rails->at(0)->voltage() / ((double)railA_setting/(double)railA_limit);
+        int railB_curr = rails->at(1)->voltage() / ((double)railB_setting/(double)railB_limit);
+        int railC_curr = rails->at(2)->voltage() / ((double)railC_setting/(double)railC_limit);
 
         m_regs[0x0C] = railA_curr;
         m_regs[0x0E] = railB_curr;
         m_regs[0x0F] = railC_curr;
 
         // SWA current limiter
-        m_limitA = ((railA_curr > railA_limit) || (err_inject && curr_limit_inj));
+        m_limitA = (((railA_curr > railA_limit) && (m_state == pmic_state_t::P3)) || (err_inject && curr_limit_inj));
 
         // SWA current consumption
-        m_consumA = ((railA_curr > railA_consump) || (err_inject && hi_consump_inj));
+        m_consumA = (((railA_curr > railA_consump) && (m_state == pmic_state_t::P3)) || (err_inject && hi_consump_inj));
 
         // SWB current limiter
-        m_limitB = ((railB_curr > railB_limit) || (err_inject && curr_limit_inj));
+        m_limitB = (((railB_curr > railB_limit) && (m_state == pmic_state_t::P3)) || (err_inject && curr_limit_inj));
 
         // SWB current consumption
-        m_consumB = ((railB_curr > railB_consump) || (err_inject && hi_consump_inj));
+        m_consumB = (((railB_curr > railB_consump) && (m_state == pmic_state_t::P3)) || (err_inject && hi_consump_inj));
 
         // SWC current limiter
-        m_limitC = ((railC_curr > railC_limit) || (err_inject && curr_limit_inj));
+        m_limitC = (((railC_curr > railC_limit) && (m_state == pmic_state_t::P3)) || (err_inject && curr_limit_inj));
 
         // SWC current consumption
-        m_consumC = ((railC_curr > railC_consump) || (err_inject && hi_consump_inj));
+        m_consumC = (((railC_curr > railC_consump) && (m_state == pmic_state_t::P3)) || (err_inject && hi_consump_inj));
 
         // current limiter warning timer for railA
         if (m_limitA) {
@@ -1055,6 +1058,9 @@ void jpmic::fsm() {
                     m_regs[0x39] = 0x00;
                     m_regs[0x3A] = 0x00;
 
+                    // error injection can only be turned off by power cycle
+                    err_inject = false;
+                    ovrb_uvr_inj = false;
                     shutdn_inj = false;
                     hi_temp_warn_inj = false;
                     ldo_v18_pg_inj = false;
@@ -1139,7 +1145,7 @@ void jpmic::fsm() {
                     m_regs[0x32] &= 0x3F;
                     m_state = pmic_state_t::RAMPDN;
                 }
-                else if (m_ovr | m_uvr | m_bulk_ovr) {
+                else if (m_ovr | m_uvr | m_bulk_ovr | m_shutdown) {
                     // check for faults
                     m_regs[0x32] &= 0x3F;
                     //pwrgd_inout.write(false);
