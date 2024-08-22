@@ -2,6 +2,8 @@
 
 // Reset the device (cold, hard, soft)
 void jpmic::regs() {
+    bool m_v10pg=false;
+    uint32_t m_v10set;
 
     while(true) {
         wait();
@@ -9,6 +11,13 @@ void jpmic::regs() {
         bool wrb = wrb_in.read();
         uint8_t addr = addr_in.read();
         uint8_t data = data_in.read();
+        
+        // LDO power good
+        m_v10set = (((m_regs[0x51] & 0x06) == 0x00) ? 900 :
+                    ((m_regs[0x51] & 0x06) == 0x02) ? 1000 :
+                    ((m_regs[0x51] & 0x06) == 0x04) ? 1100 : 1200);
+
+        m_v10pg = m_v10 < (m_v10set - (m_v10set * (((m_regs[0x1A] & 0x01) == 0x00) ? 0.10 : 0.15)));
 
         // burn memory and new password
         if (burn_memory) {
@@ -435,7 +444,7 @@ void jpmic::regs() {
                 case 0x33:
                     // sample the temperature
                     cmd_in.write(0x07);
-                    m_regs[addr] = (dac_data_out.read() << 5);
+                    m_regs[addr] = ((dac_data_out.read() << 5) | (m_v10pg << 2));
                     data_out.write(m_regs[addr]);
                     break;
                 case 0x34:
@@ -991,7 +1000,6 @@ void jpmic::fsm() {
                     m_state = pmic_state_t::P2_B;
                 }
                 else if (bulk_in->read() >= m_cfg.bulk_pg_thresh) {
-                    //pwrgd_inout.write(false);
                     ldo_ramp_en.write(true);
                 }
                 else {
@@ -1109,7 +1117,6 @@ void jpmic::fsm() {
             case pmic_state_t::RAMPUP: {
                 if (railA_pwrgd.read() && railB_pwrgd.read() && railC_pwrgd.read()) {
                     // go to RUN state
-                    //pwrgd_inout.write(true);
                     m_regs[0x2F] |= 0x58;
                     m_state = pmic_state_t::P3;
                 }
@@ -1148,7 +1155,6 @@ void jpmic::fsm() {
                 else if (m_ovr | m_uvr | m_bulk_ovr | m_shutdown) {
                     // check for faults
                     m_regs[0x32] &= 0x3F;
-                    //pwrgd_inout.write(false);
                     m_state = pmic_state_t::RAMPDN;
                 }
                 else if ((m_regs[0x2F] & 0x04) == 0x04) {
@@ -1246,14 +1252,12 @@ void jpmic::fsm() {
                 else if (vren_in.posedge() &&
                         !(m_regs[0x32] & 0x20) &&
                         !(m_regs[0x1A] & 0x10)) {
-                    //pwrgd_inout.write(true);
                     m_state = pmic_state_t::RAMPUP;
                 }
                 else if (m_vren && 
                         ((!(m_regs[0x2F] & 0x04) && (m_regs[0x32] & 0x20)) ||
                         ((m_regs[0x2F] & 0x04) && !(m_regs[0x1A] & 0x10)) ||
                         ((m_regs[0x2F] & 0x04) && (m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)))) {
-                    //pwrgd_inout.write(true);
                     if (m_vren && secured) {
                         r32_locked = true;
                     }
@@ -1272,14 +1276,9 @@ void jpmic::fsm() {
                     ldo_ramp_en.write(false);
                     m_state = pmic_state_t::P0;
                 }
-                //else if ((m_vren || vren_in.posedge()) && !(m_regs[0x32] & 0x20)) {
-                    // pin or VR_EN written when not allowed
-                //    pwrgd_inout.write(sc_dt::SC_LOGIC_0);
-                //}
                 else if (vren_in.posedge() &&
                         (((m_regs[0x2F] & 0x04) && !(m_regs[0x32] & 0x20) && !(m_regs[0x1A] & 0x10)) ||
                         ((m_regs[0x2F] & 0x04) && !(m_regs[0x32] & 0x20) && (m_regs[0x1A] & 0x10)))) {
-                    //pwrgd_inout.write(true);
                     m_state = pmic_state_t::RAMPUP;
                 }
                 else if (m_vren && (((m_regs[0x2F] & 0x04) && !(m_regs[0x1A] & 0x10)) ||
@@ -1288,7 +1287,6 @@ void jpmic::fsm() {
                     if (m_vren && secured) {
                         r32_locked = true;
                     }
-                    //pwrgd_inout.write(true);
                     m_state = pmic_state_t::RAMPUP;
                 }
 
