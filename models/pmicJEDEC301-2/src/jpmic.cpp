@@ -19,13 +19,6 @@ void jpmic::regs() {
 
         m_v10pg = m_v10 < (m_v10set - (m_v10set * (((m_regs[0x1A] & 0x01) == 0x00) ? 0.10 : 0.15)));
 
-        // burn memory and new password
-        if (burn_memory) {
-            wait(200, SC_MS);
-            m_regs[0x39] = 0x5A;
-            burn_memory = false;
-        }
-
         if ((secured &&
            (((addr >= 0x15) && (addr <= 0x2F)) ||
            ((addr >= 0x40) && (addr <= 0x6F)))) || 
@@ -228,6 +221,7 @@ void jpmic::regs() {
                     break;
                 case 0x37:
                     if (unlocked) {
+                        m_regs[addr] = data;
                         passwd[0] = m_regs[addr];
                     }
                     else {
@@ -237,6 +231,7 @@ void jpmic::regs() {
                     break;
                 case 0x38:
                     if (unlocked) {
+                        m_regs[addr] = data;
                         passwd[1] = m_regs[addr];
                     }
                     else {
@@ -245,37 +240,42 @@ void jpmic::regs() {
                     }
                     break;
                 case 0x39:
-                    switch(data) {
-                        case 0x00:
-                            if (unlocked) {
+                    if ((data == 0x40) && !unlocked && passwd0_wr && passwd1_wr) {
+                        unlocked = true;
+                    }
+                    else if (unlocked) {
+                        switch(data) {
+                            case 0x00:
                                 unlocked   = false;
                                 passwd0_wr = false;
                                 passwd1_wr = false;
-                            }
-                            break;
-                        case 0x40:
-                            unlocked = !unlocked && passwd0_wr && passwd1_wr;
-                            break;
-                        case 0x74:
-                            if (unlocked) {
+                                break;
+                            case 0x40:
+                                //unlocked = !unlocked && passwd0_wr && passwd1_wr;
+                                break;
+                            case 0x74:
                                 m_regs[0x04] = 0;
                                 m_regs[0x05] = 0;
                                 m_regs[0x06] = 0;
                                 m_regs[0x07] = 0;
-                            }
-                            break;
-                        case 0x80:
-                        case 0x81:
-                        case 0x82:
-                        case 0x85:
-                            if (unlocked) {
+                                break;
+                            case 0x80:
+                            case 0x81:
+                            case 0x82:
+                            case 0x85:
                                 burn_memory = true;
-                            }
-                            break;
-                        default:
-                            unlocked = false;
-                            burn_memory = false;
+                                // burn memory and new password
+                                wait(200, SC_MS);
+                                m_regs[0x39] = 0x5A;
+                                burn_memory = false;
+                                break;
+                            default:
+                                unlocked = false;
+                                burn_memory = false;
+                        }
                     }
+
+                    break;
                 case 0x3B:
                 case 0x3C:
                 case 0x3D:
@@ -454,7 +454,12 @@ void jpmic::regs() {
                 case 0x37:
                 case 0x38:
                     // WO registers
-                    data_out.write(0);
+                    if (unlocked) {
+                        data_out.write(m_regs[addr]);
+                    }
+                    else {
+                        data_out.write(0);
+                    }
                     break;
                 case 0x39:
                 case 0x3A:
@@ -1078,6 +1083,10 @@ void jpmic::fsm() {
                     swb_inj = false;
                     swc_inj = false;
                     bulk_inj = false;
+                    unlocked = false;
+                    burn_memory = false;
+                    passwd0_wr = false;
+                    passwd1_wr = false;
                 }
 
                 m_stateint = 0x00;

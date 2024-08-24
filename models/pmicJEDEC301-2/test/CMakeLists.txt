@@ -104,3 +104,13 @@ add_executable(testinjection
         ./testpmic.cpp)
 
 TARGET_LINK_LIBRARIES(testinjection libsystemc)
+
+# build testburn
+add_executable(testburn
+        ./tb_burn.cpp
+        ../src/jrail.cpp
+        ../src/jdac.cpp
+        ../src/jpmic.cpp
+        ./testpmic.cpp)
+
+TARGET_LINK_LIBRARIES(testburn libsystemc)

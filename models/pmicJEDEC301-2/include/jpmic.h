@@ -58,6 +58,9 @@ public:
         R2F = 0x2F,
         R32 = 0x32,
         R35 = 0x35,
+        R37 = 0x37,
+        R38 = 0x38,
+        R39 = 0x39,
         ENABLE = 0xFF
     };
 
