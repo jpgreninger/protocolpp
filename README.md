@@ -1,4 +1,4 @@
-# Protocolpp®(Protocol++®) 5.7.0 Released January 1, 2025!
+# Protocolpp®(Protocol++®) 5.7.0 Released February 9, 2025!
 https://www.youtube.com/watch?v=zs5Edbf4MiI
 
 Only www.protocolpp.com has the rights to update, modify,
@@ -172,7 +172,7 @@ For W.A.S.P usage, see the doxygen section
 
 * See www.protocolpp.com for more updates, information and licensing
 
-* Protocol++® (Protocolpp®) - 5.7.0 Released February, 2025
+* Protocol++® (Protocolpp®) - 5.7.0 Released February 9, 2025
   * Added NIST approved versions of Kyber (ML-KEM) and Dilithium (ML-DSA)
   * See release notes in paid version
   * See www.protocolpp.com for further information
