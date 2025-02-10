@@ -1,4 +1,4 @@
 <map id="option::PrintUsageImplementation::LinePartIterator::nextTable" name="option::PrintUsageImplementation::LinePartIterator::nextTable">
-<area shape="rect" id="node1" title="Moves iteration to the next table (if any). Has to be called once on a new LinePartIterator to move t..." alt="" coords="5,5,224,47"/>
-<area shape="rect" id="node2" href="$classoption_1_1PrintUsageImplementation_1_1LinePartIterator.html#a0cbe8ed79ab4958a70b957598dd76fa6" title="Reset iteration to the beginning of the current table." alt="" coords="272,5,491,47"/>
+<area shape="rect" id="node1" title="Moves iteration to the next table (if any). Has to be called once on a new LinePartIterator to move t..." alt="" coords="5,5,252,47"/>
+<area shape="rect" id="node2" href="$classoption_1_1PrintUsageImplementation_1_1LinePartIterator.html#a0cbe8ed79ab4958a70b957598dd76fa6" title="Reset iteration to the beginning of the current table." alt="" coords="300,5,547,47"/>
 </map>

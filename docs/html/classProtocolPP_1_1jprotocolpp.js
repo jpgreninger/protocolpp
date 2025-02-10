@@ -24,6 +24,8 @@ var classProtocolPP_1_1jprotocolpp =
     [ "get_lms", "classProtocolPP_1_1jprotocolpp.html#a0990a6e80db9663f90adb68b14b5f2cc", null ],
     [ "get_lte", "classProtocolPP_1_1jprotocolpp.html#a8d6d2969607c784e2cc4ecb2c1d608e4", null ],
     [ "get_macsec", "classProtocolPP_1_1jprotocolpp.html#acc4ba91451039bd9e1822307180475ab", null ],
+    [ "get_mldsa", "classProtocolPP_1_1jprotocolpp.html#a02d25e7f9416bfaf30e09cbdec61b2e5", null ],
+    [ "get_mlkem", "classProtocolPP_1_1jprotocolpp.html#ac870bb76106d5edb3288bd4853057c9c", null ],
     [ "get_rsa", "classProtocolPP_1_1jprotocolpp.html#afff05ecbe79801adcc115578f6db39dd", null ],
     [ "get_srtp", "classProtocolPP_1_1jprotocolpp.html#a3329cb06191a0652f26987f330bae44a", null ],
     [ "get_tcp", "classProtocolPP_1_1jprotocolpp.html#a6dd484ab0bbd9d9754b797b37a27edb2", null ],

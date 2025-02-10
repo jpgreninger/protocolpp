@@ -89,8 +89,12 @@ var namespaceProtocolPP =
     [ "jlmsa", "classProtocolPP_1_1jlmsa.html", "classProtocolPP_1_1jlmsa" ],
     [ "jkyber", "classProtocolPP_1_1jkyber.html", "classProtocolPP_1_1jkyber" ],
     [ "jkybersa", "classProtocolPP_1_1jkybersa.html", "classProtocolPP_1_1jkybersa" ],
+    [ "jmlkem", "classProtocolPP_1_1jmlkem.html", "classProtocolPP_1_1jmlkem" ],
+    [ "jmlkemsa", "classProtocolPP_1_1jmlkemsa.html", "classProtocolPP_1_1jmlkemsa" ],
     [ "jdilithium", "classProtocolPP_1_1jdilithium.html", "classProtocolPP_1_1jdilithium" ],
     [ "jdilithiumsa", "classProtocolPP_1_1jdilithiumsa.html", "classProtocolPP_1_1jdilithiumsa" ],
+    [ "jmldsa", "classProtocolPP_1_1jmldsa.html", "classProtocolPP_1_1jmldsa" ],
+    [ "jmldsasa", "classProtocolPP_1_1jmldsasa.html", "classProtocolPP_1_1jmldsasa" ],
     [ "jfalcon", "classProtocolPP_1_1jfalcon.html", "classProtocolPP_1_1jfalcon" ],
     [ "jfalconsa", "classProtocolPP_1_1jfalconsa.html", "classProtocolPP_1_1jfalconsa" ],
     [ "jpoly1305_state_internal_t", "namespaceProtocolPP.html#a88f1286f96324cf36a14682523aa4793", null ],
@@ -1183,7 +1187,9 @@ var namespaceProtocolPP =
       [ "RSAENCRYPT", "namespaceProtocolPP.html#aca3725b363c3824187494fea67837db6aba0f3d3fa1001ffca87cbeef2f699b06", null ],
       [ "RSADECRYPT", "namespaceProtocolPP.html#aca3725b363c3824187494fea67837db6a796f7e2dfa9e7e5088d300010984a809", null ],
       [ "KYBERENC", "namespaceProtocolPP.html#aca3725b363c3824187494fea67837db6ac686a3db6d3e0748f30995e9b3047199", null ],
-      [ "KYBERDEC", "namespaceProtocolPP.html#aca3725b363c3824187494fea67837db6ab6ee7d7ba3a911fb7cb0dea3301e125b", null ]
+      [ "KYBERDEC", "namespaceProtocolPP.html#aca3725b363c3824187494fea67837db6ab6ee7d7ba3a911fb7cb0dea3301e125b", null ],
+      [ "MLKEMENC", "namespaceProtocolPP.html#aca3725b363c3824187494fea67837db6a8d3de82ac32adda35b06587d11ae32e0", null ],
+      [ "MLKEMDEC", "namespaceProtocolPP.html#aca3725b363c3824187494fea67837db6a087b156d04f19ca4de100407476b1624", null ]
     ] ],
     [ "kyber_algorithm_t", "namespaceProtocolPP.html#a67ebc73d3d1974dba7f0ee20086a3020", [
       [ "KYBER_512", "namespaceProtocolPP.html#a67ebc73d3d1974dba7f0ee20086a3020a71a29283ed48ec89d542e5ac5d1e8dd8", null ],
@@ -1234,6 +1240,16 @@ var namespaceProtocolPP =
       [ "AES_GCM_256", "namespaceProtocolPP.html#a0fb0143ef9f81907fc57e8a61cf4a45ba04f3cb64e45c66a1218b2dd7f5d5c784", null ],
       [ "AES_GCM_XPN_256", "namespaceProtocolPP.html#a0fb0143ef9f81907fc57e8a61cf4a45ba4c178f1dd59109dd6bb998c4964dab69", null ],
       [ "NULL_MACSEC", "namespaceProtocolPP.html#a0fb0143ef9f81907fc57e8a61cf4a45ba44759f0e6f167f7c585be4a6c0c3d6dc", null ]
+    ] ],
+    [ "mldsa_algorithm_t", "namespaceProtocolPP.html#a11731262d7ab4fd2b7cbfc87238570be", [
+      [ "MLDSA44", "namespaceProtocolPP.html#a11731262d7ab4fd2b7cbfc87238570bea2380755d250659fa6dd3b256edfb0980", null ],
+      [ "MLDSA65", "namespaceProtocolPP.html#a11731262d7ab4fd2b7cbfc87238570bea7d9a46273bcc8f4a93e2ded89e851f0d", null ],
+      [ "MLDSA87", "namespaceProtocolPP.html#a11731262d7ab4fd2b7cbfc87238570bea414150a64036ec69b6a578b0e9a6ab2e", null ]
+    ] ],
+    [ "mlkem_algorithm_t", "namespaceProtocolPP.html#ac5c23a81ff7ce729799b3464b552a2f4", [
+      [ "MLKEM_512", "namespaceProtocolPP.html#ac5c23a81ff7ce729799b3464b552a2f4a31cb845534c722d11f6fe2e54bd8cb0d", null ],
+      [ "MLKEM_768", "namespaceProtocolPP.html#ac5c23a81ff7ce729799b3464b552a2f4a9f52d4f87e9b26f9d4f2ff4f70e5aae7", null ],
+      [ "MLKEM_1024", "namespaceProtocolPP.html#ac5c23a81ff7ce729799b3464b552a2f4a40f20e82c4a1c9b6fb78a4a6930d32f9", null ]
     ] ],
     [ "notify_err_t", "namespaceProtocolPP.html#ab59a43ba85522b3c0aade2539eafd12c", [
       [ "NERR_UNSUPPORTED_CRIT_PAYLD", "namespaceProtocolPP.html#ab59a43ba85522b3c0aade2539eafd12cad2995442e1ab119a8345b63c322e4b0a", null ],
@@ -1418,7 +1434,9 @@ var namespaceProtocolPP =
       [ "NVGRE", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca83ccd0956b9b5a7485ff58122fe229ba", null ],
       [ "VXLAN", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca122355e146b63736fa7f07544f0e67ef", null ],
       [ "KYBER", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5cae4a54a5dde758466040b2a7397b3f9b3", null ],
+      [ "MLKEM", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5caa31cc84e9c0512cb9859431beeee1a79", null ],
       [ "DILITHIUM", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca18b5c8dce77d800a608ba1ba74ff5e93", null ],
+      [ "MLDSA", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5caa2e537d9eb4da2a0b4aa77eb60b889e1", null ],
       [ "FALCON", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca4c313c435c05ff8b3d6db5c9d8463216", null ],
       [ "SPHINCS", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca85567bbcb92789db0d5e11bcdc29fd35", null ],
       [ "NOPROTO", "namespaceProtocolPP.html#a15957f30f5cdc906a54e53fcb4834e5ca80a0105cbfdbf8d19c128444a455518e", null ]
@@ -1737,6 +1755,8 @@ var namespaceProtocolPP =
     [ "Begin_Enum_String", "namespaceProtocolPP.html#a22c0242fe5804d3086e4bf4da6f25a90", null ],
     [ "Begin_Enum_String", "namespaceProtocolPP.html#acd8589f2bac41ca13a3a098b0e64c5ae", null ],
     [ "Begin_Enum_String", "namespaceProtocolPP.html#a3d7e81885e7c9d5bdb522d3521a38d13", null ],
+    [ "Begin_Enum_String", "namespaceProtocolPP.html#a5ed9abb056d1ddb54d6828ccbd083cee", null ],
+    [ "Begin_Enum_String", "namespaceProtocolPP.html#ad148bcb5113d4f130f8dc450a4724824", null ],
     [ "Begin_Enum_String", "namespaceProtocolPP.html#a7f458c73cdeb103926e7ced1b97d516b", null ],
     [ "Begin_Enum_String", "namespaceProtocolPP.html#a29686bba8c10a5d70cc3364f646ef555", null ],
     [ "Begin_Enum_String", "namespaceProtocolPP.html#a32d510b168e03744b307fe97a3300bed", null ],

@@ -1,4 +1,4 @@
 <map id="option::Option::next" name="option::Option::next">
-<area shape="rect" id="node1" title="Returns a pointer to the next element of the linked list or NULL if called on last()." alt="" coords="5,5,141,32"/>
-<area shape="rect" id="node2" href="$classoption_1_1Option.html#a36fa8fde6fce89462ded79ab56180ff7" title="Returns true iff this is the last element of the linked list." alt="" coords="189,5,336,32"/>
+<area shape="rect" id="node1" title="Returns a pointer to the next element of the linked list or NULL if called on last()." alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node2" href="$classoption_1_1Option.html#a36fa8fde6fce89462ded79ab56180ff7" title="Returns true iff this is the last element of the linked list." alt="" coords="204,5,364,32"/>
 </map>

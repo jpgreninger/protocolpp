@@ -18,21 +18,21 @@ var classInterfacePP_1_1jlogger =
       [ "BRIGHTCYAN", "classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6a93b721b0b2a1508e655c8407231a4ed7", null ],
       [ "BRIGHTWHITE", "classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6a34ce012d0f9c9cc80dfbd88a24d38a19", null ]
     ] ],
-    [ "severity_type", "classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445", [
-      [ "info", "classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445aab773938c0ecf261013978fe96785850", null ],
-      [ "debug", "classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445a199da5cd387c031744bc682f31849b77", null ],
-      [ "warning", "classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445ac01afde5f64e6de3621a7297666ef27b", null ],
-      [ "error", "classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445a471775bb7b25486b7c6e208fa2876247", null ],
-      [ "fatal", "classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445ae0f23db4e891663249063cc9bd7ab92a", null ],
-      [ "pass", "classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445a5a14fdadea3b5f61a60f0f069e6cf08b", null ]
+    [ "severity_t", "classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40", [
+      [ "debug", "classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40a199da5cd387c031744bc682f31849b77", null ],
+      [ "info", "classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40aab773938c0ecf261013978fe96785850", null ],
+      [ "warning", "classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40ac01afde5f64e6de3621a7297666ef27b", null ],
+      [ "error", "classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40a471775bb7b25486b7c6e208fa2876247", null ],
+      [ "fatal", "classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40ae0f23db4e891663249063cc9bd7ab92a", null ],
+      [ "pass", "classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40a5a14fdadea3b5f61a60f0f069e6cf08b", null ]
     ] ],
-    [ "jlogger", "classInterfacePP_1_1jlogger.html#a3a6ab8b168e2e24d3f765610b2881b90", null ],
+    [ "jlogger", "classInterfacePP_1_1jlogger.html#af3a14e2cddaa33fd8d79e916513580d0", null ],
     [ "~jlogger", "classInterfacePP_1_1jlogger.html#a29a5bdef8a5eae88e0d228804132a90f", null ],
     [ "get_color", "classInterfacePP_1_1jlogger.html#a9610d63ce71149be2d5713031de6757b", null ],
-    [ "get_loglvl", "classInterfacePP_1_1jlogger.html#a3501561ca126de971c422d16fd91da4e", null ],
+    [ "get_loglvl", "classInterfacePP_1_1jlogger.html#afa8278d6b5f2fca6aae7d2aac6d02fc5", null ],
     [ "print", "classInterfacePP_1_1jlogger.html#af2d4d146b0259734b2d092e77063e5e3", null ],
     [ "set_color", "classInterfacePP_1_1jlogger.html#ab791acee80b44eced2c5324d4d8a4840", null ],
-    [ "set_loglvl", "classInterfacePP_1_1jlogger.html#a4b102b6b02738b9f25dfb2aa268c6b57", null ],
+    [ "set_loglvl", "classInterfacePP_1_1jlogger.html#aea25354e0f21869d2cb55b0c067342f1", null ],
     [ "toCode", "classInterfacePP_1_1jlogger.html#ae9880c1c33a6cee4234ae0e7f5efba32", null ],
     [ "toEnum", "classInterfacePP_1_1jlogger.html#a86303f878a550177f3e729bbfc82b3a8", null ],
     [ "toStr", "classInterfacePP_1_1jlogger.html#af58b78e24001d631f22f3a6ba258a61f", null ]

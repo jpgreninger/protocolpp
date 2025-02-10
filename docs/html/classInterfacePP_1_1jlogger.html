@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++&reg; (Protocolpp&reg;)
-   &#160;<span id="projectnumber">v5.6.2</span>
+   &#160;<span id="projectnumber">v5.7.0</span>
    </div>
   </td>
  </tr>
@@ -91,6 +91,8 @@ $(document).ready(function(){initNavTree('classInterfacePP_1_1jlogger.html','');
 <div class="title">InterfacePP::jlogger Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &quot;include/jlogger.h&quot;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -117,35 +119,35 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a1ec7adeb3e0960926db5f44276dcc7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a956fca3db5251c3c9db9c8cea636d445"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445">severity_type</a> { <br />
-&#160;&#160;<a class="el" href="classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445aab773938c0ecf261013978fe96785850">info</a> =1
-, <a class="el" href="classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445a199da5cd387c031744bc682f31849b77">debug</a>
-, <a class="el" href="classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445ac01afde5f64e6de3621a7297666ef27b">warning</a>
-, <a class="el" href="classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445a471775bb7b25486b7c6e208fa2876247">error</a>
+<tr class="memitem:a90ad483bb09b22197a2643345995dd40"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40">severity_t</a> { <br />
+&#160;&#160;<a class="el" href="classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40a199da5cd387c031744bc682f31849b77">debug</a> =1
+, <a class="el" href="classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40aab773938c0ecf261013978fe96785850">info</a>
+, <a class="el" href="classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40ac01afde5f64e6de3621a7297666ef27b">warning</a>
+, <a class="el" href="classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40a471775bb7b25486b7c6e208fa2876247">error</a>
 , <br />
-&#160;&#160;<a class="el" href="classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445ae0f23db4e891663249063cc9bd7ab92a">fatal</a>
-, <a class="el" href="classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445a5a14fdadea3b5f61a60f0f069e6cf08b">pass</a>
+&#160;&#160;<a class="el" href="classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40ae0f23db4e891663249063cc9bd7ab92a">fatal</a>
+, <a class="el" href="classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40a5a14fdadea3b5f61a60f0f069e6cf08b">pass</a>
 <br />
  }</td></tr>
-<tr class="separator:a956fca3db5251c3c9db9c8cea636d445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a90ad483bb09b22197a2643345995dd40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3a6ab8b168e2e24d3f765610b2881b90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jlogger.html#a3a6ab8b168e2e24d3f765610b2881b90">jlogger</a> (const std::string &amp;name, bool logstdout=false, int loglvl=3, <a class="el" href="classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6">jlogger::asciicolor</a> debugclr=jlogger::asciicolor::MAGENTA, <a class="el" href="classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6">jlogger::asciicolor</a> infoclr=jlogger::asciicolor::CYAN, <a class="el" href="classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6">jlogger::asciicolor</a> warningclr=jlogger::asciicolor::YELLOW, <a class="el" href="classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6">jlogger::asciicolor</a> errorclr=jlogger::asciicolor::RED, <a class="el" href="classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6">jlogger::asciicolor</a> fatalclr=jlogger::asciicolor::RED, <a class="el" href="classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6">jlogger::asciicolor</a> passclr=jlogger::asciicolor::GREEN)</td></tr>
-<tr class="separator:a3a6ab8b168e2e24d3f765610b2881b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2d4d146b0259734b2d092e77063e5e3"><td class="memTemplParams" colspan="2">template&lt;typename jlogger::severity_type , typename... Args&gt; </td></tr>
+<tr class="memitem:af3a14e2cddaa33fd8d79e916513580d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jlogger.html#af3a14e2cddaa33fd8d79e916513580d0">jlogger</a> (const std::string &amp;name, bool logstdout=false, <a class="el" href="classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40">severity_t</a> loglvl=severity_t::info, <a class="el" href="classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6">jlogger::asciicolor</a> debugclr=jlogger::asciicolor::MAGENTA, <a class="el" href="classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6">jlogger::asciicolor</a> infoclr=jlogger::asciicolor::CYAN, <a class="el" href="classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6">jlogger::asciicolor</a> warningclr=jlogger::asciicolor::BRIGHTYELLOW, <a class="el" href="classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6">jlogger::asciicolor</a> errorclr=jlogger::asciicolor::RED, <a class="el" href="classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6">jlogger::asciicolor</a> fatalclr=jlogger::asciicolor::RED, <a class="el" href="classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6">jlogger::asciicolor</a> passclr=jlogger::asciicolor::GREEN)</td></tr>
+<tr class="separator:af3a14e2cddaa33fd8d79e916513580d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2d4d146b0259734b2d092e77063e5e3"><td class="memTemplParams" colspan="2">template&lt;typename jlogger::severity_t , typename... Args&gt; </td></tr>
 <tr class="memitem:af2d4d146b0259734b2d092e77063e5e3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jlogger.html#af2d4d146b0259734b2d092e77063e5e3">print</a> (Args...args)</td></tr>
 <tr class="separator:af2d4d146b0259734b2d092e77063e5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29a5bdef8a5eae88e0d228804132a90f"><td class="memItemLeft" align="right" valign="top"><a id="a29a5bdef8a5eae88e0d228804132a90f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jlogger.html#a29a5bdef8a5eae88e0d228804132a90f">~jlogger</a> ()</td></tr>
 <tr class="memdesc:a29a5bdef8a5eae88e0d228804132a90f"><td class="mdescLeft">&#160;</td><td class="mdescRight">standard deconstructor <br /></td></tr>
 <tr class="separator:a29a5bdef8a5eae88e0d228804132a90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b102b6b02738b9f25dfb2aa268c6b57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jlogger.html#a4b102b6b02738b9f25dfb2aa268c6b57">set_loglvl</a> (int newlvl)</td></tr>
-<tr class="separator:a4b102b6b02738b9f25dfb2aa268c6b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea25354e0f21869d2cb55b0c067342f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jlogger.html#aea25354e0f21869d2cb55b0c067342f1">set_loglvl</a> (<a class="el" href="classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40">severity_t</a> newlvl)</td></tr>
+<tr class="separator:aea25354e0f21869d2cb55b0c067342f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab791acee80b44eced2c5324d4d8a4840"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jlogger.html#ab791acee80b44eced2c5324d4d8a4840">set_color</a> (std::string color, <a class="el" href="classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6">jlogger::asciicolor</a> jcolor)</td></tr>
 <tr class="separator:ab791acee80b44eced2c5324d4d8a4840"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3501561ca126de971c422d16fd91da4e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jlogger.html#a3501561ca126de971c422d16fd91da4e">get_loglvl</a> ()</td></tr>
-<tr class="separator:a3501561ca126de971c422d16fd91da4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8278d6b5f2fca6aae7d2aac6d02fc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40">severity_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jlogger.html#afa8278d6b5f2fca6aae7d2aac6d02fc5">get_loglvl</a> ()</td></tr>
+<tr class="separator:afa8278d6b5f2fca6aae7d2aac6d02fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9610d63ce71149be2d5713031de6757b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6">jlogger::asciicolor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jlogger.html#a9610d63ce71149be2d5713031de6757b">get_color</a> (std::string color)</td></tr>
 <tr class="separator:a9610d63ce71149be2d5713031de6757b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -158,7 +160,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a86303f878a550177f3e729bbfc82b3a8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6">jlogger::asciicolor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jlogger.html#a86303f878a550177f3e729bbfc82b3a8">toEnum</a> (std::string color)</td></tr>
 <tr class="separator:a86303f878a550177f3e729bbfc82b3a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>#ifdef DARK_THEME line.insert(0, "\033[1;34m "); #else line.insert(0, "\033[1;30m "); #endif } else if (line.find("&lt;DEBUG&gt;") != std::string::npos) { #ifdef DARK_THEME line.insert(0, "\033[1;35m "); #else line.insert(0, "\033[1;34m "); #endif } else if (line.find("&lt;WARN&gt;") != std::string::npos) { #ifdef LIGHT_THEME line.insert(0, "\033[0;34m "); #else line.insert(0, "\033[1;33m "); #endif } else if (line.find("&lt;ERROR&gt;") != std::string::npos) { #ifdef LIGHT_THEME line.insert(0, "\033[1;31m "); #else line.insert(0, "\033[1;31m "); #endif } else if (line.find("&lt;FATAL&gt;") != std::string::npos) { #ifdef DARK_THEME line.insert(0, "\033[1;35m "); #else line.insert(0, "\033[1;35m "); #endif } else if (line.find("&lt;PASS&gt;") != std::string::npos) { #ifdef DARK_THEME line.insert(0, "\033[1;32m "); #else line.insert(0, "\033[1;32m "); #endif } else { #ifdef DARK_THEME line.insert(0, "\033[1;34m "); #else line.insert(0, "\033[1;34m "); #endif </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a1ec7adeb3e0960926db5f44276dcc7d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ec7adeb3e0960926db5f44276dcc7d6">&#9670;&nbsp;</a></span>asciicolor</h2>
 
@@ -228,21 +232,21 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a956fca3db5251c3c9db9c8cea636d445"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a956fca3db5251c3c9db9c8cea636d445">&#9670;&nbsp;</a></span>severity_type</h2>
+<a id="a90ad483bb09b22197a2643345995dd40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90ad483bb09b22197a2643345995dd40">&#9670;&nbsp;</a></span>severity_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="classInterfacePP_1_1jlogger.html#a956fca3db5251c3c9db9c8cea636d445">InterfacePP::jlogger::severity_type</a></td>
+          <td class="memname">enum <a class="el" href="classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40">InterfacePP::jlogger::severity_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>severity type </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">info</td><td>- information level of logging </td></tr>
     <tr><td class="paramname">debug</td><td>- debug level of logging </td></tr>
+    <tr><td class="paramname">info</td><td>- information level of logging </td></tr>
     <tr><td class="paramname">warning</td><td>- warning level of logging </td></tr>
     <tr><td class="paramname">error</td><td>- error level of logging </td></tr>
     <tr><td class="paramname">fatal</td><td>- fatal level of logging </td></tr>
@@ -251,25 +255,25 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a956fca3db5251c3c9db9c8cea636d445aab773938c0ecf261013978fe96785850"></a>info&#160;</td><td class="fielddoc"><p>information level of logging </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a90ad483bb09b22197a2643345995dd40a199da5cd387c031744bc682f31849b77"></a>debug&#160;</td><td class="fielddoc"><p>information level of logging </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a956fca3db5251c3c9db9c8cea636d445a199da5cd387c031744bc682f31849b77"></a>debug&#160;</td><td class="fielddoc"><p>debug level of logging </p>
+<tr><td class="fieldname"><a id="a90ad483bb09b22197a2643345995dd40aab773938c0ecf261013978fe96785850"></a>info&#160;</td><td class="fielddoc"><p>debug level of logging </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a956fca3db5251c3c9db9c8cea636d445ac01afde5f64e6de3621a7297666ef27b"></a>warning&#160;</td><td class="fielddoc"><p>warning level of logging </p>
+<tr><td class="fieldname"><a id="a90ad483bb09b22197a2643345995dd40ac01afde5f64e6de3621a7297666ef27b"></a>warning&#160;</td><td class="fielddoc"><p>warning level of logging </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a956fca3db5251c3c9db9c8cea636d445a471775bb7b25486b7c6e208fa2876247"></a>error&#160;</td><td class="fielddoc"><p>error level of logging </p>
+<tr><td class="fieldname"><a id="a90ad483bb09b22197a2643345995dd40a471775bb7b25486b7c6e208fa2876247"></a>error&#160;</td><td class="fielddoc"><p>error level of logging </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a956fca3db5251c3c9db9c8cea636d445ae0f23db4e891663249063cc9bd7ab92a"></a>fatal&#160;</td><td class="fielddoc"><p>fatal level of logging </p>
+<tr><td class="fieldname"><a id="a90ad483bb09b22197a2643345995dd40ae0f23db4e891663249063cc9bd7ab92a"></a>fatal&#160;</td><td class="fielddoc"><p>fatal level of logging </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a956fca3db5251c3c9db9c8cea636d445a5a14fdadea3b5f61a60f0f069e6cf08b"></a>pass&#160;</td><td class="fielddoc"><p>PASS banner. </p>
+<tr><td class="fieldname"><a id="a90ad483bb09b22197a2643345995dd40a5a14fdadea3b5f61a60f0f069e6cf08b"></a>pass&#160;</td><td class="fielddoc"><p>PASS banner. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3a6ab8b168e2e24d3f765610b2881b90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a6ab8b168e2e24d3f765610b2881b90">&#9670;&nbsp;</a></span>jlogger()</h2>
+<a id="af3a14e2cddaa33fd8d79e916513580d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3a14e2cddaa33fd8d79e916513580d0">&#9670;&nbsp;</a></span>jlogger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,8 +296,8 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>loglvl</em> = <code>3</code>, </td>
+          <td class="paramtype"><a class="el" href="classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40">severity_t</a>&#160;</td>
+          <td class="paramname"><em>loglvl</em> = <code>severity_t::info</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -311,7 +315,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classInterfacePP_1_1jlogger.html#a1ec7adeb3e0960926db5f44276dcc7d6">jlogger::asciicolor</a>&#160;</td>
-          <td class="paramname"><em>warningclr</em> = <code>jlogger::asciicolor::YELLOW</code>, </td>
+          <td class="paramname"><em>warningclr</em> = <code>jlogger::asciicolor::BRIGHTYELLOW</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -347,7 +351,7 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">name</td><td>- name of the output log file </td></tr>
     <tr><td class="paramname">logstdout</td><td>- print logging to stdout as well as file </td></tr>
-    <tr><td class="paramname">loglvl</td><td>- Level of logging (4-&lt;DEBUG, INFO, WARN, ERROR, FATAL, PASS&gt;, 3[default]-&lt;INFO, WARN, ERROR, FATAL, PASS&gt;, 2-&lt;WARN, ERROR, FATAL, PASS&gt;, 1-&lt;ERROR, FATAL, PASS&gt;, 0-NO LOGGING) </td></tr>
+    <tr><td class="paramname">loglvl</td><td>- From severity_t (default: severity_t::info) </td></tr>
     <tr><td class="paramname">debugclr</td><td>- Color for the DEBUG messages (default: MAGENTA) </td></tr>
     <tr><td class="paramname">infoclr</td><td>- Color for the INFO messages (default: BLACK) </td></tr>
     <tr><td class="paramname">warningclr</td><td>- Color for the WARN messages (default: YELLOW) </td></tr>
@@ -386,14 +390,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3501561ca126de971c422d16fd91da4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3501561ca126de971c422d16fd91da4e">&#9670;&nbsp;</a></span>get_loglvl()</h2>
+<a id="afa8278d6b5f2fca6aae7d2aac6d02fc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa8278d6b5f2fca6aae7d2aac6d02fc5">&#9670;&nbsp;</a></span>get_loglvl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int InterfacePP::jlogger::get_loglvl </td>
+          <td class="memname"><a class="el" href="classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40">severity_t</a> InterfacePP::jlogger::get_loglvl </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -410,7 +414,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;jlogger::severity_type severity, typename... Args&gt; </div>
+template&lt;jlogger::severity_t severity, typename... Args&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void InterfacePP::jlogger::print </td>
@@ -465,8 +469,8 @@ template&lt;jlogger::severity_type severity, typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="a4b102b6b02738b9f25dfb2aa268c6b57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b102b6b02738b9f25dfb2aa268c6b57">&#9670;&nbsp;</a></span>set_loglvl()</h2>
+<a id="aea25354e0f21869d2cb55b0c067342f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea25354e0f21869d2cb55b0c067342f1">&#9670;&nbsp;</a></span>set_loglvl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -474,7 +478,7 @@ template&lt;jlogger::severity_type severity, typename... Args&gt; </div>
         <tr>
           <td class="memname">void InterfacePP::jlogger::set_loglvl </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="classInterfacePP_1_1jlogger.html#a90ad483bb09b22197a2643345995dd40">severity_t</a>&#160;</td>
           <td class="paramname"><em>newlvl</em></td><td>)</td>
           <td></td>
         </tr>
@@ -597,7 +601,7 @@ template&lt;jlogger::severity_type severity, typename... Args&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>InterfacePP</b></li><li class="navelem"><a class="el" href="classInterfacePP_1_1jlogger.html">jlogger</a></li>
-    <li class="footer">Generated on Tue Jul 23 2024 08:35:47 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Feb 9 2025 22:58:45 for Protocol++&reg; (Protocolpp&reg;) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
