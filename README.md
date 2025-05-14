@@ -174,122 +174,30 @@ For W.A.S.P usage, see the doxygen section
 * Protocol++® (Protocolpp®) - 5.7.0 Released February 9, 2025
   * Added NIST approved versions of Kyber (ML-KEM) and Dilithium (ML-DSA)
   * See release notes in paid version
-  * See www.protocolpp.com for further information
+  * See https://jgreninger.wixsite.com/protocolpp for further information
     
 * Protocol++® (Protocolpp®) - 5.6.3 Released January 1, 2025
   * See release notes in paid version
-  * See www.protocolpp.com for further information
-    
-* Protocol++® (Protocolpp®) - 5.6.2 Released July 22, 2024
-  * See release notes in paid version
-  * See www.protocolpp.com for further information
-  * Contains two signatures, one for the encrypted file, one found inside the encrypted file for the release. Please verify both
-  * Use all security strengths without recompile by passing parameter found in jenum.h
-  * CSNA 1.0 and 2.0 compliance
-  * Full post quantum support with support for multi-tier trees as well
-  * Bug fixes
-  * Code cleanup
-  * See the release video
-  * Mudsums for release files below
-  ------------------------------------------------------------------------------------------
-  Date : 2024-07-23 08:56:57 -0700, Mode : SHA384, File : ./protocolpp562_final.enc
-  Mudsum : 5bd18ebc1e1343356134015ce10e52371ab10007d2ddef7643bcf5321b90cd4d8deb2ba7f6c0ab5262feb08e699e8012
-  ------------------------------------------------------------------------------------------
-  Date : 2024-07-23 08:56:57 -0700, Mode : SHA384, File : ./protocolpp562_final.enc.sig
-  Mudsum : 92a262743c96d7c4df6c5e463345d8f9639ccdbf5e28b7ff98449e58155134cb3f217d0f61bebe95d982cf8f1c5182ce
-  ------------------------------------------------------------------------------------------
-  Date : 2024-07-23 08:56:57 -0700, Mode : SHA384, File : ./protocolpp562_final.zip
-  Mudsum : b7ac7515768310b40ad7354fce8870a6a6e4daeb6e38fd3484a787c44a2af067171bddcd5d33442e820258291f81d468
-  ------------------------------------------------------------------------------------------
-  Date : 2024-07-23 08:56:57 -0700, Mode : SHA384, File : ./protocolpp562_final_enc.zip
-  Mudsum : 3ff4a6ce2ddf7977e504189c3d6e3d00c77856366be8b2fb2d7aef2f98b2907022bae5338b9ce5183eabf31605685ec7
-  ------------------------------------------------------------------------------------------
-  Date : 2024-07-23 08:56:57 -0700, Mode : SHA384, File : ./protocolpp562_release.sig
-  Mudsum : 2adbe410fa7a0e4b7220a8c719665866b9752989281bb1203cd4f0cdf723adf479f699e7bfab92773f31f17e7bcef25b
-  ------------------------------------------------------------------------------------------
-  Date : 2024-07-23 08:56:57 -0700, Mode : SHA384, File : ./protocolpp562_release.zip
-  Mudsum : 5460806d795f6163d874b1b87709c113bce001aff3aa2f82c92598aaddcdd4d16b384e0a6c3d83b02594fc30d7dba5db
-  ------------------------------------------------------------------------------------------
-
-
-* Protocol++® (Protocolpp®) - 5.6.1 Released July 14, 2024
-  * See release notes in paid version
-  * See www.protocolpp.com for further information
-  * Contains two signatures, one for the encrypted file, one found inside the encrypted file for the release. Please verify both
-  * Use all security strengths without recompile by passing parameter found in jenum.h
-  * CSNA 1.0 and 2.0 compliance
-  * See the release video
-  * SHA384 (encrypt file) : ca4e5fe86ece9bc953088c06c4e5252ea93e7e9f330a45f000c9538daf6e8948ab0799f0144da62f1fc77d1e63b8b65b
-  * SHA384 (release file) : 82c71bf181fbce004453c1007889acea3bcc241cead2830e03a03d5d964b6622d9e95def8d6e03a81bcf52d7d7cfc696
-    
-* Protocol++® (Protocolpp®) - 5.6.0 Released June 28, 2024
-  * See release notes in paid version
-  * See www.protocolpp.com for further information
-  * Contains two signatures, one for the encrypted file, one found inside the encrypted file for the release. Please verify both
+  * See https://jgreninger.wixsite.com/protocolpp for further information
   * XMSS and XMSS^MT: SHA2, SHAKE256, 192 and 256-bit. XML and JSON formats (as found in NIST800-208)
   * LMS-HSS: SHA2, SHAKE256, 192 and 256-bit. XML and JSON formats (as found in NIST800-208)
   * KYBER: Level 2, 3 and 4. XML and JSON formats
   * DILITHIUM: 512, 768, and 1024 bits. XML and JSON formats
   * CSNA 1.0 and 2.0 compliance
-  * See the release video
-  * SHA384 (encrypt file) : b33ceb793ef6cc700a6b6a02755405ecbdb78de3602e61b93050bb6e9967c3bfdf6e8c5483b97af4f0cdb82983aad950
-  * SHA384 (release file) : 97fa9a484ec2c11f5e61d3ee487b61c98763c71826e98fcc119acc8fbff5038ab8fb0434c043db051b8e6c2d3b442bfc
-    
-* Protocolpp® (Protocol++®) - 5.5.1 Released June 7, 2024
-  * See release notes in paid version
-  * See www.protocolpp.com for further information
-  * Contains two signatures, one for the encrypted file, one found inside the encrypted file for the release. Please verify both
-  * XMSS^MT support
   * CSNA 1.0 and 2.0 compliance
-  * See the release video 
-  * SHA384 (encrypt file) : c6cede633c6b3e2f33f59e6f07b7837849a416bb41fc320eb278f3201bd856131c8726a008ac1c03d2fe72fa8cb41023
-  * SHA384 (release file) : 3492ebbac0ffa70dd74f57c0004a87fab2b746580e9ef46e2e3c11271afcf64317c825cf6158da9a4e5b32614060daa8
-
-* Protocolpp® (Protocol++®) - 5.5.0 Released January 1, 2024
-  * See release notes in paid version
-  * See www.protocolpp.com for further information
-  * Contains two signatures, one for the encrypted file, one found inside the encrypted file for the release. Please verify both
-  * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=54bf3114429c41ca9938239838815498&wix-vod-comp-id=comp-j2ddnt1i
-  * SHA384 (encrypt file) : 8206410b24ca43127bda4ef180eaa69e5b2c054fd29fe7cb18f887d7dd0ff8eaf33ea9776fd6ecee0405c74e7c36f60c
-  * SHA384 (release file) : d2de08626f0f5bf67ccfd72307ede512f9b85e7672d7239ee86393f0439d455936881576af394169762d2c3babe28365
-
-* Protocol++® (Protocolpp®) - 5.4.4 released September 8, 2023
-  * See encrypted release notes in paid version
-  * Maintenance release for bug fixes and code cleanup
-  * Documentation Updates
   * JSON output syntax fixes
-  * See www.protocolpp.com for further information
-  * Contains two signatures, one for the encrypted file, one found inside the encrypted file for the release. Please verify both
-  * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=9b4fe7bf27b64e1ab017e9d6ef2f92be&wix-vod-comp-id=comp-j2ddnt1i
-  * SHA384: 41f97f1407bfca3389c82465612eb8694448e32e52d64bfa001329221d7e204d00a45c37407f390996dee4703e62aa9b
-    
-* Protocol++® (Protocolpp®) - 5.4.3 released July 1, 2023
   * See encrypted release notes in paid version
   * Documentation Updates
-  * See www.protocolpp.com for further information
-  * Contains two signatures, one for the encrypted file, one found inside the encrypted file for the release. Please verify both
-  * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=42596f2755334f568b6fef88bfeaca76&wix-vod-comp-id=comp-j2ddnt1i
-  * SHA384: ba42781392ba0591951169ab5fc2641965bb518ca4f20c963e1bf1e4d12fa173e019ae1a8fff3116c1065fa45f9b127d
-  
-* Protocol++® (Protocolpp®) - 5.4.2 released March 15, 2023
-  * Maintainence release
   * All updates documented in the paid version RELEASE file
   * All releases now encrypted, if yours isn't, it's a fake
   * Added DTLSv1.3 Anti-Replay support
   * Many edits to make the code more efficient
   * Documentation Updates
-  * See the release video https://www.youtube.com/watch?v=zs5Edbf4MiI
-
-* Protocol++® (Protocolpp®) - 5.4.1 released January 1, 2023
-  * All updates documented in the paid version RELEASE file
   * All releases now encrypted, if yours isn't, it's a fake
   * Added AES-XTS
   * Added JSON support to the SEC testbench
   * Many edits to make the code more efficient
   * Documentation Updates
-  * See the release video https://www.youtube.com/watch?v=zs5Edbf4MiI
-  
-* Protocol++® (Protocolpp®) - 5.4.0 released December 15, 2022
   * All updates documented in the paid version RELEASE file
   * All releases now encrypted, if yours isn't, it's a fake
   * Added the following protocols
@@ -299,10 +207,6 @@ For W.A.S.P usage, see the doxygen section
     * DTLS v1.3 (RFC 9147) with SM support (RFC8998)
     * Added SM support to TLS v1.3 (RFC8998)
   * Many edits to make the code more efficient
-  * Documentation Updates
-  * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=b476cddf732040089759683c20c4b926&wix-vod-comp-id=comp-j2ddnt1i
-  
-* Protocol++® (Protocolpp®) - 5.3.2 released August 8, 2022
   * All updates documented in the paid version RELEASE file
   * All releases now encrypted, if yours isn't, it's a fake
   * JSON support
@@ -310,32 +214,14 @@ For W.A.S.P usage, see the doxygen section
     * XML -> XML
     * JSON -> XML
     * JSON -> JSON
-  * Bumped version
-  * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=dfe709cd0329410d8bebb7ae75aab9ac&wix-vod-comp-id=comp-j2ddnt1i
-  
-* Protocol++® (Protocolpp®) - 5.3.1 released June 28, 2022
   * All updates documented in the paid version RELEASE file
   * All releases now encrypted, if yours isn't, it's a fake
-  * Bumped version
-  * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=1ad7e49827904441969410ae2d6cfaea&wix-vod-comp-id=comp-j2ddnt1i
-  
-* Protocol++® (Protocolpp®) - 5.3.0 released February 27, 2022
   * Added support for ZUC256 with 16-byte IV (as well as 25-byte IV) in LTE, standalone, confident, integrity
   * Updated SNOWV interface
-  * Bumped version
-
-* Protocol++® (Protocolpp®) - 5.2.4 released January 29, 2022
   * Many changes for -pedantic-errors -Wall -Wextra compile
-  * Bumped version
-
-* Protocol++® (Protocolpp®) - 5.2.3 released January 24, 2022
   * Added initilizer list constructor and append() to jarray
   * Many additional CLangTidy updates
   * changed all seeds to UINT64_T from unsigned long
-  * Bumped version
-
-* New in 5.2.2 - Release January 1, 2022
-  * Bumped version
   * Exposed support for non-keyed hashes (SHA2/SHA3/SHAKE) stand alone, jmodes, jintegrity, and W.A.S.P/Testbench
     * MD5
     * SHA1
@@ -371,10 +257,6 @@ For W.A.S.P usage, see the doxygen section
   * Updated documentation and source code with ® symbol for trademarks on 'protocolpp' and 'protocol++'
   * As always, valgrind leak free testbench and libraries
   * Many more static code analysis updates from CLang-Tidy and CPPcheck in header and CPP files
-  * See the release video https://www.protocolpp.com/protocolpp-demonstration-videos?wix-vod-video-id=139948e590064090a8594348915f441a&wix-vod-comp-id=comp-j2ddnt1i
-  
-* New in 5.2.1 - Released September 24, 2021
-  * Bumped version
   * Added new utilities
   * Separated TLSv13 from legacy
   * Updated LMS and XMSS to run in testbench
