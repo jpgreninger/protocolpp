@@ -4,8 +4,7 @@ https://www.youtube.com/watch?v=zs5Edbf4MiI
 Only https://jgreninger.wixsite.com/protocolpp has the rights to update, modify,
 license, distribute, sell, or make copies of Protocolpp®(Protocol++®).
 
-Evaluation licenses that last 30-days are available from the website free
-of charge at https://www.protocolpp.com/protocolpp-trial-versions
+Evaluation licenses that last 30-days are available from this page
 
 Documentation can be found at
 
