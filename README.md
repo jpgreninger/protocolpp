@@ -136,7 +136,7 @@ These are the use cases currently being used. Development continues for Internet
 Exchange (IKEv2), additional driver features (ICMP message generation and return), offline
 key protection, key ring use, etc.
 
-Please see the documentation found above and www.protocolpp.com for all options
+Please see the documentation found above and https://jgreninger.wixsite.com/protocolpp for all options
 
 INSTALLATION
 
@@ -170,7 +170,7 @@ Examples:
 
 For W.A.S.P usage, see the doxygen section
 
-* See www.protocolpp.com for more updates, information and licensing
+* See https://jgreninger.wixsite.com/protocolpp for more updates, information and licensing
 
 * Protocol++® (Protocolpp®) - 5.7.0 Released February 9, 2025
   * Added NIST approved versions of Kyber (ML-KEM) and Dilithium (ML-DSA)
