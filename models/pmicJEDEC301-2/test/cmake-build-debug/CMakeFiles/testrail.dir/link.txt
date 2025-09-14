@@ -1,0 +1,1 @@
+/usr/bin/g++ -std=c++17 -fPIC -pipe -O0 -g -Wall -g CMakeFiles/testrail.dir/tb_rail.cpp.o "CMakeFiles/testrail.dir/mnt/c/Users/jgren/Documents/GitHub/protocolpp/models/pmicJEDEC301-2/src/jrail.cpp.o" CMakeFiles/testrail.dir/testrail.cpp.o -o testrail  /home/john/Work/systemc/lib-linux64/libsystemc.a 
