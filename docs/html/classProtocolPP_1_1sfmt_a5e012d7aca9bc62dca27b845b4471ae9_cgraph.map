@@ -1,6 +1,9 @@
 <map id="ProtocolPP::sfmt::sfmt_genrand_real1" name="ProtocolPP::sfmt::sfmt_genrand_real1">
-<area shape="rect" id="node1" title=" " alt="" coords="5,39,172,80"/>
-<area shape="rect" id="node2" href="$classProtocolPP_1_1sfmt.html#a80bf5b54769fa2330d6c0395e96cc405" title=" " alt="" coords="220,5,387,47"/>
-<area shape="rect" id="node4" href="$classProtocolPP_1_1sfmt.html#a8dc8b3b0d3b57eaf0fc02bf623aff78a" title=" " alt="" coords="220,71,387,112"/>
-<area shape="rect" id="node3" href="$classProtocolPP_1_1sfmt.html#a2f0b61e02c8d389f85d57a4a4280eeef" title=" " alt="" coords="435,5,601,47"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,37,172,77"/>
+<area shape="rect" id="Node000002" href="$classProtocolPP_1_1sfmt.html#a80bf5b54769fa2330d6c0395e96cc405" title=" " alt="" coords="220,5,387,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,42,206,37,207,42,173,48"/>
+<area shape="rect" id="Node000004" href="$classProtocolPP_1_1sfmt.html#a8dc8b3b0d3b57eaf0fc02bf623aff78a" title=" " alt="" coords="220,69,387,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="173,67,207,72,206,77,172,72"/>
+<area shape="rect" id="Node000003" href="$classProtocolPP_1_1sfmt.html#a2f0b61e02c8d389f85d57a4a4280eeef" title=" " alt="" coords="435,5,601,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="387,23,421,23,421,28,387,28"/>
 </map>

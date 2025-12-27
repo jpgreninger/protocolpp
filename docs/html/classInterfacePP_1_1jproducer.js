@@ -1,10 +1,7 @@
 var classInterfacePP_1_1jproducer =
 [
-    [ "jproducer", "classInterfacePP_1_1jproducer.html#a2590a1efb1f326aa5bc4834d050a878e", null ],
+    [ "jproducer", "classInterfacePP_1_1jproducer.html#ac541f58ff26d312cc7a220e0c39cdec5", null ],
     [ "~jproducer", "classInterfacePP_1_1jproducer.html#a2d7007caefa38a5beab6ed64aa72c3c5", null ],
-    [ "jproducer", "classInterfacePP_1_1jproducer.html#ac6345d89e2a1f4a576aac2d04151adbb", null ],
-    [ "jproducer", "classInterfacePP_1_1jproducer.html#a33bff9729fa2c77f70e7a09ed7d9240e", null ],
-    [ "jproducer", "classInterfacePP_1_1jproducer.html#ac3e85ad1a90ff65d851e5d47e44a6507", null ],
     [ "get_field", "classInterfacePP_1_1jproducer.html#a9508347f1904dc759280833526310492", null ],
     [ "get_mem", "classInterfacePP_1_1jproducer.html#aa9a76b9bc22f7631ad7fd45797ccca47", null ],
     [ "get_mode", "classInterfacePP_1_1jproducer.html#a051ca1e78abe5d48660e941ad70da76d", null ],

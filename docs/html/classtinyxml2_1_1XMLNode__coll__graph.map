@@ -1,5 +1,9 @@
 <map id="tinyxml2::XMLNode" name="tinyxml2::XMLNode">
-<area shape="rect" id="node1" title=" " alt="" coords="21,118,172,145"/>
-<area shape="rect" id="node2" href="$classtinyxml2_1_1XMLDocument.html" title=" " alt="" coords="5,231,188,257"/>
-<area shape="rect" id="node3" href="$classtinyxml2_1_1StrPair.html" title=" " alt="" coords="31,5,162,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="21,117,172,143"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="187,118,195,123,199,130,191,140,173,144,171,139,188,136,193,130,191,126,184,123"/>
+<area shape="rect" id="Node000002" href="$classtinyxml2_1_1XMLDocument.html" title=" " alt="" coords="5,229,188,255"/>
+<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="98,157,97,205,98,229,93,229,91,205,92,157"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,215,94,143,99,143,99,215"/>
+<area shape="rect" id="Node000003" href="$classtinyxml2_1_1StrPair.html" title=" " alt="" coords="31,5,162,31"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="99,45,99,117,94,117,94,45"/>
 </map>

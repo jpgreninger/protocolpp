@@ -8,7 +8,7 @@ var classProtocolPP_1_1jarray =
     [ "jarray", "classProtocolPP_1_1jarray.html#ad1d6d5176caec3e42f5315d4b10fc4b5", null ],
     [ "jarray", "classProtocolPP_1_1jarray.html#a71120dbb4ad8fcceac07b276816a9d83", null ],
     [ "jarray", "classProtocolPP_1_1jarray.html#a1caf8c3eca2f2faf4ac4fdd9e61f80af", null ],
-    [ "jarray", "classProtocolPP_1_1jarray.html#a475ba2edf2f45b211d224489dfd62c3b", null ],
+    [ "jarray", "classProtocolPP_1_1jarray.html#a52232640edafd234b3a216421b9724ac", null ],
     [ "jarray", "classProtocolPP_1_1jarray.html#a2cb68cbe7b4e09d9e6d8ccd4cbda7d78", null ],
     [ "~jarray", "classProtocolPP_1_1jarray.html#a0393fd8a0b74dde9e4706f5e7978b19c", null ],
     [ "append", "classProtocolPP_1_1jarray.html#aeeacec7af76dcdf7d482786478678fe1", null ],

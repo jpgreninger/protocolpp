@@ -1,6 +1,5 @@
 var classtinyxml2_1_1XMLVisitor =
 [
-    [ "~XMLVisitor", "classtinyxml2_1_1XMLVisitor.html#a494e72033d646c47d9c65c502ec62364", null ],
     [ "Visit", "classtinyxml2_1_1XMLVisitor.html#acc8147fb5a85f6c65721654e427752d7", null ],
     [ "Visit", "classtinyxml2_1_1XMLVisitor.html#adc75bd459fc7ba8223b50f0616767f9a", null ],
     [ "Visit", "classtinyxml2_1_1XMLVisitor.html#af30233565856480ea48b6fa0d6dec65b", null ],

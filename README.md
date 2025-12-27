@@ -1,4 +1,4 @@
-# Protocolpp®(Protocol++®) 5.7.0 Released February 9, 2025!
+# Protocolpp®(Protocol++®) 5.7.2 Released December 31, 2025!
 https://www.youtube.com/watch?v=zs5Edbf4MiI
 
 Only https://jgreninger.wixsite.com/protocolpp has the rights to update, modify,
@@ -58,7 +58,7 @@ protocolpp® - Executable of the full set of protocols, ciphers, testbench,
 
 libprotocolpp.a - Static library of the protocolpp.h interface, wasp.h, and ciphers.h
 
-libprotocolpp.so.5.6.2 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
+libprotocolpp.so.5.7.2 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
 
 winprot++.lib - Static library for Windows compiled under VC++ 19
 
@@ -142,7 +142,7 @@ INSTALLATION
 ```
 [jgreninger@localhost protocol++]$ ./protocolpp --help
 ******************************************************
-** Welcome to JPGNetworks, LLC Copyright 2017-2021  **
+** Welcome to JPGNetworks, LLC Copyright 2017-2025  **
 **                                                  **
 ** Thank You for purchasing Protocol++(ProtocolPP)  **
 ** the encryption, authentication, and protocol     **
@@ -171,6 +171,11 @@ For W.A.S.P usage, see the doxygen section
 
 * See https://jgreninger.wixsite.com/protocolpp for more updates, information and licensing
 
+* Protocol++® (Protocolpp®) - 5.7.2 Released December 31, 2025
+  * Maintenance Release
+  * See release notes in paid version
+  * See https://jgreninger.wixsite.com/protocolpp for further information
+    
 * Protocol++® (Protocolpp®) - 5.7.0 Released February 9, 2025
   * Added NIST approved versions of Kyber (ML-KEM) and Dilithium (ML-DSA)
   * See release notes in paid version

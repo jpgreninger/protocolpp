@@ -1,5 +1,7 @@
 <map id="tinyxml2::XMLPrinter" name="tinyxml2::XMLPrinter">
-<area shape="rect" id="node1" title=" " alt="" coords="94,109,253,136"/>
-<area shape="rect" id="node2" href="$classtinyxml2_1_1XMLVisitor.html" title=" " alt="" coords="5,13,163,39"/>
-<area shape="rect" id="node3" href="$classtinyxml2_1_1DynArray.html" title=" " alt="" coords="187,5,341,47"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="94,108,253,133"/>
+<area shape="rect" id="Node000002" href="$classtinyxml2_1_1XMLVisitor.html" title=" " alt="" coords="5,13,163,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,46,164,106,160,110,103,50"/>
+<area shape="rect" id="Node000003" href="$classtinyxml2_1_1DynArray.html" title=" " alt="" coords="187,5,341,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="238,57,187,110,183,106,234,53"/>
 </map>

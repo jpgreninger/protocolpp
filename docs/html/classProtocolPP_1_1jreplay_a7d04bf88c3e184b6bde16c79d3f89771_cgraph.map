@@ -1,5 +1,11 @@
 <map id="ProtocolPP::jreplay::print" name="ProtocolPP::jreplay::print">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,149,47"/>
-<area shape="rect" id="node2" href="$classProtocolPP_1_1jarray.html#a4aeb58321449f0e17d994ad74e469cea" title=" " alt="" coords="383,5,520,47"/>
-<area shape="rect" id="node3" href="$classProtocolPP_1_1jarray.html#a66e5b3ae21c23a2b3e4a5881b02ef6b5" title=" " alt="" coords="197,35,335,76"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,49,149,89"/>
+<area shape="rect" id="Node000002" href="$classProtocolPP_1_1jarray.html#a4aeb58321449f0e17d994ad74e469cea" title=" " alt="" coords="383,5,520,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,47,197,35,286,25,369,22,369,27,286,31,198,40,143,52"/>
+<area shape="rect" id="Node000003" href="$classProtocolPP_1_1jarray.html#a66e5b3ae21c23a2b3e4a5881b02ef6b5" title=" " alt="" coords="197,49,335,89"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,67,183,67,183,72,150,72"/>
+<area shape="rect" id="Node000004" href="$classProtocolPP_1_1jarray.html#ac01a0173fdf45643d9720fe15fecd80c" title="Standard constructor for jarray class." alt="" coords="383,81,520,121"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="141,87,198,99,286,105,369,104,369,109,286,110,197,104,140,92"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="334,50,368,42,370,47,335,56"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="335,79,369,85,368,90,334,84"/>
 </map>
