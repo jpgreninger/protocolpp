@@ -171,6 +171,10 @@ For W.A.S.P usage, see the doxygen section
 
 * See https://jgreninger.wixsite.com/protocolpp for more updates, information and licensing
 
+* Protocol++® (Protocolpp®) - 5.7.3 Upcoming Release
+  * See release notes in paid version
+  * See https://jgreninger.wixsite.com/protocolpp for further information
+    
 * Protocol++® (Protocolpp®) - 5.7.2 Released December 31, 2025
   * Maintenance Release
   * See release notes in paid version
