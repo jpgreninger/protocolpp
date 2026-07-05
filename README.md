@@ -1,4 +1,4 @@
-# Protocolpp®(Protocol++®) 5.7.2 Released December 31, 2025!
+# Protocolpp®(Protocol++®) 5.7.3 Released July, 2026!
 https://youtu.be/TJFnjcCAP2I?si=AyBjOVOH3crRKhxF
 
 Only https://jgreninger.wixsite.com/protocolpp has the rights to update, modify,
@@ -58,7 +58,7 @@ protocolpp® - Executable of the full set of protocols, ciphers, testbench,
 
 libprotocolpp.a - Static library of the protocolpp.h interface, wasp.h, and ciphers.h
 
-libprotocolpp.so.5.7.2 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
+libprotocolpp.so.5.7.3 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
 
 winprot++.lib - Static library for Windows compiled under VC++ 19
 
@@ -173,6 +173,9 @@ For W.A.S.P usage, see the doxygen section
 
 * Protocol++® (Protocolpp®) - 5.7.3 Upcoming Release
   * See release notes in paid version
+  * Support for XWing Hybrid Signatures
+  * Support for SLHDSA Post Quantum Signatures
+  * Moved to TinyXML v11.0.0
   * See https://jgreninger.wixsite.com/protocolpp for further information
     
 * Protocol++® (Protocolpp®) - 5.7.2 Released December 31, 2025
