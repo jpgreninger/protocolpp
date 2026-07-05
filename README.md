@@ -1,4 +1,4 @@
-# Protocolpp®(Protocol++®) 5.7.3 Released July, 2026!
+# Protocolpp®(Protocol++®) 5.7.3 Released July 4, 2026!
 https://youtu.be/TJFnjcCAP2I?si=AyBjOVOH3crRKhxF
 
 Only https://jgreninger.wixsite.com/protocolpp has the rights to update, modify,
