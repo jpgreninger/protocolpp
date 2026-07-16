@@ -1,13 +1,8 @@
 <map id="option::PrintUsageImplementation::IStringWriter" name="option::PrintUsageImplementation::IStringWriter">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,133,252,173"/>
-<area shape="rect" id="Node000002" href="$structoption_1_1PrintUsageImplementation_1_1FunctionWriter.html" title=" " alt="" coords="305,5,552,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,123,230,88,299,55,334,43,336,48,301,60,232,93,173,128"/>
-<area shape="rect" id="Node000003" href="$structoption_1_1PrintUsageImplementation_1_1OStreamWriter.html" title=" " alt="" coords="305,69,552,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,128,334,107,335,112,237,133"/>
-<area shape="rect" id="Node000004" href="$structoption_1_1PrintUsageImplementation_1_1StreamWriter.html" title=" " alt="" coords="300,133,557,173"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="266,151,300,151,300,156,266,156"/>
-<area shape="rect" id="Node000005" href="$structoption_1_1PrintUsageImplementation_1_1SyscallWriter.html" title=" " alt="" coords="305,197,552,237"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="237,174,335,195,334,200,236,179"/>
-<area shape="rect" id="Node000006" href="$structoption_1_1PrintUsageImplementation_1_1TemporaryWriter.html" title=" " alt="" coords="305,261,552,301"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="173,179,232,214,301,247,336,259,334,264,299,252,230,219,170,183"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,147,251,193"/>
+<area shape="rect" id="node2" href="$structoption_1_1PrintUsageImplementation_1_1FunctionWriter.html" title=" " alt="" coords="304,5,550,51"/>
+<area shape="rect" id="node3" href="$structoption_1_1PrintUsageImplementation_1_1OStreamWriter.html" title=" " alt="" coords="304,76,550,122"/>
+<area shape="rect" id="node4" href="$structoption_1_1PrintUsageImplementation_1_1StreamWriter.html" title=" " alt="" coords="299,147,555,193"/>
+<area shape="rect" id="node5" href="$structoption_1_1PrintUsageImplementation_1_1SyscallWriter.html" title=" " alt="" coords="304,217,550,263"/>
+<area shape="rect" id="node6" href="$structoption_1_1PrintUsageImplementation_1_1TemporaryWriter.html" title=" " alt="" coords="304,288,550,334"/>
 </map>

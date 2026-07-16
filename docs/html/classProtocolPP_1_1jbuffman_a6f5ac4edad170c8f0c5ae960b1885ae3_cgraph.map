@@ -1,5 +1,5 @@
 <map id="ProtocolPP::jbuffman::enque" name="ProtocolPP::jbuffman::enque">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,163,45"/>
-<area shape="rect" id="Node000002" href="$classProtocolPP_1_1jarray.html#ac01a0173fdf45643d9720fe15fecd80c" title="Standard constructor for jarray class." alt="" coords="211,5,348,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,23,197,23,197,28,163,28"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,28,162,74"/>
+<area shape="rect" id="node2" href="$classProtocolPP_1_1jbuffacc.html#a1a8b08f8d81bc618b5f50f86fc804920" title=" " alt="" coords="210,5,388,34"/>
+<area shape="rect" id="node3" href="$classProtocolPP_1_1jbuffacc.html#a9c5be0ba9429d0f1b7b814187dc3bbdc" title="return number of buffers being managed" alt="" coords="224,58,374,104"/>
 </map>

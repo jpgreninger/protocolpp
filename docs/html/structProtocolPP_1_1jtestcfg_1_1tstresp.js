@@ -1,5 +1,6 @@
 var structProtocolPP_1_1jtestcfg_1_1tstresp =
 [
+    [ "tstresp", "structProtocolPP_1_1jtestcfg_1_1tstresp.html#abfc0d0dbfe1359bb32b2af8f49b1c679", null ],
     [ "computelatency", "structProtocolPP_1_1jtestcfg_1_1tstresp.html#aa3158d9cf60f86f1ca9cd83f75b6ecdc", null ],
     [ "readlatency", "structProtocolPP_1_1jtestcfg_1_1tstresp.html#aa811e107d0d96975c7df449244e0a50a", null ],
     [ "rname", "structProtocolPP_1_1jtestcfg_1_1tstresp.html#a2366eb513b7bc0bce9b58afd5d216af2", null ],

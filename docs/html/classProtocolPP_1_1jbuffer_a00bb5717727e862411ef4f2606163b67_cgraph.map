@@ -1,13 +1,4 @@
 <map id="ProtocolPP::jbuffer::enqueue" name="ProtocolPP::jbuffer::enqueue">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,79,147,119"/>
-<area shape="rect" id="Node000002" href="$classProtocolPP_1_1jarray.html#aeeacec7af76dcdf7d482786478678fe1" title=" " alt="" coords="195,49,332,89"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,85,181,80,182,85,148,90"/>
-<area shape="rect" id="Node000003" href="$classProtocolPP_1_1jarray.html#a4aeb58321449f0e17d994ad74e469cea" title=" " alt="" coords="380,5,517,45"/>
-<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="106,76,146,53,194,35,237,26,282,20,366,18,366,23,283,26,238,31,195,40,149,58,108,81"/>
-<area shape="rect" id="Node000004" href="$classProtocolPP_1_1jarray.html#ac01a0173fdf45643d9720fe15fecd80c" title="Standard constructor for jarray class." alt="" coords="380,81,517,121"/>
-<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="147,98,195,99,366,99,366,104,195,104,147,103"/>
-<area shape="rect" id="Node000005" href="$classProtocolPP_1_1jarray.html#a501bffaf75bf9723848f76fe9f681323" title=" " alt="" coords="195,164,332,204"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="122,116,207,156,205,161,120,121"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="332,50,366,42,367,47,333,56"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="333,79,367,85,366,90,332,84"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,146,51"/>
+<area shape="rect" id="node2" href="$classProtocolPP_1_1jarray.html#a4aeb58321449f0e17d994ad74e469cea" title=" " alt="" coords="194,5,330,51"/>
 </map>

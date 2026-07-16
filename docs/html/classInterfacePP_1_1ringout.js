@@ -1,5 +1,6 @@
 var classInterfacePP_1_1ringout =
 [
+    [ "ringout", "classInterfacePP_1_1ringout.html#a5e869046df097282856dbd74922d0b71", null ],
     [ "ringout", "classInterfacePP_1_1ringout.html#a32a5a64db42a62b760c5e9d0376e4719", null ],
     [ "~ringout", "classInterfacePP_1_1ringout.html#a12d8610f7dadadf6ba105ff8125940fd", null ],
     [ "get_addr", "classInterfacePP_1_1ringout.html#a9c2e2cf22c0091d5eca5edddd407c521", null ],

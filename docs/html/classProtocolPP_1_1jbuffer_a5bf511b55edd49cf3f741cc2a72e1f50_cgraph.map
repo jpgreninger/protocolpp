@@ -1,7 +1,4 @@
 <map id="ProtocolPP::jbuffer::write" name="ProtocolPP::jbuffer::write">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,37,147,77"/>
-<area shape="rect" id="Node000002" href="$classProtocolPP_1_1jarray.html#a4aeb58321449f0e17d994ad74e469cea" title=" " alt="" coords="195,5,332,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,43,181,37,182,42,148,48"/>
-<area shape="rect" id="Node000003" href="$classProtocolPP_1_1jarray.html#ac01a0173fdf45643d9720fe15fecd80c" title="Standard constructor for jarray class." alt="" coords="195,69,332,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,67,182,73,181,78,147,72"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,146,51"/>
+<area shape="rect" id="node2" href="$classProtocolPP_1_1jarray.html#a4aeb58321449f0e17d994ad74e469cea" title=" " alt="" coords="194,5,330,51"/>
 </map>

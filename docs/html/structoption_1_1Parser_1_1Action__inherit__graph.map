@@ -1,7 +1,5 @@
 <map id="option::Parser::Action" name="option::Parser::Action">
-<area shape="rect" id="Node000001" title=" " alt="" coords="134,5,294,31"/>
-<area shape="rect" id="Node000002" href="$classoption_1_1Parser_1_1StoreOptionAction.html" title=" " alt="" coords="5,79,201,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,41,132,81,128,76,185,36"/>
-<area shape="rect" id="Node000003" href="$classoption_1_1Stats_1_1CountOptionsAction.html" title=" " alt="" coords="226,79,426,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="243,36,301,76,297,81,240,41"/>
+<area shape="rect" id="node1" title=" " alt="" coords="134,5,293,34"/>
+<area shape="rect" id="node2" href="$classoption_1_1Parser_1_1StoreOptionAction.html" title=" " alt="" coords="5,82,201,128"/>
+<area shape="rect" id="node3" href="$classoption_1_1Stats_1_1CountOptionsAction.html" title=" " alt="" coords="225,82,424,128"/>
 </map>

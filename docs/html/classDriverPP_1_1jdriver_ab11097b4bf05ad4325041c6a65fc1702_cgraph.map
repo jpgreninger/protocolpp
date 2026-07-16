@@ -1,7 +1,5 @@
 <map id="DriverPP::jdriver::send" name="DriverPP::jdriver::send">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,45,172,70"/>
-<area shape="rect" id="Node000002" href="$classInterfacePP_1_1ringin.html#a5e38fb317d18c6eea9746f42dbe15bf4" title=" " alt="" coords="220,5,361,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,42,206,36,207,41,170,47"/>
-<area shape="rect" id="Node000003" href="$classInterfacePP_1_1ringin.html#ad9cc8c8ed4c5ff5011235995d979918f" title=" " alt="" coords="220,69,361,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,67,207,73,206,79,169,73"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,50,172,79"/>
+<area shape="rect" id="node2" href="$classInterfacePP_1_1ringin.html#a5e38fb317d18c6eea9746f42dbe15bf4" title=" " alt="" coords="220,5,360,51"/>
+<area shape="rect" id="node3" href="$classInterfacePP_1_1ringin.html#ad9cc8c8ed4c5ff5011235995d979918f" title=" " alt="" coords="220,76,360,122"/>
 </map>

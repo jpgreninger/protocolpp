@@ -1,3 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classtinyxml2_1_1XMLHandle.html" title=" " alt="" coords="5,5,168,31"/>
+<area shape="rect" id="node1" title=" " alt="" coords="246,32,332,61"/>
+<area shape="rect" id="node2" href="$classProtocolPP_1_1jikeparse.html" title=" " alt="" coords="416,5,573,34"/>
+<area shape="rect" id="node3" href="$classProtocolPP_1_1jtestcfg.html" title=" " alt="" coords="421,59,568,88"/>
+<area shape="rect" id="node4" href="$classProtocolPP_1_1wasp.html" title=" " alt="" coords="428,112,561,141"/>
+<area shape="rect" id="node5" href="$classtinyxml2_1_1XMLVisitor.html" title=" " alt="" coords="5,85,162,114"/>
+<area shape="rect" id="node6" href="$classtinyxml2_1_1XMLPrinter.html" title=" " alt="" coords="210,85,368,114"/>
 </map>

@@ -8,12 +8,13 @@ var classoption_1_1Parser =
     [ "Parser", "classoption_1_1Parser.html#ae4100da4b662937ead22484e6cfc7cec", null ],
     [ "Parser", "classoption_1_1Parser.html#a23ee244634a38d05f6c4cb1e3692a8a9", null ],
     [ "error", "classoption_1_1Parser.html#a2caa149140067b4d13e4d7a104bb3090", null ],
-    [ "nonOption", "classoption_1_1Parser.html#a42f2fcfe6111e0522dfa3c6635f27349", null ],
-    [ "nonOptions", "classoption_1_1Parser.html#af32ab64383edfdea371abcc44e8dc273", null ],
+    [ "nonOption", "classoption_1_1Parser.html#aeeafbf2892a5aca90b89803b2b1cb031", null ],
+    [ "nonOptions", "classoption_1_1Parser.html#a2c11b050f4248d71758dda52c5f9154d", null ],
     [ "nonOptionsCount", "classoption_1_1Parser.html#aa64a6a7c196993a1b20d48e8ddd12a34", null ],
     [ "optionsCount", "classoption_1_1Parser.html#aee62badd2a19a5b88cbc4a9b11813b82", null ],
     [ "parse", "classoption_1_1Parser.html#ab26280e3b2ebc2f2fc4ed8b3b1e2a39c", null ],
     [ "parse", "classoption_1_1Parser.html#a6e0b5778d1cfbd6cd51240e74d01e138", null ],
     [ "parse", "classoption_1_1Parser.html#ad40585faa23a97a186cf9a45b8c2b42b", null ],
-    [ "parse", "classoption_1_1Parser.html#a41885a7308249c8532714e15b36106bd", null ]
+    [ "parse", "classoption_1_1Parser.html#a41885a7308249c8532714e15b36106bd", null ],
+    [ "Stats", "classoption_1_1Parser.html#a7183dc3501d1c87153f9c0d41f869460", null ]
 ];

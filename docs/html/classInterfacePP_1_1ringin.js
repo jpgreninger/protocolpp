@@ -1,5 +1,6 @@
 var classInterfacePP_1_1ringin =
 [
+    [ "ringin", "classInterfacePP_1_1ringin.html#a34347af83da7c4e468d737b5955f12cd", null ],
     [ "ringin", "classInterfacePP_1_1ringin.html#afbeaa233c9cdfcc0ab54170d4b372b69", null ],
     [ "~ringin", "classInterfacePP_1_1ringin.html#a9c100bf127ede199ff61a4204bdd901c", null ],
     [ "get_addr", "classInterfacePP_1_1ringin.html#a5e38fb317d18c6eea9746f42dbe15bf4", null ],

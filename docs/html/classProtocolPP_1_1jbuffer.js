@@ -8,9 +8,9 @@ var classProtocolPP_1_1jbuffer =
     [ "dequeue", "classProtocolPP_1_1jbuffer.html#a27997d1e46f0b5c91e2d7a8e0a597cb0", null ],
     [ "enqueue", "classProtocolPP_1_1jbuffer.html#a00bb5717727e862411ef4f2606163b67", null ],
     [ "read", "classProtocolPP_1_1jbuffer.html#a4614d1ddb712312202af05cb4d81a8b3", null ],
-    [ "read", "classProtocolPP_1_1jbuffer.html#a252b8102247756553b330c4b6f42fd58", null ],
+    [ "read", "classProtocolPP_1_1jbuffer.html#ac1f594639926cf216a18af68b8ed9857", null ],
     [ "read", "classProtocolPP_1_1jbuffer.html#a6e4a2997244703b7e86cdae2296dc168", null ],
     [ "write", "classProtocolPP_1_1jbuffer.html#abd0a3591712b9ce3df9c54ef592bc4ac", null ],
-    [ "write", "classProtocolPP_1_1jbuffer.html#a0533f72902b646e6ab460c0a272f6cf2", null ],
+    [ "write", "classProtocolPP_1_1jbuffer.html#a6186f0c00e37e970a3ced62e8d025cac", null ],
     [ "write", "classProtocolPP_1_1jbuffer.html#a5bf511b55edd49cf3f741cc2a72e1f50", null ]
 ];

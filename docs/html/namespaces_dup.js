@@ -1,6 +1,6 @@
 var namespaces_dup =
 [
-    [ "option", "namespaceoption.html", "namespaceoption" ],
-    [ "PlatformPP", "namespacePlatformPP.html", "namespacePlatformPP" ],
-    [ "ProtocolPP", "namespaceProtocolPP.html", "namespaceProtocolPP" ]
+    [ "option", "namespaceoption.html", null ],
+    [ "PlatformPP", "namespacePlatformPP.html", null ],
+    [ "ProtocolPP", "namespaceProtocolPP.html", null ]
 ];

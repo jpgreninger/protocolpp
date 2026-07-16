@@ -1,10 +1,7 @@
 <map id="option::Option::append" name="option::Option::append">
-<area shape="rect" id="Node000001" title="Makes new_last the new last() by chaining it into the list after last()." alt="" coords="5,29,176,55"/>
-<area shape="rect" id="Node000002" href="$classoption_1_1Option.html#a7c66347adb18256d9da9519cf5a4c53a" title="Returns a pointer to the first element of the linked list." alt="" coords="437,5,583,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,34,423,20,423,26,176,40"/>
-<area shape="rect" id="Node000003" href="$classoption_1_1Option.html#acd9da11d4983512256d703203fae7bde" title="Returns a pointer to the last element of the linked list." alt="" coords="224,55,371,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,50,211,54,210,59,176,55"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="352,52,441,31,442,36,353,57"/>
-<area shape="rect" id="Node000004" href="$classoption_1_1Option.html#afa9cec25fbeb4785cee49953e807b510" title="Returns a pointer to the previous element of the linked list with wrap&#45;around from first() to last()." alt="" coords="419,55,601,80"/>
-<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="371,65,405,65,405,70,371,70"/>
+<area shape="rect" id="node1" title="Makes new_last the new last() by chaining it into the list after last()." alt="" coords="5,32,175,61"/>
+<area shape="rect" id="node2" href="$classoption_1_1Option.html#abb4e13cd7c90999c8a6b1f871cece283" title="Returns a pointer to the first element of the linked list." alt="" coords="434,5,580,34"/>
+<area shape="rect" id="node4" href="$classoption_1_1Option.html#afe2aff68191e55b59c53fac3dbbcd7c3" title="Returns a pointer to the last element of the linked list." alt="" coords="223,57,368,86"/>
+<area shape="rect" id="node3" href="$classoption_1_1Option.html#af51f53a553ef46110e36008a58466a2e" title="Returns true iff this is the first element of the linked list." alt="" coords="646,5,807,34"/>
+<area shape="rect" id="node5" href="$classoption_1_1Option.html#a1226e45dc2de30f269b2aff1784bbee7" title="Returns a pointer to the previous element of the linked list with wrap&#45;around from first() to last()." alt="" coords="416,59,598,88"/>
 </map>
