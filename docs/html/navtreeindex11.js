@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"namespacemembers_eval_x.html":[1,1,4,23],
 "namespacemembers_eval_z.html":[1,1,4,24],
 "namespacemembers_f.html":[1,1,0,5],
 "namespacemembers_func.html":[1,1,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "structoption_1_1PrintUsageImplementation_1_1StreamWriter.html#ab4bfd31b1c37376505ccd4230f7f7ad9":[2,0,2,4,5,3],
 "structoption_1_1PrintUsageImplementation_1_1StreamWriter.html#ae39bc6378c22d24a490104b7764c37b7":[2,0,2,4,5,1],
 "structoption_1_1PrintUsageImplementation_1_1SyscallWriter.html":[2,0,2,4,6],
-"structoption_1_1PrintUsageImplementation_1_1SyscallWriter.html#a61c1c010d9b67affd5f1208f0a3e9cf0":[2,0,2,4,6,1],
-"structoption_1_1PrintUsageImplementation_1_1SyscallWriter.html#adc72b04cd74c69d0219b8b26589b8e5e":[2,0,2,4,6,3]
+"structoption_1_1PrintUsageImplementation_1_1SyscallWriter.html#a61c1c010d9b67affd5f1208f0a3e9cf0":[2,0,2,4,6,1]
 };

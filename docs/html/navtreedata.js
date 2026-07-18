@@ -55,6 +55,7 @@ var NAVTREE =
       [ "Kyber and ML-KEM Key Agreement Algorithm (KYBER)", "index.html#KYBERsec", null ],
       [ "Dilithium and ML-DSA Signature Algorithm (DILITHIUM)", "index.html#DILITHIUMsec", null ],
       [ "Falcon Signature Algorithm (FALCON)", "index.html#FALCONsec", null ],
+      [ "XWING Hybrid Signature Algorithm (XWING)", "index.html#XWINGsec", null ],
       [ "W.A.S.P", "index.html#Testbench", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
@@ -98,8 +99,8 @@ var NAVTREEINDEX =
 "classjikencrypt.html",
 "classtinyxml2_1_1XMLConstHandle.html#a4395e5feaba7b456a81ca274880ea3d3",
 "classtinyxml2_1_1XMLPrinter.html#a03de437ca25fbcc0d7df4bc29296e7f4",
-"namespacemembers_eval_z.html",
-"structoption_1_1PrintUsageImplementation_1_1SyscallWriter.html#ae4f8677dbd79b0a9238368e28014701a"
+"namespacemembers_eval_x.html",
+"structoption_1_1PrintUsageImplementation_1_1SyscallWriter.html#adc72b04cd74c69d0219b8b26589b8e5e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

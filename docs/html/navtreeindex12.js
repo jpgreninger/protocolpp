@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"structoption_1_1PrintUsageImplementation_1_1SyscallWriter.html#adc72b04cd74c69d0219b8b26589b8e5e":[2,0,2,4,6,3],
 "structoption_1_1PrintUsageImplementation_1_1SyscallWriter.html#ae4f8677dbd79b0a9238368e28014701a":[2,0,2,4,6,0],
 "structoption_1_1PrintUsageImplementation_1_1SyscallWriter.html#ae79409e3f85f8dbaa7ef87bb8d7fcf8a":[2,0,2,4,6,2],
 "structoption_1_1PrintUsageImplementation_1_1TemporaryWriter.html":[2,0,2,4,7],
