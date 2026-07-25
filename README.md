@@ -177,7 +177,7 @@ For W.A.S.P usage, see the doxygen section
   * Support for SLHDSA Post Quantum Signatures
   * Moved to TinyXML v11.0.0
   * See https://jgreninger.wixsite.com/protocolpp for further information
-  * See the release video https://youtu.be/6Ll2gaHgblY
+  * See the release video https://youtu.be/6Ll2gaHgblY?si=8qmnuZvyNToMUHK3
     
 * Protocol++® (Protocolpp®) - 5.7.2 Released December 31, 2025
   * Maintenance Release
