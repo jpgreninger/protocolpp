@@ -1,5 +1,5 @@
 # Protocolpp®(Protocol++®) 5.7.3 Released July 4, 2026!
-https://youtu.be/TJFnjcCAP2I?si=AyBjOVOH3crRKhxF
+https://youtu.be/6Ll2gaHgblY?si=8qmnuZvyNToMUHK3
 
 Only https://jgreninger.wixsite.com/protocolpp has the rights to update, modify,
 license, distribute, sell, or make copies of Protocolpp®(Protocol++®).
@@ -177,7 +177,7 @@ For W.A.S.P usage, see the doxygen section
   * Support for SLHDSA Post Quantum Signatures
   * Moved to TinyXML v11.0.0
   * See https://jgreninger.wixsite.com/protocolpp for further information
-  * See the release video https://youtu.be/6Ll2gaHgblY
+  * See the release video https://youtu.be/6Ll2gaHgblY?si=8qmnuZvyNToMUHK3
     
 * Protocol++® (Protocolpp®) - 5.7.2 Released December 31, 2025
   * Maintenance Release
