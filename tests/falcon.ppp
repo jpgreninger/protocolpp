@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocolpp ver='5.6.2' format='ppp' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../schema/protocolpp.xsd'> 
+  <general/>
+  <stream number='1' packets='3' datalen='32'>
+    <protocol prot='FALCON'>
+      <security name='falconsa' mode='PKIVERIFY' auth='FALCON_512'/>
+    </protocol>
+  </stream>
+</protocolpp>

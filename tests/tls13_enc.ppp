@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocolpp ver='5.6.2' format='ppp' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../schema/protocolpp.xsd'> 
+  <general infoclr='CYAN'/>
+  <stream number='10..20' packets='300..500' datalen='50..1000'>
+    <protocol prot='TLS13' dir='ENCAP' file="">
+      <security name='tlsa13'/>
+    </protocol>
+  </stream>
+</protocolpp>

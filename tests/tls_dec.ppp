@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocolpp ver='5.6.2' format='ppp' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../schema/protocolpp.xsd'> 
+  <general/>
+  <stream number='200..300' packets='3..5' datalen='50..512'>
+    <protocol prot='TLS' dir='DECAP' replay='NORMAL:SHIFT:WINDOW:REPLAY:LATE' file="">
+      <security name='tlsa' ver="TLS12:DTLS" ivex='true' arlen='256'/>
+    </protocol>
+  </stream>
+</protocolpp>

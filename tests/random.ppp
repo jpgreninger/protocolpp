@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocolpp ver='5.6.2' format='ppp' xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation='../schema/protocolpp.xsd'> 
+  <general/>
+  <stream number='100..200' packets='30..50' datalen='1..5192'>
+    <protocol prot="UDPP:TCPP:ICMPP:IP:IPSEC:TLS:TLS13:MACSEC:SRTP:WIFI:WIGIG:WIMAX:LTE:RLC:CONFIDENT:INTEGRITY:BLOB:RSA:DSA:ECDSAFP:ECDSAF2M:ECDSAED"/>
+  </stream>
+</protocolpp>

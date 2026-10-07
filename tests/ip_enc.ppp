@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocolpp ver='5.6.2' format="ppp" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../schema/protocolpp.xsd'> 
+  <general/>
+  <stream number='200..300' packets='3..5' datalen='64:390:1500'>
+    <protocol prot='IP' file=''>
+      <security name='ipsa' ver='IPV6:IPV4' dir='encap'/>
+    </protocol>
+  </stream>
+</protocolpp>

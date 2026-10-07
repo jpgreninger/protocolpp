@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testpp ver='5.6.2' format='testpp' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../schema/testpp.xsd'> 
+  <general loglvl='2' stdout='true' platform='WASP' endian='BIG'/>
+  <flowring name='flow0' index='0' size='50'>
+    <!-- responder zero -->
+    <inring name='in0' index='0' size='50' flow='flow0' input='tests/wifi_dec.ppp'/>
+    <responder name='resp0' index='0' threads='1' input='in0' output='out0' flow='flow0' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out0' index='0' size='50'/>
+  </flowring>
+</testpp>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testpp ver='5.6.2' format='testpp' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../schema/testpp.xsd'> 
+  <general loglvl='4' bufsize='256' bufwidth='1' bufnum='32768' stdout='true' platform='WASP' endian='BIG' infoclr='BRIGHTWHITE'/>
+  <flowring name='flow0' index='0' size='50'>
+    <inring name='in0' index='0' size='50' flow='flow0' input='tests/ipsec.ppp'/>
+    <responder name='resp0' index='0' threads='1' input='in0' output='out0' flow='flow0' units='us' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out0' index='0' flow='flow0' size='50'/>
+  </flowring>
+  <flowring name='flow1' index='1' size='50'>
+    <inring name='in1' index='1' size='50' flow='flow1' input='tests/wifi.ppp'/>
+    <responder name='resp1' index='1' threads='1' input='in1' output='out1' flow='flow1' units='us' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out1' index='1' flow='flow1' size='50'/>
+  </flowring>
+  <flowring name='flow2' index='2' size='50'>
+    <inring name='in2' index='2' size='50' flow='flow2' input='tests/macsec.ppp'/>
+    <responder name='resp2' index='2' threads='1' input='in2' output='out2' flow='flow2' units='us' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out2' index='2' flow='flow2' size='50'/>
+  </flowring>
+</testpp>

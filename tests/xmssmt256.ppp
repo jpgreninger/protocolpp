@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocolpp ver='5.6.2' format='ppp' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../schema/protocolpp.xsd'> 
+  <general/>
+  <stream number='1..5' packets='3..5' datalen='64..2048'>
+    <protocol prot='XMSS'>
+      <security name='xmssa' mode='PKISIGN:PKIVERIFY' xmss_alg='XMSS_NO_TYPE' xmssmt_alg='XMSSMT_SHA2_20_2_256'/>
+    </protocol>
+  </stream>
+</protocolpp>

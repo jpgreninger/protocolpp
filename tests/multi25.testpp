@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testpp ver='5.6.2' format='testpp' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../schema/testpp.xsd'> 
+  <general loglvl='4' stdout='true' platform='WASP' endian='BIG' infoclr='BRIGHTWHITE'/>
+  <flowring name='flow0' index='0' size='50'>
+    <inring name='in0' index='0' size='50' flow='flow0' input='tests/ipsec.ppp'/>
+    <responder name='resp0' index='0' threads='1' input='in0' output='out0' flow='flow0' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out0' index='0' flow='flow0' size='50'/>
+  </flowring>
+  <flowring name='flow1' index='1' size='50'>
+    <inring name='in1' index='1' size='50' flow='flow1' input='tests/wifi.ppp'/>
+    <responder name='resp1' index='1' threads='1' input='in1' output='out1' flow='flow1' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out1' index='1' flow='flow1' size='50'/>
+  </flowring>
+  <flowring name='flow2' index='2' size='50'>
+    <inring name='in2' index='2' size='50' flow='flow2' input='tests/macsec.ppp'/>
+    <responder name='resp2' index='2' threads='1' input='in2' output='out2' flow='flow2' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out2' index='2' flow='flow2' size='50'/>
+  </flowring>
+  <flowring name='flow3' index='3' size='50'>
+    <inring name='in3' index='3' size='50' flow='flow3' input='tests/blob.ppp'/>
+    <responder name='resp3' index='3' threads='1' input='in3' output='out3' flow='flow3' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out3' index='3' flow='flow3' size='50'/>
+  </flowring>
+  <flowring name='flow4' index='4' size='50'>
+    <inring name='in4' index='4' size='50' flow='flow4' input='tests/dtls13.ppp'/>
+    <responder name='resp4' index='4' threads='1' input='in4' output='out4' flow='flow4' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out4' index='4' flow='flow4' size='50'/>
+  </flowring>
+  <flowring name='flow5' index='5' size='50'>
+    <inring name='in5' index='5' size='50' flow='flow5' input='tests/wifi.ppp'/>
+    <responder name='resp5' index='5' threads='1' input='in5' output='out5' flow='flow5' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out5' index='5' flow='flow5' size='50'/>
+  </flowring>
+  <flowring name='flow6' index='6' size='50'>
+    <inring name='in6' index='6' size='50' flow='flow6' input='tests/lte.ppp'/>
+    <responder name='resp6' index='6' threads='1' input='in6' output='out6' flow='flow6' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out6' index='6' flow='flow6' size='50'/>
+  </flowring>
+  <flowring name='flow7' index='7' size='50'>
+    <inring name='in7' index='7' size='50' flow='flow7' input='tests/tls.ppp'/>
+    <responder name='resp7' index='7' threads='1' input='in7' output='out7' flow='flow7' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out7' index='7' flow='flow7' size='50'/>
+  </flowring>
+  <flowring name='flow8' index='8' size='50'>
+    <inring name='in8' index='8' size='50' flow='flow8' input='tests/udp.ppp'/>
+    <responder name='resp8' index='8' threads='1' input='in8' output='out8' flow='flow8' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out8' index='8' flow='flow8' size='50'/>
+  </flowring>
+  <flowring name='flow9' index='9' size='50'>
+    <inring name='in9' index='9' size='50' flow='flow9' input='tests/icmp.ppp'/>
+    <responder name='resp9' index='9' threads='1' input='in9' output='out9' flow='flow9' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out9' index='9' flow='flow9' size='50'/>
+  </flowring>
+  <flowring name='flow10' index='10' size='50'>
+    <inring name='in10' index='10' size='50' flow='flow10' input='tests/ipsec.ppp'/>
+    <responder name='resp10' index='10' threads='1' input='in10' output='out10' flow='flow10' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out10' index='10' flow='flow10' size='50'/>
+  </flowring>
+  <flowring name='flow11' index='11' size='50'>
+    <inring name='in11' index='11' size='50' flow='flow11' input='tests/wifi.ppp'/>
+    <responder name='resp11' index='11' threads='1' input='in11' output='out11' flow='flow11' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out11' index='11' flow='flow11' size='50'/>
+  </flowring>
+  <flowring name='flow12' index='12' size='50'>
+    <inring name='in12' index='12' size='50' flow='flow12' input='tests/macsec.ppp'/>
+    <responder name='resp12' index='12' threads='1' input='in12' output='out12' flow='flow12' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out12' index='12' flow='flow12' size='50'/>
+  </flowring>
+  <flowring name='flow13' index='13' size='50'>
+    <inring name='in13' index='13' size='50' flow='flow13' input='tests/blob.ppp'/>
+    <responder name='resp13' index='13' threads='1' input='in13' output='out13' flow='flow13' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out13' index='13' flow='flow13' size='50'/>
+  </flowring>
+  <flowring name='flow14' index='14' size='50'>
+    <inring name='in14' index='14' size='50' flow='flow14' input='tests/confident.ppp'/>
+    <responder name='resp14' index='14' threads='1' input='in14' output='out14' flow='flow14' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out14' index='14' flow='flow14' size='50'/>
+  </flowring>
+  <flowring name='flow15' index='15' size='50'>
+    <inring name='in15' index='15' size='50' flow='flow15' input='tests/wifi.ppp'/>
+    <responder name='resp15' index='15' threads='1' input='in15' output='out15' flow='flow15' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out15' index='15' flow='flow15' size='50'/>
+  </flowring>
+  <flowring name='flow16' index='16' size='50'>
+    <inring name='in16' index='16' size='50' flow='flow16' input='tests/lte.ppp'/>
+    <responder name='resp16' index='16' threads='1' input='in16' output='out16' flow='flow16' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out16' index='16' flow='flow16' size='50'/>
+  </flowring>
+  <flowring name='flow17' index='17' size='50'>
+    <inring name='in17' index='17' size='50' flow='flow17' input='tests/tls.ppp'/>
+    <responder name='resp17' index='17' threads='1' input='in17' output='out17' flow='flow17' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out17' index='17' flow='flow17' size='50'/>
+  </flowring>
+  <flowring name='flow18' index='18' size='50'>
+    <inring name='in18' index='18' size='50' flow='flow18' input='tests/udp.ppp'/>
+    <responder name='resp18' index='18' threads='1' input='in18' output='out18' flow='flow18' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out18' index='18' flow='flow18' size='50'/>
+  </flowring>
+  <flowring name='flow19' index='19' size='50'>
+    <inring name='in19' index='19' size='50' flow='flow19' input='tests/icmp.ppp'/>
+    <responder name='resp19' index='19' threads='1' input='in19' output='out19' flow='flow19' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out19' index='19' flow='flow19' size='50'/>
+  </flowring>
+  <flowring name='flow20' index='20' size='50'>
+    <inring name='in20' index='20' size='50' flow='flow20' input='tests/ipsec.ppp'/>
+    <responder name='resp20' index='20' threads='1' input='in20' output='out20' flow='flow20' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out20' index='20' flow='flow20' size='50'/>
+  </flowring>
+  <flowring name='flow21' index='21' size='50'>
+    <inring name='in21' index='21' size='50' flow='flow21' input='tests/wifi.ppp'/>
+    <responder name='resp21' index='21' threads='1' input='in21' output='out21' flow='flow21' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out21' index='21' flow='flow21' size='50'/>
+  </flowring>
+  <flowring name='flow22' index='22' size='50'>
+    <inring name='in22' index='22' size='50' flow='flow22' input='tests/macsec.ppp'/>
+    <responder name='resp22' index='22' threads='1' input='in22' output='out22' flow='flow22' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out22' index='22' flow='flow22' size='50'/>
+  </flowring>
+  <flowring name='flow23' index='23' size='50'>
+    <inring name='in23' index='23' size='50' flow='flow23' input='tests/blob.ppp'/>
+    <responder name='resp23' index='23' threads='1' input='in23' output='out23' flow='flow23' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out23' index='23' flow='flow23' size='50'/>
+  </flowring>
+  <flowring name='flow24' index='24' size='50'>
+    <inring name='in24' index='24' size='50' flow='flow24' input='tests/dtls13.ppp'/>
+    <responder name='resp24' index='24' threads='1' input='in24' output='out24' flow='flow24' writelatency='50..200' readlatency='200..500' computelatency='1000..2500'/>
+    <outring name='out24' index='24' flow='flow24' size='50'/>
+  </flowring>
+</testpp>
