@@ -1,4 +1,4 @@
-# Protocolpp®(Protocol++®) 5.7.3 Released July 4, 2026!
+# Protocolpp®(Protocol++®) 5.7.4 Released October 31, 2026!
 https://youtu.be/6Ll2gaHgblY?si=8qmnuZvyNToMUHK3
 
 Only https://jgreninger.wixsite.com/protocolpp has the rights to update, modify,
@@ -58,7 +58,7 @@ protocolpp® - Executable of the full set of protocols, ciphers, testbench,
 
 libprotocolpp.a - Static library of the protocolpp.h interface, wasp.h, and ciphers.h
 
-libprotocolpp.so.5.7.3 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
+libprotocolpp.so.5.7.4 - Shared library of the protocolpp.h interface, wasp.h, and ciphers.h
 
 winprot++.lib - Static library for Windows compiled under VC++ 19
 
@@ -171,6 +171,12 @@ For W.A.S.P usage, see the doxygen section
 
 * See https://jgreninger.wixsite.com/protocolpp for more updates, information and licensing
 
+* Protocol++® (Protocolpp®) - 5.7.4 Maintenance Release
+  * See release notes in paid version
+  * Support for XWing Hybrid Signatures debug in testbench
+  * See https://jgreninger.wixsite.com/protocolpp for further information
+  * See the release video https://youtu.be/6Ll2gaHgblY?si=8qmnuZvyNToMUHK3
+    
 * Protocol++® (Protocolpp®) - 5.7.3 Upcoming Release
   * See release notes in paid version
   * Support for XWing Hybrid Signatures
