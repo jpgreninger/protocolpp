@@ -4,7 +4,7 @@ var classProtocolPP_1_1jecdsafpsa =
     [ "jecdsafpsa", "classProtocolPP_1_1jecdsafpsa.html#a0baecf732de852d025578d41f1ea8e07", null ],
     [ "jecdsafpsa", "classProtocolPP_1_1jecdsafpsa.html#a5b76af94c46d94660a590978f0a66385", null ],
     [ "jecdsafpsa", "classProtocolPP_1_1jecdsafpsa.html#a12924116e581ff22c06bf224118a171f", null ],
-    [ "~jecdsafpsa", "classProtocolPP_1_1jecdsafpsa.html#a743b48ab4a1b034e001b6c8decc07b6d", null ],
+    [ "~jecdsafpsa", "classProtocolPP_1_1jecdsafpsa.html#a5a2be114410e607a877dc45da103d316", null ],
     [ "jecdsafpsa", "classProtocolPP_1_1jecdsafpsa.html#ae04d8f958234a5fd7a0b13aa9c48da5c", null ],
     [ "get_field", "classProtocolPP_1_1jecdsafpsa.html#a030bea2ca6c7d264cb7e975160139bc6", null ],
     [ "get_prvkey256", "classProtocolPP_1_1jecdsafpsa.html#a33f5e1c60b8901552c56d7fb7a153243", null ],
@@ -20,6 +20,6 @@ var classProtocolPP_1_1jecdsafpsa =
     [ "set_pubkey256", "classProtocolPP_1_1jecdsafpsa.html#a41c4ae896ec4ee54976142503bfb0ae7", null ],
     [ "set_pubkey384", "classProtocolPP_1_1jecdsafpsa.html#af1b791ae00d63a5d0a3aa8cfba2f4995", null ],
     [ "set_pubkey512", "classProtocolPP_1_1jecdsafpsa.html#ab4e692367abded600315d08844cab287", null ],
-    [ "to_json", "classProtocolPP_1_1jecdsafpsa.html#af0852f11e62d80f6ae42d3da96571577", null ],
-    [ "to_xml", "classProtocolPP_1_1jecdsafpsa.html#a8d474f845b964ddf01aa7dcae45df2c9", null ]
+    [ "to_json", "classProtocolPP_1_1jecdsafpsa.html#af54f0ac22f3c4ddecbf1560e37eee818", null ],
+    [ "to_xml", "classProtocolPP_1_1jecdsafpsa.html#a85de0ba4c51f197da2bc2939679e0778", null ]
 ];

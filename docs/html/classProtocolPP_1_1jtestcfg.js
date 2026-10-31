@@ -5,7 +5,7 @@ var classProtocolPP_1_1jtestcfg =
     [ "jtestcfg", "classProtocolPP_1_1jtestcfg.html#a24f30a0418336755e906b14133aeb12d", null ],
     [ "jtestcfg", "classProtocolPP_1_1jtestcfg.html#a8a63bbb5cb1cf850e49260521c0b5075", null ],
     [ "jtestcfg", "classProtocolPP_1_1jtestcfg.html#a69562bdb407c35e3ff1f2d6e6b569d5f", null ],
-    [ "~jtestcfg", "classProtocolPP_1_1jtestcfg.html#ae32a919ac4899e5b6891e0e3bceba986", null ],
+    [ "~jtestcfg", "classProtocolPP_1_1jtestcfg.html#a9a7d3eef0ad19f9bb10dc559c3f5d98b", null ],
     [ "jtestcfg", "classProtocolPP_1_1jtestcfg.html#a2a2212b162f7647dcfc71ab7565fb4c9", null ],
     [ "jtestcfg", "classProtocolPP_1_1jtestcfg.html#a2da254343a7aec09cfd9b2b10d1bfb13", null ],
     [ "jtestcfg", "classProtocolPP_1_1jtestcfg.html#afb550393922d1e18e399296e392e9afd", null ],

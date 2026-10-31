@@ -1,8 +1,8 @@
 var classInterfacePP_1_1file__log__policy =
 [
     [ "file_log_policy", "classInterfacePP_1_1file__log__policy.html#a4c67bdc24469c49a005a16c038a23f24", null ],
-    [ "~file_log_policy", "classInterfacePP_1_1file__log__policy.html#a44b914f7799597d76041ee635a363534", null ],
-    [ "close_ostream", "classInterfacePP_1_1file__log__policy.html#ad1625b486b16e2071f6888441372713f", null ],
-    [ "open_ostream", "classInterfacePP_1_1file__log__policy.html#aac776a6d7501a8aa65c7bc6c8272ad33", null ],
-    [ "write", "classInterfacePP_1_1file__log__policy.html#a2dc052c97345d0ce9ebbef3c90e160b9", null ]
+    [ "~file_log_policy", "classInterfacePP_1_1file__log__policy.html#ad873f4f41e96e2e0ee1f96c611fef9e5", null ],
+    [ "close_ostream", "classInterfacePP_1_1file__log__policy.html#a8613bebd491a0c08097797e0f932a578", null ],
+    [ "open_ostream", "classInterfacePP_1_1file__log__policy.html#a7b9a5457b712030faba857ac03bb8014", null ],
+    [ "write", "classInterfacePP_1_1file__log__policy.html#a6e582ff618deeaca2c9cf90cdd957611", null ]
 ];

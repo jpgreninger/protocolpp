@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Protocol++&reg; (Protocolpp&reg;)
-   &#160;<span id="projectnumber">v5.7.3</span>
+   &#160;<span id="projectnumber">v5.7.4</span>
    </div>
   </td>
  </tr>
@@ -116,30 +116,30 @@ Collaboration diagram for InterfacePP::jtestbenchbuf:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa9e49797abbda2f61c076a96919b3cc9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#aa9e49797abbda2f61c076a96919b3cc9">jtestbenchbuf</a> (<a class="el" href="namespaceProtocolPP.html#afa6b70277e264c399f523bfab53442f9">ProtocolPP::platform_t</a> platform, uint64_t seed, bool use_crypto, int responders, std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jlogger.html">jlogger</a> &gt; &amp;logger, std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jdata.html">ProtocolPP::jdata</a> &gt; &amp;indata, std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jring.html">jring</a>&lt; <a class="el" href="classInterfacePP_1_1ringflow.html">ringflow</a> &gt;&gt; &amp;fring, std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jring.html">jring</a>&lt; <a class="el" href="classInterfacePP_1_1ringin.html">ringin</a> &gt;&gt; &amp;iring, std::shared_ptr&lt; <a class="el" href="classInterfacePP_1_1jring.html">jring</a>&lt; <a class="el" href="classInterfacePP_1_1ringout.html">ringout</a> &gt;&gt; &amp;oring, std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">ProtocolPP::jbuffer</a>&lt; uint8_t, 256 &gt;&gt; &amp;mem, std::string &amp;burstlen, <a class="el" href="namespaceProtocolPP.html#a4c490fb0ae4e404f895c8b65147453ae">ProtocolPP::endian_t</a> endianess=<a class="el" href="namespaceProtocolPP.html#a4c490fb0ae4e404f895c8b65147453aea811508292b78195e7278e873ca299f93">ProtocolPP::BIG</a>)</td></tr>
 <tr class="separator:aa9e49797abbda2f61c076a96919b3cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a207b8fa10fc288233653608b099c4095"><td class="memItemLeft" align="right" valign="top"><a id="a207b8fa10fc288233653608b099c4095"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#a207b8fa10fc288233653608b099c4095">~jtestbenchbuf</a> ()=default</td></tr>
-<tr class="memdesc:a207b8fa10fc288233653608b099c4095"><td class="mdescLeft">&#160;</td><td class="mdescRight">standard deconstructor <br /></td></tr>
-<tr class="separator:a207b8fa10fc288233653608b099c4095"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8eb93a71ddb5692801d15c08d3b97cba"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, uintptr_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#a8eb93a71ddb5692801d15c08d3b97cba">get_mem</a> (std::string packet, uint32_t length)</td></tr>
-<tr class="separator:a8eb93a71ddb5692801d15c08d3b97cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a058d62f66269fe58c697650a95f159d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#a058d62f66269fe58c697650a95f159d3">write</a> (uintptr_t address, uint32_t data)</td></tr>
-<tr class="separator:a058d62f66269fe58c697650a95f159d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cef6641c595cec3cf0eaa656d78e476"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#a8cef6641c595cec3cf0eaa656d78e476">write</a> (uintptr_t address, uint64_t data)</td></tr>
-<tr class="separator:a8cef6641c595cec3cf0eaa656d78e476"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a616938572361c954017d781de2074b56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#a616938572361c954017d781de2074b56">write</a> (std::string packet, uintptr_t bufptr, uint8_t *data, uint32_t length)</td></tr>
-<tr class="separator:a616938572361c954017d781de2074b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef133be080df1dadd94f0bc956bb581a"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, uintptr_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#aef133be080df1dadd94f0bc956bb581a">write</a> (std::string packet, uint8_t *data, uint32_t length)</td></tr>
-<tr class="separator:aef133be080df1dadd94f0bc956bb581a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3f4aa58ced052aeddcae97402f72551"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, uintptr_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#af3f4aa58ced052aeddcae97402f72551">write</a> (std::string packet, uint32_t *data, uint32_t length)</td></tr>
-<tr class="separator:af3f4aa58ced052aeddcae97402f72551"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d24917ad2b665815db3180dd6f12f0d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#a0d24917ad2b665815db3180dd6f12f0d">read</a> (uintptr_t address)</td></tr>
-<tr class="separator:a0d24917ad2b665815db3180dd6f12f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ed0c9fc1cdc0d52951552f7206c4650"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#a9ed0c9fc1cdc0d52951552f7206c4650">read</a> (uintptr_t address, uint8_t *data, uint32_t length)</td></tr>
-<tr class="separator:a9ed0c9fc1cdc0d52951552f7206c4650"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a3a333fd0bc3ab5f7ce07c30e79d241"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#a8a3a333fd0bc3ab5f7ce07c30e79d241">read</a> (uintptr_t address, uint32_t *data, uint32_t length)</td></tr>
-<tr class="separator:a8a3a333fd0bc3ab5f7ce07c30e79d241"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97dd0130700e96cfcb7173dff606afdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#a97dd0130700e96cfcb7173dff606afdc">free</a> (uintptr_t address)</td></tr>
-<tr class="separator:a97dd0130700e96cfcb7173dff606afdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74bdc74155f0fc66efffd35f3ed30b0"><td class="memItemLeft" align="right" valign="top"><a id="aa74bdc74155f0fc66efffd35f3ed30b0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#aa74bdc74155f0fc66efffd35f3ed30b0">~jtestbenchbuf</a> () override=default</td></tr>
+<tr class="memdesc:aa74bdc74155f0fc66efffd35f3ed30b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">standard deconstructor <br /></td></tr>
+<tr class="separator:aa74bdc74155f0fc66efffd35f3ed30b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae4d2738389620c493c146add19b154f"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, uintptr_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#aae4d2738389620c493c146add19b154f">get_mem</a> (std::string packet, uint32_t length) override</td></tr>
+<tr class="separator:aae4d2738389620c493c146add19b154f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ad805d058eb221694e061580e540789"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#a8ad805d058eb221694e061580e540789">write</a> (uintptr_t address, uint32_t data) override</td></tr>
+<tr class="separator:a8ad805d058eb221694e061580e540789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2c18436162d02bd9e5356c7afb02f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#a6c2c18436162d02bd9e5356c7afb02f9">write</a> (uintptr_t address, uint64_t data) override</td></tr>
+<tr class="separator:a6c2c18436162d02bd9e5356c7afb02f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa708cbe19ee64d446e5d354502018611"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#aa708cbe19ee64d446e5d354502018611">write</a> (std::string packet, uintptr_t bufptr, uint8_t *data, uint32_t length) override</td></tr>
+<tr class="separator:aa708cbe19ee64d446e5d354502018611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2ef48fff045ed35c9a98d0378338839"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, uintptr_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#af2ef48fff045ed35c9a98d0378338839">write</a> (std::string packet, uint8_t *data, uint32_t length) override</td></tr>
+<tr class="separator:af2ef48fff045ed35c9a98d0378338839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01d2812088883146ff0ce4525ceae069"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, uintptr_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#a01d2812088883146ff0ce4525ceae069">write</a> (std::string packet, uint32_t *data, uint32_t length) override</td></tr>
+<tr class="separator:a01d2812088883146ff0ce4525ceae069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f3e63b922dc56df41f1e47ebffb4705"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#a5f3e63b922dc56df41f1e47ebffb4705">read</a> (uintptr_t address) override</td></tr>
+<tr class="separator:a5f3e63b922dc56df41f1e47ebffb4705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90cc2adc13f3bf5dee45d27bcaaaa744"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#a90cc2adc13f3bf5dee45d27bcaaaa744">read</a> (uintptr_t address, uint8_t *data, uint32_t length) override</td></tr>
+<tr class="separator:a90cc2adc13f3bf5dee45d27bcaaaa744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bcc5e9f69e0ef522e91d8165a101f29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#a4bcc5e9f69e0ef522e91d8165a101f29">read</a> (uintptr_t address, uint32_t *data, uint32_t length) override</td></tr>
+<tr class="separator:a4bcc5e9f69e0ef522e91d8165a101f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a677dcc8f21c388383b22e5949ab84bdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfacePP_1_1jtestbenchbuf.html#a677dcc8f21c388383b22e5949ab84bdc">free</a> (uintptr_t address) override</td></tr>
+<tr class="separator:a677dcc8f21c388383b22e5949ab84bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7607b2262f8020fb9e8c194b3e2e78e4"><td class="memItemLeft" align="right" valign="top"><a id="a7607b2262f8020fb9e8c194b3e2e78e4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>jtestbenchbuf</b> (<a class="el" href="classInterfacePP_1_1jtestbenchbuf.html">jtestbenchbuf</a> &amp;rhs)=delete</td></tr>
 <tr class="separator:a7607b2262f8020fb9e8c194b3e2e78e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -299,8 +299,8 @@ std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">Protoco
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a97dd0130700e96cfcb7173dff606afdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97dd0130700e96cfcb7173dff606afdc">&#9670;&nbsp;</a></span>free()</h2>
+<a id="a677dcc8f21c388383b22e5949ab84bdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a677dcc8f21c388383b22e5949ab84bdc">&#9670;&nbsp;</a></span>free()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -318,7 +318,7 @@ std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">Protoco
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -333,8 +333,8 @@ std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">Protoco
 
 </div>
 </div>
-<a id="a8eb93a71ddb5692801d15c08d3b97cba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8eb93a71ddb5692801d15c08d3b97cba">&#9670;&nbsp;</a></span>get_mem()</h2>
+<a id="aae4d2738389620c493c146add19b154f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae4d2738389620c493c146add19b154f">&#9670;&nbsp;</a></span>get_mem()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -362,7 +362,7 @@ std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">Protoco
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -379,8 +379,8 @@ std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">Protoco
 
 </div>
 </div>
-<a id="a0d24917ad2b665815db3180dd6f12f0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d24917ad2b665815db3180dd6f12f0d">&#9670;&nbsp;</a></span>read() <span class="overload">[1/3]</span></h2>
+<a id="a5f3e63b922dc56df41f1e47ebffb4705"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f3e63b922dc56df41f1e47ebffb4705">&#9670;&nbsp;</a></span>read() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -398,7 +398,7 @@ std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">Protoco
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -414,8 +414,8 @@ std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">Protoco
 
 </div>
 </div>
-<a id="a8a3a333fd0bc3ab5f7ce07c30e79d241"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a3a333fd0bc3ab5f7ce07c30e79d241">&#9670;&nbsp;</a></span>read() <span class="overload">[2/3]</span></h2>
+<a id="a4bcc5e9f69e0ef522e91d8165a101f29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bcc5e9f69e0ef522e91d8165a101f29">&#9670;&nbsp;</a></span>read() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -449,7 +449,7 @@ std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">Protoco
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -466,8 +466,8 @@ std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">Protoco
 
 </div>
 </div>
-<a id="a9ed0c9fc1cdc0d52951552f7206c4650"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ed0c9fc1cdc0d52951552f7206c4650">&#9670;&nbsp;</a></span>read() <span class="overload">[3/3]</span></h2>
+<a id="a90cc2adc13f3bf5dee45d27bcaaaa744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90cc2adc13f3bf5dee45d27bcaaaa744">&#9670;&nbsp;</a></span>read() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -501,7 +501,7 @@ std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">Protoco
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -518,8 +518,8 @@ std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">Protoco
 
 </div>
 </div>
-<a id="af3f4aa58ced052aeddcae97402f72551"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3f4aa58ced052aeddcae97402f72551">&#9670;&nbsp;</a></span>write() <span class="overload">[1/5]</span></h2>
+<a id="a01d2812088883146ff0ce4525ceae069"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01d2812088883146ff0ce4525ceae069">&#9670;&nbsp;</a></span>write() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -553,7 +553,7 @@ std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">Protoco
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -570,8 +570,8 @@ std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">Protoco
 
 </div>
 </div>
-<a id="aef133be080df1dadd94f0bc956bb581a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef133be080df1dadd94f0bc956bb581a">&#9670;&nbsp;</a></span>write() <span class="overload">[2/5]</span></h2>
+<a id="af2ef48fff045ed35c9a98d0378338839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2ef48fff045ed35c9a98d0378338839">&#9670;&nbsp;</a></span>write() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -605,7 +605,7 @@ std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">Protoco
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -622,8 +622,8 @@ std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">Protoco
 
 </div>
 </div>
-<a id="a616938572361c954017d781de2074b56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a616938572361c954017d781de2074b56">&#9670;&nbsp;</a></span>write() <span class="overload">[3/5]</span></h2>
+<a id="aa708cbe19ee64d446e5d354502018611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa708cbe19ee64d446e5d354502018611">&#9670;&nbsp;</a></span>write() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -663,7 +663,7 @@ std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">Protoco
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -681,8 +681,8 @@ std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">Protoco
 
 </div>
 </div>
-<a id="a058d62f66269fe58c697650a95f159d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a058d62f66269fe58c697650a95f159d3">&#9670;&nbsp;</a></span>write() <span class="overload">[4/5]</span></h2>
+<a id="a8ad805d058eb221694e061580e540789"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ad805d058eb221694e061580e540789">&#9670;&nbsp;</a></span>write() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -710,7 +710,7 @@ std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">Protoco
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -726,8 +726,8 @@ std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">Protoco
 
 </div>
 </div>
-<a id="a8cef6641c595cec3cf0eaa656d78e476"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cef6641c595cec3cf0eaa656d78e476">&#9670;&nbsp;</a></span>write() <span class="overload">[5/5]</span></h2>
+<a id="a6c2c18436162d02bd9e5356c7afb02f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c2c18436162d02bd9e5356c7afb02f9">&#9670;&nbsp;</a></span>write() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -755,7 +755,7 @@ std::shared_ptr&lt; <a class="el" href="classProtocolPP_1_1jbuffer.html">Protoco
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

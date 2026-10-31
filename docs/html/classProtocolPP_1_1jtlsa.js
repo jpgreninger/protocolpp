@@ -4,10 +4,10 @@ var classProtocolPP_1_1jtlsa =
     [ "jtlsa", "classProtocolPP_1_1jtlsa.html#aea9462ddd32e7dcd16afd1d2c24c4f09", null ],
     [ "jtlsa", "classProtocolPP_1_1jtlsa.html#a38a48aaac5aa54c8f1e2a89be2ecf0e8", null ],
     [ "jtlsa", "classProtocolPP_1_1jtlsa.html#a68975ae38b114a09e06a0e3801e09898", null ],
-    [ "~jtlsa", "classProtocolPP_1_1jtlsa.html#a7fc76c3a2cca91771846e2c97e289f25", null ],
+    [ "~jtlsa", "classProtocolPP_1_1jtlsa.html#af7c804f47c809c866b1e935d9dfd4e7c", null ],
     [ "jtlsa", "classProtocolPP_1_1jtlsa.html#a7dbe216b06d64f9e402f25275fe1acc6", null ],
     [ "get_field", "classProtocolPP_1_1jtlsa.html#a6f2dc57c5c1eea4ffa25668440ff5931", null ],
     [ "set_field", "classProtocolPP_1_1jtlsa.html#ae26bcdd6e3857dad7f80298001134d22", null ],
-    [ "to_json", "classProtocolPP_1_1jtlsa.html#a37d9d5d2cbf3157334bfc660fecbc6c6", null ],
-    [ "to_xml", "classProtocolPP_1_1jtlsa.html#aa02ad6fef2a377fa688137e79b872d62", null ]
+    [ "to_json", "classProtocolPP_1_1jtlsa.html#a2ba73ab6f806fa7eb9173cdc9be13527", null ],
+    [ "to_xml", "classProtocolPP_1_1jtlsa.html#ab8cba466c035d0d132e7ab8d6b8aa8ec", null ]
 ];
